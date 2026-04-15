@@ -1,0 +1,12 @@
+[
+  { "name": "東京", "slug": "tokyo", "fullName": "東京都", "features": ["業者数が多く競争が激しいため高額査定が期待できる", "出張買取・店頭買取ともに選択肢が豊富", "ティファナの店舗がある関東圏のため持ち込みも可能"], "bestCompany": "tifana" },
+  { "name": "大阪", "slug": "osaka", "fullName": "大阪府", "features": ["西日本最大の都市で骨董品市場も活発", "船場や天満に骨董品店が集中", "出張買取対応業者が多い"], "bestCompany": "uriel" },
+  { "name": "名古屋", "slug": "nagoya", "fullName": "愛知県名古屋市", "features": ["東海地方の中心都市で査定需要が高い", "瀬戸焼・常滑焼など地元の陶磁器も買取対象", "大手チェーンの出張対応エリア"], "bestCompany": "hikakaku" },
+  { "name": "京都", "slug": "kyoto", "fullName": "京都府", "features": ["茶道具・掛軸の文化的集積地で専門性の高い査定が期待できる", "京焼・清水焼の産地で陶磁器の需要も高い", "古都ならではの骨董品の流通量が多い"], "bestCompany": "uriel" },
+  { "name": "横浜", "slug": "yokohama", "fullName": "神奈川県横浜市", "features": ["東京の業者も対応エリアに含まれるため選択肢が豊富", "ティファナの出張買取対応エリア", "港町ならではの西洋アンティークの流通も"], "bestCompany": "tifana" },
+  { "name": "福岡", "slug": "fukuoka", "fullName": "福岡県福岡市", "features": ["九州最大の都市で骨董品の需要が高い", "有田焼・伊万里焼の産地に近く陶磁器の査定に強い業者が多い", "出張買取が便利なエリア"], "bestCompany": "uriel" },
+  { "name": "神戸", "slug": "kobe", "fullName": "兵庫県神戸市", "features": ["大阪の業者も対応エリアに含まれるケースが多い", "港町で西洋アンティークの流通がある", "阪神間は高級住宅街が多く骨董品の供給量が豊富"], "bestCompany": "hikakaku" },
+  { "name": "札幌", "slug": "sapporo", "fullName": "北海道札幌市", "features": ["北海道最大の都市で出張買取の拠点", "アイヌ工芸品など北海道特有の骨董品も対象", "冬季は出張買取が便利"], "bestCompany": "hikakaku" },
+  { "name": "仙台", "slug": "sendai", "fullName": "宮城県仙台市", "features": ["東北最大の都市で業者の出張対応拠点", "伝統こけしや堤焼など東北の工芸品も買取対象", "遺品整理需要が高い地域"], "bestCompany": "uriel" },
+  { "name": "広島", "slug": "hiroshima", "fullName": "広島県広島市", "features": ["中国地方の中心都市", "備前焼の産地に近く陶磁器の需要がある", "出張買取で広域対応可能"], "bestCompany": "hikakaku" }
+]
