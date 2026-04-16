@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kottokaitori-biyori.com/sitemap.xml
+
+# Disallow admin and non-content paths
+Disallow: /_next/
+Disallow: /404/

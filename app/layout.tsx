@@ -17,7 +17,7 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kottouhin-biyori.pages.dev"),
+  metadataBase: new URL("https://kottokaitori-biyori.com"),
   title: "骨董品買取びより｜骨董品買取おすすめ3社を徹底比較【2026年最新】",
   description:
     "骨董品買取びよりは、骨董品・美術品・掛軸・茶道具の買取業者を徹底比較。ヒカカク・ティファナ・ウリエルの口コミ・料金・対応品目を比較して、あなたに最適な買取業者が見つかります。",
