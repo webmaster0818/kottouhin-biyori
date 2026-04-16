@@ -28,6 +28,15 @@ const categories = [
   { name: "仏像", slug: "butsuzou", icon: "🙏" },
 ];
 
+const learnArticles = [
+  { title: "骨董品とは？定義・歴史・分類の完全ガイド", slug: "/learn/what-is-kottouhin", icon: "📚", desc: "骨董品の基礎知識を網羅。初めての方はまずここから。" },
+  { title: "骨董品の贋作・偽物の見分け方", slug: "/learn/how-to-identify-fakes", icon: "🔍", desc: "プロの鑑定士が見ているポイントを品目別に解説。" },
+  { title: "骨董品の保管・お手入れ完全ガイド", slug: "/learn/how-to-store", icon: "🏠", desc: "大切な骨董品の価値を守る、正しい保管方法とは。" },
+  { title: "骨董品の買取相場まとめ", slug: "/guide/souba", icon: "💰", desc: "掛軸・茶道具・絵画など品目別の買取相場を解説。" },
+  { title: "骨董品を高く売る5つの方法", slug: "/guide/takaku-uru", icon: "📈", desc: "査定額を最大化するためのプロのテクニック。" },
+  { title: "遺品整理で骨董品が出てきたら", slug: "/guide/ihin-seiri", icon: "🏡", desc: "相続・遺品整理時の骨董品の正しい取り扱い方。" },
+];
+
 const howToChoose = [
   { title: "複数業者に査定を依頼する", text: "1社だけでは適正価格がわかりません。最低でも2〜3社に査定を依頼し、最も高い金額を提示した業者に売却するのが鉄則です。" },
   { title: "専門性のある業者を選ぶ", text: "骨董品は専門知識がないと適正な査定ができません。骨董品・美術品を専門に扱う業者や、該当ジャンルに強い業者を選びましょう。" },
@@ -46,33 +55,36 @@ export default function Home() {
             骨董品買取びより
           </Link>
           <nav className="hidden md:flex gap-6 text-sm text-[#5C4A3A]">
-            <a href="#ranking" className="hover:text-[#8B4513] transition">ランキング</a>
+            <a href="#learn" className="hover:text-[#8B4513] transition">学ぶ</a>
             <a href="#category" className="hover:text-[#8B4513] transition">品目別</a>
+            <a href="#ranking" className="hover:text-[#8B4513] transition">おすすめ業者</a>
             <a href="#how-to-choose" className="hover:text-[#8B4513] transition">選び方</a>
-            <a href="#faq" className="hover:text-[#8B4513] transition">FAQ</a>
           </nav>
         </div>
       </header>
 
       <main className="flex-1">
-        {/* Hero */}
+        {/* Hero - メディアコンセプト */}
         <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">ANTIQUE BUYING GUIDE 2026</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              骨董品を、<br className="md:hidden" />最高額で売る。
-            </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-              掛軸・茶道具・絵画・刀剣など、大切な骨董品の<br className="hidden md:inline" />
-              買取業者を徹底比較。あなたに最適な売却先が見つかります。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#ranking" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg text-center">
-                おすすめ業者を見る
-              </a>
-              <a href="#category" className="border-2 border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E]/10 font-bold px-8 py-4 rounded-xl transition text-center">
-                品目別で探す
-              </a>
+          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
+            <div className="max-w-3xl">
+              <p className="text-[#D4A574] text-sm tracking-widest mb-4">KOTTOUHIN BIYORI — 骨董品の知識と売却ガイド</p>
+              <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                骨董品の価値を<br />正しく知る。
+              </h1>
+              <p className="text-lg md:text-xl text-amber-100 leading-relaxed mb-8">
+                掛軸・茶道具・絵画・刀剣の見分け方から、<br className="hidden md:inline" />
+                信頼できる買取業者の選び方まで。<br className="hidden md:inline" />
+                骨董品の知識と最適な売却先がわかるメディアです。
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#learn" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg text-center">
+                  骨董品について学ぶ
+                </a>
+                <a href="#ranking" className="border-2 border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E]/10 font-bold px-8 py-4 rounded-xl transition text-center">
+                  おすすめ買取業者を見る
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -81,16 +93,16 @@ export default function Home() {
         <section className="bg-white border-b border-[#E0D5C8]">
           <div className="max-w-4xl mx-auto px-4 py-6 flex flex-wrap justify-center gap-6 md:gap-12">
             <div className="text-center">
-              <p className="text-2xl font-bold text-[#8B4513]">3社</p>
-              <p className="text-xs text-[#8B7D72]">厳選業者を比較</p>
+              <p className="text-2xl font-bold text-[#8B4513]">50+</p>
+              <p className="text-xs text-[#8B7D72]">掲載作家数</p>
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-[#8B4513]">10+</p>
               <p className="text-xs text-[#8B7D72]">対応品目カテゴリ</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-[#8B4513]">全国</p>
-              <p className="text-xs text-[#8B7D72]">対応エリア</p>
+              <p className="text-2xl font-bold text-[#8B4513]">3社</p>
+              <p className="text-xs text-[#8B7D72]">厳選買取業者</p>
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-[#8B4513]">無料</p>
@@ -99,22 +111,72 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ranking */}
-        <section id="ranking" className="py-16 md:py-20">
+        {/* Learn Section - 教育コンテンツ（メインコンテンツ） */}
+        <section id="learn" className="py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4">
             <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RANKING</p>
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">LEARN</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
-                骨董品買取おすすめ業者ランキング
+                骨董品の知識を深める
               </h2>
-              <p className="text-[#5C4A3A]">厳選した3社を徹底比較</p>
+              <p className="text-[#5C4A3A]">売却前に知っておきたい基礎知識と専門情報</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {learnArticles.map((article) => (
+                <Link
+                  key={article.slug}
+                  href={article.slug}
+                  className="bg-white rounded-2xl p-6 border border-[#E0D5C8] hover:shadow-lg hover:border-[#C9A96E] transition group"
+                >
+                  <span className="text-3xl block mb-3">{article.icon}</span>
+                  <h3 className="font-bold text-[#2C1810] mb-2 group-hover:text-[#8B4513] transition text-sm leading-relaxed">
+                    {article.title}
+                  </h3>
+                  <p className="text-xs text-[#8B7D72] leading-relaxed">{article.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Category */}
+        <section id="category" className="py-16 bg-white">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
+                品目別の買取・鑑定情報
+              </h2>
+              <p className="text-[#5C4A3A]">お持ちの骨董品の品目から詳しい情報を探す</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {categories.map((cat) => (
+                <Link key={cat.slug} href={`/category/${cat.slug}`}
+                  className="bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-5 text-center transition group">
+                  <span className="text-3xl block mb-2">{cat.icon}</span>
+                  <span className="text-sm font-medium text-[#2C1810] group-hover:text-[#8B4513]">{cat.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Ranking - おすすめ業者（送客部分） */}
+        <section id="ranking" className="py-16">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RECOMMENDED</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
+                骨董品買取おすすめ業者
+              </h2>
+              <p className="text-[#5C4A3A]">骨董品の買取に対応した信頼できる3社を厳選</p>
             </div>
 
             <div className="space-y-8">
               {companies.map((company) => (
                 <article key={company.id} id={company.slug} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8] scroll-mt-24">
                   <div className="p-6 md:p-8">
-                    {/* Header */}
                     <div className="flex items-start gap-4 mb-5">
                       <RankBadge rank={company.rank} />
                       <div className="flex-1">
@@ -126,14 +188,12 @@ export default function Home() {
 
                     <p className="text-[#5C4A3A] leading-relaxed mb-6">{company.description}</p>
 
-                    {/* Features */}
                     <div className="flex flex-wrap gap-2 mb-6">
                       {company.features.map((f) => (
                         <span key={f} className="bg-[#F5ECD7] text-[#8B4513] text-xs px-3 py-1.5 rounded-full font-medium">{f}</span>
                       ))}
                     </div>
 
-                    {/* Info Grid */}
                     <div className="grid md:grid-cols-3 gap-4 mb-6">
                       <div className="bg-[#FAF7F2] rounded-xl p-4">
                         <p className="text-xs text-[#8B7D72] mb-1">対応品目</p>
@@ -149,7 +209,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Pros & Cons */}
                     <div className="grid md:grid-cols-2 gap-4 mb-6">
                       <div className="bg-green-50 rounded-xl p-5">
                         <h4 className="font-bold text-green-800 mb-3 text-sm">メリット</h4>
@@ -173,16 +232,20 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Best For */}
                     <div className="bg-[#F5ECD7] rounded-xl p-4 mb-6">
                       <p className="text-sm text-[#8B4513]"><strong>こんな方におすすめ:</strong> {company.bestFor}</p>
                     </div>
 
-                    {/* CTA */}
-                    <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
-                      className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
-                      {company.name}の公式サイトへ
-                    </a>
+                    <div className="flex gap-3">
+                      <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
+                        className="flex-1 bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition">
+                        {company.name}の公式サイトへ
+                      </a>
+                      <Link href={`/review/${company.slug}`}
+                        className="bg-white border-2 border-[#8B4513] text-[#8B4513] text-center py-4 px-6 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
+                        詳細
+                      </Link>
+                    </div>
                   </div>
                 </article>
               ))}
@@ -190,30 +253,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Category */}
-        <section id="category" className="py-16 bg-white">
-          <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
-                品目別の買取情報
-              </h2>
-              <p className="text-[#5C4A3A]">お持ちの骨董品の品目から探す</p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {categories.map((cat) => (
-                <Link key={cat.slug} href={`/category/${cat.slug}`}
-                  className="bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-5 text-center transition group">
-                  <span className="text-3xl block mb-2">{cat.icon}</span>
-                  <span className="text-sm font-medium text-[#2C1810] group-hover:text-[#8B4513]">{cat.name} 買取</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* How to Choose */}
-        <section id="how-to-choose" className="py-16">
+        <section id="how-to-choose" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <div className="text-center mb-12">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HOW TO CHOOSE</p>
@@ -222,7 +263,7 @@ export default function Home() {
               </h2>
               <p className="text-[#5C4A3A]">失敗しないための5つのポイント</p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8] space-y-8">
+            <div className="bg-[#FAF7F2] rounded-2xl p-6 md:p-10 border border-[#E0D5C8] space-y-8">
               {howToChoose.map((item, idx) => (
                 <div key={idx} className="flex gap-5">
                   <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
@@ -232,32 +273,6 @@ export default function Home() {
                     <h3 className="font-bold text-[#2C1810] mb-2">{item.title}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{item.text}</p>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section id="faq" className="py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
-                よくある質問
-              </h2>
-            </div>
-            <div className="space-y-4">
-              {[
-                { q: "骨董品の買取相場はどれくらいですか？", a: "品目や作家、保存状態によって大きく異なります。掛軸は数千円〜数百万円、茶道具は1万円〜数十万円が一般的な相場です。正確な価値を知るには、専門業者への査定依頼がおすすめです。" },
-                { q: "傷や汚れがある骨董品でも買い取ってもらえますか？", a: "はい、多くの業者で買取可能です。骨董品は古いものほど価値がある場合もあり、傷や汚れがあっても思わぬ高額査定になることがあります。自己判断で処分せず、まず査定を依頼しましょう。" },
-                { q: "遺品整理で出てきた骨董品はどうすればいいですか？", a: "遺品整理と買取を同時に対応してくれるウリエルのような業者がおすすめです。価値がわからないものも含めて、まとめて査定してもらえます。" },
-                { q: "出張買取は本当に無料ですか？", a: "今回ご紹介している3社はいずれも査定・出張費用は無料です。査定後にキャンセルしても費用はかかりません。" },
-                { q: "複数の業者に査定を依頼してもいいですか？", a: "はい、むしろ推奨します。ヒカカク！を利用すれば最大20社に一括で査定依頼ができ、最も高い査定額を提示した業者に売却できます。" },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
-                  <h3 className="font-bold text-[#2C1810] mb-2">Q. {item.q}</h3>
-                  <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {item.a}</p>
                 </div>
               ))}
             </div>
@@ -283,38 +298,40 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#2C1810] text-white py-10">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="font-serif-jp font-bold text-lg mb-3">骨董品買取びより</h3>
-              <p className="text-sm text-gray-400 leading-relaxed">
-                骨董品・美術品の買取業者を徹底比較。大切なお品物を最高額で売却できる業者が見つかります。
-              </p>
+              <p className="text-sm text-gray-400 leading-relaxed">骨董品の知識と最適な売却先がわかるメディア。</p>
             </div>
             <div>
-              <h4 className="font-bold mb-3 text-sm text-gray-300">コンテンツ</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#ranking" className="hover:text-[#C9A96E] transition">ランキング</a></li>
-                <li><a href="#category" className="hover:text-[#C9A96E] transition">品目別</a></li>
-                <li><a href="#how-to-choose" className="hover:text-[#C9A96E] transition">選び方</a></li>
-                <li><a href="#faq" className="hover:text-[#C9A96E] transition">よくある質問</a></li>
+              <h4 className="font-bold mb-3 text-sm text-gray-300">学ぶ</h4>
+              <ul className="space-y-1.5 text-sm text-gray-400">
+                <li><Link href="/learn/what-is-kottouhin" className="hover:text-[#C9A96E]">骨董品とは</Link></li>
+                <li><Link href="/learn/how-to-identify-fakes" className="hover:text-[#C9A96E]">贋作の見分け方</Link></li>
+                <li><Link href="/learn/how-to-store" className="hover:text-[#C9A96E]">保管・お手入れ</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-3 text-sm text-gray-300">送客先</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#hikakaku" className="hover:text-[#C9A96E] transition">ヒカカク！</a></li>
-                <li><a href="#tifana" className="hover:text-[#C9A96E] transition">ティファナ</a></li>
-                <li><a href="#uriel" className="hover:text-[#C9A96E] transition">ウリエル</a></li>
+              <h4 className="font-bold mb-3 text-sm text-gray-300">品目別</h4>
+              <ul className="space-y-1.5 text-sm text-gray-400">
+                <li><Link href="/category/kakejiku" className="hover:text-[#C9A96E]">掛軸 買取</Link></li>
+                <li><Link href="/category/sadougu" className="hover:text-[#C9A96E]">茶道具 買取</Link></li>
+                <li><Link href="/category/kaiga" className="hover:text-[#C9A96E]">絵画 買取</Link></li>
+                <li><Link href="/category/touken" className="hover:text-[#C9A96E]">刀剣 買取</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-3 text-sm text-gray-300">お役立ち</h4>
+              <ul className="space-y-1.5 text-sm text-gray-400">
+                <li><Link href="/guide/souba" className="hover:text-[#C9A96E]">買取相場まとめ</Link></li>
+                <li><Link href="/guide/takaku-uru" className="hover:text-[#C9A96E]">高く売る方法</Link></li>
+                <li><Link href="/guide/ihin-seiri" className="hover:text-[#C9A96E]">遺品整理と骨董品</Link></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-6 text-center">
-            <p className="text-xs text-gray-500">
-              当サイトはアフィリエイトプログラムに参加しています。掲載情報は記事執筆時点のものです。
-            </p>
-            <p className="text-xs text-gray-500 mt-1">
-              &copy; 2026 骨董品買取びより All Rights Reserved.
-            </p>
+            <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。</p>
+            <p className="text-xs text-gray-500 mt-1">&copy; 2026 骨董品買取びより All Rights Reserved.</p>
           </div>
         </div>
       </footer>
