@@ -35,9 +35,14 @@ export default function SiteFooter() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 pt-6 text-center">
-          <p className="text-xs text-gray-500">当サイトはアフィリエイトプログラムに参加しています。</p>
-          <p className="text-xs text-gray-500 mt-1">&copy; 2026 骨董品買取びより All Rights Reserved.</p>
+        <div className="border-t border-gray-700 pt-6">
+          <div className="flex flex-wrap justify-center gap-4 mb-4 text-xs text-gray-400">
+            <Link href="/terms/" className="hover:text-[#C9A96E] transition">利用規約</Link>
+            <Link href="/privacy/" className="hover:text-[#C9A96E] transition">プライバシーポリシー</Link>
+            <Link href="/content-policy/" className="hover:text-[#C9A96E] transition">記事の制作ポリシー</Link>
+          </div>
+          <p className="text-xs text-gray-500 text-center">当サイトはアフィリエイトプログラムに参加しています。</p>
+          <p className="text-xs text-gray-500 mt-1 text-center">&copy; 2026 骨董品買取びより All Rights Reserved.</p>
         </div>
       </div>
     </footer>
