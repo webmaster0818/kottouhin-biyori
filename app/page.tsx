@@ -16,25 +16,25 @@ function RankBadge({ rank }: { rank: number }) {
 }
 
 const categories = [
-  { name: "掛軸", slug: "kakejiku", icon: "🖼️" },
-  { name: "茶道具", slug: "sadougu", icon: "🍵" },
-  { name: "絵画", slug: "kaiga", icon: "🎨" },
-  { name: "刀剣", slug: "touken", icon: "⚔️" },
-  { name: "陶磁器", slug: "toujiki", icon: "🏺" },
-  { name: "古銭", slug: "kosen", icon: "🪙" },
-  { name: "切手", slug: "kitte", icon: "💌" },
-  { name: "着物", slug: "kimono", icon: "👘" },
-  { name: "中国美術", slug: "chugoku-bijutsu", icon: "🐉" },
-  { name: "仏像", slug: "butsuzou", icon: "🙏" },
+  { name: "掛軸", slug: "kakejiku", iconImg: "/images/icons/kakejiku.png" },
+  { name: "茶道具", slug: "sadougu", iconImg: "/images/icons/sadougu.png" },
+  { name: "絵画", slug: "kaiga", iconImg: "/images/icons/kaiga.png" },
+  { name: "刀剣", slug: "touken", iconImg: "/images/icons/touken.png" },
+  { name: "陶磁器", slug: "toujiki", iconImg: "/images/icons/toujiki.png" },
+  { name: "古銭", slug: "kosen", iconImg: "/images/icons/kosen.png" },
+  { name: "切手", slug: "kitte", iconImg: "/images/icons/kitte.png" },
+  { name: "着物", slug: "kimono", iconImg: "/images/icons/kimono.png" },
+  { name: "中国美術", slug: "chugoku-bijutsu", iconImg: "/images/icons/chugoku.png" },
+  { name: "仏像", slug: "butsuzou", iconImg: "/images/icons/butsuzou.png" },
 ];
 
 const learnArticles = [
-  { title: "骨董品とは？定義・歴史・分類の完全ガイド", slug: "/learn/what-is-kottouhin", icon: "📚", desc: "骨董品の基礎知識を網羅。初めての方はまずここから。" },
-  { title: "骨董品の贋作・偽物の見分け方", slug: "/learn/how-to-identify-fakes", icon: "🔍", desc: "プロの鑑定士が見ているポイントを品目別に解説。" },
-  { title: "骨董品の保管・お手入れ完全ガイド", slug: "/learn/how-to-store", icon: "🏠", desc: "大切な骨董品の価値を守る、正しい保管方法とは。" },
-  { title: "骨董品の買取相場まとめ", slug: "/guide/souba", icon: "💰", desc: "掛軸・茶道具・絵画など品目別の買取相場を解説。" },
-  { title: "骨董品を高く売る5つの方法", slug: "/guide/takaku-uru", icon: "📈", desc: "査定額を最大化するためのプロのテクニック。" },
-  { title: "遺品整理で骨董品が出てきたら", slug: "/guide/ihin-seiri", icon: "🏡", desc: "相続・遺品整理時の骨董品の正しい取り扱い方。" },
+  { title: "骨董品とは？定義・歴史・分類の完全ガイド", slug: "/learn/what-is-kottouhin", iconImg: "/images/icons/learn-book.png", desc: "骨董品の基礎知識を網羅。初めての方はまずここから。" },
+  { title: "骨董品の贋作・偽物の見分け方", slug: "/learn/how-to-identify-fakes", iconImg: "/images/icons/learn-magnify.png", desc: "プロの鑑定士が見ているポイントを品目別に解説。" },
+  { title: "骨董品の保管・お手入れ完全ガイド", slug: "/learn/how-to-store", iconImg: "/images/icons/learn-storage.png", desc: "大切な骨董品の価値を守る、正しい保管方法とは。" },
+  { title: "骨董品の買取相場まとめ", slug: "/guide/souba", iconImg: "/images/icons/learn-price.png", desc: "掛軸・茶道具・絵画など品目別の買取相場を解説。" },
+  { title: "骨董品を高く売る5つの方法", slug: "/guide/takaku-uru", iconImg: "/images/icons/learn-tips.png", desc: "査定額を最大化するためのプロのテクニック。" },
+  { title: "遺品整理で骨董品が出てきたら", slug: "/guide/ihin-seiri", iconImg: "/images/icons/learn-estate.png", desc: "相続・遺品整理時の骨董品の正しい取り扱い方。" },
 ];
 
 const howToChoose = [
@@ -64,19 +64,27 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        {/* Hero - メディアコンセプト */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
-            <div className="max-w-3xl">
+        {/* Hero - 画像付きメディアコンセプト */}
+        <section className="relative overflow-hidden">
+          <div className="absolute inset-0">
+            <img src="/images/hero/appraisal.jpg" alt="骨董品の丁寧な鑑定" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#2C1810]/90 via-[#2C1810]/75 to-[#2C1810]/40" />
+          </div>
+          <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
+            <div className="max-w-2xl">
               <p className="text-[#D4A574] text-sm tracking-widest mb-4">KOTTOUHIN BIYORI — 骨董品の知識と売却ガイド</p>
-              <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                骨董品の価値を<br />正しく知る。
+              <h1 className="font-serif-jp text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                大切な骨董品を、<br />最高の価値で。
               </h1>
-              <p className="text-lg md:text-xl text-amber-100 leading-relaxed mb-8">
-                掛軸・茶道具・絵画・刀剣の見分け方から、<br className="hidden md:inline" />
-                信頼できる買取業者の選び方まで。<br className="hidden md:inline" />
-                骨董品の知識と最適な売却先がわかるメディアです。
+              <p className="text-base md:text-lg text-amber-100/90 leading-relaxed mb-4">
+                掛軸・茶道具・絵画・刀剣――<br className="hidden md:inline" />
+                お手持ちの骨董品の価値を、専門知識で正しく見極めます。
               </p>
+              <div className="flex flex-wrap gap-4 mb-8 text-sm">
+                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">丁寧な査定</span>
+                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">高額買取</span>
+                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">無料査定</span>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#learn" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg text-center">
                   骨董品について学ぶ
@@ -129,7 +137,7 @@ export default function Home() {
                   href={article.slug}
                   className="bg-white rounded-2xl p-6 border border-[#E0D5C8] hover:shadow-lg hover:border-[#C9A96E] transition group"
                 >
-                  <span className="text-3xl block mb-3">{article.icon}</span>
+                  <img src={article.iconImg} alt="" className="w-14 h-14 rounded-xl object-cover mb-3" />
                   <h3 className="font-bold text-[#2C1810] mb-2 group-hover:text-[#8B4513] transition text-sm leading-relaxed">
                     {article.title}
                   </h3>
@@ -154,7 +162,7 @@ export default function Home() {
               {categories.map((cat) => (
                 <Link key={cat.slug} href={`/category/${cat.slug}`}
                   className="bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-5 text-center transition group">
-                  <span className="text-3xl block mb-2">{cat.icon}</span>
+                  <img src={cat.iconImg} alt={cat.name} className="w-12 h-12 mx-auto mb-2 rounded-lg object-cover" />
                   <span className="text-sm font-medium text-[#2C1810] group-hover:text-[#8B4513]">{cat.name}</span>
                 </Link>
               ))}
