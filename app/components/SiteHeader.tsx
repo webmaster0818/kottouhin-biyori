@@ -6,10 +6,6 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50">
-      {/* 景表法対応 */}
-      <div className="bg-[#F5ECD7] text-center py-1">
-        <span className="text-[10px] text-[#8B7D72]">PRを含みます</span>
-      </div>
       <div className="bg-white/90 backdrop-blur-md border-b border-[#E0D5C8]">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="font-serif-jp text-xl md:text-2xl font-bold text-[#8B4513]">骨董品買取びより</Link>
@@ -51,6 +47,12 @@ export default function SiteHeader() {
           </nav>
         </div>
       )}
+      </div>
+      {/* 景表法対応: ヘッダー下・右端 */}
+      <div className="bg-[#F5ECD7] py-1 px-4">
+        <div className="max-w-6xl mx-auto text-right">
+          <span className="text-[10px] text-[#8B7D72]">PRを含みます</span>
+        </div>
       </div>
     </header>
   );
