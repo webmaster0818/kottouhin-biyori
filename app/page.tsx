@@ -21,11 +21,14 @@ const categories = [
   { name: "絵画", slug: "kaiga", iconImg: "/images/icons/kaiga.png" },
   { name: "刀剣", slug: "touken", iconImg: "/images/icons/touken.png" },
   { name: "陶磁器", slug: "toujiki", iconImg: "/images/icons/toujiki.png" },
+  { name: "鉄瓶", slug: "tetsubin", iconImg: "/images/icons/sadougu.png" },
   { name: "古銭", slug: "kosen", iconImg: "/images/icons/kosen.png" },
   { name: "切手", slug: "kitte", iconImg: "/images/icons/kitte.png" },
   { name: "着物", slug: "kimono", iconImg: "/images/icons/kimono.png" },
   { name: "中国美術", slug: "chugoku-bijutsu", iconImg: "/images/icons/chugoku.png" },
   { name: "仏像", slug: "butsuzou", iconImg: "/images/icons/butsuzou.png" },
+  { name: "西洋陶磁器", slug: "seiyou-touki", iconImg: "/images/icons/toujiki.png" },
+  { name: "浮世絵", slug: "ukiyoe", iconImg: "/images/icons/kaiga.png" },
 ];
 
 const learnArticles = [

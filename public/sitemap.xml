@@ -311,6 +311,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/category/butsuzou/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/category/chugoku-bijutsu/</loc>
     <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
@@ -351,9 +356,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/category/seiyou-touki/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/tetsubin/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/category/touken/</loc>
     <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/ukiyoe/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/content-policy/</loc>
@@ -406,6 +426,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/guide/shucchou-kaitori/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/souba/</loc>
     <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
@@ -419,6 +444,11 @@
     <loc>https://kottokaitori-biyori.com/guide/takaku-uru/</loc>
     <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/takuhai-kaitori/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/trouble/</loc>
