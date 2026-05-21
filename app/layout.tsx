@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
+  twitter: {
+    card: "summary_large_image",
+  },
   other: {
     "Cache-Control": "no-cache, no-store, must-revalidate",
     Pragma: "no-cache",
