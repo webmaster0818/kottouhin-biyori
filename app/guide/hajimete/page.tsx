@@ -67,6 +67,11 @@ const mistakes = [
 
 export default function HajimetePage() {
   return (
+    <>
+      {/* JSONLD_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://kottokaitori-biyori.com/guide/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"初めての骨董品買取ガイド\",\"item\":\"https://kottokaitori-biyori.com/guide/hajimete/\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"初めての骨董品買取ガイド\",\"description\":\"初めての骨董品買取ガイド を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/hajimete/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
       <main className="flex-1">
@@ -201,5 +206,6 @@ export default function HajimetePage() {
       </main>
       <SiteFooter />
     </div>
+  </>
   );
 }

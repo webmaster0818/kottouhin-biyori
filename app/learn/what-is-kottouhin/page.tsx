@@ -10,6 +10,11 @@ export const metadata = {
 
 export default function WhatIsKottouhinPage() {
   return (
+    <>
+      {/* JSONLD_INJECTED_v1 #0 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"学ぶ\",\"item\":\"https://kottokaitori-biyori.com/learn/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"骨董品とは？定義・歴史・分類の完全ガイド\",\"item\":\"https://kottokaitori-biyori.com/learn/what-is-kottouhin/\"}]}" }} />
+      {/* JSONLD_INJECTED_v1 #1 */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品とは？定義・歴史・分類の完全ガイド\",\"description\":\"骨董品とは？定義・歴史・分類の完全ガイド を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/what-is-kottouhin/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
 
@@ -467,5 +472,6 @@ export default function WhatIsKottouhinPage() {
 
       <SiteFooter />
     </div>
+  </>
   );
 }
