@@ -87,8 +87,42 @@ export default async function AreaPage({ params }: Props) {
     { title: "一括査定で効率的に比較", text: "ヒカカク！を利用すれば、複数業者に同時に査定依頼が可能。手間をかけずに最高額が見つかります。" },
   ];
 
+  const SITE_URL = "https://kottokaitori-biyori.com";
+  const pageUrl = `${SITE_URL}/area/${slug}`;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": "エリア一覧", "item": `${SITE_URL}/` },
+      { "@type": "ListItem", "position": 3, "name": area.fullName, "item": pageUrl },
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${area.fullName}の骨董品買取おすすめ業者【2026年最新】`,
+    "description": `${area.fullName}で骨董品を売るならどこがおすすめ？${area.fullName}対応の買取業者を比較。`,
+    "datePublished": "2026-05-23T00:00:00+09:00",
+    "dateModified": "2026-05-23T00:00:00+09:00",
+    "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
+    "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
+  };
+  const localBusinessSchema = bestCompany ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": `${area.fullName}の骨董品買取サービス（${bestCompany.name}）`,
+    "provider": { "@type": "Organization", "name": bestCompany.name },
+    "areaServed": { "@type": "AdministrativeArea", "name": area.fullName },
+    "serviceType": "骨董品買取",
+  } : null;
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {localBusinessSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />}
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}

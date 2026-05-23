@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${artist.name}の${artist.category}買取相場・鑑定ポイント【2026年最新】| 骨董品買取びより`,
     description: `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。代表作や鑑定のポイント、高く売るコツを解説。`,
+    alternates: { canonical: `/artist/${slug}` },
   };
 }
 
@@ -27,7 +28,41 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const bestCompany = companies[0];
   const sameCategory = artists.filter((a) => a.categorySlug === artist.categorySlug && a.slug !== artist.slug).slice(0, 5);
 
+  const SITE_URL = "https://kottokaitori-biyori.com";
+  const pageUrl = `${SITE_URL}/artist/${slug}`;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": "作家一覧", "item": `${SITE_URL}/` },
+      { "@type": "ListItem", "position": 3, "name": artist.name, "item": pageUrl },
+    ],
+  };
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${artist.name}の${artist.category}買取相場・鑑定ポイント【2026年最新】`,
+    "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。代表作や鑑定のポイント、高く売るコツを解説。`,
+    "datePublished": "2026-05-23T00:00:00+09:00",
+    "dateModified": "2026-05-23T00:00:00+09:00",
+    "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
+    "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
+  };
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": artist.name,
+    "description": `${artist.era}の${artist.category}作家`,
+    "hasOccupation": { "@type": "Occupation", "name": artist.category + "作家" },
+  };
+
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
     <div className="flex flex-col min-h-screen">
       <SiteHeader />
 
@@ -167,5 +202,6 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
       <SiteFooter />
     </div>
+    </>
   );
 }
