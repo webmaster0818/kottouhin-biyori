@@ -82,6 +82,74 @@ function FaqAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
   );
 }
 
+// 品目別の保管法
+const preservationTips: Record<string, { title: string; text: string }[]> = {
+  kakejiku: [
+    { title: "桐箱で保管", text: "防虫・防湿効果のある桐箱は掛軸保管の必需品。木材の中でも特に湿気を吸放する性質があり、紙や絹を保護します。" },
+    { title: "湿度50〜60%を維持", text: "高湿度はカビ・シミの原因、低湿度は紙のひび割れを招きます。除湿剤を桐箱に入れ、季節ごとにチェックを。" },
+    { title: "年に1〜2回の風通し", text: "梅雨明けと秋晴れの日に短時間広げ、湿気を逃します。直射日光は厳禁、陰干しで行ってください。" },
+    { title: "巻く時は外巻き", text: "絵の面を内側にせず外側に向けて緩く巻きます。きつく巻くと折れや擦れの原因に。" },
+  ],
+  sadougu: [
+    { title: "共箱で保管", text: "作家サイン入りの共箱は真贋証明と保護を兼ねる必需品。失くさずに大切に保管してください。" },
+    { title: "茶碗は布で包む", text: "和紙か綿の布で包んでから箱へ。茶杓は専用の竹筒に。" },
+    { title: "釜は乾拭きで乾燥", text: "使用後は完全に水気を取り、椿油を薄く塗ると錆び防止になります。長期間使わない場合は新聞紙で包む。" },
+    { title: "湿気・直射日光を避ける", text: "茶室のような直射日光の入らない通気性のある場所が理想。床下や物入れの奥は湿気で傷みます。" },
+  ],
+  toujiki: [
+    { title: "個別に包んで保管", text: "和紙や薄葉紙で1点ずつ包み、重ねず横並びに。皿類は紙を間に挟んで重ねてもOK。" },
+    { title: "高所・不安定な場所を避ける", text: "地震対策として低い場所に。耐震粘着シートで固定すると安全です。" },
+    { title: "温度変化が少ない場所", text: "急激な温度変化はヒビ割れ(貫入)の原因。暖房器具の近くや窓辺は避けます。" },
+    { title: "湿気は基本的に問題なし", text: "陶磁器は湿気に強いですが、共箱が湿気でカビたり傷むため箱は乾燥剤入りで保管。" },
+  ],
+  kaiga: [
+    { title: "額装したまま保管", text: "額に入れたまま保管するのが基本。額のガラスや木枠が絵を保護します。" },
+    { title: "直射日光は厳禁", text: "紫外線で絵具が退色します。北向きの部屋や日陰に飾るか、UVカットガラスを使用。" },
+    { title: "湿度60%程度を維持", text: "油彩は急激な湿度変化でヒビ割れ、日本画は湿気でシミ。除湿剤の活用を。" },
+    { title: "防虫対策", text: "額の裏や紙絵には防虫剤を。シミ・虫食いは大幅な減額要因です。" },
+  ],
+  touken: [
+    { title: "鞘から出して刀身を確認", text: "月1回程度、鞘から出して打粉を打ち、油を引き直します。錆びると価値が下がります。" },
+    { title: "油を切らさない", text: "丁子油や椿油を薄く塗布。古い油は乾いて錆を呼ぶため定期交換を。" },
+    { title: "湿気を避ける", text: "刀箪笥での保管が理想。除湿剤を入れ、梅雨時期は特に注意。" },
+    { title: "登録証は必須携帯", text: "刀剣類は登録証なしで所持・売買は違法。証書を必ず一緒に保管してください。" },
+  ],
+};
+
+// 品目別の偽物見分け方
+const fakeIdentificationTips: Record<string, { title: string; text: string }[]> = {
+  kakejiku: [
+    { title: "落款・印章をチェック", text: "作家の落款(サイン)・印章を実印鑑と比較。中国製偽物は印影が不鮮明なケース多し。" },
+    { title: "紙質と表装の時代感", text: "本紙の紙質や表装の裂が時代に合うかを確認。古紙の風合いは偽造困難。" },
+    { title: "墨色・絵具の経年変化", text: "本物は墨色や絵具に自然な経年劣化がある。新品同様に綺麗すぎる場合は要注意。" },
+    { title: "鑑定書・共箱の整合性", text: "鑑定書の発行機関、共箱の作家サインが本物の作家手蹟と一致するか確認。" },
+  ],
+  sadougu: [
+    { title: "高台や蓋裏の銘", text: "作家銘・印が高台脇や箱蓋裏に入っているか。歴代によって印影の特徴がある。" },
+    { title: "釉薬の発色と質感", text: "楽茶碗・志野焼など各窯の固有の特徴を理解。教科書通りすぎる発色は再現品の可能性。" },
+    { title: "共箱の杉箱・桐箱", text: "桐箱だから本物とは限らない。箱書の墨色・筆跡が作家の他作品と一致するか比較。" },
+    { title: "セットの統一感", text: "茶入と仕覆、釜と風炉などセット品は時代・作家の整合性を確認。" },
+  ],
+  toujiki: [
+    { title: "高台内の銘", text: "作家・窯元の銘が高台内に。新作偽物は印章が鮮明すぎる、または書体が不自然。" },
+    { title: "釉薬の貫入と窯変", text: "本物の貫入(ヒビ)は自然な経年で入る。化学的に作った貫入は均一すぎる。" },
+    { title: "土の重み・手触り", text: "古い陶磁器は土の比重や手触りに独特の重みあり。軽すぎる場合は新作の可能性。" },
+    { title: "高台の削り痕", text: "ろくろ目や削り痕は時代・作家の癖が出る。中国製偽物は削り痕が機械的。" },
+  ],
+  kaiga: [
+    { title: "サインの筆跡比較", text: "作家の図録や美術館サイトで筆跡を比較。微妙な書き癖は偽造が難しい。" },
+    { title: "絵具の盛り上がり", text: "油彩の絵具の盛り上がりや筆致を確認。版画と原画は触感が違う。" },
+    { title: "画布・額の経年", text: "古い作品の画布や額には自然な汚れ・劣化が。新品同様は要注意。" },
+    { title: "鑑定証書の確認", text: "東京美術倶楽部・東美鑑定評価機構などの公的鑑定証があれば本物の証明。" },
+  ],
+  touken: [
+    { title: "登録証の確認", text: "都道府県教育委員会発行の登録証が必須。番号・名称・寸法を実物と照合。" },
+    { title: "茎(なかご)の銘", text: "茎の銘・年紀・住所が時代と整合するか。鏨切りの深さ・力強さも判断材料。" },
+    { title: "刃文と地鉄", text: "本物の刃文は自然な乱れ・働きがある。電気焼入の偽物は刃文が硬く均一。" },
+    { title: "拵えと刀身の整合", text: "鞘・柄・鍔のセットが時代に合うか。後付の拵えの場合あり。" },
+  ],
+};
+
 export default function CategoryPageClient({ slug }: { slug: string }) {
   const cat = categories.find((c) => c.slug === slug) as CategoryData | undefined;
   if (!cat) return <div>カテゴリが見つかりません</div>;
@@ -92,6 +160,8 @@ export default function CategoryPageClient({ slug }: { slug: string }) {
     { q: `${cat.name}を高く売るコツは？`, a: "付属品（箱・鑑定書・証紙など）を揃え、複数の業者に査定を依頼することが高額売却のポイントです。自分でクリーニングせず、そのまま査定に出しましょう。" },
     { q: `${cat.name}の査定は無料ですか？`, a: "当サイトでご紹介している3社はいずれも査定無料です。出張買取の場合も出張費・査定費はかかりません。査定後のキャンセルも無料です。" },
   ];
+  const preservation = preservationTips[slug];
+  const fakeId = fakeIdentificationTips[slug];
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -362,6 +432,61 @@ export default function CategoryPageClient({ slug }: { slug: string }) {
             </div>
           </div>
         </section>
+
+        {/* 保管法 (該当カテゴリのみ) */}
+        {preservation && (
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-10">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PRESERVATION</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {cat.name}の保管・お手入れ方法
+                </h2>
+                <p className="text-[#5C4A3A] mt-3 text-sm">価値を保ち高額買取につなげる正しい保管法</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                {preservation.map((tip, idx) => (
+                  <div key={idx} className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5">
+                    <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
+                      <span className="bg-[#8B4513] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
+                      <span className="flex-1">{tip.title}</span>
+                    </h3>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{tip.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* 偽物の見分け方 (該当カテゴリのみ) */}
+        {fakeId && (
+          <section className="py-12 md:py-16 bg-[#FAF7F2]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-10">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUTHENTICATION</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {cat.name}の偽物・贋作の見分け方
+                </h2>
+                <p className="text-[#5C4A3A] mt-3 text-sm">専門家が見るチェックポイント</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                {fakeId.map((tip, idx) => (
+                  <div key={idx} className="bg-white border border-[#E0D5C8] rounded-xl p-5">
+                    <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
+                      <span className="bg-[#C49A6C] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
+                      <span className="flex-1">{tip.title}</span>
+                    </h3>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{tip.text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-[#8B7D72] text-center mt-6 max-w-2xl mx-auto">
+                ※ 見分けに不安がある場合は、必ず専門の鑑定士のいる業者に査定を依頼してください。古美術八光堂・日晃堂・緑和堂などが鑑定実績豊富です。
+              </p>
+            </div>
+          </section>
+        )}
 
         {/* FAQ */}
         <section className="py-12 md:py-16">
