@@ -468,6 +468,39 @@ export default function WhatIsKottouhinPage() {
             <p className="text-xs text-amber-200/70">すべて査定無料・キャンセル料なし</p>
           </div>
         </section>
+
+        {/* 公的情報源・参考文献 */}
+        <section className="py-12 bg-[#FAF7F2] border-t border-[#E0D5C8]">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6 text-center">
+              公的情報源・参考文献
+            </h2>
+            <p className="text-sm text-[#5C4A3A] mb-6 leading-relaxed text-center">
+              本記事は以下の公的機関・専門資料を参照して作成しています。
+            </p>
+            <div className="grid md:grid-cols-2 gap-3 text-sm">
+              <a href="https://www.bunka.go.jp/seisaku/bunkazai/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">文化庁 文化財部</p>
+                <p className="text-xs text-[#8B7D72]">文化財保護法・指定文化財制度の公式情報</p>
+              </a>
+              <a href="https://www.tnm.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">東京国立博物館</p>
+                <p className="text-xs text-[#8B7D72]">日本美術・東洋美術の総合的研究機関</p>
+              </a>
+              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">東京美術倶楽部</p>
+                <p className="text-xs text-[#8B7D72]">美術業界の中核団体・鑑定評価機構</p>
+              </a>
+              <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">日本美術刀剣保存協会</p>
+                <p className="text-xs text-[#8B7D72]">刀剣の鑑定書発行機関</p>
+              </a>
+            </div>
+            <p className="text-xs text-[#8B7D72] mt-6 text-center">
+              各機関の公式サイトへのリンクです。最新情報は各機関の公式情報をご確認ください。
+            </p>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />

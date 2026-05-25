@@ -527,6 +527,40 @@ export default function HowToStorePage() {
             <p className="text-xs text-amber-200/70">すべて査定無料・キャンセル料なし</p>
           </div>
         </section>
+
+        {/* 品目別保管のクイック早見表 */}
+        <section className="py-12 bg-[#FAF7F2] border-t border-[#E0D5C8]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6 text-center">
+              品目別 保管環境の早見表
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                <thead className="bg-[#8B4513] text-white">
+                  <tr>
+                    <th className="px-3 py-3 text-left">品目</th>
+                    <th className="px-3 py-3 text-left">理想湿度</th>
+                    <th className="px-3 py-3 text-left">温度</th>
+                    <th className="px-3 py-3 text-left">主な保管法</th>
+                    <th className="px-3 py-3 text-left">注意点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">掛軸</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">桐箱・除湿剤</td><td className="px-3 py-3 text-[#5C4A3A]">年1〜2回陰干し、外巻きで巻く</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶道具(陶磁器)</td><td className="px-3 py-3">40〜60%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">共箱・薄葉紙</td><td className="px-3 py-3 text-[#5C4A3A]">急激な温度変化禁止、共箱必須</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶釜・鉄瓶</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">乾拭き・椿油塗布</td><td className="px-3 py-3 text-[#5C4A3A]">錆び厳禁、定期的に椿油を薄く塗布</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">絵画</td><td className="px-3 py-3">55〜65%</td><td className="px-3 py-3">18〜22℃</td><td className="px-3 py-3">額装・防虫剤</td><td className="px-3 py-3 text-[#5C4A3A]">紫外線厳禁、UVカットガラス推奨</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">刀剣</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜20℃</td><td className="px-3 py-3">刀箪笥・打粉と油</td><td className="px-3 py-3 text-[#5C4A3A]">月1回手入れ、登録証保管必須</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">古銭・切手</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">アルバム・ストックブック</td><td className="px-3 py-3 text-[#5C4A3A]">指紋禁止、コインに直接触れない</td></tr>
+                  <tr><td className="px-3 py-3 font-bold">着物</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜25℃</td><td className="px-3 py-3">桐箪笥・たとう紙</td><td className="px-3 py-3 text-[#5C4A3A]">虫干しは年2回、防虫剤併用</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#8B7D72] mt-4 text-center">
+              ※ 上記は一般的な目安です。希少品・高額品は専門家にご相談ください。
+            </p>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
