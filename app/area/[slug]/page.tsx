@@ -75,6 +75,97 @@ const sellingTips: Record<string, { title: string; text: string }[]> = {
   ],
 };
 
+// 地域別 骨董市・催事情報
+const localMarkets: Record<string, { name: string; place: string; schedule: string; note: string }[]> = {
+  tokyo: [
+    { name: "大江戸骨董市", place: "東京国際フォーラム前広場", schedule: "毎月第1・第3日曜", note: "国内最大級の青空骨董市。約250店舗が出店" },
+    { name: "平和島全国古民具骨董まつり", place: "東京流通センター", schedule: "年5回(3/5/6/9/12月)", note: "300店舗以上が集結する国内最大規模の屋内骨董市" },
+    { name: "新井薬師骨董市", place: "中野区 新井薬師", schedule: "毎月第1日曜", note: "地元密着型の骨董市。下町風情あり" },
+    { name: "東京美術倶楽部 美術品オークション", place: "東京美術倶楽部", schedule: "年複数回", note: "美術業界の中核オークション。相場形成の場" },
+  ],
+  osaka: [
+    { name: "四天王寺骨董市", place: "四天王寺", schedule: "毎月21・22日", note: "関西最大級の骨董市。約300店舗、戦前から続く伝統" },
+    { name: "天神さんの蚤の市", place: "大阪天満宮", schedule: "毎月25日", note: "学問の神様の月次縁日と合わせて開催" },
+    { name: "大阪美術倶楽部", place: "大阪美術倶楽部", schedule: "随時オークション", note: "関西の美術商組合。プロ向け取引が中心" },
+  ],
+  nagoya: [
+    { name: "大須骨董市", place: "大須観音", schedule: "毎月18・28日", note: "大須観音縁日に合わせた骨董市。瀬戸焼などが豊富" },
+    { name: "覚王山骨董市", place: "覚王山日泰寺参道", schedule: "毎月21日", note: "弘法大師の月命日に開催される風情ある骨董市" },
+  ],
+  kyoto: [
+    { name: "弘法市", place: "東寺(教王護国寺)", schedule: "毎月21日", note: "全国的に有名。約1000店舗が出店する京都最大の骨董市" },
+    { name: "天神市", place: "北野天満宮", schedule: "毎月25日", note: "弘法市と並ぶ京都の二大骨董市。書画・古道具が豊富" },
+    { name: "祇園骨董街", place: "祇園・新門前通", schedule: "常設店舗", note: "京都の老舗骨董店が集積。茶道具・古美術の宝庫" },
+  ],
+  yokohama: [
+    { name: "横浜骨董ワールド", place: "パシフィコ横浜", schedule: "年2回(春・秋)", note: "西洋アンティーク中心の屋内骨董市" },
+    { name: "本牧骨董市", place: "本牧公園", schedule: "随時", note: "港町横浜の歴史を感じる西洋骨董が多い" },
+  ],
+  fukuoka: [
+    { name: "太宰府骨董市", place: "太宰府天満宮", schedule: "毎月25日", note: "九州の中心的骨董市。九州陶磁器・有田焼が中心" },
+    { name: "博多大丸催事", place: "博多大丸", schedule: "年複数回", note: "百貨店催事として骨董市が開催される" },
+  ],
+  kobe: [
+    { name: "湊川神社骨董市", place: "湊川神社", schedule: "毎月第3日曜", note: "神戸を代表する骨董市" },
+    { name: "明石公園アンティークマーケット", place: "明石公園", schedule: "年複数回", note: "西洋アンティーク中心" },
+  ],
+  sapporo: [
+    { name: "創成川公園アンティークマーケット", place: "創成川公園", schedule: "5〜10月の月1回", note: "北海道最大級。アイヌ工芸品や開拓期の古道具も" },
+  ],
+  sendai: [
+    { name: "仙台朝市", place: "仙台朝市", schedule: "毎週土曜", note: "市内中心部の活気ある朝市。骨董出店も" },
+  ],
+  hiroshima: [
+    { name: "縮景園骨董市", place: "縮景園", schedule: "年2回", note: "広島藩主の庭園で開催される風情ある骨董市" },
+  ],
+};
+
+// 地域別 人気品目
+const localPopularItems: Record<string, { item: string; reason: string }[]> = {
+  tokyo: [
+    { item: "近代日本画(横山大観・川合玉堂・東山魁夷など)", reason: "東京美術倶楽部を中心とする美術市場が活発" },
+    { item: "茶道具", reason: "茶道人口が多く需要が高い" },
+    { item: "西洋アンティーク", reason: "国際都市として供給量が豊富" },
+  ],
+  osaka: [
+    { item: "茶道具", reason: "茶道文化が根強く、千家三千家との関わりも深い" },
+    { item: "懐石道具・漆器", reason: "食文化の街として食器類の需要高" },
+    { item: "中国美術", reason: "戦前からの中国人脈で良品の集積地" },
+  ],
+  nagoya: [
+    { item: "瀬戸焼・常滑焼", reason: "六古窯の産地として地元需要が安定" },
+    { item: "茶道具", reason: "尾張徳川家の茶道文化が現代まで継承" },
+  ],
+  kyoto: [
+    { item: "茶道具・京焼・清水焼", reason: "茶道発祥地として最高峰の鑑定眼" },
+    { item: "仏教美術", reason: "千年の都として仏画・仏像の流通が豊富" },
+    { item: "掛軸・書", reason: "公家文化由来の書画コレクションが多い" },
+  ],
+  yokohama: [
+    { item: "西洋アンティーク", reason: "開港地として明治期から西洋文物の流入" },
+    { item: "中国美術", reason: "中華街周辺のコレクター需要" },
+  ],
+  fukuoka: [
+    { item: "有田焼・伊万里焼", reason: "産地に近く専門業者が多い" },
+    { item: "唐津焼", reason: "茶陶として高い人気" },
+  ],
+  kobe: [
+    { item: "西洋アンティーク・銀器", reason: "旧居留地由来の西洋文化" },
+  ],
+  sapporo: [
+    { item: "アイヌ工芸品", reason: "北海道独自の文化として需要" },
+    { item: "開拓期の古道具", reason: "明治期の北海道開拓資料は希少" },
+  ],
+  sendai: [
+    { item: "伝統こけし", reason: "鳴子・遠刈田など伝統こけし産地" },
+    { item: "堤焼・切込焼", reason: "宮城の伝統陶器" },
+  ],
+  hiroshima: [
+    { item: "備前焼", reason: "六古窯・備前の産地近接" },
+    { item: "宮島の伝統工芸", reason: "厳島神社関連の伝統美術" },
+  ],
+};
+
 export default async function AreaPage({ params }: Props) {
   const { slug } = await params;
   const area = areas.find((a) => a.slug === slug);
@@ -86,6 +177,8 @@ export default async function AreaPage({ params }: Props) {
     { title: "出張買取を活用する", text: "大型の骨董品は持ち運びが困難です。出張買取なら自宅で査定が完結するため安心です。" },
     { title: "一括査定で効率的に比較", text: "ヒカカク！を利用すれば、複数業者に同時に査定依頼が可能。手間をかけずに最高額が見つかります。" },
   ];
+  const markets = localMarkets[slug] || [];
+  const popularItems = localPopularItems[slug] || [];
 
   const SITE_URL = "https://kottokaitori-biyori.com";
   const pageUrl = `${SITE_URL}/area/${slug}`;
@@ -235,6 +328,60 @@ export default async function AreaPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* 地域の骨董市・催事 */}
+        {markets.length > 0 && (
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-10">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">LOCAL MARKETS</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {area.fullName}の骨董市・催事カレンダー
+                </h2>
+                <p className="text-[#5C4A3A] mt-3 text-sm">相場感を掴むために訪れたい代表的な骨董市</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                {markets.map((m, idx) => (
+                  <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                    <h3 className="font-bold text-[#8B4513] mb-2 text-lg">{m.name}</h3>
+                    <p className="text-xs text-[#8B7D72] mb-1">📍 {m.place}</p>
+                    <p className="text-xs text-[#8B7D72] mb-3">📅 {m.schedule}</p>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{m.note}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-[#8B7D72] text-center mt-6">
+                ※ 開催日・場所は変更される場合があります。事前に主催者公式情報をご確認ください。
+              </p>
+            </div>
+          </section>
+        )}
+
+        {/* 地域人気品目 */}
+        {popularItems.length > 0 && (
+          <section className="py-12 md:py-16 bg-[#FAF7F2]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-10">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">POPULAR ITEMS</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {area.fullName}で需要が高い骨董品
+                </h2>
+                <p className="text-[#5C4A3A] mt-3 text-sm">地域特性により高額査定が期待できる品目</p>
+              </div>
+              <div className="space-y-3">
+                {popularItems.map((p, idx) => (
+                  <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
+                    <span className="bg-[#8B4513] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">{idx + 1}</span>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-[#2C1810] mb-1">{p.item}</h3>
+                      <p className="text-xs text-[#5C4A3A] leading-relaxed">{p.reason}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
