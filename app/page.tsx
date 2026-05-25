@@ -260,12 +260,10 @@ export default function Home() {
                         className="flex-1 bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition">
                         {company.name}の公式サイトへ
                       </a>
-                      {["hikakaku", "tifana", "uriel"].includes(company.id) && (
-                        <Link href={`/review/${company.slug}`}
-                          className="bg-white border-2 border-[#8B4513] text-[#8B4513] text-center py-4 px-6 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
-                          詳細
-                        </Link>
-                      )}
+                      <Link href={`/review/${company.slug}`}
+                        className="bg-white border-2 border-[#8B4513] text-[#8B4513] text-center py-4 px-6 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
+                        詳細
+                      </Link>
                     </div>
                   </div>
                 </article>
