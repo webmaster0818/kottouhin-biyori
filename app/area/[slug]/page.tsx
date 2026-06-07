@@ -118,6 +118,21 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
   hiroshima: [
     { name: "縮景園骨董市", place: "縮景園", schedule: "年2回", note: "広島藩主の庭園で開催される風情ある骨董市" },
   ],
+  utsunomiya: [
+    { name: "益子陶器市", place: "栃木県益子町 城内坂周辺", schedule: "春(GW)・秋(11月)", note: "全国有数の陶器市。益子焼を中心に多数の窯元・露店が並ぶ" },
+  ],
+  mito: [
+    { name: "笠間の陶炎祭(ひまつり)", place: "茨城県笠間市 笠間芸術の森公園", schedule: "毎年GW(4月末〜5月初旬)", note: "笠間焼の作家・窯元が集う大規模な陶器イベント" },
+  ],
+  otsu: [
+    { name: "信楽陶器まつり", place: "滋賀県甲賀市信楽町", schedule: "毎年10月(体育の日前後)", note: "信楽焼の産地で開かれる陶器市。掘り出し物も多い" },
+  ],
+  okayama: [
+    { name: "備前焼まつり", place: "岡山県備前市伊部 周辺", schedule: "毎年10月第3土・日", note: "備前焼の産地で開催される大規模な陶器まつり" },
+  ],
+  naha: [
+    { name: "壺屋やちむん通り", place: "沖縄県那覇市壺屋", schedule: "常設(通年)", note: "壺屋焼の工房・店舗が集まる通り。やちむん市等の催事も開催" },
+  ],
 };
 
 // 地域別 人気品目
@@ -163,6 +178,86 @@ const localPopularItems: Record<string, { item: string; reason: string }[]> = {
   hiroshima: [
     { item: "備前焼", reason: "六古窯・備前の産地近接" },
     { item: "宮島の伝統工芸", reason: "厳島神社関連の伝統美術" },
+  ],
+  saitama: [
+    { item: "岩槻の人形", reason: "人形のまち岩槻の伝統工芸として需要" },
+    { item: "春日部桐箪笥", reason: "経済産業大臣指定の伝統的工芸品" },
+  ],
+  chiba: [
+    { item: "茶道具・古美術", reason: "房総の旧家から良品が出ることがある" },
+    { item: "西洋アンティーク", reason: "湾岸エリアでコレクター需要がある" },
+  ],
+  utsunomiya: [
+    { item: "益子焼", reason: "産地・益子町を抱え専門業者が多い" },
+    { item: "茶道具", reason: "北関東で茶陶の需要が安定" },
+  ],
+  maebashi: [
+    { item: "高崎だるま・郷土玩具", reason: "縁起物文化が根付く土地柄" },
+    { item: "養蚕関連の古道具", reason: "製糸で栄えた歴史的背景" },
+  ],
+  mito: [
+    { item: "笠間焼", reason: "産地・笠間市に近く需要が高い" },
+    { item: "水戸徳川家ゆかりの古美術", reason: "城下町としての文化的蓄積" },
+  ],
+  shizuoka: [
+    { item: "駿河竹千筋細工・駿河漆器", reason: "地域の伝統工芸として評価される" },
+    { item: "茶道具", reason: "茶どころとして茶器の需要がある" },
+  ],
+  hamamatsu: [
+    { item: "茶道具・古美術", reason: "遠州地方の旧家から出ることがある" },
+    { item: "古楽器・蓄音機", reason: "楽器のまちとして関連品の需要" },
+  ],
+  kanazawa: [
+    { item: "九谷焼", reason: "加賀の名陶として全国的に高い人気" },
+    { item: "金沢漆器・加賀象嵌", reason: "加賀百万石の伝統工芸として需要" },
+  ],
+  niigata: [
+    { item: "村上木彫堆朱", reason: "新潟を代表する伝統的工芸品" },
+    { item: "燕鎚起銅器", reason: "燕三条の金工として評価が高い" },
+  ],
+  nagano: [
+    { item: "木曽漆器", reason: "奈良井宿で知られる漆器の産地" },
+    { item: "仏教美術", reason: "善光寺門前町として仏画・仏具の流通" },
+  ],
+  nara: [
+    { item: "仏教美術・仏像", reason: "古都として寺社ゆかりの古美術が豊富" },
+    { item: "赤膚焼・奈良漆器", reason: "奈良の伝統工芸として需要" },
+  ],
+  wakayama: [
+    { item: "紀州漆器(黒江塗)", reason: "全国有数の漆器産地として評価" },
+    { item: "紀州箪笥", reason: "和歌山を代表する伝統的工芸品" },
+  ],
+  otsu: [
+    { item: "信楽焼", reason: "六古窯のひとつで全国的な需要" },
+    { item: "近江の古美術", reason: "近江商人ゆかりの旧家からの供給" },
+  ],
+  okayama: [
+    { item: "備前焼", reason: "六古窯・備前の産地として専門性が高い" },
+    { item: "茶道具", reason: "備前茶陶を含め需要が安定" },
+  ],
+  matsuyama: [
+    { item: "砥部焼", reason: "愛媛を代表する磁器として人気" },
+    { item: "桜井漆器", reason: "今治・桜井の伝統漆器として評価" },
+  ],
+  takamatsu: [
+    { item: "香川漆器(讃岐漆器)", reason: "蒟醤・存清など独自技法で高評価" },
+    { item: "高松藩ゆかりの古美術", reason: "城下町としての文化的蓄積" },
+  ],
+  kitakyushu: [
+    { item: "上野焼・小石原焼", reason: "近隣の九州陶磁器として需要" },
+    { item: "小倉織", reason: "北九州の伝統織物として評価" },
+  ],
+  kumamoto: [
+    { item: "肥後象嵌", reason: "熊本を代表する金工の伝統工芸" },
+    { item: "小代焼・天草陶磁器", reason: "肥後の陶磁器として需要" },
+  ],
+  kagoshima: [
+    { item: "薩摩焼", reason: "白薩摩・黒薩摩として全国的に高い人気" },
+    { item: "薩摩切子", reason: "幕末由来のガラス工芸として高評価" },
+  ],
+  naha: [
+    { item: "壺屋焼(やちむん)", reason: "琉球を代表する陶器として需要" },
+    { item: "琉球漆器・琉球ガラス・紅型", reason: "琉球独自の工芸として評価が高い" },
   ],
 };
 
