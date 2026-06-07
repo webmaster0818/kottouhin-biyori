@@ -20,6 +20,7 @@ type Compare = {
   bRecommend: string[];
   summary: string;
   faq: { q: string; a: string }[];
+  analysis?: string[];
 };
 
 const SITE = "https://kottokaitori-biyori.com";
@@ -96,8 +97,11 @@ export default async function ComparePage({ params }: Props) {
           </section>
 
           <section className="py-10 md:py-14">
-            <div className="max-w-4xl mx-auto px-4">
+            <div className="max-w-4xl mx-auto px-4 space-y-4">
               <p className="text-[#5C4A3A] leading-relaxed">{c.intro}</p>
+              {c.analysis?.map((para, i) => (
+                <p key={i} className="text-[#5C4A3A] leading-relaxed">{para}</p>
+              ))}
             </div>
           </section>
 
