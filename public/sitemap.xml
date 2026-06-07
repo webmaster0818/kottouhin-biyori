@@ -703,6 +703,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/guide/ikkatsu-satei/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/kachi-no-kimarikata/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/kantei-muryou/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -710,6 +722,12 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/kifu/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/kobijutsu-tono-chigai/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -727,13 +745,55 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/guide/line-satei/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/mochikomi-satei/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/ningen-kokuhou/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/guide/satei-hiyou/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/satei-kijun/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/shashin-satei/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/shijou-kachi/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/shucchou-kaitori/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/sokujitsu-satei/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
