@@ -29,6 +29,7 @@ export interface GuideArticleProps {
   ctaText: string; // サマリ内CTAの文言
   ctaUrl: string; // CTAリンク先(公式 or /#ranking)
   faq?: GuideFaq[];
+  deepDive?: { h: string; body: string }[]; // 追加の詳しい解説セクション
 }
 
 export default function GuideArticle(p: GuideArticleProps) {
@@ -118,7 +119,22 @@ export default function GuideArticle(p: GuideArticleProps) {
             </div>
           </section>
 
-          <section className="py-12 md:py-16 bg-white">
+          {p.deepDive && p.deepDive.length > 0 && (
+            <section className="py-12 md:py-16 bg-white">
+              <div className="max-w-4xl mx-auto px-4 space-y-8">
+                {p.deepDive.map((s, i) => (
+                  <div key={i}>
+                    <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-[#8B4513] pl-3">
+                      {s.h}
+                    </h2>
+                    <p className="text-[#5C4A3A] leading-relaxed">{s.body}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className={`py-12 md:py-16 ${p.deepDive && p.deepDive.length > 0 ? "" : "bg-white"}`}>
             <div className="max-w-4xl mx-auto px-4">
               <div className="text-center mb-10">
                 <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUMMARY</p>
