@@ -165,6 +165,36 @@ export default function GuideArticle(p: GuideArticleProps) {
             </section>
           )}
 
+          <section className="py-12 md:py-16">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-8">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RELATED</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">関連する買取ガイド</h2>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { href: "/guide/satei-kijun", label: "骨董品の査定基準とは" },
+                  { href: "/guide/takaku-uru", label: "骨董品を高く売る方法" },
+                  { href: "/guide/ikkatsu-satei", label: "一括査定の活用法" },
+                  { href: "/guide/souba", label: "骨董品の買取相場" },
+                  { href: "/guide/shucchou-kaitori", label: "出張買取の流れ" },
+                  { href: "/guide/satei-hiyou", label: "査定費用は無料？" },
+                ]
+                  .filter((g) => g.href !== `/guide/${p.slug}`)
+                  .slice(0, 4)
+                  .map((g) => (
+                    <Link
+                      key={g.href}
+                      href={g.href}
+                      className="bg-white hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]"
+                    >
+                      {g.label} →
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          </section>
+
           <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">骨董品の最高額を知りたいなら</h2>
