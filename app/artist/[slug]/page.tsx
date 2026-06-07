@@ -156,6 +156,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             </h2>
             <div className="space-y-3 text-[#5C4A3A] leading-relaxed">
               <p>{artist.description}</p>
+              {artist.bio && <p>{artist.bio}</p>}
               <div className="grid md:grid-cols-2 gap-4 mt-4">
                 <div className="bg-[#FAF7F2] rounded-xl p-4">
                   <p className="text-xs text-[#8B7D72] mb-1">活動時期</p>
@@ -205,6 +206,17 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               ))}
             </div>
           </section>
+
+          {/* 作風と買取市場での評価 */}
+          {artist.marketNote && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}の買取市場での評価・相場の背景
+              </h2>
+              <p className="text-[#5C4A3A] leading-relaxed">{artist.marketNote}</p>
+            </section>
+          )}
 
           {/* 高く売るコツ */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
