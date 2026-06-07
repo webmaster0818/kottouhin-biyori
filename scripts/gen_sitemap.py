@@ -64,7 +64,12 @@ def main():
         urls.append(entry(f"/guide/{s}/", "0.7", "monthly"))
     for s in dyn_slugs("learn"):
         urls.append(entry(f"/learn/{s}/", "0.7", "monthly"))
-    for s in dyn_slugs("compare"):
+    # 業者比較(compares.json + 静的フォルダ)
+    compare_path = ROOT / "data" / "compares.json"
+    compare_slugs = set(dyn_slugs("compare"))
+    if compare_path.exists():
+        compare_slugs |= {c["slug"] for c in json.load(open(compare_path, encoding="utf-8"))}
+    for s in sorted(compare_slugs):
         urls.append(entry(f"/compare/{s}/", "0.7", "monthly"))
 
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
