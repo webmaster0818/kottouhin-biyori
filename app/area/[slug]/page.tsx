@@ -306,11 +306,30 @@ export default async function AreaPage({ params }: Props) {
     "serviceType": "骨董品買取",
   } : null;
 
+  // 買取方法の比較(共通)
+  const methodRows = [
+    { m: "出張買取", merit: "自宅で完結。大型品・大量でも安心", who: "量が多い・大型・割れ物がある方" },
+    { m: "宅配買取", merit: "梱包して送るだけ。全国どこでも利用可", who: "近くに業者がない・小型品の方" },
+    { m: "店頭買取", merit: "持ち込んでその場で現金化", who: "小型品をすぐ現金化したい方" },
+  ];
+  // エリアFAQ(地域名から生成)
+  const areaFaqs = [
+    { q: `${area.fullName}で骨董品を売るならどこがおすすめ？`, a: `${area.fullName}対応の買取業者に複数査定を依頼し、最も高い業者に売るのが基本です。${bestCompany ? `当サイトでは${bestCompany.name}を含む実績ある業者を比較しています。` : ""}出張・宅配・店頭から都合に合う方法を選びましょう。` },
+    { q: `${area.fullName}は出張買取に対応していますか？`, a: `はい。多くの買取業者が${area.fullName}を出張買取の対応エリアとしています。出張費は無料の業者が大半ですが、申込時に確認すると安心です。` },
+    { q: `${area.fullName}で査定だけ受けることはできますか？`, a: `できます。査定は無料の業者がほとんどで、金額に納得できなければ売却しなくても問題ありません。複数社を比較して最高額を見つけましょう。` },
+  ];
+  const areaFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": areaFaqs.map((f) => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {localBusinessSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(areaFaqSchema) }} />
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
@@ -322,6 +341,19 @@ export default async function AreaPage({ params }: Props) {
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
               {area.fullName}対応のおすすめ買取業者を比較・紹介
+            </p>
+          </div>
+        </section>
+
+        {/* Intro */}
+        <section className="py-10 md:py-14">
+          <div className="max-w-4xl mx-auto px-4">
+            <p className="text-[#5C4A3A] leading-relaxed">
+              {area.fullName}で骨董品・古美術品の売却をお考えの方へ。掛軸・茶道具・陶磁器・絵画・刀剣など、
+              ご自宅に眠る品の価値は、依頼する業者によって査定額が大きく変わります。
+              このページでは、{area.fullName}対応のおすすめ買取業者の比較、地域で需要の高い品目、
+              高く売るためのコツ、出張・宅配・店頭それぞれの買取方法、よくある質問まで詳しく解説します。
+              まずは複数業者の無料査定を比較して、あなたの骨董品の最高額を見つけましょう。
             </p>
           </div>
         </section>
@@ -477,6 +509,58 @@ export default async function AreaPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* 買取方法の比較 */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-8">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">METHOD</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                {area.name}での骨董品の売り方・買取方法
+              </h2>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                <thead>
+                  <tr className="bg-[#F5ECD7] text-[#2C1810]">
+                    <th className="px-3 py-3 text-left border border-[#E0D5C8]">買取方法</th>
+                    <th className="px-3 py-3 text-left border border-[#E0D5C8]">メリット</th>
+                    <th className="px-3 py-3 text-left border border-[#E0D5C8]">向いている人</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {methodRows.map((r, i) => (
+                    <tr key={i} className="border-t border-[#E0D5C8]">
+                      <td className="px-3 py-3 font-bold text-[#8B4513] border border-[#E0D5C8]">{r.m}</td>
+                      <td className="px-3 py-3 text-[#5C4A3A] border border-[#E0D5C8]">{r.merit}</td>
+                      <td className="px-3 py-3 text-[#5C4A3A] border border-[#E0D5C8]">{r.who}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-12 md:py-16">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-8">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                {area.fullName}の骨董品買取 よくある質問
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {areaFaqs.map((f, i) => (
+                <div key={i} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                  <p className="font-bold text-[#2C1810] mb-2">Q. {f.q}</p>
+                  <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* CTA */}
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
