@@ -70,6 +70,16 @@ export default async function DynamicReviewPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {(company as any).faqs && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: (company as any).faqs.map((f: { q: string; a: string }) => ({
+            "@type": "Question", name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }) }} />
+      )}
       <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
         <SiteHeader />
         <main className="flex-1">
@@ -148,6 +158,31 @@ export default async function DynamicReviewPage({ params }: Props) {
             </div>
           </section>
 
+          {/* 公式確認済みの事実情報 */}
+          {(company as any).verifiedData && (
+            <section className="py-12 md:py-16 bg-white">
+              <div className="max-w-4xl mx-auto px-4">
+                <div className="text-center mb-8">
+                  <p className="text-sm text-[#C9A96E] tracking-widest mb-2">VERIFIED FACTS</p>
+                  <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                    公式サイトで確認した事実情報
+                  </h2>
+                  <p className="text-sm text-[#8B7D72] mt-2">
+                    {(company as any).verifiedData.verifiedAt}確認 ／ 出典: {(company as any).verifiedData.source}
+                  </p>
+                </div>
+                <ul className="space-y-3 bg-[#FAF7F2] rounded-2xl p-6 border border-[#E0D5C8]">
+                  {(company as any).verifiedData.facts.map((f: string, i: number) => (
+                    <li key={i} className="text-[#2C1810] text-sm leading-relaxed flex gap-2">
+                      <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          )}
+
           {/* Pros & Cons */}
           <section className="py-12 md:py-16">
             <div className="max-w-4xl mx-auto px-4">
@@ -197,6 +232,26 @@ export default async function DynamicReviewPage({ params }: Props) {
               </div>
             </div>
           </section>
+
+          {/* FAQ */}
+          {(company as any).faqs && (
+            <section className="py-12 md:py-16">
+              <div className="max-w-4xl mx-auto px-4">
+                <div className="text-center mb-8">
+                  <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+                  <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">よくある質問</h2>
+                </div>
+                <div className="space-y-4">
+                  {(company as any).faqs.map((f: { q: string; a: string }, i: number) => (
+                    <div key={i} className="bg-white rounded-2xl p-6 border border-[#E0D5C8]">
+                      <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
+                      <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* CTA */}
           <section className="py-12 md:py-16">
