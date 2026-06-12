@@ -3,9 +3,9 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
-  title: "骨董品の保管・お手入れ方法｜品目別の正しい保存方法",
+  title: "骨董品の保管方法・お手入れ完全ガイド｜品目別の温度・湿度早見表つき",
   description:
-    "骨董品の正しい保管・お手入れ方法を品目別に徹底解説。掛軸・陶磁器・茶道具・絵画・刀剣・着物の保存方法から、やってはいけないNG行為、おすすめ保管グッズまで完全ガイド。",
+    "骨董品の正しい保管方法を品目別に徹底解説。掛軸・陶磁器・茶道具・絵画・刀剣・着物の理想湿度と温度の早見表、正しい巻き方・仕舞い方、やってはいけないNG行為、桐箱などの保管グッズまで。保存状態は査定額を数倍左右します。",
 };
 
 export default function HowToStorePage() {
@@ -14,9 +14,19 @@ export default function HowToStorePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"学ぶ\",\"item\":\"https://kottokaitori-biyori.com/learn/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"骨董品の保管・お手入れ完全ガイド\",\"item\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の保管・お手入れ完全ガイド\",\"description\":\"骨董品の保管・お手入れ完全ガイド を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}}" }} />
-      {/* JSONLD_INJECTED_v1 #2 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"骨董品の保管・お手入れ完全ガイド\",\"description\":\"骨董品の保管・お手入れ完全ガイド のステップを解説\"}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の保管方法・お手入れ完全ガイド\",\"description\":\"骨董品の保管方法を品目別に解説。理想湿度・温度の早見表つき\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-12T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}}" }} />
+      {/* JSONLD_INJECTED_v1 #2: FAQPage */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "骨董品の保管に最適な湿度は何%ですか？", "acceptedAnswer": { "@type": "Answer", "text": "基本は50〜60%が目安です。紙・絹もの（掛軸・絵画）は70%を超えるとカビが発生しやすく、金属もの（刀剣・鉄瓶・古銭）は40〜50%とより低めが安全です。温湿度計での数値管理をおすすめします。" } },
+          { "@type": "Question", "name": "桐箱がない場合はどう保管すればいいですか？", "acceptedAnswer": { "@type": "Answer", "text": "中性紙の薄葉紙で包み、布箱や紙箱に調湿剤（シリカゲル）を入れて代用できます。共箱（作家の署名入りの箱）が残っている品は査定額に大きく影響するため、必ず品物とセットで保管してください。" } },
+          { "@type": "Question", "name": "押し入れやクローゼットに保管しても大丈夫ですか？", "acceptedAnswer": { "@type": "Answer", "text": "直射日光を避けられる点では適していますが湿気がこもりやすいため、除湿剤を置き年1〜2回は風を通してください。すのこ等で底上げすると湿気被害を減らせます。" } },
+          { "@type": "Question", "name": "保管状態が悪いと買取価格はどのくらい下がりますか？", "acceptedAnswer": { "@type": "Answer", "text": "カビ・シミ・虫食い・欠けの程度によりますが、同じ作品でも状態次第で査定額が数分の一になることがあります。修復は自己判断せず、まず査定で現状の価値を確認するのがおすすめです。" } },
+          { "@type": "Question", "name": "自分でクリーニングしてから売ったほうが高くなりますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。自己流の清掃は古色や銘を消してしまい、かえって査定額を下げる危険があります。乾いた柔らかい布で埃を払う程度にとどめ、汚れ落としは専門家に相談してください。" } }
+        ]
+      }) }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
 
@@ -37,7 +47,7 @@ export default function HowToStorePage() {
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
             <p className="text-[#D4A574] text-sm tracking-widest mb-4">PRESERVATION GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              骨董品の保管・お手入れ<br />完全ガイド
+              骨董品の保管方法・お手入れ<br />完全ガイド
             </h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
               大切な骨董品の価値を守るために。<br className="hidden md:inline" />
@@ -46,8 +56,45 @@ export default function HowToStorePage() {
           </div>
         </section>
 
+        {/* 品目別保管のクイック早見表（結論ファースト） */}
+        <section id="quick-table" className="py-10">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-2 text-center">
+              【結論】品目別 保管環境の早見表
+            </h2>
+            <p className="text-sm text-[#5C4A3A] text-center mb-6">
+              骨董品の保管方法はこの表が基本です。湿度50〜60%・直射日光を避ける・桐箱で調湿の3点を押さえれば、劣化の大半は防げます。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                <thead className="bg-[#8B4513] text-white">
+                  <tr>
+                    <th className="px-3 py-3 text-left">品目</th>
+                    <th className="px-3 py-3 text-left">理想湿度</th>
+                    <th className="px-3 py-3 text-left">温度</th>
+                    <th className="px-3 py-3 text-left">主な保管法</th>
+                    <th className="px-3 py-3 text-left">注意点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">掛軸</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">桐箱・除湿剤</td><td className="px-3 py-3 text-[#5C4A3A]">年1〜2回陰干し、外巻きで巻く</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶道具(陶磁器)</td><td className="px-3 py-3">40〜60%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">共箱・薄葉紙</td><td className="px-3 py-3 text-[#5C4A3A]">急激な温度変化禁止、共箱必須</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶釜・鉄瓶</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">乾拭き・椿油塗布</td><td className="px-3 py-3 text-[#5C4A3A]">錆び厳禁、定期的に椿油を薄く塗布</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">絵画</td><td className="px-3 py-3">55〜65%</td><td className="px-3 py-3">18〜22℃</td><td className="px-3 py-3">額装・防虫剤</td><td className="px-3 py-3 text-[#5C4A3A]">紫外線厳禁、UVカットガラス推奨</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">刀剣</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜20℃</td><td className="px-3 py-3">刀箪笥・打粉と油</td><td className="px-3 py-3 text-[#5C4A3A]">月1回手入れ、登録証保管必須</td></tr>
+                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">古銭・切手</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">アルバム・ストックブック</td><td className="px-3 py-3 text-[#5C4A3A]">指紋禁止、コインに直接触れない</td></tr>
+                  <tr><td className="px-3 py-3 font-bold">着物</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜25℃</td><td className="px-3 py-3">桐箪笥・たとう紙</td><td className="px-3 py-3 text-[#5C4A3A]">虫干しは年2回、防虫剤併用</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-[#8B7D72] mt-4 text-center">
+              ※ 上記は一般的な目安です。希少品・高額品は専門家にご相談ください。以下で品目ごとの手順を詳しく解説します。
+            </p>
+          </div>
+        </section>
+
         {/* Table of Contents */}
-        <section className="py-10">
+        <section className="pb-10">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
@@ -151,7 +198,7 @@ export default function HowToStorePage() {
               </h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>
-                  <Link href="/category/toujiki" className="text-[#8B4513] underline hover:no-underline">陶磁器</Link>は衝撃に弱いことは言うまでもありませんが、温度や湿度の変化にも注意が必要です。
+                  陶磁器は衝撃に弱いことは言うまでもありませんが、温度や湿度の変化にも注意が必要です。西洋の品は<Link href="/category/seiyou-touki" className="text-[#8B4513] underline hover:no-underline">西洋陶磁器の買取相場</Link>もあわせてご覧ください。
                 </p>
 
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">衝撃防止</h3>
@@ -478,6 +525,49 @@ export default function HowToStorePage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section id="faq" className="pb-12">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
+                骨董品の保管に関するよくある質問
+              </h2>
+              <div className="space-y-6 text-[#5C4A3A] leading-relaxed">
+                <div>
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. 骨董品の保管に最適な湿度は何%ですか？</h3>
+                  <p className="text-sm">
+                    品目により異なりますが、基本は<strong>50〜60%</strong>が目安です。紙・絹もの（掛軸・絵画）は乾燥しすぎると脆くなり、70%を超えるとカビが出ます。金属もの（刀剣・鉄瓶・古銭）はより低めの40〜50%が安全です。温湿度計で数値管理するのが確実です。
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. 桐箱がない場合はどう保管すればいいですか？</h3>
+                  <p className="text-sm">
+                    中性紙の薄葉紙で包み、湿気のこもらない布箱や紙箱＋調湿剤（シリカゲル）で代用できます。ただし共箱（作家の署名入りの箱）が残っている品は、箱自体が査定額に大きく影響するため、必ず品物とセットで保管してください。
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. 押し入れやクローゼットに保管しても大丈夫ですか？</h3>
+                  <p className="text-sm">
+                    直射日光が当たらない点では適していますが、湿気がこもりやすいのが難点です。除湿剤を置き、年に1〜2回は風を通してください。床に直置きせず、すのこ等で底上げすると湿気被害を減らせます。
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. 保管状態が悪いと買取価格はどのくらい下がりますか？</h3>
+                  <p className="text-sm">
+                    カビ・シミ・虫食い・欠けの程度によりますが、同じ作品でも状態次第で査定額が数分の一になることは珍しくありません。逆に共箱・付属品が揃った良好な状態なら相場上限も狙えます。修復は自己判断せず、まず査定に出して現状の価値を確認するのがおすすめです。
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. 自分でクリーニングしてから売ったほうが高くなりますか？</h3>
+                  <p className="text-sm">
+                    <strong>いいえ、自己流の清掃はかえって価値を下げる危険があります。</strong>古色（経年の風合い）や銘を消してしまうと査定額が大きく落ちます。乾いた柔らかい布で埃を払う程度にとどめ、汚れ落としは買取業者・修復の専門家に相談してください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Articles */}
         <section className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
@@ -492,6 +582,16 @@ export default function HowToStorePage() {
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の贋作・偽物の見分け方</h3>
                 <p className="text-sm text-[#5C4A3A]">プロの鑑定士が実践する真贋判定のポイントを品目別に解説します。</p>
+              </Link>
+              <Link href="/guide/satei-kijun" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">GUIDE</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の査定基準</h3>
+                <p className="text-sm text-[#5C4A3A]">保存状態は査定の最重要項目のひとつ。査定士が見るポイントを解説します。</p>
+              </Link>
+              <Link href="/guide/takaku-uru" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">GUIDE</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品を高く売るコツ</h3>
+                <p className="text-sm text-[#5C4A3A]">共箱・付属品の揃え方から売り時まで、買取額を上げる実践テクニック。</p>
               </Link>
             </div>
           </div>
@@ -528,39 +628,6 @@ export default function HowToStorePage() {
           </div>
         </section>
 
-        {/* 品目別保管のクイック早見表 */}
-        <section className="py-12 bg-[#FAF7F2] border-t border-[#E0D5C8]">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6 text-center">
-              品目別 保管環境の早見表
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
-                <thead className="bg-[#8B4513] text-white">
-                  <tr>
-                    <th className="px-3 py-3 text-left">品目</th>
-                    <th className="px-3 py-3 text-left">理想湿度</th>
-                    <th className="px-3 py-3 text-left">温度</th>
-                    <th className="px-3 py-3 text-left">主な保管法</th>
-                    <th className="px-3 py-3 text-left">注意点</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">掛軸</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">桐箱・除湿剤</td><td className="px-3 py-3 text-[#5C4A3A]">年1〜2回陰干し、外巻きで巻く</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶道具(陶磁器)</td><td className="px-3 py-3">40〜60%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">共箱・薄葉紙</td><td className="px-3 py-3 text-[#5C4A3A]">急激な温度変化禁止、共箱必須</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">茶釜・鉄瓶</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜25℃</td><td className="px-3 py-3">乾拭き・椿油塗布</td><td className="px-3 py-3 text-[#5C4A3A]">錆び厳禁、定期的に椿油を薄く塗布</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">絵画</td><td className="px-3 py-3">55〜65%</td><td className="px-3 py-3">18〜22℃</td><td className="px-3 py-3">額装・防虫剤</td><td className="px-3 py-3 text-[#5C4A3A]">紫外線厳禁、UVカットガラス推奨</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">刀剣</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">10〜20℃</td><td className="px-3 py-3">刀箪笥・打粉と油</td><td className="px-3 py-3 text-[#5C4A3A]">月1回手入れ、登録証保管必須</td></tr>
-                  <tr className="border-b border-[#E0D5C8]"><td className="px-3 py-3 font-bold">古銭・切手</td><td className="px-3 py-3">40〜50%</td><td className="px-3 py-3">15〜20℃</td><td className="px-3 py-3">アルバム・ストックブック</td><td className="px-3 py-3 text-[#5C4A3A]">指紋禁止、コインに直接触れない</td></tr>
-                  <tr><td className="px-3 py-3 font-bold">着物</td><td className="px-3 py-3">50〜60%</td><td className="px-3 py-3">15〜25℃</td><td className="px-3 py-3">桐箪笥・たとう紙</td><td className="px-3 py-3 text-[#5C4A3A]">虫干しは年2回、防虫剤併用</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-[#8B7D72] mt-4 text-center">
-              ※ 上記は一般的な目安です。希少品・高額品は専門家にご相談ください。
-            </p>
-          </div>
-        </section>
       </main>
 
       <SiteFooter />
