@@ -28,13 +28,38 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const sameCategory = artists.filter((a) => a.categorySlug === artist.categorySlug && a.slug !== artist.slug).slice(0, 6);
   const worksText = artist.works.join("・");
 
-  // 買取価格を左右する要素(共通)
+  // 買取価格を左右する要素。作家固有の鑑定ポイント(checkPoints)を織り込んで個別化。
   const priceFactors = [
-    { k: "真贋・極め", v: `${artist.name}の真作であることが確認できると評価は大きく上がります。鑑定書・極め書(箱書き)があると有利です。` },
-    { k: "状態", v: "傷・欠け・シミ・直しの有無は査定額に直結します。ただし無理な手入れは逆効果のため現状のまま査定に出しましょう。" },
-    { k: "付属品", v: "共箱(作家の箱書き)・鑑定書・栞・購入時の資料が揃うほど高評価になります。" },
-    { k: "作品の格・サイズ", v: `代表作(${worksText})に通じる優品や、サイズ・図柄の良いものは需要が高く高額になりやすい傾向です。` },
-    { k: "市場の需要", v: "国内外のコレクター需要や為替の影響を受けます。需要を反映できる業者を選ぶことが高値の鍵です。" },
+    {
+      k: "真贋・極め",
+      v: `${artist.name}の真作であることの確認が評価を大きく左右します。${
+        artist.checkPoints && artist.checkPoints[0]
+          ? `特に「${artist.checkPoints[0]}」が重要なチェックポイントです。`
+          : ""
+      }鑑定書・極め書(箱書き)があると有利です。`,
+    },
+    {
+      k: "状態",
+      v: `傷・欠け・シミ・直しの有無は査定額に直結します。${artist.category}は特に状態評価がシビアなため、無理な手入れは避け、現状のまま査定に出しましょう。`,
+    },
+    {
+      k: "付属品・極め",
+      v: `共箱(作家の箱書き)・鑑定書・栞・購入時の資料が揃うほど高評価になります。${
+        artist.checkPoints && artist.checkPoints.length > 1
+          ? `${artist.name}の場合「${artist.checkPoints[artist.checkPoints.length - 1]}」も確認されます。`
+          : ""
+      }`,
+    },
+    {
+      k: "作品の格・サイズ",
+      v: `代表作(${worksText})に通じる優品や、${artist.era}の充実期の作、サイズ・図柄の良いものは需要が高く高額になりやすい傾向です。`,
+    },
+    {
+      k: "市場の需要",
+      v: `${artist.name}の${artist.category}は、国内外のコレクター需要を反映できる業者ほど高く評価します。${
+        artist.marketNote ? "相場の背景は下記の市場評価セクションも参考にしてください。" : ""
+      }`,
+    },
   ];
 
   // 高く売るコツ(共通)
