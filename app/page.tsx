@@ -35,6 +35,9 @@ const learnArticles = [
   { title: "骨董品とは？定義・歴史・分類の完全ガイド", slug: "/learn/what-is-kottouhin", iconImg: "/images/icons/learn-book.png", desc: "骨董品の基礎知識を網羅。初めての方はまずここから。" },
   { title: "骨董品の贋作・偽物の見分け方", slug: "/learn/how-to-identify-fakes", iconImg: "/images/icons/learn-magnify.png", desc: "プロの鑑定士が見ているポイントを品目別に解説。" },
   { title: "骨董品の保管・お手入れ完全ガイド", slug: "/learn/how-to-store", iconImg: "/images/icons/learn-storage.png", desc: "大切な骨董品の価値を守る、正しい保管方法とは。" },
+  { title: "骨董品の処分方法・捨て方", slug: "/learn/how-to-dispose", iconImg: "/images/icons/learn-tips.png", desc: "売る・譲る・捨てるの判断基準と費用を解説。" },
+  { title: "遺品整理で出た骨董品の対処法", slug: "/learn/ihin-kottou", iconImg: "/images/icons/learn-estate.png", desc: "価値の見極めと、家族で揉めない進め方。" },
+  { title: "骨董品の相続・評価ガイド", slug: "/learn/inheritance", iconImg: "/images/icons/learn-price.png", desc: "評価額の調べ方と分割・売却の進め方。" },
   { title: "骨董品の買取相場まとめ", slug: "/guide/souba", iconImg: "/images/icons/learn-price.png", desc: "掛軸・茶道具・絵画など品目別の買取相場を解説。" },
   { title: "骨董品を高く売る5つの方法", slug: "/guide/takaku-uru", iconImg: "/images/icons/learn-tips.png", desc: "査定額を最大化するためのプロのテクニック。" },
   { title: "遺品整理で骨董品が出てきたら", slug: "/guide/ihin-seiri", iconImg: "/images/icons/learn-estate.png", desc: "相続・遺品整理時の骨董品の正しい取り扱い方。" },
@@ -611,6 +614,9 @@ export default function Home() {
                 <li><Link href="/learn/what-is-kottouhin" className="hover:text-[#C9A96E]">骨董品とは</Link></li>
                 <li><Link href="/learn/how-to-identify-fakes" className="hover:text-[#C9A96E]">贋作の見分け方</Link></li>
                 <li><Link href="/learn/how-to-store" className="hover:text-[#C9A96E]">保管・お手入れ</Link></li>
+                <li><Link href="/learn/how-to-dispose" className="hover:text-[#C9A96E]">処分・捨て方</Link></li>
+                <li><Link href="/learn/ihin-kottou" className="hover:text-[#C9A96E]">遺品整理と骨董品</Link></li>
+                <li><Link href="/learn/inheritance" className="hover:text-[#C9A96E]">相続・評価</Link></li>
               </ul>
             </div>
             <div>

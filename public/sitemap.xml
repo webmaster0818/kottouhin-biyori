@@ -1124,7 +1124,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/buysell/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1142,7 +1142,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/fukuchan/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1154,13 +1154,13 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/hakkoudo/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/hikakaku/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1172,13 +1172,13 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/nanboya/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/nikkoudou/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1190,7 +1190,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/tifana/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1351,6 +1351,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/learn/how-to-dispose/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/learn/how-to-identify-fakes/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1358,7 +1364,19 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/how-to-store/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/ihin-kottou/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/inheritance/</loc>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
