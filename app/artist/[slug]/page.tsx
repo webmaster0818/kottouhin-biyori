@@ -103,7 +103,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     "headline": `${artist.name}の${artist.category}買取相場・鑑定ポイント【2026年最新】`,
     "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。代表作や鑑定のポイント、高く売るコツを解説。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
-    "dateModified": "2026-06-07T00:00:00+09:00",
+    "dateModified": (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
@@ -240,6 +240,45 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 {artist.name}の買取市場での評価・相場の背景
               </h2>
               <p className="text-[#5C4A3A] leading-relaxed">{artist.marketNote}</p>
+            </section>
+          )}
+
+          {/* 公開オークションでの落札実績（出典明記） */}
+          {(artist as any).auctionResults && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}の公開オークション落札実績
+              </h2>
+              <p className="text-xs text-[#8B7D72] mb-4">
+                {(artist as any).auctionResults.verifiedAt}確認 ／ 出典：{(artist as any).auctionResults.sourceLabel}
+              </p>
+              <p className="text-[#5C4A3A] leading-relaxed mb-5 text-sm">{(artist as any).auctionResults.rangeNote}</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse min-w-[520px]">
+                  <thead>
+                    <tr className="bg-[#FAF7F2] text-[#5C4A3A]">
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">作品</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8] whitespace-nowrap">落札価格</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">主催・年</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">出典</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(artist as any).auctionResults.results.map((r: { title: string; hammer: string; house: string; year: string; sourceUrl: string }, i: number) => (
+                      <tr key={i} className="align-top">
+                        <td className="p-3 border border-[#E0D5C8] text-[#2C1810]">{r.title}</td>
+                        <td className="p-3 border border-[#E0D5C8] text-[#8B4513] font-bold whitespace-nowrap">{r.hammer}</td>
+                        <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A] whitespace-nowrap">{r.house}{r.year ? `（${r.year}）` : ""}</td>
+                        <td className="p-3 border border-[#E0D5C8]"><a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[#C9A96E] underline">出典</a></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
+                ※ 上記は公開オークションでの過去の落札実績の一部です。落札価格は手数料の扱い・為替・開催時期で変動し、真贋・状態・作品の格により評価は大きく異なります。お手元の品の価格は無料査定でご確認ください。
+              </p>
             </section>
           )}
 
