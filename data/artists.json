@@ -115,7 +115,42 @@
       "裏彩色の有無"
     ],
     "bio": "棟方志功は青森県に生まれ、木版画を『板画』と称して独自の世界を切り拓いた板画家です。仏教やねぶた、女性像などを力強く彫り上げ、ヴェネツィア・ビエンナーレ国際版画大賞などを受賞、『世界のムナカタ』と称されました。肉筆の倭画や書も残しています。",
-    "marketNote": "板画は比較的手に取りやすい価格帯から流通する一方、代表作や肉筆の倭画は高額です。サイン・摺りの状態・落款の確認が重要です。"
+    "marketNote": "板画は比較的手に取りやすい価格帯から流通する一方、代表作や肉筆の倭画は高額です。サイン・摺りの状態・落款の確認が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "Bonhams公式ロット結果ページ（各ロットに「Sold for US$… inc. premium」表記）",
+      "rangeNote": "海外（Bonhamsニューヨーク）の墨摺り木版画は概ね数千〜2万ドル台で取引され、署名・摺りの状態が良い優品は2万ドルを超えます。国内の大型作品（屏風仕立て等）はさらに高額になる傾向があります。価格はすべて手数料込の総額・USD建てです。",
+      "results": [
+        {
+          "title": "女神像（One woodblock print）",
+          "hammer": "US$27,500（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2016",
+          "sourceUrl": "https://www.bonhams.com/auctions/23430/lot/29/"
+        },
+        {
+          "title": "魚・花と仏女",
+          "hammer": "US$6,000（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2014",
+          "sourceUrl": "https://www.bonhams.com/auctions/21616/lot/3046/"
+        },
+        {
+          "title": "釈迦と菩薩",
+          "hammer": "US$5,700（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2019",
+          "sourceUrl": "https://www.bonhams.com/auctions/25856/lot/613/"
+        },
+        {
+          "title": "鷹の女",
+          "hammer": "US$3,200（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2024",
+          "sourceUrl": "https://www.bonhams.com/auctions/29505/lot/678/munakata-shiko-1903-1975-showa-era-1926-1989-1958/"
+        }
+      ]
+    }
   },
   {
     "name": "平山郁夫",
@@ -161,7 +196,35 @@
       "サインの筆跡確認"
     ],
     "bio": "藤田嗣治(レオナール・フジタ)は東京に生まれ、パリで活躍した画家です。『乳白色の下地』と繊細な線描による裸婦像でエコール・ド・パリの寵児となり、国際的な名声を得ました。晩年はフランスに帰化し、洗礼を受けています。",
-    "marketNote": "乳白色の裸婦・猫・少女像は国際的に高額で取引されます。真贋・来歴の確認が極めて重要で、専門鑑定が推奨されます。"
+    "marketNote": "乳白色の裸婦・猫・少女像は国際的に高額で取引されます。真贋・来歴の確認が極めて重要で、専門鑑定が推奨されます。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "Bonhams公式ロット結果、SBIアートオークション公式落札結果、美術手帖（SBI取材）、THE VALUE（Bonhams記録報道）",
+      "rangeNote": "油彩の代表作は数百万ポンド〜十億円規模で取引され、2018年Bonhams落札（手数料込£7.09m）が作家の最高記録。水彩・素描・小品は数万ポンド〜数千万円帯で、主題（猫・裸婦・自画像）と制作年代で大きく変動します。海外取引は外貨建てです。",
+      "results": [
+        {
+          "title": "La fête d'anniversaire（誕生日の祝宴, 1949）",
+          "hammer": "£6,100,000（ハンマー／手数料込 £7,096,250・作家最高記録）",
+          "house": "Bonhams ロンドン",
+          "year": "2018",
+          "sourceUrl": "https://en.thevalue.com/articles/bonhams-london-foujita-world-record"
+        },
+        {
+          "title": "狐を売る男（1933, 水彩・紙）",
+          "hammer": "46,000,000円（ハンマー／手数料込 52,900,000円）",
+          "house": "SBIアートオークション",
+          "year": "2019",
+          "sourceUrl": "https://www.sbiartauction.co.jp/results/detail/83/210"
+        },
+        {
+          "title": "Le Chat（猫, 1929, 水彩）",
+          "hammer": "£45,000（手数料込 £57,550）",
+          "house": "Bonhams ロンドン",
+          "year": "2024",
+          "sourceUrl": "https://www.bonhams.com/auction/29861/lot/138/leonard-tsuguharu-foujita-1886-1968-le-chat-executed-in-1929/"
+        }
+      ]
+    }
   },
   {
     "name": "千住博",
@@ -184,7 +247,28 @@
       "ギャラリー証明書の有無"
     ],
     "bio": "千住博は東京藝術大学で学んだ現代を代表する日本画家です。岩絵具を流して描く『滝(ウォーターフォール)』シリーズで国際的に評価され、ヴェネツィア・ビエンナーレで東洋人初の名誉賞を受賞しました。高野山金剛峯寺の襖絵なども手がけ、伝統と現代をつなぐ作家として活躍しています。",
-    "marketNote": "版画から大作まで幅広く流通し、現代作家として需要が安定しています。サイン・エディション番号・真作証明の確認が査定のポイントです。"
+    "marketNote": "版画から大作まで幅広く流通し、現代作家として需要が安定しています。サイン・エディション番号・真作証明の確認が査定のポイントです。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "東京中央オークション公式プレスリリース、SBIアートオークション公式落札結果",
+      "rangeNote": "版画・デジタルプリントのエディション作品は概ね数十万円〜100万円台、肉筆の代表作「ウォーターフォール（瀑布）」大作は最高で約6,000,000香港ドル（約9,000万円相当）を記録するなど、媒体・サイズで価格差が非常に大きい作家です。",
+      "results": [
+        {
+          "title": "ウォーターフォール 3枚組（Waterfall Trio, 2006）",
+          "hammer": "約6,000,000香港ドル（約9,000万円相当・作家オークション記録）",
+          "house": "東京中央オークション（香港）",
+          "year": "2022",
+          "sourceUrl": "https://www.chuo-auction.com/jp/2022-03-21_pr"
+        },
+        {
+          "title": "ウォーターフォール（HS Edition・サイン入り）",
+          "hammer": "1,265,000円（手数料込）",
+          "house": "SBIアートオークション（第108回）",
+          "year": "2022",
+          "sourceUrl": "https://www.sbiartauction.co.jp/results/detail/108/60"
+        }
+      ]
+    }
   },
   {
     "name": "竹内栖鳳",
@@ -311,7 +395,42 @@
       "後摺り・復刻版との区別"
     ],
     "bio": "葛飾北斎は江戸後期を代表する浮世絵師で、『冨嶽三十六景』(神奈川沖浪裏・凱風快晴など)で世界的に知られます。生涯に三万点を超える作品を制作したとされ、画号を幾度も改めながら90歳近くまで画業を追求し続けました。その大胆な構図と運動感は、モネやドガら西洋の印象派にも影響を与えたといわれます。",
-    "marketNote": "肉筆画は極めて希少で高額です。版画(錦絵)は初摺りか後摺りか、摺りや保存の状態、版元によって価格差が大きく、専門的な評価が必要です。"
+    "marketNote": "肉筆画は極めて希少で高額です。版画(錦絵)は初摺りか後摺りか、摺りや保存の状態、版元によって価格差が大きく、専門的な評価が必要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "Christie's/Sotheby's/Bonhams 各落札結果の報道（The Japan Times・ARTnews・Artnet・Time Out 等）",
+      "rangeNote": "代表作「神奈川沖浪裏」の状態の良い初期摺りは、近年 海外主要ハウスで概ねUS$80万〜280万（手数料込）で落札され、摺りの早さ・状態で価格が大きく変動します。2021年以降は記録更新が続いています。海外取引のため価格はUSD等の外貨建てです。",
+      "results": [
+        {
+          "title": "神奈川沖浪裏（The Great Wave）",
+          "hammer": "約US$2,800,000（手数料込／HK$21,700,000）",
+          "house": "Sotheby's 香港",
+          "year": "2025",
+          "sourceUrl": "https://www.artnews.com/art-news/news/sothebys-hong-kong-sells-125-works-from-japans-okada-museum-for-88-m-so-founder-can-settle-50-m-legal-bill-1234763159/"
+        },
+        {
+          "title": "神奈川沖浪裏（The Great Wave）",
+          "hammer": "約US$2,760,000（手数料込・当時の版画最高額）",
+          "house": "Christie's ニューヨーク",
+          "year": "2023",
+          "sourceUrl": "https://www.japantimes.co.jp/news/2023/03/23/national/hokusai-great-wave-print-auction/"
+        },
+        {
+          "title": "神奈川沖浪裏（The Great Wave）",
+          "hammer": "約US$1,590,000（手数料込）",
+          "house": "Christie's ニューヨーク",
+          "year": "2021",
+          "sourceUrl": "https://www.artnews.com/art-news/market/hokusai-auction-record-christies-asia-week-1234587021/"
+        },
+        {
+          "title": "神奈川沖浪裏（The Great Wave）",
+          "hammer": "約US$889,500（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2024",
+          "sourceUrl": "https://www.timeout.com/tokyo/news/the-great-wave-by-hokusai-fetched-usd889-500-at-a-new-york-auction-092424"
+        }
+      ]
+    }
   },
   {
     "name": "北大路魯山人",
@@ -2255,7 +2374,28 @@
       "共箱・鑑定書の有無で価格が大きく変動"
     ],
     "bio": "加山又造は西陣織の図案家の家に生まれ、山本丘人に学びました。琳派の装飾性を現代的に再構築し、動物や裸婦、雪月花を大胆な構図と金銀を生かした華麗な画面で表現。「現代の琳派」と称され、陶器や着物の意匠、天井画など幅広く手がけました。文化勲章を受章しています。",
-    "marketNote": "華麗な装飾性をもつ真作は人気が高く高額で取引されます。版画作品も流通し、落款・来歴・鑑定書の有無が価格を左右します。"
+    "marketNote": "華麗な装飾性をもつ真作は人気が高く高額で取引されます。版画作品も流通し、落款・来歴・鑑定書の有無が価格を左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "SBIアートオークション公式落札結果、シンワオークション公式落札結果",
+      "rangeNote": "日本画は数百万円台が中心ですが、屏風など代表的大作はオークションで数千万円〜億単位に達します。近年はSBI・シンワなど国内主要オークションで安定して取引されています。",
+      "results": [
+        {
+          "title": "白い鳥",
+          "hammer": "6,440,000円",
+          "house": "SBIアートオークション（第81回）",
+          "year": "2026",
+          "sourceUrl": "https://www.sbiartauction.co.jp/news/article/218"
+        },
+        {
+          "title": "猫",
+          "hammer": "6,600万円",
+          "house": "シンワオークション",
+          "year": "2021",
+          "sourceUrl": "https://www.shinwa-auction.com/news/20210327/"
+        }
+      ]
+    }
   },
   {
     "name": "徳田八十吉",
