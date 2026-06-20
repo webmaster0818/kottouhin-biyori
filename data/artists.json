@@ -372,7 +372,42 @@
       "来歴・伝来の記録が重要"
     ],
     "bio": "伊藤若冲は江戸中期の京都・錦小路の青物問屋に生まれた絵師です。徹底した写生と濃密な彩色で動植物を描き、代表作『動植綵絵』では超絶的な細密表現を見せました。とりわけ鶏の絵で名高く、独自の升目描きなども試みています。近年、国内外で再評価が一気に進み、人気が高騰した作家の一人です。",
-    "marketNote": "近年の人気上昇にともない相場も上昇傾向にあります。真筆は非常に高額で、模写・後世作も多いため、真贋判断には専門的な鑑定が欠かせません。"
+    "marketNote": "近年の人気上昇にともない相場も上昇傾向にあります。真筆は非常に高額で、模写・後世作も多いため、真贋判断には専門的な鑑定が欠かせません。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "Sotheby's香港公式結果（THE VALUE報道）／ARTnews（Christie's NY記録報道）／Bonhams公式ロット結果",
+      "rangeNote": "小品の掛軸は数千〜数万USドル規模、状態・主題・来歴の良い名品は数十万〜100万USドル超。2021年Christie's NYの「双鶴旭日図」US$159万が公表ベースの作家最高記録で、2025年Sotheby's香港の岡田美術館旧蔵セールでは雄鶏図の掛軸がHK$570万〜950万に達しました。海外取引のため外貨建てです。",
+      "results": [
+        {
+          "title": "花卉雄鶏図（Cockerel among flowers）",
+          "hammer": "HK$9,525,000（落札総額／約US$1.22M）",
+          "house": "Sotheby's 香港",
+          "year": "2025",
+          "sourceUrl": "https://en.thevalue.com/articles/sothebys-hong-kong-masterpieces-of-asian-art-from-okada-museum-2025-japanese-art"
+        },
+        {
+          "title": "雪中雄鶏図（Cockerel in snow）",
+          "hammer": "HK$5,715,000（落札総額）",
+          "house": "Sotheby's 香港",
+          "year": "2025",
+          "sourceUrl": "https://en.thevalue.com/articles/sothebys-hong-kong-masterpieces-of-asian-art-from-okada-museum-2025-japanese-art"
+        },
+        {
+          "title": "双鶴旭日図（Pair of Cranes and the Rising Sun・作家最高記録）",
+          "hammer": "US$1,590,000",
+          "house": "Christie's ニューヨーク",
+          "year": "2021",
+          "sourceUrl": "https://www.artnews.com/art-news/market/hokusai-auction-record-christies-asia-week-1234587021/"
+        },
+        {
+          "title": "Rooster on a Roof Tile（ハラリ旧蔵）",
+          "hammer": "US$8,960（落札総額）",
+          "house": "Bonhams ロンドン",
+          "year": "2023",
+          "sourceUrl": "https://www.bonhams.com/auction/28415/lot/645/ito-jakuchu-1716-1800-rooster-on-a-roof-tile-edo-period-1615-1868-18th-century/"
+        }
+      ]
+    }
   },
   {
     "name": "葛飾北斎",
@@ -541,7 +576,42 @@
       "バーナード・リーチとの交流品は高額"
     ],
     "bio": "濱田庄司は柳宗悦・バーナード・リーチらと民藝運動を推進し、栃木・益子を拠点に作陶した陶芸家です。実用の中に宿る健やかな美を追求し、益子焼を世界的な存在へと高めました。柿釉や塩釉による力強い器で知られ、民藝陶器の人間国宝に認定されています。",
-    "marketNote": "柿釉・塩釉・流し掛けの優品は高く評価されます。本人が作品に銘を入れないことが多かったため、作風の見極めと共箱・来歴が査定の鍵になります。"
+    "marketNote": "柿釉・塩釉・流し掛けの優品は高く評価されます。本人が作品に銘を入れないことが多かったため、作風の見極めと共箱・来歴が査定の鍵になります。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "Bonhams公式 sold lots（ロンドン／ニューヨーク各セール）",
+      "rangeNote": "公開セールでの一般的な落札帯は花瓶・皿・鉢で概ね£1,500〜£2,000（US$2,000〜3,000台）。初期作や希少な大作は£7,000超（US$9,000超）に達する例もあります。価格はすべて手数料込・外貨建てです。",
+      "results": [
+        {
+          "title": "益子・釉景花瓶（D'zou Chou style Vase, c.1921）",
+          "hammer": "£7,200（約US$9,659／手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2005",
+          "sourceUrl": "https://www.bonhams.com/auctions/12211/lot/20/"
+        },
+        {
+          "title": "大鉢（Large stoneware bowl）",
+          "hammer": "US$3,125（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2013",
+          "sourceUrl": "https://www.bonhams.com/auctions/20999/lot/3322/"
+        },
+        {
+          "title": "角皿（Square dish）",
+          "hammer": "£1,920（手数料込）",
+          "house": "Bonhams（20th Century Decorative Arts）",
+          "year": "2023",
+          "sourceUrl": "https://www.bonhams.com/auction/28483/lot/265/shoji-hamada-japanese-1894-1978-square-dish/"
+        },
+        {
+          "title": "面取花瓶（Faceted glazed vase, c.1925）",
+          "hammer": "£1,500（手数料込）",
+          "house": "Bonhams（Decorative Art and Design）",
+          "year": "2017",
+          "sourceUrl": "https://www.bonhams.com/live_auctions/24237/lot/87/"
+        }
+      ]
+    }
   },
   {
     "name": "酒井田柿右衛門",
@@ -2236,7 +2306,28 @@
       "共箱・鑑定書の有無で価格が大きく変動"
     ],
     "bio": "梅原龍三郎は渡仏してルノワールに直接学び、その色彩感覚に大きな影響を受けました。帰国後は富士山や桜島、北京の紫禁城などを力強く豊麗な色彩で描き、日本の伝統的な装飾性と西洋油彩を融合させた独自の画風を確立。安井曾太郎と並び昭和洋画壇を代表する存在となりました。",
-    "marketNote": "華やかな色彩の真作油彩は人気が高く高額で取引されます。サイン・来歴・鑑定書の有無が重要な判断材料です。"
+    "marketNote": "華やかな色彩の真作油彩は人気が高く高額で取引されます。サイン・来歴・鑑定書の有無が重要な判断材料です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "美術手帖（bijutsutecho.com）／シンワオークション公式プレスリリース（PR TIMES）",
+      "rangeNote": "油彩の代表的な「薔薇図」は1,000万円超で取引され、紙作品でも数百万〜1,000万円規模で落札されます。代表作の油彩はエスティメイトを上回る高値となる傾向があります。",
+      "results": [
+        {
+          "title": "薔薇図（1963年作・油彩）",
+          "hammer": "1,800万円",
+          "house": "シンワオークション（羽田 United Asian Auctioneers）",
+          "year": "2022",
+          "sourceUrl": "https://bijutsutecho.com/magazine/news/report/25420"
+        },
+        {
+          "title": "南仏カンヌ風景（1959年作・紙）",
+          "hammer": "870万円（推定180万〜280万円）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000111.000082831.html"
+        }
+      ]
+    }
   },
   {
     "name": "安井曾太郎",
@@ -2713,7 +2804,28 @@
       "共箱・鑑定書の有無で価格が大きく変動"
     ],
     "bio": "熊谷守一は岐阜に生まれ、東京美術学校で学びました。長い模索の末、対象を最小限の輪郭線と平坦な色面に還元する独自の「モリカズ様式」に到達。身近な草花や虫、猫などを温かなまなざしで描き、晩年は自宅の庭を題材に制作を続けました。世俗を離れた生き方から「仙人」とも称され、文化勲章を辞退したことでも知られます。",
-    "marketNote": "単純化された晩年様式の真作は人気が高く取引されます。贋作も存在するため、サイン・来歴・鑑定の確認が重要です。"
+    "marketNote": "単純化された晩年様式の真作は人気が高く取引されます。贋作も存在するため、サイン・来歴・鑑定の確認が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月20日",
+      "sourceLabel": "シンワオークション（Shinwa Wise Holdings）公式プレスリリース（PR TIMES）",
+      "rangeNote": "近代美術市場で根強い人気を保ち、油彩の優品は近年の公開オークションで1,000万〜2,300万円台のハンマープライスで落札される傾向です。版画・小品は数万〜数十万円規模で取引されます。",
+      "results": [
+        {
+          "title": "ほたるぶくろに蝶（1963年・板・油彩）",
+          "hammer": "2,300万円（ハンマー）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000111.000082831.html"
+        },
+        {
+          "title": "罌子（紙・油彩）",
+          "hammer": "1,400万円（ハンマー）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000180.000082831.html"
+        }
+      ]
+    }
   },
   {
     "name": "傅抱石",
