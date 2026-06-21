@@ -2,12 +2,20 @@ import Link from "next/link";
 import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import areas from "@/data/areas.json";
 
 export const metadata: Metadata = {
-  title: "骨董市・骨董品市場ガイド｜全国の有名骨董市一覧と楽しみ方｜骨董品買取びより",
-  description: "全国の有名骨董市を一覧で紹介。東京・京都・大阪の人気骨董市の開催情報、楽しみ方、掘り出し物の見つけ方、初心者向けの注意点を詳しく解説します。",
+  title: "全国の骨董市一覧【2026年版】開催日・場所がわかる骨董市ガイド｜骨董品買取びより",
+  description: "全国の骨董市を一覧で紹介。東京（大江戸骨董市）・京都（弘法市・天神市）・大阪（四天王寺）など有名骨董市の開催日・場所から、47都道府県のエリア別骨董市、楽しみ方・掘り出し物のコツ・初心者の注意点まで網羅した2026年版ガイドです。",
   alternates: { canonical: "/guide/kottouichi" },
 };
+
+const guideFaqs = [
+  { q: "骨董市は全国でいつ開催されていますか？", a: "多くの骨董市は神社仏閣の縁日に合わせて毎月決まった日に開催されます。京都の弘法市（東寺）は毎月21日、天神市（北野天満宮）は毎月25日、大阪の四天王寺骨董市は毎月21・22日が有名です。エリア別の開催情報は本記事の「全国エリア別の骨董市」から各地域ページでご確認ください。" },
+  { q: "骨董市は何時頃に行くのがおすすめですか？", a: "掘り出し物を狙うなら早朝がおすすめです。良い品物は早い時間に売れてしまうことが多く、開始直後が最も品揃えが豊富です。一方、閉店間際は値引き交渉に応じてもらいやすい時間帯です。" },
+  { q: "骨董市で買ったものは買取業者に売れますか？", a: "売れます。骨董市で購入したコレクションを整理したい場合は、買取業者に査定を依頼しましょう。購入時のレシートや出店者の名刺、来歴の情報があると査定額アップにつながることがあります。複数業者で相見積もりを取るのが高く売るコツです。" },
+  { q: "骨董市の開催日は変更されることがありますか？", a: "あります。天候・社寺の行事・年末年始などで中止・変更される場合があります。お出かけ前に必ず主催者の公式情報で最新の開催日をご確認ください。" },
+];
 
 const markets = [
   {
@@ -109,7 +117,8 @@ export default function KottouichiPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://kottokaitori-biyori.com/guide/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"全国の骨董市カレンダー\",\"item\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"全国の骨董市カレンダー\",\"description\":\"全国の骨董市カレンダー を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"全国の骨董市一覧【2026年版】開催日・場所がわかる骨董市ガイド\",\"description\":\"全国の骨董市の開催日・場所・エリア別一覧と楽しみ方を解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-21T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: guideFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
       <main className="flex-1">
@@ -171,6 +180,25 @@ export default function KottouichiPage() {
           </div>
         </section>
 
+        {/* 全国エリア別の骨董市 */}
+        <section className="py-12 md:py-16 bg-[#FAF7F2]">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-8">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BY AREA</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">全国エリア別の骨董市</h2>
+              <p className="text-[#5C4A3A] mt-3 text-sm">お住まいの地域の骨董市・蚤の市・陶器市を探せます。各エリアページで開催情報と地域で需要の高い骨董品を紹介しています。</p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {areas.map((a) => (
+                <Link key={a.slug} href={`/area/${a.slug}/`} className="bg-white rounded-xl border border-[#E0D5C8] px-4 py-3 text-center text-sm font-medium text-[#8B4513] hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition">
+                  {a.name}の骨董市
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-[#8B7D72] text-center mt-6">※ 開催日・場所は変更される場合があります。お出かけ前に主催者の公式情報をご確認ください。</p>
+          </div>
+        </section>
+
         {/* 楽しみ方・コツ */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
@@ -203,6 +231,24 @@ export default function KottouichiPage() {
               <p className="text-[#5C4A3A] leading-relaxed text-sm">
                 購入時のレシートや、出店者の名刺、品物の来歴に関する情報があれば、査定時に提示すると査定額アップにつながることがあります。
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-8">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董市についてよくある質問</h2>
+            </div>
+            <div className="space-y-4 max-w-3xl mx-auto">
+              {guideFaqs.map((f, i) => (
+                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6">
+                  <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
+                  <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
