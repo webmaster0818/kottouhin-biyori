@@ -80,6 +80,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
   // 関連ガイド(内部リンク)
   const relatedGuides = [
+    { href: "/guide/sakka-souba", label: "作家別の買取相場・落札実績インデックス" },
     { href: "/guide/satei-kijun", label: "骨董品の査定基準とは" },
     { href: "/guide/takaku-uru", label: "骨董品を高く売る方法" },
     { href: "/guide/ikkatsu-satei", label: "一括査定の活用法" },
