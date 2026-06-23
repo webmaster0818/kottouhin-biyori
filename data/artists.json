@@ -291,7 +291,42 @@
       "絹本と紙本で価格差あり"
     ],
     "bio": "竹内栖鳳は近代京都画壇を率いた巨匠で、『東の大観、西の栖鳳』と並び称されました。円山四条派を基礎に西洋画法も取り入れ、対象の本質を捉えた動物画を得意としました。第1回文化勲章受章者であり、多くの門人を育てたことでも知られます。",
-    "marketNote": "猫・虎・雀などの動物画は特に人気があります。落款と箱書き、保存状態が査定額を大きく左右します。"
+    "marketNote": "猫・虎・雀などの動物画は特に人気があります。落款と箱書き、保存状態が査定額を大きく左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月23日",
+      "sourceLabel": "Bonhams公式ロット結果／MutualArt公開作家ページ(毎日オークション記録)",
+      "rangeNote": "公開検証できた落札は約US$3,660〜US$44,428(海外Bonhams 2010〜2014、毎日オークションの最高記録は2016年のUS$44,428)。価格は手数料込・外貨建てで、和文ハウスの個別ページは会員制のため海外実績を中心に掲載しています。",
+      "results": [
+        {
+          "title": "竹に雀（Sparrows on the Bamboo）",
+          "hammer": "US$44,428（手数料込・最高記録）",
+          "house": "毎日オークション",
+          "year": "2016",
+          "sourceUrl": "https://www.mutualart.com/Artist/Seiho-Takeuchi/1DD1661B8F58F284"
+        },
+        {
+          "title": "馴し馬",
+          "hammer": "US$8,750（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2011",
+          "sourceUrl": "https://www.bonhams.com/auction/19253/lot/2313/takeuchi-seiho-1864-1942-narashiuma-tame-horse/"
+        },
+        {
+          "title": "山水",
+          "hammer": "US$3,660（手数料込）",
+          "house": "Bonhams ニューヨーク",
+          "year": "2010",
+          "sourceUrl": "https://www.bonhams.com/auction/18256/lot/2156/takeuchi-seiho-1864-1942-mountain-landscape/"
+        },
+        {
+          "title": "掛軸（1891年以前）",
+          "hammer": "£1,875（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2014",
+          "sourceUrl": "https://www.bonhams.com/auctions/21861/lot/277/"
+        }
+      ]
+    }
   },
   {
     "name": "上村松園",
@@ -795,7 +830,49 @@
       "円山派の弟子の作品との区別"
     ],
     "bio": "円山応挙は江戸中期の京都で活躍し、写生を重んじる円山派を興した絵師です。それまでの型に頼る画風に対し、実物の観察に基づく写実的表現を確立しました。孔雀図や保津川図、犬の子、幽霊画などで知られ、後世の京都画壇に大きな影響を残しました。",
-    "marketNote": "真筆は高額ですが、門人や工房による写し・後世作も多く流通します。鑑定の有無が価格を大きく分けるため、極め書や鑑定書が重要です。"
+    "marketNote": "真筆は高額ですが、門人や工房による写し・後世作も多く流通します。鑑定の有無が価格を大きく分けるため、極め書や鑑定書が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月23日",
+      "sourceLabel": "Christie's New York（MutualArt経由の公表記録）／Bonhams London 公式落札結果",
+      "rangeNote": "掛軸単幅は概ねGBP1.8万〜4.5万ポンド帯(手数料込)。屏風(六曲一双)の最高記録はChristie's New York 2007のUS$1,105,000で作品史上のオークション記録とされます。価格は各ハウス公表値(手数料込)・外貨建てです。",
+      "results": [
+        {
+          "title": "鶴（六曲一双屏風）",
+          "hammer": "US$1,105,000（作品史上のオークション記録）",
+          "house": "Christie's ニューヨーク",
+          "year": "2007",
+          "sourceUrl": "https://www.mutualart.com/Artist/Maruyama-Okyo/530CDE25DB86D411"
+        },
+        {
+          "title": "雲龍図（1787）",
+          "hammer": "£45,600（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2011",
+          "sourceUrl": "https://www.bonhams.com/auctions/18823/lot/334/"
+        },
+        {
+          "title": "鯉の滝登り（1785）",
+          "hammer": "£43,200（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2010",
+          "sourceUrl": "https://www.bonhams.com/auctions/17816/lot/149/"
+        },
+        {
+          "title": "仔犬図（1776）",
+          "hammer": "£24,000（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2009",
+          "sourceUrl": "https://www.bonhams.com/auction/16867/lot/28/maruyama-okyo-1733-1795-maruyama-school-dated-anei-5-1776/"
+        },
+        {
+          "title": "お雪の幽霊図",
+          "hammer": "£18,750（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2015",
+          "sourceUrl": "https://www.bonhams.com/auction/22815/lot/225/maruyama-okyo-1733-1795-the-ghost-of-oyuki-late-18th-century-2/"
+        }
+      ]
+    }
   },
   {
     "name": "狩野探幽",
@@ -1475,7 +1552,35 @@
       "落款と印章の確認"
     ],
     "bio": "前田青邨は岐阜県中津川に生まれた日本画家です。歴史画と大和絵の伝統を近代的感覚で描き、日本美術院(院展)を代表する画家として活躍しました。法隆寺金堂壁画の模写事業にも携わり、文化勲章を受章しています。",
-    "marketNote": "歴史画・花鳥の真作は高評価です。落款・印章・箱書きの有無が査定のポイントになります。"
+    "marketNote": "歴史画・花鳥の真作は高評価です。落款・印章・箱書きの有無が査定のポイントになります。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月23日",
+      "sourceLabel": "シンワオークション公式落札結果PDF／Bonhams公式ロットページ",
+      "rangeNote": "国内主要オークション(シンワ)では小品・色紙級が数十万円台、掛軸の本格作で数百万円規模。海外(Bonhams)は作品の質・状態で£250〜£33,600と幅があります。価格は手数料込・外貨建て(海外)です。",
+      "results": [
+        {
+          "title": "壷と紅白梅",
+          "hammer": "600,000円（ハンマー／手数料込690,000円）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/11/20241123m_s.pdf"
+        },
+        {
+          "title": "山吹（Yamabuki・掛軸）",
+          "hammer": "£33,600（手数料込）",
+          "house": "Bonhams ロンドン",
+          "year": "2010",
+          "sourceUrl": "https://www.bonhams.com/auctions/17858/lot/345/"
+        },
+        {
+          "title": "木の葉に魚",
+          "hammer": "£250（手数料込）",
+          "house": "Bonhams エディンバラ",
+          "year": "2018",
+          "sourceUrl": "https://www.bonhams.com/auction/24763/lot/42/fish-served-on-a-leaf-maeda-seison-1885-1977-2/"
+        }
+      ]
+    }
   },
   {
     "name": "富本憲吉",
@@ -2283,7 +2388,35 @@
       "共箱・鑑定書の有無で価格が大きく変動"
     ],
     "bio": "岸田劉生は白樺派の影響を受けて出発し、デューラーら北方ルネサンス絵画に傾倒した緻密な写実から、東洋の古美術に学ぶ独自の境地へと進みました。娘・麗子をモデルにした「麗子像」の連作で広く知られ、「内なる美」を追求した作風は近代洋画史に確かな位置を占めます。",
-    "marketNote": "麗子像をはじめとする真作の油彩・素描は非常に高額です。点数が限られ贋作も存在するため、来歴と専門機関の鑑定が不可欠です。"
+    "marketNote": "麗子像をはじめとする真作の油彩・素描は非常に高額です。点数が限られ贋作も存在するため、来歴と専門機関の鑑定が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月23日",
+      "sourceLabel": "日本経済新聞／英語版Wikipedia／MutualArt公開ページ",
+      "rangeNote": "油彩は数千万円規模から、当時の日本画オークション最高記録となった2000年の麗子像3億6000万円まで幅があります。村娘図等のより高額な言及もありますが出典で確証できなかったため掲載していません。海外実績はNye & Company(米国)でUSD建てです。",
+      "results": [
+        {
+          "title": "麗子像（肩掛けの麗子）",
+          "hammer": "3億6000万円（当時の日本画オークション最高記録）",
+          "house": "公開オークション（2000年・会社名は出典に明記なし）",
+          "year": "2000",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ry%C5%ABsei_Kishida"
+        },
+        {
+          "title": "黒き土の上に立てる女",
+          "hammer": "3,600万円（推定700万〜1,000万円）",
+          "house": "シンワアートオークション",
+          "year": "2012",
+          "sourceUrl": "https://www.nikkei.com/article/DGXNASDG24027_U2A320C1CR8000/"
+        },
+        {
+          "title": "近藤次繁の肖像",
+          "hammer": "US$294,400（落札総額・手数料込）",
+          "house": "Nye & Company（米国）",
+          "year": "2022",
+          "sourceUrl": "https://www.mutualart.com/Artist/Kishida-Ryusei/0F0B32F78EE1DD5F"
+        }
+      ]
+    }
   },
   {
     "name": "梅原龍三郎",
