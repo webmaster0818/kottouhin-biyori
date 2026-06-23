@@ -593,6 +593,16 @@ export default function HowToStorePage() {
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品を高く売るコツ</h3>
                 <p className="text-sm text-[#5C4A3A]">共箱・付属品の揃え方から売り時まで、買取額を上げる実践テクニック。</p>
               </Link>
+              <Link href="/guide/sakka-souba" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">価格</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">作家別の買取相場・落札実績</h3>
+                <p className="text-sm text-[#5C4A3A]">著名作家の買取相場と公開オークション落札実績を出典付きで一覧。</p>
+              </Link>
+              <Link href="/guide/gyosha-hikaku" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">比較</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品買取業者おすすめ比較</h3>
+                <p className="text-sm text-[#5C4A3A]">主要14社を目的別・実データで比較。売却先選びはこちら。</p>
+              </Link>
             </div>
           </div>
         </section>
