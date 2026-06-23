@@ -267,7 +267,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                   className="bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-4 rounded-xl font-bold transition inline-block">
                   {company.name}の公式サイトへ
                 </a>
-                <Link href="/"
+                <Link href="/guide/gyosha-hikaku/"
                   className="bg-white border-2 border-[#8B4513] text-[#8B4513] px-8 py-4 rounded-xl font-bold hover:bg-[#FAF7F2] transition inline-block">
                   他の業者と比較する
                 </Link>
