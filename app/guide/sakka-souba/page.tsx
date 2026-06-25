@@ -41,7 +41,7 @@ export default function SakkaSoubaPage() {
     "@context": "https://schema.org", "@type": "Article",
     headline: "作家別の買取相場・公開オークション落札実績インデックス",
     description: "著名作家の買取相場と公開オークション落札実績を出典付きでまとめたインデックス。",
-    datePublished: "2026-06-23T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
+    datePublished: "2026-06-23T00:00:00+09:00", dateModified: "2026-06-25T00:00:00+09:00",
     author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` },
     publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -122,6 +122,20 @@ export default function SakkaSoubaPage() {
               <p className="text-xs text-[#8B7D72] mt-3">
                 ※ 出典は各作家ページの「公開オークション落札実績」に明記（シンワオークション・SBI・Bonhams・Christie&apos;s・Sotheby&apos;s・MutualArt 等の公表データ・報道）。
               </p>
+            </section>
+
+            {/* 本データについて（引用・出典） */}
+            <section className="mb-14">
+              <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">本データについて（調査方法・出典・引用）</h2>
+                <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
+                  <li>・<strong>調査方法</strong>：公開オークションの公表落札データ（各オークションハウスの公式落札結果・プレスリリース）および各社公式情報をもとに、編集部が確認・要約しています。架空・推定の金額は掲載していません。</li>
+                  <li>・<strong>主な出典</strong>：シンワオークション、SBIアートオークション、東京中央オークション、Bonhams、Christie&apos;s、Sotheby&apos;s、MutualArt（公表データ・報道）。個別の出典URLは各作家ページに明記しています。</li>
+                  <li>・<strong>確認日</strong>：各実績の確認日は作家ページに記載。落札価格は手数料の扱い・為替・状態で変動し、海外取引は外貨建てです。</li>
+                  <li>・<strong>更新履歴</strong>：2026年6月に著名作家の落札実績を順次追加・更新しています（掲載作家は今後も拡充予定）。</li>
+                  <li>・<strong>引用ポリシー</strong>：本ページのデータは<strong>出典として本ページ（kottokaitori-biyori.com）を明記のうえ引用</strong>いただけます。各落札実績の一次情報は各オークションハウスの公式情報をご確認ください。</li>
+                </ul>
+              </div>
             </section>
 
             {/* 全作家インデックス（分野別） */}
