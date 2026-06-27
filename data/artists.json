@@ -173,7 +173,21 @@
       "藝大関連の来歴は価値を高める"
     ],
     "bio": "平山郁夫は広島県に生まれた日本画家で、被爆体験を原点に仏教やシルクロードを主題とした荘厳な作品を数多く残しました。文化財保護にも尽力し、東京藝術大学長や日本美術院理事長を務め、文化勲章を受章しています。",
-    "marketNote": "シルクロード・仏教を主題とした大作は高く評価されます。版画も広く流通しており、エディション・サイン・状態の確認が査定のポイントです。"
+    "marketNote": "シルクロード・仏教を主題とした大作は高く評価されます。版画も広く流通しており、エディション・サイン・状態の確認が査定のポイントです。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "MutualArt（作家別オークション記録）",
+      "rangeNote": "シルクロードを描いた日本画の巨匠。小品は数十万〜数百万円、代表作は数千万円規模。MutualArt集計の作家最高記録は『Traveling the moonlit desert（月光砂漠を行く）』の約US$303,640（毎日オークション）。",
+      "results": [
+        {
+          "title": "Traveling the moonlit desert（月光の砂漠を行く）",
+          "hammer": "約US$303,640（2012年以降の作家最高記録・MutualArt集計）",
+          "house": "毎日オークション（東京）",
+          "year": "2024",
+          "sourceUrl": "https://www.mutualart.com/Artist/Ikuo-Hirayama/95E95BBB53D23DCB"
+        }
+      ]
+    }
   },
   {
     "name": "藤田嗣治",
@@ -588,7 +602,21 @@
       "河井寬次郎記念館の鑑定が参考になる"
     ],
     "bio": "河井寛次郎は京都を拠点に活動した陶芸家で、民藝運動の中心人物の一人です。釉薬と窯の研究に秀で、初期の中国・朝鮮陶磁を範とした作風から、晩年は自由奔放で力強い造形へと到達しました。人間国宝や文化勲章の打診をいずれも辞退したことでも知られ、生涯を一陶工として貫きました。",
-    "marketNote": "三色打薬・辰砂・呉須を用いた優品は高額です。本人が無銘を通したため、箱書きや来歴、入手経緯が真贋・評価の重要な手がかりとなります。"
+    "marketNote": "三色打薬・辰砂・呉須を用いた優品は高額です。本人が無銘を通したため、箱書きや来歴、入手経緯が真贋・評価の重要な手がかりとなります。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "Bonhams 公式落札結果",
+      "rangeNote": "民藝運動を代表する陶芸家。共箱付きの釉薬作品は概ね四桁〜低五桁米ドルで取引。Bonhamsでは三彩・呉須の鉢がUS$3,187.50で落札（共箱は娘・河井浩派の極め）。",
+      "results": [
+        {
+          "title": "三彩呉須鉢（A Tri-Color and Cobalt Glazed Bowl・昭和期）",
+          "hammer": "US$3,187.50（手数料込）",
+          "house": "Bonhams（Fine Japanese and Korean Works of Art）",
+          "year": "2023",
+          "sourceUrl": "https://www.bonhams.com/auction/28441/lot/953/kawai-kanjiro-1890-1966-a-tri-color-and-cobalt-glazed-bowl-showa-era-1926-1989/"
+        }
+      ]
+    }
   },
   {
     "name": "濱田庄司",
@@ -2247,7 +2275,28 @@
       "真贋判断のため鑑定書・来歴資料を揃える"
     ],
     "bio": "徐悲鴻は近代中国画の巨匠です。フランスで西洋画を学び、写実的描写を中国画に取り入れました。躍動する馬の絵で世界的に知られ、中国近代美術教育の礎を築きました。",
-    "marketNote": "奔馬図など真筆は非常に高額です。模写が多いため、来歴と専門的な鑑定が不可欠です。"
+    "marketNote": "奔馬図など真筆は非常に高額です。模写が多いため、来歴と専門的な鑑定が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "Christie's 落札結果・報道（The Art Newspaper／HENI）",
+      "rangeNote": "中国近代美術の巨匠で馬の絵で著名。代表的な油彩大作は中国油画の記録を作る一方、紙本の小品は数万米ドル規模。油彩『奴隷と獅子』は2006年に当時の中国油画最高額HK$53.8M（約£5.4M）を記録。",
+      "results": [
+        {
+          "title": "奴隷と獅子（Slave and Lion・1924年作）",
+          "hammer": "HK$53,800,000（約£540万・当時の中国油画の最高落札額）",
+          "house": "Christie's 香港",
+          "year": "2006",
+          "sourceUrl": "https://www.theartnewspaper.com/2021/04/20/christies-to-offer-xu-beihong-painting-for-pound41mhighest-estimate-put-on-an-asian-work-by-a-western-auction-house"
+        },
+        {
+          "title": "Clothes Washing",
+          "hammer": "US$61,400（予想下値US$51,400を約19%上回る）",
+          "house": "Christie's（オンライン／Summer Reverie）",
+          "year": "2024",
+          "sourceUrl": "https://heni.com/news/article/xu-beihong-leads-christie-s-online-1-13m-summer-reverie-chinese-paintings-online-auction-2024-08-27t09-36-00-00"
+        }
+      ]
+    }
   },
   {
     "name": "歌川広重",
@@ -2307,7 +2356,21 @@
       "後摺りや復刻ではなく初摺り・正規版か"
     ],
     "bio": "喜多川歌麿は版元・蔦屋重三郎に見出され、美人大首絵という新たな様式を確立しました。雲母摺りを背景に用い、女性の繊細な表情やしぐさを情感豊かに表現。その美人画は当時絶大な人気を博し、後の浮世絵に大きな影響を与えました。晩年は筆禍により手鎖の処分を受けたとも伝えられます。",
-    "marketNote": "状態の良い正規版の美人大首絵は希少で高値が付きます。摺りや保存状態、版の真贋が価格を大きく左右するため、専門的な鑑定が欠かせません。"
+    "marketNote": "状態の良い正規版の美人大首絵は希少で高値が付きます。摺りや保存状態、版の真贋が価格を大きく左右するため、専門的な鑑定が欠かせません。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "Sotheby's（香港）落札結果・報道（The Value／MutualArt）",
+      "rangeNote": "浮世絵美人画の最高峰。錦絵は数百〜数万米ドルだが、肉筆の名品は破格。作家＆浮世絵ジャンルの最高記録は肉筆画『深川の雪』のHK$55,275,000（約US$710万）。",
+      "results": [
+        {
+          "title": "深川の雪（肉筆画・岡田美術館旧蔵）",
+          "hammer": "HK$55,275,000（落札総額・約US$710万／作家＆浮世絵ジャンルの最高記録。ハンマー価格HK$45,000,000）",
+          "house": "Sotheby's 香港",
+          "year": "2025",
+          "sourceUrl": "https://en.thevalue.com/articles/sothebys-hong-kong-masterpieces-of-asian-art-from-okada-museum-2025-japanese-art"
+        }
+      ]
+    }
   },
   {
     "name": "東洲斎写楽",
@@ -2352,7 +2415,21 @@
       "後摺りや復刻ではなく初摺り・正規版か"
     ],
     "bio": "歌川国芳は歌川豊国に学び、「通俗水滸伝」シリーズの豪傑たちを描いた武者絵で一躍人気絵師となりました。大胆な構図とダイナミックな描写、骸骨や巨大な生き物を描く奇想天外な発想で知られ、戯画や風刺画、猫を擬人化した作品も数多く残しています。月岡芳年ら多くの門人を育てました。",
-    "marketNote": "武者絵の大判錦絵や三枚続きの迫力ある作品が人気です。状態と摺りの良さ、正規版であることが価格を左右します。"
+    "marketNote": "武者絵の大判錦絵や三枚続きの迫力ある作品が人気です。状態と摺りの良さ、正規版であることが価格を左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "Sotheby's（ロンドン）落札記録（MutualArt集計）",
+      "rangeNote": "奇想の浮世絵師。単一の摺物は数百〜数千米ドルだが、希少な大判揃物は高額。1998年以降の作家最高記録は『相馬の古内裏（がしゃどくろ）』の約US$257,541。",
+      "results": [
+        {
+          "title": "相馬の古内裏（Mitsukuni Defying the Skeleton Spectre）",
+          "hammer": "約US$257,541（1998年以降の作家最高記録・MutualArt集計）",
+          "house": "Sotheby's ロンドン",
+          "year": "2019",
+          "sourceUrl": "https://www.mutualart.com/Artist/Utagawa-Kuniyoshi/2E115CAF5FA4DEF4"
+        }
+      ]
+    }
   },
   {
     "name": "川瀬巴水",
