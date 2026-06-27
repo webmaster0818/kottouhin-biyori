@@ -1251,7 +1251,21 @@
       "中国での鑑定書の有無"
     ],
     "bio": "呉昌碩は清末民初を代表する書画・篆刻の大家です。石鼓文の研究に基づく雄渾な書と、金石趣味あふれる花卉図で知られ、後世に大きな影響を与えました。",
-    "marketNote": "花卉図・書・篆刻の真筆は高額です。中国人コレクターの需要が高く、専門鑑定が重要です。"
+    "marketNote": "花卉図・書・篆刻の真筆は高額です。中国人コレクターの需要が高く、専門鑑定が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "北京保利 落札結果（The Value／Sohu 報道）",
+      "rangeNote": "近代中国の文人画・篆刻の大家。花卉の名品は高額。作家最高記録は『花卉十二屏』の約RMB2.093億（約US$3,000万）。",
+      "results": [
+        {
+          "title": "花卉十二屏（1915〜16年作）",
+          "hammer": "約RMB209,300,000（手数料込・作家最高記録／ハンマーRMB182,000,000）",
+          "house": "北京保利（2017年秋）",
+          "year": "2017",
+          "sourceUrl": "https://cn.thevalue.com/articles/wu-changshuo-chinese-ink-painting-auction"
+        }
+      ]
+    }
   },
   {
     "name": "張大千",
@@ -1348,7 +1362,28 @@
       "真作は極めて稀少"
     ],
     "bio": "八大山人(朱耷)は明末清初の画僧です。明の王族の出自とされ、簡潔で強烈な個性を持つ花鳥・山水を描きました。余白を生かした独創的な画風で後世に多大な影響を与えました。",
-    "marketNote": "真筆は極めて希少で高額です。伝称作・模写が多く、来歴と専門鑑定が価格を大きく分けます。"
+    "marketNote": "真筆は極めて希少で高額です。伝称作・模写が多く、来歴と専門鑑定が価格を大きく分けます。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "西泠印社・Sotheby's（NY）落札結果（雅昌 報道）",
+      "rangeNote": "明末清初の禅僧画家。希少な真筆は破格。『竹石鴛鴦』がRMB1.187億で当時の作家最高記録、欧米でも数百万米ドル規模。",
+      "results": [
+        {
+          "title": "竹石鴛鴦",
+          "hammer": "RMB118,720,000（手数料込・当時の作家最高記録）",
+          "house": "西泠印社（2010年秋）",
+          "year": "2010",
+          "sourceUrl": "https://news.artron.net/20101213/n139560.html"
+        },
+        {
+          "title": "Two Mynas on a Rock（1692年作）",
+          "hammer": "US$2,994,500（手数料込）",
+          "house": "Sotheby's ニューヨーク",
+          "year": "2010",
+          "sourceUrl": "https://www.antiquesandthearts.com/new-york-auction-houses-report-asia-week-totals/"
+        }
+      ]
+    }
   },
   {
     "name": "野々村仁清",
@@ -2392,7 +2427,28 @@
       "後摺りや復刻ではなく初摺り・正規版か"
     ],
     "bio": "東洲斎写楽は寛政6年(1794)から翌年にかけての約10か月間だけ作品を発表し、忽然と姿を消した謎多き絵師です。蔦屋重三郎が版元を務め、役者の特徴を鋭く誇張した大首絵を残しました。正体については阿波の能役者・斎藤十郎兵衛とする説が有力です。短い活動期間ゆえ作品は希少で、世界的に高く評価されています。",
-    "marketNote": "現存作品が限られ希少性が極めて高く、真作は美術館級の評価です。市場流通の多くは復刻・後摺りのため、正規版かどうかの鑑定が特に重要です。"
+    "marketNote": "現存作品が限られ希少性が極めて高く、真作は美術館級の評価です。市場流通の多くは復刻・後摺りのため、正規版かどうかの鑑定が特に重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "Bonhams 公式落札結果",
+      "rangeNote": "正体不明の浮世絵師。役者大首絵の名品はBonhams等で£7万〜US$10万規模で落札される希少品。",
+      "results": [
+        {
+          "title": "三世中山富三郎の宮城野（大判錦絵・1794年）",
+          "hammer": "US$95,750（手数料込）",
+          "house": "Bonhams（A Private Collection of Japanese Prints）",
+          "year": "2024",
+          "sourceUrl": "https://www.bonhams.com/auction/30062/lot/503/toshusai-sharaku-active-1794-1795-edo-period-1615-1868-1794/"
+        },
+        {
+          "title": "二世瀬川富三郎の宿木（大判大首絵・1794年）",
+          "hammer": "£73,250（手数料込）",
+          "house": "Bonhams ロンドン（Fine Japanese Art）",
+          "year": "2012",
+          "sourceUrl": "https://www.bonhams.com/auctions/20023/lot/462/"
+        }
+      ]
+    }
   },
   {
     "name": "歌川国芳",
@@ -3141,7 +3197,28 @@
       "来歴と専門機関の鑑定"
     ],
     "bio": "傅抱石は江西省に生まれ、日本に留学して美術史と絵画を学びました。伝統的な皴法を発展させた独自の「抱石皴」で、雨や霧に煙る雄大な山水を力強く描き、また歴史人物画にも優れました。中国近代絵画を代表する画家の一人で、その作品は国際的なオークションでも極めて高く評価されています。",
-    "marketNote": "真作は国際市場で非常に高額です。贋作が多数存在するため、鈐印・紙質・来歴と専門機関による厳密な鑑定が不可欠です。"
+    "marketNote": "真作は国際市場で非常に高額です。贋作が多数存在するため、鈐印・紙質・来歴と専門機関による厳密な鑑定が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "北京保利・中国嘉徳 落札結果（新浪・澎湃 報道）",
+      "rangeNote": "中国近代山水画の巨匠。代表作は数億人民元規模。作家最高記録は『云中君と大司命』のRMB2.3億（約US$3,500万）。",
+      "results": [
+        {
+          "title": "云中君と大司命（1954年作）",
+          "hammer": "RMB230,000,000（手数料込・作家最高記録／ハンマーRMB200,000,000）",
+          "house": "北京保利（2016年春）",
+          "year": "2016",
+          "sourceUrl": "http://collection.sina.com.cn/auction/pcdt/2016-06-12/doc-ifxszkzy5115897.shtml"
+        },
+        {
+          "title": "大滌草堂図",
+          "hammer": "RMB138,000,000（手数料込）",
+          "house": "中国嘉徳（2020年秋・大観夜場）",
+          "year": "2020",
+          "sourceUrl": "https://m.thepaper.cn/newsDetail_forward_10222086"
+        }
+      ]
+    }
   },
   {
     "name": "李可染",
@@ -3163,7 +3240,28 @@
       "来歴と専門機関の鑑定"
     ],
     "bio": "李可染は江蘇省に生まれ、斉白石や黄賓虹に学びました。写生を重視し、濃墨を大胆に用いた重厚で深みのある山水画を確立。紅葉に染まる山を描いた「万山紅遍」などで名高く、また水牛と牧童を温かく描いた牧牛図も愛されています。中国近代山水画を代表する巨匠で、作品は国際的に高く評価されています。",
-    "marketNote": "真作は国際市場で非常に高額です。贋作が極めて多いため、鈐印・紙質・来歴と専門機関による厳密な鑑定が欠かせません。"
+    "marketNote": "真作は国際市場で非常に高額です。贋作が極めて多いため、鈐印・紙質・来歴と専門機関による厳密な鑑定が欠かせません。",
+    "auctionResults": {
+      "verifiedAt": "2026年6月27日",
+      "sourceLabel": "北京保利・Sotheby's 落札結果（China Daily／The Value）",
+      "rangeNote": "水墨山水の革新者。紅色山水『万山紅遍』が作家最高記録の約2.93億人民元（約US$4,600万）。主要作は数千万〜億香港ドル。",
+      "results": [
+        {
+          "title": "万山紅遍（1964年作）",
+          "hammer": "約RMB293,000,000（約US$4,600万・作家最高記録）",
+          "house": "北京保利（2012年春）",
+          "year": "2012",
+          "sourceUrl": "https://europe.chinadaily.com.cn/life/2012-08/03/content_15642182.htm"
+        },
+        {
+          "title": "万水千山（1978年作）",
+          "hammer": "HK$122,162,500（手数料込／ハンマーHK$107,000,000）",
+          "house": "Sotheby's 香港（2017年秋）",
+          "year": "2017",
+          "sourceUrl": "https://en.thevalue.com/articles/sothebys-2017-autumn-sales-chinese-paintings-calligraphy-li-keran-results"
+        }
+      ]
+    }
   },
   {
     "name": "三輪休和",
