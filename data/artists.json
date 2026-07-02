@@ -778,7 +778,42 @@
       "箱書き・共箱の有無が重要"
     ],
     "bio": "楽吉左衛門は、桃山期の初代・長次郎に始まる楽焼の名跡で、千利休の侘茶を体現する茶碗を代々作り続けています。手捏ねと低火度焼成による楽茶碗は、茶道具の最高峰の一つとされます。",
-    "marketNote": "代によって評価が異なり、黒楽・赤楽の名碗は高額です。箱・極め・伝来の確認が不可欠です。"
+    "marketNote": "代によって評価が異なり、黒楽・赤楽の名碗は高額です。箱・極め・伝来の確認が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（何代の作かで相場が一桁変わるため代数を明記）",
+      "rangeNote": "樂家は歴代襲名のため「何代の作か」で相場が一桁変わります。十五代（直入）の茶碗はシンワオークション実績（手数料込・2023〜2025年）で155万〜989万円（焼貫・黒の大振り優品が500万〜990万円、赤茶碗が155万円前後）。一方、歴代旧世代は一入（四代）黒茶碗41.4万円など40万円前後の例も確認しており、代数と箱書の確認が査定の出発点です。",
+      "results": [
+        {
+          "title": "黒茶碗 雪雷晦冥（十五代・直入）",
+          "hammer": "9,890,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/06/20240615t_s.pdf"
+        },
+        {
+          "title": "焼貫黒茶碗 銘 岩清水（十五代・直入）",
+          "hammer": "7,130,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/03/20250308t_s.pdf"
+        },
+        {
+          "title": "赤茶碗 八十島（十五代・直入）",
+          "hammer": "1,552,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
+        },
+        {
+          "title": "黒茶碗（一入・四代）",
+          "hammer": "414,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "中村宗哲",
@@ -870,7 +905,42 @@
       "人間国宝認定後の作品は高額"
     ],
     "bio": "黒田辰秋は京都に生まれ、木工芸の分野で初の人間国宝に認定された工芸家です。民藝運動に共鳴し、漆と螺鈿を用いた重厚で力強い器物や家具を制作しました。",
-    "marketNote": "拭漆や螺鈿による飾棚・盤などの優品は高く評価されます。状態と共箱・来歴が査定額を左右します。"
+    "marketNote": "拭漆や螺鈿による飾棚・盤などの優品は高く評価されます。状態と共箱・来歴が査定額を左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF",
+      "rangeNote": "確認できた実績は約18万円（茶托などの小品）〜210万円（螺鈿茶器の優品）。茶托・茶器の小品は18万〜56万円前後、椀・皿類は15万〜64万円前後、耀貝螺鈿茶器の優品で200万円超。家具・大型棚物の公開実績は確認できなかったため、最高値帯はこのデータでは断定できません。",
+      "results": [
+        {
+          "title": "耀貝螺鈿茶器",
+          "hammer": "2,100,100円（古裂會公表の落札価格）",
+          "house": "古裂會 第146回入札",
+          "year": "2026",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/08/8bb200d9528e36532fa8aa56b7420919-1.pdf"
+        },
+        {
+          "title": "溜漆欅大平椀",
+          "hammer": "644,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
+        },
+        {
+          "title": "蔦金輪寺茶器",
+          "hammer": "560,100円（古裂會公表の落札価格）",
+          "house": "古裂會 第146回入札",
+          "year": "2026",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/08/8bb200d9528e36532fa8aa56b7420919-1.pdf"
+        },
+        {
+          "title": "拭漆欅茶托",
+          "hammer": "184,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "円山応挙",
@@ -958,7 +1028,35 @@
       "工房作と親筆の区別が重要"
     ],
     "bio": "狩野探幽は江戸初期に活躍した狩野派の代表的絵師です。幕府御用絵師として二条城や名古屋城などの障壁画を手がけ、余白を生かした瀟洒で典雅な画風で狩野派の新しい基礎を築きました。江戸狩野の隆盛を導いた中心人物です。",
-    "marketNote": "真筆は高額ですが、狩野派は門人・工房による作も多く存在します。落款・印章・極め書による真贋判断が査定の要となります。"
+    "marketNote": "真筆は高額ですが、狩野派は門人・工房による作も多く存在します。落款・印章・極め書による真贋判断が査定の要となります。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF（伝称作品を含む入札会実績）",
+      "rangeNote": "国内入札会での確認実績は34.5万〜129万円。両ハウスともカタログ表記は「狩野探幽」で「伝」等の限定語はありませんが、入札会カタログの呼称であり真筆保証を意味しない点にご注意ください（＝伝称作品を含む実勢です）。鑑定の確実な真筆大作の相場はこのデータでは語れないため、真作の可能性がある品は必ず専門鑑定を受けてください。",
+      "results": [
+        {
+          "title": "風神雷神画 双幅（古裂會上位カタログ「清華譜」区分）",
+          "hammer": "1,290,000円（古裂會公表の落札価格）",
+          "house": "古裂會 第134回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/10/134th_hp.pdf"
+        },
+        {
+          "title": "菊芙蓉 双幅",
+          "hammer": "598,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
+        },
+        {
+          "title": "中維摩 左右山水 三幅対",
+          "hammer": "345,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "雪舟",
@@ -1611,7 +1709,42 @@
       "光琳との合作は特に高額"
     ],
     "bio": "尾形乾山は江戸中期の京都の陶工・絵師で、画家・尾形光琳の弟にあたります。兄と協同した作品も多く、絵画的で意匠性に富む器づくりによって琳派の美意識を陶芸へと展開しました。銹絵や色絵の角皿などで知られます。",
-    "marketNote": "真作は高額ですが、後世の『乾山写し』も非常に多く流通します。真贋には専門的な鑑定が欠かせません。"
+    "marketNote": "真作は高額ですが、後世の『乾山写し』も非常に多く流通します。真贋には専門的な鑑定が欠かせません。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF（いずれも乾山銘・乾山焼を含む市場実績）",
+      "rangeNote": "「乾山」「尾形乾山」名義の落札は8.6万〜437万円と、帰属評価で桁が変わります。以下はいずれもオークション結果一覧上の名義表記で、真筆を保証する記載（極書・鑑定書明記）のあるロットは確認できませんでした＝乾山銘・乾山焼を含む実勢です。鑑定書付き真筆の相場は別次元になるため、真作の可能性がある品は必ず専門鑑定を受けてください。",
+      "results": [
+        {
+          "title": "色絵草花大平鉢（「乾山」名義）",
+          "hammer": "4,370,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        },
+        {
+          "title": "椿絵向付 五客（「尾形乾山」名義）",
+          "hammer": "350,000円（入札額）",
+          "house": "古裂會 第148回入札",
+          "year": "2026",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2026/03/148th526.pdf"
+        },
+        {
+          "title": "獅子絵水指（「尾形乾山」名義）",
+          "hammer": "268,000円（入札額）",
+          "house": "古裂會 第142回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/11/142th528.pdf"
+        },
+        {
+          "title": "銹絵角皿（「尾形乾山」名義）",
+          "hammer": "86,000円（入札額）",
+          "house": "古裂會 第136回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/02/136thhp3.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "板谷波山",
@@ -1691,7 +1824,42 @@
       "箱書きの真贋確認"
     ],
     "bio": "加藤唐九郎は愛知・瀬戸に生まれた陶芸家で、桃山陶の研究と再現に生涯を捧げました。志野・黄瀬戸・瀬戸黒などで力強い作風を確立し、古陶磁の研究者としても大きな足跡を残しました。",
-    "marketNote": "志野茶碗などの優品は高額です。作風・陶印・共箱(極め)の有無が査定の鍵となります。"
+    "marketNote": "志野茶碗などの優品は高額です。作風・陶印・共箱(極め)の有無が査定の鍵となります。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（ハンマー・手数料込み両方を確認）",
+      "rangeNote": "茶碗クラスはシンワオークション実績（手数料込）で約180万〜300万円を確認。銘付きの志野優品は概ね200万円超（銘「遠山」264.5万円、銘「松風」212.7万円、志野茶盌299万円）と、近代陶芸の中でも高値安定の作家です。",
+      "results": [
+        {
+          "title": "志野茶盌",
+          "hammer": "2,990,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        },
+        {
+          "title": "志野茶盌 銘 遠山",
+          "hammer": "2,645,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        },
+        {
+          "title": "志野茶盌 銘 松風",
+          "hammer": "2,127,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
+        },
+        {
+          "title": "志野茶盌",
+          "hammer": "1,805,750円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230311t_c.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "荒川豊蔵",
@@ -1772,7 +1940,42 @@
       "人間国宝認定前後で価格差"
     ],
     "bio": "金重陶陽は岡山・備前の窯元に生まれた陶芸家です。型物中心に衰退していた備前焼を、桃山期の土味を生かした力強い作風へと立ち返らせ『備前焼中興の祖』と称されました。備前焼で初の人間国宝に認定され、多くの後進を育てました。",
-    "marketNote": "備前の茶陶・置物の優品は高額です。無釉のため作風・陶印・共箱が真贋判断の重要な手がかりになります。"
+    "marketNote": "備前の茶陶・置物の優品は高額です。無釉のため作風・陶印・共箱が真贋判断の重要な手がかりになります。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（ハンマー・手数料込み両方を確認）",
+      "rangeNote": "シンワオークション実績（手数料込）で、酒器・徳利クラスが約37万円、茶碗・水指・花入クラスが約37万〜48万円。人間国宝（備前焼）の作としては比較的手が届く価格帯で安定して取引されています。",
+      "results": [
+        {
+          "title": "備前花入",
+          "hammer": "483,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
+        },
+        {
+          "title": "備前茶盌",
+          "hammer": "460,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/03/20250308t_s.pdf"
+        },
+        {
+          "title": "備前矢筈口水指",
+          "hammer": "368,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
+        },
+        {
+          "title": "備前徳利",
+          "hammer": "368,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "藤原啓",
@@ -2019,7 +2222,35 @@
       "ひび・欠け・直しの有無を確認"
     ],
     "bio": "八木一夫は京都に生まれた陶芸家で、前衛陶芸集団『走泥社』を結成しました。実用を離れた立体造形『オブジェ焼』を切り拓き、現代陶芸の流れを大きく変えた先駆者です。代表作に『ザムザ氏の散歩』があります。",
-    "marketNote": "オブジェ作品は美術品として評価され、優品は高額です。真贋・来歴の確認が査定のポイントです。"
+    "marketNote": "オブジェ作品は美術品として評価され、優品は高額です。真贋・来歴の確認が査定のポイントです。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、Bonhams公式ロットページ",
+      "rangeNote": "確認できたのは小品〜中型作品で、国内公開オークション（手数料込）で約2.9万〜36.8万円、海外（Bonhams）で1,912英ポンド（手数料込）。走泥社時代の代表的なオブジェ大作の公開実績は確認できなかったため、大作の相場は査定でご確認ください。",
+      "results": [
+        {
+          "title": "鉄描壷",
+          "hammer": "368,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
+        },
+        {
+          "title": "黒陶陶板 \"WATER IS......\"",
+          "hammer": "1,912.50英ポンド（手数料込）",
+          "house": "Bonhams",
+          "year": "2023",
+          "sourceUrl": "https://www.bonhams.com/auction/28478/lot/229/yagi-kazuo-1918-1979-a-black-clay-ceramic-plaque-showa-era-1926-1989-circa-1950-1989-2/"
+        },
+        {
+          "title": "筒花生",
+          "hammer": "28,750円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/12/20251206t_s.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "川喜田半泥子",
@@ -2042,7 +2273,42 @@
       "ひび・欠け・直しの有無を確認"
     ],
     "bio": "川喜田半泥子は三重・津の素封家に生まれ、実業家・茶人として活動しながら作陶に親しんだ数寄者です。自由闊達な茶陶で『東の魯山人』と称され、独創的な茶碗を多く残しました。",
-    "marketNote": "志野・粉引などの茶碗の優品は高額です。銘や箱、来歴が評価を大きく左右します。"
+    "marketNote": "志野・粉引などの茶碗の優品は高額です。銘や箱、来歴が評価を大きく左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF",
+      "rangeNote": "小品（ぐい呑・徳利・花入）は6.1万〜10.7万円（古裂會・入札額）、茶碗はシンワオークションで73.6万円（手数料込）を確認。銘付きの茶碗優品はさらに上振れする可能性がありますが、確認できた茶碗実績は1件のため、上限は査定でご確認ください。",
+      "results": [
+        {
+          "title": "白がけ茶わん",
+          "hammer": "736,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/03/20250308t_s.pdf"
+        },
+        {
+          "title": "ぐい呑",
+          "hammer": "107,000円（入札額）",
+          "house": "古裂會 第136回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/02/136thhp3.pdf"
+        },
+        {
+          "title": "竹花入",
+          "hammer": "68,000円（入札額）",
+          "house": "古裂會 第132回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/07/132hp3.pdf"
+        },
+        {
+          "title": "刷毛目徳利",
+          "hammer": "61,000円（入札額）",
+          "house": "古裂會 第140回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/05/140thHP-1.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "楠部彌弌",
@@ -2197,7 +2463,42 @@
       "シミ・折れ・退色など状態を確認"
     ],
     "bio": "川合玉堂は愛知に生まれた日本画家です。日本の山村風景や四季の自然を詩情豊かに描き、近代日本画を代表する存在となりました。文化勲章を受章しています。",
-    "marketNote": "山水・花鳥の真作は高評価です。落款・印章・箱書きの有無が査定額を左右します。"
+    "marketNote": "山水・花鳥の真作は高評価です。落款・印章・箱書きの有無が査定額を左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（ハンマー・手数料込み両方を確認）",
+      "rangeNote": "国内主要オークションで流通量が多い作家です。小品・扇面は数万〜50万円程度、本画の優品は約210万〜345万円（手数料込）が近年の実勢。不落札となる出品も相応にあり、作品の格・状態による選別がはっきり出ます。",
+      "results": [
+        {
+          "title": "渓村抄秋",
+          "hammer": "3,450,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/07/20240720m_s2.pdf"
+        },
+        {
+          "title": "溪山紅葉 渡頭春靄",
+          "hammer": "2,185,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/07/20240720m_s2.pdf"
+        },
+        {
+          "title": "川辺に松桜",
+          "hammer": "2,127,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
+        },
+        {
+          "title": "鮎釣",
+          "hammer": "483,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/07/20250719m_s.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "片岡球子",
@@ -2345,7 +2646,28 @@
       "シミ・折れ・退色など状態を確認"
     ],
     "bio": "菱田春草は長野・飯田に生まれた日本画家です。横山大観とともに輪郭線を抑えた朦朧体を追求し、近代日本画に革新をもたらしました。36歳で早世した夭折の天才です。",
-    "marketNote": "『黒き猫』に通じる真作は極めて希少で高額です。点数が少なく、真贋鑑定が不可欠です。"
+    "marketNote": "『黒き猫』に通じる真作は極めて希少で高額です。点数が少なく、真贋鑑定が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "古裂會公式落札結果PDF（確認できた公開実績は2件のみ・代表性は限定的）",
+      "rangeNote": "夭折し重要文化財級の代表作は美術館収蔵のため、市場流通が極端に少ない作家です。確認できた公開実績は古裂會の小幅2件（32.8万円・91.1万円・いずれも買主手数料別）のみで、小幅でも数十万〜100万円弱の実績があります。優品・本画の相場はこのデータでは語れないため、必ず専門査定でご確認ください。",
+      "results": [
+        {
+          "title": "雨江曳舩画幅",
+          "hammer": "911,111円（買主手数料別）",
+          "house": "古裂會 第128回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2022/12/128th0207.pdf"
+        },
+        {
+          "title": "椿画幅",
+          "hammer": "328,000円（買主手数料別）",
+          "house": "古裂會 第142回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/11/142th528.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "下村観山",
@@ -2389,7 +2711,42 @@
       "シミ・折れ・退色など状態を確認"
     ],
     "bio": "富岡鉄斎は京都に生まれ、最後の文人画家と称される画家・儒学者です。膨大な学識に裏打ちされた自由奔放な画風で、晩年に至るほど画境を深めました。",
-    "marketNote": "山水・人物の真筆は高評価です。賛(書)の内容や落款、来歴が査定の手がかりとなります。"
+    "marketNote": "山水・人物の真筆は高評価です。賛(書)の内容や落款、来歴が査定の手がかりとなります。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF",
+      "rangeNote": "画賛幅を中心に流通は多く、確認できた落札は約15万〜49万円。近年の公開市場では数十万円台が中心帯です。出品数に対して不落札も多く、題材・書の充実度で評価が分かれます。",
+      "results": [
+        {
+          "title": "幽渓漁隠圖",
+          "hammer": "489,300円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/01/20230128m_s.pdf"
+        },
+        {
+          "title": "平家物語嵯峨深秋画賛幅",
+          "hammer": "361,111円（買主手数料別）",
+          "house": "古裂會 第134回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/10/134th_hp.pdf"
+        },
+        {
+          "title": "狸画賛幅",
+          "hammer": "258,000円（買主手数料別）",
+          "house": "古裂會 第128回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2022/12/128th0207.pdf"
+        },
+        {
+          "title": "大津絵画賛幅",
+          "hammer": "150,000円（買主手数料別）",
+          "house": "古裂會 第143回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/03/143th722.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "速水御舟",
@@ -2411,7 +2768,42 @@
       "シミ・折れ・退色など状態を確認"
     ],
     "bio": "速水御舟は東京に生まれた日本画家です。細密描写から象徴的表現まで絶えず画風を変え、『炎舞』『名樹散椿』などの名作を残しました。40歳で早世しています。",
-    "marketNote": "真作は極めて希少で高額です。点数が少ないため、来歴と専門的な鑑定が重要です。"
+    "marketNote": "真作は極めて希少で高額です。点数が少ないため、来歴と専門的な鑑定が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（ハンマー・手数料込み両方を確認）",
+      "rangeNote": "夭折作家で真筆の流通が少なく、価格差が極端です。素描・小品は約17万〜58万円、彩色本画の優品《唐もろこし》は621万円（手数料込）と、作品の格による開きが非常に大きい作家です。",
+      "results": [
+        {
+          "title": "唐もろこし（彩色本画）",
+          "hammer": "6,210,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
+        },
+        {
+          "title": "ヒヨドリ",
+          "hammer": "575,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
+        },
+        {
+          "title": "仏頭",
+          "hammer": "195,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
+        },
+        {
+          "title": "盆梅図",
+          "hammer": "172,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "鏑木清方",
@@ -2522,7 +2914,42 @@
       "箱書き・鑑定書の有無で査定額が変動"
     ],
     "bio": "仙厓義梵は美濃に生まれた江戸後期の臨済宗の禅僧です。博多・聖福寺の住持を務め、ユーモラスで親しみやすい禅画を数多く残しました。『○△□』の図で広く知られます。",
-    "marketNote": "禅画・墨蹟の真筆は高額です。飄逸な作風ゆえ模写も多く、来歴と鑑定が重要です。"
+    "marketNote": "禅画・墨蹟の真筆は高額です。飄逸な作風ゆえ模写も多く、来歴と鑑定が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "Bonhams公式ロット結果、古裂會公式落札結果PDF（古裂會分は結果一覧に真贋保証区分の記載なし）",
+      "rangeNote": "公開市場に出るのは小幅の画賛幅が中心で、確認できた実績は約13万〜33万円（古裂會・買主手数料別）、海外ではBonhamsロンドンで4,375英ポンド（手数料込・真筆扱い表記）。出光コレクション級の代表作は美術館収蔵が中心で公開取引を確認できず、優品の上限はこのレンジでは語れません。",
+      "results": [
+        {
+          "title": "風竹図（Windblown Bamboo・真筆扱い表記）",
+          "hammer": "4,375英ポンド（手数料込）",
+          "house": "Bonhams（ロンドン）",
+          "year": "2016",
+          "sourceUrl": "https://www.bonhams.com/auction/24040/lot/85/sengai-gibon-1750-1837-windblown-bamboo-edo-period-1615-1868-late-18th-early-19th-century-3/"
+        },
+        {
+          "title": "龍画賛幅",
+          "hammer": "333,000円（買主手数料別）",
+          "house": "古裂會 第132回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/07/132thHP.pdf"
+        },
+        {
+          "title": "寒山拾得画賛幅",
+          "hammer": "310,000円（買主手数料別）",
+          "house": "古裂會 第143回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/03/143th722.pdf"
+        },
+        {
+          "title": "指月布袋画賛幅",
+          "hammer": "189,900円（買主手数料別）",
+          "house": "古裂會 第131回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2023/06/131thHP.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "白隠慧鶴",
@@ -2860,7 +3287,42 @@
       "後摺りや復刻ではなく初摺り・正規版か"
     ],
     "bio": "吉田博は洋画家として水彩・油彩で高い評価を得たのち、木版画に取り組み、同じ版木で摺りを変える「摺違い」など高度な技術を追求しました。山岳や海外の風景を題材にした精緻で写実的な版画は、自摺りに近い厳格な監修で制作され、海外でも高く評価されています。",
-    "marketNote": "自摺・監修の確かな作品で状態の良いものは人気が高く高値で取引されます。摺りの精度や版元・落款の確認が重要です。"
+    "marketNote": "自摺・監修の確かな作品で状態の良いものは人気が高く高値で取引されます。摺りの精度や版元・落款の確認が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月3日",
+      "sourceLabel": "古裂會公式落札結果PDF、Bonhams公式ロット結果ページ",
+      "rangeNote": "確認できた実績は約281〜2,684米ドル（Bonhams・手数料込）および24万円（古裂會公表の落札価格）。状態並の単品〜組物がこのレンジです。《雲井桜》等の著名図柄・自摺良品はさらに高額とされますが、公式出典で検証できる実績は確認できなかったため、優品の相場は査定でご確認ください。",
+      "results": [
+        {
+          "title": "瀬戸内海集 帆船 朝（1926年）",
+          "hammer": "2,684米ドル（手数料込）",
+          "house": "Bonhams（サンフランシスコ）",
+          "year": "2010",
+          "sourceUrl": "https://www.bonhams.com/auctions/18412/lot/5354/"
+        },
+        {
+          "title": "朝鮮満洲シリーズ 木版画5枚組（1937年）",
+          "hammer": "2,125米ドル（手数料込）",
+          "house": "Bonhams（ニューヨーク）",
+          "year": "2013",
+          "sourceUrl": "https://www.bonhams.com/auctions/20999/lot/3215/"
+        },
+        {
+          "title": "弘前城 版画額",
+          "hammer": "240,000円（古裂會公表の落札価格）",
+          "house": "古裂會 第141回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/11/141thHPnew.pdf"
+        },
+        {
+          "title": "農家（Farm House・1946年）",
+          "hammer": "281.60米ドル（手数料込）",
+          "house": "Bonhams Skinner（ボストン）",
+          "year": "2023",
+          "sourceUrl": "https://www.bonhams.com/auction/28625/lot/290/yoshida-hiroshi-1876-1950-farm-house/"
+        }
+      ]
+    }
   },
   {
     "name": "黒田清輝",
