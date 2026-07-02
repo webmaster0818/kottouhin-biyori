@@ -4,6 +4,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy/" },
   title: "プライバシーポリシー | 骨董品買取びより",
   description: "骨董品買取びよりのプライバシーポリシーです。個人情報の取扱い方針、Cookie・アクセス解析ツールの利用等について説明します。",
 };

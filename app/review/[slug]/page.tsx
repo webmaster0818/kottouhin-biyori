@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
   return {
-    title: `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
-    description: `${company.name}の口コミ・評判を徹底検証。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法を詳しく解説します。`,
+    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
+    description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を徹底検証。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法を詳しく解説します。`,
     alternates: { canonical: `/review/${slug}` },
   };
 }
@@ -50,7 +50,7 @@ export default async function DynamicReviewPage({ params }: Props) {
     "headline": `${company.name}の口コミ・評判【2026年最新】`,
     "description": `${company.name}の口コミ・評判を徹底検証。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
-    "dateModified": "2026-05-25T00:00:00+09:00",
+    "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
@@ -179,6 +179,97 @@ export default async function DynamicReviewPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </section>
+          )}
+
+          {/* 品目・店舗などの深掘りセクション（データ駆動・任意） */}
+          {(company as any).topicSections && (company as any).topicSections.map((sec: {
+            id: string; title: string; lead?: string; bullets?: string[];
+            table?: { caption?: string; headers: string[]; rows: string[][] }; note?: string;
+          }) => (
+            <section key={sec.id} id={sec.id} className="py-12 md:py-16">
+              <div className="max-w-4xl mx-auto px-4">
+                <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+                  <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-b border-[#E0D5C8] pb-3">
+                    {sec.title}
+                  </h2>
+                  {sec.lead && (
+                    <p className="text-[#5C4A3A] leading-relaxed mb-5 text-sm md:text-base">{sec.lead}</p>
+                  )}
+                  {sec.bullets && (
+                    <ul className="space-y-2.5 mb-5">
+                      {sec.bullets.map((b, i) => (
+                        <li key={i} className="text-sm text-[#2C1810] leading-relaxed flex gap-2">
+                          <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {sec.table && (
+                    <div className="overflow-x-auto mb-4">
+                      {sec.table.caption && (
+                        <p className="text-sm font-bold text-[#8B4513] mb-2">{sec.table.caption}</p>
+                      )}
+                      <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                        <thead className="bg-[#8B4513] text-white">
+                          <tr>
+                            {sec.table.headers.map((h, i) => (
+                              <th key={i} className="px-3 py-2.5 text-left">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sec.table.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-[#E0D5C8]">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`px-3 py-2.5 ${ci === 0 ? "font-bold" : "text-[#5C4A3A]"}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                  {sec.note && <p className="text-xs text-[#8B7D72]">{sec.note}</p>}
+                </div>
+              </div>
+            </section>
+          ))}
+
+          {/* Google口コミ（取得データがある場合のみ） */}
+          {(company as any).googleReviews && (
+            <section className="py-12 md:py-16 bg-white" id="google-reviews">
+              <div className="max-w-4xl mx-auto px-4">
+                <div className="text-center mb-8">
+                  <p className="text-sm text-[#C9A96E] tracking-widest mb-2">GOOGLE REVIEWS</p>
+                  <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                    {(company as any).googleReviews.placeName}のGoogle口コミ
+                  </h2>
+                  <p className="text-sm text-[#5C4A3A] mt-3">
+                    Google平均評価 <span className="text-xl font-bold text-[#8B4513]">★{(company as any).googleReviews.rating}</span>
+                    （{(company as any).googleReviews.count}件）
+                  </p>
+                  <p className="text-xs text-[#8B7D72] mt-1">
+                    出典: Googleマップ（{(company as any).googleReviews.fetchedAt}取得）。表示はGoogleが返す最新レビューの一部で、高評価に偏る場合があります。
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  {(company as any).googleReviews.reviews.map((r: { author: string; rating: number; when: string; text: string }, i: number) => (
+                    <div key={i} className="bg-[#FAF7F2] rounded-2xl p-5 border border-[#E0D5C8]">
+                      <div className="flex items-center gap-2 mb-2 text-sm">
+                        <span className="font-bold text-[#2C1810]">{r.author}さん</span>
+                        <span className="text-[#C9A96E]">{"★".repeat(r.rating)}</span>
+                        <span className="text-xs text-[#8B7D72]">{r.when}</span>
+                      </div>
+                      <p className="text-sm text-[#5C4A3A] leading-relaxed">{r.text}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs text-[#8B7D72] mt-4 text-center">
+                  最新・全件の口コミはGoogleマップでご確認ください。
+                </p>
               </div>
             </section>
           )}

@@ -3,6 +3,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
+  alternates: { canonical: "/learn/what-is-kottouhin/" },
   title: "骨董品とは？定義・歴史・分類を専門家が解説【完全ガイド】",
   description:
     "骨董品の定義や歴史、分類体系を専門家がわかりやすく解説。掛軸・陶磁器・茶道具・刀剣など品目別の特徴から、骨董品の価値を決める5つの要素まで網羅した完全ガイドです。",

@@ -1,6 +1,10 @@
 import Link from "next/link";
 import companies from "@/data/companies.json";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 function RankBadge({ rank }: { rank: number }) {
   const colors =
     rank === 1

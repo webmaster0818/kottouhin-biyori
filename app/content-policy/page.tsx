@@ -4,6 +4,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/content-policy/" },
   title: "記事の制作ポリシー | 骨董品買取びより",
   description: "骨董品買取びよりの記事制作ポリシーです。コンテンツ制作の基本方針、情報の正確性への取り組み、制作フローについて説明します。",
 };

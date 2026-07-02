@@ -3,9 +3,10 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
-  title: "骨董品の保管方法・お手入れ完全ガイド｜品目別の温度・湿度早見表つき",
+  alternates: { canonical: "/learn/how-to-store/" },
+  title: "骨董品の保管方法・お手入れ完全ガイド【2026年版】品目別の温度・湿度早見表つき",
   description:
-    "骨董品の正しい保管方法を品目別に徹底解説。掛軸・陶磁器・茶道具・絵画・刀剣・着物の理想湿度と温度の早見表、正しい巻き方・仕舞い方、やってはいけないNG行為、桐箱などの保管グッズまで。保存状態は査定額を数倍左右します。",
+    "骨董品の正しい保管方法を品目別に徹底解説。掛軸・陶磁器・茶道具・絵画・刀剣・着物・古銭・漆器の理想湿度と温度の早見表、季節別の保管カレンダー、やってはいけないNG行為、桐箱などの保管グッズまで。保存状態は査定額を数倍左右します。",
 };
 
 export default function HowToStorePage() {
@@ -14,7 +15,7 @@ export default function HowToStorePage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"学ぶ\",\"item\":\"https://kottokaitori-biyori.com/learn/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"骨董品の保管・お手入れ完全ガイド\",\"item\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の保管方法・お手入れ完全ガイド\",\"description\":\"骨董品の保管方法を品目別に解説。理想湿度・温度の早見表つき\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-12T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の保管方法・お手入れ完全ガイド\",\"description\":\"骨董品の保管方法を品目別に解説。理想湿度・温度の早見表つき\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-07-02T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-store/\"}}" }} />
       {/* JSONLD_INJECTED_v1 #2: FAQPage */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -24,7 +25,8 @@ export default function HowToStorePage() {
           { "@type": "Question", "name": "桐箱がない場合はどう保管すればいいですか？", "acceptedAnswer": { "@type": "Answer", "text": "中性紙の薄葉紙で包み、布箱や紙箱に調湿剤（シリカゲル）を入れて代用できます。共箱（作家の署名入りの箱）が残っている品は査定額に大きく影響するため、必ず品物とセットで保管してください。" } },
           { "@type": "Question", "name": "押し入れやクローゼットに保管しても大丈夫ですか？", "acceptedAnswer": { "@type": "Answer", "text": "直射日光を避けられる点では適していますが湿気がこもりやすいため、除湿剤を置き年1〜2回は風を通してください。すのこ等で底上げすると湿気被害を減らせます。" } },
           { "@type": "Question", "name": "保管状態が悪いと買取価格はどのくらい下がりますか？", "acceptedAnswer": { "@type": "Answer", "text": "カビ・シミ・虫食い・欠けの程度によりますが、同じ作品でも状態次第で査定額が数分の一になることがあります。修復は自己判断せず、まず査定で現状の価値を確認するのがおすすめです。" } },
-          { "@type": "Question", "name": "自分でクリーニングしてから売ったほうが高くなりますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。自己流の清掃は古色や銘を消してしまい、かえって査定額を下げる危険があります。乾いた柔らかい布で埃を払う程度にとどめ、汚れ落としは専門家に相談してください。" } }
+          { "@type": "Question", "name": "自分でクリーニングしてから売ったほうが高くなりますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。自己流の清掃は古色や銘を消してしまい、かえって査定額を下げる危険があります。乾いた柔らかい布で埃を払う程度にとどめ、汚れ落としは専門家に相談してください。" } },
+          { "@type": "Question", "name": "梅雨の時期に特に気をつけることは？", "acceptedAnswer": { "@type": "Answer", "text": "湿度70%超が続くとカビが一気に発生します。除湿機・除湿剤で湿度60%以下を保ち、桐箱や押し入れは扉を時々開けて空気を入れ替えてください。梅雨明け後の晴天が続いた日に虫干しをするのが理想的です。" } }
         ]
       }) }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -93,6 +95,32 @@ export default function HowToStorePage() {
           </div>
         </section>
 
+        {/* 季節別 保管カレンダー */}
+        <section id="season-calendar" className="pb-10">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-2">季節別 保管カレンダー</h2>
+              <p className="text-sm text-[#5C4A3A] mb-5">
+                日本の四季は骨董品にとって過酷な環境変化です。季節ごとに「やること」を押さえておけば、劣化の大半は予防できます。
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  { season: "梅雨（6〜7月）", risk: "1年で最もカビリスクが高い時期", todo: "除湿機・除湿剤で湿度60%以下を維持。桐箱・押し入れは時々開けて空気を入れ替える。密閉したまま放置しない。" },
+                  { season: "夏（7〜9月）", risk: "高温多湿・害虫の活動期", todo: "梅雨明けの晴天が2〜3日続いた日に虫干し（陰干し）。防虫剤の交換時期を確認。直射日光の差し込む位置の変化に注意。" },
+                  { season: "秋（10〜11月）", risk: "保管替えの最適期", todo: "空気が乾燥した晴天日に2回目の虫干し。冬に向けて保管場所を点検し、たとう紙・薄葉紙の傷みがあれば交換。" },
+                  { season: "冬（12〜2月）", risk: "過乾燥・暖房による急激な温度変化", todo: "湿度40%を切る過乾燥に注意（紙・木がひび割れる）。暖房の風が直接当たる場所を避け、加湿しすぎにも注意。" },
+                ].map((item) => (
+                  <div key={item.season} className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                    <h3 className="font-bold text-[#8B4513] mb-1">{item.season}</h3>
+                    <p className="text-xs text-red-700 mb-2">{item.risk}</p>
+                    <p className="text-sm text-[#5C4A3A]">{item.todo}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Table of Contents */}
         <section className="pb-10">
           <div className="max-w-4xl mx-auto px-4">
@@ -106,9 +134,11 @@ export default function HowToStorePage() {
                 <li><a href="#kaiga" className="hover:text-[#8B4513] transition">5. 絵画の保管・お手入れ</a></li>
                 <li><a href="#touken" className="hover:text-[#8B4513] transition">6. 刀剣の保管・お手入れ</a></li>
                 <li><a href="#kimono" className="hover:text-[#8B4513] transition">7. 着物の保管・お手入れ</a></li>
-                <li><a href="#common-rules" className="hover:text-[#8B4513] transition">8. 共通の保管ルール</a></li>
-                <li><a href="#ng-actions" className="hover:text-[#8B4513] transition">9. やってはいけないNG行為</a></li>
-                <li><a href="#recommended-goods" className="hover:text-[#8B4513] transition">10. おすすめ保管グッズ</a></li>
+                <li><a href="#kosen-kitte" className="hover:text-[#8B4513] transition">8. 古銭・切手・紙ものの保管</a></li>
+                <li><a href="#shikki" className="hover:text-[#8B4513] transition">9. 漆器・仏像・木彫の保管</a></li>
+                <li><a href="#common-rules" className="hover:text-[#8B4513] transition">10. 共通の保管ルール</a></li>
+                <li><a href="#ng-actions" className="hover:text-[#8B4513] transition">11. やってはいけないNG行為</a></li>
+                <li><a href="#recommended-goods" className="hover:text-[#8B4513] transition">12. おすすめ保管グッズ</a></li>
               </ol>
             </div>
           </div>
@@ -379,12 +409,64 @@ export default function HowToStorePage() {
           </div>
         </section>
 
-        {/* Section 8: Common Rules */}
+        {/* Section 8: Kosen / Kitte */}
+        <section id="kosen-kitte" className="pb-12">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
+                8. 古銭・切手・紙ものの保管
+              </h2>
+              <div className="text-[#5C4A3A] leading-relaxed space-y-4">
+                <p>
+                  <Link href="/category/kosen" className="text-[#8B4513] underline hover:no-underline">古銭</Link>や<Link href="/category/kitte" className="text-[#8B4513] underline hover:no-underline">切手</Link>は小さく薄いため一見保管が簡単に思えますが、指紋・湿気・酸化という三大リスクがあり、状態のわずかな差が査定額に直結するコレクター品目です。
+                </p>
+                <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">古銭：素手で触らない・磨かない</h3>
+                <p>
+                  古銭は必ず縁を持ち、表面に指を触れないようにします。指紋の皮脂は時間とともに変色として定着します。緑青（ろくしょう）や黒ずみは経年の証でもあり、<strong className="text-[#8B4513]">磨いてピカピカにすると鑑定上はむしろ減点</strong>になるのが基本です。コインホルダーやコインカプセルに入れ、湿度40〜50%の乾燥した環境で保管しましょう。
+                </p>
+                <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">切手：ヒンジ跡・裏糊の保護</h3>
+                <p>
+                  切手は裏糊の状態が評価を大きく左右します。ピンセット（切手用の先が平らなもの）で扱い、ストックブックまたはマウントに入れて保管します。輪ゴムやクリップでまとめるのは跡がつくため厳禁です。直射日光は退色の原因になるため、アルバムごと暗所に保管してください。
+                </p>
+                <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">古文書・書状などの紙もの</h3>
+                <p>
+                  古文書・手紙・版画などの紙ものは、中性紙の保存袋・保存箱に入れるのが基本です。セロハンテープでの補修は経年で黄変し取り返しがつかなくなるため、破れがあってもそのままの状態で保管し、必要なら専門家に修復を相談してください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 9: Shikki / Butsuzou */}
+        <section id="shikki" className="pb-12">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
+                9. 漆器・仏像・木彫の保管
+              </h2>
+              <div className="text-[#5C4A3A] leading-relaxed space-y-4">
+                <p>
+                  漆器や木彫の仏像は「木」が本体です。湿度変化による割れ・反りと、乾燥による漆の剥離が二大リスクになります。
+                </p>
+                <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">漆器：乾燥とじか置きを避ける</h3>
+                <p>
+                  漆は極端な乾燥で艶を失い、ひび割れ（断文）が生じます。理想湿度は55〜65%とやや高めで、冬の暖房で乾燥する部屋では注意が必要です。柔らかい布で乾拭きし、研磨剤入りのクロスは使わないでください。長期保管は薄葉紙に包んで桐箱へ。直射日光は漆の変色を早めます。
+                </p>
+                <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">仏像・木彫：虫害と金箔・彩色の保護</h3>
+                <p>
+                  木彫の<Link href="/category/butsuzou" className="text-[#8B4513] underline hover:no-underline">仏像</Link>はシバンムシなどの食害を受けやすく、小さな穴や木粉を見つけたら被害進行中のサインです。防虫剤を近くに置き、年1回は全体を点検しましょう。金箔や彩色が残る像は、剥落を防ぐため<strong className="text-[#8B4513]">布で拭かず、柔らかい毛の筆で埃を払う</strong>のが正解です。台座や光背などの付属部品も査定対象になるため、外れてもすべて保管してください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 10: Common Rules */}
         <section id="common-rules" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
-                8. 共通の保管ルール
+                10. 共通の保管ルール
               </h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>品目を問わず、すべての骨董品に共通する保管の基本ルールをまとめます。</p>
@@ -420,12 +502,12 @@ export default function HowToStorePage() {
           </div>
         </section>
 
-        {/* Section 9: NG Actions */}
+        {/* Section 11: NG Actions */}
         <section id="ng-actions" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
-                9. やってはいけないNG行為
+                11. やってはいけないNG行為
               </h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>
@@ -472,12 +554,12 @@ export default function HowToStorePage() {
           </div>
         </section>
 
-        {/* Section 10: Recommended Goods */}
+        {/* Section 12: Recommended Goods */}
         <section id="recommended-goods" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
-                10. おすすめ保管グッズ
+                12. おすすめ保管グッズ
               </h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品の保管に役立つグッズをご紹介します。いずれもホームセンターや専門店、オンラインショップで入手可能です。</p>

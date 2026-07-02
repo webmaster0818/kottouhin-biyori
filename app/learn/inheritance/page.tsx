@@ -3,6 +3,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
+  alternates: { canonical: "/learn/inheritance/" },
   title: "骨董品の相続・評価ガイド【2026年】評価額の調べ方と分割・売却の進め方",
   description:
     "骨董品の相続で押さえるべき評価額の調べ方、遺産分割（現物分割・換価分割）の方法、売却して分ける流れ、申告時の注意点をわかりやすく解説。税務の詳細は税理士への相談が前提の、実務的な進め方ガイドです。",

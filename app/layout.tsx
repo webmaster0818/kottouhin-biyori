@@ -32,7 +32,6 @@ export const metadata: Metadata = {
     siteName: "骨董品買取びより",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "/" },
   twitter: {
     card: "summary_large_image",
   },

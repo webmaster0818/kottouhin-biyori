@@ -4,6 +4,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms/" },
   title: "利用規約 | 骨董品買取びより",
   description: "骨董品買取びよりの利用規約です。本サービスのご利用にあたっての条件・禁止事項・免責事項等をご確認ください。",
 };

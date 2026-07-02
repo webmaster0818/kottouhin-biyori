@@ -3,6 +3,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
+  alternates: { canonical: "/learn/ihin-kottou/" },
   title: "遺品整理で出た骨董品の対処法【2026年】価値の見極めと売却・形見分けの進め方",
   description:
     "遺品整理で出てきた骨董品の正しい対処法を解説。すぐ捨てない・すぐ売らないが原則。価値の見極め方、形見分けや相続人の合意、まとめて売却する際の業者選び、遺品整理業者との使い分けまで、後悔しない進め方をまとめました。",

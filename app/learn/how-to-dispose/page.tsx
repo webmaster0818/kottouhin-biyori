@@ -3,6 +3,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
+  alternates: { canonical: "/learn/how-to-dispose/" },
   title: "骨董品の処分方法・捨て方【2026年】後悔しない判断基準と費用を解説",
   description:
     "骨董品の処分方法を、買取・オークション・寄付譲渡・自治体での廃棄・遺品整理業者の5通りで比較。捨てる前に査定すべき理由、処分費用の目安、価値が出やすい品の特徴まで、後悔しない判断基準を解説します。",
