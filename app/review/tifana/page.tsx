@@ -3,11 +3,12 @@ import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
+import { TopicSections, GoogleReviewsSection } from "@/app/components/CompanyExtras";
 
 const company = companies.find((c) => c.id === "tifana")!;
 
 export const metadata: Metadata = {
-  title: `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
   description: `${company.name}の口コミ・評判を徹底検証。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説。`,
   alternates: { canonical: "/review/tifana" },
 };
@@ -98,6 +99,9 @@ export default function TifanaReview() {
             </div>
           </div>
         </section>
+
+        <TopicSections sections={(company as any).topicSections} />
+        <GoogleReviewsSection data={(company as any).googleReviews} />
 
         {/* Pros & Cons */}
         <section className="py-12 md:py-16">
