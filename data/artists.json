@@ -697,7 +697,42 @@
       "窯印の確認が重要"
     ],
     "bio": "酒井田柿右衛門は、江戸初期の有田で赤絵(上絵付)を大成したとされる陶工の名跡で、当代まで受け継がれています。乳白色の素地『濁手(にごしで)』に余白を生かして色絵を施す様式は欧州でも珍重され、柿右衛門様式として名高いものです。",
-    "marketNote": "歴代の作があり、代・落款・濁手の質によって評価が分かれます。共箱・銘の確認が査定の要となります。"
+    "marketNote": "歴代の作があり、代・落款・濁手の質によって評価が分かれます。共箱・銘の確認が査定の要となります。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "Bonhams公式落札結果ページ（手数料込み表記を確認）",
+      "rangeNote": "確認できた実績は三層構造です。江戸期の柿右衛門様式の優品（色絵八角壺）は数万ドル級（確認例76,000米ドル・特定代の作ではなく様式品）、近代の12代作の置物が4,200〜7,500英ポンド。一方、14代（人間国宝）でも小品はオンラインセールで150豪ドル弱の例があり、時代・作行き・箱書で価格が数百倍開く市場です。何代の作かの見極めが査定の出発点になります。",
+      "results": [
+        {
+          "title": "色絵八角壺（江戸期・柿右衛門様式）",
+          "hammer": "76,000米ドル（手数料込）",
+          "house": "Bonhams New York",
+          "year": "2005",
+          "sourceUrl": "https://www.bonhams.com/auctions/13313/lot/9001/"
+        },
+        {
+          "title": "磁器麒麟置物（12代作）",
+          "hammer": "7,500英ポンド（手数料込）",
+          "house": "Bonhams London",
+          "year": "2012",
+          "sourceUrl": "https://www.bonhams.com/auctions/20023/lot/578/"
+        },
+        {
+          "title": "白磁麒麟置物（12代作）",
+          "hammer": "4,200英ポンド（手数料込）",
+          "house": "Bonhams London",
+          "year": "2010",
+          "sourceUrl": "https://www.bonhams.com/auctions/17816/lot/382/"
+        },
+        {
+          "title": "染付銘 小型花瓶（14代作・小品）",
+          "hammer": "147.60豪ドル（手数料込）",
+          "house": "Bonhams Sydney",
+          "year": "2025",
+          "sourceUrl": "https://www.bonhams.com/auction/31131/lot/184/sakaida-kakiemon-xiv-1934-2013-signed-in-underglaze-blue-kakiemon-japan-mid-to-late-20th-century/"
+        }
+      ]
+    }
   },
   {
     "name": "今泉今右衛門",
@@ -946,7 +981,28 @@
       "紙の時代判定が重要"
     ],
     "bio": "雪舟は室町時代の禅僧にして日本水墨画を大成した画家です。明(中国)に渡って画技を磨き、帰国後は山口を拠点に雄渾な山水画を描きました。『秋冬山水図』『天橋立図』など複数の国宝で知られ、後世『画聖』と仰がれています。",
-    "marketNote": "真筆は国宝級で市場に出ることは極めて稀です。『伝雪舟』や後世の写しが多いため、専門機関による厳密な鑑定が不可欠です。"
+    "marketNote": "真筆は国宝級で市場に出ることは極めて稀です。『伝雪舟』や後世の写しが多いため、専門機関による厳密な鑑定が不可欠です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "Bonhams公式結果ページ（伝雪舟・雪舟派の実績）",
+      "rangeNote": "雪舟の真作は現存約50点とされ、国宝6件を含む主要作は美術館・寺院所蔵のため、真作の市場流通は極めて稀です（真作の相場は事実上算定不能）。市場で取引されるのは「伝雪舟」「雪舟派」の作品で、大手オークションでは39,000米ドル〜48,000英ポンドの実績があります。国内一般市場の模写・伝称品は数千円〜十数万円と二極化しています。",
+      "results": [
+        {
+          "title": "柳猿猴図（落款「雪舟等楊筆」・伝雪舟相当）",
+          "hammer": "48,000英ポンド（手数料込）",
+          "house": "Bonhams（ロンドン）",
+          "year": "2011",
+          "sourceUrl": "https://www.bonhams.com/auctions/18823/lot/344/"
+        },
+        {
+          "title": "琴棋書画図（雪舟派・16世紀）",
+          "hammer": "39,000米ドル（手数料込）",
+          "house": "Bonhams（サンフランシスコ）",
+          "year": "2007",
+          "sourceUrl": "https://bonhams.com/auctions/15409/lot/4113"
+        }
+      ]
+    }
   },
   {
     "name": "与謝蕪村",
@@ -969,7 +1025,35 @@
       "賛（画中の文字）の筆跡確認"
     ],
     "bio": "与謝蕪村は江戸中期の俳人にして文人画家です。松尾芭蕉と並ぶ俳諧の巨匠であると同時に、池大雅と並ぶ南画の大家でもありました。俳句と絵を融合させた俳画でも独自の境地を開いています。",
-    "marketNote": "俳画・山水の真筆は高く評価されます。俳句の賛が入る作はとくに珍重され、真贋判断が重要です。"
+    "marketNote": "俳画・山水の真筆は高く評価されます。俳句の賛が入る作はとくに珍重され、真贋判断が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "Bonhams公式結果ページほか",
+      "rangeNote": "一次確認できた範囲では、蕪村名義（署名・印章あり）の作品は約850米ドル〜8,750英ポンド（約12万〜170万円）。極め書付きの絵画双幅が上位、書・小品は数十万円以下です。これ以上の高額帯の公開実績は確認できなかったため、代表作級の相場は査定でご確認ください。",
+      "results": [
+        {
+          "title": "六歌仙図 双幅（極め書・二重箱付）",
+          "hammer": "8,750英ポンド（手数料込）",
+          "house": "Bonhams（ロンドン）",
+          "year": "2012",
+          "sourceUrl": "https://www.bonhams.com/auctions/20023/lot/428/"
+        },
+        {
+          "title": "書簡（掛軸装）",
+          "hammer": "1,875米ドル（手数料込）",
+          "house": "Bonhams",
+          "year": "2018",
+          "sourceUrl": "https://www.bonhams.com/auctions/24862/lot/1075/"
+        },
+        {
+          "title": "柳に黒鳥図（絹本墨画・伝相当）",
+          "hammer": "850米ドル（公表値）",
+          "house": "Brunk Auctions（米）",
+          "year": "2019",
+          "sourceUrl": "https://live.brunkauctions.com/online-auctions/brunk/yosa-buson-1376529"
+        }
+      ]
+    }
   },
   {
     "name": "池大雅",
@@ -992,7 +1076,42 @@
       "落款の時期による変化"
     ],
     "bio": "池大雅は江戸中期の京都で活躍した文人画(南画)の大成者です。与謝蕪村と合作した『十便十宜図』で知られ、おおらかで詩情豊かな山水を描きました。書にも優れ、日本南画の最高峰の一人とされます。",
-    "marketNote": "真筆は高額ですが模写も多く、落款・印章・来歴による鑑定が重要です。"
+    "marketNote": "真筆は高額ですが模写も多く、落款・印章・来歴による鑑定が重要です。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "Christie's公式ロットページ、Art.Salon（Christie's NY落札結果収録DB）",
+      "rangeNote": "真筆として出品された絵画掛軸は約15,000〜50,190米ドル、書幅・小品は1,000〜4,000米ドル台（Christie's NY 2002〜2008年・公表値）。確認できる公開実績が15年以上前に集中している点にご留意ください。",
+      "results": [
+        {
+          "title": "春雲出岫（掛軸・紙本墨画）",
+          "hammer": "50,190米ドル（公表値）",
+          "house": "Christie's New York",
+          "year": "2003",
+          "sourceUrl": "https://www.art.salon/artwork/ike-taiga_shunun-shusshu-mountain-peak-in-spring-haze_AID898708"
+        },
+        {
+          "title": "山中観瀑図（掛軸・来歴付）",
+          "hammer": "15,000米ドル（公表値）",
+          "house": "Christie's New York",
+          "year": "2008",
+          "sourceUrl": "https://www.art.salon/artwork/ike-taiga_chinese-scholars-enjoying-a-waterfall-deep-in-the-mountains_AID718092"
+        },
+        {
+          "title": "漢詩書幅（紙本墨書）",
+          "hammer": "3,824米ドル（公表値）",
+          "house": "Christie's New York",
+          "year": "2003",
+          "sourceUrl": "https://www.art.salon/artwork/ike-taiga_chinese-poem_AID874147"
+        },
+        {
+          "title": "山水・書 双幅",
+          "hammer": "1,175米ドル（公表値）",
+          "house": "Christie's New York",
+          "year": "2002",
+          "sourceUrl": "https://www.christies.com/en/lot/lot-3874274"
+        }
+      ]
+    }
   },
   {
     "name": "正宗",
@@ -1147,7 +1266,28 @@
       "海外での評価が高く、逆輸入品もある"
     ],
     "bio": "久保田一竹は、室町期に途絶えた染色技法『辻が花』に独自の解釈を加え『一竹辻が花』として復興した染色作家です。絢爛な着物作品で国内外に知られます。",
-    "marketNote": "一竹辻が花の着物は非常に高額です。落款・証紙・保存状態と来歴が査定の重要なポイントです。"
+    "marketNote": "一竹辻が花の着物は非常に高額です。落款・証紙・保存状態と来歴が査定の重要なポイントです。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "古裂會（Kogire-kai）公式落札結果PDF",
+      "rangeNote": "代表作「一竹辻が花」の主要作品は久保田一竹美術館等の所蔵で市場流通が極めて少なく、Christie's等の大手ハウスでの公開落札記録は確認できませんでした。国内公開オークションで確認できた「久保田一竹」名義の帯・着物は8.5万〜32万円です。店頭販売価格と二次市場の落札価格には大きな乖離があるため、購入時価格を基準にせず査定で実勢を確認するのがおすすめです。",
+      "results": [
+        {
+          "title": "辻ヶ花帯",
+          "hammer": "320,000円（公表値）",
+          "house": "古裂會 第133回入札",
+          "year": "2023",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/07/133th2.pdf"
+        },
+        {
+          "title": "暈織地文着物",
+          "hammer": "85,600円（公表値）",
+          "house": "古裂會 第139回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/05/1391128.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "羽田登喜男",
@@ -1420,7 +1560,35 @@
       "京焼の土味と釉薬の特徴"
     ],
     "bio": "野々村仁清は江戸前期に活躍した京焼を代表する陶工です。仁和寺の門前に窯を開き、雅やかな色絵陶器を完成させて京焼の基礎を築きました。『色絵雉香炉』など国宝・重要文化財に指定される名品を残しています。",
-    "marketNote": "真作は極めて希少で高額です。写しや見立ても多いため、来歴と専門鑑定が価格を大きく分けます。"
+    "marketNote": "真作は極めて希少で高額です。写しや見立ても多いため、来歴と専門鑑定が価格を大きく分けます。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "シンワオークション公式落札結果PDF、古裂會公式落札結果PDF（いずれも仁清銘・伝仁清クラスの実績）",
+      "rangeNote": "仁清の真作（国宝・重文クラス）は公開市場にほぼ出ないため、以下は真作の相場ではなく「仁清銘・伝仁清」クラスの実勢です。仁清名義の茶道具（茶入・香合・水指）は10万円〜約120万円（手数料込み）の落札を確認しています。真作の可能性がある品は、必ず専門機関の鑑定を受けてください。",
+      "results": [
+        {
+          "title": "鴛鴦香合（カタログ表記「仁清」）",
+          "hammer": "1,207,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        },
+        {
+          "title": "鮟鱇茶入（カタログ表記「仁清」）",
+          "hammer": "851,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
+        },
+        {
+          "title": "菊色絵管耳水指（伝仁清クラス）",
+          "hammer": "100,000円（公表値）",
+          "house": "古裂會 第134回入札",
+          "year": "2024",
+          "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2023/10/134th_hp.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "尾形乾山",
@@ -1465,7 +1633,42 @@
       "文化勲章受章後の作品は高額"
     ],
     "bio": "板谷波山は茨城県下館に生まれた陶芸家です。東京美術学校で彫刻を学んだのち作陶に転じ、やわらかな光沢を放つ『葆光釉』による葆光彩磁など、気品ある作風を確立しました。陶芸家として初めて文化勲章を受章した近代陶芸の巨匠です。",
-    "marketNote": "葆光彩磁の優品は非常に高額です。精緻で繊細な作風のため、わずかな傷も評価に影響し、状態と共箱・来歴が重視されます。"
+    "marketNote": "葆光彩磁の優品は非常に高額です。精緻で繊細な作風のため、わずかな傷も評価に影響し、状態と共箱・来歴が重視されます。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "シンワオークション公式落札結果PDF（ハンマー価格・手数料込み価格の両方を確認）",
+      "rangeNote": "2023〜2025年のシンワオークション実績（手数料込み）で約268万円〜506万円を確認。香炉類が約270万円、彩磁の花瓶・水差クラスが約390万〜506万円、天目茶碗が約448万円が中心帯です。代表技法「葆光彩磁」の大作は美術館収蔵が中心で市場出品を確認できませんでした。",
+      "results": [
+        {
+          "title": "彩磁水差 草花文",
+          "hammer": "5,060,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2024",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
+        },
+        {
+          "title": "天目茶盌",
+          "hammer": "4,485,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/12/20251206t_s.pdf"
+        },
+        {
+          "title": "彩磁桜草文花瓶",
+          "hammer": "3,910,000円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2025",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/03/20250308t_s.pdf"
+        },
+        {
+          "title": "蛋殻磁香爐",
+          "hammer": "2,679,500円（手数料込）",
+          "house": "シンワオークション",
+          "year": "2023",
+          "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230311t_c.pdf"
+        }
+      ]
+    }
   },
   {
     "name": "加藤唐九郎",
@@ -1511,7 +1714,42 @@
       "共箱・鑑定書の確認"
     ],
     "bio": "荒川豊蔵は岐阜県多治見に生まれた陶芸家です。桃山時代の名陶・志野や瀬戸黒の古陶片を可児の大萱で発見し、その技法を独力で再現したことで知られます。古陶磁の徹底した研究に基づく格調高い作風で、志野と瀬戸黒の二分野で人間国宝に認定され、文化勲章も受章しました。",
-    "marketNote": "志野茶碗・瀬戸黒茶碗の優品は高額で取引されます。共箱(本人の箱書き)や極めの有無が査定額を大きく左右します。"
+    "marketNote": "志野茶碗・瀬戸黒茶碗の優品は高額で取引されます。共箱(本人の箱書き)や極めの有無が査定額を大きく左右します。",
+    "auctionResults": {
+      "verifiedAt": "2026年7月2日",
+      "sourceLabel": "古裂會（Kogire-kai）公式落札結果PDF、Bonhams公式ロットページ",
+      "rangeNote": "一次確認できた実績では、盃・小品が10万円前後、茶碗クラスが約15万〜80万円（古裂會・入札制）。海外では帰属表現の弱い茶碗が562.50英ポンドと国内市場との差が大きめです。共箱付きの代表作級の志野茶碗は今回の確認範囲では未捕捉のため、上限はこのレンジより上振れする可能性があります。",
+      "results": [
+        {
+          "title": "瀬戸黒茶碗",
+          "hammer": "800,000円（公表値）",
+          "house": "古裂會 第113回入札",
+          "year": "2020",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2020/04/HPnew_113.pdf"
+        },
+        {
+          "title": "唐津風山絵茶碗",
+          "hammer": "158,000円（公表値）",
+          "house": "古裂會 第145回入札",
+          "year": "2025",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2025/10/fa7d4cf9bc66b2eb3062f9a2cdcf971f.pdf"
+        },
+        {
+          "title": "志野盃",
+          "hammer": "98,000円（公表値）",
+          "house": "古裂會 第113回入札",
+          "year": "2020",
+          "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2020/04/HPnew_113.pdf"
+        },
+        {
+          "title": "志野風茶碗（帰属表現弱め）",
+          "hammer": "562.50英ポンド（手数料込）",
+          "house": "Bonhams Edinburgh",
+          "year": "2013",
+          "sourceUrl": "https://www.bonhams.com/auction/20660/lot/97/a-shino-style-chawan-by-toyozo-arakawa-1894-1985/"
+        }
+      ]
+    }
   },
   {
     "name": "金重陶陽",
