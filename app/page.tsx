@@ -1,7 +1,10 @@
 import Link from "next/link";
 import companies from "@/data/companies.json";
+import soubaDb from "@/data/soubaDb.json";
 
 export const metadata = {
+  title: "骨董品買取びより｜実際の落札データでわかる相場とおすすめ業者比較【2026年最新】",
+  description: `骨董品の買取相場を${soubaDb.artistTotal}名の作家・${soubaDb.resultTotal}件の実際の落札データ(公式一次確認のみ)で解説。掛軸・絵画・茶道具・刀剣など品目別の相場と、高く売るためのおすすめ買取業者を比較できます。`,
   alternates: { canonical: "/" },
 };
 
@@ -208,17 +211,17 @@ export default function Home() {
               </h1>
               <p className="text-base md:text-lg text-amber-100/90 leading-relaxed mb-4">
                 掛軸・茶道具・絵画・刀剣――<br className="hidden md:inline" />
-                お手持ちの骨董品の価値を、専門知識で正しく見極めます。
+                {soubaDb.artistTotal}名の作家・{soubaDb.resultTotal}件の実際の落札データで、お手持ちの骨董品の価値がわかります。
               </p>
               <div className="flex flex-wrap gap-4 mb-8 text-sm">
-                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">丁寧な査定</span>
-                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">高額買取</span>
+                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">実データの相場</span>
+                <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">出典つき</span>
                 <span className="bg-[#C9A96E]/20 border border-[#C9A96E]/40 text-[#D4A574] px-4 py-1.5 rounded-full">無料査定</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#learn" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg text-center">
-                  骨董品について学ぶ
-                </a>
+                <Link href="/guide/souba-database/" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg text-center">
+                  実際の落札相場を見る
+                </Link>
                 <a href="#ranking" className="border-2 border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E]/10 font-bold px-8 py-4 rounded-xl transition text-center">
                   おすすめ買取業者を見る
                 </a>
@@ -231,12 +234,12 @@ export default function Home() {
         <section className="bg-white border-b border-[#E0D5C8]">
           <div className="max-w-4xl mx-auto px-4 py-6 flex flex-wrap justify-center gap-6 md:gap-12">
             <div className="text-center">
-              <p className="text-2xl font-bold text-[#8B4513]">50+</p>
-              <p className="text-xs text-[#8B7D72]">掲載作家数</p>
+              <p className="text-2xl font-bold text-[#8B4513]">{soubaDb.artistTotal}名</p>
+              <p className="text-xs text-[#8B7D72]">落札実績つき掲載作家</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-[#8B4513]">10+</p>
-              <p className="text-xs text-[#8B7D72]">対応品目カテゴリ</p>
+              <p className="text-2xl font-bold text-[#8B4513]">{soubaDb.resultTotal}件</p>
+              <p className="text-xs text-[#8B7D72]">実際の落札データ</p>
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-[#8B4513]">3社</p>
@@ -245,6 +248,97 @@ export default function Home() {
             <div className="text-center">
               <p className="text-2xl font-bold text-[#8B4513]">無料</p>
               <p className="text-xs text-[#8B7D72]">査定・相談</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 即答ブロック(AEO): 高く売る3ステップ */}
+        <section id="quick-answer" className="py-12 bg-[#FAF7F2]">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white border-2 border-[#C9A96E]/50 rounded-2xl p-6 md:p-8">
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3">
+                結論：骨董品を高く売るには？
+              </h2>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-5">
+                骨董品を高く売る手順は<strong>「①実際の相場を知る → ②品目・作家を特定する → ③複数の専門業者に無料査定を依頼して比較する」</strong>の3ステップです。当サイトは{soubaDb.artistTotal}名の作家・{soubaDb.resultTotal}件の実際のオークション落札データ（すべて出典つき・{soubaDb.generatedAt}更新）を無料公開しています。
+              </p>
+              <div className="grid md:grid-cols-3 gap-3">
+                <Link href="/guide/souba-database/" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                  <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 1</p>
+                  <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">実際の落札相場を知る →</p>
+                  <p className="text-xs text-[#8B7D72] mt-1">ジャンル別の最高額・中央値と落札実績TOP20</p>
+                </Link>
+                <a href="#category" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                  <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 2</p>
+                  <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">品目・作家を特定する →</p>
+                  <p className="text-xs text-[#8B7D72] mt-1">品目別ガイドと作家別の落札実績ページ</p>
+                </a>
+                <a href="#ranking" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                  <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 3</p>
+                  <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">複数社の無料査定で比較 →</p>
+                  <p className="text-xs text-[#8B7D72] mt-1">専門性で選んだ3社。査定・出張・キャンセル無料</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 相場DBハイライト */}
+        <section id="souba-db" className="py-16 bg-white">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="text-center mb-10">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUCTION DATABASE</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
+                実際の落札データでみる骨董品の相場
+              </h2>
+              <p className="text-[#5C4A3A] text-sm">
+                国内外オークションの公表結果のみを集計（{soubaDb.generatedAt}更新・全{soubaDb.resultTotal}件）
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6">
+                <h3 className="font-bold text-[#2C1810] mb-4 text-sm">円建て落札額TOP3</h3>
+                <ol className="space-y-3">
+                  {soubaDb.top20.slice(0, 3).map((r: any) => (
+                    <li key={r.rank} className="flex items-start gap-3">
+                      <span className="w-7 h-7 shrink-0 rounded-full bg-[#C9A96E] text-white text-xs font-bold flex items-center justify-center">{r.rank}</span>
+                      <div className="min-w-0">
+                        <Link href={`/artist/${r.slug}`} className="font-bold text-sm text-[#2C1810] hover:text-[#8B4513]">{r.artist}</Link>
+                        <p className="text-xs text-[#8B7D72] truncate">{r.title}</p>
+                        <p className="text-sm font-bold text-[#8B4513]">{r.amount}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6">
+                <h3 className="font-bold text-[#2C1810] mb-4 text-sm">ジャンル別の落札最高額と中央値</h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="text-left text-[#8B7D72] border-b border-[#E0D5C8]">
+                        <th className="py-2 pr-2">ジャンル</th>
+                        <th className="py-2 pr-2">最高額</th>
+                        <th className="py-2">中央値</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(soubaDb.stats as any[]).map((s) => (
+                        <tr key={s.category} className="border-b border-[#E0D5C8]/60">
+                          <td className="py-2 pr-2 font-medium text-[#2C1810]">{s.category}</td>
+                          <td className="py-2 pr-2 text-[#8B4513] font-bold">{s.max}</td>
+                          <td className="py-2 text-[#5C4A3A]">{s.median}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div className="text-center">
+              <Link href="/guide/souba-database/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3.5 rounded-xl transition shadow">
+                落札相場データベースを全部見る →
+              </Link>
             </div>
           </div>
         </section>
@@ -296,6 +390,40 @@ export default function Home() {
                   <span className="text-sm font-medium text-[#2C1810] group-hover:text-[#8B4513]">{cat.name}</span>
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 作家から探す（落札実績つき） */}
+        <section id="artists" className="py-16 bg-[#FAF7F2]">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">ARTISTS</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
+                作家から落札相場を探す
+              </h2>
+              <p className="text-[#5C4A3A] text-sm">全{soubaDb.artistTotal}名の作家に出典つきの実落札データを掲載。注目作家の一部をご紹介します。</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[...(soubaDb.artists as any[])]
+                .sort((a, b) => (b.topJpy ?? 0) - (a.topJpy ?? 0))
+                .slice(0, 9)
+                .map((a) => (
+                  <Link key={a.slug} href={`/artist/${a.slug}`}
+                    className="bg-white border border-[#E0D5C8] rounded-xl p-4 hover:shadow-lg hover:border-[#C9A96E] transition group">
+                    <div className="flex items-baseline justify-between gap-2 mb-1">
+                      <span className="font-bold text-[#2C1810] group-hover:text-[#8B4513]">{a.name}</span>
+                      <span className="text-[10px] text-[#8B7D72] shrink-0">{a.category}</span>
+                    </div>
+                    <p className="text-xs text-[#8B7D72] truncate mb-1">{a.topTitle}</p>
+                    <p className="text-sm font-bold text-[#8B4513]">{(a.topHammer ?? "").split("（")[0]}</p>
+                  </Link>
+                ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/guide/souba-database/" className="inline-block border-2 border-[#C9A96E] text-[#8B4513] hover:bg-[#C9A96E]/10 font-bold px-8 py-3 rounded-xl transition">
+                全作家の落札実績一覧を見る →
+              </Link>
             </div>
           </div>
         </section>
