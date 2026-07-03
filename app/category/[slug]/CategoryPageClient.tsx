@@ -270,7 +270,9 @@ const fakeIdentificationTips: Record<string, { title: string; text: string }[]> 
   ],
 };
 
-export default function CategoryPageClient({ slug }: { slug: string }) {
+type ArtistRow = { slug: string; name: string; count: number; topTitle: string; topHammer: string; verifiedAt: string };
+
+export default function CategoryPageClient({ slug, artistRows = [] }: { slug: string; artistRows?: ArtistRow[] }) {
   const cat = categories.find((c) => c.slug === slug) as CategoryData | undefined;
   if (!cat) return <div>カテゴリが見つかりません</div>;
 
@@ -408,6 +410,55 @@ export default function CategoryPageClient({ slug }: { slug: string }) {
               <p className="text-xs text-[#8B7D72] mt-4 text-center">
                 ※上記は市場相場に基づく参考価格であり、実際の査定額は品物の状態・真贋・市場動向により異なります
               </p>
+            </div>
+          </section>
+        )}
+
+        {/* 作家別 落札実績（当サイト独自集計・公開オークション一次確認） */}
+        {artistRows.length > 0 && (
+          <section className="py-12 md:py-16 bg-[#FAF7F2]">
+            <div className="max-w-5xl mx-auto px-4">
+              <div className="text-center mb-8">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUCTION RECORDS</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {cat.name}の作家別 落札実績（公開オークション実データ）
+                </h2>
+                <p className="text-sm text-[#8B7D72] mt-2">
+                  シンワオークション・古裂會・海外大手の公式落札結果を当編集部が一次確認して集計。出典は各作家ページに掲載しています。
+                </p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                  <thead className="bg-[#8B4513] text-white">
+                    <tr>
+                      <th className="px-4 py-3 text-left">作家</th>
+                      <th className="px-4 py-3 text-left">代表的な落札例</th>
+                      <th className="px-4 py-3 text-right">落札額</th>
+                      <th className="px-4 py-3 text-right">実績数</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {artistRows.map((a, i) => (
+                      <tr key={a.slug} className={`border-b border-[#E0D5C8] ${i % 2 ? "bg-[#FAF7F2]" : "bg-white"}`}>
+                        <td className="px-4 py-3 font-bold">
+                          <a href={`/artist/${a.slug}/`} className="text-[#2C1810] underline hover:text-[#8B4513]">{a.name}</a>
+                        </td>
+                        <td className="px-4 py-3 text-[#5C4A3A]">{a.topTitle}</td>
+                        <td className="px-4 py-3 text-right font-bold text-[#8B4513] whitespace-nowrap">{a.topHammer.split("（")[0]}</td>
+                        <td className="px-4 py-3 text-right text-[#8B7D72]">{a.count}件</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-3 text-center">
+                ※金額の手数料込み/公表値の別・出典URL・帰属（伝・銘・代数）の注記は各作家ページをご確認ください。
+              </p>
+              <div className="mt-6 text-center">
+                <a href="/guide/souba-database/" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] px-6 py-3 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
+                  落札相場データベース2026を見る →
+                </a>
+              </div>
             </div>
           </section>
         )}

@@ -1,0 +1,1526 @@
+{
+ "generatedAt": "2026年07月03日",
+ "artistTotal": 119,
+ "resultTotal": 361,
+ "jpyResultTotal": 264,
+ "foreignResultTotal": 82,
+ "stats": [
+  {
+   "category": "絵画",
+   "artistCount": 48,
+   "resultCount": 114,
+   "max": "360,000,000円",
+   "median": "1,725,000円"
+  },
+  {
+   "category": "陶磁器",
+   "artistCount": 33,
+   "resultCount": 110,
+   "max": "69,000,000円",
+   "median": "241,500円"
+  },
+  {
+   "category": "茶道具",
+   "artistCount": 6,
+   "resultCount": 21,
+   "max": "9,890,000円",
+   "median": "437,000円"
+  },
+  {
+   "category": "掛軸",
+   "artistCount": 9,
+   "resultCount": 13,
+   "max": "2,990,000円",
+   "median": "598,000円"
+  },
+  {
+   "category": "刀剣",
+   "artistCount": 5,
+   "resultCount": 3,
+   "max": "1,207,500円",
+   "median": "800,000円"
+  },
+  {
+   "category": "着物",
+   "artistCount": 1,
+   "resultCount": 2,
+   "max": "320,000円",
+   "median": "202,800円"
+  },
+  {
+   "category": "版画",
+   "artistCount": 3,
+   "resultCount": 1,
+   "max": "240,000円",
+   "median": "240,000円"
+  }
+ ],
+ "top20": [
+  {
+   "rank": 1,
+   "jpy": 360000000,
+   "amount": "360,000,000円",
+   "artist": "岸田劉生",
+   "slug": "kishida-ryusei",
+   "title": "麗子像（肩掛けの麗子）",
+   "house": "公開オークション（2000年・会社名は出典に明記なし）",
+   "year": "2000"
+  },
+  {
+   "rank": 2,
+   "jpy": 140000000,
+   "amount": "140,000,000円",
+   "artist": "黒田清輝",
+   "slug": "kuroda-seiki",
+   "title": "荒苑斜陽（旧蔵コレクション特別出品）",
+   "house": "iARTオークション",
+   "year": "2020"
+  },
+  {
+   "rank": 3,
+   "jpy": 69000000,
+   "amount": "69,000,000円",
+   "artist": "北大路魯山人",
+   "slug": "kitaoji-rosanjin",
+   "title": "椿鉢",
+   "house": "シンワオークション",
+   "year": "2026"
+  },
+  {
+   "rank": 4,
+   "jpy": 66000000,
+   "amount": "66,000,000円",
+   "artist": "加山又造",
+   "slug": "kayama-matazo",
+   "title": "猫",
+   "house": "シンワオークション",
+   "year": "2021"
+  },
+  {
+   "rank": 5,
+   "jpy": 59800000,
+   "amount": "59,800,000円",
+   "artist": "東山魁夷",
+   "slug": "higashiyama-kaii",
+   "title": "緑の山湖",
+   "house": "シンワオークション",
+   "year": "2024"
+  },
+  {
+   "rank": 6,
+   "jpy": 54000000,
+   "amount": "54,000,000円",
+   "artist": "東山魁夷",
+   "slug": "higashiyama-kaii",
+   "title": "山湖深緑",
+   "house": "シンワオークション",
+   "year": "2023"
+  },
+  {
+   "rank": 7,
+   "jpy": 46000000,
+   "amount": "46,000,000円",
+   "artist": "藤田嗣治",
+   "slug": "fujita-tsuguharu",
+   "title": "狐を売る男（1933, 水彩・紙）",
+   "house": "SBIアートオークション",
+   "year": "2019"
+  },
+  {
+   "rank": 8,
+   "jpy": 36000000,
+   "amount": "36,000,000円",
+   "artist": "岸田劉生",
+   "slug": "kishida-ryusei",
+   "title": "黒き土の上に立てる女",
+   "house": "シンワアートオークション",
+   "year": "2012"
+  },
+  {
+   "rank": 9,
+   "jpy": 34500000,
+   "amount": "34,500,000円",
+   "artist": "東山魁夷",
+   "slug": "higashiyama-kaii",
+   "title": "明宵",
+   "house": "シンワオークション",
+   "year": "2024"
+  },
+  {
+   "rank": 10,
+   "jpy": 34500000,
+   "amount": "34,500,000円",
+   "artist": "杉山寧",
+   "slug": "sugiyama-yasushi",
+   "title": "嵤",
+   "house": "シンワオークション",
+   "year": "2025"
+  },
+  {
+   "rank": 11,
+   "jpy": 33350000,
+   "amount": "33,350,000円",
+   "artist": "北大路魯山人",
+   "slug": "kitaoji-rosanjin",
+   "title": "萬暦赤繪大壺",
+   "house": "シンワオークション",
+   "year": "2026"
+  },
+  {
+   "rank": 12,
+   "jpy": 31050000,
+   "amount": "31,050,000円",
+   "artist": "北大路魯山人",
+   "slug": "kitaoji-rosanjin",
+   "title": "雲錦鉢",
+   "house": "シンワオークション",
+   "year": "2026"
+  },
+  {
+   "rank": 13,
+   "jpy": 27000000,
+   "amount": "27,000,000円",
+   "artist": "佐伯祐三",
+   "slug": "saeki-yuzo",
+   "title": "街角",
+   "house": "シンワオークション",
+   "year": "2023"
+  },
+  {
+   "rank": 14,
+   "jpy": 23000000,
+   "amount": "23,000,000円",
+   "artist": "熊谷守一",
+   "slug": "kumagai-morikazu",
+   "title": "ほたるぶくろに蝶（1963年・板・油彩）",
+   "house": "シンワオークション",
+   "year": "2023"
+  },
+  {
+   "rank": 15,
+   "jpy": 23000000,
+   "amount": "23,000,000円",
+   "artist": "伊東深水",
+   "slug": "ito-shinsui",
+   "title": "春の雪（美人画大幅）",
+   "house": "シンワオークション",
+   "year": "2023"
+  },
+  {
+   "rank": 16,
+   "jpy": 18400000,
+   "amount": "18,400,000円",
+   "artist": "林武",
+   "slug": "hayashi-takeshi",
+   "title": "ばら",
+   "house": "シンワオークション",
+   "year": "2025"
+  },
+  {
+   "rank": 17,
+   "jpy": 18400000,
+   "amount": "18,400,000円",
+   "artist": "安井曾太郎",
+   "slug": "yasui-sotaro",
+   "title": "蜜柑と林檎（静物油彩）",
+   "house": "シンワオークション",
+   "year": "2023"
+  },
+  {
+   "rank": 18,
+   "jpy": 18000000,
+   "amount": "18,000,000円",
+   "artist": "梅原龍三郎",
+   "slug": "umehara-ryuzaburo",
+   "title": "薔薇図（1963年作・油彩）",
+   "house": "シンワオークション（羽田 United Asian Auctioneers）",
+   "year": "2022"
+  },
+  {
+   "rank": 19,
+   "jpy": 17250000,
+   "amount": "17,250,000円",
+   "artist": "福田平八郎",
+   "slug": "fukuda-heihachiro",
+   "title": "若竹",
+   "house": "シンワオークション",
+   "year": "2026"
+  },
+  {
+   "rank": 20,
+   "jpy": 14375000,
+   "amount": "14,375,000円",
+   "artist": "杉山寧",
+   "slug": "sugiyama-yasushi",
+   "title": "翬",
+   "house": "シンワオークション",
+   "year": "2024"
+  }
+ ],
+ "overseas": [
+  {
+   "currency": "米ドル",
+   "amount": "2,994,500",
+   "artist": "八大山人",
+   "slug": "hachidai-sanjin",
+   "title": "Two Mynas on a Rock（1692年作）",
+   "house": "Sotheby's ニューヨーク",
+   "year": "2010"
+  },
+  {
+   "currency": "米ドル",
+   "amount": "2,800,000",
+   "artist": "葛飾北斎",
+   "slug": "katsushika-hokusai",
+   "title": "神奈川沖浪裏（The Great Wave）",
+   "house": "Sotheby's 香港",
+   "year": "2025"
+  },
+  {
+   "currency": "米ドル",
+   "amount": "2,760,000",
+   "artist": "葛飾北斎",
+   "slug": "katsushika-hokusai",
+   "title": "神奈川沖浪裏（The Great Wave）",
+   "house": "Christie's ニューヨーク",
+   "year": "2023"
+  },
+  {
+   "currency": "米ドル",
+   "amount": "2,412,320",
+   "artist": "歌川広重",
+   "slug": "utagawa-hiroshige",
+   "title": "六十余州名所図会 揃物（フランク・ロイド・ライト旧蔵）",
+   "house": "Sotheby's パリ（日本木版画コレクション）",
+   "year": "2025"
+  },
+  {
+   "currency": "英ポンド",
+   "amount": "6,100,000",
+   "artist": "藤田嗣治",
+   "slug": "fujita-tsuguharu",
+   "title": "La fête d'anniversaire（誕生日の祝宴, 1949）",
+   "house": "Bonhams ロンドン",
+   "year": "2018"
+  },
+  {
+   "currency": "英ポンド",
+   "amount": "73,250",
+   "artist": "東洲斎写楽",
+   "slug": "toshusai-sharaku",
+   "title": "二世瀬川富三郎の宿木（大判大首絵・1794年）",
+   "house": "Bonhams ロンドン（Fine Japanese Art）",
+   "year": "2012"
+  },
+  {
+   "currency": "英ポンド",
+   "amount": "53,220",
+   "artist": "荻須高徳",
+   "slug": "oguiss-takanori",
+   "title": "Marchand de couleurs（Sunlight Savon／1929-32年頃）",
+   "house": "Bonhams ロンドン",
+   "year": "2023"
+  },
+  {
+   "currency": "英ポンド",
+   "amount": "48,000",
+   "artist": "雪舟",
+   "slug": "sesshu",
+   "title": "柳猿猴図（落款「雪舟等楊筆」・伝雪舟相当）",
+   "house": "Bonhams（ロンドン）",
+   "year": "2011"
+  }
+ ],
+ "artists": [
+  {
+   "slug": "kishida-ryusei",
+   "name": "岸田劉生",
+   "category": "絵画",
+   "count": 3,
+   "verifiedAt": "2026年6月23日",
+   "topTitle": "麗子像（肩掛けの麗子）",
+   "topHammer": "3億6000万円（当時の日本画オークション最高記録）",
+   "topJpy": 360000000
+  },
+  {
+   "slug": "kuroda-seiki",
+   "name": "黒田清輝",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "荒苑斜陽（旧蔵コレクション特別出品）",
+   "topHammer": "1億4,000万円（公表値・手数料込みか明記なし）",
+   "topJpy": 140000000
+  },
+  {
+   "slug": "kitaoji-rosanjin",
+   "name": "北大路魯山人",
+   "category": "陶磁器",
+   "count": 5,
+   "verifiedAt": "2026年6月19日",
+   "topTitle": "椿鉢",
+   "topHammer": "6,900万円（落札手数料込）",
+   "topJpy": 69000000
+  },
+  {
+   "slug": "kayama-matazo",
+   "name": "加山又造",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "猫",
+   "topHammer": "6,600万円",
+   "topJpy": 66000000
+  },
+  {
+   "slug": "higashiyama-kaii",
+   "name": "東山魁夷",
+   "category": "絵画",
+   "count": 3,
+   "verifiedAt": "2026年6月19日",
+   "topTitle": "緑の山湖",
+   "topHammer": "5,980万円",
+   "topJpy": 59800000
+  },
+  {
+   "slug": "fujita-tsuguharu",
+   "name": "藤田嗣治",
+   "category": "絵画",
+   "count": 3,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "狐を売る男（1933, 水彩・紙）",
+   "topHammer": "46,000,000円（ハンマー／手数料込 52,900,000円）",
+   "topJpy": 46000000
+  },
+  {
+   "slug": "sugiyama-yasushi",
+   "name": "杉山寧",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "嵤",
+   "topHammer": "34,500,000円（手数料込）",
+   "topJpy": 34500000
+  },
+  {
+   "slug": "saeki-yuzo",
+   "name": "佐伯祐三",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年6月26日",
+   "topTitle": "街角",
+   "topHammer": "2,700万円（予想上値1,800万円を大幅超過）",
+   "topJpy": 27000000
+  },
+  {
+   "slug": "ito-shinsui",
+   "name": "伊東深水",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "春の雪（美人画大幅）",
+   "topHammer": "23,000,000円（手数料込）",
+   "topJpy": 23000000
+  },
+  {
+   "slug": "kumagai-morikazu",
+   "name": "熊谷守一",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "ほたるぶくろに蝶（1963年・板・油彩）",
+   "topHammer": "2,300万円（ハンマー）",
+   "topJpy": 23000000
+  },
+  {
+   "slug": "yasui-sotaro",
+   "name": "安井曾太郎",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "蜜柑と林檎（静物油彩）",
+   "topHammer": "18,400,000円（手数料込）",
+   "topJpy": 18400000
+  },
+  {
+   "slug": "hayashi-takeshi",
+   "name": "林武",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "ばら",
+   "topHammer": "18,400,000円（手数料込）",
+   "topJpy": 18400000
+  },
+  {
+   "slug": "umehara-ryuzaburo",
+   "name": "梅原龍三郎",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "薔薇図（1963年作・油彩）",
+   "topHammer": "1,800万円",
+   "topJpy": 18000000
+  },
+  {
+   "slug": "fukuda-heihachiro",
+   "name": "福田平八郎",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "若竹",
+   "topHammer": "17,250,000円（手数料込）",
+   "topJpy": 17250000
+  },
+  {
+   "slug": "raku-kichizaemon",
+   "name": "楽吉左衛門",
+   "category": "茶道具",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "黒茶碗 雪雷晦冥（十五代・直入）",
+   "topHammer": "9,890,000円（手数料込）",
+   "topJpy": 9890000
+  },
+  {
+   "slug": "miwa-kyusetsu",
+   "name": "三輪休雪",
+   "category": "茶道具",
+   "count": 5,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "鬼萩わり高台茶碗 銘 一（三輪壽雪＝十一代休雪）",
+   "topHammer": "8,740,000円（手数料込）",
+   "topJpy": 8740000
+  },
+  {
+   "slug": "kamoda-shoji",
+   "name": "加守田章二",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "壷",
+   "topHammer": "7,590,000円（手数料込）",
+   "topJpy": 7590000
+  },
+  {
+   "slug": "koiso-ryohei",
+   "name": "小磯良平",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "婦人像",
+   "topHammer": "6,900,000円（手数料込）",
+   "topJpy": 6900000
+  },
+  {
+   "slug": "takayama-tatsuo",
+   "name": "髙山辰雄",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "椿",
+   "topHammer": "6,900,000円（手数料込）",
+   "topJpy": 6900000
+  },
+  {
+   "slug": "hayami-gyoshu",
+   "name": "速水御舟",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "唐もろこし（彩色本画）",
+   "topHammer": "6,210,000円（手数料込）",
+   "topJpy": 6210000
+  },
+  {
+   "slug": "kobayashi-kokei",
+   "name": "小林古径",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "梅花",
+   "topHammer": "5,750,000円（手数料込）",
+   "topJpy": 5750000
+  },
+  {
+   "slug": "itaya-hazan",
+   "name": "板谷波山",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "彩磁水差 草花文",
+   "topHammer": "5,060,000円（手数料込）",
+   "topJpy": 5060000
+  },
+  {
+   "slug": "fujishima-takeji",
+   "name": "藤島武二",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "鳥羽",
+   "topHammer": "4,660,000円（手数料込）",
+   "topJpy": 4660000
+  },
+  {
+   "slug": "kazuki-yasuo",
+   "name": "香月泰男",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "菊花（Chrysanthemum・油彩・1970年）",
+   "topHammer": "4,600,000円（手数料込）",
+   "topJpy": 4600000
+  },
+  {
+   "slug": "ogata-kenzan",
+   "name": "尾形乾山",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "色絵草花大平鉢（「乾山」名義）",
+   "topHammer": "4,370,000円（手数料込）",
+   "topJpy": 4370000
+  },
+  {
+   "slug": "kaburaki-kiyokata",
+   "name": "鏑木清方",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "美人弄華図",
+   "topHammer": "4,370,000円（手数料込）",
+   "topJpy": 4370000
+  },
+  {
+   "slug": "hashimoto-kansetsu",
+   "name": "橋本関雪",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "老松鷲図",
+   "topHammer": "3,795,000円（手数料込）",
+   "topJpy": 3795000
+  },
+  {
+   "slug": "migishi-setsuko",
+   "name": "三岸節子",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "花",
+   "topHammer": "3,565,000円（手数料込）",
+   "topJpy": 3565000
+  },
+  {
+   "slug": "yokoyama-taikan",
+   "name": "横山大観",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年6月19日",
+   "topTitle": "雨後竹林",
+   "topHammer": "3,450,000円（税込・手数料込／予想価格100万〜150万円）",
+   "topJpy": 3450000
+  },
+  {
+   "slug": "kawai-gyokudo",
+   "name": "川合玉堂",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "渓村抄秋",
+   "topHammer": "3,450,000円（手数料込）",
+   "topJpy": 3450000
+  },
+  {
+   "slug": "nakagawa-kazumasa",
+   "name": "中川一政",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "薔薇",
+   "topHammer": "3,450,000円（手数料込）",
+   "topJpy": 3450000
+  },
+  {
+   "slug": "kato-tokuro",
+   "name": "加藤唐九郎",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "志野茶盌",
+   "topHammer": "2,990,000円（手数料込）",
+   "topJpy": 2990000
+  },
+  {
+   "slug": "ikkyu-sojun",
+   "name": "一休宗純",
+   "category": "掛軸",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "地獄偈（カタログ名義・伝表記なし）",
+   "topHammer": "2,990,000円（手数料込）",
+   "topJpy": 2990000
+  },
+  {
+   "slug": "shimomura-kanzan",
+   "name": "下村観山",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "慈母観音",
+   "topHammer": "2,300,000円（手数料込）",
+   "topJpy": 2300000
+  },
+  {
+   "slug": "kuroda-tatsuaki",
+   "name": "黒田辰秋",
+   "category": "茶道具",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "耀貝螺鈿茶器",
+   "topHammer": "2,100,100円（古裂會公表の落札価格）",
+   "topJpy": 2100100
+  },
+  {
+   "slug": "uemura-shoko",
+   "name": "上村松篁",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "燦",
+   "topHammer": "2,012,500円（手数料込）",
+   "topJpy": 2012500
+  },
+  {
+   "slug": "tokuda-yasokichi",
+   "name": "徳田八十吉",
+   "category": "陶磁器",
+   "count": 5,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "れい明（三代）",
+   "topHammer": "1,725,000円（手数料込）",
+   "topJpy": 1725000
+  },
+  {
+   "slug": "ogura-yuki",
+   "name": "小倉遊亀",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "梅と赤絵",
+   "topHammer": "1,380,000円（手数料込）",
+   "topJpy": 1380000
+  },
+  {
+   "slug": "kano-tanyu",
+   "name": "狩野探幽",
+   "category": "掛軸",
+   "count": 3,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "風神雷神画 双幅（古裂會上位カタログ「清華譜」区分）",
+   "topHammer": "1,290,000円（古裂會公表の落札価格）",
+   "topJpy": 1290000
+  },
+  {
+   "slug": "senju-hiroshi",
+   "name": "千住博",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "ウォーターフォール（HS Edition・サイン入り）",
+   "topHammer": "1,265,000円（手数料込）",
+   "topJpy": 1265000
+  },
+  {
+   "slug": "yasuda-yukihiko",
+   "name": "安田靫彦",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "富士暁光",
+   "topHammer": "1,265,000円（手数料込）",
+   "topJpy": 1265000
+  },
+  {
+   "slug": "nonomura-ninsei",
+   "name": "野々村仁清",
+   "category": "陶磁器",
+   "count": 3,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "鴛鴦香合（カタログ表記「仁清」）",
+   "topHammer": "1,207,500円（手数料込）",
+   "topJpy": 1207500
+  },
+  {
+   "slug": "gassan-sadakazu",
+   "name": "月山貞一(初代)",
+   "category": "刀剣",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "刀 月山雲龍子源貞一",
+   "topHammer": "1,207,500円（手数料込）",
+   "topJpy": 1207500
+  },
+  {
+   "slug": "suzuki-osamu",
+   "name": "鈴木藏",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "志埜",
+   "topHammer": "1,150,000円（手数料込）",
+   "topJpy": 1150000
+  },
+  {
+   "slug": "ryokan",
+   "name": "良寛",
+   "category": "掛軸",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "良寛大愚 二字書幅",
+   "topHammer": "1,111,111円（古裂會公表の落札価格）",
+   "topJpy": 1111111
+  },
+  {
+   "slug": "kawabata-ryushi",
+   "name": "川端龍子",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "北斗",
+   "topHammer": "1,058,000円（手数料込）",
+   "topJpy": 1058000
+  },
+  {
+   "slug": "hishida-shunso",
+   "name": "菱田春草",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "雨江曳舩画幅",
+   "topHammer": "911,111円（買主手数料別）",
+   "topJpy": 911111
+  },
+  {
+   "slug": "arakawa-toyozo",
+   "name": "荒川豊蔵",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "瀬戸黒茶碗",
+   "topHammer": "800,000円（公表値）",
+   "topJpy": 800000
+  },
+  {
+   "slug": "togo-seiji",
+   "name": "東郷青児",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "Woman（油彩・キャンバス）",
+   "topHammer": "770,500円（手数料込）",
+   "topJpy": 770500
+  },
+  {
+   "slug": "kawakita-handeishi",
+   "name": "川喜田半泥子",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "白がけ茶わん",
+   "topHammer": "736,000円（手数料込）",
+   "topJpy": 736000
+  },
+  {
+   "slug": "kato-takuo",
+   "name": "加藤卓男",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "ラスター彩胡姫文皆具",
+   "topHammer": "713,000円（手数料込）",
+   "topJpy": 713000
+  },
+  {
+   "slug": "okumura-togyu",
+   "name": "奥村土牛",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "朝顔（絹本彩色）",
+   "topHammer": "690,000円（手数料込）",
+   "topJpy": 690000
+  },
+  {
+   "slug": "maeda-seison",
+   "name": "前田青邨",
+   "category": "絵画",
+   "count": 3,
+   "verifiedAt": "2026年6月23日",
+   "topTitle": "壷と紅白梅",
+   "topHammer": "600,000円（ハンマー／手数料込690,000円）",
+   "topJpy": 600000
+  },
+  {
+   "slug": "shimizu-uichi",
+   "name": "清水卯一",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "蓬萊掛分扁壺 山花野",
+   "topHammer": "598,000円（手数料込）",
+   "topJpy": 598000
+  },
+  {
+   "slug": "imaizumi-imaemon",
+   "name": "今泉今右衛門",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "色絵吹墨珠樹文鉢（十三代作）",
+   "topHammer": "529,000円（手数料込）",
+   "topJpy": 529000
+  },
+  {
+   "slug": "13dai-imaemon",
+   "name": "十三代今泉今右衛門",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "色絵吹墨珠樹文鉢",
+   "topHammer": "529,000円（手数料込）",
+   "topJpy": 529000
+  },
+  {
+   "slug": "tomioka-tessai",
+   "name": "富岡鉄斎",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "幽渓漁隠圖",
+   "topHammer": "489,300円（手数料込）",
+   "topJpy": 489300
+  },
+  {
+   "slug": "kaneshige-toyo",
+   "name": "金重陶陽",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "備前花入",
+   "topHammer": "483,000円（手数料込）",
+   "topJpy": 483000
+  },
+  {
+   "slug": "kusube-yaichi",
+   "name": "楠部彌弌",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "金彩瑞祥扇面小鉢",
+   "topHammer": "460,000円（手数料込）",
+   "topJpy": 460000
+  },
+  {
+   "slug": "nakamura-sotetsu",
+   "name": "中村宗哲",
+   "category": "茶道具",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "松葉絵黒掻合炉縁（十二代作）",
+   "topHammer": "437,000円（手数料込）",
+   "topJpy": 437000
+  },
+  {
+   "slug": "tamura-koichi",
+   "name": "田村耕一",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "椿花器",
+   "topHammer": "379,500円（手数料込）",
+   "topJpy": 379500
+  },
+  {
+   "slug": "yagi-kazuo",
+   "name": "八木一夫",
+   "category": "陶磁器",
+   "count": 3,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "鉄描壷",
+   "topHammer": "368,000円（手数料込）",
+   "topJpy": 368000
+  },
+  {
+   "slug": "tsukamoto-kaiji",
+   "name": "塚本快示",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "白瓷若葉大皿",
+   "topHammer": "368,000円（手数料込）",
+   "topJpy": 368000
+  },
+  {
+   "slug": "kondo-yuzo",
+   "name": "近藤悠三",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "柘榴染附金彩瓢瓶",
+   "topHammer": "333,500円（手数料込）",
+   "topJpy": 333500
+  },
+  {
+   "slug": "sengai-gibon",
+   "name": "仙厓義梵",
+   "category": "掛軸",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "龍画賛幅",
+   "topHammer": "333,000円（買主手数料別）",
+   "topJpy": 333000
+  },
+  {
+   "slug": "onishi-seemon",
+   "name": "大西清右衛門",
+   "category": "茶道具",
+   "count": 1,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "阿弥陀堂釜（十六代作）",
+   "topHammer": "322,000円（手数料込）",
+   "topJpy": 322000
+  },
+  {
+   "slug": "domoto-insho",
+   "name": "堂本印象",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "富士",
+   "topHammer": "322,000円（手数料込）",
+   "topJpy": 322000
+  },
+  {
+   "slug": "kubota-itchiku",
+   "name": "久保田一竹",
+   "category": "着物",
+   "count": 2,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "辻ヶ花帯",
+   "topHammer": "320,000円（公表値）",
+   "topJpy": 320000
+  },
+  {
+   "slug": "hashimoto-gaho",
+   "name": "橋本雅邦",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "雨江曳船図",
+   "topHammer": "310,500円（手数料込）",
+   "topJpy": 310500
+  },
+  {
+   "slug": "inoue-manji",
+   "name": "井上萬二",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "黄緑釉牡丹彫文壷",
+   "topHammer": "291,250円（手数料込）",
+   "topJpy": 291250
+  },
+  {
+   "slug": "yamaguchi-hoshun",
+   "name": "山口蓬春",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "錦秋",
+   "topHammer": "276,000円（手数料込）",
+   "topJpy": 276000
+  },
+  {
+   "slug": "miura-koheiji",
+   "name": "三浦小平二",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "青磁豆彩トルコ少女ぐい呑",
+   "topHammer": "264,500円（手数料込）",
+   "topJpy": 264500
+  },
+  {
+   "slug": "ishiguro-munemaro",
+   "name": "石黒宗麿",
+   "category": "陶磁器",
+   "count": 3,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "絵志野茶碗",
+   "topHammer": "250,000円（古裂會公表の落札価格）",
+   "topJpy": 250000
+  },
+  {
+   "slug": "fujimoto-yoshimichi",
+   "name": "藤本能道",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "上絵かわせみ圖花壷",
+   "topHammer": "241,500円（手数料込）",
+   "topJpy": 241500
+  },
+  {
+   "slug": "yoshida-hiroshi",
+   "name": "吉田博",
+   "category": "版画",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "弘前城 版画額",
+   "topHammer": "240,000円（古裂會公表の落札価格）",
+   "topJpy": 240000
+  },
+  {
+   "slug": "kataoka-tamako",
+   "name": "片岡球子",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "富士（リトグラフ・2009）",
+   "topHammer": "195,500円（手数料込）",
+   "topJpy": 195500
+  },
+  {
+   "slug": "fujiwara-kei",
+   "name": "藤原啓",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "備前擂座壷",
+   "topHammer": "184,000円（手数料込）",
+   "topJpy": 184000
+  },
+  {
+   "slug": "yamamoto-tosyu",
+   "name": "山本陶秀",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "備前花瓶",
+   "topHammer": "172,500円（手数料込）",
+   "topJpy": 172500
+  },
+  {
+   "slug": "eiraku-zengoro",
+   "name": "永楽善五郎",
+   "category": "茶道具",
+   "count": 3,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "青楓ノ絵茶碗（十七代作）",
+   "topHammer": "126,500円（手数料込）",
+   "topJpy": 126500
+  },
+  {
+   "slug": "fujiwara-yu",
+   "name": "藤原雄",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "備前擂座徳利形壷",
+   "topHammer": "109,250円（手数料込）",
+   "topJpy": 109250
+  },
+  {
+   "slug": "miwa-kyuwa",
+   "name": "三輪休和",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "萩茶盌 飛龍（「十代 三輪休雪」名義）",
+   "topHammer": "109,250円（手数料込）",
+   "topJpy": 109250
+  },
+  {
+   "slug": "kato-hajime",
+   "name": "加藤土師萌",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "皮鯨手写茶碗",
+   "topHammer": "100,500円（古裂會公表の落札価格）",
+   "topJpy": 100500
+  },
+  {
+   "slug": "okuda-genso",
+   "name": "奥田元宋",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "春信",
+   "topHammer": "97,750円（手数料込）",
+   "topJpy": 97750
+  },
+  {
+   "slug": "munakata-shiko",
+   "name": "棟方志功",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "女神像（One woodblock print）",
+   "topHammer": "US$27,500（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "hirayama-ikuo",
+   "name": "平山郁夫",
+   "category": "絵画",
+   "count": 1,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "Traveling the moonlit desert（月光の砂漠を行く）",
+   "topHammer": "約US$303,640（2012年以降の作家最高記録・MutualArt集計）",
+   "topJpy": null
+  },
+  {
+   "slug": "takeuchi-seiho",
+   "name": "竹内栖鳳",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年6月23日",
+   "topTitle": "竹に雀（Sparrows on the Bamboo）",
+   "topHammer": "US$44,428（手数料込・最高記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "uemura-shoen",
+   "name": "上村松園",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年6月19日",
+   "topTitle": "蛍狩",
+   "topHammer": "約515,844米ドル（公開オークション最高記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "ito-jakuchu",
+   "name": "伊藤若冲",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "花卉雄鶏図（Cockerel among flowers）",
+   "topHammer": "HK$9,525,000（落札総額／約US$1.22M）",
+   "topJpy": null
+  },
+  {
+   "slug": "katsushika-hokusai",
+   "name": "葛飾北斎",
+   "category": "絵画",
+   "count": 4,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "神奈川沖浪裏（The Great Wave）",
+   "topHammer": "約US$2,800,000（手数料込／HK$21,700,000）",
+   "topJpy": null
+  },
+  {
+   "slug": "kawai-kanjiro",
+   "name": "河井寬次郎",
+   "category": "陶磁器",
+   "count": 1,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "三彩呉須鉢（A Tri-Color and Cobalt Glazed Bowl・昭和期）",
+   "topHammer": "US$3,187.50（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "hamada-shoji",
+   "name": "濱田庄司",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年6月20日",
+   "topTitle": "益子・釉景花瓶（D'zou Chou style Vase, c.1921）",
+   "topHammer": "£7,200（約US$9,659／手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "sakaida-kakiemon",
+   "name": "酒井田柿右衛門",
+   "category": "陶磁器",
+   "count": 4,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "色絵八角壺（江戸期・柿右衛門様式）",
+   "topHammer": "76,000米ドル（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "maruyama-okyo",
+   "name": "円山応挙",
+   "category": "掛軸",
+   "count": 5,
+   "verifiedAt": "2026年6月23日",
+   "topTitle": "鶴（六曲一双屏風）",
+   "topHammer": "US$1,105,000（作品史上のオークション記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "sesshu",
+   "name": "雪舟",
+   "category": "掛軸",
+   "count": 2,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "柳猿猴図（落款「雪舟等楊筆」・伝雪舟相当）",
+   "topHammer": "48,000英ポンド（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "yosa-buson",
+   "name": "与謝蕪村",
+   "category": "掛軸",
+   "count": 3,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "六歌仙図 双幅（極め書・二重箱付）",
+   "topHammer": "8,750英ポンド（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "ike-taiga",
+   "name": "池大雅",
+   "category": "掛軸",
+   "count": 4,
+   "verifiedAt": "2026年7月2日",
+   "topTitle": "春雲出岫（掛軸・紙本墨画）",
+   "topHammer": "50,190米ドル（公表値）",
+   "topJpy": null
+  },
+  {
+   "slug": "osafune-nagamitsu",
+   "name": "長船長光",
+   "category": "刀剣",
+   "count": 1,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "小太刀 銘「長光」（NBTHK重要刀剣・1975年指定）",
+   "topHammer": "132,000米ドル（手数料込みか記録に明記なし）",
+   "topJpy": null
+  },
+  {
+   "slug": "kotetsu",
+   "name": "虎徹",
+   "category": "刀剣",
+   "count": 1,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "刀 銘「長曽祢興里入道乕徹」（NBTHK特別保存刀剣付き・旧開善堂美術館蔵）",
+   "topHammer": "239,400米ドル（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "kanesada",
+   "name": "兼定",
+   "category": "刀剣",
+   "count": 1,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "美濃刀 拵付 銘「兼定」（三代・疋定。NBTHK鑑定書付き）",
+   "topHammer": "7,012.50米ドル（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "muramasa",
+   "name": "村正",
+   "category": "刀剣",
+   "count": 2,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "伊勢短刀 銘「村正」（NBTHK保存刀剣付き）",
+   "topHammer": "35,840米ドル（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "qi-baishi",
+   "name": "齊白石",
+   "category": "中国美術",
+   "count": 1,
+   "verifiedAt": "2026年6月26日",
+   "topTitle": "山水十二条屏（十二幅山水）",
+   "topHammer": "約9.315億人民元（約1.41億米ドル・手数料込／中国美術で初の1億ドル超・作家世界記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "go-shoseki",
+   "name": "呉昌碩",
+   "category": "中国美術",
+   "count": 1,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "花卉十二屏（1915〜16年作）",
+   "topHammer": "約RMB209,300,000（手数料込・作家最高記録／ハンマーRMB182,000,000）",
+   "topJpy": null
+  },
+  {
+   "slug": "cho-taisen",
+   "name": "張大千",
+   "category": "中国美術",
+   "count": 3,
+   "verifiedAt": "2026年6月26日",
+   "topTitle": "仿王希孟千里江山図（1948年作）",
+   "topHammer": "HK$370,495,000（作家最高記録・Sotheby's史上最高額の中国書画）",
+   "topJpy": null
+  },
+  {
+   "slug": "bun-choumei",
+   "name": "文徴明",
+   "category": "中国美術",
+   "count": 1,
+   "verifiedAt": "2026年6月30日",
+   "topTitle": "雑詠詩巻（行書・自作詩十首／石渠宝笈著録）",
+   "topHammer": "RMB81,650,000（落槌7,100万＋手数料・作家世界記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "hachidai-sanjin",
+   "name": "八大山人",
+   "category": "中国美術",
+   "count": 2,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "竹石鴛鴦",
+   "topHammer": "RMB118,720,000（手数料込・当時の作家最高記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "tomimoto-kenkichi",
+   "name": "富本憲吉",
+   "category": "陶磁器",
+   "count": 1,
+   "verifiedAt": "2026年6月30日",
+   "topTitle": "染付蓮文大壺（径30.8cm・銘あり）",
+   "topHammer": "£9,560（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "hakuin-ekaku",
+   "name": "白隠慧鶴",
+   "category": "掛軸",
+   "count": 1,
+   "verifiedAt": "2026年6月30日",
+   "topTitle": "達磨図（葦の上で坐禅する達磨・掛軸／18世紀中後期）",
+   "topHammer": "£6,875（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "xu-beihong",
+   "name": "徐悲鴻",
+   "category": "中国美術",
+   "count": 2,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "奴隷と獅子（Slave and Lion・1924年作）",
+   "topHammer": "HK$53,800,000（約£540万・当時の中国油画の最高落札額）",
+   "topJpy": null
+  },
+  {
+   "slug": "utagawa-hiroshige",
+   "name": "歌川広重",
+   "category": "浮世絵",
+   "count": 1,
+   "verifiedAt": "2026年6月26日",
+   "topTitle": "六十余州名所図会 揃物（フランク・ロイド・ライト旧蔵）",
+   "topHammer": "約US$2,412,320（1998年以降の作家最高記録・MutualArt集計）",
+   "topJpy": null
+  },
+  {
+   "slug": "kitagawa-utamaro",
+   "name": "喜多川歌麿",
+   "category": "浮世絵",
+   "count": 1,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "深川の雪（肉筆画・岡田美術館旧蔵）",
+   "topHammer": "HK$55,275,000（落札総額・約US$710万／作家＆浮世絵ジャンルの最高記録。ハンマー価格HK$45,000,000）",
+   "topJpy": null
+  },
+  {
+   "slug": "toshusai-sharaku",
+   "name": "東洲斎写楽",
+   "category": "浮世絵",
+   "count": 2,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "三世中山富三郎の宮城野（大判錦絵・1794年）",
+   "topHammer": "US$95,750（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "utagawa-kuniyoshi",
+   "name": "歌川国芳",
+   "category": "浮世絵",
+   "count": 1,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "相馬の古内裏（Mitsukuni Defying the Skeleton Spectre）",
+   "topHammer": "約US$257,541（1998年以降の作家最高記録・MutualArt集計）",
+   "topJpy": null
+  },
+  {
+   "slug": "kawase-hasui",
+   "name": "川瀬巴水",
+   "category": "版画",
+   "count": 1,
+   "verifiedAt": "2026年6月26日",
+   "topTitle": "大阪天王寺（Tenno-ji Temple in Osaka）",
+   "topHammer": "US$109,100（約84,000ポンド・作家オークション記録／予想下値の12倍超）",
+   "topJpy": null
+  },
+  {
+   "slug": "fu-baoshi",
+   "name": "傅抱石",
+   "category": "中国美術",
+   "count": 2,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "云中君と大司命（1954年作）",
+   "topHammer": "RMB230,000,000（手数料込・作家最高記録／ハンマーRMB200,000,000）",
+   "topJpy": null
+  },
+  {
+   "slug": "li-keran",
+   "name": "李可染",
+   "category": "中国美術",
+   "count": 2,
+   "verifiedAt": "2026年6月27日",
+   "topTitle": "万山紅遍（1964年作）",
+   "topHammer": "約RMB293,000,000（約US$4,600万・作家最高記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "oguiss-takanori",
+   "name": "荻須高徳",
+   "category": "絵画",
+   "count": 2,
+   "verifiedAt": "2026年7月1日",
+   "topTitle": "Marchand de couleurs（Sunlight Savon／1929-32年頃）",
+   "topHammer": "£53,220（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "hiratsuka-unichi",
+   "name": "平塚運一",
+   "category": "版画",
+   "count": 2,
+   "verifiedAt": "2026年7月3日",
+   "topTitle": "木版画5点一括（平等院池畔・北松江ほか・鉛筆サイン入り）",
+   "topHammer": "446.25米ドル（手数料込）",
+   "topJpy": null
+  },
+  {
+   "slug": "huang-binhong",
+   "name": "黄賓虹",
+   "category": "中国美術",
+   "count": 1,
+   "verifiedAt": "2026年6月30日",
+   "topTitle": "黄山湯口（1955年作）",
+   "topHammer": "約RMB345,000,000（約US$5,060万・作家最高記録）",
+   "topJpy": null
+  },
+  {
+   "slug": "pan-tianshou",
+   "name": "潘天寿",
+   "category": "中国美術",
+   "count": 2,
+   "verifiedAt": "2026年6月30日",
+   "topTitle": "無限風光（指墨）",
+   "topHammer": "約RMB287,500,000（手数料込・作家最高記録）",
+   "topJpy": null
+  }
+ ]
+}

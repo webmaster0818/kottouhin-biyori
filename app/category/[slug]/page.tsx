@@ -2,6 +2,17 @@ import { Metadata } from "next";
 import categories from "@/data/categories.json";
 import companies from "@/data/companies.json";
 import CategoryPageClient from "./CategoryPageClient";
+import soubaDb from "@/data/soubaDb.json";
+
+// カテゴリslug → artists.jsonのcategory値
+const ARTIST_CAT_MAP: Record<string, string> = {
+  kakejiku: "掛軸",
+  kaiga: "絵画",
+  touken: "刀剣",
+  sadougu: "茶道具",
+  kimono: "着物",
+  ukiyoe: "浮世絵",
+};
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -76,7 +87,10 @@ export default async function CategoryPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {productSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />}
-      <CategoryPageClient slug={slug} />
+      <CategoryPageClient
+        slug={slug}
+        artistRows={(soubaDb.artists as any[]).filter((a) => a.category === ARTIST_CAT_MAP[slug]).slice(0, 12)}
+      />
     </>
   );
 }
