@@ -116,6 +116,13 @@ export default function NingenKokuhouPage() {
         {/* 人間国宝とは */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：人間国宝の作品はいくらで売れる？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                分野により異なりますが、買取相場の目安は陶芸20万〜500万円、漆芸30万〜500万円以上、染織20万〜300万円、金工・彫金20万〜150万円です。共箱・証紙の有無で査定額が2〜3倍変わることも珍しくありません。故人となった人間国宝の作品は「もう新作が生まれない」希少性から市場価値が上昇する傾向にあります。専門性の高い業者3社以上に相見積もりを取るのが高額売却の鉄則です。
+              </p>
+            </div>
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">人間国宝とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">

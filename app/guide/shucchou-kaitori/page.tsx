@@ -104,6 +104,13 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品の出張買取はどんな流れ？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                出張買取は「申込み→査定士が自宅を訪問→その場で査定額を提示→成約・現金支払い」の4ステップで、自宅にいながら査定から現金化まで完結します。出張費・査定費はほとんどの優良業者で無料で、金額に納得できなければキャンセルも可能です。契約後は古物営業法に基づき8日以内のクーリング・オフができます。掛軸・茶道具など運搬が難しい品や、蔵の整理・遺品整理で品数が多い場合に最適な方法です。
+              </p>
+            </div>
             <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">出張買取とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed">

@@ -113,6 +113,13 @@ export default function DokoDeUruPage() {
         {/* Comparison Table (Mobile-friendly) */}
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品はどこで売るのがいい？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                骨董品の売却方法は「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全・確実に売りたいなら、専門家の査定が受けられ即日現金化もできる買取業者への売却が最もおすすめ（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、10〜15%程度の手数料と出品・発送の手間がかかります。迷ったら、まず買取業者への一括査定で相場を把握してから他の方法を検討するのが失敗しない手順です。
+              </p>
+            </div>
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">

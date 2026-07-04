@@ -105,6 +105,13 @@ export default function KifuPage() {
         {/* 寄贈先の種類 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品は寄付・寄贈できる？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                骨董品は美術館・博物館・大学などの研究機関へ寄贈できます。ただし各館には収蔵方針があり、すべての品が受け入れられるわけではないため、事前の連絡・審査が必要です。国や地方自治体が設置する美術館・博物館への寄贈では、相続税の非課税特例などの税制優遇を受けられる場合があります。一度寄贈すると原則返還されないため、寄贈前に無料査定で市場価値を確認してから判断するのがおすすめです。
+              </p>
+            </div>
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">DONATION TARGETS</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">寄贈先の種類と特徴</h2>

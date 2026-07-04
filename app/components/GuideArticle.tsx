@@ -22,6 +22,7 @@ export interface GuideArticleProps {
   title: string;
   subtitle: string;
   breadcrumbName: string;
+  conclusion?: { q: string; a: string }; // 結論即答ブロック（ヒーロー直後に表示）
   intro?: string;
   tips: GuideTip[];
   summaryIntro: string;
@@ -84,6 +85,18 @@ export default function GuideArticle(p: GuideArticleProps) {
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">{p.subtitle}</p>
             </div>
           </section>
+
+          {p.conclusion && (
+            <div className="max-w-4xl mx-auto px-4 pt-10 md:pt-14">
+              {/* 結論即答 */}
+              <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+                <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：{p.conclusion.q}？</p>
+                <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                  {p.conclusion.a}
+                </p>
+              </div>
+            </div>
+          )}
 
           {p.intro && (
             <section className="py-10 md:py-14">

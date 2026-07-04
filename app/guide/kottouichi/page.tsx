@@ -150,6 +150,13 @@ export default function KottouichiPage() {
         {/* 全国の骨董市一覧 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董市はいつ・どこで開催されている？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                多くの骨董市は神社仏閣の縁日に合わせて毎月決まった日に開催されます。有名どころでは、京都・東寺の弘法市が毎月21日、北野天満宮の天神市が毎月25日、大阪・四天王寺骨董市が毎月21日・22日、東京の大江戸骨董市が毎月第1・第3日曜日です。掘り出し物を狙うなら品揃えが豊富な早朝、値引き交渉なら閉場間際が狙い目です。開催日は変更される場合があるため、お出かけ前に主催者の公式情報を確認しましょう。
+              </p>
+            </div>
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET LIST</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">全国の有名骨董市</h2>

@@ -73,6 +73,13 @@ export default function TakakuUruPage() {
         {/* Tips */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品を高く売るには？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                最も重要なのは複数業者への相見積もりで、同じ品物でも業者によって査定額に数倍の差がつくため、最低3社以上に査定を依頼するのが鉄則です。あわせて、共箱・鑑定書などの付属品をすべて揃える（査定額が2〜3倍変わることも）、自分でクリーニング・修復しない、需要の高い時期（茶道具なら秋〜冬の茶会シーズンなど）を狙う、事前に品物の情報を調べておく、の5点を押さえれば高額売却の可能性が大きく高まります。
+              </p>
+            </div>
             {tips.map((tip, idx) => (
               <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
                 <div className="p-6 md:p-8">

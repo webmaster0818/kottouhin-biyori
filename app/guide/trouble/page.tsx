@@ -69,6 +69,13 @@ export default function TroublePage() {
         {/* Trouble Cases */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品買取のトラブルはどう防ぐ？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                よくあるトラブルは「押し買い」「安値での買い叩き」「キャンセル拒否・違約金請求」「配送中の破損」「偽の鑑定結果による値下げ」の5つです。防ぐ原則は、3社以上への相見積もり・費用とキャンセルポリシーの事前確認・信頼できる業者選びの3つです。訪問購入には契約から8日以内のクーリングオフが適用されます。自分から依頼していない業者の突然の訪問には絶対に応じないでください。
+              </p>
+            </div>
             {troubles.map((trouble, idx) => (
               <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
                 <div className="p-6 md:p-8">

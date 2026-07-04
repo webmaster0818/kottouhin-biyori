@@ -103,6 +103,13 @@ export default function HajimetePage() {
         {/* ステップガイド */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
+            {/* 結論即答 */}
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：初めて骨董品を売るにはどうすればいい？</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                「①品物と付属品の情報を整理→②買取業者を選ぶ→③査定を依頼→④査定額を比較して売却を決める→⑤売却・受け取り」の5ステップで進めれば、初めてでも失敗しません。最も重要なのは1社だけに頼まず、必ず複数社（3社以上）に査定を依頼することです。査定前に自分でクリーニングしない、共箱・鑑定書などの付属品を捨てないことも鉄則です。査定は無料が一般的で、金額に納得できなければ断っても問題ありません。
+              </p>
+            </div>
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">STEP BY STEP</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董品を売る5つのステップ</h2>
