@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const artist = artists.find((a) => a.slug === slug);
   if (!artist) return {};
   return {
-    title: `${artist.name}の${artist.category}買取相場・鑑定ポイント【2026年最新】| 骨董品買取びより`,
-    description: `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。代表作や鑑定のポイント、高く売るコツを解説。`,
+    title: `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年最新】| 骨董品買取びより`,
+    description: `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     alternates: { canonical: `/artist/${slug}` },
   };
 }
@@ -101,8 +101,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${artist.name}の${artist.category}買取相場・鑑定ポイント【2026年最新】`,
-    "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。代表作や鑑定のポイント、高く売るコツを解説。`,
+    "headline": `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年最新】`,
+    "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
     "dateModified": (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
@@ -282,6 +282,28 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </p>
             </section>
           )}
+
+          {/* 査定・鑑定の出し方（作家別の鑑定機関情報は appraisalNote 任意フィールド） */}
+          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              {artist.name}作品の査定・鑑定の出し方
+            </h2>
+            {(artist as any).appraisalNote && (
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 mb-5">
+                <p className="text-sm font-bold text-[#2C1810] mb-1">鑑定機関について（2026年7月確認）</p>
+                <p className="text-sm text-[#5C4A3A] leading-relaxed">{(artist as any).appraisalNote}</p>
+              </div>
+            )}
+            <ol className="space-y-3 mb-5">
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</span><span><strong className="text-[#2C1810]">写真査定（無料）で概算を知る：</strong>スマホ写真をLINE・フォームで送るだけで概算がわかります。この段階で複数業者に送り、評価の高い業者を見極めます。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</span><span><strong className="text-[#2C1810]">現物査定（出張・持込・宅配）：</strong>共箱・箱書・鑑定書・購入時の資料を必ず一緒に見せます。付属品の有無で評価が大きく変わります。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</span><span><strong className="text-[#2C1810]">正式な鑑定書が必要な場合：</strong>鑑定機関・専門家への依頼は費用と日数がかかるため、まず買取業者の無料査定で価値の目安を確認し、高額が見込める場合に検討するのが実務的な順序です。</span></li>
+            </ol>
+            <p className="text-xs text-[#8B7D72] leading-relaxed">
+              ※ 鑑定書・共箱の有無は評価を左右する最重要要素のひとつです。{(artist as any).auctionResults ? "上の落札実績でも、鑑定書・箱書の有無や帰属の確かさが価格差の大きな要因になっています。" : ""}
+            </p>
+          </section>
 
           {/* 高く売るコツ */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
