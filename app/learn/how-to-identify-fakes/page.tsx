@@ -117,7 +117,7 @@ export default function HowToIdentifyFakesPage() {
                 ))}
               </div>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mt-4">
-                注意したいのは、これらの「サイン」自体が偽造されるケースがあることです（偽の箱書き・偽鑑定書など）。だからこそ、1つの要素だけで判断せず複数の要素の整合性を見るのがプロの鑑定手法です。判断に迷う品物は、<Link href="/guide/kantei-muryou" className="text-[#8B4513] underline hover:no-underline">無料鑑定・査定</Link>でプロの目を借りるのが確実です。
+                注意したいのは、これらの「サイン」自体が偽造されるケースがあることです（偽の箱書き・偽鑑定書など）。だからこそ、1つの要素だけで判断せず複数の要素の整合性を見るのがプロの鑑定手法です。判断に迷う品物は、<Link href="/guide/kantei-muryou" className="text-[#8B4513] underline hover:no-underline">無料鑑定・査定</Link>でプロの目を借りるのが確実です。各要素を偽造の見抜き方までさらに詳しく知りたい方は、<Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline hover:no-underline">本物に共通する5つの特徴と真贋の最終判断</Link>もご覧ください。
               </p>
             </div>
           </div>
