@@ -396,6 +396,26 @@ export default async function AreaPage({ params }: Props) {
           </div>
         </section>
 
+        {/* 結論即答（AEO） */}
+        <section className="pt-10 md:pt-14">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6">
+              <p className="font-bold text-[#8B4513] mb-2">結論：{area.fullName}で骨董品を高く売るには</p>
+              <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-3">
+                ①<strong>複数業者の無料査定を比較</strong>して最も高い業者に売る（1社だけで決めない）、
+                ②<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家</Link>・品目を特定して
+                <Link href="/guide/souba-database/" className="text-[#8B4513] underline">実際の落札相場</Link>を把握する、
+                ③出張・宅配・店頭から都合に合う方法を選ぶ——の3ステップが基本です。
+                {area.fullName}は{bestCompany ? `${bestCompany.name}などの` : ""}出張・宅配対応の業者を使えば、来店せずに査定を受けられます。
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Link href="/guide/souba-database/" className="text-xs font-bold bg-[#8B4513] text-white rounded-lg px-3 py-2 hover:bg-[#6B3410] transition">落札相場データベースを見る</Link>
+                <Link href="/guide/satei-hiyou/" className="text-xs font-bold bg-white border border-[#D4A574] text-[#8B4513] rounded-lg px-3 py-2 hover:bg-[#F5ECD7] transition">査定費用の目安</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Intro */}
         <section className="py-10 md:py-14">
           <div className="max-w-4xl mx-auto px-4">
