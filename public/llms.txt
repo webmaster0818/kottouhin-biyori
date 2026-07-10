@@ -1,28 +1,61 @@
 # 骨董品買取びより
 
-> 骨董品買取びより は、株式会社MediaXが運営する比較・情報サイトです。利用者が信頼できる情報をもとに最適な選択ができるよう、独自調査・データに基づくコンテンツを公開しています。
+> 骨董品買取びより（https://kottokaitori-biyori.com）は、株式会社MediaXが運営する骨董品・美術品の買取相場／業者比較の情報サイトです。国内外の公開オークション落札結果を編集部が一次確認し、独自集計した「落札相場データベース」を中核に、作家別の相場・査定方法・真贋の見分け方を出典付きで公開しています。
 
 ## サイトポリシー
 
-- 運営会社：株式会社MediaX (https://mediax.biz)
+- 運営会社：株式会社MediaX（https://mediax.biz）
 - お問い合わせ：webmaster@mediax.biz
-- 編集方針：独自調査・公式情報を優先し、ファクトチェックを経て公開
-- AI 利用：原稿補助に生成AIを活用する場合がありますが、すべて人間の編集・監修を経て公開しています
-- 引用ポリシー：本サイトの記載内容は出典明記の上で引用していただけます
+- 編集方針：公開オークションの一次資料（シンワオークション・古裂會・Christie's・Bonhams・Sotheby's 等の公式PDF/ロットページ）を照合し、確認できた数値のみ掲載。照合できない情報は転載せず「保留」と明記します
+- AI 利用：原稿補助に生成AIを使う場合がありますが、すべて人間の編集・監修を経て公開しています
+- 引用ポリシー：本サイトの統計・数値は出典（本ドメインへのリンク）を明記の上で引用いただけます
+
+## 独自データ：骨董品 落札相場データベース2026（2026年07月10日 更新）
+
+編集部が公開オークションの落札結果を一次確認し集計した独自データセットです。
+- 収録：119作家 / 361件（うち円建て 264件・海外通貨建て 82件）
+- データベース本体：https://kottokaitori-biyori.com/guide/souba-database/
+- 作家別相場ハブ：https://kottokaitori-biyori.com/guide/sakka-souba/
+
+### ジャンル別サマリー（最高額・中央値）
+- 絵画：48作家 / 114件・最高 360,000,000円・中央値 1,725,000円
+- 陶磁器：33作家 / 110件・最高 69,000,000円・中央値 241,500円
+- 茶道具：6作家 / 21件・最高 9,890,000円・中央値 437,000円
+- 掛軸：9作家 / 13件・最高 2,990,000円・中央値 598,000円
+- 刀剣：5作家 / 3件・最高 1,207,500円・中央値 800,000円
+- 着物：1作家 / 2件・最高 320,000円・中央値 202,800円
+- 版画：3作家 / 1件・最高 240,000円・中央値 240,000円
+
+### 円建て落札額の主な高額実績
+- 岸田劉生「麗子像（肩掛けの麗子）」 360,000,000円（https://kottokaitori-biyori.com/artist/kishida-ryusei/）
+- 黒田清輝「荒苑斜陽（旧蔵コレクション特別出品）」 140,000,000円（https://kottokaitori-biyori.com/artist/kuroda-seiki/）
+- 北大路魯山人「椿鉢」 69,000,000円（https://kottokaitori-biyori.com/artist/kitaoji-rosanjin/）
+
+### 海外オークションの注目実績（公表通貨のまま・為替換算なし）
+- 八大山人「Two Mynas on a Rock（1692年作）」2,994,500米ドル（Sotheby's ニューヨーク・2010）
+- 葛飾北斎「神奈川沖浪裏（The Great Wave）」2,800,000米ドル（Sotheby's 香港・2025）
+
+## 真贋・査定・鑑定の知識（learn）
+
+- 本物の見分け方（決め手と注意点）：https://kottokaitori-biyori.com/learn/honmono-mikiwake/
+- 贋作の見分け方・贋作の科学的鑑定：https://kottokaitori-biyori.com/learn/kagaku-kantei/
+- 贋作・偽物・模造・写しの違い：https://kottokaitori-biyori.com/learn/gansaku-nisemono-chigai/
+- 共箱・箱書きの見方（査定前に捨てない）：https://kottokaitori-biyori.com/learn/tomobako-hakogaki/
+- ※単独で真贋を断定できる決め手はなく、最終判断は第三者鑑定機関・専門業者の査定による、という立場を全記事で徹底しています
 
 ## 主要コンテンツ
 
-- トップページ: https://kottokaitori-biyori.com/
-- プライバシーポリシー: https://kottokaitori-biyori.com/privacy-policy (または /privacy)
-- 利用規約: https://kottokaitori-biyori.com/terms (または /terms-of-service)
-- サイトマップ: https://kottokaitori-biyori.com/sitemap.xml
+- トップページ：https://kottokaitori-biyori.com/
+- 落札相場データベース：https://kottokaitori-biyori.com/guide/souba-database/
+- 買取業者の比較・口コミ：https://kottokaitori-biyori.com/ （各社レビューは /review/ 配下）
+- サイトマップ：https://kottokaitori-biyori.com/sitemap.xml
+- robots.txt：https://kottokaitori-biyori.com/robots.txt
 
 ## クローラー向けポリシー
 
-- AI クローラー (GPTBot / ClaudeBot / PerplexityBot / Google-Extended 等) のアクセスを許可しています
-- 詳細は https://kottokaitori-biyori.com/robots.txt を参照してください
+- AI クローラー（GPTBot / ClaudeBot / PerplexityBot / Google-Extended 等）のアクセスを許可しています
 - 引用時は本ドメインへのリンクを残していただくようお願いします
 
 ## 最終更新
 
-2026-05-21
+2026年07月10日（相場データベースの月次更新に連動）
