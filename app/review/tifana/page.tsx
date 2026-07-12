@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
-import { TopicSections, GoogleReviewsSection } from "@/app/components/CompanyExtras";
+import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/components/CompanyExtras";
 
 const company = companies.find((c) => c.id === "tifana")!;
 
@@ -101,6 +101,7 @@ export default function TifanaReview() {
         </section>
 
         <TopicSections sections={(company as any).topicSections} />
+        <ReviewTrendSection data={(company as any).reviewTrend} companyName={company.name} />
         <GoogleReviewsSection data={(company as any).googleReviews} />
 
         {/* Pros & Cons */}

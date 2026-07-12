@@ -76,6 +76,40 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
   );
 }
 
+export function ReviewTrendSection({ data, companyName }: { data?: { good: string[]; bad: string[]; source: string; note?: string }; companyName: string }) {
+  if (!data) return null;
+  return (
+    <section className="py-12 md:py-16 bg-[#FAF7F2]" id="review-trend">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="text-center mb-8">
+          <p className="text-sm text-[#C9A96E] tracking-widest mb-2">REPUTATION</p>
+          <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">{companyName}の公開口コミの傾向</h2>
+          <p className="text-xs text-[#8B7D72] mt-3">出典：{data.source}。口コミ本文は転載せず傾向の要約のみを掲載しています。</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-5">
+          <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
+            <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">👍 良い評判の傾向</h3>
+            <ul className="space-y-2">
+              {data.good.map((g, i) => (
+                <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#2C7A4B] shrink-0">・</span>{g}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
+            <h3 className="font-bold text-[#B4553A] mb-3 text-sm">🤔 気になる評判の傾向</h3>
+            <ul className="space-y-2">
+              {data.bad.map((b, i) => (
+                <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#B4553A] shrink-0">・</span>{b}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        {data.note && <p className="text-xs text-[#8B7D72] leading-relaxed mt-4 bg-white rounded-lg border border-[#E8DFD3] p-4">{data.note}</p>}
+      </div>
+    </section>
+  );
+}
+
 export function GoogleReviewsSection({ data }: { data?: GoogleReviews }) {
   if (!data) return null;
   return (
