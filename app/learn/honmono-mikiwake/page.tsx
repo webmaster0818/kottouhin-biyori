@@ -141,6 +141,24 @@ export default function HonmonoMikiwakePage() {
               </p>
             </div>
 
+            {/* 贋作の多い人気作家は専門査定へ（作家×査定クラスタへの内部リンク集中） */}
+            <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6 mb-10">
+              <h2 className="font-serif-jp text-xl font-bold text-[#5C4A3A] mb-3">贋作・模写が多い人気作家は専門の査定・鑑定を</h2>
+              <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-4">
+                市場価値が高く人気の作家ほど、贋作・模写・工房作が多く出回ります。特に次の作家は真贋の見極めが難しいため、作品ごとの相場を確認したうえで、買取業者の無料査定や第三者鑑定でプロの判断を仰ぐのが安全です。
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  ["katsushika-hokusai", "葛飾北斎"], ["ito-jakuchu", "伊藤若冲"], ["maruyama-okyo", "円山応挙"],
+                  ["uemura-shoen", "上村松園"], ["senju-hiroshi", "千住博"], ["go-shoseki", "呉昌碩"],
+                ].map(([slug, name]) => (
+                  <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                    {name}の査定・相場
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* 5つの特徴 */}
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">本物の骨董品に共通する5つの特徴</h2>
             <div className="space-y-5 mb-12">
