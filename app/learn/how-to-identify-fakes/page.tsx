@@ -27,6 +27,8 @@ export default function HowToIdentifyFakesPage() {
           { q: "偽物（贋作）を買わないために一番大事なことは？", a: "『安すぎる品物を疑う』『信頼できる業者・ルートから購入する』『焦って即決しない』の3つが基本です。共箱・鑑定書などの付属品や来歴の確認も、贋作を避けるうえで有効です。" },
           { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは買取業者の無料査定でプロの目を借りるのが手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関（数千円〜数万円）に鑑定書の発行を依頼しましょう。" },
           { q: "「これがある骨董品は本物」と言える要素はありますか？", a: "単独で本物と断定できる要素はありませんが、①作家直筆の箱書きがある共箱、②信頼できる第三者機関の鑑定書・登録証、③摩耗した落款・印章、④展覧会出品歴や図録掲載などの来歴、⑤自然な経年変化（古色）が揃っているほど本物の可能性は高まります。逆にどれか1つだけを根拠に本物と判断するのは危険です。" },
+          { q: "骨董品が偽物かどうかの判定はどうすればいいですか？", a: "まず自分でできるのは、共箱・鑑定書などの付属品、落款・銘・印章の状態、価格の妥当性、時代に合った材料・技法かの4点チェックです。ただし最終的な真贋の判定は専門知識が必要なため、確信が持てない場合は買取業者の無料査定でプロに見てもらうのが確実で、費用もかかりません。相続などで正式な証明が要る場合は第三者鑑定機関の鑑定書発行を検討しましょう。" },
+          { q: "骨董品の見分け方は何から始めればいいですか？", a: "最初に見るべきは『付属品（共箱・箱書き・鑑定書）』です。ここに作家の直筆や第三者機関の証明があるかで信頼性が大きく変わります。次に落款・銘・印章の彫りや摩耗の自然さ、そして全体の古色（経年変化）が不自然でないかを確認します。品目（掛軸・陶磁器・茶道具・絵画・刀剣）ごとの着眼点は品目別チェックポイントで詳しく解説しています。" },
         ].map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
       }) }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -525,15 +527,25 @@ export default function HowToIdentifyFakesPage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/learn/honmono-mikiwake" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">「これがある骨董品は本物」の真相と5つの判断材料</h3>
+                <p className="text-sm text-[#5C4A3A]">単独で本物と断定できる決め手はあるのか？本物の可能性を高める要素を注意点とセットで解説します。</p>
+              </Link>
+              <Link href="/learn/kagaku-kantei" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">贋作の科学的鑑定でわかること・わからないこと</h3>
+                <p className="text-sm text-[#5C4A3A]">蛍光X線分析・放射性炭素年代測定など、科学的な真贋鑑定の仕組みと限界を解説します。</p>
+              </Link>
+              <Link href="/learn/gansaku-nisemono-chigai" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+                <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
+                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">贋作・偽物・模造・写しの違いとは？</h3>
+                <p className="text-sm text-[#5C4A3A]">紛らわしい真贋用語を「だます意図があるか」で整理。査定前に知っておきたい基礎知識です。</p>
+              </Link>
               <Link href="/learn/what-is-kottouhin" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品とは？定義・歴史・分類の完全ガイド</h3>
                 <p className="text-sm text-[#5C4A3A]">骨董品の基礎知識を網羅的に解説。初心者の方はまずこちらをご覧ください。</p>
-              </Link>
-              <Link href="/learn/how-to-store" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
-                <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
-                <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の保管・お手入れ完全ガイド</h3>
-                <p className="text-sm text-[#5C4A3A]">品目別の正しい保管方法と、やってはいけないNG行為を解説します。</p>
               </Link>
             </div>
           </div>
@@ -553,6 +565,9 @@ export default function HowToIdentifyFakesPage() {
                   { q: "鑑定書があれば本物と確定できますか？", a: "東京美術倶楽部や日本美術刀剣保存協会など信頼できる第三者機関の鑑定書は有力な証拠になります。ただし鑑定書自体が偽造されるケースもあるため、発行機関の信頼性もあわせて確認することが大切です。" },
                   { q: "偽物（贋作）を買わないために一番大事なことは？", a: "「安すぎる品物を疑う」「信頼できる業者・ルートから購入する」「焦って即決しない」の3つが基本です。共箱・鑑定書などの付属品や来歴の確認も、贋作を避けるうえで有効です。" },
                   { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは買取業者の無料査定でプロの目を借りるのが手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関（数千円〜数万円）に鑑定書の発行を依頼しましょう。" },
+                  { q: "「これがある骨董品は本物」と言える要素はありますか？", a: "単独で本物と断定できる要素はありませんが、①作家直筆の箱書きがある共箱、②信頼できる第三者機関の鑑定書・登録証、③摩耗した落款・印章、④展覧会出品歴や図録掲載などの来歴、⑤自然な経年変化（古色）が揃っているほど本物の可能性は高まります。逆にどれか1つだけを根拠に本物と判断するのは危険です。" },
+                  { q: "骨董品が偽物かどうかの判定はどうすればいいですか？", a: "まず自分でできるのは、共箱・鑑定書などの付属品、落款・銘・印章の状態、価格の妥当性、時代に合った材料・技法かの4点チェックです。ただし最終的な真贋の判定は専門知識が必要なため、確信が持てない場合は買取業者の無料査定でプロに見てもらうのが確実で、費用もかかりません。相続などで正式な証明が要る場合は第三者鑑定機関の鑑定書発行を検討しましょう。" },
+                  { q: "骨董品の見分け方は何から始めればいいですか？", a: "最初に見るべきは「付属品（共箱・箱書き・鑑定書）」です。ここに作家の直筆や第三者機関の証明があるかで信頼性が大きく変わります。次に落款・銘・印章の彫りや摩耗の自然さ、そして全体の古色（経年変化）が不自然でないかを確認します。品目（掛軸・陶磁器・茶道具・絵画・刀剣）ごとの着眼点は本文の品目別チェックポイントで詳しく解説しています。" },
                 ].map((f) => (
                   <div key={f.q} className="border-b border-[#E0D5C8] last:border-b-0 pb-5 last:pb-0">
                     <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
