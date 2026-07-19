@@ -272,7 +272,15 @@ const fakeIdentificationTips: Record<string, { title: string; text: string }[]> 
 
 type ArtistRow = { slug: string; name: string; count: number; topTitle: string; topHammer: string; verifiedAt: string };
 
-export default function CategoryPageClient({ slug, artistRows = [] }: { slug: string; artistRows?: ArtistRow[] }) {
+export default function CategoryPageClient({
+  slug,
+  artistRows = [],
+  popularArtistLinks = [],
+}: {
+  slug: string;
+  artistRows?: ArtistRow[];
+  popularArtistLinks?: { name: string; slug: string | null }[];
+}) {
   const cat = categories.find((c) => c.slug === slug) as CategoryData | undefined;
   if (!cat) return <div>カテゴリが見つかりません</div>;
 
@@ -510,15 +518,24 @@ export default function CategoryPageClient({ slug, artistRows = [] }: { slug: st
                 <p className="text-[#5C4A3A] mt-2">{cat.name}の買取で特に人気の高い作家をご紹介します</p>
               </div>
               <div className="flex flex-wrap gap-3 justify-center">
-                {cat.popularArtists.map((artist) => (
-                  <Link
-                    key={artist}
-                    href={`/artist/${encodeURIComponent(artist)}`}
-                    className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B4513] px-5 py-3 rounded-xl font-medium shadow-sm hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
-                  >
-                    {artist}
-                  </Link>
-                ))}
+                {(popularArtistLinks.length ? popularArtistLinks : cat.popularArtists.map((name) => ({ name, slug: null }))).map((a) =>
+                  a.slug ? (
+                    <Link
+                      key={a.name}
+                      href={`/artist/${a.slug}/`}
+                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B4513] px-5 py-3 rounded-xl font-medium shadow-sm hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                    >
+                      {a.name}
+                    </Link>
+                  ) : (
+                    <span
+                      key={a.name}
+                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B7D72] px-5 py-3 rounded-xl font-medium shadow-sm"
+                    >
+                      {a.name}
+                    </span>
+                  )
+                )}
               </div>
               <p className="text-center text-sm text-[#8B7D72] mt-6">
                 ※上記以外の作家の作品も高額査定になる場合があります。まずは査定に出してみましょう。
@@ -672,8 +689,8 @@ export default function CategoryPageClient({ slug, artistRows = [] }: { slug: st
           </div>
         </section>
 
-        {/* Related Artists Links */}
-        {cat.popularArtists.length > 0 && (
+        {/* Related Artists Links（実在する作家ページのみ） */}
+        {popularArtistLinks.some((a) => a.slug) && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
               <div className="text-center mb-10">
@@ -681,18 +698,20 @@ export default function CategoryPageClient({ slug, artistRows = [] }: { slug: st
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の作家ページ一覧
                 </h2>
-                <p className="text-[#5C4A3A] mt-2">各作家の詳細な買取情報はこちら</p>
+                <p className="text-[#5C4A3A] mt-2">各作家の買取相場・査定/鑑定の出し方はこちら</p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                {cat.popularArtists.map((artist) => (
-                  <Link
-                    key={artist}
-                    href={`/artist/${encodeURIComponent(artist)}`}
-                    className="text-center bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl py-3 px-2 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
-                  >
-                    {artist}
-                  </Link>
-                ))}
+                {popularArtistLinks
+                  .filter((a) => a.slug)
+                  .map((a) => (
+                    <Link
+                      key={a.name}
+                      href={`/artist/${a.slug}/`}
+                      className="text-center bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl py-3 px-2 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                    >
+                      {a.name}の査定
+                    </Link>
+                  ))}
               </div>
             </div>
           </section>

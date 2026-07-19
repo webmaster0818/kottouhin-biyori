@@ -3,6 +3,12 @@ import categories from "@/data/categories.json";
 import companies from "@/data/companies.json";
 import CategoryPageClient from "./CategoryPageClient";
 import soubaDb from "@/data/soubaDb.json";
+import artists from "@/data/artists.json";
+
+// 作家名 → 記事ページslug（実在ページのみリンク化するため）
+const ARTIST_NAME_TO_SLUG: Record<string, string> = Object.fromEntries(
+  (artists as { name: string; slug: string }[]).map((a) => [a.name, a.slug])
+);
 
 // カテゴリslug → artists.jsonのcategory値
 const ARTIST_CAT_MAP: Record<string, string> = {
@@ -90,6 +96,10 @@ export default async function CategoryPage({ params }: Props) {
       <CategoryPageClient
         slug={slug}
         artistRows={(soubaDb.artists as any[]).filter((a) => a.category === ARTIST_CAT_MAP[slug]).slice(0, 12)}
+        popularArtistLinks={(cat?.popularArtists ?? []).map((name: string) => ({
+          name,
+          slug: ARTIST_NAME_TO_SLUG[name] ?? null,
+        }))}
       />
     </>
   );
