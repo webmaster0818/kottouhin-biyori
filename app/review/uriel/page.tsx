@@ -7,7 +7,7 @@ import companies from "@/data/companies.json";
 const company = companies.find((c) => c.id === "uriel")!;
 
 export const metadata: Metadata = {
-  title: `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
+  title: `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
   description: `${company.name}の口コミ・評判を徹底検証。出張買取専門の${company.name}の特徴、メリット・デメリット、遺品整理との連携サービスを詳しく解説。`,
   alternates: { canonical: "/review/uriel" },
 };

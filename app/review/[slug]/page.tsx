@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
   return {
-    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
+    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
     description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を徹底検証。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法を詳しく解説します。`,
     alternates: { canonical: `/review/${slug}` },
   };
@@ -47,7 +47,7 @@ export default async function DynamicReviewPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${company.name}の口コミ・評判【2026年最新】`,
+    "headline": `${company.name}の口コミ・評判【2026年7月】`,
     "description": `${company.name}の口コミ・評判を徹底検証。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
     "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
@@ -91,7 +91,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 {company.name}の口コミ・評判
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                骨董品買取の実力を徹底検証【2026年最新】
+                骨董品買取の実力を徹底検証【2026年7月】
               </p>
             </div>
           </section>

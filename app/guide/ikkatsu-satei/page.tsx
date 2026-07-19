@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の一括査定とは？メリット・使い方を解説【2026年最新】｜骨董品買取びより",
+  title: "骨董品の一括査定とは？メリット・使い方を解説【2026年7月】｜骨董品買取びより",
   description: "骨董品の一括査定の仕組み・メリット・注意点を解説。複数業者にまとめて査定を依頼して最高額を見つける方法、利用の流れをわかりやすく紹介します。",
   alternates: { canonical: "/guide/ikkatsu-satei" },
 };

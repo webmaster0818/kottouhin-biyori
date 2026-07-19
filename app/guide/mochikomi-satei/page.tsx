@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の持ち込み査定とは？メリットと注意点【2026年最新】｜骨董品買取びより",
+  title: "骨董品の持ち込み査定とは？メリットと注意点【2026年7月】｜骨董品買取びより",
   description: "骨董品の持ち込み(店頭)査定のメリット・デメリットを解説。即日現金化できる手軽さや、向いている品物・注意点をわかりやすく紹介します。",
   alternates: { canonical: "/guide/mochikomi-satei" },
 };

@@ -5,7 +5,7 @@ const SITE_URL = "https://kottokaitori-biyori.com";
 const PAGE_URL = `${SITE_URL}/guide/souba/`;
 
 export const metadata: Metadata = {
-  title: "骨董品買取相場まとめ【2026年最新】品目別・作家別の買取価格一覧｜骨董品買取びより",
+  title: "骨董品買取相場まとめ【2026年7月】品目別・作家別の買取価格一覧｜骨董品買取びより",
   description: "骨董品の買取相場を品目別・作家別に徹底解説。掛軸・茶道具・絵画・陶磁器の作家40名の参考相場、高く売るための5つのコツ、2026年の市場トレンドをまとめました。",
   alternates: { canonical: "/guide/souba" },
 };
@@ -23,7 +23,7 @@ const breadcrumbSchema = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "骨董品買取相場まとめ【2026年最新】品目別・作家別の買取価格一覧",
+  "headline": "骨董品買取相場まとめ【2026年7月】品目別・作家別の買取価格一覧",
   "description": "骨董品の買取相場を品目別・作家別に徹底解説。掛軸・茶道具・絵画・陶磁器の作家40名の参考相場、高く売るための5つのコツ、2026年の市場トレンドをまとめました。",
   "datePublished": "2026-05-25T00:00:00+09:00",
   "dateModified": "2026-05-25T00:00:00+09:00",

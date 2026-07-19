@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の価値はどう決まる？値段を左右する5要素【2026年最新】｜骨董品買取びより",
+  title: "骨董品の価値はどう決まる？値段を左右する5要素【2026年7月】｜骨董品買取びより",
   description: "骨董品の価値は希少性・作家・状態・来歴・市場需要で決まります。なぜ同じような品で値段が大きく違うのか、価値の決まり方をわかりやすく解説します。",
   alternates: { canonical: "/guide/kachi-no-kimarikata" },
 };

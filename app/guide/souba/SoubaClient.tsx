@@ -225,7 +225,7 @@ export default function SoubaClient() {
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 品目別の買取相場一覧
               </h2>
-              <p className="text-[#5C4A3A] mt-2">2026年最新の買取相場をまとめました</p>
+              <p className="text-[#5C4A3A] mt-2">2026年7月の買取相場をまとめました</p>
             </div>
 
             {/* Mobile cards */}

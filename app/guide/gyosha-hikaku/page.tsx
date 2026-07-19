@@ -9,7 +9,7 @@ const PATH = "/guide/gyosha-hikaku/";
 const UPDATED = "2026年6月23日";
 
 export const metadata: Metadata = {
-  title: "骨董品買取業者おすすめ比較【2026年最新】14社を目的別に徹底比較｜骨董品買取びより",
+  title: "骨董品買取業者おすすめ比較【2026年7月】14社を目的別に徹底比較｜骨董品買取びより",
   description:
     "骨董品の買取業者14社（日晃堂・バイセル・福ちゃん・なんぼや・古美術八光堂・緑和堂・ヒカカク等）を、対応エリア・買取方法・タイプ・公式確認日で比較。骨董専門で選ぶ／大手の安心感／全国出張／一括比較など目的別のおすすめをまとめました。",
   alternates: { canonical: PATH },
@@ -33,7 +33,7 @@ export default function GyoshaHikakuPage() {
     { "@type": "ListItem", position: 3, name: "骨董品買取業者の比較", item: `${SITE}${PATH}` }] };
   const itemList = { "@context": "https://schema.org", "@type": "ItemList", name: "骨董品買取業者おすすめ比較",
     itemListElement: byRank.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: `${SITE}/review/${c.id}/` })) };
-  const article = { "@context": "https://schema.org", "@type": "Article", headline: "骨董品買取業者おすすめ比較【2026年最新】",
+  const article = { "@context": "https://schema.org", "@type": "Article", headline: "骨董品買取業者おすすめ比較【2026年7月】",
     description: "骨董品買取業者14社を目的別・実データで比較。", datePublished: "2026-06-23T00:00:00+09:00", dateModified: "2026-06-23T00:00:00+09:00",
     author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` }, publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` } };
@@ -55,7 +55,7 @@ export default function GyoshaHikakuPage() {
           <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
               <p className="text-[#D4A574] text-sm tracking-widest mb-4">COMPARE</p>
-              <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品買取業者おすすめ比較【2026年最新】</h1>
+              <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品買取業者おすすめ比較【2026年7月】</h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">主要14社を、対応エリア・買取方法・タイプ・公式確認日で目的別に比較できます。</p>
             </div>
           </section>

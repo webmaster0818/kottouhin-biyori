@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "古美術と骨董品の違いとは？意味と使い分けを解説【2026年最新】｜骨董品買取びより",
+  title: "古美術と骨董品の違いとは？意味と使い分けを解説【2026年7月】｜骨董品買取びより",
   description: "古美術・骨董品・アンティーク・ヴィンテージの違いを整理。製造後100年という一つの目安や、それぞれの言葉が指す範囲をわかりやすく解説します。",
   alternates: { canonical: "/guide/kobijutsu-tono-chigai" },
 };

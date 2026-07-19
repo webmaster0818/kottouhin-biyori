@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の即日査定・即日買取とは？当日現金化の方法【2026年最新】｜骨董品買取びより",
+  title: "骨董品の即日査定・即日買取とは？当日現金化の方法【2026年7月】｜骨董品買取びより",
   description: "骨董品を即日査定・即日買取で現金化する方法を解説。店頭持ち込みや出張買取の当日対応、スムーズに進めるための準備や注意点を紹介します。",
   alternates: { canonical: "/guide/sokujitsu-satei" },
 };

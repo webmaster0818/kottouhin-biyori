@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の査定費用は無料？かかる費用と注意点【2026年最新】｜骨董品買取びより",
+  title: "骨董品の査定費用は無料？かかる費用と注意点【2026年7月】｜骨董品買取びより",
   description: "骨董品の査定費用について解説。多くの業者で査定は無料ですが、出張費・キャンセル料・返送料など注意すべき料金と、無料で利用するコツを紹介します。",
   alternates: { canonical: "/guide/satei-hiyou" },
 };

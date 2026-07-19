@@ -5,7 +5,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品買取のトラブル事例と対策【2026年最新】失敗しないための知識｜骨董品買取びより",
+  title: "骨董品買取のトラブル事例と対策【2026年7月】失敗しないための知識｜骨董品買取びより",
   description: "骨董品買取で実際に起きたトラブル事例5選と具体的な対策方法を解説。押し買い、安値買い叩き、キャンセル不可など、知っておくべき注意点をまとめました。",
   alternates: { canonical: "/guide/trouble" },
 };

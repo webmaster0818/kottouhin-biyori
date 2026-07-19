@@ -5,7 +5,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品はどこで売る？4つの方法を比較【2026年最新】｜骨董品買取びより",
+  title: "骨董品はどこで売る？4つの方法を比較【2026年7月】｜骨董品買取びより",
   description: "骨董品を売る4つの方法（買取業者・オークション・フリマ・骨董市）を徹底比較。メリット・デメリット・おすすめの人を解説し、最適な売却先が見つかります。",
   alternates: { canonical: "/guide/doko-de-uru" },
 };

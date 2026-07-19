@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categories.find((c) => c.slug === slug);
   if (!cat) return {};
   return {
-    title: `${cat.name}買取おすすめ業者3選【2026年最新】相場・査定のポイント｜骨董品買取びより`,
+    title: `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`,
     description: `${cat.name}の買取相場は${cat.priceRange}。${cat.name}を高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
     alternates: { canonical: `/category/${slug}` },
   };
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${cat?.name ?? slug}買取おすすめ業者3選【2026年最新】相場・査定のポイント`,
+    "headline": `${cat?.name ?? slug}買取おすすめ業者3選【2026年7月】相場・査定のポイント`,
     "description": `${cat?.name ?? slug}の買取相場は${cat?.priceRange ?? ""}。${cat?.name ?? slug}を高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
     "datePublished": `${BUILD_DATE}T00:00:00+09:00`,
     "dateModified": `${BUILD_DATE}T00:00:00+09:00`,

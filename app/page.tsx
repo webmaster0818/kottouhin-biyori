@@ -3,7 +3,7 @@ import companies from "@/data/companies.json";
 import soubaDb from "@/data/soubaDb.json";
 
 export const metadata = {
-  title: "骨董品買取びより｜実際の落札データでわかる相場とおすすめ業者比較【2026年最新】",
+  title: "骨董品買取びより｜実際の落札データでわかる相場とおすすめ業者比較【2026年7月】",
   description: `骨董品の買取相場を${soubaDb.artistTotal}名の作家・${soubaDb.resultTotal}件の実際の落札データ(公式一次確認のみ)で解説。掛軸・絵画・茶道具・刀剣など品目別の相場と、高く売るためのおすすめ買取業者を比較できます。`,
   alternates: { canonical: "/" },
 };

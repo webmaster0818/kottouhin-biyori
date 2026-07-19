@@ -8,7 +8,7 @@ import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/c
 const company = companies.find((c) => c.id === "hikakaku")!;
 
 export const metadata: Metadata = {
-  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年最新】骨董品買取の実力を検証｜骨董品買取びより`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
   description: `${company.name}の口コミ・評判を徹底検証。骨董品買取における${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説します。`,
   alternates: { canonical: "/review/hikakaku" },
 };

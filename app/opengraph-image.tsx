@@ -29,7 +29,7 @@ export default async function Image() {
           信頼できる骨董品買取店を比較・口コミで紹介
         </div>
         <div style={{ marginTop: 60, fontSize: 24, fontWeight: 400, opacity: 0.7 }}>
-          2026年最新版
+          2026年7月版
         </div>
       </div>
     ),

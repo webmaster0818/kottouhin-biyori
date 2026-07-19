@@ -5,7 +5,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品を高く売る5つの方法【2026年最新】プロが教える売却テクニック｜骨董品買取びより",
+  title: "骨董品を高く売る5つの方法【2026年7月】プロが教える売却テクニック｜骨董品買取びより",
   description: "骨董品を高く売るための5つの実践的なテクニックを解説。複数業者への相見積もり、付属品の整備、売却タイミングなど、プロが教える高額売却の秘訣。",
   alternates: { canonical: "/guide/takaku-uru" },
 };
