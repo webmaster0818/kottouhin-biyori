@@ -368,7 +368,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/higashiyama-kaii/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -392,7 +392,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/senju-hiroshi/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -404,19 +404,19 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/uemura-shoen/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/ito-jakuchu/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/katsushika-hokusai/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -482,7 +482,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/maruyama-okyo/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -572,7 +572,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/go-shoseki/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -776,7 +776,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/hayami-gyoshu/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -920,7 +920,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/kayama-matazo/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -974,7 +974,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/uemura-shoko/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1070,7 +1070,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/nakagawa-kazumasa/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1117,6 +1117,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/review/antique-tokyo/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/review/bikando/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1124,12 +1130,24 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/buysell/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/ebisunokura/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/eijudo/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/eishodo/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1165,6 +1183,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/review/iwano/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/review/kingram/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1172,60 +1196,36 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/nanboya/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/nikkoudou/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/eishodo/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/eijudo/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/sasaki/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/antique-tokyo/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/otakaraya/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/iwano/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/review/shukado/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/ryokuwado/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/sasaki/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/shukado/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1241,12 +1241,6 @@
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kottokaitori-biyori.com/guide/souba-database/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/auction/</loc>
@@ -1387,6 +1381,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/guide/souba-database/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/souzokuzei/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1411,6 +1411,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/learn/gansaku-nisemono-chigai/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/honmono-mikiwake/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/learn/how-to-dispose/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1418,11 +1430,6 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/how-to-identify-fakes/</loc>
-    <loc>https://kottokaitori-biyori.com/learn/kagaku-kantei/</loc>
-    <loc>https://kottokaitori-biyori.com/learn/kagaku-kantei/</loc>
-    <loc>https://kottokaitori-biyori.com/learn/kagaku-kantei/</loc>
-    <loc>https://kottokaitori-biyori.com/learn/kagaku-kantei/</loc>
-    <loc>https://kottokaitori-biyori.com/learn/honmono-mikiwake/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1446,7 +1453,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/learn/kagaku-kantei/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/tomobako-hakogaki/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/learn/what-is-kottouhin/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/compare/buysell-vs-fukuchan/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1464,6 +1489,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/compare/gyokkodo-vs-nikkoudou/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/compare/hakkoudo-vs-nanboya/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1476,6 +1507,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/compare/nanboya-vs-kingram/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/compare/nikkoudou-vs-buysell/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -1483,6 +1520,12 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/compare/nikkoudou-vs-fukuchan/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/compare/nikkoudou-vs-nanboya/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
