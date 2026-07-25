@@ -275,10 +275,14 @@ type ArtistRow = { slug: string; name: string; count: number; topTitle: string; 
 export default function CategoryPageClient({
   slug,
   artistRows = [],
+  soubaStats = null,
+  soubaGeneratedAt = null,
   popularArtistLinks = [],
 }: {
   slug: string;
   artistRows?: ArtistRow[];
+  soubaStats?: { category: string; artistCount: number; resultCount: number; max: string; median: string } | null;
+  soubaGeneratedAt?: string | null;
   popularArtistLinks?: { name: string; slug: string | null }[];
 }) {
   const cat = categories.find((c) => c.slug === slug) as CategoryData | undefined;
@@ -417,6 +421,44 @@ export default function CategoryPageClient({
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 text-center">
                 ※上記は市場相場に基づく参考価格であり、実際の査定額は品物の状態・真贋・市場動向により異なります
+              </p>
+            </div>
+          </section>
+        )}
+
+        {/* カテゴリ相場サマリー（当サイト独自集計・公開オークション一次確認） */}
+        {soubaStats && (
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-5xl mx-auto px-4">
+              <div className="text-center mb-8">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET DATA</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {cat.name}の相場データ（公開オークション実績の集計）
+                </h2>
+                <p className="text-sm text-[#8B7D72] mt-2">
+                  当編集部が公開オークション（シンワ・古裂會・海外大手等）の落札結果を一次確認し、{cat.name}の作家分を集計した実データです{soubaGeneratedAt ? `（${soubaGeneratedAt}時点）` : ""}。相場感の目安としてご覧ください。
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                  <p className="text-xs text-[#8B7D72] mb-1">集計作家数</p>
+                  <p className="text-2xl md:text-3xl font-bold text-[#8B4513] font-serif-jp">{soubaStats.artistCount}<span className="text-base font-normal">名</span></p>
+                </div>
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                  <p className="text-xs text-[#8B7D72] mb-1">落札実績数</p>
+                  <p className="text-2xl md:text-3xl font-bold text-[#8B4513] font-serif-jp">{soubaStats.resultCount}<span className="text-base font-normal">件</span></p>
+                </div>
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                  <p className="text-xs text-[#8B7D72] mb-1">落札額の中央値</p>
+                  <p className="text-xl md:text-2xl font-bold text-[#8B4513] font-serif-jp whitespace-nowrap">{soubaStats.median}</p>
+                </div>
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                  <p className="text-xs text-[#8B7D72] mb-1">最高落札額</p>
+                  <p className="text-xl md:text-2xl font-bold text-[#8B4513] font-serif-jp whitespace-nowrap">{soubaStats.max}</p>
+                </div>
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-4 text-center leading-relaxed">
+                ※中央値・最高額は当編集部が集計した公開オークションの落札実績（{soubaStats.resultCount}件）に基づく参考値で、実際の買取査定額とは異なります。国内外のオークション結果を含み、手数料込み/公表値の別・帰属（伝・銘・代数）は各作家ページに明記しています。買取相場（{cat.priceRange}）とあわせてご覧ください。
               </p>
             </div>
           </section>

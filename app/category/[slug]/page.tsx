@@ -33,9 +33,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const cat = categories.find((c) => c.slug === slug);
   if (!cat) return {};
+  const stats = (soubaDb.stats as any[]).find((s) => s.category === ARTIST_CAT_MAP[slug]);
+  const soubaDesc = stats
+    ? `公開オークションの落札実績${stats.resultCount}件（作家${stats.artistCount}名）を一次確認・集計。中央値${stats.median}・最高${stats.max}の相場データも掲載。`
+    : "";
   return {
-    title: `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`,
-    description: `${cat.name}の買取相場は${cat.priceRange}。${cat.name}を高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
+    title: stats
+      ? `${cat.name}の買取相場【2026年7月】落札中央値${stats.median}・査定のポイントとおすすめ業者3選｜骨董品買取びより`
+      : `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`,
+    description: `${cat.name}の買取相場は${cat.priceRange}。${soubaDesc}高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
     alternates: { canonical: `/category/${slug}` },
   };
 }
@@ -96,6 +102,8 @@ export default async function CategoryPage({ params }: Props) {
       <CategoryPageClient
         slug={slug}
         artistRows={(soubaDb.artists as any[]).filter((a) => a.category === ARTIST_CAT_MAP[slug]).slice(0, 12)}
+        soubaStats={(soubaDb.stats as any[]).find((s) => s.category === ARTIST_CAT_MAP[slug]) ?? null}
+        soubaGeneratedAt={(soubaDb as any).generatedAt ?? null}
         popularArtistLinks={(cat?.popularArtists ?? []).map((name: string) => ({
           name,
           slug: ARTIST_NAME_TO_SLUG[name] ?? null,
