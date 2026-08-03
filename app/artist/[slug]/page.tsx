@@ -14,7 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const artist = artists.find((a) => a.slug === slug);
   if (!artist) return {};
   return {
-    title: `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】| 骨董品買取びより`,
+    title: (artist as any).seoTitle
+      ? `${(artist as any).seoTitle}| 骨董品買取びより`
+      : `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】| 骨董品買取びより`,
     description: `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     alternates: { canonical: `/artist/${slug}` },
   };
