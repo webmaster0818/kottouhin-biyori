@@ -773,6 +773,19 @@ export default function CategoryPageClient({
             </Link>
           </div>
         </section>
+        {slug === "kakejiku" && (
+          <section className="py-8 bg-[#FAF6F0]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-5 text-sm">
+                <p className="text-[#5C4A3A]">
+                  東京で掛軸の買取先をお探しの方は、店頭持込できる専門店と出張対応業者を比較した
+                  <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京のおすすめ業者比較</Link>
+                  もご覧ください。
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </div>

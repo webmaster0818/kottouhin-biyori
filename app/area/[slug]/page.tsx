@@ -647,6 +647,19 @@ export default async function AreaPage({ params }: Props) {
             </Link>
           </div>
         </section>
+        {slug === "tokyo" && (
+          <section className="py-8 bg-[#FAF6F0]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-5 text-sm">
+                <p className="text-[#5C4A3A]">
+                  掛軸の買取先をお探しの方は、品目特化で業者を比較した
+                  <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京のおすすめ業者比較</Link>
+                  もご覧ください。
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </div>

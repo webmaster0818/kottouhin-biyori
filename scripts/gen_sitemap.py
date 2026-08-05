@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://kottokaitori-biyori.com"
-TODAY = "2026-06-07"  # lastmod。実行日に合わせて更新する。
+TODAY = "2026-08-05"  # lastmod。実行日に合わせて更新する。
 
 
 def load(name):
@@ -40,6 +40,9 @@ def main():
     urls.append(entry("/about/", "0.5", "monthly"))
     for p in ["/privacy/", "/terms/", "/content-policy/"]:
         urls.append(entry(p, "0.3", "yearly"))
+
+    # エリア×品目 専用ページ
+    urls.append(entry("/kakejiku-kaitori-tokyo/", "0.8", "weekly"))
 
     # エリア
     for a in load("areas.json"):
