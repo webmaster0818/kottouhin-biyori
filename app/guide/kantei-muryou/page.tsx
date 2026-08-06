@@ -50,7 +50,7 @@ const recommendedServices = [
   {
     name: "ウリエル",
     point: "出張鑑定に強く、骨董品カテゴリを明記。中国美術や掛軸の鑑定実績が豊富で、その場で現金化も可能です。遺品整理と組み合わせた鑑定にも対応しており、蔵の整理時に重宝します。",
-    url: uriel.officialUrl,
+    url: (uriel as any).affiliateUrl && (uriel as any).affiliateUrl !== "#" ? (uriel as any).affiliateUrl : uriel.officialUrl,
   },
   {
     name: "ティファナ",
@@ -161,7 +161,7 @@ export default function KanteiMuryouPage() {
                     <h3 className="font-serif-jp text-xl font-bold text-[#2C1810]">{s.name}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed mb-4">{s.point}</p>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer"
+                  <a href={s.url} target="_blank" rel={s.url.includes("felmat.net") ? "sponsored nofollow noopener" : "noopener noreferrer"}
                     className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-6 py-3 rounded-xl font-bold transition text-sm">
                     {s.name}の公式サイトへ
                   </a>

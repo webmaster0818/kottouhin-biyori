@@ -249,7 +249,7 @@ export default function UrielReview() {
             <p className="text-amber-200 mb-8">
               自宅に査定士が訪問。大切な骨董品をその場で鑑定・現金化
             </p>
-            <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
+            <a href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl} target="_blank" rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
               className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
               {company.name}の公式サイトへ
             </a>

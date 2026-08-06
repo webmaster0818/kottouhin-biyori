@@ -386,7 +386,7 @@ export default function IhinSeiriClient() {
                     査定・出張費用は完全無料
                   </li>
                 </ul>
-                <a href={uriel.officialUrl} target="_blank" rel="noopener noreferrer"
+                <a href={(uriel as any).affiliateUrlShucchou ?? uriel.officialUrl} target="_blank" rel="sponsored nofollow noopener"
                   className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
                   ウリエルで出張買取を申し込む
                 </a>

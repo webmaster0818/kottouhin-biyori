@@ -503,7 +503,10 @@ export default function Home() {
                     </div>
 
                     <div className="flex gap-3">
-                      <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
+                      <a
+                        href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl}
+                        target="_blank"
+                        rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
                         className="flex-1 bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition">
                         {company.name}の公式サイトへ
                       </a>

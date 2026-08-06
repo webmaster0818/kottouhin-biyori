@@ -390,7 +390,10 @@ export default async function DynamicReviewPage({ params }: Props) {
                 公式サイトから無料査定の申し込みができます。査定料・キャンセル料は基本的に無料です。
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
-                <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
+                <a
+                  href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl}
+                  target="_blank"
+                  rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
                   className="bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-4 rounded-xl font-bold transition inline-block">
                   {company.name}の公式サイトへ
                 </a>
