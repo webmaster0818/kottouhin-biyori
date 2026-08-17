@@ -35,6 +35,7 @@ export default async function DynamicReviewPage({ params }: Props) {
   if (!company || EXISTING_STATIC.has(slug)) notFound();
 
   const pageUrl = `${SITE_URL}/review/${slug}/`;
+  const asOfLabel = (company as any).asOfLabel ?? "2026年7月";
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -47,7 +48,7 @@ export default async function DynamicReviewPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${company.name}の口コミ・評判【2026年7月】`,
+    "headline": `${company.name}の口コミ・評判【${asOfLabel}】`,
     "description": `${company.name}の口コミ・評判を徹底検証。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
     "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
@@ -91,7 +92,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 {company.name}の口コミ・評判
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                骨董品買取の実力を徹底検証【2026年7月】
+                骨董品買取の実力を徹底検証【{asOfLabel}】
               </p>
             </div>
           </section>
@@ -187,6 +188,7 @@ export default async function DynamicReviewPage({ params }: Props) {
           {(company as any).topicSections && (company as any).topicSections.map((sec: {
             id: string; title: string; lead?: string; bullets?: string[];
             table?: { caption?: string; headers: string[]; rows: string[][] }; note?: string;
+            links?: { href: string; label: string }[];
           }) => (
             <section key={sec.id} id={sec.id} className="py-12 md:py-16">
               <div className="max-w-4xl mx-auto px-4">
@@ -230,6 +232,21 @@ export default async function DynamicReviewPage({ params }: Props) {
                           ))}
                         </tbody>
                       </table>
+                    </div>
+                  )}
+                  {sec.links && sec.links.length > 0 && (
+                    <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+                      <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
+                      <ul className="space-y-1.5">
+                        {sec.links.map((l, i) => (
+                          <li key={i} className="text-sm leading-relaxed flex gap-2">
+                            <span className="text-[#C9A96E] shrink-0">▶</span>
+                            <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition">
+                              {l.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                   {sec.note && <p className="text-xs text-[#8B7D72]">{sec.note}</p>}
