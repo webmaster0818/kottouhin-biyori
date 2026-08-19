@@ -343,6 +343,23 @@ export default function HowToIdentifyFakesPage() {
                   <Link href="/category/kaiga" className="text-[#8B4513] underline hover:no-underline">絵画</Link>の贋作は特に巧妙なものが多く、世界的に有名な美術館でも贋作が発覚した事例があります。
                 </p>
 
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-5 not-prose">
+                  <p className="font-bold text-[#8B4513] mb-2 text-base">人気作家は「肉筆・版画・複製」の種別確認から</p>
+                  <p className="text-sm mb-4">
+                    人気の高い作家ほど、肉筆・版画・オフセット印刷の複製画が同じ図柄で流通します。真贋の前に種別を切り分けるだけでも判断の見通しが立ちます。作家ごとの種別の見分け方と査定の確認点は、下記のページで解説しています。
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      ["higashiyama-kaii", "東山魁夷"], ["fujita-tsuguharu", "藤田嗣治"],
+                      ["kayama-matazo", "加山又造"], ["sugiyama-yasushi", "杉山寧"],
+                    ].map(([slug, name]) => (
+                      <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                        {name}の買取・査定
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">サインと画風の一致</h3>
                 <p>
                   画家のサイン（落款）が本物であっても、画風が作者のものと一致しなければ真作とは言えません。画家には制作時期ごとの作風の変遷があり、初期・中期・晩年で筆致や色彩が変化することがあります。サインと画面の描写が同一時期のものとして矛盾がないか、図録や資料と照合して確認します。

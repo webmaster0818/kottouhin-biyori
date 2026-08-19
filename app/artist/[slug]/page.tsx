@@ -72,12 +72,19 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     { t: "専門性の高い業者を選ぶ", d: `${artist.name}のような${artist.category}は、骨董・古美術に精通した業者ほど適正に評価できます。` },
   ];
 
-  // FAQ(作家データから生成)
+  // 作家個別の追加コンテンツ(任意フィールド。設定された作家のみ描画)
+  const workTypes = (artist as any).workTypes as { name: string; d: string }[] | undefined;
+  const sateiPoints = (artist as any).sateiPoints as { k: string; v: string }[] | undefined;
+  const preSaleNotes = (artist as any).preSaleNotes as string[] | undefined;
+  const extraFaqs = ((artist as any).extraFaqs ?? []) as { q: string; a: string }[];
+
+  // FAQ(作家データから生成 + 作家個別の追加FAQ)
   const faqs = [
     { q: `${artist.name}の作品はいくらで売れますか？`, a: `${artist.name}の${artist.category}の買取相場は${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定で確認しましょう。` },
     { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `はい。${artist.name}のような評価の高い作家の作品は、傷みや欠けがあっても修復・再販を前提に買取されることが多いです。自分で手入れせず、現状のまま査定に出してください。` },
     { q: `本物かどうか分かりませんが査定できますか？`, a: `問題ありません。専門の査定士が落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品は精巧な写しも存在するため、専門業者での査定がおすすめです。` },
     { q: `${artist.name}の作品を高く売るには？`, a: `複数業者への相見積もりが最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
+    ...extraFaqs,
   ];
 
   // 関連ガイド(内部リンク)
@@ -103,10 +110,10 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】`,
+    "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】`,
     "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
-    "dateModified": (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
+    "dateModified": workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
@@ -210,6 +217,36 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               ))}
             </div>
           </section>
+
+          {/* 作品種別と見分け方(任意) */}
+          {workTypes && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}の作品種別と見分け方
+              </h2>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
+                {artist.name}の名前で流通する品には複数の種別があり、種別によって買取市場での評価は大きく変わります。
+                査定を依頼する前に、お手元の品がどの種別にあたるかを確認しておくと、業者とのやり取りがスムーズになります。
+                なお、判断が難しい場合は自己判断で処分せず、写真査定で確認してください。
+              </p>
+              <div className="space-y-3">
+                {workTypes.map((w, idx) => (
+                  <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                    <p className="font-bold text-[#8B4513] text-sm mb-1">{w.name}</p>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{w.d}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
+                ※ 種別の見分け方は目安です。精巧なものは実見でなければ判別できません。真贋用語の整理は
+                <Link href="/learn/gansaku-nisemono-chigai/" className="text-[#8B4513] underline hover:no-underline">贋作・偽物・模造・写しの違い</Link>
+                、品目別の確認点は
+                <Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline hover:no-underline">贋作・偽物の見分け方</Link>
+                もあわせてご覧ください。
+              </p>
+            </section>
+          )}
 
           {/* Price */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
@@ -350,6 +387,62 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             </div>
           </section>
 
+          {/* 査定で見られるポイント(任意) */}
+          {sateiPoints && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}の査定で見られるポイント
+              </h2>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
+                査定士が実物を見るときに確認する項目です。どれか一つで真贋や評価が決まるわけではなく、複数の要素の整合性から判断されます。
+                事前に自分でも確認しておくと、査定結果の説明を理解しやすくなります。
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse min-w-[480px]">
+                  <tbody>
+                    {sateiPoints.map((p, idx) => (
+                      <tr key={idx} className="align-top">
+                        <th className="text-left font-bold p-3 border border-[#E0D5C8] bg-[#FAF7F2] text-[#8B4513] whitespace-nowrap w-1/4">{p.k}</th>
+                        <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A] leading-relaxed">{p.v}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
+                ※ 共箱・箱書きの見方は
+                <Link href="/learn/tomobako-hakogaki/" className="text-[#8B4513] underline hover:no-underline">共箱・箱書きとは</Link>
+                、本物に共通する判断材料は
+                <Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline hover:no-underline">本物に共通する5つの特徴</Link>
+                で詳しく解説しています。
+              </p>
+            </section>
+          )}
+
+          {/* 売却前の注意(任意) */}
+          {preSaleNotes && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}の作品を売る前に注意したいこと
+              </h2>
+              <ul className="space-y-3">
+                {preSaleNotes.map((n, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed">
+                    <span className="w-6 h-6 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-xs">{idx + 1}</span>
+                    <span className="pt-0.5">{n}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
+                ※ 保管方法の基本は
+                <Link href="/learn/how-to-store/" className="text-[#8B4513] underline hover:no-underline">骨董品の正しい保管方法</Link>
+                をご覧ください。
+              </p>
+            </section>
+          )}
+
           {/* CTA */}
           <section className="bg-gradient-to-br from-[#8B4513] to-[#6B3410] rounded-2xl p-8 text-white text-center">
             <h2 className="font-serif-jp text-xl font-bold mb-3">
@@ -405,6 +498,56 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               ))}
             </div>
           </section>
+
+          {/* 真贋・鑑定と業者選びの関連ページ(任意) */}
+          {workTypes && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                真贋の判断と業者選びに役立つページ
+              </h2>
+              <h3 className="font-bold text-[#2C1810] text-sm mb-3">真贋・鑑定を詳しく知る</h3>
+              <div className="grid sm:grid-cols-2 gap-3 mb-6">
+                {[
+                  { href: "/learn/gansaku-nisemono-chigai/", t: "贋作・偽物・模造・写しの違い", d: "査定前に押さえたい真贋用語の整理" },
+                  { href: "/learn/how-to-identify-fakes/", t: "贋作・偽物の見分け方", d: "絵画・掛軸など品目別のチェックポイント" },
+                  { href: "/learn/honmono-mikiwake/", t: "本物に共通する5つの特徴", d: "単独の決め手はあるのかへの回答" },
+                  { href: "/learn/kagaku-kantei/", t: "科学的鑑定でわかること・わからないこと", d: "分析による真贋判定の仕組みと限界" },
+                ].map((l) => (
+                  <Link key={l.href} href={l.href}
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
+                    <p className="font-bold text-[#8B4513] text-sm mb-1">{l.t}</p>
+                    <p className="text-xs text-[#8B7D72]">{l.d}</p>
+                  </Link>
+                ))}
+              </div>
+
+              <h3 className="font-bold text-[#2C1810] text-sm mb-3">品目別の買取相場・業者を見る</h3>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {[
+                  { href: `/category/${artist.categorySlug}/`, t: `${artist.category}の買取` },
+                  ...(artist.categorySlug === "kaiga" ? [{ href: "/category/kakejiku/", t: "掛軸の買取" }] : []),
+                  ...(artist.categorySlug === "kakejiku" ? [{ href: "/category/kaiga/", t: "絵画の買取" }] : []),
+                  { href: "/guide/sakka-souba/", t: "作家別の買取相場インデックス" },
+                ].map((l) => (
+                  <Link key={l.href} href={l.href}
+                    className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                    {l.t}
+                  </Link>
+                ))}
+              </div>
+
+              <h3 className="font-bold text-[#2C1810] text-sm mb-3">買取業者の評判を確認する</h3>
+              <div className="grid sm:grid-cols-3 gap-3">
+                {companies.slice(0, 3).map((c) => (
+                  <Link key={c.id} href={`/review/${c.id}/`}
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]">
+                    {c.name}の口コミ・評判 →
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* 関連ガイド */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">

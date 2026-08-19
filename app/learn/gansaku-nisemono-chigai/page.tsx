@@ -70,6 +70,8 @@ export default function GansakuChigaiPage() {
                 {[
                   ["katsushika-hokusai", "葛飾北斎"], ["ito-jakuchu", "伊藤若冲"], ["maruyama-okyo", "円山応挙"],
                   ["uemura-shoen", "上村松園"], ["senju-hiroshi", "千住博"], ["go-shoseki", "呉昌碩"],
+                  ["higashiyama-kaii", "東山魁夷"], ["fujita-tsuguharu", "藤田嗣治"], ["kayama-matazo", "加山又造"],
+                  ["sugiyama-yasushi", "杉山寧"], ["yusui-jukyu", "由水十久"],
                 ].map(([slug, name]) => (
                   <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
                     {name}の査定・相場

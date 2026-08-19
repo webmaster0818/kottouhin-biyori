@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://kottokaitori-biyori.com"
-TODAY = "2026-08-05"  # lastmod。実行日に合わせて更新する。
+TODAY = "2026-08-19"  # lastmod。実行日に合わせて更新する。
 
 
 def load(name):
