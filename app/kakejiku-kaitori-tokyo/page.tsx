@@ -109,6 +109,57 @@ export default function KakejikuTokyoPage() {
           </div>
         </section>
 
+        {/* 相場の即答（「掛軸相場 東京」への冒頭回答） */}
+        <section className="pb-4">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
+              掛軸の買取相場は東京でいくら？先に結論
+            </h2>
+            <div className="bg-white rounded-2xl border border-[#E0D5C8] shadow-md p-5 md:p-6">
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                掛軸の買取価格は<strong>作者・真贋・状態・表装・共箱の有無</strong>で大きく変わるため、
+                「東京なら何円」と一律に言える相場はありません。
+                当サイトでは、東京都内だけの平均買取額やエリア別の相場を裏づける一次データを確認できていないため、
+                独自の金額は掲載していません。実際の金額は無料査定で確認するのが最短です。
+              </p>
+              <div className="mt-4 rounded-xl bg-[#FAF6F0] border border-[#E8DFD3] p-4">
+                <p className="text-sm font-bold text-[#8B4513] mb-2">当サイトで一次確認できている数値</p>
+                {kakeStats ? (
+                  <>
+                    <ul className="text-sm text-[#5C4A3A] space-y-1.5 leading-relaxed">
+                      <li>・公開オークションの落札結果を一次確認した掛軸データ（作家{kakeStats.artistCount}名・落札{kakeStats.resultCount}件）で、<strong>中央値{kakeStats.median}／最高{kakeStats.max}</strong></li>
+                      <li>・これは<strong>市場に出品された作家物の落札額</strong>であり、一般家庭にある掛軸の買取額の目安ではありません（買取額は落札額より低くなるのが通常です）</li>
+                      <li>・件数が{kakeStats.resultCount}件と限られるため、平均的な相場としてではなく「高評価の作家物がどの水準で取引されたか」の参考としてご覧ください</li>
+                    </ul>
+                    <p className="mt-3 text-xs text-[#8B7355]">
+                      出典: 当サイトの落札相場データベース（公開オークション結果を一次確認）。
+                      作家別の内訳は
+                      <Link href="/category/kakejiku/" className="text-[#8B4513] font-medium hover:underline">掛軸買取カテゴリ</Link>
+                      に掲載しています。
+                    </p>
+                  </>
+                ) : (
+                  <p className="text-sm text-[#5C4A3A] leading-relaxed">
+                    現在、一次確認済みの落札データを表示できません。相場は作品・作者・状態で大きく異なるため、無料査定でご確認ください。
+                  </p>
+                )}
+              </div>
+              <div className="mt-4 rounded-xl bg-[#FAF6F0] border border-[#E8DFD3] p-4">
+                <p className="text-sm font-bold text-[#8B4513] mb-2">掲載していない数値（一次確認できていないもの）</p>
+                <ul className="text-sm text-[#5C4A3A] space-y-1.5 leading-relaxed">
+                  <li>・東京都内の掛軸の平均買取額／区市町村別の相場</li>
+                  <li>・作者不明・無銘の掛軸の買取額の目安</li>
+                  <li>・各買取業者が東京で実際に提示した査定額</li>
+                </ul>
+                <p className="mt-3 text-xs text-[#8B7355]">
+                  いずれも公表された一次情報を確認できていないため、推定値の掲載は行っていません。
+                  金額を知りたい場合は、下の比較表の業者から2〜3社に無料査定を依頼して実額を比べてください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 比較表 */}
         <section className="py-8">
           <div className="max-w-4xl mx-auto px-4">
