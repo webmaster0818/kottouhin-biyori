@@ -15,6 +15,7 @@ const ARTIST_CAT_MAP: Record<string, string> = {
   kakejiku: "掛軸",
   kaiga: "絵画",
   touken: "刀剣",
+  toujiki: "陶磁器",
   sadougu: "茶道具",
   kimono: "着物",
   ukiyoe: "浮世絵",
