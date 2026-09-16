@@ -76,6 +76,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const workTypes = (artist as any).workTypes as { name: string; d: string }[] | undefined;
   const sateiPoints = (artist as any).sateiPoints as { k: string; v: string }[] | undefined;
   const preSaleNotes = (artist as any).preSaleNotes as string[] | undefined;
+  const soubaPoints = (artist as any).soubaPoints as { k: string; v: string }[] | undefined;
   const extraFaqs = ((artist as any).extraFaqs ?? []) as { q: string; a: string }[];
 
   // FAQ(作家データから生成 + 作家個別の追加FAQ)
@@ -113,7 +114,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】`,
     "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
-    "dateModified": workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
+    "dateModified": soubaPoints ? "2026-09-16T00:00:00+09:00" : workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
@@ -261,6 +262,23 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <p className="text-sm text-[#8B7D72] mb-6">
               ※作品の状態・サイズ・来歴・付属品（箱・鑑定書）の有無によって大きく変動します。正確な査定は専門業者への依頼をおすすめします。
             </p>
+            {soubaPoints && (
+              <div className="mb-8">
+                <h3 className="font-bold text-[#2C1810] mb-3">作品の種別ごとの相場の見方</h3>
+                <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
+                  {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
+                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績以外の金額は掲載していません。
+                </p>
+                <div className="space-y-3">
+                  {soubaPoints.map((p, idx) => (
+                    <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                      <p className="font-bold text-[#8B4513] text-sm mb-1">{p.k}</p>
+                      <p className="text-sm text-[#5C4A3A] leading-relaxed">{p.v}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             <h3 className="font-bold text-[#2C1810] mb-3">買取価格を左右する5つの要素</h3>
             <div className="space-y-3">
               {priceFactors.map((f, idx) => (
@@ -330,7 +348,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             </h2>
             {(artist as any).appraisalNote && (
               <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 mb-5">
-                <p className="text-sm font-bold text-[#2C1810] mb-1">鑑定機関について（2026年7月確認）</p>
+                <p className="text-sm font-bold text-[#2C1810] mb-1">鑑定機関について</p>
                 <p className="text-sm text-[#5C4A3A] leading-relaxed">{(artist as any).appraisalNote}</p>
               </div>
             )}

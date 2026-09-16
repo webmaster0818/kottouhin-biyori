@@ -1,6 +1,8 @@
 /* companies.json の任意フィールド topicSections / googleReviews を描画する共有コンポーネント
    （app/review/[slug]/page.tsx 内の実装と同一マークアップ） */
 
+import Link from "next/link";
+
 type TopicSection = {
   id: string;
   title: string;
@@ -8,6 +10,7 @@ type TopicSection = {
   bullets?: string[];
   table?: { caption?: string; headers: string[]; rows: string[][] };
   note?: string;
+  links?: { href: string; label: string }[];
 };
 
 type GoogleReviews = {
@@ -67,6 +70,21 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
                   </table>
                 </div>
               )}
+              {sec.links && sec.links.length > 0 && (
+                <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+                  <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
+                  <ul className="space-y-1.5">
+                    {sec.links.map((l, i) => (
+                      <li key={i} className="text-sm leading-relaxed flex gap-2">
+                        <span className="text-[#C9A96E] shrink-0">&#9654;</span>
+                        <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition">
+                          {l.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               {sec.note && <p className="text-xs text-[#8B7D72]">{sec.note}</p>}
             </div>
           </div>
@@ -88,7 +106,7 @@ export function ReviewTrendSection({ data, companyName }: { data?: { good: strin
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
-            <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">👍 良い評判の傾向</h3>
+            <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">良い評判の傾向</h3>
             <ul className="space-y-2">
               {data.good.map((g, i) => (
                 <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#2C7A4B] shrink-0">・</span>{g}</li>
@@ -96,7 +114,7 @@ export function ReviewTrendSection({ data, companyName }: { data?: { good: strin
             </ul>
           </div>
           <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
-            <h3 className="font-bold text-[#B4553A] mb-3 text-sm">🤔 気になる評判の傾向</h3>
+            <h3 className="font-bold text-[#B4553A] mb-3 text-sm">気になる評判の傾向</h3>
             <ul className="space-y-2">
               {data.bad.map((b, i) => (
                 <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#B4553A] shrink-0">・</span>{b}</li>

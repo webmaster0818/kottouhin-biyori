@@ -8,8 +8,10 @@ import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/c
 const company = companies.find((c) => c.id === "tifana")!;
 
 export const metadata: Metadata = {
-  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
-  description: `${company.name}の口コミ・評判を徹底検証。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説。`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年9月】骨董品買取の実力を検証｜骨董品買取びより`,
+  description:
+    (company as any).seoDescription ??
+    `${company.name}の口コミ・評判を徹底検証。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説。`,
   alternates: { canonical: "/review/tifana" },
 };
 
@@ -44,8 +46,31 @@ export default function TifanaReview() {
               {company.name}の口コミ・評判
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              骨董品買取の実力を徹底検証
+              骨董品買取の実力を公式一次情報で検証【2026年9月2日確認】
             </p>
+          </div>
+        </section>
+
+        {/* 先に要点（口コミを読む前に） */}
+        <section className="pt-10 md:pt-14">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-3">
+                先に要点：ティファナの口コミを読む前に
+              </h2>
+              <ul className="text-sm text-[#5C4A3A] space-y-2 leading-relaxed">
+                <li>・ティファナは骨董品専門店ではなく<strong>総合リサイクルショップ</strong>。骨董品の買取から始まった会社と公式に記載しており、骨董品・美術品の専用買取ページを持っています</li>
+                <li>・<strong>骨董品の出張可能エリアは埼玉・東京・神奈川・千葉</strong>（一部地域・品物の内容や点数により訪問できない場合ありとの注記あり／2026年9月2日 公式確認）</li>
+                <li>・<strong>鑑定料・出張料・キャンセル料はすべて無料</strong>と公式に明記（2026年9月2日 公式確認）</li>
+                <li>・Googleマップの評価は<strong>店舗ごとに差がある</strong>ため、持込を検討する場合は最寄り店舗の口コミを確認するのが確実です</li>
+                <li>・当サイトは架空の口コミを作成していません。公式に記載がない項目は「公式サイトでは確認できず」と明記しています</li>
+              </ul>
+              <p className="mt-4 text-sm">
+                <a href="#henshubu-kenshou" className="text-[#8B4513] font-medium underline underline-offset-2 hover:text-[#6B3410]">
+                  編集部が公式サイトで確認した項目一覧を見る
+                </a>
+              </p>
+            </div>
           </div>
         </section>
 

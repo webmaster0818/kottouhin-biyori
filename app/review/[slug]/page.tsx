@@ -268,7 +268,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
-                    <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">👍 良い評判の傾向</h3>
+                    <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">良い評判の傾向</h3>
                     <ul className="space-y-2">
                       {(company as any).reviewTrend.good.map((g: string, i: number) => (
                         <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#2C7A4B] shrink-0">・</span>{g}</li>
@@ -276,7 +276,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                     </ul>
                   </div>
                   <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
-                    <h3 className="font-bold text-[#B4553A] mb-3 text-sm">🤔 気になる評判の傾向</h3>
+                    <h3 className="font-bold text-[#B4553A] mb-3 text-sm">気になる評判の傾向</h3>
                     <ul className="space-y-2">
                       {(company as any).reviewTrend.bad.map((b: string, i: number) => (
                         <li key={i} className="text-sm text-[#5C4A3A] leading-relaxed flex gap-2"><span className="text-[#B4553A] shrink-0">・</span>{b}</li>

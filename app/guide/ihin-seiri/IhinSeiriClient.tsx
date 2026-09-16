@@ -121,6 +121,11 @@ export default function IhinSeiriClient() {
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 まずは何も捨てずにすべて残し、写真を撮って箱・付属品・書類も保管したうえで、骨董品専門の買取業者に査定を依頼するのが正解です。1社だけの査定、自分でのクリーニング、不用品回収業者への一括引き渡しは価値を失う典型的な失敗パターンなので避けてください。骨董品は相続財産として扱われることがあり、相続税の基礎控除（3,000万円＋600万円×法定相続人数）を超える場合は申告が必要になるため、査定前に相続人全員で相談して進めましょう。
               </p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mt-3">
+                遺品整理に限らず「骨董品をどう処分するか」を、買取・オークション・寄付譲渡・自治体での廃棄・整理業者の5通りで比較した
+                <Link href="/learn/how-to-dispose/" className="text-[#8B4513] font-medium underline underline-offset-2 hover:text-[#6B3410]">骨董品の処分方法・捨て方</Link>
+                もあわせてご覧ください。生前整理・蔵整理でまとめて出てきた場合の進め方もまとめています。
+              </p>
             </div>
             <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
