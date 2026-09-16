@@ -20,6 +20,7 @@ type CategoryData = {
   checkPoints: string[];
   additionalCheckPoints?: string[];
   faq?: { q: string; a: string }[];
+  deepDive?: { heading: string; lead?: string; blocks: { title: string; text: string }[] }[];
   bestCompany: string;
   bestReason: string;
 };
@@ -718,6 +719,29 @@ export default function CategoryPageClient({
           </section>
         )}
 
+        {/* カテゴリ固有の深掘り解説（該当カテゴリのみ） */}
+        {cat.deepDive && cat.deepDive.length > 0 && cat.deepDive.map((section, sIdx) => (
+          <section key={sIdx} className={`py-12 md:py-16 ${sIdx % 2 === 0 ? "bg-white" : ""}`}>
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-10">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">IN DEPTH</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
+                  {section.heading}
+                </h2>
+                {section.lead && <p className="text-[#5C4A3A] mt-3 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">{section.lead}</p>}
+              </div>
+              <div className="space-y-4">
+                {section.blocks.map((b, bIdx) => (
+                  <div key={bIdx} className={`rounded-xl border border-[#E0D5C8] p-5 md:p-6 ${sIdx % 2 === 0 ? "bg-[#FAF7F2]" : "bg-white"}`}>
+                    <h3 className="font-bold text-[#8B4513] mb-2">{b.title}</h3>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{b.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        ))}
+
         {/* FAQ */}
         <section className="py-12 md:py-16">
           <div className="max-w-3xl mx-auto px-4">
@@ -778,9 +802,11 @@ export default function CategoryPageClient({
             <div className="max-w-4xl mx-auto px-4">
               <div className="bg-white rounded-2xl border border-[#E0D5C8] p-5 text-sm">
                 <p className="text-[#5C4A3A]">
-                  東京で掛軸の買取先をお探しの方は、店頭持込できる専門店と出張対応業者を比較した
-                  <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京のおすすめ業者比較</Link>
-                  もご覧ください。
+                  お住まいの地域で店頭に持ち込める専門店を探す場合は、地域別にまとめたページが便利です。都内の店舗所在地・持込の可否・出張対応は
+                  <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京の業者比較</Link>
+                  にまとめています。地域を問わず宅配・出張で依頼する場合は、本ページの比較と
+                  <Link href="/guide/gyosha-hikaku/" className="text-[#8B4513] font-bold hover:underline">全国対応業者の比較</Link>
+                  をご覧ください。
                 </p>
               </div>
             </div>

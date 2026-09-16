@@ -3,6 +3,8 @@ import Link from "next/link";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import artists from "@/data/artists.json";
+import categoriesRaw from "@/data/categories.json";
+const categories = categoriesRaw as { slug: string }[];
 import companies from "@/data/companies.json";
 
 export async function generateStaticParams() {
@@ -27,6 +29,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const artist = artists.find((a) => a.slug === slug);
   if (!artist) notFound();
 
+  // カテゴリページが実在する場合のみリンクする（artists.json に categories.json へ未登録の
+  // categorySlug があり、404リンクが生成されていたため）
+  const categoryExists = categories.some((c) => c.slug === artist.categorySlug);
   const sameCategory = artists.filter((a) => a.categorySlug === artist.categorySlug && a.slug !== artist.slug).slice(0, 6);
   const worksText = artist.works.join("・");
 
@@ -152,7 +157,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <ol className="flex items-center gap-2 flex-wrap">
               <li><Link href="/" className="hover:text-[#8B4513]">トップ</Link></li>
               <li>/</li>
-              <li><Link href={`/category/${artist.categorySlug}`} className="hover:text-[#8B4513]">{artist.category} 買取</Link></li>
+              {categoryExists && <li><Link href={`/category/${artist.categorySlug}`} className="hover:text-[#8B4513]">{artist.category} 買取</Link></li>}
               <li>/</li>
               <li className="text-[#2C1810] font-medium">{artist.name}</li>
             </ol>
@@ -495,9 +500,11 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                   </Link>
                 ))}
               </div>
-              <Link href={`/category/${artist.categorySlug}`} className="inline-block mt-4 text-sm text-[#8B4513] font-medium hover:underline">
-                → {artist.category}の買取相場・おすすめ業者をもっと見る
-              </Link>
+              {categoryExists && (
+                <Link href={`/category/${artist.categorySlug}`} className="inline-block mt-4 text-sm text-[#8B4513] font-medium hover:underline">
+                  → {artist.category}の買取相場・おすすめ業者をもっと見る
+                </Link>
+              )}
             </section>
           )}
 
@@ -543,7 +550,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               <h3 className="font-bold text-[#2C1810] text-sm mb-3">品目別の買取相場・業者を見る</h3>
               <div className="flex flex-wrap gap-2 mb-6">
                 {[
-                  { href: `/category/${artist.categorySlug}/`, t: `${artist.category}の買取` },
+                  ...(categoryExists ? [{ href: `/category/${artist.categorySlug}/`, t: `${artist.category}の買取` }] : []),
                   ...(artist.categorySlug === "kaiga" ? [{ href: "/category/kakejiku/", t: "掛軸の買取" }] : []),
                   ...(artist.categorySlug === "kakejiku" ? [{ href: "/category/kaiga/", t: "絵画の買取" }] : []),
                   { href: "/guide/sakka-souba/", t: "作家別の買取相場インデックス" },

@@ -37,11 +37,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const soubaDesc = stats
     ? `公開オークションの落札実績${stats.resultCount}件（作家${stats.artistCount}名）を一次確認・集計。中央値${stats.median}・最高${stats.max}の相場データも掲載。`
     : "";
+  // カテゴリ個別にtitle/descriptionを指定したい場合はJSON側で上書きできる
+  const overrides = cat as { metaTitle?: string; metaDescription?: string };
   return {
-    title: stats
-      ? `${cat.name}の買取相場【2026年7月】落札中央値${stats.median}・査定のポイントとおすすめ業者3選｜骨董品買取びより`
-      : `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`,
-    description: `${cat.name}の買取相場は${cat.priceRange}。${soubaDesc}高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
+    title:
+      overrides.metaTitle ??
+      (stats
+        ? `${cat.name}の買取相場【2026年7月】落札中央値${stats.median}・査定のポイントとおすすめ業者3選｜骨董品買取びより`
+        : `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`),
+    description:
+      overrides.metaDescription ??
+      `${cat.name}の買取相場は${cat.priceRange}。${soubaDesc}高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
     alternates: { canonical: `/category/${slug}` },
   };
 }
