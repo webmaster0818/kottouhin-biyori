@@ -16,8 +16,7 @@ const breadcrumbLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
-    { "@type": "ListItem", position: 2, name: "ガイド", item: `${SITE_URL}/guide/` },
-    { "@type": "ListItem", position: 3, name: "落札相場データベース2026", item: `${SITE_URL}/guide/souba-database/` },
+    { "@type": "ListItem", position: 2, name: "落札相場データベース2026", item: `${SITE_URL}/guide/souba-database/` },
   ],
 };
 const datasetLd = {

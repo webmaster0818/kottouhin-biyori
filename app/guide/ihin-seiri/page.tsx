@@ -15,8 +15,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "ホーム", "item": SITE_URL },
-    { "@type": "ListItem", "position": 2, "name": "ガイド", "item": `${SITE_URL}/guide/` },
-    { "@type": "ListItem", "position": 3, "name": "遺品整理で骨董品が出てきたら", "item": PAGE_URL },
+    { "@type": "ListItem", "position": 2, "name": "遺品整理で骨董品が出てきたら", "item": PAGE_URL },
   ],
 };
 

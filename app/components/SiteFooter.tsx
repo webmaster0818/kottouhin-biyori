@@ -32,11 +32,13 @@ export default function SiteFooter() {
               <li><Link href="/review/hikakaku" className="hover:text-[#C9A96E]">ヒカカク！</Link></li>
               <li><Link href="/review/tifana" className="hover:text-[#C9A96E]">ティファナ</Link></li>
               <li><Link href="/review/uriel" className="hover:text-[#C9A96E]">ウリエル</Link></li>
+              <li><Link href="/review/" className="hover:text-[#C9A96E]">業者レビュー一覧</Link></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-wrap justify-center gap-4 mb-4 text-xs text-gray-400">
+            <Link href="/about/" className="hover:text-[#C9A96E] transition">運営者情報</Link>
             <Link href="/terms/" className="hover:text-[#C9A96E] transition">利用規約</Link>
             <Link href="/privacy/" className="hover:text-[#C9A96E] transition">プライバシーポリシー</Link>
             <Link href="/content-policy/" className="hover:text-[#C9A96E] transition">記事の制作ポリシー</Link>

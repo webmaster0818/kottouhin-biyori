@@ -77,8 +77,7 @@ const breadcrumbLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-    { "@type": "ListItem", position: 2, name: "学ぶ", item: `${SITE}/learn/` },
-    { "@type": "ListItem", position: 3, name: "本物の骨董品に共通する特徴", item: `${SITE}${PATH}` },
+    { "@type": "ListItem", position: 2, name: "本物の骨董品に共通する特徴", item: `${SITE}${PATH}` },
   ],
 };
 const articleLd = {

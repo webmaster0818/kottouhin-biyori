@@ -32,7 +32,13 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   // カテゴリページが実在する場合のみリンクする（artists.json に categories.json へ未登録の
   // categorySlug があり、404リンクが生成されていたため）
   const categoryExists = categories.some((c) => c.slug === artist.categorySlug);
-  const sameCategory = artists.filter((a) => a.categorySlug === artist.categorySlug && a.slug !== artist.slug).slice(0, 6);
+  // 同カテゴリ内で自分の後ろに続く作家を循環で6人（先頭の作家ばかりに偏らないように）
+  const catList = artists.filter((a) => a.categorySlug === artist.categorySlug);
+  const selfIdx = catList.findIndex((a) => a.slug === artist.slug);
+  const sameCategory = catList
+    .map((_, i) => catList[(selfIdx + 1 + i) % catList.length])
+    .filter((a) => a.slug !== artist.slug)
+    .slice(0, 6);
   const worksText = artist.works.join("・");
 
   // 買取価格を左右する要素。作家固有の鑑定ポイント(checkPoints)を織り込んで個別化。

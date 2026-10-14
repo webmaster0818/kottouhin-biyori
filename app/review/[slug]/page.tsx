@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
+import compares from "@/data/compares.json";
 
 // Existing static review pages — exclude these from dynamic generation to avoid conflict
 const EXISTING_STATIC = new Set(["hikakaku", "tifana", "uriel"]);
@@ -422,10 +423,35 @@ export default async function DynamicReviewPage({ params }: Props) {
             </div>
           </section>
 
+          {/* この業者を含む比較記事 */}
+          {(() => {
+            const related = (compares as { slug: string; title: string }[]).filter((x) => x.slug.split("-vs-").includes(slug));
+            if (related.length === 0) return null;
+            return (
+              <section className="py-12 bg-[#FAF7F2] border-t border-[#E0D5C8]">
+                <div className="max-w-4xl mx-auto px-4">
+                  <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">{company.name}と他社の比較</h2>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    {related.map((x) => (
+                      <Link key={x.slug} href={`/compare/${x.slug}/`}
+                        className="block bg-white rounded-xl p-5 border border-[#E0D5C8] hover:shadow-md transition">
+                        <p className="text-xs text-[#C9A96E] mb-1">比較</p>
+                        <p className="font-bold text-[#2C1810]">{x.title}</p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            );
+          })()}
+
           {/* 関連リンク */}
           <section className="py-12 bg-white border-t border-[#E0D5C8]">
             <div className="max-w-4xl mx-auto px-4">
-              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連する他社の口コミ</h2>
+              <div className="flex flex-wrap items-baseline justify-between gap-2 mb-6">
+                <h2 className="font-serif-jp text-xl font-bold text-[#2C1810]">関連する他社の口コミ</h2>
+                <Link href="/review/" className="text-sm text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">業者レビュー一覧へ</Link>
+              </div>
               <div className="grid md:grid-cols-3 gap-4">
                 {companies
                   .filter((c) => c.slug !== slug)

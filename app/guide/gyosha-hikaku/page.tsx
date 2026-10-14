@@ -29,8 +29,7 @@ const name = (id: string) => (companies as C[]).find((c) => c.id === id)?.name ?
 export default function GyoshaHikakuPage() {
   const breadcrumb = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-    { "@type": "ListItem", position: 2, name: "ガイド", item: `${SITE}/guide/` },
-    { "@type": "ListItem", position: 3, name: "骨董品買取業者の比較", item: `${SITE}${PATH}` }] };
+    { "@type": "ListItem", position: 2, name: "骨董品買取業者の比較", item: `${SITE}${PATH}` }] };
   const itemList = { "@context": "https://schema.org", "@type": "ItemList", name: "骨董品買取業者おすすめ比較",
     itemListElement: byRank.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: `${SITE}/review/${c.id}/` })) };
   const article = { "@context": "https://schema.org", "@type": "Article", headline: "骨董品買取業者おすすめ比較【2026年7月】",

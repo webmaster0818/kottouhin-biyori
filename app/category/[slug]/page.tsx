@@ -53,6 +53,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// 関連品目（素材・用途・売られ方が近いもの）。双方向にしておく
+const RELATED_CATEGORIES: Record<string, string[]> = {
+  kakejiku: ["byoubu", "kosho"],
+  sadougu: ["tetsubin", "shikki", "kofu"],
+  kaiga: ["byoubu", "ukiyoe"],
+  touken: ["bugu"],
+  toujiki: ["seiyou-touki", "shikki"],
+  kosen: ["gunsou", "kitte"],
+  kitte: ["kosen"],
+  kimono: ["kofu"],
+  tetsubin: ["sadougu", "kodougu"],
+  butsuzou: ["kodougu"],
+  "seiyou-touki": ["toujiki", "antique-glass", "ginki", "seiyou-antique"],
+  ukiyoe: ["kosho", "kaiga"],
+  kosho: ["kakejiku", "ukiyoe"],
+  kodougu: ["tetsubin", "antique-kagu", "butsuzou"],
+  kofu: ["kimono", "sadougu"],
+  shikki: ["sadougu", "toujiki"],
+  "antique-kagu": ["seiyou-antique", "kodokei", "camera", "kodougu"],
+  kodokei: ["antique-kagu", "camera"],
+  camera: ["kodokei", "antique-kagu"],
+  ginki: ["seiyou-antique", "antique-glass", "seiyou-touki"],
+  "antique-glass": ["seiyou-antique", "ginki", "seiyou-touki"],
+  bugu: ["touken", "gunsou"],
+  byoubu: ["kakejiku", "kaiga"],
+  gunsou: ["bugu", "kosen"],
+};
+const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク" };
+
 export default async function CategoryPage({ params }: Props) {
   const { slug } = await params;
   const cat = categories.find((c) => c.slug === slug);
@@ -111,6 +140,10 @@ export default async function CategoryPage({ params }: Props) {
         artistRows={(soubaDb.artists as any[]).filter((a) => a.category === ARTIST_CAT_MAP[slug]).slice(0, 12)}
         soubaStats={(soubaDb.stats as any[]).find((s) => s.category === ARTIST_CAT_MAP[slug]) ?? null}
         soubaGeneratedAt={(soubaDb as any).generatedAt ?? null}
+        relatedCategoryLinks={(RELATED_CATEGORIES[slug] ?? []).map((s) => ({
+          slug: s,
+          name: EXTRA_CATEGORY_NAMES[s] ?? (categories as { slug: string; name: string }[]).find((c) => c.slug === s)?.name ?? s,
+        }))}
         popularArtistLinks={(cat?.popularArtists ?? []).map((name: string) => ({
           name,
           slug: ARTIST_NAME_TO_SLUG[name] ?? null,

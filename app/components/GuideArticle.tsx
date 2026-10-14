@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 
 const SITE = "https://kottokaitori-biyori.com";
 
@@ -40,8 +41,7 @@ export default function GuideArticle(p: GuideArticleProps) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-      { "@type": "ListItem", position: 2, name: "ガイド", item: `${SITE}/guide/` },
-      { "@type": "ListItem", position: 3, name: p.breadcrumbName, item: url },
+      { "@type": "ListItem", position: 2, name: p.breadcrumbName, item: url },
     ],
   };
   const article = {
@@ -234,6 +234,7 @@ export default function GuideArticle(p: GuideArticleProps) {
             </div>
           </section>
         </main>
+        <RelatedGuides path={`/guide/${p.slug}/`} />
         <SiteFooter />
       </div>
     </>

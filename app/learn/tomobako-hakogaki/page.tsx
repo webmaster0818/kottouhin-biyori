@@ -26,7 +26,7 @@ const faqs = [
 ];
 
 const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
-const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [ { "@type": "ListItem", position: 1, name: "ホーム", item: SITE }, { "@type": "ListItem", position: 2, name: "学ぶ", item: `${SITE}/learn/` }, { "@type": "ListItem", position: 3, name: "共箱・箱書きの見方", item: `${SITE}${PATH}` } ] };
+const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [ { "@type": "ListItem", position: 1, name: "ホーム", item: SITE }, { "@type": "ListItem", position: 2, name: "共箱・箱書きの見方", item: `${SITE}${PATH}` } ] };
 const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: "共箱・箱書きとは？見方と真贋・価値への影響をわかりやすく解説", description: "共箱・箱書きの意味・見方・真贋への影響を解説。", datePublished: "2026-07-07T00:00:00+09:00", dateModified: "2026-07-07T00:00:00+09:00", author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` }, publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE }, mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` } };
 
 export default function TomobakoPage() {

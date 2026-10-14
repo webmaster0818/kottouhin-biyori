@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 
 export const metadata = {
   alternates: { canonical: "/learn/ihin-kottou/" },
@@ -12,7 +13,7 @@ export const metadata = {
 export default function IhinKottouPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"ホーム\", \"item\": \"https://kottokaitori-biyori.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"学ぶ\", \"item\": \"https://kottokaitori-biyori.com/learn/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"遺品整理で出てきた骨董品の対処法\", \"item\": \"https://kottokaitori-biyori.com/learn/ihin-kottou/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"ホーム\", \"item\": \"https://kottokaitori-biyori.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"遺品整理で出てきた骨董品の対処法\", \"item\": \"https://kottokaitori-biyori.com/learn/ihin-kottou/\"}]}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"遺品整理で出てきた骨董品の対処法\", \"description\": \"遺品整理で出てきた骨董品の正しい対処法を解説。すぐ捨てない・すぐ売らないが原則。価値の見極め方、形見分けや相続人の合意、まとめて売却する際の業者選び、遺品整理業者との使い分けまで、\", \"datePublished\": \"2026-06-18T00:00:00+09:00\", \"dateModified\": \"2026-06-18T00:00:00+09:00\", \"author\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com/about/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://kottokaitori-biyori.com/learn/ihin-kottou/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -185,6 +186,7 @@ export default function IhinKottouPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides path="/learn/ihin-kottou/" />
       <SiteFooter />
     </div>
   </>

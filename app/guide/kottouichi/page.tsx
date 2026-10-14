@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 import areas from "@/data/areas.json";
 
 export const metadata: Metadata = {
@@ -115,7 +116,7 @@ export default function KottouichiPage() {
   return (
     <>
       {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://kottokaitori-biyori.com/guide/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"全国の骨董市カレンダー\",\"item\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"全国の骨董市カレンダー\",\"item\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"全国の骨董市一覧【2026年版】開催日・場所がわかる骨董市ガイド\",\"description\":\"全国の骨董市の開催日・場所・エリア別一覧と楽しみ方を解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-06-21T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/kottouichi/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: guideFaqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
@@ -275,6 +276,7 @@ export default function KottouichiPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides path="/guide/kottouichi/" />
       <SiteFooter />
     </div>
   </>

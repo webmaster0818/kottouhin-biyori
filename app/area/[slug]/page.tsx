@@ -312,6 +312,16 @@ const localPopularItems: Record<string, { item: string; reason: string }[]> = {
   ],
 };
 
+// 地方区分（同じ地方のエリアページへの導線用）
+const AREA_REGIONS: { name: string; slugs: string[] }[] = [
+  { name: "北海道・東北", slugs: ["sapporo", "sendai"] },
+  { name: "関東", slugs: ["tokyo", "yokohama", "saitama", "chiba", "utsunomiya", "maebashi", "mito"] },
+  { name: "中部", slugs: ["nagoya", "shizuoka", "hamamatsu", "kanazawa", "niigata", "nagano"] },
+  { name: "近畿", slugs: ["osaka", "kyoto", "kobe", "nara", "wakayama", "otsu"] },
+  { name: "中国・四国", slugs: ["hiroshima", "okayama", "matsuyama", "takamatsu"] },
+  { name: "九州・沖縄", slugs: ["fukuoka", "kitakyushu", "kumamoto", "kagoshima", "naha"] },
+];
+
 export default async function AreaPage({ params }: Props) {
   const { slug } = await params;
   const area = areas.find((a) => a.slug === slug);
@@ -325,6 +335,11 @@ export default async function AreaPage({ params }: Props) {
   ];
   const markets = localMarkets[slug] || [];
   const popularItems = localPopularItems[slug] || [];
+  const region = AREA_REGIONS.find((r) => r.slugs.includes(slug));
+  const nearbyAreas = (region?.slugs ?? [])
+    .filter((s) => s !== slug)
+    .map((s) => areas.find((a) => a.slug === s))
+    .filter((a): a is (typeof areas)[number] => Boolean(a));
 
   const SITE_URL = "https://kottokaitori-biyori.com";
   const pageUrl = `${SITE_URL}/area/${slug}`;
@@ -632,6 +647,29 @@ export default async function AreaPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* 同じ地方のエリア */}
+        {region && nearbyAreas.length > 0 && (
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-5xl mx-auto px-4">
+              <div className="text-center mb-8">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">NEARBY AREAS</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">{region.name}の他のエリアの骨董品買取</h2>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                {nearbyAreas.map((a) => (
+                  <Link
+                    key={a.slug}
+                    href={`/area/${a.slug}/`}
+                    className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                  >
+                    {a.name}の骨董品買取
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">

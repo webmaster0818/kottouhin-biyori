@@ -27,7 +27,7 @@ const faqs = [
 ];
 
 const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
-const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [ { "@type": "ListItem", position: 1, name: "ホーム", item: SITE }, { "@type": "ListItem", position: 2, name: "学ぶ", item: `${SITE}/learn/` }, { "@type": "ListItem", position: 3, name: "贋作・偽物・模造・写しの違い", item: `${SITE}${PATH}` } ] };
+const breadcrumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [ { "@type": "ListItem", position: 1, name: "ホーム", item: SITE }, { "@type": "ListItem", position: 2, name: "贋作・偽物・模造・写しの違い", item: `${SITE}${PATH}` } ] };
 const articleLd = { "@context": "https://schema.org", "@type": "Article", headline: "贋作・偽物・模造・写しの違いとは？骨董品の用語をわかりやすく整理", description: "骨董品の「贋作・偽物・模造・写し」の違いを意図と作者表示の観点で整理。", datePublished: "2026-07-07T00:00:00+09:00", dateModified: "2026-07-07T00:00:00+09:00", author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` }, publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE }, mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` } };
 
 export default function GansakuChigaiPage() {

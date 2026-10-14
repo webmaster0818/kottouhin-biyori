@@ -208,6 +208,25 @@ export default async function ComparePage({ params }: Props) {
             </section>
           )}
 
+          <section className="py-12 md:py-16 bg-white">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-6 text-center">ほかの比較記事</h2>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+                {(compares as Compare[])
+                  .filter((o) => o.slug !== c.slug)
+                  .map((o) => (
+                    <Link
+                      key={o.slug}
+                      href={`/compare/${o.slug}/`}
+                      className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                    >
+                      {o.title}
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          </section>
+
           <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">骨董品の最高額を知りたいなら</h2>

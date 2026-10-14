@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "骨董品と相続税｜美術品の評価方法と節税対策｜骨董品買取びより",
@@ -62,7 +63,7 @@ export default function SouzokuzeiPage() {
   return (
     <>
       {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"ガイド\",\"item\":\"https://kottokaitori-biyori.com/guide/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"骨董品と相続税の評価方法\",\"item\":\"https://kottokaitori-biyori.com/guide/souzokuzei/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品と相続税の評価方法\",\"item\":\"https://kottokaitori-biyori.com/guide/souzokuzei/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品と相続税の評価方法\",\"description\":\"骨董品と相続税の評価方法 を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/souzokuzei/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -175,6 +176,7 @@ export default function SouzokuzeiPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides path="/guide/souzokuzei/" />
       <SiteFooter />
     </div>
   </>

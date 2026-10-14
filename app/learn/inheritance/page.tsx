@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 
 export const metadata = {
   alternates: { canonical: "/learn/inheritance/" },
@@ -12,7 +13,7 @@ export const metadata = {
 export default function InheritancePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"ホーム\", \"item\": \"https://kottokaitori-biyori.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"学ぶ\", \"item\": \"https://kottokaitori-biyori.com/learn/\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"骨董品の相続・評価ガイド\", \"item\": \"https://kottokaitori-biyori.com/learn/inheritance/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"ホーム\", \"item\": \"https://kottokaitori-biyori.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"骨董品の相続・評価ガイド\", \"item\": \"https://kottokaitori-biyori.com/learn/inheritance/\"}]}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"骨董品の相続・評価ガイド\", \"description\": \"骨董品の相続で押さえるべき評価額の調べ方、遺産分割（現物分割・換価分割）の方法、売却して分ける流れ、申告時の注意点をわかりやすく解説。税務の詳細は税理士への相談が前提の、実務的な進\", \"datePublished\": \"2026-06-18T00:00:00+09:00\", \"dateModified\": \"2026-06-18T00:00:00+09:00\", \"author\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com/about/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://kottokaitori-biyori.com/learn/inheritance/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -182,6 +183,7 @@ export default function InheritancePage() {
           </div>
         </section>
       </main>
+      <RelatedGuides path="/learn/inheritance/" />
       <SiteFooter />
     </div>
   </>

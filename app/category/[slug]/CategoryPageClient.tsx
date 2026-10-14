@@ -279,12 +279,14 @@ export default function CategoryPageClient({
   soubaStats = null,
   soubaGeneratedAt = null,
   popularArtistLinks = [],
+  relatedCategoryLinks = [],
 }: {
   slug: string;
   artistRows?: ArtistRow[];
   soubaStats?: { category: string; artistCount: number; resultCount: number; max: string; median: string } | null;
   soubaGeneratedAt?: string | null;
   popularArtistLinks?: { name: string; slug: string | null }[];
+  relatedCategoryLinks?: { name: string; slug: string }[];
 }) {
   const cat = categories.find((c) => c.slug === slug) as CategoryData | undefined;
   if (!cat) return <div>カテゴリが見つかりません</div>;
@@ -778,6 +780,29 @@ export default function CategoryPageClient({
                       {a.name}の査定
                     </Link>
                   ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* 関連する品目 */}
+        {relatedCategoryLinks.length > 0 && (
+          <section className="py-12 md:py-16">
+            <div className="max-w-5xl mx-auto px-4">
+              <div className="text-center mb-8">
+                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RELATED ITEMS</p>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">関連する品目の買取</h2>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                {relatedCategoryLinks.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/category/${r.slug}/`}
+                    className="bg-white border border-[#E0D5C8] rounded-xl py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                  >
+                    {r.name} 買取
+                  </Link>
+                ))}
               </div>
             </div>
           </section>

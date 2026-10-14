@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import RelatedGuides from "@/app/components/RelatedGuides";
 import artists from "@/data/artists.json";
 
 const SITE = "https://kottokaitori-biyori.com";
@@ -25,8 +26,7 @@ export default function SakkaSoubaPage() {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-      { "@type": "ListItem", position: 2, name: "ガイド", item: `${SITE}/guide/` },
-      { "@type": "ListItem", position: 3, name: "作家別の買取相場・落札実績インデックス", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "作家別の買取相場・落札実績インデックス", item: `${SITE}${PATH}` },
     ],
   };
   const itemList = {
@@ -184,7 +184,8 @@ export default function SakkaSoubaPage() {
             </section>
           </div>
         </main>
-        <SiteFooter />
+        <RelatedGuides path="/guide/sakka-souba/" />
+      <SiteFooter />
       </div>
     </>
   );
