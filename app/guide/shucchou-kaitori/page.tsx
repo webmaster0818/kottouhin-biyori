@@ -247,7 +247,7 @@ export default function ShucchouKaitoriPage() {
                   <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{uriel.name}</h3>
                 </div>
               </div>
-              <p className="text-[#5C4A3A] leading-relaxed mb-4">出張買取専門のため、骨董品の運搬リスクなく自宅で査定が完結。骨董品カテゴリ明記・中国美術・掛軸の買取実績豊富で、遺品整理との連携サービスも整っています。</p>
+              <p className="text-[#5C4A3A] leading-relaxed mb-4">出張買取が中心（店頭は2026年9月開店の川崎1店・催事あり）で、骨董品の運搬リスクなく自宅で査定が完結。公式の骨董品ページで掛軸・中国美術・茶道具の買取を案内しており（2026年10月14日確認）、遺品整理との連携サービスもあります。</p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{uriel.description}</p>
               <p className="text-sm mb-6">
                 <Link href="/review/uriel/" className="text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判と出張エリアを詳しく見る</Link>
