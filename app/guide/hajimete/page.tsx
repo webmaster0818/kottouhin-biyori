@@ -163,6 +163,7 @@ export default function HajimetePage() {
                 </div>
                 <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">出張買取に強く、自宅で査定が完結。大型品や大量の骨董品がある方、遺品整理と合わせて依頼したい方におすすめ。査定士が丁寧に説明してくれるため、初心者でも安心です。</p>
                 <a href={uriel.officialUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-6 py-2 rounded-xl font-bold transition text-sm">公式サイトへ</a>
+                <Link href="/review/uriel/" className="inline-block ml-3 text-sm text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判</Link>
               </div>
               <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-3">

@@ -248,7 +248,10 @@ export default function ShucchouKaitoriPage() {
                 </div>
               </div>
               <p className="text-[#5C4A3A] leading-relaxed mb-4">出張買取専門のため、骨董品の運搬リスクなく自宅で査定が完結。骨董品カテゴリ明記・中国美術・掛軸の買取実績豊富で、遺品整理との連携サービスも整っています。</p>
-              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-6">{uriel.description}</p>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{uriel.description}</p>
+              <p className="text-sm mb-6">
+                <Link href="/review/uriel/" className="text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判と出張エリアを詳しく見る</Link>
+              </p>
               <a href={uriel.officialUrl} target="_blank" rel="noopener noreferrer"
                 className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
                 {uriel.name}で無料査定する

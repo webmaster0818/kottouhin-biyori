@@ -13,6 +13,13 @@ const SITE_URL = "https://kottokaitori-biyori.com";
 
 type Props = { params: Promise<{ slug: string }> };
 
+type TopicSection = {
+  id: string; placement?: string; title: string; lead?: string; bullets?: string[];
+  table?: { caption?: string; headers: string[]; rows: string[][] }; note?: string;
+  links?: { href: string; label: string }[];
+};
+
+
 export async function generateStaticParams() {
   return companies
     .filter((c) => !EXISTING_STATIC.has(c.slug))
@@ -67,6 +74,73 @@ export default async function DynamicReviewPage({ params }: Props) {
     "description": company.description,
   };
 
+  const topicSections: TopicSection[] = (company as any).topicSections ?? [];
+  const renderTopic = (sec: TopicSection) => (
+            <section key={sec.id} id={sec.id} className="py-12 md:py-16">
+              <div className="max-w-4xl mx-auto px-4">
+                <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+                  <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-b border-[#E0D5C8] pb-3">
+                    {sec.title}
+                  </h2>
+                  {sec.lead && (
+                    <p className="text-[#5C4A3A] leading-relaxed mb-5 text-sm md:text-base">{sec.lead}</p>
+                  )}
+                  {sec.bullets && (
+                    <ul className="space-y-2.5 mb-5">
+                      {sec.bullets.map((b, i) => (
+                        <li key={i} className="text-sm text-[#2C1810] leading-relaxed flex gap-2">
+                          <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {sec.table && (
+                    <div className="overflow-x-auto mb-4">
+                      {sec.table.caption && (
+                        <p className="text-sm font-bold text-[#8B4513] mb-2">{sec.table.caption}</p>
+                      )}
+                      <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                        <thead className="bg-[#8B4513] text-white">
+                          <tr>
+                            {sec.table.headers.map((h, i) => (
+                              <th key={i} className="px-3 py-2.5 text-left">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sec.table.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-[#E0D5C8]">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`px-3 py-2.5 ${ci === 0 ? "font-bold" : "text-[#5C4A3A]"}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                  {sec.links && sec.links.length > 0 && (
+                    <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+                      <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
+                      <ul className="space-y-1.5">
+                        {sec.links.map((l, i) => (
+                          <li key={i} className="text-sm leading-relaxed flex gap-2">
+                            <span className="text-[#C9A96E] shrink-0">▶</span>
+                            <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition">
+                              {l.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {sec.note && <p className="text-xs text-[#8B7D72]">{sec.note}</p>}
+                </div>
+              </div>
+            </section>
+          );
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -90,10 +164,10 @@ export default async function DynamicReviewPage({ params }: Props) {
             <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
               <p className="text-[#D4A574] text-sm tracking-widest mb-4">REVIEW</p>
               <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                {company.name}の口コミ・評判
+                {(company as any).h1 ?? `${company.name}の口コミ・評判`}
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                骨董品買取の実力を徹底検証【{asOfLabel}】
+                {(company as any).heroLead ?? `骨董品買取の実力を徹底検証【${asOfLabel}】`}
               </p>
             </div>
           </section>
@@ -108,6 +182,9 @@ export default async function DynamicReviewPage({ params }: Props) {
               </nav>
             </div>
           </div>
+
+          {/* 検索意図への即答（店舗一覧など。placement: "top" のセクション） */}
+          {topicSections.filter((sec) => sec.placement === "top").map(renderTopic)}
 
           {/* Overview */}
           <section className="py-12 md:py-16">
@@ -186,75 +263,7 @@ export default async function DynamicReviewPage({ params }: Props) {
           )}
 
           {/* 品目・店舗などの深掘りセクション（データ駆動・任意） */}
-          {(company as any).topicSections && (company as any).topicSections.map((sec: {
-            id: string; title: string; lead?: string; bullets?: string[];
-            table?: { caption?: string; headers: string[]; rows: string[][] }; note?: string;
-            links?: { href: string; label: string }[];
-          }) => (
-            <section key={sec.id} id={sec.id} className="py-12 md:py-16">
-              <div className="max-w-4xl mx-auto px-4">
-                <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
-                  <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-b border-[#E0D5C8] pb-3">
-                    {sec.title}
-                  </h2>
-                  {sec.lead && (
-                    <p className="text-[#5C4A3A] leading-relaxed mb-5 text-sm md:text-base">{sec.lead}</p>
-                  )}
-                  {sec.bullets && (
-                    <ul className="space-y-2.5 mb-5">
-                      {sec.bullets.map((b, i) => (
-                        <li key={i} className="text-sm text-[#2C1810] leading-relaxed flex gap-2">
-                          <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {sec.table && (
-                    <div className="overflow-x-auto mb-4">
-                      {sec.table.caption && (
-                        <p className="text-sm font-bold text-[#8B4513] mb-2">{sec.table.caption}</p>
-                      )}
-                      <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
-                        <thead className="bg-[#8B4513] text-white">
-                          <tr>
-                            {sec.table.headers.map((h, i) => (
-                              <th key={i} className="px-3 py-2.5 text-left">{h}</th>
-                            ))}
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {sec.table.rows.map((row, ri) => (
-                            <tr key={ri} className="border-b border-[#E0D5C8]">
-                              {row.map((cell, ci) => (
-                                <td key={ci} className={`px-3 py-2.5 ${ci === 0 ? "font-bold" : "text-[#5C4A3A]"}`}>{cell}</td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-                  {sec.links && sec.links.length > 0 && (
-                    <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
-                      <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
-                      <ul className="space-y-1.5">
-                        {sec.links.map((l, i) => (
-                          <li key={i} className="text-sm leading-relaxed flex gap-2">
-                            <span className="text-[#C9A96E] shrink-0">▶</span>
-                            <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition">
-                              {l.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {sec.note && <p className="text-xs text-[#8B7D72]">{sec.note}</p>}
-                </div>
-              </div>
-            </section>
-          ))}
+          {topicSections.filter((sec) => sec.placement !== "top").map(renderTopic)}
 
           {/* 公開口コミの傾向（買取比較メディア等の二次情報・出典明記） */}
           {(company as any).reviewTrend && (
