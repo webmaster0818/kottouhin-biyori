@@ -7,25 +7,28 @@ import companies from "@/data/companies.json";
 const company = companies.find((c) => c.id === "uriel")!;
 
 export const metadata: Metadata = {
-  title: "ウリエルの口コミ・評判は？骨董品・楽器の出張買取と川崎の店舗を公式で確認【2026年10月】｜骨董品買取びより",
-  description: "買取専門店ウリエルの口コミ・評判を出典付きで整理。ヒカカクの評価（2.67点・3件）、公式アンケート、運営会社・古物商許可、出張エリア、川崎の店舗、楽器買取、クーリングオフまで公式で確認しました（2026年10月14日）。",
+  title: "ウリエルの口コミ・評判は？買取実績・出張エリア・川崎の店舗を公式で確認【2026年10月】｜骨董品買取びより",
+  description: "買取専門店ウリエルの口コミ・評判を出典付きで整理。ヒカカクの評価（2.67点・3件）、公式の買取実績（骨董・古銭・楽器）、運営会社・古物商許可、出張エリア、川崎の店舗、宅配買取の有無、クーリングオフまで公式で確認しました（2026年10月15日）。",
   alternates: { canonical: "/review/uriel" },
 };
 
 const SITE_URL = "https://kottokaitori-biyori.com";
 const CHECKED = "2026年10月14日";
+const CHECKED2 = "2026年10月15日";
 
 const basicInfo: [string, string][] = [
   ["運営会社", "株式会社クオーレ（代表 竹本泰志／本社 愛知県大府市／設立 平成23年3月／資本金5,000万円）"],
   ["古物商許可", "愛知県公安委員会 第542791100800号"],
   ["受付電話", "0120-242-556（24時間受付・年末年始を除く）"],
-  ["買取方法", "出張買取・店頭買取・催事買取（宅配買取の記載は公式サイトで確認できず）"],
-  ["店舗", "ラ チッタデッラ店（神奈川県川崎市）の1店のみ。2026年9月17日開店・予約制"],
+  ["買取品目", "公式トップに19品目（着物・切手・古銭・毛皮・ブランド品・ブランド食器・金・貴金属・お酒・宝石・時計・骨董品・オーディオ・遺品整理・レコード・楽器・ゴルフ・香水・カメラ・ホビー）"],
+  ["買取方法", "出張買取・店頭買取・催事買取（宅配買取の記載は2026年10月の公式サイトで確認できず。2021年10月の報道では宅配買取も案内されていた）"],
+  ["店舗", "ラ チッタデッラ店（神奈川県川崎市）の1店のみ。2026年9月17日開店・予約制。営業時間 11時〜21時（最終受付20時）"],
   ["出張エリア", "関東・中部・近畿・中国・四国・九州（沖縄を除く）※出張買取ページの記載。楽器買取ページでは17都府県（中国地方は岡山県のみ）と記載が異なる"],
   ["費用", "出張料・査定料・手数料・キャンセル料は無料"],
   ["支払い", "査定額に納得すればその場で現金払い"],
   ["クーリングオフ", "出張買取は8日間のクーリングオフ対象と記載"],
-  ["その他", "女性スタッフの対応を事前に希望可／18歳未満の方からの買取は不可"],
+  ["その他", "女性スタッフの対応・玄関先での査定を事前に希望可／18歳未満の方からの買取は不可"],
+  ["公式掲載の数値", "年間買取点数15万点以上・創業15年以上・対応満足度93.29%（いずれも公式トップの自社掲載）"],
 ];
 
 const reviewSources = [
@@ -33,6 +36,11 @@ const reviewSources = [
     name: "ヒカカク！（買取業者の口コミサイト）",
     url: "https://hikakaku.com/company/23566/",
     summary: "総合2.67点・口コミ3件（★5が1件・★2が1件・★1が1件）。件数が少なく評価が割れているため、この数字だけで良し悪しを判断するのは難しい状態です。",
+  },
+  {
+    name: "みん評（口コミサイト）",
+    url: "https://minhyo.jp/uriel-cuore",
+    summary: "ウリエル（クオーレ）の掲載ページはありますが、検索結果上の表示では口コミ0件でした（ページ本体は当サイトの環境から閲覧できず）。「ウリ〜 口コミ」で出てくる口コミの多くは、名前の似たトレカ買取店「ウリウリトレカ」のものなので混同に注意してください。",
   },
   {
     name: "ウリエル公式「お客様の声」",
@@ -44,6 +52,18 @@ const reviewSources = [
     url: "https://www.uriel-cuore.co.jp/",
     summary: "「満足93%以上」と掲載（2025年7月〜2026年6月・回答283件・自社調べ）。調査主体はウリエル自身です。",
   },
+];
+
+const urielResults: [string, string, string][] = [
+  ["2021/12/15 東京都北区", "黒茶碗など複数点", "88,000円"],
+  ["2021/12/17 東京都千代田区", "ロイヤルコペンハーゲン ティーポットなど複数点", "30,000円"],
+  ["2024/03/08 東京都西多摩郡", "パンダ金貨など", "506,000円"],
+  ["2025/02/15 東京都足立区", "一圓銀貨・記念硬貨など複数点", "49,000円"],
+  ["2024/03/30 埼玉県", "貴州茅台酒（マオタイ酒・天女マーク）", "250,000円"],
+  ["2021/04/15", "セルマー バリトンサックスなど複数点", "185,000円"],
+  ["2022/07/13 東京都江戸川区", "セルマー アルトサックスなど複数点", "170,000円"],
+  ["2026/03/01 東京都", "Fender Michiya Haruhata Stratocaster", "60,000円"],
+  ["2026/03/14 神奈川県", "Yamaha YTR-800（トランペット）", "20,000円"],
 ];
 
 const howToUse = [
@@ -137,7 +157,7 @@ export default function UrielReview() {
             </div>
             <div className="mt-6 bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-5 text-sm text-[#5C4A3A] leading-relaxed">
               <p className="font-bold text-[#2C1810] mb-2">「ウリエル 口コミ」「ウリエル 評判」で調べるときの注意</p>
-              <p>みん評やGoogleマップでは、{CHECKED}時点でウリエルの評価点・件数を当サイトでは確認できませんでした。ネット上の「やばい？」「怪しい？」といった記事の多くは出典が示されていないため、上記のように誰が集めた口コミかを確かめてから参考にしてください。訪問買取で不安がある場合は、運営会社・古物商許可番号の確認、査定額の書面での提示、クーリングオフの説明があるかを当日チェックすると安心です。</p>
+              <p>Googleマップでは、{CHECKED}時点でウリエルの評価点・件数を当サイトでは確認できませんでした（川崎の店舗は2026年9月開店のため口コミがたまるのはこれから）。ネット上の「やばい？」「怪しい？」といった記事の多くは出典が示されていないため、上記のように誰が集めた口コミかを確かめてから参考にしてください。訪問買取で不安がある場合は、運営会社・古物商許可番号の確認、査定額の書面での提示、クーリングオフの説明があるかを当日チェックすると安心です。</p>
             </div>
           </div>
         </section>
@@ -170,7 +190,35 @@ export default function UrielReview() {
             <div className="bg-[#FAF7F2] rounded-2xl p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4">ウリエルの楽器買取の評判と対象エリア</h2>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-3">ウリエルは骨董品だけでなく楽器の出張買取も行っており、公式サイトに楽器買取専用のページ（/instrument/）があります。ただし、楽器買取に限った第三者の口コミ・評価は、{CHECKED}時点で当サイトでは確認できませんでした。</p>
-              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">対象エリアは、楽器買取ページでは17都府県（中国地方は岡山県のみ）と記載されており、出張買取ページ（沖縄を除く関東〜九州）より狭くなっています。楽器の査定を依頼する場合は、自宅が対象か先に電話（0120-242-556）で確認してください。</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-3">買取対象として、ギター・ベース・バイオリンなどの弦楽器、サックス・トランペット・フルートなどの管楽器のほか、<strong>三味線・尺八・琴・琵琶・二胡・和太鼓などの和楽器</strong>も挙げられています。古い和楽器は骨董品と一緒に査定を頼めます（{CHECKED2}確認）。</p>
+              <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">対象エリアは、楽器買取ページでは17都府県（茨城・栃木・埼玉・千葉・東京・神奈川／愛知・岐阜・静岡／三重・滋賀・京都・大阪・兵庫・奈良・和歌山／岡山）と記載されており、出張買取ページ（沖縄を除く関東〜九州）より狭くなっています。楽器の査定を依頼する場合は、自宅が対象か先に電話（0120-242-556）で確認してください。</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 買取実績 */}
+        <section className="py-12 md:py-16" id="results">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3">ウリエルの買取実績（公式掲載の事例）</h2>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">公式サイトに掲載されている買取事例のうち、骨董品・古銭・お酒・楽器に関わるものを抜き出しました。ウリエル自身が掲載している事例で、同じ品が同じ金額になるとは限りません。</p>
+              <div className="overflow-x-auto mb-3">
+                <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
+                  <thead className="bg-[#FAF7F2]">
+                    <tr><th className="px-3 py-2 text-left">買取日・地域</th><th className="px-3 py-2 text-left">品物</th><th className="px-3 py-2 text-right">買取価格</th></tr>
+                  </thead>
+                  <tbody>
+                    {urielResults.map(([d, item, price]) => (
+                      <tr key={d + item} className="border-t border-[#E0D5C8]">
+                        <td className="px-3 py-2 text-[#5C4A3A] whitespace-nowrap">{d}</td>
+                        <td className="px-3 py-2 text-[#2C1810]">{item}</td>
+                        <td className="px-3 py-2 text-right font-bold text-[#8B4513] whitespace-nowrap">{price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-[#8B7D72]">出典: 買取専門店ウリエル公式サイト トップページ・楽器買取ページ（/instrument/）の買取実績、{CHECKED2}確認。いずれも出張買取の事例として掲載。</p>
             </div>
           </div>
         </section>

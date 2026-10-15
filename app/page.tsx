@@ -512,7 +512,7 @@ export default function Home() {
                       </a>
                       <Link href={`/review/${company.slug}`}
                         className="bg-white border-2 border-[#8B4513] text-[#8B4513] text-center py-4 px-6 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
-                        詳細
+                        口コミ・評判
                       </Link>
                     </div>
                   </div>

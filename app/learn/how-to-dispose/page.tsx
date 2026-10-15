@@ -4,7 +4,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
   alternates: { canonical: "/learn/how-to-dispose/" },
-  title: "骨董品の処分方法・捨て方【2026年9月】5つの選択肢を比較｜価値がわからない品の扱い方",
+  title: "骨董品の処分方法は5つ｜売る・譲る・捨てるの比較と自治体での捨て方【2026年10月】",
   description:
     "骨董品をどう処分するか。買取・オークション・寄付譲渡・自治体での廃棄・整理業者の5つの選択肢を比較表つきで解説し、実際に捨てるときの分別と手順、そのままごみに出せない品目（刀剣・象牙・仏壇仏具）の扱い、価値があるか分からない品の仕分け方までまとめました。捨て方に迷ったときの判断基準がわかります。",
 };
@@ -13,7 +13,7 @@ export default function HowToDisposePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"ホーム\", \"item\": \"https://kottokaitori-biyori.com\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"骨董品の処分方法・捨て方\", \"item\": \"https://kottokaitori-biyori.com/learn/how-to-dispose/\"}]}" }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"骨董品の処分方法・捨て方\", \"description\": \"骨董品の処分方法・捨て方を、買取・オークション・寄付譲渡・自治体での廃棄・整理業者の5つの選択肢で比較。捨てるときの分別と手順、ごみに出せない品目の扱い、価値があるか分からない品の仕分け方まで解説します。\", \"datePublished\": \"2026-06-18T00:00:00+09:00\", \"dateModified\": \"2026-06-18T00:00:00+09:00\", \"author\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com/about/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://kottokaitori-biyori.com/learn/how-to-dispose/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"骨董品の処分方法・捨て方\", \"description\": \"骨董品の処分方法・捨て方を、買取・オークション・寄付譲渡・自治体での廃棄・整理業者の5つの選択肢で比較。捨てるときの分別と手順、ごみに出せない品目の扱い、価値があるか分からない品の仕分け方まで解説します。\", \"datePublished\": \"2026-06-18T00:00:00+09:00\", \"dateModified\": \"2026-10-15T00:00:00+09:00\", \"author\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com/about/\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"骨董品買取びより\", \"url\": \"https://kottokaitori-biyori.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://kottokaitori-biyori.com/learn/how-to-dispose/\"}}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -35,7 +35,7 @@ export default function HowToDisposePage() {
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
             <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品の処分方法・捨て方</h1>
-            <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">「古いだけ」と思った品物に価値があることも。後悔しない処分の判断基準を解説します。</p>
+            <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">売る・譲る・捨てるの5つの処分方法を比較。「古いだけ」と思った品物に価値があることも。後悔しない判断基準を解説します。</p>
           </div>
         </section>
 
@@ -43,7 +43,8 @@ export default function HowToDisposePage() {
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">結論：骨董品は「捨てる前にまず無料査定」が鉄則</h2>
-              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">価値がわからないまま処分すると、思わぬ高額品を手放してしまうことがあります。処分の優先順位は次のとおりです。</p>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3"><strong>骨董品の処分方法は、①買取業者に売る ②オークション・フリマで売る ③寄付・譲渡する ④自治体のごみに出す ⑤遺品整理業者・不用品回収業者に任せる、の5つです。</strong>どれを選ぶにしても、価値がわからないまま捨てると思わぬ高額品を手放すことがあるため、先に無料査定で値段が付くかを確かめるのが基本です。</p>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">処分の優先順位は次のとおりです。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">
                 <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① まず無料査定で価値を確認</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">作家物・共箱付きなどは高値がつくことも。査定は無料の業者が多い</p></li>
                 <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 売れるものは買取・売却</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">現金化できるうえ、必要な人の手に渡る</p></li>
@@ -99,6 +100,7 @@ export default function HowToDisposePage() {
                   <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>自治体の粗大ごみ・不燃ごみとして廃棄する</span></li>
                   <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>遺品整理業者・不用品回収業者にまとめて依頼する</span></li>
                 </ul>
+                <p className="text-sm bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-4">不用品回収業者に頼む場合の注意：家庭から出るごみを回収・運搬するには、市区町村の一般廃棄物収集運搬業の許可（または市区町村からの委託）が必要です。環境省も、許可のない回収業者を利用しないよう注意を呼びかけています。依頼前に、お住まいの市区町村の許可業者か、料金の内訳（回収費・運搬費・処分費）を確認してください。</p>
               </div>
             </div>
           </div>
