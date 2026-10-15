@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://kottokaitori-biyori.com"
-TODAY = "2026-08-19"  # lastmod。実行日に合わせて更新する。
+TODAY = "2026-10-15"  # 新規URLの lastmod。既存URLは deploy 後に scripts/lastmod-from-deploy.py で本文の変更日に直す
 
 
 def load(name):
