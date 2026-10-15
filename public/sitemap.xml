@@ -326,9 +326,11 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
-    <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
-    <loc>https://kottokaitori-biyori.com/review/</loc>
     <lastmod>2026-10-14</lastmod>
+    <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <loc>https://kottokaitori-biyori.com/review/</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1198,7 +1200,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/kingram/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1234,7 +1236,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/shukado/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1246,7 +1248,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/uriel/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1264,7 +1266,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/gyosha-hikaku/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1432,7 +1434,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/how-to-dispose/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
