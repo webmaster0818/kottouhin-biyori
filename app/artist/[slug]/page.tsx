@@ -182,10 +182,10 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <div className="max-w-4xl mx-auto px-4 py-12">
             <p className="text-[#D4A574] text-sm tracking-widest mb-2">{artist.category} / {artist.era}</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-4">
-              {(artist as any).h1 ?? `${artist.name}の${artist.category}買取`}
+              {(artist as any).h1 ?? <>{artist.name}の{artist.category}買取</>}
             </h1>
             <p className="text-amber-100 text-lg">
-              {(artist as any).priceLabel ?? "買取相場"}: <strong className="text-[#C9A96E]">{artist.priceRange}</strong>
+              {(artist as any).priceLabel ? `${(artist as any).priceLabel}: ` : "買取相場: "}<strong className="text-[#C9A96E]">{artist.priceRange}</strong>
             </p>
           </div>
         </section>
@@ -211,7 +211,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <p className="text-[#5C4A3A] leading-relaxed">
               {artist.name}({artist.era})は、{artist.category}の分野で高く評価される作家です。
               代表作に{worksText}などがあり、買取市場でも安定した需要があります。
-              このページでは、{artist.name}の{artist.category}の<strong>{(artist as any).priceLabel ?? "買取相場"}({artist.priceRange})</strong>、
+              このページでは、{artist.name}の{artist.category}の<strong>{((artist as any).priceLabel ?? "買取相場") + "("}{artist.priceRange})</strong>、
               真贋・査定で見られるポイント、高く売るためのコツ、そしておすすめの買取業者まで詳しく解説します。
               ご自宅に{artist.name}の作品をお持ちで売却をご検討の方はぜひ参考にしてください。
             </p>
@@ -299,10 +299,17 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             {soubaPoints && (
               <div className="mb-8">
                 <h3 className="font-bold text-[#2C1810] mb-3">作品の種別ごとの相場の見方</h3>
+                {kaitoriResults ? (
+                  <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
+                    {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
+                    種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績と、買取業者が公開している買取実績以外の金額は掲載していません。
+                  </p>
+                ) : (
                 <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
                   {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
-                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、{kaitoriResults ? "出典を明記できる公開オークションの落札実績と、買取業者が公開している買取実績以外の金額は掲載していません。" : "出典を明記できる公開オークションの落札実績以外の金額は掲載していません。"}
+                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績以外の金額は掲載していません。
                 </p>
+                )}
                 <div className="space-y-3">
                   {soubaPoints.map((p, idx) => (
                     <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
