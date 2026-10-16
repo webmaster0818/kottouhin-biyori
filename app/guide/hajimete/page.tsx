@@ -106,7 +106,7 @@ export default function HajimetePage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：初めて骨董品を売る際の手順</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">初めて骨董品を売る際の手順と、主な注意点は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 「①品物と付属品の情報を整理する、②買取業者を選ぶ、③査定を依頼する、④査定額を比較して売却を決める、⑤売却と代金の受け取り」の5つの手順で進めます。最も重要なのは、1社だけに依頼せず、必ず複数の業者（3社以上）に査定を依頼することです。査定前にご自身でクリーニングしないこと、共箱・鑑定書などの付属品を処分しないことも基本です。査定は無料が一般的で、金額に納得できなければ断っても問題ありません。
               </p>

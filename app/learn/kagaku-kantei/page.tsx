@@ -56,7 +56,7 @@ export default function KagakuKanteiPage() {
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
             <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
-              <p className="font-bold text-[#8B4513] mb-2">要点：科学的鑑定は客観的な手がかりを示しますが、それだけで真贋は断定できません</p>
+              <p className="font-bold text-[#8B4513] mb-2">科学的鑑定は客観的な手がかりを示しますが、それだけで真贋を断定できない点が重要です。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">科学的鑑定は、材料の成分や年代といった<strong>客観的なデータ</strong>を示します。ただし、時代に合わない材料が使われていないことが、そのまま本物であることを意味するわけではありません。実務では、科学分析の結果と、<Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline">専門家の目利き</Link>・<Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline">来歴などの要素</Link>を組み合わせて、総合的に判断します。</p>
             </div>
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">代表的な科学的鑑定の手法</h2>

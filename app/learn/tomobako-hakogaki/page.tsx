@@ -56,7 +56,7 @@ export default function TomobakoPage() {
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
             <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
-              <p className="font-bold text-[#8B4513] mb-2">要点：共箱は真贋・価値の有力な手がかりですが、単独では決め手になりません</p>
+              <p className="font-bold text-[#8B4513] mb-2">共箱は真贋・価値の有力な手がかりですが、単独では決め手にならない点に注意が必要です。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">作者自身が書いた<strong>共箱</strong>は、作者と作品を結び付ける有力な証拠であり、価値を高めます。ただし、箱違いや偽の箱書きもあるため、箱だけで本物と判断せず、作品の作風・時代との一致や<Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline">他の要素</Link>とあわせて判断します。<strong>汚れていても、査定前に処分しないでください。</strong></p>
             </div>
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">共箱・箱書きのポイント</h2>

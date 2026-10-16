@@ -195,7 +195,7 @@ export default function SoubaClient() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品の買取相場の目安</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の買取相場について、品目ごとの一般的な目安をご紹介します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 一般的な相場の目安は、掛軸3万〜30万円、茶道具5万〜50万円、絵画・刀剣10万〜100万円、古銭5,000円〜5万円、着物3,000円〜5万円です。ただし、作家・保存状態・付属品（共箱・鑑定書）・希少性によって数倍〜数十倍の差が生じ、横山大観（50万〜500万円）や伊藤若冲（100万〜1,000万円以上）など著名作家の真筆は、特に高額になります。正確な価格は、複数の業者の無料査定で見積もりを比較してご確認ください。
               </p>

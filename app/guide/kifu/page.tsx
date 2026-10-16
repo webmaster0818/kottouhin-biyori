@@ -108,7 +108,7 @@ export default function KifuPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品の寄付・寄贈</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">寄付・寄贈を検討する際に押さえておきたい点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品は、美術館・博物館・大学などの研究機関へ寄贈できます。ただし、各館には収蔵方針があり、すべての品が受け入れられるわけではないため、事前の連絡と審査が必要です。国や地方自治体が設置する美術館・博物館への寄贈では、相続税の非課税特例などの税制上の優遇を受けられる場合があります。一度寄贈すると原則として返還されないため、寄贈の前に無料査定で市場価値を確認してから判断することをおすすめします。
               </p>

@@ -113,7 +113,7 @@ export default function KuraSeiriPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：蔵の整理で骨董品が見つかった場合の対応</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">蔵の整理で骨董品が見つかった場合に、最も大切な対応をお伝えします。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 蔵から見つかった品は、ご自身の判断で処分せず、まず写真で記録してから専門業者の査定を受けることが基本です。掛軸・陶磁器・茶道具・古銭などが見つかりやすく、作家物の掛軸は5万〜500万円になる例もあります。桐箱の箱書きや品物の銘は価値を示す重要な手がかりのため、箱も含めて保管してください。量が多い場合は、査定士が自宅（蔵）を訪問してその場で査定する出張買取が適しています。
               </p>

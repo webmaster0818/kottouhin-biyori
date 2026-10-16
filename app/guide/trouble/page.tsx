@@ -72,7 +72,7 @@ export default function TroublePage() {
           <div className="max-w-4xl mx-auto px-4 space-y-8">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品買取のトラブルを防ぐ方法</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品買取のトラブルを防ぐために、押さえておきたい点は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 よくあるトラブルは、「押し買い」「不当な安値での買取」「キャンセルの拒否・違約金の請求」「配送中の破損」「誤った鑑定結果による減額」の5つです。防止のための原則は、3社以上からの見積もりの取得、費用とキャンセル規定の事前確認、信頼できる業者の選定の3つです。訪問購入には、契約書面の受領日から8日以内のクーリングオフが適用されます。ご自身から依頼していない業者の突然の訪問には応じないでください。
               </p>

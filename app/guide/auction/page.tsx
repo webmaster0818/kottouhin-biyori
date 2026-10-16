@@ -99,7 +99,7 @@ export default function AuctionPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：オークションでの売却が適している方</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">オークションでの売却が適しているのは、次のような方です。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品の知識が豊富で、出品・梱包・発送の手間をかけられる方には、オークションが適しています。主な選択肢は、ヤフオク！（手数料10%）・メルカリ（10%）・美術品専門オークション（10〜15%）の3つです。一方、手間をかけずに確実に売りたい方や、真贋に関するトラブルを避けたい方には、手数料が不要で即日〜3日で現金化できる業者買取をおすすめします。まず業者の無料査定で相場を把握し、そのうえでオークションへの出品を検討する方法が適しています。
               </p>

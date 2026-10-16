@@ -80,7 +80,7 @@ export default function SakkaSoubaPage() {
           <div className="max-w-5xl mx-auto px-4 py-10">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：著名作家の作品の買取相場</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">著名作家の作品の買取相場について、本ページの掲載内容と確認時の注意点をご説明します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 本ページでは、横山大観・葛飾北斎・北大路魯山人など126作家の買取相場と、公開オークションでの落札実績（出典・確認日を明記）を一覧で掲載しています。落札価格は手数料の扱い・為替・状態によって変動し、海外での取引は外貨建てです。同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定でご確認ください。
               </p>

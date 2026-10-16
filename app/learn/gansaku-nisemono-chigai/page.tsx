@@ -57,7 +57,7 @@ export default function GansakuChigaiPage() {
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
             <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
-              <p className="font-bold text-[#8B4513] mb-2">要点：区別の基準は、だます意図の有無と、作者を偽っているかどうかです</p>
+              <p className="font-bold text-[#8B4513] mb-2">贋作と偽物・模造品は、だます意図の有無と、作者を偽っているかどうかで区別します。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">本物と偽って売る目的で作られたものが<strong>贋作</strong>です。だます意図なく手本として作られた「写し」や、鑑賞・記録用の「模造・レプリカ」は、贋作とは区別されます。ただし、模造品であっても<strong>本物と偽って流通すれば贋作</strong>となります。</p>
             </div>
             {/* 贋作の多い人気作家は専門査定へ（作家×査定クラスタへの内部リンク集中） */}

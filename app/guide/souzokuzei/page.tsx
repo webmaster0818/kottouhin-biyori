@@ -99,7 +99,7 @@ export default function SouzokuzeiPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：相続した骨董品の相続税評価</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">相続した骨董品の相続税評価で重要な点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 国税庁の財産評価基本通達では、書画骨董品は「売買実例価額」「精通者意見価格」等を参考に評価します。1点で5万円を超える美術品・骨董品は個別の評価が必要で、一般的な家財として扱える場合は5万円以下のものをまとめて申告できます。価値の証明には鑑定書（費用は1点1万〜5万円程度）の取得が重要で、鑑定書がない場合は税務署独自の評価で課税されるおそれがあります。骨董品も相続財産のため申告が必要で、怠ると追徴課税を受けるおそれがあります。
               </p>

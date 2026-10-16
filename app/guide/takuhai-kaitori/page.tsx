@@ -125,7 +125,7 @@ export default function TakuhaiKaitoriPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品の宅配買取の仕組み</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">宅配買取の仕組みと、向いている品物は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 宅配買取は、業者から無料で届く宅配キット（段ボール・緩衝材・伝票）に品物を梱包し、着払いで送って査定・買取を受ける方法です。「申し込み、梱包・発送、査定（2〜7営業日）、成約・銀行振込」の4つの手順で進み、申し込みから入金まで1〜2週間が目安です。切手・古銭・茶碗・着物など小型から中型の品に適しており、全国から利用でき、対面も不要です。壊れやすい高額品は配送中に破損するおそれがあるため、出張買取のほうが安全です。
               </p>

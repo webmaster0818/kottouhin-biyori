@@ -51,7 +51,7 @@ export default function WhatIsKottouhinPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品の定義</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の定義と、価値を決める要素は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品とは、一般的に製造から100年以上経過した美術品・工芸品・装飾品を指します。この100年という基準は、1934年のアメリカ通商関税法に由来する国際的な定義です。日本には明確に定義する法律はなく、古物営業法の「古物」として扱われます。実務上は江戸〜明治以前の品が中心ですが、昭和期の品でも希少性の高いものは骨董品として流通しています。価値は「作家・時代・希少性・保存状態・来歴」の5つの要素で決まります。
               </p>

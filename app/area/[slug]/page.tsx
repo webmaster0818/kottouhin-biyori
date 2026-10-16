@@ -415,7 +415,7 @@ export default async function AreaPage({ params }: Props) {
         <section className="pt-10 md:pt-14">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6">
-              <p className="font-bold text-[#8B4513] mb-2">要点：{area.fullName}で骨董品を高く売る方法</p>
+              <p className="font-bold text-[#8B4513] mb-2">{area.fullName}で骨董品を高く売るための基本の手順は、次のとおりです。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-3">
                 ①<strong>複数の業者の無料査定を比較</strong>し、最も高い金額を提示した業者に売却する（1社だけで決めない）、
                 ②<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家</Link>・品目を特定して

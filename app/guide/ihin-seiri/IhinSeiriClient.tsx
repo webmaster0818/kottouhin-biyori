@@ -136,7 +136,7 @@ export default function IhinSeiriClient() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：遺品整理で骨董品が見つかった場合の対応</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">遺品整理で骨董品が見つかった場合は、次の手順で対応することが大切です。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 まずは何も処分せずにすべて保管し、写真を撮影して箱・付属品・書類も保管したうえで、骨董品専門の買取業者に査定を依頼してください。1社だけの査定、ご自身でのクリーニング、不用品回収業者への一括での引き渡しは、価値を失う典型的な失敗例のため避けてください。骨董品は相続財産として扱われることがあり、相続税の基礎控除（3,000万円＋600万円×法定相続人数）を超える場合は申告が必要になるため、査定の前に相続人全員で相談して進めてください。
               </p>
@@ -276,8 +276,7 @@ export default function IhinSeiriClient() {
             </div>
             <div className="mt-6 bg-amber-50 border border-amber-300 rounded-xl p-5">
               <p className="text-sm text-amber-800 leading-relaxed">
-                <span className="font-bold">※注意：</span>
-                上記は一般的な情報です。個別の相続案件については、必ず税理士や弁護士などの専門家にご相談ください。
+                上記は一般的な情報のため、個別の相続案件については、必ず税理士や弁護士などの専門家にご相談ください。
                 相続税の申告期限は、相続の開始を知った日の翌日から10か月以内です。
               </p>
             </div>

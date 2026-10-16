@@ -114,7 +114,7 @@ export default function KanteiMuryouPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品を無料で鑑定してもらう方法</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品を無料で鑑定してもらう方法の要点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 買取業者の無料鑑定（実質的には無料査定）を利用すると、出張・店頭・LINE・メールの4つの方法で、費用をかけずに価値を確認できます。概算を手軽に確認したい場合はLINE鑑定、大量の品や大型品の場合は出張鑑定が適しています。ただし、買取業者の無料鑑定では正式な鑑定書は発行されず、相続や保険が目的の場合は1点1万〜5万円程度の有料鑑定（鑑定機関）が必要です。売却が目的の場合は、複数の業者に無料査定を依頼して比較する方法が効率的です。
               </p>
