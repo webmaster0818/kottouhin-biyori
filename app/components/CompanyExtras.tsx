@@ -72,7 +72,7 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
               )}
               {sec.links && sec.links.length > 0 && (
                 <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
-                  <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
+                  <p className="text-sm font-bold text-[#8B4513] mb-2">関連ページ</p>
                   <ul className="space-y-1.5">
                     {sec.links.map((l, i) => (
                       <li key={i} className="text-sm leading-relaxed flex gap-2">
@@ -102,7 +102,7 @@ export function ReviewTrendSection({ data, companyName }: { data?: { good: strin
         <div className="text-center mb-8">
           <p className="text-sm text-[#C9A96E] tracking-widest mb-2">REPUTATION</p>
           <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">{companyName}の公開口コミの傾向</h2>
-          <p className="text-xs text-[#8B7D72] mt-3">出典：{data.source}。口コミ本文は転載せず傾向の要約のみを掲載しています。</p>
+          <p className="text-xs text-[#8B7D72] mt-3">出典：{data.source}。口コミの本文は転載せず、傾向の要約のみを掲載しています。</p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
@@ -159,7 +159,7 @@ export function GoogleReviewsSection({ data }: { data?: GoogleReviews }) {
           ))}
         </div>
         <p className="text-xs text-[#8B7D72] mt-4 text-center">
-          最新・全件の口コミはGoogleマップでご確認ください。
+          最新の口コミと全件の口コミは、Googleマップでご確認ください。
         </p>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function SiteFooter() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="font-serif-jp font-bold text-lg mb-3">骨董品買取びより</h3>
-            <p className="text-sm text-gray-400 leading-relaxed">骨董品・美術品の買取業者を徹底比較。</p>
+            <p className="text-sm text-gray-400 leading-relaxed">骨董品・美術品の買取業者を、公式サイトの情報にもとづいて比較する専門ガイドです。</p>
           </div>
           <div>
             <h4 className="font-bold mb-3 text-sm text-gray-300">品目別</h4>

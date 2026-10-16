@@ -38,9 +38,9 @@ export default function SiteHeader() {
             <Link href="/guide/takaku-uru" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">高く売る方法</Link>
             <Link href="/guide/ihin-seiri" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">遺品整理と骨董品</Link>
             <Link href="/guide/trouble" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">トラブル事例と対策</Link>
-            <Link href="/guide/doko-de-uru" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">骨董品どこで売る？</Link>
+            <Link href="/guide/doko-de-uru" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">骨董品の売却先の比較</Link>
             <div className="border-t border-[#E0D5C8] my-3" />
-            <p className="text-xs text-[#8B7D72] font-medium tracking-wider mb-2">送客先レビュー</p>
+            <p className="text-xs text-[#8B7D72] font-medium tracking-wider mb-2">業者レビュー</p>
             <Link href="/review/hikakaku" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">ヒカカク！</Link>
             <Link href="/review/tifana" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">ティファナ</Link>
             <Link href="/review/uriel" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">ウリエル</Link>

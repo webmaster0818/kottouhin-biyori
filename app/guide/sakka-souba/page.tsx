@@ -12,7 +12,7 @@ const UPDATED = "2026年6月23日";
 export const metadata: Metadata = {
   title: "作家別の買取相場・公開オークション落札実績インデックス【2026年7月】｜骨董品買取びより",
   description:
-    "横山大観・葛飾北斎・北大路魯山人・藤田嗣治など著名作家の買取相場と、公開オークションでの落札実績（出典・確認日明記）を一覧でまとめたインデックス。日本画・洋画・陶磁器・浮世絵など126作家の相場ページへもここから移動できます。",
+    "横山大観・葛飾北斎・北大路魯山人・藤田嗣治など著名作家の買取相場と、公開オークションでの落札実績（出典・確認日を明記）を一覧で掲載しています。日本画・洋画・陶磁器・浮世絵など126作家の相場ページへのリンクも掲載しています。",
   alternates: { canonical: PATH },
 };
 
@@ -72,17 +72,17 @@ export default function SakkaSoubaPage() {
                 作家別の買取相場・公開オークション落札実績
               </h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                著名作家の買取相場と、公開オークションでの実際の落札実績（出典・確認日明記）を一覧でまとめました。
+                著名作家の買取相場と、公開オークションでの落札実績（出典・確認日を明記）を一覧で掲載しています。
               </p>
             </div>
           </section>
 
           <div className="max-w-5xl mx-auto px-4 py-10">
-            {/* 結論即答 */}
+            {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：有名作家の作品はいくらで売れる？</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：著名作家の作品の買取相場</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                本ページでは、横山大観・葛飾北斎・北大路魯山人など126作家の買取相場と、公開オークションでの落札実績（出典・確認日明記）を一覧にまとめています。落札価格は手数料の扱い・為替・状態で変動し、海外取引は外貨建てです。同じ作家でも真贋・状態・付属品（共箱・鑑定書）・作品の格で評価は大きく変わります。正確な金額は、複数の買取業者の無料査定で確認するのが確実です。
+                本ページでは、横山大観・葛飾北斎・北大路魯山人など126作家の買取相場と、公開オークションでの落札実績（出典・確認日を明記）を一覧で掲載しています。落札価格は手数料の扱い・為替・状態によって変動し、海外での取引は外貨建てです。同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定でご確認ください。
               </p>
             </div>
             <p className="text-sm text-[#8B7D72] mb-8">最終更新日：{UPDATED}　／　骨董品買取びより編集部</p>
@@ -90,10 +90,10 @@ export default function SakkaSoubaPage() {
             {/* 落札実績インデックス */}
             <section className="mb-14">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-amber-500 pl-4">
-                公開オークション落札実績まとめ（出典付き）
+                公開オークションの落札実績（出典を明記）
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
-                公開オークションの公表データで確認できた、代表的な作家の落札実績です。落札価格は手数料の扱い・為替・状態で変動し、海外取引は外貨建てです。各作家の詳しい相場・実績は作家ページでご確認ください（架空の数値は掲載していません）。
+                公開オークションの公表データで確認できた、代表的な作家の落札実績です。落札価格は手数料の扱い・為替・状態によって変動し、海外での取引は外貨建てです。各作家の詳しい相場と実績は、作家ページでご確認ください（推測による数値は掲載していません）。
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse min-w-[640px]">
@@ -127,7 +127,7 @@ export default function SakkaSoubaPage() {
                 </table>
               </div>
               <p className="text-xs text-[#8B7D72] mt-3">
-                ※ 出典は各作家ページの「公開オークション落札実績」に明記（シンワオークション・SBI・Bonhams・Christie&apos;s・Sotheby&apos;s・MutualArt 等の公表データ・報道）。
+                ※ 出典は、各作家ページの「公開オークション落札実績」に明記しています（シンワオークション・SBI・Bonhams・Christie&apos;s・Sotheby&apos;s・MutualArt 等の公表データ・報道）。
               </p>
             </section>
 
@@ -138,8 +138,8 @@ export default function SakkaSoubaPage() {
                 <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
                   <li>・<strong>調査方法</strong>：公開オークションの公表落札データ（各オークションハウスの公式落札結果・プレスリリース）および各社公式情報をもとに、編集部が確認・要約しています。架空・推定の金額は掲載していません。</li>
                   <li>・<strong>主な出典</strong>：シンワオークション、SBIアートオークション、東京中央オークション、Bonhams、Christie&apos;s、Sotheby&apos;s、MutualArt（公表データ・報道）。個別の出典URLは各作家ページに明記しています。</li>
-                  <li>・<strong>確認日</strong>：各実績の確認日は作家ページに記載。落札価格は手数料の扱い・為替・状態で変動し、海外取引は外貨建てです。</li>
-                  <li>・<strong>更新履歴</strong>：2026年6月に著名作家の落札実績を順次追加・更新しています（掲載作家は今後も拡充予定）。</li>
+                  <li>・<strong>確認日</strong>：各実績の確認日は、作家ページに記載しています。落札価格は手数料の扱い・為替・状態によって変動し、海外での取引は外貨建てです。</li>
+                  <li>・<strong>更新履歴</strong>：2026年6月に、著名作家の落札実績を順次追加・更新しました。掲載作家は今後も追加する予定です。</li>
                   <li>・<strong>引用ポリシー</strong>：本ページのデータは<strong>出典として本ページ（kottokaitori-biyori.com）を明記のうえ引用</strong>いただけます。各落札実績の一次情報は各オークションハウスの公式情報をご確認ください。</li>
                 </ul>
               </div>
@@ -148,10 +148,10 @@ export default function SakkaSoubaPage() {
             {/* 全作家インデックス（分野別） */}
             <section className="mb-14">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-amber-500 pl-4">
-                分野別 作家の買取相場ページ一覧
+                分野別の作家の買取相場ページ一覧
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-6">
-                取り扱い作家の買取相場・鑑定ポイント・市場での評価を分野別にまとめています。お探しの作家のページから詳しい相場をご確認ください。
+                取り扱い作家の買取相場・鑑定のポイント・市場での評価を、分野別に掲載しています。各作家のページで詳しい相場をご確認ください。
               </p>
               <div className="space-y-8">
                 {CATS.map((cat) => {
@@ -176,9 +176,9 @@ export default function SakkaSoubaPage() {
             </section>
 
             <section className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8 mb-4">
-              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">お手元の作品の価値を知るには</h2>
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">お手元の作品の価値を確認する方法</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
-                同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定で確認するのが確実です。
+                同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定でご確認ください。
               </p>
               <Link href="/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded-xl transition">買取業者を比較する</Link>
             </section>

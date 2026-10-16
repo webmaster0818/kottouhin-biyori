@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cat) return {};
   const stats = (soubaDb.stats as any[]).find((s) => s.category === ARTIST_CAT_MAP[slug]);
   const soubaDesc = stats
-    ? `公開オークションの落札実績${stats.resultCount}件（作家${stats.artistCount}名）を一次確認・集計。中央値${stats.median}・最高${stats.max}の相場データも掲載。`
+    ? `公開オークションの落札実績${stats.resultCount}件（作家${stats.artistCount}名）を一次確認して集計しています。中央値${stats.median}・最高${stats.max}の相場データも掲載しています。`
     : "";
   // カテゴリ個別にtitle/descriptionを指定したい場合はJSON側で上書きできる
   const overrides = cat as { metaTitle?: string; metaDescription?: string };
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         : `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`),
     description:
       overrides.metaDescription ??
-      `${cat.name}の買取相場は${cat.priceRange}。${soubaDesc}高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
+      `${cat.name}の買取相場は${cat.priceRange}です。${soubaDesc}高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
     alternates: { canonical: `/category/${slug}` },
   };
 }
@@ -102,7 +102,7 @@ export default async function CategoryPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": `${cat?.name ?? slug}買取おすすめ業者3選【2026年7月】相場・査定のポイント`,
-    "description": `${cat?.name ?? slug}の買取相場は${cat?.priceRange ?? ""}。${cat?.name ?? slug}を高く売るための査定ポイントやおすすめ買取業者を徹底比較。`,
+    "description": `${cat?.name ?? slug}の買取相場は${cat?.priceRange ?? ""}です。${cat?.name ?? slug}を高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
     "datePublished": `${BUILD_DATE}T00:00:00+09:00`,
     "dateModified": `${BUILD_DATE}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },

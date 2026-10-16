@@ -140,11 +140,11 @@ export default async function ComparePage({ params }: Props) {
             <div className="max-w-4xl mx-auto px-4">
               <div className="text-center mb-8">
                 <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RECOMMEND</p>
-                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">どちらを選ぶべき？</h2>
+                <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">目的別の選び方</h2>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-2xl border border-[#E0D5C8] p-6">
-                  <h3 className="font-bold text-[#8B4513] text-lg mb-3">{c.aName} が向いている人</h3>
+                  <h3 className="font-bold text-[#8B4513] text-lg mb-3">{c.aName} が適している方</h3>
                   <ul className="space-y-2">
                     {c.aRecommend.map((r, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-[#5C4A3A]">
@@ -155,7 +155,7 @@ export default async function ComparePage({ params }: Props) {
                   </ul>
                 </div>
                 <div className="bg-white rounded-2xl border border-[#E0D5C8] p-6">
-                  <h3 className="font-bold text-[#8B4513] text-lg mb-3">{c.bName} が向いている人</h3>
+                  <h3 className="font-bold text-[#8B4513] text-lg mb-3">{c.bName} が適している方</h3>
                   <ul className="space-y-2">
                     {c.bRecommend.map((r, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-[#5C4A3A]">
@@ -179,10 +179,10 @@ export default async function ComparePage({ params }: Props) {
               <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
                 <p className="text-[#5C4A3A] leading-relaxed mb-6">{c.summary}</p>
                 <p className="text-sm text-[#8B4513] mb-4">
-                  迷ったら、複数業者に一括査定を依頼して実際の査定額で比較するのが確実です。
+                  判断に迷う場合は、複数の業者に一括査定を依頼し、実際の査定額で比較することをおすすめします。
                 </p>
                 <Link href="/#ranking" className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
-                  おすすめ業者ランキングを見る
+                  おすすめの業者を確認する
                 </Link>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default async function ComparePage({ params }: Props) {
 
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-6 text-center">ほかの比較記事</h2>
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-6 text-center">その他の比較記事</h2>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
                 {(compares as Compare[])
                   .filter((o) => o.slug !== c.slug)
@@ -229,10 +229,10 @@ export default async function ComparePage({ params }: Props) {
 
           <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">骨董品の最高額を知りたいなら</h2>
-              <p className="text-amber-200 mb-8">複数業者への一括査定で、あなたの骨董品の最高値がわかります</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">複数の買取業者の査定額を比較できます</h2>
+              <p className="text-amber-200 mb-8">複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。</p>
               <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
-                おすすめ業者を見る
+                おすすめの業者を確認する
               </Link>
             </div>
           </section>

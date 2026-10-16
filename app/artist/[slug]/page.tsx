@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: (artist as any).seoTitle
       ? `${(artist as any).seoTitle}| 骨董品買取びより`
-      : `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】| 骨董品買取びより`,
-    description: (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
+      : `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法【2026年7月】| 骨董品買取びより`,
+    description: (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}です。査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`,
     alternates: { canonical: `/artist/${slug}` },
   };
 }
@@ -47,17 +47,17 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
       k: "真贋・極め",
       v: `${artist.name}の真作であることの確認が評価を大きく左右します。${
         artist.checkPoints && artist.checkPoints[0]
-          ? `特に「${artist.checkPoints[0]}」が重要なチェックポイントです。`
+          ? `特に「${artist.checkPoints[0]}」が重要な確認点です。`
           : ""
-      }鑑定書・極め書(箱書き)があると有利です。`,
+      }鑑定書・極め書（箱書き）があると、評価が高くなります。`,
     },
     {
       k: "状態",
-      v: `傷・欠け・シミ・直しの有無は査定額に直結します。${artist.category}は特に状態評価がシビアなため、無理な手入れは避け、現状のまま査定に出しましょう。`,
+      v: `傷・欠け・シミ・直しの有無は、査定額に直接影響します。${artist.category}は特に状態の評価が厳しいため、無理な手入れは避け、現状のまま査定に出してください。`,
     },
     {
       k: "付属品・極め",
-      v: `共箱(作家の箱書き)・鑑定書・栞・購入時の資料が揃うほど高評価になります。${
+      v: `共箱（作家の箱書き）・鑑定書・栞・購入時の資料が揃っているほど、評価が高くなります。${
         artist.checkPoints && artist.checkPoints.length > 1
           ? `${artist.name}の場合「${artist.checkPoints[artist.checkPoints.length - 1]}」も確認されます。`
           : ""
@@ -65,21 +65,21 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     },
     {
       k: "作品の格・サイズ",
-      v: `代表作(${worksText})に通じる優品や、${artist.era}の充実期の作、サイズ・図柄の良いものは需要が高く高額になりやすい傾向です。`,
+      v: `代表作（${worksText}）に通じる優品や、${artist.era}の充実期の作品、サイズ・図柄の良いものは需要が高く、高額になりやすい傾向があります。`,
     },
     {
       k: "市場の需要",
-      v: `${artist.name}の${artist.category}は、国内外のコレクター需要を反映できる業者ほど高く評価します。${
-        artist.marketNote ? "相場の背景は下記の市場評価セクションも参考にしてください。" : ""
+      v: `${artist.name}の${artist.category}は、国内外のコレクターの需要を反映できる業者ほど、高く評価する傾向があります。${
+        artist.marketNote ? "相場の背景については、下記の市場での評価もご参照ください。" : ""
       }`,
     },
   ];
 
   // 高く売るコツ(共通)
   const sellTips = [
-    { t: "複数業者に相見積もりを取る", d: `${artist.category}の評価は業者の得意分野で差が出ます。最低3社に査定を依頼し、最高額の業者に売却しましょう。` },
-    { t: "共箱・鑑定書などの付属品を揃える", d: "付属品の有無で査定額が数倍変わることもあります。探してから査定に出しましょう。" },
-    { t: "自分で修復・クリーニングしない", d: "経年の風合いも価値の一部です。素人の手入れは価値を下げるため、現状のまま専門家に任せましょう。" },
+    { t: "複数の業者から見積もりを取る", d: `${artist.category}の評価は、業者の得意分野によって差が出ます。3社以上に査定を依頼し、最も高い金額を提示した業者に売却してください。` },
+    { t: "共箱・鑑定書などの付属品を揃える", d: "付属品の有無によって、査定額が数倍変わる場合もあります。事前に探してから査定に出してください。" },
+    { t: "ご自身で修復・クリーニングを行わない", d: "経年の風合いも価値の一部です。専門知識のない手入れは価値を下げるため、現状のまま専門家にお任せください。" },
     { t: "専門性の高い業者を選ぶ", d: `${artist.name}のような${artist.category}は、骨董・古美術に精通した業者ほど適正に評価できます。` },
   ];
 
@@ -99,19 +99,19 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
   // FAQ(作家データから生成 + 作家個別の追加FAQ)
   const faqs = [
-    { q: `${artist.name}の作品はいくらで売れますか？`, a: (artist as any).priceFaqAnswer ?? `${artist.name}の${artist.category}の買取相場は${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定で確認しましょう。` },
-    { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `はい。${artist.name}のような評価の高い作家の作品は、傷みや欠けがあっても修復・再販を前提に買取されることが多いです。自分で手入れせず、現状のまま査定に出してください。` },
-    { q: `本物かどうか分かりませんが査定できますか？`, a: `問題ありません。専門の査定士が落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品は精巧な写しも存在するため、専門業者での査定がおすすめです。` },
-    { q: `${artist.name}の作品を高く売るには？`, a: `複数業者への相見積もりが最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
+    { q: `${artist.name}の作品はいくらで売れますか？`, a: (artist as any).priceFaqAnswer ?? `${artist.name}の${artist.category}の買取相場は、${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定でご確認ください。` },
+    { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `売却できます。${artist.name}のように評価の高い作家の作品は、傷みや欠けがあっても、修復・再販を前提に買い取られる場合が多くあります。ご自身で手入れせず、現状のまま査定に出してください。` },
+    { q: `本物かどうかわかりませんが査定できますか？`, a: `問題ありません。専門の査定士が、落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品には精巧な写しも存在するため、専門業者での査定をおすすめします。` },
+    { q: `${artist.name}の作品を高く売るには？`, a: `複数の業者から見積もりを取ることが、最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
     ...extraFaqs,
   ];
 
   // 関連ガイド(内部リンク)
   const relatedGuides = [
     { href: "/guide/sakka-souba", label: "作家別の買取相場・落札実績インデックス" },
-    { href: "/guide/satei-kijun", label: "骨董品の査定基準とは" },
+    { href: "/guide/satei-kijun", label: "骨董品の査定基準" },
     { href: "/guide/takaku-uru", label: "骨董品を高く売る方法" },
-    { href: "/guide/ikkatsu-satei", label: "一括査定の活用法" },
+    { href: "/guide/ikkatsu-satei", label: "一括査定の活用方法" },
     { href: "/guide/souba", label: "骨董品の買取相場" },
   ];
 
@@ -129,8 +129,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】`,
-    "description": (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
+    "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法【2026年7月】`,
+    "description": (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}です。査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
     "dateModified": (artist as any).dateModified ? `${(artist as any).dateModified}T00:00:00+09:00` : soubaPoints ? "2026-09-16T00:00:00+09:00" : workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
@@ -209,11 +209,11 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           {/* Intro */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
             <p className="text-[#5C4A3A] leading-relaxed">
-              {artist.name}({artist.era})は、{artist.category}の分野で高く評価される作家です。
+              {artist.name}（{artist.era}）は、{artist.category}の分野で高く評価されている作家です。
               代表作に{worksText}などがあり、買取市場でも安定した需要があります。
-              このページでは、{artist.name}の{artist.category}の<strong>{((artist as any).priceLabel ?? "買取相場") + "("}{artist.priceRange})</strong>、
-              真贋・査定で見られるポイント、高く売るためのコツ、そしておすすめの買取業者まで詳しく解説します。
-              ご自宅に{artist.name}の作品をお持ちで売却をご検討の方はぜひ参考にしてください。
+              本ページでは、{artist.name}の{artist.category}の<strong>{((artist as any).priceLabel ?? "買取相場") + "（"}{artist.priceRange}）</strong>、
+              真贋・査定で確認されるポイント、高く売るためのポイント、おすすめの買取業者をご説明します。
+              {artist.name}の作品の売却をご検討の際の参考としてご活用ください。
             </p>
           </section>
 
@@ -221,7 +221,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
               <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-              {artist.name}とは
+              {artist.name}の経歴
             </h2>
             <div className="space-y-3 text-[#5C4A3A] leading-relaxed">
               <p>{artist.description}</p>
@@ -260,9 +260,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 {artist.name}の作品種別と見分け方
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
-                {artist.name}の名前で流通する品には複数の種別があり、種別によって買取市場での評価は大きく変わります。
-                査定を依頼する前に、お手元の品がどの種別にあたるかを確認しておくと、業者とのやり取りがスムーズになります。
-                なお、判断が難しい場合は自己判断で処分せず、写真査定で確認してください。
+                {artist.name}の名前で流通する品には複数の種別があり、種別によって買取市場での評価が大きく変わります。
+                査定を依頼する前に、お手元の品がどの種別にあたるかを確認しておくと、業者とのやり取りが円滑に進みます。
+                判断が難しい場合は、ご自身の判断で処分せず、写真査定でご確認ください。
               </p>
               <div className="space-y-3">
                 {workTypes.map((w, idx) => (
@@ -273,9 +273,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 ))}
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 種別の見分け方は目安です。精巧なものは実見でなければ判別できません。真贋用語の整理は
+                ※ 種別の見分け方は目安です。精巧なものは、実物を確認しなければ判別できません。真贋用語の整理については
                 <Link href="/learn/gansaku-nisemono-chigai/" className="text-[#8B4513] underline hover:no-underline">贋作・偽物・模造・写しの違い</Link>
-                、品目別の確認点は
+                、品目別の確認点については
                 <Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline hover:no-underline">贋作・偽物の見分け方</Link>
                 もあわせてご覧ください。
               </p>
@@ -294,20 +294,20 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               {priceRangeNote && <p className="text-xs text-[#5C4A3A] mt-2 leading-relaxed text-left md:text-center">{priceRangeNote}</p>}
             </div>
             <p className="text-sm text-[#8B7D72] mb-6">
-              ※作品の状態・サイズ・来歴・付属品（箱・鑑定書）の有無によって大きく変動します。正確な査定は専門業者への依頼をおすすめします。
+              ※作品の状態・サイズ・来歴・付属品（箱・鑑定書）の有無によって、大きく変動します。正確な査定は、専門業者への依頼をおすすめします。
             </p>
             {soubaPoints && (
               <div className="mb-8">
                 <h3 className="font-bold text-[#2C1810] mb-3">作品の種別ごとの相場の見方</h3>
                 {kaitoriResults ? (
                   <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
-                    {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
-                    種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績と、買取業者が公開している買取実績以外の金額は掲載していません。
+                    {artist.name}の名前で流通する品は、種別によって市場が分かれており、ひとつの金額の幅では示せません。
+                    種別ごとの評価の基準を以下に整理しています。なお、本ページでは、出典を明記できる公開オークションの落札実績と、買取業者が公開している買取実績以外の金額は掲載していません。
                   </p>
                 ) : (
                 <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
-                  {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
-                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績以外の金額は掲載していません。
+                  {artist.name}の名前で流通する品は、種別によって市場が分かれており、ひとつの金額の幅では示せません。
+                  種別ごとの評価の基準を以下に整理しています。なお、本ページでは、出典を明記できる公開オークションの落札実績以外の金額は掲載していません。
                 </p>
                 )}
                 <div className="space-y-3">
@@ -376,7 +376,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 </table>
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 上記は公開オークションでの過去の落札実績の一部です。落札価格は手数料の扱い・為替・開催時期で変動し、真贋・状態・作品の格により評価は大きく異なります。お手元の品の価格は無料査定でご確認ください。
+                ※ 上記は、公開オークションでの過去の落札実績の一部です。落札価格は手数料の扱い・為替・開催時期によって変動し、真贋・状態・作品の格によって評価は大きく異なります。お手元の品の価格は、無料査定でご確認ください。
               </p>
             </section>
           )}
@@ -415,7 +415,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 </table>
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 各業者が公開している過去の買取事例で、価格は掲載当日のものです（各業者とも価格を保証するものではないと明記）。同じ図柄でも摺りの時期・状態・揃いの有無で金額は大きく変わります。
+                ※ 各業者が公開している過去の買取事例であり、価格は掲載当日のものです（各業者とも、価格を保証するものではないと明記しています）。同じ図柄でも、摺りの時期・状態・揃いの有無によって金額は大きく変わります。
               </p>
             </section>
           )}
@@ -424,7 +424,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
               <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-              {artist.name}作品の査定・鑑定の出し方
+              {artist.name}の作品の査定・鑑定の依頼方法
             </h2>
             {(artist as any).appraisalNote && (
               <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 mb-5">
@@ -433,12 +433,12 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </div>
             )}
             <ol className="space-y-3 mb-5">
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</span><span><strong className="text-[#2C1810]">写真査定（無料）で概算を知る：</strong>スマホ写真をLINE・フォームで送るだけで概算がわかります。この段階で複数業者に送り、評価の高い業者を見極めます。</span></li>
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</span><span><strong className="text-[#2C1810]">現物査定（出張・持込・宅配）：</strong>共箱・箱書・鑑定書・購入時の資料を必ず一緒に見せます。付属品の有無で評価が大きく変わります。</span></li>
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</span><span><strong className="text-[#2C1810]">正式な鑑定書が必要な場合：</strong>鑑定機関・専門家への依頼は費用と日数がかかるため、まず買取業者の無料査定で価値の目安を確認し、高額が見込める場合に検討するのが実務的な順序です。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</span><span><strong className="text-[#2C1810]">写真査定（無料）で概算を確認する：</strong>スマートフォンで撮影した写真をLINEやフォームで送ると、概算の査定額を確認できます。この段階で複数の業者に送り、評価の高い業者を見極めます。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</span><span><strong className="text-[#2C1810]">現物査定（出張・持ち込み・宅配）：</strong>共箱・箱書・鑑定書・購入時の資料を、必ず一緒に提示してください。付属品の有無によって、評価が大きく変わります。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</span><span><strong className="text-[#2C1810]">正式な鑑定書が必要な場合：</strong>鑑定機関・専門家への依頼には費用と日数がかかるため、まず買取業者の無料査定で価値の目安を確認し、高額が見込める場合に依頼を検討する順序が適しています。</span></li>
             </ol>
             <p className="text-xs text-[#8B7D72] leading-relaxed">
-              ※ 鑑定書・共箱の有無は評価を左右する最重要要素のひとつです。{(artist as any).auctionResults ? "上の落札実績でも、鑑定書・箱書の有無や帰属の確かさが価格差の大きな要因になっています。" : ""}
+              ※ 鑑定書・共箱の有無は、評価を左右する最も重要な要素のひとつです。{(artist as any).auctionResults ? "上記の落札実績においても、鑑定書・箱書の有無や帰属の確かさが、価格差の大きな要因となっています。" : ""}
             </p>
           </section>
 
@@ -446,7 +446,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
               <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-              {artist.name}の作品を高く売る4つのコツ
+              {artist.name}の作品を高く売るための4つのポイント
             </h2>
             <div className="space-y-4">
               {sellTips.map((t, idx) => (
@@ -470,8 +470,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               {artist.name}作品の鑑定・真贋のポイント
             </h2>
             <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
-              {artist.name}の{artist.category}は人気が高く、精巧な写しや贋作が市場に出回ることもあります。
-              以下のポイントは査定士が真贋・評価を判断する際に重視する点です。判断が難しい場合は無理に自己判断せず、専門業者の査定を受けましょう。
+              {artist.name}の{artist.category}は人気が高く、精巧な写しや贋作が市場に出回る場合があります。
+              以下は、査定士が真贋・評価を判断する際に重視する点です。判断が難しい場合は、ご自身で判断せず、専門業者の査定をお受けください。
             </p>
             <div className="space-y-4">
               {artist.checkPoints.map((cp, idx) => (
@@ -493,8 +493,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 {artist.name}の査定で見られるポイント
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
-                査定士が実物を見るときに確認する項目です。どれか一つで真贋や評価が決まるわけではなく、複数の要素の整合性から判断されます。
-                事前に自分でも確認しておくと、査定結果の説明を理解しやすくなります。
+                査定士が実物を確認する際の項目です。いずれか一つで真贋や評価が決まるわけではなく、複数の要素の整合性から判断されます。
+                事前にご自身でも確認しておくと、査定結果の説明を理解しやすくなります。
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse min-w-[480px]">
@@ -510,10 +510,10 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
                 ※ 共箱・箱書きの見方は
-                <Link href="/learn/tomobako-hakogaki/" className="text-[#8B4513] underline hover:no-underline">共箱・箱書きとは</Link>
+                <Link href="/learn/tomobako-hakogaki/" className="text-[#8B4513] underline hover:no-underline">共箱・箱書きの解説</Link>
                 、本物に共通する判断材料は
                 <Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline hover:no-underline">本物に共通する5つの特徴</Link>
-                で詳しく解説しています。
+                でご説明しています。
               </p>
             </section>
           )}
@@ -523,7 +523,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
                 <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-                {artist.name}の作品を売る前に注意したいこと
+                {artist.name}の作品を売却する前の注意点
               </h2>
               <ul className="space-y-3">
                 {preSaleNotes.map((n, idx) => (
@@ -535,7 +535,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </ul>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
                 ※ 保管方法の基本は
-                <Link href="/learn/how-to-store/" className="text-[#8B4513] underline hover:no-underline">骨董品の正しい保管方法</Link>
+                <Link href="/learn/how-to-store/" className="text-[#8B4513] underline hover:no-underline">骨董品の適切な保管方法</Link>
                 をご覧ください。
               </p>
             </section>
@@ -546,7 +546,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
                 <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-                あわせて確認したい浮世絵のページ
+                関連する浮世絵のページ
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {relatedLinks.map((l) => (
@@ -576,16 +576,16 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           {/* CTA */}
           <section className="bg-gradient-to-br from-[#8B4513] to-[#6B3410] rounded-2xl p-8 text-white text-center">
             <h2 className="font-serif-jp text-xl font-bold mb-3">
-              {artist.name}の作品をお持ちですか？
+              {artist.name}の作品の査定について
             </h2>
             <p className="text-amber-200 mb-6 text-sm">
-              複数の業者に査定を依頼して、最も高い査定額で売却しましょう
+              複数の業者に査定を依頼し、査定額を比較したうえで売却することをおすすめします
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               {companies.slice(0, 3).map((c) => (
                 <a key={c.id} href={c.officialUrl} target="_blank" rel="noopener noreferrer"
                   className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-3 rounded-xl transition text-sm">
-                  {c.name}で査定
+                  {c.name}で査定を依頼する
                 </a>
               ))}
             </div>
@@ -609,7 +609,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </div>
               {categoryExists && (
                 <Link href={`/category/${artist.categorySlug}`} className="inline-block mt-4 text-sm text-[#8B4513] font-medium hover:underline">
-                  → {artist.category}の買取相場・おすすめ業者をもっと見る
+                  → {artist.category}の買取相場・おすすめ業者の一覧
                 </Link>
               )}
             </section>
@@ -641,10 +641,10 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               <h3 className="font-bold text-[#2C1810] text-sm mb-3">真贋・鑑定を詳しく知る</h3>
               <div className="grid sm:grid-cols-2 gap-3 mb-6">
                 {[
-                  { href: "/learn/gansaku-nisemono-chigai/", t: "贋作・偽物・模造・写しの違い", d: "査定前に押さえたい真贋用語の整理" },
+                  { href: "/learn/gansaku-nisemono-chigai/", t: "贋作・偽物・模造・写しの違い", d: "査定前に確認すべき真贋用語の整理" },
                   { href: "/learn/how-to-identify-fakes/", t: "贋作・偽物の見分け方", d: "絵画・掛軸など品目別のチェックポイント" },
-                  { href: "/learn/honmono-mikiwake/", t: "本物に共通する5つの特徴", d: "単独の決め手はあるのかへの回答" },
-                  { href: "/learn/kagaku-kantei/", t: "科学的鑑定でわかること・わからないこと", d: "分析による真贋判定の仕組みと限界" },
+                  { href: "/learn/honmono-mikiwake/", t: "本物に共通する5つの特徴", d: "単独の決め手の有無について" },
+                  { href: "/learn/kagaku-kantei/", t: "科学的鑑定でわかること・わからないこと", d: "分析による真贋判定の仕組みと適用範囲" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}
                     className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
@@ -654,7 +654,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 ))}
               </div>
 
-              <h3 className="font-bold text-[#2C1810] text-sm mb-3">品目別の買取相場・業者を見る</h3>
+              <h3 className="font-bold text-[#2C1810] text-sm mb-3">品目別の買取相場・業者</h3>
               <div className="flex flex-wrap gap-2 mb-6">
                 {[
                   ...(categoryExists ? [{ href: `/category/${artist.categorySlug}/`, t: `${artist.category}の買取` }] : []),
@@ -669,7 +669,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 ))}
               </div>
 
-              <h3 className="font-bold text-[#2C1810] text-sm mb-3">買取業者の評判を確認する</h3>
+              <h3 className="font-bold text-[#2C1810] text-sm mb-3">買取業者の評判</h3>
               <div className="grid sm:grid-cols-3 gap-3">
                 {companies.slice(0, 3).map((c) => (
                   <Link key={c.id} href={`/review/${c.id}/`}

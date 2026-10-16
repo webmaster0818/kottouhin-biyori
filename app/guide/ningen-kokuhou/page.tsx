@@ -6,8 +6,8 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "人間国宝の作品買取｜高額査定のポイントと相場｜骨董品買取びより",
-  description: "人間国宝（重要無形文化財保持者）の作品買取について解説。陶芸・漆芸・染織・金工など分野別の相場、高額査定のポイント、人気作家一覧をまとめました。",
+  title: "人間国宝の作品買取｜査定のポイントと相場｜骨董品買取びより",
+  description: "人間国宝（重要無形文化財保持者）の作品の買取についてご説明します。陶芸・漆芸・染織・金工など分野別の相場、高額査定のポイント、主な作家の一覧を掲載しています。",
   alternates: { canonical: "/guide/ningen-kokuhou" },
 };
 
@@ -16,12 +16,12 @@ const hikakaku = companies.find((c) => c.id === "hikakaku")!;
 const fields = [
   {
     name: "陶芸",
-    description: "人間国宝の作品の中で最も買取需要が高いジャンルです。茶碗・花器・皿などの陶磁器作品は、コレクターや茶人からの需要が安定しています。特に志野・備前・萩・唐津・有田などの伝統窯の人間国宝は高額査定が期待できます。",
+    description: "人間国宝の作品の中で、最も買取の需要が高いジャンルです。茶碗・花器・皿などの陶磁器作品は、コレクターや茶道の愛好者からの需要が安定しています。特に、志野・備前・萩・唐津・有田などの伝統的な窯の人間国宝の作品は、高額査定が期待できます。",
     artists: [
       { name: "荒川豊蔵", note: "志野焼。桃山時代の志野を再興。100万〜500万円", specialty: "志野" },
       { name: "金重陶陽", note: "備前焼。備前焼中興の祖と称される。50万〜300万円", specialty: "備前" },
       { name: "三輪壽雪（十一代三輪休雪）", note: "萩焼。白萩の独自世界。50万〜300万円", specialty: "萩" },
-      { name: "濱田庄司", note: "民藝運動の中心人物。益子焼の巨匠。20万〜200万円", specialty: "益子" },
+      { name: "濱田庄司", note: "民藝運動の中心人物。益子焼を代表する陶芸家。20万〜200万円", specialty: "益子" },
       { name: "富本憲吉", note: "人間国宝第一号の陶芸家。色絵磁器。30万〜200万円", specialty: "色絵" },
       { name: "清水卯一", note: "鉄釉の独自技法。30万〜200万円", specialty: "鉄釉" },
       { name: "島岡達三", note: "縄文象嵌の技法。20万〜150万円", specialty: "象嵌" },
@@ -33,7 +33,7 @@ const fields = [
     name: "漆芸",
     description: "蒔絵・沈金・螺鈿などの漆芸技法は日本独自の伝統工芸であり、人間国宝の作品は国内外で高い評価を受けています。香合・棗・硯箱・文箱など、用途に応じた多彩な作品があります。",
     artists: [
-      { name: "松田権六", note: "蒔絵の最高峰。100万〜500万円以上", specialty: "蒔絵" },
+      { name: "松田権六", note: "蒔絵の第一人者。100万〜500万円以上", specialty: "蒔絵" },
       { name: "大場松魚", note: "蒔絵。金銀の繊細な表現。50万〜200万円", specialty: "蒔絵" },
       { name: "前大峰", note: "沈金。能登の伝統技法。30万〜150万円", specialty: "沈金" },
     ],
@@ -41,7 +41,7 @@ const fields = [
   },
   {
     name: "染織",
-    description: "着物や帯の制作技法で認定された人間国宝の作品は、着物コレクターから高い需要があります。証紙や共箱の有無が査定額を大きく左右します。",
+    description: "着物や帯の制作技法で認定された人間国宝の作品は、着物のコレクターから高い需要があります。証紙や共箱の有無が、査定額を大きく左右します。",
     artists: [
       { name: "志村ふくみ", note: "紬織。草木染の第一人者。30万〜200万円", specialty: "紬織" },
       { name: "羽田登喜男", note: "友禅。京友禅と加賀友禅の融合。30万〜150万円", specialty: "友禅" },
@@ -63,19 +63,19 @@ const fields = [
 const sellingTips = [
   {
     title: "共箱・証紙を必ず揃える",
-    text: "人間国宝の作品では、共箱（作家本人が箱書きをした箱）と証紙の有無が査定額を大きく左右します。共箱があれば真作の証明になり、査定額が2〜3倍変わることも珍しくありません。箱や袋、包み紙も捨てずに保管しておきましょう。",
+    text: "人間国宝の作品では、共箱（作家本人が箱書きをした箱）と証紙の有無が、査定額を大きく左右します。共箱は真作の証明となり、査定額が2〜3倍変わることも珍しくありません。箱や袋、包み紙も処分せずに保管してください。",
   },
   {
     title: "専門性の高い業者に依頼する",
-    text: "人間国宝の作品は一般のリサイクルショップでは適正に評価できないことが多いです。陶芸なら陶磁器専門、着物なら着物専門の買取業者に依頼することで、数倍の査定額の差が生じることがあります。",
+    text: "人間国宝の作品は、一般のリサイクルショップでは適正に評価できない場合が多くあります。陶芸作品は陶磁器の専門業者、着物は着物の専門業者に依頼することで、査定額に数倍の差が生じる場合があります。",
   },
   {
-    title: "複数業者に相見積もりを取る",
-    text: "人間国宝の作品は業者によって在庫状況や販路が異なるため、査定額に大きな差が出ます。最低でも3社以上に査定を依頼し、最高額を提示した業者に売却するのが鉄則です。ヒカカク！なら一括で複数社に査定依頼が可能です。",
+    title: "複数の業者から見積もりを取る",
+    text: "人間国宝の作品は、業者によって在庫状況や販路が異なるため、査定額に大きな差が出ます。3社以上に査定を依頼し、最も高い金額を提示した業者に売却することが基本です。ヒカカク！では、一括で複数の業者に査定を依頼できます。",
   },
   {
-    title: "自分でクリーニングしない",
-    text: "人間国宝の作品は繊細なものが多く、素人のクリーニングで傷をつけてしまうリスクがあります。特に漆芸品は水拭きで漆が傷むことがあり、陶芸品は研磨剤で釉薬が削れてしまうことがあります。そのままの状態で査定に出してください。",
+    title: "ご自身でクリーニングを行わない",
+    text: "人間国宝の作品は繊細なものが多く、専門知識のないクリーニングによって傷が付くおそれがあります。特に、漆芸品は水拭きで漆が傷む場合があり、陶芸品は研磨剤で釉薬が削れる場合があります。現状のまま査定に出してください。",
   },
 ];
 
@@ -105,11 +105,11 @@ export default function NingenKokuhouPage() {
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
             <p className="text-[#D4A574] text-sm tracking-widest mb-4">LIVING NATIONAL TREASURE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              人間国宝の作品買取<br className="hidden md:inline" />高額査定のポイントと相場
+              人間国宝の作品買取<br className="hidden md:inline" />査定のポイントと相場
             </h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              重要無形文化財保持者（人間国宝）の作品は<br className="hidden md:inline" />
-              高い芸術性と希少性から高額査定が期待できます。
+              重要無形文化財保持者（人間国宝）の作品は、<br className="hidden md:inline" />
+              高い芸術性と希少性から、高額査定が期待できます。
             </p>
           </div>
         </section>
@@ -117,20 +117,20 @@ export default function NingenKokuhouPage() {
         {/* 人間国宝とは */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            {/* 結論即答 */}
+            {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：人間国宝の作品はいくらで売れる？</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：人間国宝の作品の買取相場</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                分野により異なりますが、買取相場の目安は陶芸20万〜500万円、漆芸30万〜500万円以上、染織20万〜300万円、金工・彫金20万〜150万円です。共箱・証紙の有無で査定額が2〜3倍変わることも珍しくありません。故人となった人間国宝の作品は「もう新作が生まれない」希少性から市場価値が上昇する傾向にあります。専門性の高い業者3社以上に相見積もりを取るのが高額売却の鉄則です。
+                買取相場の目安は分野により異なり、陶芸20万〜500万円、漆芸30万〜500万円以上、染織20万〜300万円、金工・彫金20万〜150万円です。共箱・証紙の有無によって、査定額が2〜3倍変わることも珍しくありません。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">人間国宝とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">
-                人間国宝とは、文化財保護法に基づき「重要無形文化財の保持者」として文部科学大臣から認定された個人のことです。正式には「重要無形文化財保持者」と言い、「人間国宝」は通称です。陶芸・漆芸・染織・金工・木竹工・刀剣など、伝統的な工芸技術の分野で卓越した技を持つ人物が認定されます。
+                人間国宝とは、文化財保護法に基づき「重要無形文化財の保持者」として文部科学大臣から認定された個人を指します。正式には「重要無形文化財保持者」といい、「人間国宝」は通称です。陶芸・漆芸・染織・金工・木竹工・刀剣など、伝統的な工芸技術の分野で卓越した技を持つ人物が認定されます。
               </p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm">
-                人間国宝の認定は存命中のみ有効で、亡くなると認定は解除されます。そのため、故人となった人間国宝の作品は「もう新作が生まれない」という希少性から、市場価値が上昇する傾向にあります。特に晩年の代表作や、受賞歴のある作品は極めて高額で取引されています。
+                人間国宝の認定は存命中のみ有効で、亡くなると認定は解除されます。そのため、故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。特に、晩年の代表作や受賞歴のある作品は、非常に高額で取引されています。
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function NingenKokuhouPage() {
           <div className="max-w-4xl mx-auto px-4">
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SELLING TIPS</p>
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">人間国宝の作品を高く売るコツ</h2>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">人間国宝の作品を高く売るためのポイント</h2>
             </div>
             <div className="space-y-6">
               {sellingTips.map((t, i) => (
@@ -191,10 +191,10 @@ export default function NingenKokuhouPage() {
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
-              人間国宝の作品を無料査定
+              人間国宝の作品の無料査定
             </h2>
             <p className="text-amber-200 mb-8">
-              専門業者の査定で、お持ちの作品の適正価格がわかります
+              専門業者の査定で、お持ちの作品の適正価格を確認できます。
             </p>
             <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
               おすすめ業者を見る

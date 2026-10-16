@@ -31,7 +31,7 @@ const verifiedAt = (c: C) => (c as { verifiedData?: { verifiedAt?: string } }).v
 
 export const metadata: Metadata = {
   title: `骨董品買取業者の口コミ・評判レビュー一覧【2026年9月】掲載${reviewed.length}社｜骨董品買取びより`,
-  description: `骨董品買取びよりが掲載している買取業者${reviewed.length}社のレビューページ一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日をまとめ、業者ごとの詳細レビューへリンクしています。`,
+  description: `骨董品買取びよりに掲載している買取業者${reviewed.length}社のレビューページの一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日を掲載し、業者ごとの詳細なレビューページへのリンクを設けています。`,
   alternates: { canonical: PATH },
 };
 
@@ -80,7 +80,7 @@ export default function ReviewIndexPage() {
                 骨董品買取業者の口コミ・評判レビュー一覧
               </h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                当サイトが個別ページとしてまとめている買取業者{reviewed.length}社の一覧です。各社の業態・対応エリア・買取方法を確認し、詳細レビューへお進みください。
+                当サイトが個別ページを設けている買取業者{reviewed.length}社の一覧です。各社の業態・対応エリア・買取方法をご確認のうえ、詳細なレビューページをご覧ください。
               </p>
             </div>
           </section>
@@ -90,18 +90,18 @@ export default function ReviewIndexPage() {
 
             <section className="mb-12">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-amber-500 pl-4">
-                このページの使い方
+                本ページの利用方法
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">
-                骨董品の買取業者は、骨董・古美術を専門に扱う業者、ブランド品や貴金属を主力とする総合リユース業者、複数社へまとめて査定を依頼できる一括査定サービスなど、業態がはっきり分かれています。同じ品を出しても、どの業態に持ち込むかで見てもらえる角度が変わるため、まずは各社がどういう立ち位置の業者なのかを把握しておくことが、業者選びの出発点になります。
+                骨董品の買取業者は、骨董・古美術を専門に扱う業者、ブランド品や貴金属を主力とする総合リユース業者、複数の業者にまとめて査定を依頼できる一括査定サービスなど、業態が明確に分かれています。同じ品物であっても、どの業態の業者に依頼するかによって評価の観点が異なるため、各社の業態を把握しておくことが、業者選びの基本となります。
               </p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">
-                以下の一覧では、業者名・一言での説明・業態・対応エリア・買取方法を並べています。掲載している内容は各社の公式サイトで確認した事実情報にもとづくもので、確認日も併記しました。料金や対応条件は変更されることがあるため、最終的な確認は各社の公式サイトと無料査定で行ってください。各業者名のリンク先には、その業者の特徴・メリットとデメリット・利用の流れ・よくある質問をまとめた個別のレビューページがあります。
+                以下の一覧では、業者名・概要・業態・対応エリア・買取方法を掲載しています。掲載内容は各社の公式サイトで確認した事実情報にもとづくもので、確認日も併記しています。料金や対応条件は変更される場合があるため、ご利用前に、公式サイトおよび無料査定にて最新情報をご確認ください。各業者名のリンク先には、その業者の特徴・メリットとデメリット・利用の流れ・よくある質問を掲載した個別のレビューページがあります。
               </p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed">
-                なお、買取査定の結果は品物そのものの内容によって変わるため、どの業者が一番高いと一律に言い切ることはできません。骨董品の売却では、最低でも2〜3社の無料査定を比較したうえで判断することをおすすめします。品目ごとの相性を含めた比較は
+                なお、買取査定の結果は品物の内容によって異なるため、特定の業者の査定額が常に最も高いとは言えません。骨董品の売却では、2〜3社以上の無料査定を比較したうえで判断することをおすすめします。品目ごとの適性を含めた比較は、
                 <Link href="/guide/gyosha-hikaku/" className="text-[#8B4513] font-bold hover:underline">骨董品買取業者の比較</Link>
-                にまとめています。
+                に掲載しています。
               </p>
             </section>
 
@@ -137,7 +137,7 @@ export default function ReviewIndexPage() {
                         <dd className="flex-1">{(c.buyMethod || []).join("・")}</dd>
                       </div>
                       <div className="flex gap-2">
-                        <dt className="text-[#8B7D72] shrink-0 w-20">こんな方に</dt>
+                        <dt className="text-[#8B7D72] shrink-0 w-20">適している方</dt>
                         <dd className="flex-1">{c.bestFor}</dd>
                       </div>
                       <div className="flex gap-2">
@@ -149,31 +149,31 @@ export default function ReviewIndexPage() {
                       href={`/review/${c.slug}/`}
                       className="inline-block text-sm bg-[#F5ECD7] text-[#8B4513] rounded-lg px-4 py-2 font-bold hover:bg-[#ecdcc0] transition"
                     >
-                      {c.name}のレビューを読む
+                      {c.name}のレビュー
                     </Link>
                   </article>
                 ))}
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 一覧の並び順は当サイト編集部が掲載順として設定しているもので、査定額の高さを保証する順位ではありません。記載している事実情報は各レビューページに記した確認日時点のものです。
+                ※ 一覧の並び順は当サイト編集部が設定した掲載順であり、査定額の高さを示す順位ではありません。記載している事実情報は、各レビューページに記載した確認日時点のものです。
               </p>
             </section>
 
             <section className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">レビューページの読み方</h2>
               <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
-                <li>・<strong>業態を先に見る</strong>：骨董・古美術の専門店か、総合リユースか、一括査定サービスかによって、得意な品目と査定の進め方が異なります。</li>
-                <li>・<strong>買取方法を確認する</strong>：出張・宅配・店頭のどれに対応しているかは業者ごとに違います。割れやすい陶磁器や大型の品は、自宅で見てもらえる出張買取が向いています。</li>
-                <li>・<strong>対応エリアを確かめる</strong>：全国対応の業者と、店舗のある地域を中心に対応する業者があります。お住まいの地域が対象かどうかを先に確認してください。</li>
+                <li>・<strong>業態を確認する</strong>：骨董・古美術の専門業者か、総合リユース業者か、一括査定サービスかによって、得意な品目と査定の進め方が異なります。</li>
+                <li>・<strong>買取方法を確認する</strong>：出張・宅配・店頭のいずれに対応しているかは、業者ごとに異なります。割れやすい陶磁器や大型の品は、自宅で査定を受けられる出張買取が適しています。</li>
+                <li>・<strong>対応エリアを確認する</strong>：全国に対応する業者と、店舗のある地域を中心に対応する業者があります。お住まいの地域が対象かどうかを、事前にご確認ください。</li>
                 <li>・<strong>確認日を見る</strong>：各ページに記載した公式確認日より後に、料金や条件が変更されている可能性があります。申し込み前に公式サイトで最新の内容をご確認ください。</li>
-                <li>・<strong>複数社を比べる</strong>：1社だけでは提示額が適正かどうか判断できません。無料査定を複数社に依頼し、内容の説明も含めて比較してください。</li>
+                <li>・<strong>複数の業者を比較する</strong>：1社だけでは、提示額が適正かどうかを判断できません。無料査定を複数の業者に依頼し、説明の内容も含めて比較してください。</li>
               </ul>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded-xl transition">
                   業者を目的別に比較する
                 </Link>
                 <Link href="/#ranking" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] font-bold px-8 py-3 rounded-xl hover:bg-[#FAF7F2] transition">
-                  おすすめ業者ランキングを見る
+                  おすすめの業者を確認する
                 </Link>
               </div>
             </section>

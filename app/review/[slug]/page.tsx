@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
   return {
-    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
-    description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を徹底検証。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法を詳しく解説します。`,
+    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の特徴と利用方法｜骨董品買取びより`,
+    description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法をご説明します。`,
     alternates: { canonical: `/review/${slug}` },
   };
 }
@@ -57,7 +57,7 @@ export default async function DynamicReviewPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": `${company.name}の口コミ・評判【${asOfLabel}】`,
-    "description": `${company.name}の口コミ・評判を徹底検証。${company.tagline}。`,
+    "description": `${company.name}の口コミ・評判と特徴を掲載しています。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
     "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
@@ -122,7 +122,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                   )}
                   {sec.links && sec.links.length > 0 && (
                     <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
-                      <p className="text-sm font-bold text-[#8B4513] mb-2">あわせて読みたい</p>
+                      <p className="text-sm font-bold text-[#8B4513] mb-2">関連ページ</p>
                       <ul className="space-y-1.5">
                         {sec.links.map((l, i) => (
                           <li key={i} className="text-sm leading-relaxed flex gap-2">
@@ -167,7 +167,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 {(company as any).h1 ?? `${company.name}の口コミ・評判`}
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                {(company as any).heroLead ?? `骨董品買取の実力を徹底検証【${asOfLabel}】`}
+                {(company as any).heroLead ?? `骨董品買取の特徴と利用方法【${asOfLabel}】`}
               </p>
             </div>
           </section>
@@ -183,7 +183,7 @@ export default async function DynamicReviewPage({ params }: Props) {
             </div>
           </div>
 
-          {/* 検索意図への即答（店舗一覧など。placement: "top" のセクション） */}
+          {/* 検索意図への回答（店舗一覧など。placement: "top" のセクション） */}
           {topicSections.filter((sec) => sec.placement === "top").map(renderTopic)}
 
           {/* Overview */}
@@ -274,7 +274,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                   <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                     {company.name}の公開口コミの傾向
                   </h2>
-                  <p className="text-xs text-[#8B7D72] mt-3">出典：{(company as any).reviewTrend.source}。口コミ本文は転載せず傾向の要約のみを掲載しています。</p>
+                  <p className="text-xs text-[#8B7D72] mt-3">出典：{(company as any).reviewTrend.source}。口コミの本文は転載せず、傾向の要約のみを掲載しています。</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
@@ -331,7 +331,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                   ))}
                 </div>
                 <p className="text-xs text-[#8B7D72] mt-4 text-center">
-                  最新・全件の口コミはGoogleマップでご確認ください。
+                  最新の口コミと全件の口コミは、Googleマップでご確認ください。
                 </p>
               </div>
             </section>
@@ -381,7 +381,7 @@ export default async function DynamicReviewPage({ params }: Props) {
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
               <div className="bg-gradient-to-br from-[#FAF7F2] to-[#F5EBDD] rounded-2xl p-8 border border-[#E0D5C8]">
-                <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4">こんな方におすすめ</h2>
+                <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4">適している方</h2>
                 <p className="text-[#5C4A3A] leading-relaxed text-lg">{company.bestFor}</p>
               </div>
             </div>
@@ -414,7 +414,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 {company.name}に査定を依頼する
               </h2>
               <p className="text-[#5C4A3A] mb-8 leading-relaxed max-w-2xl mx-auto">
-                公式サイトから無料査定の申し込みができます。査定料・キャンセル料は基本的に無料です。
+                公式サイトから無料査定を申し込めます。査定料・キャンセル料は、原則として無料です。
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <a

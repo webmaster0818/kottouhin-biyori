@@ -26,7 +26,7 @@ export default async function Image() {
           骨董品買取びより
         </div>
         <div style={{ fontSize: 38, fontWeight: 500, opacity: 0.92, lineHeight: 1.3, maxWidth: 1000 }}>
-          信頼できる骨董品買取店を比較・口コミで紹介
+          骨董品買取業者の比較と口コミ情報
         </div>
         <div style={{ marginTop: 60, fontSize: 24, fontWeight: 400, opacity: 0.7 }}>
           2026年7月版

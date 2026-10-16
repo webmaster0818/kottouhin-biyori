@@ -6,41 +6,41 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品買取のトラブル事例と対策【2026年7月】失敗しないための知識｜骨董品買取びより",
-  description: "骨董品買取で実際に起きたトラブル事例5選と具体的な対策方法を解説。押し買い、安値買い叩き、キャンセル不可など、知っておくべき注意点をまとめました。",
+  title: "骨董品買取のトラブル事例と対策【2026年7月】売却前に確認すべき注意点｜骨董品買取びより",
+  description: "骨董品買取で起こりやすいトラブルの事例5つと、具体的な対策をご説明します。押し買い、不当な安値での買取、キャンセルの拒否など、事前に確認すべき注意点を掲載しています。",
   alternates: { canonical: "/guide/trouble" },
 };
 
 const troubles = [
   {
     title: "押し買い（訪問購入のトラブル）",
-    case: "突然自宅に訪問してきた業者に、「今すぐ売らないと値下がりする」と脅されるように言われ、納得できない金額で売却してしまった。後日クーリングオフを申し出たが、「骨董品は対象外」と拒否された。",
-    solution: "訪問購入にもクーリングオフ制度が適用されます（契約から8日以内）。突然の訪問には応じず、自分から依頼した業者のみと取引しましょう。当サイトで紹介している3社は、いずれもユーザーが依頼した場合のみ訪問する信頼できる業者です。",
-    prevention: "自分から依頼していない業者の訪問には絶対に応じない",
+    case: "突然自宅を訪問した業者から「今すぐ売らないと値下がりする」と強い口調で迫られ、納得できない金額で売却した事例です。後日クーリングオフを申し出たところ、「骨董品は対象外」と拒否されました。",
+    solution: "訪問購入にも、クーリングオフ制度が適用されます（契約書面の受領日から8日以内）。突然の訪問には応じず、ご自身から依頼した業者とのみ取引してください。当サイトで紹介している3社は、いずれも利用者から依頼があった場合にのみ対応する業者です。",
+    prevention: "ご自身から依頼していない業者の訪問には応じない",
   },
   {
-    title: "安値での買い叩き",
-    case: "「この掛軸は偽物の可能性が高いので1万円が限界」と言われて売却。後日、同じ掛軸がその業者のサイトで50万円で販売されていたことを知った。",
-    solution: "1社だけの査定で売却すると、このようなリスクがあります。必ず複数社に査定を依頼し、相場を確認してから売却しましょう。ヒカカク！で一括査定すれば、複数業者の査定額を比較でき、適正価格での売却が可能です。",
-    prevention: "必ず3社以上に査定を依頼して相見積もりを取る",
+    title: "不当な安値での買取",
+    case: "「この掛軸は偽物の可能性が高いため、1万円が上限」と言われて売却した事例です。後日、同じ掛軸がその業者のサイトで50万円で販売されていることが判明しました。",
+    solution: "1社だけの査定で売却すると、このようなおそれがあります。必ず複数の業者に査定を依頼し、相場を確認してから売却してください。ヒカカク！で一括査定を利用すれば、複数の業者の査定額を比較でき、適正価格での売却につながります。",
+    prevention: "3社以上に査定を依頼し、見積もりを比較する",
   },
   {
-    title: "査定後のキャンセル拒否・違約金請求",
-    case: "出張買取で査定を依頼したが、提示された金額に納得できずキャンセルしようとしたところ、「出張費5,000円を支払え」と請求された。",
-    solution: "査定前に「査定費用・出張費用は無料か」「キャンセル時の費用は発生するか」を必ず確認しましょう。当サイトで紹介している3社は、いずれも査定・出張費用が無料で、キャンセルも無料です。",
+    title: "査定後のキャンセルの拒否・違約金の請求",
+    case: "出張買取で査定を依頼したものの、提示された金額に納得できずキャンセルを申し出たところ、出張費5,000円を請求された事例です。",
+    solution: "査定の前に、「査定費用・出張費用は無料か」「キャンセル時の費用は発生するか」を必ずご確認ください。当サイトで紹介している3社は、いずれも査定・出張費用が無料で、キャンセルも無料です。",
     prevention: "査定前に費用とキャンセルポリシーを書面で確認する",
   },
   {
     title: "品物の破損・紛失",
-    case: "宅配買取で送った茶碗が配送中に破損。業者に補償を求めたが、「配送中の破損は免責」と記載されていたため、補償を受けられなかった。",
-    solution: "宅配買取を利用する場合は、配送中の破損に対する補償制度を事前に確認しましょう。壊れやすい骨董品は、出張買取を選ぶのが安全です。ウリエルの出張買取なら、自宅で査定が完結するため配送リスクがありません。",
-    prevention: "壊れやすい品物は出張買取を選ぶ。宅配の場合は補償を確認",
+    case: "宅配買取で送った茶碗が配送中に破損した事例です。業者に補償を求めたものの、「配送中の破損は免責」と規約に記載されていたため、補償を受けられませんでした。",
+    solution: "宅配買取を利用する場合は、配送中の破損に対する補償制度を事前にご確認ください。壊れやすい骨董品は、出張買取を選ぶほうが安全です。ウリエルの出張買取であれば、自宅で査定が完結するため、配送による破損のおそれがありません。",
+    prevention: "壊れやすい品物は出張買取を選び、宅配の場合は補償内容を確認する",
   },
   {
-    title: "偽の鑑定結果による値下げ",
-    case: "茶道具を査定に出したところ、「作家の銘が偽物と判断される」として低額査定。しかし、別の業者に持ち込んだところ真作と判定され、10倍以上の査定額がついた。",
-    solution: "骨董品の鑑定には高度な専門知識が必要で、業者によって判断が異なることがあります。1社の鑑定結果を鵜呑みにせず、必ず複数の専門業者に査定を依頼しましょう。特に高額が期待される品物は、専門性の高い業者を選ぶことが重要です。",
-    prevention: "鑑定結果に疑問を感じたら、別の専門業者にセカンドオピニオン",
+    title: "誤った鑑定結果による減額",
+    case: "茶道具を査定に出したところ、作家の銘が偽物と判断されたとして低額の査定となった事例です。別の業者に持ち込んだところ真作と判定され、10倍以上の査定額が付きました。",
+    solution: "骨董品の鑑定には高度な専門知識が必要で、業者によって判断が異なる場合があります。1社の鑑定結果だけで判断せず、必ず複数の専門業者に査定を依頼してください。特に高額が見込まれる品物は、専門性の高い業者を選ぶことが重要です。",
+    prevention: "鑑定結果に疑問がある場合は、別の専門業者にも査定を依頼する",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function TroublePage() {
               骨董品買取のトラブル事例と対策
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              知っておけば防げる。よくあるトラブル5選と具体的な対処法
+              事前の確認で防げる、よくあるトラブル5つと具体的な対処法
             </p>
           </div>
         </section>
@@ -70,11 +70,11 @@ export default function TroublePage() {
         {/* Trouble Cases */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
-            {/* 結論即答 */}
+            {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品買取のトラブルはどう防ぐ？</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品買取のトラブルを防ぐ方法</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                よくあるトラブルは「押し買い」「安値での買い叩き」「キャンセル拒否・違約金請求」「配送中の破損」「偽の鑑定結果による値下げ」の5つです。防ぐ原則は、3社以上への相見積もり・費用とキャンセルポリシーの事前確認・信頼できる業者選びの3つです。訪問購入には契約から8日以内のクーリングオフが適用されます。自分から依頼していない業者の突然の訪問には絶対に応じないでください。
+                よくあるトラブルは、「押し買い」「不当な安値での買取」「キャンセルの拒否・違約金の請求」「配送中の破損」「誤った鑑定結果による減額」の5つです。防止のための原則は、3社以上からの見積もりの取得、費用とキャンセル規定の事前確認、信頼できる業者の選定の3つです。訪問購入には、契約書面の受領日から8日以内のクーリングオフが適用されます。ご自身から依頼していない業者の突然の訪問には応じないでください。
               </p>
             </div>
             {troubles.map((trouble, idx) => (
@@ -123,22 +123,22 @@ export default function TroublePage() {
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
                 <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</div>
                 <div>
-                  <h3 className="font-bold text-[#2C1810] mb-1">必ず複数社に査定を依頼する</h3>
-                  <p className="text-sm text-[#5C4A3A]">1社だけの査定では適正価格がわかりません。最低3社に見積もりを取って比較しましょう。</p>
+                  <h3 className="font-bold text-[#2C1810] mb-1">必ず複数の業者に査定を依頼する</h3>
+                  <p className="text-sm text-[#5C4A3A]">1社だけの査定では、適正価格を把握できません。3社以上から見積もりを取って比較してください。</p>
                 </div>
               </div>
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
                 <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</div>
                 <div>
-                  <h3 className="font-bold text-[#2C1810] mb-1">費用とキャンセルポリシーを事前確認</h3>
-                  <p className="text-sm text-[#5C4A3A]">査定費用・出張費用・キャンセル料が無料であることを事前に確認してから依頼しましょう。</p>
+                  <h3 className="font-bold text-[#2C1810] mb-1">費用とキャンセル規定を事前に確認する</h3>
+                  <p className="text-sm text-[#5C4A3A]">査定費用・出張費用・キャンセル料が無料であることを事前に確認してから、依頼してください。</p>
                 </div>
               </div>
               <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
                 <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">3</div>
                 <div>
                   <h3 className="font-bold text-[#2C1810] mb-1">信頼できる業者を選ぶ</h3>
-                  <p className="text-sm text-[#5C4A3A]">口コミ・評判を確認し、買取実績が公開されている業者を選びましょう。当サイトでは厳選した3社を紹介しています。</p>
+                  <p className="text-sm text-[#5C4A3A]">口コミ・評判を確認し、買取実績を公開している業者を選んでください。当サイトでは3社を紹介しています。</p>
                 </div>
               </div>
             </div>
@@ -151,9 +151,9 @@ export default function TroublePage() {
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TRUSTED COMPANIES</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                信頼できるおすすめ買取業者3社
+                おすすめの買取業者3社
               </h2>
-              <p className="text-[#5C4A3A] mt-2">査定・出張費用無料、キャンセルも無料の安心業者</p>
+              <p className="text-[#5C4A3A] mt-2">査定・出張費用が無料で、キャンセルも無料の業者です</p>
             </div>
             <div className="space-y-6">
               {companies.map((company) => (
@@ -185,10 +185,10 @@ export default function TroublePage() {
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
-              トラブルなく骨董品を売却するなら
+              骨董品を安全に売却するために
             </h2>
             <p className="text-amber-200 mb-8">
-              信頼できる業者に無料で査定を依頼しましょう
+              信頼できる業者に、無料で査定を依頼することをおすすめします。
             </p>
             <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
               おすすめ業者を見る

@@ -8,19 +8,19 @@ import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/c
 const company = companies.find((c) => c.id === "tifana")!;
 
 export const metadata: Metadata = {
-  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年9月】骨董品買取の実力を検証｜骨董品買取びより`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年9月】骨董品買取の特徴と利用方法｜骨董品買取びより`,
   description:
     (company as any).seoDescription ??
-    `${company.name}の口コミ・評判を徹底検証。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説。`,
+    `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法をご説明します。`,
   alternates: { canonical: "/review/tifana" },
 };
 
 const howToUse = [
-  { step: "1", title: "査定方法を選ぶ", text: "ティファナでは店頭買取・出張買取・宅配買取の3つの方法から選べます。骨董品の場合は出張買取が安心です。" },
-  { step: "2", title: "予約・申し込み", text: "公式サイトまたは電話で申し込みます。出張買取の場合は訪問日時を調整し、店頭買取の場合は最寄りの店舗に直接持ち込みます。" },
-  { step: "3", title: "査定士による鑑定", text: "経験豊富な査定士が品物を鑑定し、買取金額を提示します。骨董品以外のアイテムもまとめて査定可能です。" },
-  { step: "4", title: "金額に同意して売却", text: "提示された金額に納得すれば、その場で売却。キャンセルも無料なので、金額に納得できない場合は断っても問題ありません。" },
-  { step: "5", title: "現金受け取り", text: "店頭買取・出張買取の場合はその場で現金支払い。宅配買取の場合は銀行振込で受け取ります。" },
+  { step: "1", title: "査定方法を選ぶ", text: "ティファナでは、店頭買取・出張買取・宅配買取の3つの方法から選べます。骨董品の場合は、出張買取が適しています。" },
+  { step: "2", title: "予約・申し込み", text: "公式サイトまたは電話で申し込みます。出張買取の場合は訪問日時を調整し、店頭買取の場合は最寄りの店舗に品物を持ち込みます。" },
+  { step: "3", title: "査定士による鑑定", text: "査定士が品物を鑑定し、買取金額を提示します。骨董品以外の品物も、まとめて査定を受けられます。" },
+  { step: "4", title: "金額に同意して売却する", text: "提示された金額に納得した場合は、その場で売却します。キャンセルも無料のため、金額に納得できない場合は断ることができます。" },
+  { step: "5", title: "代金の受け取り", text: "店頭買取・出張買取の場合は、その場で現金で支払われます。宅配買取の場合は、銀行振込で受け取ります。" },
 ];
 
 export default function TifanaReview() {
@@ -46,28 +46,28 @@ export default function TifanaReview() {
               {company.name}の口コミ・評判
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              骨董品買取の実力を公式一次情報で検証【2026年9月2日確認】
+              骨董品買取の特徴を公式の一次情報で確認【2026年9月2日確認】
             </p>
           </div>
         </section>
 
-        {/* 先に要点（口コミを読む前に） */}
+        {/* 要点（口コミを読む前に） */}
         <section className="pt-10 md:pt-14">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-3">
-                先に要点：ティファナの口コミを読む前に
+                要点：ティファナの口コミを確認する前に
               </h2>
               <ul className="text-sm text-[#5C4A3A] space-y-2 leading-relaxed">
-                <li>・ティファナは骨董品専門店ではなく<strong>総合リサイクルショップ</strong>。骨董品の買取から始まった会社と公式に記載しており、骨董品・美術品の専用買取ページを持っています</li>
-                <li>・<strong>骨董品の出張可能エリアは埼玉・東京・神奈川・千葉</strong>（一部地域・品物の内容や点数により訪問できない場合ありとの注記あり／2026年9月2日 公式確認）</li>
-                <li>・<strong>鑑定料・出張料・キャンセル料はすべて無料</strong>と公式に明記（2026年9月2日 公式確認）</li>
-                <li>・Googleマップの評価は<strong>店舗ごとに差がある</strong>ため、持込を検討する場合は最寄り店舗の口コミを確認するのが確実です</li>
-                <li>・当サイトは架空の口コミを作成していません。公式に記載がない項目は「公式サイトでは確認できず」と明記しています</li>
+                <li>・ティファナは骨董品の専門店ではなく、<strong>総合リサイクルショップ</strong>です。公式サイトには骨董品の買取から始まった会社と記載されており、骨董品・美術品の専用の買取ページがあります</li>
+                <li>・<strong>骨董品の出張可能エリアは埼玉・東京・神奈川・千葉</strong>です（一部地域や、品物の内容・点数により訪問できない場合があるとの注記あり／2026年9月2日 公式確認）</li>
+                <li>・<strong>鑑定料・出張料・キャンセル料はすべて無料</strong>と公式サイトに明記されています（2026年9月2日 公式確認）</li>
+                <li>・Googleマップの評価は<strong>店舗ごとに差がある</strong>ため、持ち込みを検討する場合は、最寄りの店舗の口コミをご確認ください</li>
+                <li>・当サイトでは、架空の口コミは作成していません。公式サイトに記載がない項目は「公式サイトでは確認できず」と明記しています</li>
               </ul>
               <p className="mt-4 text-sm">
                 <a href="#henshubu-kenshou" className="text-[#8B4513] font-medium underline underline-offset-2 hover:text-[#6B3410]">
-                  編集部が公式サイトで確認した項目一覧を見る
+                  編集部が公式サイトで確認した項目の一覧
                 </a>
               </p>
             </div>
@@ -213,12 +213,12 @@ export default function TifanaReview() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl p-6 md:p-10 border border-[#C9A96E]">
-              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">こんな方におすすめ</h2>
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">適している方</h2>
               <p className="text-[#5C4A3A] leading-relaxed mb-2">{company.bestFor}</p>
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>骨董品と日用品をまとめて売りたい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>ノーブランド品や値段がつくかわからないものも査定してほしい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>関東圏にお住まいで店舗持ち込みを希望する方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>ノーブランド品や値段が付くかわからない品物も査定を希望する方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>関東圏にお住まいで、店舗への持ち込みを希望する方</li>
                 <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>引っ越しや大掃除でまとめて処分したい方</li>
               </ul>
             </div>
@@ -274,10 +274,10 @@ export default function TifanaReview() {
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
-              {company.name}で無料査定を始める
+              {company.name}で無料査定を申し込む
             </h2>
             <p className="text-amber-200 mb-8">
-              骨董品から日用品までまとめて査定。ノーブランド品もOK
+              骨董品から日用品まで、まとめて査定を受けられます。ノーブランド品も査定の対象です。
             </p>
             <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
               className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">

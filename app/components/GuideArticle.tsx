@@ -90,7 +90,7 @@ export default function GuideArticle(p: GuideArticleProps) {
             <div className="max-w-4xl mx-auto px-4 pt-10 md:pt-14">
               {/* 結論即答 */}
               <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-                <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：{p.conclusion.q}？</p>
+                <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：{p.conclusion.q}</p>
                 <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                   {p.conclusion.a}
                 </p>
@@ -207,7 +207,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                   { href: "/guide/ikkatsu-satei", label: "一括査定の活用法" },
                   { href: "/guide/souba", label: "骨董品の買取相場" },
                   { href: "/guide/shucchou-kaitori", label: "出張買取の流れ" },
-                  { href: "/guide/satei-hiyou", label: "査定費用は無料？" },
+                  { href: "/guide/satei-hiyou", label: "査定費用の有無" },
                 ]
                   .filter((g) => g.href !== `/guide/${p.slug}`)
                   .slice(0, 4)
@@ -226,8 +226,8 @@ export default function GuideArticle(p: GuideArticleProps) {
 
           <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">骨董品の最高額を知りたいなら</h2>
-              <p className="text-amber-200 mb-8">複数業者への一括査定で、あなたの骨董品の最高値がわかります</p>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">複数の買取業者の査定額を比較できます</h2>
+              <p className="text-amber-200 mb-8">複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。</p>
               <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
                 おすすめ業者を見る
               </Link>

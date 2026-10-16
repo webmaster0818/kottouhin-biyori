@@ -6,8 +6,8 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品はどこで売る？4つの方法を比較【2026年7月】｜骨董品買取びより",
-  description: "骨董品を売る4つの方法（買取業者・オークション・フリマ・骨董市）を徹底比較。メリット・デメリット・おすすめの人を解説し、最適な売却先が見つかります。",
+  title: "骨董品はどこで売る？4つの売却方法の比較【2026年7月】｜骨董品買取びより",
+  description: "骨董品を売る4つの方法（買取業者・オークション・フリマアプリ・骨董市）を比較しています。それぞれのメリット・デメリットと、適している方をご説明します。",
   alternates: { canonical: "/guide/doko-de-uru" },
 };
 
@@ -16,7 +16,7 @@ const hikakaku = companies.find((c) => c.id === "hikakaku")!;
 const methods = [
   {
     name: "買取業者に売る",
-    description: "骨董品専門の買取業者やリサイクルショップに査定を依頼して売却する方法。最も一般的で安全な売却方法です。",
+    description: "骨董品専門の買取業者やリサイクルショップに査定を依頼して売却する方法です。最も一般的で、安全性の高い売却方法です。",
     pros: [
       "専門家による適正な査定が受けられる",
       "出張買取なら自宅で完結する",
@@ -29,15 +29,15 @@ const methods = [
       "業者によって査定額に差がある",
       "悪質な業者に当たるリスクがある",
     ],
-    bestFor: "安全・確実に売りたい方、手間をかけたくない方、大量の骨董品がある方",
+    bestFor: "安全かつ確実に売りたい方、手間をかけたくない方、骨董品が大量にある方",
     rating: "おすすめ度: ★★★★★",
   },
   {
     name: "オークションに出品する",
-    description: "ヤフオク！などのネットオークションや、骨董品専門のオークションハウスに出品する方法。競り合いによって高額で売れる可能性があります。",
+    description: "ヤフオク！などのネットオークションや、骨董品専門のオークションハウスに出品する方法です。競り合いによって高額で売れる可能性があります。",
     pros: [
-      "競り合いにより市場価格以上で売れることがある",
-      "全国のコレクターにリーチできる",
+      "競り合いにより市場価格以上で売れる場合がある",
+      "全国のコレクターに販売できる",
       "自分で最低価格を設定できる",
     ],
     cons: [
@@ -45,45 +45,45 @@ const methods = [
       "売れるまでに時間がかかる場合がある",
       "手数料（10〜15%程度）がかかる",
       "配送中の破損リスクがある",
-      "トラブル対応は自己責任",
+      "トラブルへの対応は自己責任となる",
     ],
-    bestFor: "時間に余裕があり、手間をかけてでも高く売りたい方",
+    bestFor: "時間に余裕があり、手間をかけても高く売りたい方",
     rating: "おすすめ度: ★★★☆☆",
   },
   {
     name: "フリマアプリ・ネットショップで売る",
-    description: "メルカリやラクマなどのフリマアプリ、またはBASEなどのネットショップで販売する方法。価格を自分で設定できます。",
+    description: "メルカリやラクマなどのフリマアプリ、またはBASEなどのネットショップで販売する方法です。価格を自分で設定できます。",
     pros: [
       "自分で価格を設定できる",
-      "スマホで簡単に出品できる",
-      "幅広いユーザーにリーチできる",
+      "スマートフォンで手軽に出品できる",
+      "幅広い利用者に販売できる",
     ],
     cons: [
       "骨董品の専門知識がある購入者が少ない",
-      "値切り交渉が多い",
-      "高額商品は売れにくい（上限金額の制限も）",
+      "値下げの交渉が多い",
+      "高額商品は売れにくい（上限金額の制限もある）",
       "真贋の保証ができずトラブルになりやすい",
       "手数料（10%程度）がかかる",
     ],
-    bestFor: "比較的安価な骨董品・雑貨を気軽に売りたい方",
+    bestFor: "比較的安価な骨董品・雑貨を手軽に売りたい方",
     rating: "おすすめ度: ★★☆☆☆",
   },
   {
     name: "骨董市・蚤の市で売る",
-    description: "全国各地で定期的に開催される骨董市や蚤の市に出店して販売する方法。対面での取引で交渉ができます。",
+    description: "全国各地で定期的に開催される骨董市や蚤の市に出店して販売する方法です。対面で取引するため、価格の交渉ができます。",
     pros: [
-      "骨董品好きの来場者が集まるため売れやすい",
+      "骨董品に関心のある来場者が集まるため売れやすい",
       "対面で交渉でき、品物の魅力を直接伝えられる",
       "その場で現金取引ができる",
     ],
     cons: [
       "出店料がかかる（数千円〜数万円）",
-      "品物の搬入・搬出が大変",
+      "品物の搬入・搬出に手間がかかる",
       "天候に左右される",
       "定期開催のため、売りたい時に売れるとは限らない",
       "盗難のリスクがある",
     ],
-    bestFor: "骨董市が近くで開催されていて、自分で販売を楽しみたい方",
+    bestFor: "近隣で骨董市が開催されており、ご自身で販売したい方",
     rating: "おすすめ度: ★★☆☆☆",
   },
 ];
@@ -92,7 +92,7 @@ export default function DokoDeUruPage() {
   return (
     <>
       {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品はどこで売る？4つの方法を比較\",\"item\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品の売却先4種類の比較\",\"item\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品はどこで売る？4つの方法を比較\",\"description\":\"骨董品はどこで売る？4つの方法を比較 を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -103,10 +103,10 @@ export default function DokoDeUruPage() {
           <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
             <p className="text-[#D4A574] text-sm tracking-widest mb-4">SELLING GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              骨董品はどこで売る？
+              骨董品の売却先の比較
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              4つの売却方法を比較して、最適な売り先を見つけよう
+              4つの売却方法を比較し、適した売却先を選ぶための情報を掲載しています。
             </p>
           </div>
         </section>
@@ -114,11 +114,11 @@ export default function DokoDeUruPage() {
         {/* Comparison Table (Mobile-friendly) */}
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
-            {/* 結論即答 */}
+            {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">結論：骨董品はどこで売るのがいい？</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">要点：骨董品の売却先の選び方</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                骨董品の売却方法は「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全・確実に売りたいなら、専門家の査定が受けられ即日現金化もできる買取業者への売却が最もおすすめ（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、10〜15%程度の手数料と出品・発送の手間がかかります。迷ったら、まず買取業者への一括査定で相場を把握してから他の方法を検討するのが失敗しない手順です。
+                骨董品の売却方法は、「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全かつ確実に売りたい場合は、専門家の査定を受けられ、即日の現金化も可能な買取業者への売却を最もおすすめします（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、10〜15%程度の手数料と、出品・発送の手間がかかります。判断に迷う場合は、まず買取業者の一括査定で相場を把握し、そのうえで他の方法を検討してください。
               </p>
             </div>
             <div className="text-center mb-10">
@@ -220,7 +220,7 @@ export default function DokoDeUruPage() {
 
                   <div className="bg-[#F5ECD7] rounded-xl p-4">
                     <p className="text-sm text-[#8B4513]">
-                      <strong>こんな方におすすめ:</strong> {method.bestFor}
+                      <strong>適している方:</strong> {method.bestFor}
                     </p>
                   </div>
                 </div>
@@ -235,39 +235,39 @@ export default function DokoDeUruPage() {
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CONCLUSION</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                結論：まずは一括査定がおすすめ
+                まず一括査定の利用をおすすめします
               </h2>
             </div>
             <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
               <p className="text-[#5C4A3A] leading-relaxed mb-4">
-                骨董品の売却方法で迷っている方には、まず買取業者への一括査定をおすすめします。理由は3つあります。
+                売却方法を検討中の方には、まず買取業者への一括査定をおすすめします。理由は次の3点です。
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3 text-[#2C1810]">
                   <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</div>
                   <div>
-                    <p className="font-medium">相場がわかる</p>
-                    <p className="text-sm text-[#5C4A3A]">複数業者の査定額を見ることで、お持ちの骨董品の市場価値がわかります。その上でオークション等の他の方法を検討できます。</p>
+                    <p className="font-medium">相場を把握できる</p>
+                    <p className="text-sm text-[#5C4A3A]">複数の業者の査定額を確認することで、お持ちの骨董品の市場価値を把握できます。そのうえで、オークションなど他の方法を検討できます。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-[#2C1810]">
                   <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</div>
                   <div>
                     <p className="font-medium">手間がかからない</p>
-                    <p className="text-sm text-[#5C4A3A]">一括査定なら一度の入力で複数業者に同時依頼。出張買取なら自宅で完結します。</p>
+                    <p className="text-sm text-[#5C4A3A]">一括査定では、一度の入力で複数の業者に同時に依頼できます。出張買取であれば、自宅で手続きが完結します。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-[#2C1810]">
                   <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</div>
                   <div>
                     <p className="font-medium">リスクが低い</p>
-                    <p className="text-sm text-[#5C4A3A]">査定は無料でキャンセルも可能。オークションやフリマのように手数料や配送リスクがありません。</p>
+                    <p className="text-sm text-[#5C4A3A]">査定は無料で、キャンセルも可能です。オークションやフリマアプリのような手数料や配送時の破損のおそれがありません。</p>
                   </div>
                 </div>
               </div>
               <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
                 className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
-                ヒカカク！で無料一括査定する
+                ヒカカク！で無料の一括査定を依頼する
               </a>
             </div>
           </div>
@@ -277,10 +277,10 @@ export default function DokoDeUruPage() {
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
-              まずは骨董品の価値を知ることから
+              骨董品の価値を把握することから始めてください
             </h2>
             <p className="text-amber-200 mb-8">
-              一括査定で最高額を見つけて、最適な売却方法を選びましょう
+              一括査定で査定額を比較し、適した売却方法をお選びください。
             </p>
             <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
               おすすめ業者を見る

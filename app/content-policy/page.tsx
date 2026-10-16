@@ -6,7 +6,7 @@ import SiteFooter from "@/app/components/SiteFooter";
 export const metadata: Metadata = {
   alternates: { canonical: "/content-policy/" },
   title: "記事の制作ポリシー | 骨董品買取びより",
-  description: "骨董品買取びよりの記事制作ポリシーです。コンテンツ制作の基本方針、情報の正確性への取り組み、制作フローについて説明します。",
+  description: "骨董品買取びよりの記事制作ポリシーです。コンテンツ制作の基本方針、情報の正確性への取り組み、制作の流れについてご説明します。",
 };
 
 export default function ContentPolicyPage() {
@@ -26,7 +26,7 @@ export default function ContentPolicyPage() {
 
           <div className="prose-policy space-y-10 text-[#2C1810] text-sm leading-relaxed">
             <p>
-              「骨董品買取びより」は、骨董品・美術品の売却を検討される方に向けて、正確で公平な情報を提供することを使命としています。本ポリシーでは、当サイトのコンテンツ制作における基本方針と品質管理体制について説明します。
+              「骨董品買取びより」は、骨董品・美術品の売却を検討される方に向けて、正確で公平な情報を提供することを使命としています。本ポリシーでは、当サイトのコンテンツ制作における基本方針と品質管理体制についてご説明します。
             </p>
 
             {/* 基本方針 */}
@@ -38,10 +38,10 @@ export default function ContentPolicyPage() {
                 <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
-                    <h3 className="font-bold text-[#2C1810]">ユーザーファースト</h3>
+                    <h3 className="font-bold text-[#2C1810]">利用者を最優先とします</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
-                    骨董品の正しい知識と最適な売却先の提供を最優先とします。利用者が安心して骨董品の売却判断ができるよう、鑑定の基礎知識、市場の動向、信頼できる業者の情報を包括的にお届けします。売上や広告収益よりも、利用者の利益を常に優先します。
+                    骨董品に関する正しい知識と、適切な売却先の情報の提供を最優先とします。利用者が安心して骨董品の売却を判断できるよう、鑑定の基礎知識、市場の動向、信頼できる業者の情報を網羅的に提供します。売上や広告収益よりも、利用者の利益を常に優先します。
                   </p>
                 </div>
 
@@ -49,10 +49,10 @@ export default function ContentPolicyPage() {
                 <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
-                    <h3 className="font-bold text-[#2C1810]">情報の正確性</h3>
+                    <h3 className="font-bold text-[#2C1810]">正確な情報の提供に努めます</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
-                    買取相場や業者情報は定期的に更新し、最新の状態を保ちます。作家情報、流派の解説、鑑定ポイントなどの専門的な内容は、信頼できる文献・資料に基づいて正確に記述します。誤った情報が利用者の判断を誤らせないよう、ファクトチェックを徹底します。
+                    買取相場や業者情報は定期的に更新し、最新の状態を保つよう努めます。作家情報、流派の解説、鑑定のポイントなどの専門的な内容は、信頼できる文献・資料にもとづいて正確に記述します。誤った情報によって利用者の判断を誤らせることのないよう、事実確認を徹底します。
                   </p>
                 </div>
 
@@ -60,10 +60,10 @@ export default function ContentPolicyPage() {
                 <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
-                    <h3 className="font-bold text-[#2C1810]">中立性・公平性</h3>
+                    <h3 className="font-bold text-[#2C1810]">中立・公平な立場で情報を掲載します</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
-                    特定の買取業者への偏りのない、公平な情報提供に努めます。業者の比較・評価にあたっては、統一した基準を用い、アフィリエイト報酬の有無によって評価やランキングを操作することはありません。メリット・デメリットの両面を正直に伝えます。
+                    特定の買取業者に偏らない、公平な情報の提供に努めます。業者の比較・評価にあたっては統一した基準を用い、アフィリエイト報酬の有無によって評価やランキングを操作することはありません。メリットとデメリットの両面を掲載します。
                   </p>
                 </div>
 
@@ -71,10 +71,10 @@ export default function ContentPolicyPage() {
                 <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">4</div>
-                    <h3 className="font-bold text-[#2C1810]">わかりやすさ</h3>
+                    <h3 className="font-bold text-[#2C1810]">わかりやすい説明に努めます</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
-                    骨董品の世界には専門用語が多く、初心者にとっては敷居が高い分野です。当サイトでは、専門用語を初心者にもわかりやすく解説し、骨董品に詳しくない方でも安心して情報を活用できるよう配慮します。必要に応じて用語解説や図解を用います。
+                    骨董品の分野には専門用語が多く、初めての方にとっては理解しにくい面があります。当サイトでは、専門用語をわかりやすく解説し、骨董品に詳しくない方でも安心して情報を活用できるよう配慮します。必要に応じて、用語解説や図解を用います。
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function ContentPolicyPage() {
 
             {/* 制作フロー */}
             <section>
-              <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-6">コンテンツ制作フロー</h2>
+              <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-6">コンテンツ制作の流れ</h2>
               <p className="mb-6">
                 当サイトでは、すべてのコンテンツを以下の4つのステップを経て制作・公開しています。
               </p>
@@ -97,7 +97,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1 pb-8">
                     <h3 className="font-bold text-[#2C1810] text-base mb-2">企画・調査</h3>
                     <p className="text-[#5C4A3A] leading-relaxed">
-                      利用者のニーズと検索意図を分析し、テーマを選定します。骨董品・美術品に関する文献、業界資料、公式情報を収集し、信頼性の高い情報源に基づいて記事の骨格を設計します。買取相場については、複数の情報源を照合して参考値を算出します。
+                      利用者のニーズと検索意図を分析し、テーマを選定します。骨董品・美術品に関する文献、業界資料、公式情報を収集し、信頼性の高い情報源にもとづいて記事の構成を設計します。買取相場については、複数の情報源を照合して参考値を算出します。
                     </p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1 pb-8">
                     <h3 className="font-bold text-[#2C1810] text-base mb-2">執筆・制作</h3>
                     <p className="text-[#5C4A3A] leading-relaxed">
-                      骨董品・美術品の知識を持つライターが、調査結果に基づいて記事を執筆します。専門用語にはわかりやすい解説を付け、初心者でも理解できる構成を心がけます。作家の経歴や作品の特徴については、美術辞典や展覧会図録等の信頼できる資料に基づきます。
+                      骨董品・美術品の知識を持つライターが、調査結果にもとづいて記事を執筆します。専門用語にはわかりやすい解説を付け、初めての方にも理解しやすい構成に努めます。作家の経歴や作品の特徴については、美術辞典や展覧会図録等の信頼できる資料にもとづいて記述します。
                     </p>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function ContentPolicyPage() {
                   <div className="flex-1">
                     <h3 className="font-bold text-[#2C1810] text-base mb-2">公開・定期更新</h3>
                     <p className="text-[#5C4A3A] leading-relaxed">
-                      校正・ファクトチェック完了後に記事を公開します。公開後も、買取相場の変動、業者のサービス内容変更、新たな知見の追加等に応じて定期的に情報を更新します。古くなった情報が利用者の判断を誤らせないよう、継続的なメンテナンスを行います。
+                      校正・ファクトチェックの完了後に、記事を公開します。公開後も、買取相場の変動、業者のサービス内容の変更、新たな知見の追加等に応じて、定期的に情報を更新します。古くなった情報によって利用者の判断を誤らせることのないよう、継続的に管理しています。
                     </p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function ContentPolicyPage() {
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">アフィリエイト広告について</h2>
               <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                 <p className="text-[#5C4A3A] leading-relaxed">
-                  当サイトはアフィリエイトプログラムに参加しており、掲載する買取業者へのリンクを通じて利用者がサービスを利用された場合、当社が紹介報酬を受け取ることがあります。ただし、アフィリエイト報酬の有無や金額は、記事の内容、業者の評価、ランキングの順位に一切影響を与えません。すべてのコンテンツは、上記の基本方針に基づき、利用者にとって有益かつ公正な情報提供を目的として制作しています。
+                  当サイトはアフィリエイトプログラムに参加しており、掲載する買取業者へのリンクを通じて利用者がサービスを利用された場合、当社が紹介報酬を受け取ることがあります。ただし、アフィリエイト報酬の有無や金額が、記事の内容、業者の評価、ランキングの順位に影響を与えることは一切ありません。すべてのコンテンツは、上記の基本方針にもとづき、利用者にとって有益かつ公正な情報の提供を目的として制作しています。
                 </p>
               </div>
             </section>
@@ -160,7 +160,7 @@ export default function ContentPolicyPage() {
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">情報の訂正・ご指摘について</h2>
               <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
                 <p className="text-[#5C4A3A] leading-relaxed">
-                  当サイトに掲載されている情報に誤りや不正確な点を発見された場合は、お問い合わせフォームよりご連絡ください。いただいたご指摘は速やかに確認し、必要に応じて記事の修正・更新を行います。利用者からのフィードバックは、コンテンツの品質向上に欠かせないものと考えています。
+                  当サイトに掲載している情報に誤りや不正確な点がございましたら、お問い合わせフォームよりご連絡ください。いただいたご指摘は速やかに確認し、必要に応じて記事の修正・更新を行います。利用者の皆様からのご意見は、コンテンツの品質向上に欠かせないものと考えています。
                 </p>
               </div>
             </section>

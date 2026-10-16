@@ -7,8 +7,8 @@ const SITE_URL = "https://kottokaitori-biyori.com";
 
 export const metadata = {
   alternates: { canonical: "/guide/souba-database/" },
-  title: `骨董品 落札相場データベース2026｜${db.artistTotal}作家・${db.resultTotal}件の公開オークション実績を独自集計`,
-  description: `国内外の公開オークション落札結果（シンワオークション・古裂會・Christie's・Bonhams等）を当編集部が一次確認し、${db.artistTotal}作家・${db.resultTotal}件を独自集計した骨董品の落札相場データベース。ジャンル別の最高額・中央値、円建て落札額TOP20、海外オークションの注目実績を月次更新で公開します。`,
+  title: `骨董品 落札相場データベース2026｜${db.artistTotal}作家・${db.resultTotal}件の公開オークション実績の独自集計`,
+  description: `国内外の公開オークションの落札結果（シンワオークション・古裂會・Christie's・Bonhams等）を当編集部が一次確認し、${db.artistTotal}作家・${db.resultTotal}件を独自に集計した骨董品の落札相場データベースです。ジャンル別の最高額・中央値、円建て落札額の上位20件、海外オークションの主な実績を毎月更新しています。`,
 };
 
 const breadcrumbLd = {
@@ -70,8 +70,8 @@ export default function SoubaDatabasePage() {
                 骨董品 落札相場データベース<span className="text-[#D4A574]">2026</span>
               </h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                国内外の公開オークション落札結果を当編集部が一次確認し、独自集計。<br className="hidden md:inline" />
-                「本当の相場」を出典付きで公開します（月次更新）。
+                国内外の公開オークションの落札結果を当編集部が一次確認し、独自に集計しています。<br className="hidden md:inline" />
+                実際の取引にもとづく相場を、出典を明記して毎月更新しています。
               </p>
               <div className="flex flex-wrap justify-center gap-4 mt-8">
                 {[
@@ -97,7 +97,7 @@ export default function SoubaDatabasePage() {
                   <li>・収録対象は、シンワオークション・古裂會の公式落札結果、Christie's・Bonhams等の公式ロット結果、および信頼できる報道で、<strong className="text-[#8B4513]">当編集部が出典に直接アクセスして作品名と金額の一致を確認できたもののみ</strong>です。</li>
                   <li>・シンワオークションの金額は「落札価格（手数料込）」列の実数値、古裂會は「公表の落札価格」（手数料の内外は非公表）、海外ハウスはプレミアム込み表記を採用しています。</li>
                   <li>・ログイン壁の集計サイト・不落札ロット・買取業者の査定額表示は収録していません。江戸期以前の作家や刀剣は「伝」「銘」「カタログ帰属」等の表記を各作家ページに明記しています。</li>
-                  <li>・公開実績が一次確認できなかった作家（正宗・青木繁・志村ふくみ等7名）は、無理に数値を掲載せず対象外としています。</li>
+                  <li>・公開実績を一次確認できなかった作家（正宗・青木繁・志村ふくみ等7名）は、数値を掲載せず対象外としています。</li>
                 </ul>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function SoubaDatabasePage() {
           <section className="pb-12">
             <div className="max-w-5xl mx-auto px-4">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">ジャンル別の落札相場サマリー（円建て実績）</h2>
-              <p className="text-sm text-[#5C4A3A] mb-6">中央値は「よくある成立価格」の目安、最高額は優品の上限例です。中国美術・浮世絵は海外実績が中心のため下段の海外ハイライトをご覧ください。</p>
+              <p className="text-sm text-[#5C4A3A] mb-6">中央値は一般的な成立価格の目安、最高額は優品の上限例です。中国美術・浮世絵は海外の実績が中心のため、下段の海外オークションの主な実績をご覧ください。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
                   <thead className="bg-[#8B4513] text-white">
@@ -138,8 +138,8 @@ export default function SoubaDatabasePage() {
           {/* TOP20 */}
           <section className="pb-12">
             <div className="max-w-5xl mx-auto px-4">
-              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">円建て落札額ランキング TOP20</h2>
-              <p className="text-sm text-[#5C4A3A] mb-6">当データベース収録実績のうち、円建て落札額の上位20件です。作家名から出典付きの詳細ページへ移動できます。</p>
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">円建て落札額の上位20件</h2>
+              <p className="text-sm text-[#5C4A3A] mb-6">当データベースの収録実績のうち、円建て落札額の上位20件です。作家名から、出典を明記した詳細ページへ移動できます。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
                   <thead className="bg-[#8B4513] text-white">
@@ -168,15 +168,15 @@ export default function SoubaDatabasePage() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-xs text-[#8B7D72] mt-3">※手数料込み/公表値の別・出典URLは各作家ページの実績表をご覧ください。</p>
+              <p className="text-xs text-[#8B7D72] mt-3">※手数料込みか公表値かの別と出典URLは、各作家ページの実績表をご覧ください。</p>
             </div>
           </section>
 
           {/* 海外ハイライト */}
           <section className="pb-12">
             <div className="max-w-5xl mx-auto px-4">
-              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">海外オークションの注目実績</h2>
-              <p className="text-sm text-[#5C4A3A] mb-6">Christie's・Bonhams等の外貨建て実績のハイライトです（為替換算はせず公表通貨のまま掲載）。</p>
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">海外オークションの主な実績</h2>
+              <p className="text-sm text-[#5C4A3A] mb-6">Christie's・Bonhams等の外貨建ての主な実績です（為替換算は行わず、公表通貨のまま掲載しています）。</p>
               <div className="grid md:grid-cols-2 gap-4">
                 {db.overseas.map((o, i) => (
                   <div key={i} className="bg-white rounded-xl border border-[#E0D5C8] p-5 flex items-start justify-between gap-3">
@@ -195,8 +195,8 @@ export default function SoubaDatabasePage() {
           {/* 作家索引（上位） */}
           <section className="pb-12">
             <div className="max-w-5xl mx-auto px-4">
-              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">収録作家一覧（落札実績つき{db.artistTotal}名）</h2>
-              <p className="text-sm text-[#5C4A3A] mb-6">各作家ページに、出典付きの落札実績表と相場の読み方を掲載しています。</p>
+              <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-2">収録作家一覧（落札実績を掲載した{db.artistTotal}名）</h2>
+              <p className="text-sm text-[#5C4A3A] mb-6">各作家ページに、出典を明記した落札実績表と相場の読み方を掲載しています。</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                 {db.artists.map((a) => (
                   <Link key={a.slug} href={`/artist/${a.slug}/`} className="bg-white rounded-lg border border-[#E0D5C8] px-3 py-2.5 text-sm hover:shadow-md hover:border-[#C9A96E] transition flex items-center justify-between gap-2">
@@ -207,7 +207,7 @@ export default function SoubaDatabasePage() {
               </div>
               <div className="mt-6 text-center">
                 <Link href="/guide/sakka-souba/" className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-3.5 rounded-xl font-bold transition">
-                  作家別の買取相場ハブを見る →
+                  作家別の買取相場一覧へ →
                 </Link>
               </div>
             </div>
@@ -216,10 +216,10 @@ export default function SoubaDatabasePage() {
           {/* CTA */}
           <section className="py-14 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">お手元の品の「本当の相場」を知るには</h2>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">お手元の品の相場を確認する方法</h2>
               <p className="text-amber-200 mb-8 leading-relaxed">
-                落札相場は真贋・状態・付属品で大きく変わります。<br className="hidden md:inline" />
-                まずは無料査定で、プロの評価を確認してみましょう。
+                落札相場は、真贋・状態・付属品によって大きく変わります。<br className="hidden md:inline" />
+                無料査定で、専門家の評価をご確認ください。
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href="/guide/gyosha-hikaku/" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg">

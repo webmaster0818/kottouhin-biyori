@@ -8,17 +8,17 @@ import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/c
 const company = companies.find((c) => c.id === "hikakaku")!;
 
 export const metadata: Metadata = {
-  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の実力を検証｜骨董品買取びより`,
-  description: `${company.name}の口コミ・評判を徹底検証。骨董品買取における${company.name}の特徴、メリット・デメリット、利用方法を詳しく解説します。`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の特徴と利用方法｜骨董品買取びより`,
+  description: `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。骨董品買取における${company.name}の特徴、メリット・デメリット、利用方法をご説明します。`,
   alternates: { canonical: "/review/hikakaku" },
 };
 
 const howToUse = [
-  { step: "1", title: "ヒカカク！にアクセス", text: "公式サイトにアクセスし、「骨董品・美術品」カテゴリを選択します。スマートフォンからもアクセス可能です。" },
-  { step: "2", title: "売りたい品物の情報を入力", text: "品物の種類・状態・写真などの必要情報を入力します。入力は3分程度で完了します。" },
-  { step: "3", title: "最大20社から見積もりが届く", text: "入力した情報をもとに、最大20社の買取業者から査定額が届きます。メールやマイページで確認できます。" },
-  { step: "4", title: "査定額を比較して業者を選ぶ", text: "届いた査定額を比較し、最も高い金額を提示した業者に売却を依頼します。気に入らなければキャンセルも無料です。" },
-  { step: "5", title: "選んだ業者と取引", text: "選んだ業者と直接やり取りし、出張買取・宅配買取・店頭買取のいずれかで取引を進めます。" },
+  { step: "1", title: "ヒカカク！の公式サイトにアクセスする", text: "公式サイトにアクセスし、「骨董品・美術品」のカテゴリを選択します。スマートフォンからも利用できます。" },
+  { step: "2", title: "売却したい品物の情報を入力する", text: "品物の種類・状態・写真などの必要な情報を入力します。入力は3分程度で完了します。" },
+  { step: "3", title: "最大20社から見積もりが届く", text: "入力した情報をもとに、最大20社の買取業者から査定額が届きます。査定額は、メールやマイページで確認できます。" },
+  { step: "4", title: "査定額を比較して業者を選ぶ", text: "届いた査定額を比較し、最も高い金額を提示した業者に売却を依頼します。納得できない場合は、無料でキャンセルできます。" },
+  { step: "5", title: "選んだ業者と取引する", text: "選んだ業者と直接連絡を取り、出張買取・宅配買取・店頭買取のいずれかで取引を進めます。" },
 ];
 
 export default function HikakakuReview() {
@@ -44,7 +44,7 @@ export default function HikakakuReview() {
               {company.name}の口コミ・評判
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              骨董品買取の実力を徹底検証
+              骨董品買取の特徴と利用方法
             </p>
           </div>
         </section>
@@ -188,12 +188,12 @@ export default function HikakakuReview() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl p-6 md:p-10 border border-[#C9A96E]">
-              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">こんな方におすすめ</h2>
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">適している方</h2>
               <p className="text-[#5C4A3A] leading-relaxed mb-2">{company.bestFor}</p>
               <ul className="space-y-2 mt-4">
                 <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>複数の業者に一括で査定を依頼したい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>骨董品の相場がわからず比較したい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>手間をかけずに最高額を見つけたい方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>骨董品の相場を把握するために比較したい方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>少ない手間で査定額を比較したい方</li>
                 <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>初めて骨董品を売る方</li>
               </ul>
             </div>
@@ -249,10 +249,10 @@ export default function HikakakuReview() {
         <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
-              {company.name}で無料一括査定を始める
+              {company.name}で無料の一括査定を申し込む
             </h2>
             <p className="text-amber-200 mb-8">
-              最大20社の査定額を比較して、お手持ちの骨董品を最高額で売却しましょう
+              最大20社の査定額を比較し、お手持ちの骨董品の売却先をお選びください。
             </p>
             <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
               className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
