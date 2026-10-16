@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: (artist as any).seoTitle
       ? `${(artist as any).seoTitle}| 骨董品買取びより`
       : `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】| 骨董品買取びより`,
-    description: `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
+    description: (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     alternates: { canonical: `/artist/${slug}` },
   };
 }
@@ -89,10 +89,17 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const preSaleNotes = (artist as any).preSaleNotes as string[] | undefined;
   const soubaPoints = (artist as any).soubaPoints as { k: string; v: string }[] | undefined;
   const extraFaqs = ((artist as any).extraFaqs ?? []) as { q: string; a: string }[];
+  const leadAnswer = (artist as any).leadAnswer as { h: string; points: string[] } | undefined;
+  const priceRangeNote = (artist as any).priceRangeNote as string | undefined;
+  const kaitoriResults = (artist as any).kaitoriResults as
+    | { verifiedAt: string; note: string; results: { title: string; price: string; shop: string; date: string; method: string; edition: string; sourceUrl: string }[] }
+    | undefined;
+  const relatedLinks = (artist as any).relatedLinks as { href: string; t: string; d: string }[] | undefined;
+  const references = (artist as any).references as { verifiedAt: string; items: { label: string; url: string }[] } | undefined;
 
   // FAQ(作家データから生成 + 作家個別の追加FAQ)
   const faqs = [
-    { q: `${artist.name}の作品はいくらで売れますか？`, a: `${artist.name}の${artist.category}の買取相場は${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定で確認しましょう。` },
+    { q: `${artist.name}の作品はいくらで売れますか？`, a: (artist as any).priceFaqAnswer ?? `${artist.name}の${artist.category}の買取相場は${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定で確認しましょう。` },
     { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `はい。${artist.name}のような評価の高い作家の作品は、傷みや欠けがあっても修復・再販を前提に買取されることが多いです。自分で手入れせず、現状のまま査定に出してください。` },
     { q: `本物かどうか分かりませんが査定できますか？`, a: `問題ありません。専門の査定士が落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品は精巧な写しも存在するため、専門業者での査定がおすすめです。` },
     { q: `${artist.name}の作品を高く売るには？`, a: `複数業者への相見積もりが最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
@@ -123,9 +130,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の出し方【2026年7月】`,
-    "description": `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
+    "description": (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}。査定・鑑定の出し方、代表作や鑑定のポイント、高く売るコツを解説。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
-    "dateModified": soubaPoints ? "2026-09-16T00:00:00+09:00" : workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
+    "dateModified": (artist as any).dateModified ? `${(artist as any).dateModified}T00:00:00+09:00` : soubaPoints ? "2026-09-16T00:00:00+09:00" : workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
@@ -175,21 +182,36 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           <div className="max-w-4xl mx-auto px-4 py-12">
             <p className="text-[#D4A574] text-sm tracking-widest mb-2">{artist.category} / {artist.era}</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-4">
-              {artist.name}の{artist.category}買取
+              {(artist as any).h1 ?? `${artist.name}の${artist.category}買取`}
             </h1>
             <p className="text-amber-100 text-lg">
-              買取相場: <strong className="text-[#C9A96E]">{artist.priceRange}</strong>
+              {(artist as any).priceLabel ?? "買取相場"}: <strong className="text-[#C9A96E]">{artist.priceRange}</strong>
             </p>
           </div>
         </section>
 
         <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
+          {/* 検索語への直接の答え(任意) */}
+          {leadAnswer && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#C9A96E]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4">{leadAnswer.h}</h2>
+              <ul className="space-y-3">
+                {leadAnswer.points.map((pt, idx) => (
+                  <li key={idx} className="flex gap-3 text-sm md:text-base text-[#5C4A3A] leading-relaxed">
+                    <span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs mt-0.5">{idx + 1}</span>
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* Intro */}
           <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
             <p className="text-[#5C4A3A] leading-relaxed">
               {artist.name}({artist.era})は、{artist.category}の分野で高く評価される作家です。
               代表作に{worksText}などがあり、買取市場でも安定した需要があります。
-              このページでは、{artist.name}の{artist.category}の<strong>買取相場({artist.priceRange})</strong>、
+              このページでは、{artist.name}の{artist.category}の<strong>{(artist as any).priceLabel ?? "買取相場"}({artist.priceRange})</strong>、
               真贋・査定で見られるポイント、高く売るためのコツ、そしておすすめの買取業者まで詳しく解説します。
               ご自宅に{artist.name}の作品をお持ちで売却をご検討の方はぜひ参考にしてください。
             </p>
@@ -267,8 +289,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               {artist.name}の買取相場
             </h2>
             <div className="bg-gradient-to-r from-[#F5ECD7] to-[#FAF7F2] rounded-xl p-6 text-center mb-4">
-              <p className="text-sm text-[#8B7D72] mb-1">買取価格の目安</p>
+              <p className="text-sm text-[#8B7D72] mb-1">{(artist as any).priceLabel ?? "買取価格の目安"}</p>
               <p className="text-3xl font-bold text-[#8B4513]">{artist.priceRange}</p>
+              {priceRangeNote && <p className="text-xs text-[#5C4A3A] mt-2 leading-relaxed text-left md:text-center">{priceRangeNote}</p>}
             </div>
             <p className="text-sm text-[#8B7D72] mb-6">
               ※作品の状態・サイズ・来歴・付属品（箱・鑑定書）の有無によって大きく変動します。正確な査定は専門業者への依頼をおすすめします。
@@ -278,7 +301,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 <h3 className="font-bold text-[#2C1810] mb-3">作品の種別ごとの相場の見方</h3>
                 <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
                   {artist.name}の名前で流通する品は種別によって市場が分かれており、ひとつの金額の幅で語ることができません。
-                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、出典を明記できる公開オークションの落札実績以外の金額は掲載していません。
+                  種別ごとに何を基準に評価されるのかを整理しました。なお本ページでは、{kaitoriResults ? "出典を明記できる公開オークションの落札実績と、買取業者が公開している買取実績以外の金額は掲載していません。" : "出典を明記できる公開オークションの落札実績以外の金額は掲載していません。"}
                 </p>
                 <div className="space-y-3">
                   {soubaPoints.map((p, idx) => (
@@ -347,6 +370,45 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
                 ※ 上記は公開オークションでの過去の落札実績の一部です。落札価格は手数料の扱い・為替・開催時期で変動し、真贋・状態・作品の格により評価は大きく異なります。お手元の品の価格は無料査定でご確認ください。
+              </p>
+            </section>
+          )}
+
+          {/* 買取業者の公開買取実績（出典明記・任意） */}
+          {kaitoriResults && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                {artist.name}作品の公開買取実績（国内の買取業者）
+              </h2>
+              <p className="text-xs text-[#8B7D72] mb-4">{kaitoriResults.verifiedAt}確認 ／ 出典：各買取業者の公式サイトに掲載された買取実績ページ</p>
+              <p className="text-[#5C4A3A] leading-relaxed mb-5 text-sm">{kaitoriResults.note}</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse min-w-[640px]">
+                  <thead>
+                    <tr className="bg-[#FAF7F2] text-[#5C4A3A]">
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">品物</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">版・状態（掲載内容）</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8] whitespace-nowrap">買取価格</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">業者・掲載日</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">出典</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {kaitoriResults.results.map((r, i) => (
+                      <tr key={i} className="align-top">
+                        <td className="p-3 border border-[#E0D5C8] text-[#2C1810]">{r.title}</td>
+                        <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A]">{r.edition}</td>
+                        <td className="p-3 border border-[#E0D5C8] text-[#8B4513] font-bold whitespace-nowrap">{r.price}</td>
+                        <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A]">{r.shop}（{r.date}・{r.method}）</td>
+                        <td className="p-3 border border-[#E0D5C8]"><a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-[#C9A96E] underline">出典</a></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
+                ※ 各業者が公開している過去の買取事例で、価格は掲載当日のものです（各業者とも価格を保証するものではないと明記）。同じ図柄でも摺りの時期・状態・揃いの有無で金額は大きく変わります。
               </p>
             </section>
           )}
@@ -469,6 +531,38 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 <Link href="/learn/how-to-store/" className="text-[#8B4513] underline hover:no-underline">骨董品の正しい保管方法</Link>
                 をご覧ください。
               </p>
+            </section>
+          )}
+
+          {/* 関連する作家・ページへの本文リンク(任意) */}
+          {relatedLinks && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                あわせて確認したい浮世絵のページ
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {relatedLinks.map((l) => (
+                  <Link key={l.href} href={l.href}
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
+                    <p className="font-bold text-[#8B4513] text-sm mb-1">{l.t}</p>
+                    <p className="text-xs text-[#5C4A3A] leading-relaxed">{l.d}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 参考資料(任意) */}
+          {references && (
+            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+              <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-2">参考資料（版・摺りの解説）</h2>
+              <p className="text-xs text-[#8B7D72] mb-3">{references.verifiedAt}確認</p>
+              <ul className="space-y-2 text-sm">
+                {references.items.map((r) => (
+                  <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer" className="text-[#8B4513] underline hover:no-underline">{r.label}</a></li>
+                ))}
+              </ul>
             </section>
           )}
 
