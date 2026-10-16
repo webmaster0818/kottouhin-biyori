@@ -257,7 +257,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white border-2 border-[#C9A96E]/50 rounded-2xl p-6 md:p-8">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3">
-                要点：骨董品を高く売るための手順
+                骨董品を高く売るための3つの手順
               </h2>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-5">
                 骨董品を高く売るための手順は、<strong>「①相場を把握する、②品目・作家を特定する、③複数の専門業者に無料査定を依頼して比較する」</strong>の3つです。当サイトでは、{soubaDb.artistTotal}名の作家・{soubaDb.resultTotal}件の公開オークションの落札データ（すべて出典を明記・{soubaDb.generatedAt}更新）を無料で公開しています。

@@ -128,7 +128,7 @@ export default function UrielReview() {
         <section className="py-10 md:py-12">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 border-2 border-[#C9A96E]">
-              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">要点：ウリエルの評判と適している方</h2>
+              <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">ウリエルの評判と適している方</h2>
               <ul className="space-y-3 text-sm md:text-base text-[#2C1810] leading-relaxed">
                 <li className="flex gap-2"><span className="text-[#8B4513] font-bold shrink-0">1.</span><span>第三者の口コミは少数です。買取の口コミサイト「ヒカカク！」では総合2.67点・3件です（{CHECKED}時点）。件数が少なく評価も分かれているため、口コミだけでは判断しにくい業者です。</span></li>
                 <li className="flex gap-2"><span className="text-[#8B4513] font-bold shrink-0">2.</span><span>運営情報は公開されています。運営は株式会社クオーレ（資本金5,000万円）、古物商許可は愛知県公安委員会 第542791100800号です。出張買取はクーリングオフ（8日間）の対象と公式サイトに明記されています。</span></li>

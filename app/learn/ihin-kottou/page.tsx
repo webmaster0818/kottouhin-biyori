@@ -43,7 +43,7 @@ export default function IhinKottouPage() {
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
-              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">要点：遺品の骨董品は、すぐに処分・売却しないことが原則です</h2>
+              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">遺品の骨董品は、すぐに処分・売却しないことが原則です</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">急いで処分すると、価値のある品や思い出の品を失うおそれがあります。次の順序で進めてください。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">
                 <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 品物を一覧にする</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">品物を把握し、貴重品と一般品を分けます</p></li>

@@ -56,7 +56,7 @@ export default function TifanaReview() {
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-3">
-                要点：ティファナの口コミを確認する前に
+                ティファナの業態・出張エリア・費用の確認事項
               </h2>
               <ul className="text-sm text-[#5C4A3A] space-y-2 leading-relaxed">
                 <li>・ティファナは骨董品の専門店ではなく、<strong>総合リサイクルショップ</strong>です。公式サイトには骨董品の買取から始まった会社と記載されており、骨董品・美術品の専用の買取ページがあります</li>

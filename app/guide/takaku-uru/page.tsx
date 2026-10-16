@@ -110,7 +110,7 @@ export default function TakakuUruPage() {
             <div className="text-center mb-10">
               <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUMMARY</p>
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                まとめ：高く売るための基本
+                骨董品を高く売るための基本
               </h2>
             </div>
             <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">

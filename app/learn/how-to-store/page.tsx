@@ -62,7 +62,7 @@ export default function HowToStorePage() {
         <section id="quick-table" className="py-10">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-2 text-center">
-              要点：品目別の保管環境の早見表
+              品目別の保管環境の早見表
             </h2>
             <p className="text-sm text-[#5C4A3A] text-center mb-6">
               骨董品の保管方法は、この表が基本です。湿度50〜60%の維持、直射日光の回避、桐箱による調湿の3点を守ることで、劣化の大半を防げます。

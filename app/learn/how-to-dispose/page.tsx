@@ -42,7 +42,7 @@ export default function HowToDisposePage() {
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
-              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">要点：骨董品は処分する前に無料査定を受けることが基本です</h2>
+              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">骨董品は処分する前に無料査定を受けることが基本です</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3"><strong>骨董品の処分方法は、①買取業者に売る、②オークション・フリマで売る、③寄付・譲渡する、④自治体のごみに出す、⑤遺品整理業者・不用品回収業者に依頼する、の5つです。</strong>いずれを選ぶ場合も、価値がわからないまま処分すると高額な品を手放すおそれがあるため、先に無料査定で値が付くかを確認することが基本です。</p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">処分の優先順位は次のとおりです。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">

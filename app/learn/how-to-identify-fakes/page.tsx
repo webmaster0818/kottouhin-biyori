@@ -65,7 +65,7 @@ export default function HowToIdentifyFakesPage() {
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">
-                要点：本物・偽物を見分けるために最初に確認すべきポイント
+                本物と偽物を見分けるために最初に確認する事項
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
                 品目を問わず、最初に確認すべき共通のポイントは次の5つです。1つでも不自然な点がある場合は、ご自身で判断せず、専門家の鑑定（買取業者の無料査定）をご利用ください。

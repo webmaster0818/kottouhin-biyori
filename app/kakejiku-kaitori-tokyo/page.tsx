@@ -176,7 +176,7 @@ export default function KakejikuTokyoPage() {
 
             {/* 要点ボックス */}
             <div className="mt-6 bg-white rounded-2xl border border-[#E0D5C8] shadow-md p-5 md:p-6">
-              <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">要点</h2>
+              <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">東京で掛軸を売却する際の依頼先と費用の要点</h2>
               <ul className="text-sm text-[#5C4A3A] space-y-2 leading-relaxed">
                 <li>・<strong>対面での査定を希望する場合</strong>：東京に実店舗のある美術・骨董の専門業者へ持ち込む（秋華洞=銀座／古美術ささき=世田谷北沢・銀座／古美術八光堂=銀座／緑和堂=中野）。古美術永澤は目白の本社で毎月2回の鑑定会（完全予約制）を実施</li>
                 <li>・<strong>点数が多い場合や、大きくて運べない場合</strong>：全国への出張に対応する古美術永澤・古美術八光堂・緑和堂・バイセル・なんぼや</li>
