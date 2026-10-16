@@ -100,7 +100,7 @@ export default function HowToDisposePage() {
                   <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>自治体の粗大ごみ・不燃ごみとして廃棄する</span></li>
                   <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>遺品整理業者・不用品回収業者にまとめて依頼する</span></li>
                 </ul>
-                <p className="text-sm bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-4">不用品回収業者に依頼する場合の注意：家庭から出るごみを回収・運搬するには、市区町村の一般廃棄物収集運搬業の許可（または市区町村からの委託）が必要です。環境省も、許可のない回収業者を利用しないよう注意を呼びかけています。依頼の前に、お住まいの市区町村の許可業者であるかどうかと、料金の内訳（回収費・運搬費・処分費）をご確認ください。</p>
+                <p className="text-sm bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-4">不用品回収業者に依頼する場合は、許可の有無にご注意ください。家庭から出るごみを回収・運搬するには、市区町村の一般廃棄物収集運搬業の許可（または市区町村からの委託）が必要です。環境省も、許可のない回収業者を利用しないよう注意を呼びかけています。依頼の前に、お住まいの市区町村の許可業者であるかどうかと、料金の内訳（回収費・運搬費・処分費）をご確認ください。</p>
               </div>
             </div>
           </div>
