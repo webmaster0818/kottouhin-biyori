@@ -15,7 +15,11 @@ type CategoryData = {
   priceRange: string;
   detailedHistory?: string;
   types?: { name: string; description: string }[];
-  buyExamples?: { item: string; price: string; note: string }[];
+  buyExamples?: { item: string; price: string; note: string; shop?: string; date?: string; sourceUrl?: string }[];
+  buyExamplesLead?: string;
+  buyExamplesFootnote?: string;
+  priceRangeNote?: string;
+  references?: { verifiedAt: string; items: { label: string; url: string }[] };
   popularArtists: string[];
   checkPoints: string[];
   additionalCheckPoints?: string[];
@@ -297,6 +301,7 @@ export default function CategoryPageClient({
     { q: `${cat.name}を高く売るコツは？`, a: "付属品（箱・鑑定書・証紙など）を揃え、複数の業者に査定を依頼することが、高額売却のポイントです。ご自身でクリーニングせず、現状のまま査定に出してください。" },
     { q: `${cat.name}の査定は無料ですか？`, a: "当サイトで紹介している3社は、いずれも査定が無料です。出張買取の場合も、出張費・査定費はかかりません。査定後のキャンセルも無料です。" },
   ];
+  const hasExampleSources = (cat.buyExamples ?? []).some((e) => !!e.sourceUrl);
   const preservation = preservationTips[slug];
   const fakeId = fakeIdentificationTips[slug];
 
@@ -333,6 +338,7 @@ export default function CategoryPageClient({
               <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
                 <p className="text-sm text-[#8B7D72] mb-1">買取相場</p>
                 <p className="text-2xl font-bold text-[#8B4513] font-serif-jp">{cat.priceRange}</p>
+                {cat.priceRangeNote && <p className="text-xs text-[#8B7D72] mt-2 leading-relaxed">{cat.priceRangeNote}</p>}
               </div>
             </div>
           </div>
@@ -385,9 +391,9 @@ export default function CategoryPageClient({
               <div className="text-center mb-10">
                 <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PRICE EXAMPLES</p>
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                  {cat.name}の買取価格の目安
+                  {hasExampleSources ? `${cat.name}の公開買取実績` : `${cat.name}の買取価格の目安`}
                 </h2>
-                <p className="text-[#5C4A3A] mt-2">市場相場にもとづく参考価格です</p>
+                <p className="text-[#5C4A3A] mt-2">{cat.buyExamplesLead ?? "市場相場にもとづく参考価格です"}</p>
               </div>
 
               {/* Mobile cards */}
@@ -397,6 +403,9 @@ export default function CategoryPageClient({
                     <h3 className="font-bold text-[#2C1810] mb-2">{example.item}</h3>
                     <p className="text-lg font-bold text-[#8B4513] mb-2">{example.price}</p>
                     <p className="text-xs text-[#8B7D72]">{example.note}</p>
+                    {example.sourceUrl && (
+                      <p className="text-xs text-[#8B7D72] mt-2">出典：<a href={example.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline text-[#8B4513]">{example.shop}{example.date ? `（${example.date}）` : ""}</a></p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -407,8 +416,9 @@ export default function CategoryPageClient({
                   <thead>
                     <tr className="bg-[#8B4513] text-white">
                       <th className="px-6 py-4 text-left text-sm font-bold">作品例</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">参考価格</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold">{hasExampleSources ? "買取価格" : "参考価格"}</th>
                       <th className="px-6 py-4 text-left text-sm font-bold">備考</th>
+                      {hasExampleSources && <th className="px-6 py-4 text-left text-sm font-bold">出典</th>}
                     </tr>
                   </thead>
                   <tbody>
@@ -417,14 +427,29 @@ export default function CategoryPageClient({
                         <td className="px-6 py-4 font-bold text-[#2C1810] text-sm">{example.item}</td>
                         <td className="px-6 py-4 text-sm text-[#8B4513] font-medium whitespace-nowrap">{example.price}</td>
                         <td className="px-6 py-4 text-xs text-[#8B7D72]">{example.note}</td>
+                        {hasExampleSources && (
+                          <td className="px-6 py-4 text-xs whitespace-nowrap">
+                            {example.sourceUrl ? <a href={example.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline text-[#8B4513]">{example.shop}{example.date ? <><br />{example.date}</> : null}</a> : null}
+                          </td>
+                        )}
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 text-center">
-                ※上記は市場相場にもとづく参考価格です。実際の査定額は、品物の状態・真贋・市場動向により異なります
+                {cat.buyExamplesFootnote ?? "※上記は市場相場にもとづく参考価格です。実際の査定額は、品物の状態・真贋・市場動向により異なります"}
               </p>
+              {cat.references && cat.references.items.length > 0 && (
+                <div className="mt-6 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                  <p className="text-sm font-bold text-[#2C1810] mb-2">出典（{cat.references.verifiedAt}確認）</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {cat.references.items.map((r, i) => (
+                      <li key={i} className="text-xs text-[#5C4A3A]"><a href={r.url} target="_blank" rel="noopener noreferrer" className="underline text-[#8B4513]">{r.label}</a></li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </section>
         )}
