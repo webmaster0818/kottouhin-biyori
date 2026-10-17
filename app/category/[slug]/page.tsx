@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:
       overrides.metaTitle ??
       (stats
-        ? `${cat.name}の買取相場【2026年7月】落札中央値${stats.median}・査定のポイントとおすすめ業者3選｜骨董品買取びより`
-        : `${cat.name}買取おすすめ業者3選【2026年7月】相場・査定のポイント｜骨董品買取びより`),
+        ? `${cat.name}の買取相場｜落札中央値${stats.median}・査定のポイントとおすすめ業者3選｜骨董品買取びより`
+        : `${cat.name}買取おすすめ業者3選｜相場・査定のポイント｜骨董品買取びより`),
     description:
       overrides.metaDescription ??
       `${cat.name}の買取相場は${cat.priceRange}です。${soubaDesc}高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
@@ -101,7 +101,7 @@ export default async function CategoryPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${cat?.name ?? slug}買取おすすめ業者3選【2026年7月】相場・査定のポイント`,
+    "headline": `${cat?.name ?? slug}買取おすすめ業者3選｜相場・査定のポイント`,
     "description": `${cat?.name ?? slug}の買取相場は${cat?.priceRange ?? ""}です。${cat?.name ?? slug}を高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
     "datePublished": `${BUILD_DATE}T00:00:00+09:00`,
     "dateModified": `${BUILD_DATE}T00:00:00+09:00`,

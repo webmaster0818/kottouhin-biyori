@@ -8,7 +8,7 @@ import { TopicSections, GoogleReviewsSection, ReviewTrendSection } from "@/app/c
 const company = companies.find((c) => c.id === "tifana")!;
 
 export const metadata: Metadata = {
-  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年9月】骨董品買取の特徴と利用方法｜骨董品買取びより`,
+  title: (company as any).seoTitle ?? `${company.name}の口コミ・評判｜骨董品買取の特徴と利用方法｜骨董品買取びより`,
   description:
     (company as any).seoDescription ??
     `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。骨董品を含む幅広いジャンルに対応する${company.name}の特徴、メリット・デメリット、利用方法をご説明します。`,

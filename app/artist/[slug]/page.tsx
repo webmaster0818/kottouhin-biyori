@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: (artist as any).seoTitle
       ? `${(artist as any).seoTitle}| 骨董品買取びより`
-      : `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法【2026年7月】| 骨董品買取びより`,
+      : `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法｜骨董品買取びより`,
     description: (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}です。査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`,
     alternates: { canonical: `/artist/${slug}` },
   };
@@ -129,7 +129,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法【2026年7月】`,
+    "headline": (artist as any).seoTitle || `${artist.name}の${artist.category}買取相場と査定・鑑定の依頼方法`,
     "description": (artist as any).metaDescription ?? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}です。査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
     "dateModified": (artist as any).dateModified ? `${(artist as any).dateModified}T00:00:00+09:00` : soubaPoints ? "2026-09-16T00:00:00+09:00" : workTypes ? "2026-08-19T00:00:00+09:00" : (artist as any).auctionResults ? "2026-06-19T00:00:00+09:00" : "2026-06-07T00:00:00+09:00",

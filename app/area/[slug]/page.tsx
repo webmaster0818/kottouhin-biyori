@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = areas.find((a) => a.slug === slug);
   if (!area) return {};
   return {
-    title: `${area.fullName}の骨董品・美術品買取おすすめ業者【2026年7月】｜骨董品買取びより`,
+    title: `${area.fullName}の骨董品・美術品買取おすすめ業者｜骨董品買取びより`,
     description: `${area.fullName}で骨董品・美術品を売却する際の業者選びについて、絵画・掛軸・茶道具・陶磁器・刀剣などに対応する${area.fullName}対応の買取業者3社を比較しています。出張買取・宅配買取の対応状況もご説明します。`,
     alternates: { canonical: `/area/${slug}` },
   };
@@ -355,7 +355,7 @@ export default async function AreaPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${area.fullName}の骨董品買取おすすめ業者【2026年7月】`,
+    "headline": `${area.fullName}の骨董品買取おすすめ業者`,
     "description": `${area.fullName}で骨董品を売却する際の業者選びについて、${area.fullName}対応の買取業者を比較しています。`,
     "datePublished": "2026-05-23T00:00:00+09:00",
     "dateModified": "2026-06-20T00:00:00+09:00",

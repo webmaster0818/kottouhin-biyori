@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
   return {
-    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判【2026年7月】骨董品買取の特徴と利用方法｜骨董品買取びより`,
+    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判｜骨董品買取の特徴と利用方法｜骨董品買取びより`,
     description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法をご説明します。`,
     alternates: { canonical: `/review/${slug}` },
   };
@@ -43,7 +43,8 @@ export default async function DynamicReviewPage({ params }: Props) {
   if (!company || EXISTING_STATIC.has(slug)) notFound();
 
   const pageUrl = `${SITE_URL}/review/${slug}/`;
-  const asOfLabel = (company as any).asOfLabel ?? "2026年7月";
+  const asOfLabel: string | undefined = (company as any).asOfLabel;
+  const asOfSuffix = asOfLabel ? `【${asOfLabel}】` : "";
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -56,7 +57,7 @@ export default async function DynamicReviewPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${company.name}の口コミ・評判【${asOfLabel}】`,
+    "headline": `${company.name}の口コミ・評判${asOfSuffix}`,
     "description": `${company.name}の口コミ・評判と特徴を掲載しています。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
     "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
@@ -167,7 +168,7 @@ export default async function DynamicReviewPage({ params }: Props) {
                 {(company as any).h1 ?? `${company.name}の口コミ・評判`}
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                {(company as any).heroLead ?? `骨董品買取の特徴と利用方法【${asOfLabel}】`}
+                {(company as any).heroLead ?? `骨董品買取の特徴と利用方法${asOfSuffix}`}
               </p>
             </div>
           </section>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の市場価値の調べ方｜相場を把握する方法【2026年7月】｜骨董品買取びより",
+  title: "骨董品の市場価値の調べ方｜相場を把握する方法｜骨董品買取びより",
   description: "骨董品の市場価値・相場をご自身で調べる方法をご説明します。オークションの落札結果や買取相場、一括査定の活用方法、品目別の価格帯の目安を掲載しています。",
   alternates: { canonical: "/guide/shijou-kachi" },
 };

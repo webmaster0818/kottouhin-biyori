@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の写真査定｜正確な査定を受けるための撮影方法【2026年7月】｜骨董品買取びより",
+  title: "骨董品の写真査定｜正確な査定を受けるための撮影方法｜骨董品買取びより",
   description: "骨董品の写真査定(メール・フォーム・LINE)の方法とメリット、正確な査定を受けるための写真の撮影方法をご説明します。",
   alternates: { canonical: "/guide/shashin-satei" },
 };

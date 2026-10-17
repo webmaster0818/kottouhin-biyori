@@ -6,7 +6,7 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品買取のトラブル事例と対策【2026年7月】売却前に確認すべき注意点｜骨董品買取びより",
+  title: "骨董品買取のトラブル事例と対策｜売却前に確認すべき注意点｜骨董品買取びより",
   description: "骨董品買取で起こりやすいトラブルの事例5つと、具体的な対策をご説明します。押し買い、不当な安値での買取、キャンセルの拒否など、事前に確認すべき注意点を掲載しています。",
   alternates: { canonical: "/guide/trouble" },
 };

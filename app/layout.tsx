@@ -18,13 +18,13 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kottokaitori-biyori.com"),
-  title: "骨董品買取びより｜骨董品買取おすすめ3社を比較【2026年7月】",
+  title: "骨董品買取びより｜骨董品買取おすすめ3社を比較",
   description:
     "骨董品買取びよりは、骨董品・美術品・掛軸・茶道具の買取業者を比較する専門ガイドです。ヒカカク！・ティファナ・ウリエルの口コミ・料金・対応品目を掲載し、目的に合った買取業者選びを支援します。",
   keywords:
     "骨董品買取,骨董品 査定,掛軸 買取,茶道具 買取,美術品 買取,骨董品 出張買取,古美術 買取",
   openGraph: {
-    title: "骨董品買取びより｜骨董品買取おすすめ3社を比較【2026年7月】",
+    title: "骨董品買取びより｜骨董品買取おすすめ3社を比較",
     description:
       "骨董品・美術品の買取業者を、口コミ・料金・対応品目の観点から比較する専門ガイドです。",
     type: "website",

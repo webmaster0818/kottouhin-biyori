@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品のLINE査定｜利用方法と注意点【2026年7月】｜骨董品買取びより",
+  title: "骨董品のLINE査定｜利用方法と注意点｜骨董品買取びより",
   description: "骨董品のLINE査定の方法・メリット・注意点を解説。スマートフォンで写真を送ることで概算の査定額がわかる仕組みと、査定の精度を高めるための撮影方法をご説明します。",
   alternates: { canonical: "/guide/line-satei" },
 };

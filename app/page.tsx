@@ -3,7 +3,7 @@ import companies from "@/data/companies.json";
 import soubaDb from "@/data/soubaDb.json";
 
 export const metadata = {
-  title: "骨董品買取びより｜公開オークションの落札データにもとづく相場と買取業者の比較【2026年7月】",
+  title: "骨董品買取びより｜公開オークションの落札データにもとづく相場と買取業者の比較",
   description: `骨董品の買取相場を、${soubaDb.artistTotal}名の作家・${soubaDb.resultTotal}件の公開オークションの落札データ（公式情報で一次確認したもののみ）にもとづいてご説明します。掛軸・絵画・茶道具・刀剣など品目別の相場と、買取業者の比較を掲載しています。`,
   alternates: { canonical: "/" },
 };

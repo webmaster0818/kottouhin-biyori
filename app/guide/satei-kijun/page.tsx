@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideArticle, { type GuideArticleProps } from "@/app/components/GuideArticle";
 
 export const metadata: Metadata = {
-  title: "骨董品の査定基準｜査定額を左右する6つのポイント【2026年7月】｜骨董品買取びより",
+  title: "骨董品の査定基準｜査定額を左右する6つのポイント｜骨董品買取びより",
   description: "骨董品の査定額が決まる仕組みについて、作家・真贋・状態・付属品・時代・市場需要という6つの査定基準をご説明します。",
   alternates: { canonical: "/guide/satei-kijun" },
 };

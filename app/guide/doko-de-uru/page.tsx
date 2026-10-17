@@ -6,7 +6,7 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "骨董品はどこで売る？4つの売却方法の比較【2026年7月】｜骨董品買取びより",
+  title: "骨董品はどこで売る？4つの売却方法の比較｜骨董品買取びより",
   description: "骨董品を売る4つの方法（買取業者・オークション・フリマアプリ・骨董市）を比較しています。それぞれのメリット・デメリットと、適している方をご説明します。",
   alternates: { canonical: "/guide/doko-de-uru" },
 };

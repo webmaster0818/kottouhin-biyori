@@ -30,7 +30,7 @@ const reviewed: C[] = (companies as C[])
 const verifiedAt = (c: C) => (c as { verifiedData?: { verifiedAt?: string } }).verifiedData?.verifiedAt ?? "—";
 
 export const metadata: Metadata = {
-  title: `骨董品買取業者の口コミ・評判レビュー一覧【2026年9月】掲載${reviewed.length}社｜骨董品買取びより`,
+  title: `骨董品買取業者の口コミ・評判レビュー一覧｜掲載${reviewed.length}社｜骨董品買取びより`,
   description: `骨董品買取びよりに掲載している買取業者${reviewed.length}社のレビューページの一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日を掲載し、業者ごとの詳細なレビューページへのリンクを設けています。`,
   alternates: { canonical: PATH },
 };
