@@ -17,6 +17,7 @@ type TopicSection = {
   id: string; placement?: string; title: string; lead?: string; bullets?: string[];
   table?: { caption?: string; headers: string[]; rows: string[][] }; note?: string;
   links?: { href: string; label: string }[];
+  extLinks?: { href: string; label: string }[];
 };
 
 
@@ -131,6 +132,21 @@ export default async function DynamicReviewPage({ params }: Props) {
                             <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition">
                               {l.label}
                             </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {sec.extLinks && sec.extLinks.length > 0 && (
+                    <div className="mb-4 rounded-xl border border-[#E0D5C8] p-4">
+                      <p className="text-sm font-bold text-[#8B4513] mb-2">地図・出典（外部サイトが開きます）</p>
+                      <ul className="space-y-1.5">
+                        {sec.extLinks.map((l, i) => (
+                          <li key={i} className="text-sm leading-relaxed flex gap-2">
+                            <span className="text-[#C9A96E] shrink-0">↗</span>
+                            <a href={l.href} target="_blank" rel="noopener" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410] transition break-all">
+                              {l.label}
+                            </a>
                           </li>
                         ))}
                       </ul>
