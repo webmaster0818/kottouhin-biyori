@@ -53,7 +53,7 @@ export default function WhatIsKottouhinPage() {
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の定義と、価値を決める要素は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                骨董品とは、一般的に製造から100年以上経過した美術品・工芸品・装飾品を指します。この100年という基準は、1934年のアメリカ通商関税法に由来する国際的な定義です。日本には明確に定義する法律はなく、古物営業法の「古物」として扱われます。実務上は江戸〜明治以前の品が中心ですが、昭和期の品でも希少性の高いものは骨董品として流通しています。価値は「作家・時代・希少性・保存状態・来歴」の5つの要素で決まります。
+                骨董品とは、一般的に製造から100年以上経過した美術品・工芸品・装飾品を指します。100年という基準は輸入関税の品目分類でも使われており、日本の実行関税率表では第97.06項の「こつとう」を「製作後100年を超えたものに限る」としています。日本には明確に定義する法律はなく、古物営業法の「古物」として扱われます。実務上は江戸〜明治以前の品が中心ですが、昭和期の品でも希少性の高いものは骨董品として流通しています。価値は「作家・時代・希少性・保存状態・来歴」の5つの要素で決まります。
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
@@ -79,7 +79,7 @@ export default function WhatIsKottouhinPage() {
               </h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>
-                  骨董品（こっとうひん）とは、一般的に<strong className="text-[#8B4513]">製造から100年以上経過した美術品・工芸品・装飾品</strong>を指します。この「100年」という基準は、1934年にアメリカで制定された通商関税法（Tariff Act）に由来しており、国際的にも広く採用されている定義です。
+                  骨董品（こっとうひん）とは、一般的に<strong className="text-[#8B4513]">製造から100年以上経過した美術品・工芸品・装飾品</strong>を指します。この「100年」という基準は輸入関税の品目分類でも使われています。日本の実行関税率表（税関）では、第97.06項の「こつとう」を「製作後100年を超えたものに限る」と定めています（2026年10月18日確認）。
                 </p>
                 <p>
                   日本国内においては、骨董品を明確に定義する法律は存在しません。ただし、古物営業法では「古物」として取り扱いが規定されており、古物商の許可を得た業者のみが売買を行うことができます。古物営業法における「古物」は、一度使用された物品やそれに手入れを加えたものを広く含み、骨董品もこのカテゴリに含まれます。
@@ -93,7 +93,7 @@ export default function WhatIsKottouhinPage() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-[#C9A96E] mt-0.5 shrink-0">●</span>
-                      <span>国際的な定義：製造から100年以上経過したもの（1934年アメリカ通商関税法）</span>
+                      <span>関税の品目分類：製作後100年を超えたもの（実行関税率表 第97.06項「こつとう」）</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#C9A96E] mt-0.5 shrink-0">●</span>

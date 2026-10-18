@@ -53,7 +53,7 @@ const categories = [
 
 const antiqueVsVintage = [
   { item: "定義", antique: "製造から100年以上経過", vintage: "製造から20〜100年程度" },
-  { item: "法的基準", antique: "関税法で100年超のものに特別関税適用", vintage: "明確な法的基準なし" },
+  { item: "法的基準", antique: "関税率表の第97.06項「こつとう」は製作後100年超が条件", vintage: "明確な法的基準なし" },
   { item: "価値の傾向", antique: "歴史的・美術的価値が高い", vintage: "デザイン性・希少性で評価" },
   { item: "市場の需要", antique: "コレクター・美術館向け", vintage: "インテリア・ファッション向け" },
 ];
