@@ -92,7 +92,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const leadAnswer = (artist as any).leadAnswer as { h: string; points: string[] } | undefined;
   const priceRangeNote = (artist as any).priceRangeNote as string | undefined;
   const kaitoriResults = (artist as any).kaitoriResults as
-    | { verifiedAt: string; note: string; results: { title: string; price: string; shop: string; date: string; method: string; edition: string; sourceUrl: string }[] }
+    | { verifiedAt: string; note: string; editionHeader?: string; footNote?: string; results: { title: string; price: string; shop: string; date: string; method: string; edition: string; sourceUrl: string }[] }
     | undefined;
   const relatedLinks = (artist as any).relatedLinks as { href: string; t: string; d: string }[] | undefined;
   const references = (artist as any).references as { verifiedAt: string; items: { label: string; url: string }[] } | undefined;
@@ -101,7 +101,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const faqs = [
     { q: `${artist.name}の作品はいくらで売れますか？`, a: (artist as any).priceFaqAnswer ?? `${artist.name}の${artist.category}の買取相場は、${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定でご確認ください。` },
     { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `売却できます。${artist.name}のように評価の高い作家の作品は、傷みや欠けがあっても、修復・再販を前提に買い取られる場合が多くあります。ご自身で手入れせず、現状のまま査定に出してください。` },
-    { q: `本物かどうかわかりませんが査定できますか？`, a: `問題ありません。専門の査定士が、落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品には精巧な写しも存在するため、専門業者での査定をおすすめします。` },
+    { q: `本物かどうかわかりませんが査定できますか？`, a: (artist as any).authFaqAnswer ?? `問題ありません。専門の査定士が、落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品には精巧な写しも存在するため、専門業者での査定をおすすめします。` },
     { q: `${artist.name}の作品を高く売るには？`, a: `複数の業者から見積もりを取ることが、最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
     ...extraFaqs,
   ];
@@ -395,7 +395,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                   <thead>
                     <tr className="bg-[#FAF7F2] text-[#5C4A3A]">
                       <th className="text-left font-bold p-3 border border-[#E0D5C8]">品物</th>
-                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">版・状態（掲載内容）</th>
+                      <th className="text-left font-bold p-3 border border-[#E0D5C8]">{kaitoriResults.editionHeader ?? "版・状態（掲載内容）"}</th>
                       <th className="text-left font-bold p-3 border border-[#E0D5C8] whitespace-nowrap">買取価格</th>
                       <th className="text-left font-bold p-3 border border-[#E0D5C8]">業者・掲載日</th>
                       <th className="text-left font-bold p-3 border border-[#E0D5C8]">出典</th>
@@ -415,7 +415,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 </table>
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 各業者が公開している過去の買取事例であり、価格は掲載当日のものです（各業者とも、価格を保証するものではないと明記しています）。同じ図柄でも、摺りの時期・状態・揃いの有無によって金額は大きく変わります。
+                {kaitoriResults.footNote ?? "※ 各業者が公開している過去の買取事例であり、価格は掲載当日のものです（各業者とも、価格を保証するものではないと明記しています）。同じ図柄でも、摺りの時期・状態・揃いの有無によって金額は大きく変わります。"}
               </p>
             </section>
           )}
@@ -546,7 +546,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
                 <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
-                関連する浮世絵のページ
+                {(artist as any).relatedLinksHeading ?? "関連する浮世絵のページ"}
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {relatedLinks.map((l) => (
@@ -563,7 +563,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           {/* 参考資料(任意) */}
           {references && (
             <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
-              <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-2">参考資料（版・摺りの解説）</h2>
+              <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-2">{(artist as any).referencesHeading ?? "参考資料（版・摺りの解説）"}</h2>
               <p className="text-xs text-[#8B7D72] mb-3">{references.verifiedAt}確認</p>
               <ul className="space-y-2 text-sm">
                 {references.items.map((r) => (

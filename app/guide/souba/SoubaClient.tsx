@@ -47,7 +47,7 @@ const sadouguArtistPrices = [
 const kaigaArtistPrices = [
   { artist: "棟方志功", range: "50万〜500万円", note: "板画（版画）は数百万の実績あり" },
   { artist: "平山郁夫", range: "30万〜300万円", note: "シルクロード題材が人気" },
-  { artist: "藤田嗣治", range: "100万〜1,000万円以上", note: "乳白色の裸婦は世界的に評価" },
+  { artist: "藤田嗣治", range: "1.5万〜180万円", note: "国内業者の公開買取実績（版画中心・2026年10月19日確認）。素描・油彩は別の価格帯" },
   { artist: "千住博", range: "30万〜200万円", note: "ウォーターフォールシリーズが代表作" },
   { artist: "片岡球子", range: "30万〜300万円", note: "面構シリーズが高い評価" },
   { artist: "杉山寧", range: "20万〜200万円", note: "文化勲章受章の日本画家" },
@@ -58,7 +58,7 @@ const kaigaArtistPrices = [
 ];
 
 const toujikiArtistPrices = [
-  { artist: "北大路魯山人", range: "30万〜300万円", note: "食器・花器。独自の美意識" },
+  { artist: "北大路魯山人", range: "7万〜270万円", note: "国内業者の公開買取実績（緑和堂・獏ほか・2026年10月19日確認）" },
   { artist: "河井寛次郎", range: "20万〜200万円", note: "民藝運動の中心人物" },
   { artist: "濱田庄司", range: "20万〜200万円", note: "人間国宝。益子焼を代表する陶芸家" },
   { artist: "板谷波山", range: "50万〜500万円", note: "近代陶芸の祖。葆光彩磁が代表" },

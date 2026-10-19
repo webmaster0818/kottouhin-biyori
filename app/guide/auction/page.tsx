@@ -19,7 +19,7 @@ const platforms = [
     type: "総合オークション",
     merit: "利用者数が多く、骨董品のカテゴリも充実しています。オークション形式のため、想定以上の価格で落札される場合があります。過去の落札相場を確認できるため、出品価格の参考にもなります。",
     demerit: "出品手数料（落札額の10%）がかかり、梱包・発送の手間も生じます。真贋に関するトラブルやクレームにも、ご自身で対応する必要があります。",
-    fee: "落札額の10%（Yahoo!プレミアム会員は8.8%）",
+    fee: "落札価格の10.0%（税込・2026年10月19日 Yahoo!オークション公式で確認）",
     bestFor: "一定の知識があり、手間をかけても高く売りたい方",
   },
   {
@@ -34,8 +34,8 @@ const platforms = [
     name: "専門オークション（毎日オークション・シンワオークション等）",
     type: "美術品専門オークション",
     merit: "美術品・骨董品に特化しているため、専門知識を持つ購入者が集まり、適正価格での落札が期待できます。出品時に専門家の鑑定が入るため、真贋に関するトラブルが起こりにくい点も特徴です。",
-    demerit: "出品手数料が高く（落札額の10〜15%）、出品から落札まで1〜2か月かかる場合があります。最低落札価格に達しない場合は不落札となり、品物は返却されます。",
-    fee: "落札額の10〜15%（別途出品料がかかる場合あり）",
+    demerit: "販売委託手数料が高く（税込で落札額の11〜16.5%程度）、出品から落札まで1〜2か月かかる場合があります。最低落札価格に達しない場合は不落札となり、品物は返却されます。",
+    fee: "落札価格の11〜16.5%程度（税込・会社と落札額により異なる。別途カタログ掲載料などがかかる場合あり）",
     bestFor: "高額な骨董品を適正価格で売りたい方、専門家の鑑定を受けたい方",
   },
 ];
@@ -65,7 +65,7 @@ export default function AuctionPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品オークションの利用方法・相場\",\"item\":\"https://kottokaitori-biyori.com/guide/auction/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品オークションの利用方法・相場\",\"description\":\"骨董品オークションの利用方法と相場についてご説明します\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/auction/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品オークションの利用方法・相場\",\"description\":\"骨董品オークションの利用方法と相場についてご説明します\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-19T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/auction/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
       <main className="flex-1">
@@ -101,7 +101,7 @@ export default function AuctionPage() {
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">オークションでの売却が適しているのは、次のような方です。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                骨董品の知識が豊富で、出品・梱包・発送の手間をかけられる方には、オークションが適しています。主な選択肢は、ヤフオク！（手数料10%）・メルカリ（10%）・美術品専門オークション（10〜15%）の3つです。一方、手間をかけずに確実に売りたい方や、真贋に関するトラブルを避けたい方には、手数料が不要で即日〜3日で現金化できる業者買取をおすすめします。まず業者の無料査定で相場を把握し、そのうえでオークションへの出品を検討する方法が適しています。
+                骨董品の知識が豊富で、出品・梱包・発送の手間をかけられる方には、オークションが適しています。主な選択肢は、ヤフオク！（手数料10%）・メルカリ（10%）・美術品専門オークション（税込11〜16.5%程度）の3つです。一方、手間をかけずに確実に売りたい方や、真贋に関するトラブルを避けたい方には、手数料が不要で即日〜3日で現金化できる業者買取をおすすめします。まず業者の無料査定で相場を把握し、そのうえでオークションへの出品を検討する方法が適しています。
               </p>
             </div>
             <div className="text-center mb-10">

@@ -1,21 +1,21 @@
 {
- "generatedAt": "2026年07月10日",
+ "generatedAt": "2026年10月19日",
  "artistTotal": 119,
- "resultTotal": 361,
- "jpyResultTotal": 264,
- "foreignResultTotal": 82,
+ "resultTotal": 374,
+ "jpyResultTotal": 273,
+ "foreignResultTotal": 83,
  "stats": [
   {
    "category": "絵画",
    "artistCount": 48,
-   "resultCount": 114,
-   "max": "360,000,000円",
+   "resultCount": 122,
+   "max": "506,000,000円",
    "median": "1,725,000円"
   },
   {
    "category": "陶磁器",
    "artistCount": 33,
-   "resultCount": 110,
+   "resultCount": 111,
    "max": "69,000,000円",
    "median": "241,500円"
   },
@@ -58,6 +58,16 @@
  "top20": [
   {
    "rank": 1,
+   "jpy": 506000000,
+   "amount": "506,000,000円",
+   "artist": "藤田嗣治",
+   "slug": "fujita-tsuguharu",
+   "title": "エレーヌ・フランクの肖像（1924, 油彩・キャンヴァス, 東美鑑定証書）",
+   "house": "SBIアートオークション",
+   "year": "2026"
+  },
+  {
+   "rank": 2,
    "jpy": 360000000,
    "amount": "360,000,000円",
    "artist": "岸田劉生",
@@ -67,7 +77,7 @@
    "year": "2000"
   },
   {
-   "rank": 2,
+   "rank": 3,
    "jpy": 140000000,
    "amount": "140,000,000円",
    "artist": "黒田清輝",
@@ -77,7 +87,7 @@
    "year": "2020"
   },
   {
-   "rank": 3,
+   "rank": 4,
    "jpy": 69000000,
    "amount": "69,000,000円",
    "artist": "北大路魯山人",
@@ -87,7 +97,7 @@
    "year": "2026"
   },
   {
-   "rank": 4,
+   "rank": 5,
    "jpy": 66000000,
    "amount": "66,000,000円",
    "artist": "加山又造",
@@ -97,7 +107,7 @@
    "year": "2021"
   },
   {
-   "rank": 5,
+   "rank": 6,
    "jpy": 59800000,
    "amount": "59,800,000円",
    "artist": "東山魁夷",
@@ -107,7 +117,7 @@
    "year": "2024"
   },
   {
-   "rank": 6,
+   "rank": 7,
    "jpy": 54000000,
    "amount": "54,000,000円",
    "artist": "東山魁夷",
@@ -117,9 +127,9 @@
    "year": "2023"
   },
   {
-   "rank": 7,
-   "jpy": 46000000,
-   "amount": "46,000,000円",
+   "rank": 8,
+   "jpy": 52900000,
+   "amount": "52,900,000円",
    "artist": "藤田嗣治",
    "slug": "fujita-tsuguharu",
    "title": "狐を売る男（1933, 水彩・紙）",
@@ -127,7 +137,7 @@
    "year": "2019"
   },
   {
-   "rank": 8,
+   "rank": 9,
    "jpy": 36000000,
    "amount": "36,000,000円",
    "artist": "岸田劉生",
@@ -137,7 +147,7 @@
    "year": "2012"
   },
   {
-   "rank": 9,
+   "rank": 10,
    "jpy": 34500000,
    "amount": "34,500,000円",
    "artist": "東山魁夷",
@@ -147,7 +157,7 @@
    "year": "2024"
   },
   {
-   "rank": 10,
+   "rank": 11,
    "jpy": 34500000,
    "amount": "34,500,000円",
    "artist": "杉山寧",
@@ -157,7 +167,7 @@
    "year": "2025"
   },
   {
-   "rank": 11,
+   "rank": 12,
    "jpy": 33350000,
    "amount": "33,350,000円",
    "artist": "北大路魯山人",
@@ -167,7 +177,7 @@
    "year": "2026"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "jpy": 31050000,
    "amount": "31,050,000円",
    "artist": "北大路魯山人",
@@ -177,7 +187,7 @@
    "year": "2026"
   },
   {
-   "rank": 13,
+   "rank": 14,
    "jpy": 27000000,
    "amount": "27,000,000円",
    "artist": "佐伯祐三",
@@ -187,7 +197,7 @@
    "year": "2023"
   },
   {
-   "rank": 14,
+   "rank": 15,
    "jpy": 23000000,
    "amount": "23,000,000円",
    "artist": "熊谷守一",
@@ -197,7 +207,7 @@
    "year": "2023"
   },
   {
-   "rank": 15,
+   "rank": 16,
    "jpy": 23000000,
    "amount": "23,000,000円",
    "artist": "伊東深水",
@@ -207,7 +217,7 @@
    "year": "2023"
   },
   {
-   "rank": 16,
+   "rank": 17,
    "jpy": 18400000,
    "amount": "18,400,000円",
    "artist": "林武",
@@ -217,7 +227,7 @@
    "year": "2025"
   },
   {
-   "rank": 17,
+   "rank": 18,
    "jpy": 18400000,
    "amount": "18,400,000円",
    "artist": "安井曾太郎",
@@ -227,7 +237,7 @@
    "year": "2023"
   },
   {
-   "rank": 18,
+   "rank": 19,
    "jpy": 18000000,
    "amount": "18,000,000円",
    "artist": "梅原龍三郎",
@@ -237,7 +247,7 @@
    "year": "2022"
   },
   {
-   "rank": 19,
+   "rank": 20,
    "jpy": 17250000,
    "amount": "17,250,000円",
    "artist": "福田平八郎",
@@ -245,16 +255,6 @@
    "title": "若竹",
    "house": "シンワオークション",
    "year": "2026"
-  },
-  {
-   "rank": 20,
-   "jpy": 14375000,
-   "amount": "14,375,000円",
-   "artist": "杉山寧",
-   "slug": "sugiyama-yasushi",
-   "title": "翬",
-   "house": "シンワオークション",
-   "year": "2024"
   }
  ],
  "overseas": [
@@ -333,6 +333,16 @@
  ],
  "artists": [
   {
+   "slug": "fujita-tsuguharu",
+   "name": "藤田嗣治",
+   "category": "絵画",
+   "count": 9,
+   "verifiedAt": "2026年10月19日（SBI）／2026年6月20日（Bonhams）",
+   "topTitle": "エレーヌ・フランクの肖像（1924, 油彩・キャンヴァス, 東美鑑定証書）",
+   "topHammer": "506,000,000円（手数料込）",
+   "topJpy": 506000000
+  },
+  {
    "slug": "kishida-ryusei",
    "name": "岸田劉生",
    "category": "絵画",
@@ -356,8 +366,8 @@
    "slug": "kitaoji-rosanjin",
    "name": "北大路魯山人",
    "category": "陶磁器",
-   "count": 5,
-   "verifiedAt": "2026年6月19日",
+   "count": 6,
+   "verifiedAt": "2026年10月19日（シンワ・SBI・Bonhams）",
    "topTitle": "椿鉢",
    "topHammer": "6,900万円（落札手数料込）",
    "topJpy": 69000000
@@ -381,16 +391,6 @@
    "topTitle": "緑の山湖",
    "topHammer": "5,980万円",
    "topJpy": 59800000
-  },
-  {
-   "slug": "fujita-tsuguharu",
-   "name": "藤田嗣治",
-   "category": "絵画",
-   "count": 3,
-   "verifiedAt": "2026年6月20日",
-   "topTitle": "狐を売る男（1933, 水彩・紙）",
-   "topHammer": "46,000,000円（ハンマー／手数料込 52,900,000円）",
-   "topJpy": 46000000
   },
   {
    "slug": "sugiyama-yasushi",
@@ -566,9 +566,9 @@
    "slug": "kazuki-yasuo",
    "name": "香月泰男",
    "category": "絵画",
-   "count": 1,
-   "verifiedAt": "2026年7月1日",
-   "topTitle": "菊花（Chrysanthemum・油彩・1970年）",
+   "count": 3,
+   "verifiedAt": "2026年10月19日",
+   "topTitle": "菊花（油彩・キャンヴァス, P4, 1970年, 香月婦美子・藤田士朗鑑定書）",
    "topHammer": "4,600,000円（手数料込）",
    "topJpy": 4600000
   },
@@ -1346,8 +1346,8 @@
    "slug": "go-shoseki",
    "name": "呉昌碩",
    "category": "中国美術",
-   "count": 1,
-   "verifiedAt": "2026年6月27日",
+   "count": 5,
+   "verifiedAt": "2026年10月19日",
    "topTitle": "花卉十二屏（1915〜16年作）",
    "topHammer": "約RMB209,300,000（手数料込・作家最高記録／ハンマーRMB182,000,000）",
    "topJpy": null
