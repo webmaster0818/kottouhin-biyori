@@ -43,7 +43,7 @@ const methods = [
     cons: [
       "出品・梱包・発送の手間がかかる",
       "売れるまでに時間がかかる場合がある",
-      "手数料（10〜15%程度）がかかる",
+      "手数料がかかる（Yahoo!オークションは落札価格の10.0%〈税込〉、美術品専門オークションは税込11〜16.5%程度＋カタログ掲載料など。2026年10月19日 各社公式で確認）",
       "配送中の破損リスクがある",
       "トラブルへの対応は自己責任となる",
     ],
@@ -63,7 +63,7 @@ const methods = [
       "値下げの交渉が多い",
       "高額商品は売れにくい（上限金額の制限もある）",
       "真贋の保証ができずトラブルになりやすい",
-      "手数料（10%程度）がかかる",
+      "販売手数料がかかる（メルカリは販売価格の10%。2026年10月19日 公式で確認）",
     ],
     bestFor: "比較的安価な骨董品・雑貨を手軽に売りたい方",
     rating: "おすすめ度: ★★☆☆☆",
@@ -94,7 +94,7 @@ export default function DokoDeUruPage() {
       {/* JSONLD_INJECTED_v1 #0 */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品の売却先4種類の比較\",\"item\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品はどこで売る？4つの方法を比較\",\"description\":\"骨董品はどこで売る？4つの方法を比較 を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-05-23T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品はどこで売る？4つの方法を比較\",\"description\":\"骨董品はどこで売る？4つの方法を比較 を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-10-19T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/guide/doko-de-uru/\"}}" }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
       <SiteHeader />
       <main className="flex-1">
@@ -118,7 +118,7 @@ export default function DokoDeUruPage() {
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の売却先を選ぶ際の主なポイントをご説明します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                骨董品の売却方法は、「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全かつ確実に売りたい場合は、専門家の査定を受けられ、即日の現金化も可能な買取業者への売却を最もおすすめします（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、10〜15%程度の手数料と、出品・発送の手間がかかります。判断に迷う場合は、まず買取業者の一括査定で相場を把握し、そのうえで他の方法を検討してください。
+                骨董品の売却方法は、「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全かつ確実に売りたい場合は、専門家の査定を受けられ、即日の現金化も可能な買取業者への売却を最もおすすめします（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、手数料（Yahoo!オークションは落札価格の10.0%〈税込〉、美術品専門オークションは税込11〜16.5%程度）と、出品・発送の手間がかかります（各社の料金は<Link href="/guide/gyosha-hikaku/" className="text-[#8B4513] underline">骨董品の売却先・買取業者の比較</Link>に出典付きで掲載）。判断に迷う場合は、まず買取業者の一括査定で相場を把握し、そのうえで他の方法を検討してください。
               </p>
             </div>
             <div className="text-center mb-10">
