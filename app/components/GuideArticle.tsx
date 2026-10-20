@@ -32,6 +32,7 @@ export interface GuideArticleProps {
   ctaUrl: string; // CTAリンク先(公式 or /#ranking)
   faq?: GuideFaq[];
   deepDive?: { h: string; body: string }[]; // 追加の詳しい解説セクション
+  tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典つき）
 }
 
 export default function GuideArticle(p: GuideArticleProps) {
@@ -106,7 +107,42 @@ export default function GuideArticle(p: GuideArticleProps) {
             </section>
           )}
 
-          <section className={`py-12 md:py-16 ${p.intro ? "pt-0 md:pt-0" : ""}`}>
+          {p.tables && p.tables.length > 0 && (
+            <section className={`py-12 md:py-16 ${p.intro ? "pt-0 md:pt-0" : ""}`}>
+              <div className="max-w-4xl mx-auto px-4 space-y-10">
+                {p.tables.map((t, ti) => (
+                  <div key={ti}>
+                    <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-[#8B4513] pl-3">{t.h}</h2>
+                    {t.lead && <p className="text-[#5C4A3A] leading-relaxed mb-4">{t.lead}</p>}
+                    {t.caption && <p className="text-sm font-bold text-[#8B4513] mb-2">{t.caption}</p>}
+                    <div className="overflow-x-auto bg-white rounded-2xl border border-[#E0D5C8] shadow-md">
+                      <table className="w-full text-sm min-w-[640px]">
+                        <thead>
+                          <tr className="text-left text-[#8B7355] border-b border-[#E0D5C8]">
+                            {t.headers.map((h, hi) => (
+                              <th key={hi} className="px-4 py-3 align-top">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {t.rows.map((row, ri) => (
+                            <tr key={ri} className="border-b border-[#F0E8DC] align-top">
+                              {row.map((cell, ci) => (
+                                <td key={ci} className={`px-4 py-3 leading-relaxed ${ci === 0 ? "font-bold text-[#2C1810]" : "text-[#5C4A3A]"}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    {t.note && <p className="mt-3 text-xs text-[#8B7355] leading-relaxed">{t.note}</p>}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section className={`py-12 md:py-16 ${p.intro || (p.tables && p.tables.length > 0) ? "pt-0 md:pt-0" : ""}`}>
             <div className="max-w-4xl mx-auto px-4 space-y-8">
               {p.tips.map((tip, idx) => (
                 <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
