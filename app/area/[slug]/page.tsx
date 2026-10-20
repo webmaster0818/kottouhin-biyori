@@ -31,7 +31,7 @@ const sellingTips: Record<string, { title: string; text: string }[]> = {
   osaka: [
     { title: "船場・天満エリアの骨董品店を活用する", text: "大阪の骨董品市場は、船場・天満エリアに集中しています。この地域の業者は専門性が高く、適正な査定が期待できます。" },
     { title: "出張買取を利用する", text: "大型の骨董品は、出張買取が便利です。ウリエルは、大阪府全域で出張買取に対応しています。" },
-    { title: "四天王寺の骨董市を確認する", text: "毎月21日・22日に開催される四天王寺骨董市は、関西最大級の骨董市です。市場の相場を把握する機会として活用できます。" },
+    { title: "四天王寺の骨董市を確認する", text: "四天王寺では毎月21日・22日に縁日が催され、境内に露店が並びます（四天王寺公式サイト）。市場の相場を把握する機会として活用できます。" },
   ],
   nagoya: [
     { title: "瀬戸焼・常滑焼は地元の業者に強みがある", text: "名古屋近郊は、瀬戸焼・常滑焼の産地です。地元の陶磁器に詳しい業者に査定を依頼すると、適正な価格が付きやすくなります。" },
@@ -78,13 +78,13 @@ const sellingTips: Record<string, { title: string; text: string }[]> = {
 // 地域別 骨董市・催事情報
 const localMarkets: Record<string, { name: string; place: string; schedule: string; note: string }[]> = {
   tokyo: [
-    { name: "大江戸骨董市", place: "東京国際フォーラム前広場", schedule: "毎月第1・第3日曜", note: "国内最大級の青空骨董市。約250店舗が出店" },
-    { name: "平和島全国古民具骨董まつり", place: "東京流通センター", schedule: "年5回(3/5/6/9/12月)", note: "300店舗以上が集結する国内最大規模の屋内骨董市" },
+    { name: "大江戸骨董市", place: "東京国際フォーラム 地上広場", schedule: "月2回", note: "公式は「日本最大規模のアウトドア骨董市」と紹介。毎回250店以上が参加" },
+    { name: "平和島全国古民具骨董まつり", place: "東京流通センター", schedule: "年4回(2026年度は5・9・12月、2027年3月)", note: "公式は「国内で最も古い室内骨董イベント」と紹介。毎回100店舗以上が出店" },
     { name: "新井薬師骨董市", place: "中野区 新井薬師", schedule: "毎月第1日曜", note: "地域密着型の骨董市" },
     { name: "東京美術倶楽部 美術品オークション", place: "東京美術倶楽部", schedule: "年複数回", note: "美術業界の中核となるオークション。相場形成の場" },
   ],
   osaka: [
-    { name: "四天王寺骨董市", place: "四天王寺", schedule: "毎月21・22日", note: "関西最大級の骨董市。約300店舗、戦前から続く伝統" },
+    { name: "四天王寺骨董市", place: "四天王寺", schedule: "毎月21・22日", note: "毎月21日(お大師さん)・22日(お太子さん)の縁日。21日の大師会には境内に露店が並ぶ" },
     { name: "天神さんの蚤の市", place: "大阪天満宮", schedule: "毎月25日", note: "学問の神様の月次縁日と合わせて開催" },
     { name: "大阪美術倶楽部", place: "大阪美術倶楽部", schedule: "随時オークション", note: "関西の美術商組合。プロ向け取引が中心" },
   ],
@@ -93,7 +93,7 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "覚王山骨董市", place: "覚王山日泰寺参道", schedule: "毎月21日", note: "弘法大師の月命日に開催される風情ある骨董市" },
   ],
   kyoto: [
-    { name: "弘法市", place: "東寺(教王護国寺)", schedule: "毎月21日", note: "全国的に有名。約1000店舗が出店する京都最大の骨董市" },
+    { name: "弘法市", place: "東寺(教王護国寺)", schedule: "毎月21日", note: "東寺公式によると、毎月21日に境内が1000店近くの露店で賑わう" },
     { name: "天神市", place: "北野天満宮", schedule: "毎月25日", note: "弘法市と並ぶ京都の二大骨董市。書画・古道具が豊富" },
     { name: "祇園骨董街", place: "祇園・新門前通", schedule: "常設店舗", note: "京都の老舗骨董店が集まる地域。茶道具・古美術を扱う店舗が多い" },
   ],
@@ -102,15 +102,15 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "本牧骨董市", place: "本牧公園", schedule: "随時", note: "西洋骨董が多い" },
   ],
   fukuoka: [
-    { name: "太宰府骨董市", place: "太宰府天満宮", schedule: "毎月25日", note: "九州の中心的骨董市。九州陶磁器・有田焼が中心" },
+    { name: "太宰府骨董市", place: "太宰府天満宮", schedule: "毎月25日", note: "九州陶磁器・有田焼が中心" },
     { name: "博多大丸催事", place: "博多大丸", schedule: "年複数回", note: "百貨店催事として骨董市が開催される" },
   ],
   kobe: [
-    { name: "湊川神社骨董市", place: "湊川神社", schedule: "毎月第3日曜", note: "神戸を代表する骨董市" },
+    { name: "湊川神社骨董市", place: "湊川神社", schedule: "毎月第3日曜", note: "湊川神社の境内で開かれる骨董市" },
     { name: "明石公園アンティークマーケット", place: "明石公園", schedule: "年複数回", note: "西洋アンティーク中心" },
   ],
   sapporo: [
-    { name: "創成川公園アンティークマーケット", place: "創成川公園", schedule: "5〜10月の月1回", note: "北海道最大級。アイヌ工芸品や開拓期の古道具も" },
+    { name: "創成川公園アンティークマーケット", place: "創成川公園", schedule: "5〜10月の月1回", note: "アイヌ工芸品や開拓期の古道具も並ぶ" },
   ],
   sendai: [
     { name: "仙台朝市", place: "仙台朝市", schedule: "毎週土曜", note: "市内中心部の活気ある朝市。骨董出店も" },
@@ -119,7 +119,7 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "縮景園骨董市", place: "縮景園", schedule: "年2回", note: "広島藩主の庭園で開催される骨董市" },
   ],
   utsunomiya: [
-    { name: "益子陶器市", place: "栃木県益子町 城内坂周辺", schedule: "春(GW)・秋(11月)", note: "全国有数の陶器市。益子焼を中心に多数の窯元・露店が並ぶ" },
+    { name: "益子陶器市", place: "栃木県益子町 城内坂周辺", schedule: "春(GW)・秋(11月3日前後)", note: "1966年に始まった陶器市。販売店約50店舗のほか約800以上のテントが並び、春秋あわせて約60万人の人出(益子町観光協会)" },
   ],
   mito: [
     { name: "笠間の陶炎祭(ひまつり)", place: "茨城県笠間市 笠間芸術の森公園", schedule: "毎年GW(4月末〜5月初旬)", note: "笠間焼の作家・窯元が集う大規模な陶器イベント" },
@@ -150,7 +150,7 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "浜松骨董まつり", place: "グランドホテル浜松(静岡県浜松市)", schedule: "毎年1月1〜3日", note: "40年以上続く新年恒例の古美術・骨董展示即売会。生活骨董から本格古美術まで" },
   ],
   kanazawa: [
-    { name: "かなざわ骨董フェア", place: "石川県産業展示館(金沢市袋畠町)", schedule: "春・秋の年2回(3日間)", note: "全国の骨董店約70店が集結し約3万点を展示即売する北陸有数の大規模骨董市" },
+    { name: "かなざわ骨董フェア", place: "石川県産業展示館(金沢市袋畠町)", schedule: "春・秋の年2回(3日間)", note: "全国の骨董店約70店が出店し約3万点を展示即売する骨董市" },
     { name: "石川護國神社 蚤の市", place: "石川護國神社 境内(金沢市石引)", schedule: "おおむね毎月第2日曜", note: "参道に約20〜30店が並び大樋焼など金沢の工芸品や古道具が見つかる" },
   ],
   niigata: [
@@ -162,7 +162,7 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
   ],
   nara: [
     { name: "奈良 蚤の市", place: "奈良県コンベンションセンター 天平広場(奈良市)", schedule: "年複数回", note: "奈良 蔦屋書店が主催し、ヨーロッパ・日本のアンティーク約60店が集う本格蚤の市" },
-    { name: "奈良登大路陶器市", place: "奈良公園 登大路園地(奈良市)", schedule: "毎年秋〜初冬", note: "全国の陶芸作家が集う関西最大級の陶器市。入場無料" },
+    { name: "奈良登大路陶器市", place: "春日大社参道(奈良市)", schedule: "毎年秋(2026年は11月21〜23日)", note: "入場無料・雨天決行(公式サイト)" },
   ],
   wakayama: [
     { name: "てとこと市", place: "本町公園(和歌山市)", schedule: "毎月第2日曜", note: "手しごと品に加えアンティーク雑貨・古道具など古き良きものが集まる地域密着マルシェ" },
@@ -182,7 +182,7 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "古町蚤の市", place: "カリーノMSビル(熊本市中央区)", schedule: "定期開催(屋内)", note: "アンティーク雑貨・古着などが並ぶ歴史的な古町エリアの屋内蚤の市" },
   ],
   kagoshima: [
-    { name: "九州骨董祭り", place: "上床公園 溝辺体育館(霧島市溝辺町)", schedule: "年複数回(7・9・11月など)", note: "全国から約40店の骨董商が集まり陶磁器・漆器・古布などを扱う九州屈指の大骨董市" },
+    { name: "九州骨董祭り", place: "上床公園 溝辺体育館(霧島市溝辺町)", schedule: "年複数回(7・9・11月など)", note: "全国から約40店の骨董商が集まり陶磁器・漆器・古布などを扱う骨董市" },
   ],
 };
 
