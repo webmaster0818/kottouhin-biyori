@@ -101,9 +101,8 @@ export default function NingenKokuhouPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">LIVING NATIONAL TREASURE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               人間国宝の作品買取<br className="hidden md:inline" />査定のポイントと相場
             </h1>
@@ -118,13 +117,13 @@ export default function NingenKokuhouPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">人間国宝の作品の買取相場は、分野ごとに次のような目安があります。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 買取相場の目安は分野により異なり、陶芸20万〜500万円、漆芸30万〜500万円以上、染織20万〜300万円、金工・彫金20万〜150万円です。共箱・証紙の有無によって、査定額が2〜3倍変わることも珍しくありません。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">人間国宝とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">
                 人間国宝とは、文化財保護法に基づき「重要無形文化財の保持者」として文部科学大臣から認定された個人を指します。正式には「重要無形文化財保持者」といい、「人間国宝」は通称です。陶芸・漆芸・染織・金工・木竹工・刀剣など、伝統的な工芸技術の分野で卓越した技を持つ人物が認定されます。
@@ -139,21 +138,20 @@ export default function NingenKokuhouPage() {
         {/* 分野別一覧 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BY FIELD</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">分野別・人間国宝の作品と相場</h2>
             </div>
             <div className="space-y-8">
               {fields.map((f, i) => (
-                <article key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{f.name}</h3>
-                    <span className="text-sm bg-white text-[#8B4513] px-3 py-1 rounded-full border border-[#E0D5C8] font-medium">{f.priceRange}</span>
+                    <span className="text-sm bg-white text-[#8B4513] px-3 py-1 rounded-sm border border-[#E0D5C8] font-medium">{f.priceRange}</span>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">{f.description}</p>
                   <div className="space-y-3">
                     {f.artists.map((a, j) => (
-                      <div key={j} className="bg-white rounded-xl p-4 flex flex-col sm:flex-row sm:items-center gap-2">
+                      <div key={j} className="bg-white rounded p-4 flex flex-col sm:flex-row sm:items-center gap-2">
                         <span className="font-bold text-[#2C1810] text-sm shrink-0">{a.name}</span>
                         <span className="text-xs text-[#8B7D72]">({a.specialty})</span>
                         <span className="text-xs text-[#5C4A3A] sm:ml-auto">{a.note}</span>
@@ -169,15 +167,14 @@ export default function NingenKokuhouPage() {
         {/* 高く売るコツ */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SELLING TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">人間国宝の作品を高く売るためのポイント</h2>
             </div>
             <div className="space-y-6">
               {sellingTips.map((t, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                    <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-0.5">{t.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{t.text}</p>
@@ -188,7 +185,7 @@ export default function NingenKokuhouPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               人間国宝の作品の無料査定
@@ -196,7 +193,7 @@ export default function NingenKokuhouPage() {
             <p className="text-amber-200 mb-8">
               専門業者の査定で、お持ちの作品の適正価格を確認できます。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

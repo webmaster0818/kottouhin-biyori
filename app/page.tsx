@@ -1,26 +1,14 @@
 import Link from "next/link";
 import companies from "@/data/companies.json";
 import soubaDb from "@/data/soubaDb.json";
+import CompareTable from "@/app/components/CompareTable";
+import OfficialShot from "@/app/components/OfficialShot";
 
 export const metadata = {
   title: "骨董品買取びより｜公開オークションの落札データにもとづく相場と買取業者の比較",
   description: `骨董品の買取相場を、${soubaDb.artistTotal}名の作家・${soubaDb.resultTotal}件の公開オークションの落札データ（公式情報で一次確認したもののみ）にもとづいてご説明します。掛軸・絵画・茶道具・刀剣など品目別の相場と、買取業者の比較を掲載しています。`,
   alternates: { canonical: "/" },
 };
-
-function RankBadge({ rank }: { rank: number }) {
-  const colors =
-    rank === 1
-      ? "from-yellow-500 to-amber-600"
-      : rank === 2
-      ? "from-gray-400 to-gray-500"
-      : "from-amber-700 to-amber-800";
-  return (
-    <div className={`bg-gradient-to-br ${colors} text-white w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl shadow-lg shrink-0`}>
-      {rank}
-    </div>
-  );
-}
 
 const categories = [
   { name: "掛軸", slug: "kakejiku", iconImg: "/images/icons/kakejiku.png" },
@@ -255,7 +243,7 @@ export default function Home() {
         {/* 要点ブロック(AEO): 高く売る3つの手順 */}
         <section id="quick-answer" className="py-12 bg-[#FAF7F2]">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white border-2 border-[#C9A96E]/50 rounded-2xl p-6 md:p-8">
+            <div className="bg-white border-2 border-[#C9A96E]/50 rounded p-6 md:p-8">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3">
                 骨董品を高く売るための3つの手順
               </h2>
@@ -263,17 +251,17 @@ export default function Home() {
                 骨董品を高く売るための手順は、<strong>「①相場を把握する、②品目・作家を特定する、③複数の専門業者に無料査定を依頼して比較する」</strong>の3つです。当サイトでは、{soubaDb.artistTotal}名の作家・{soubaDb.resultTotal}件の公開オークションの落札データ（すべて出典を明記・{soubaDb.generatedAt}更新）を無料で公開しています。
               </p>
               <div className="grid md:grid-cols-3 gap-3">
-                <Link href="/guide/souba-database/" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                <Link href="/guide/souba-database/" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded p-4 transition group">
                   <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 1</p>
                   <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">落札相場を確認する →</p>
                   <p className="text-xs text-[#8B7D72] mt-1">ジャンル別の最高額・中央値と、落札額の上位20件</p>
                 </Link>
-                <a href="#category" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                <a href="#category" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded p-4 transition group">
                   <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 2</p>
                   <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">品目・作家を特定する →</p>
                   <p className="text-xs text-[#8B7D72] mt-1">品目別ガイドと作家別の落札実績ページ</p>
                 </a>
-                <a href="#ranking" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-4 transition group">
+                <a href="#ranking" className="block bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded p-4 transition group">
                   <p className="text-xs text-[#C9A96E] font-bold mb-1">STEP 3</p>
                   <p className="font-bold text-sm text-[#2C1810] group-hover:text-[#8B4513]">複数の業者の無料査定で比較する →</p>
                   <p className="text-xs text-[#8B7D72] mt-1">専門性にもとづいて選定した3社。査定・出張・キャンセルは無料です</p>
@@ -286,8 +274,7 @@ export default function Home() {
         {/* 相場DBハイライト */}
         <section id="souba-db" className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUCTION DATABASE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 公開オークションの落札データにもとづく骨董品の相場
               </h2>
@@ -296,12 +283,12 @@ export default function Home() {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6">
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-6">
                 <h3 className="font-bold text-[#2C1810] mb-4 text-sm">円建て落札額の上位3件</h3>
                 <ol className="space-y-3">
                   {soubaDb.top20.slice(0, 3).map((r: any) => (
                     <li key={r.rank} className="flex items-start gap-3">
-                      <span className="w-7 h-7 shrink-0 rounded-full bg-[#C9A96E] text-white text-xs font-bold flex items-center justify-center">{r.rank}</span>
+                      <span className="w-7 h-7 shrink-0 rounded-sm bg-[#C9A96E] text-white text-xs font-bold flex items-center justify-center">{r.rank}</span>
                       <div className="min-w-0">
                         <Link href={`/artist/${r.slug}`} className="font-bold text-sm text-[#2C1810] hover:text-[#8B4513]">{r.artist}</Link>
                         <p className="text-xs text-[#8B7D72] truncate">{r.title}</p>
@@ -311,7 +298,7 @@ export default function Home() {
                   ))}
                 </ol>
               </div>
-              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6">
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-6">
                 <h3 className="font-bold text-[#2C1810] mb-4 text-sm">ジャンル別の落札最高額と中央値</h3>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs">
@@ -336,7 +323,7 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center">
-              <Link href="/guide/souba-database/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3.5 rounded-xl transition shadow">
+              <Link href="/guide/souba-database/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3.5 rounded transition">
                 落札相場データベースの一覧へ →
               </Link>
             </div>
@@ -346,59 +333,55 @@ export default function Home() {
         {/* Learn Section - 教育コンテンツ（メインコンテンツ） */}
         <section id="learn" className="py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">LEARN</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 骨董品の基礎知識
               </h2>
               <p className="text-[#5C4A3A]">売却前に確認すべき基礎知識と専門情報を掲載しています</p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <ul className="grid md:grid-cols-2 gap-x-10 border-t border-[#E0D5C8]">
               {learnArticles.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={article.slug}
-                  className="bg-white rounded-2xl p-6 border border-[#E0D5C8] hover:shadow-lg hover:border-[#C9A96E] transition group"
-                >
-                  <img src={article.iconImg} alt="" className="w-14 h-14 rounded-xl object-cover mb-3" />
-                  <h3 className="font-bold text-[#2C1810] mb-2 group-hover:text-[#8B4513] transition text-sm leading-relaxed">
-                    {article.title}
-                  </h3>
-                  <p className="text-xs text-[#8B7D72] leading-relaxed">{article.desc}</p>
-                </Link>
+                <li key={article.slug} className="border-b border-[#E0D5C8]">
+                  <Link href={article.slug} className="block py-4 group">
+                    <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] group-hover:underline underline-offset-2 mb-1">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-[#5C4A3A] leading-relaxed">{article.desc}</p>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 
         {/* Category */}
         <section id="category" className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 品目別の買取・鑑定情報
               </h2>
               <p className="text-[#5C4A3A]">お持ちの骨董品の品目から、詳しい情報をご確認いただけます</p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 border-l border-t border-[#E0D5C8]">
               {categories.map((cat) => (
-                <Link key={cat.slug} href={`/category/${cat.slug}`}
-                  className="bg-[#FAF7F2] hover:bg-[#F5ECD7] border border-[#E0D5C8] rounded-xl p-5 text-center transition group">
-                  <img src={cat.iconImg} alt={cat.name} className="w-12 h-12 mx-auto mb-2 rounded-lg object-cover" />
-                  <span className="text-sm font-medium text-[#2C1810] group-hover:text-[#8B4513]">{cat.name}</span>
-                </Link>
+                <li key={cat.slug} className="border-r border-b border-[#E0D5C8]">
+                  <Link href={`/category/${cat.slug}`}
+                    className="flex items-center justify-between px-4 py-3.5 text-[#2C1810] hover:bg-[#FAF7F2] hover:text-[#8B4513] transition">
+                    <span className="font-medium">{cat.name}</span>
+                    <span className="text-[#8B7D72] text-xs">買取・相場</span>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 
         {/* 作家から探す（落札実績あり） */}
         <section id="artists" className="py-16 bg-[#FAF7F2]">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">ARTISTS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 作家から落札相場を探す
               </h2>
@@ -410,7 +393,7 @@ export default function Home() {
                 .slice(0, 9)
                 .map((a) => (
                   <Link key={a.slug} href={`/artist/${a.slug}`}
-                    className="bg-white border border-[#E0D5C8] rounded-xl p-4 hover:shadow-lg hover:border-[#C9A96E] transition group">
+                    className="bg-white border border-[#E0D5C8] rounded p-4 hover:border-[#C9A96E] transition group">
                     <div className="flex items-baseline justify-between gap-2 mb-1">
                       <span className="font-bold text-[#2C1810] group-hover:text-[#8B4513]">{a.name}</span>
                       <span className="text-[10px] text-[#8B7D72] shrink-0">{a.category}</span>
@@ -421,100 +404,100 @@ export default function Home() {
                 ))}
             </div>
             <div className="text-center mt-8">
-              <Link href="/guide/souba-database/" className="inline-block border-2 border-[#C9A96E] text-[#8B4513] hover:bg-[#C9A96E]/10 font-bold px-8 py-3 rounded-xl transition">
+              <Link href="/guide/souba-database/" className="inline-block border-2 border-[#C9A96E] text-[#8B4513] hover:bg-[#C9A96E]/10 font-bold px-8 py-3 rounded transition">
                 全作家の落札実績一覧へ →
               </Link>
             </div>
           </div>
         </section>
 
+        {/* 業者比較表 */}
+        <section id="comparison" className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
+                骨董品買取業者{companies.length}社の比較表
+              </h2>
+              <p className="text-[#5C4A3A]">タイプ・買取方法・対応エリアを1社1行にまとめています。各社の特徴は、表の下の各社紹介でご確認いただけます</p>
+            </div>
+            <CompareTable />
+          </div>
+        </section>
+
         {/* Ranking - おすすめ業者（送客部分） */}
         <section id="ranking" className="py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RECOMMENDED</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 骨董品買取おすすめ業者
               </h2>
-              <p className="text-[#5C4A3A]">骨董品の買取に対応した3社を掲載しています</p>
+              <p className="text-[#5C4A3A]">骨董品の買取に対応した{companies.length}社を掲載しています</p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-10">
               {companies.map((company) => (
-                <article key={company.id} id={company.slug} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8] scroll-mt-24">
-                  <div className="p-6 md:p-8">
-                    <div className="flex items-start gap-4 mb-5">
-                      <RankBadge rank={company.rank} />
-                      <div className="flex-1">
-                        <p className="text-xs text-[#C9A96E] font-medium mb-1">{company.type}</p>
-                        <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{company.name}</h3>
-                        <p className="text-sm text-[#8B4513] font-medium mt-1">{company.tagline}</p>
-                      </div>
-                    </div>
+                <article key={company.id} id={company.slug} className="border-t-2 border-[#2C1810] pt-5 scroll-mt-24">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <span className="font-serif-jp text-2xl font-bold text-[#8B4513] tabular-nums">{company.rank}</span>
+                    <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{company.name}</h3>
+                    <span className="text-xs text-[#8B7D72]">{company.type}</span>
+                  </div>
+                  <p className="text-sm text-[#8B4513] font-medium mb-4">{company.tagline}</p>
 
-                    <p className="text-[#5C4A3A] leading-relaxed mb-6">{company.description}</p>
-
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {company.features.map((f) => (
-                        <span key={f} className="bg-[#F5ECD7] text-[#8B4513] text-xs px-3 py-1.5 rounded-full font-medium">{f}</span>
-                      ))}
+                  <div className="grid md:has-[figure]:grid-cols-[300px_1fr] gap-5 md:gap-7 mb-5">
+                    <OfficialShot slug={company.slug} name={company.name} />
+                    <div>
+                      <p className="text-[15px] text-[#3D2E24] leading-relaxed mb-4">{company.description}</p>
+                      <dl className="text-sm border-t border-[#E0D5C8]">
+                        <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]">
+                          <dt className="text-[#8B7D72]">対応品目</dt>
+                          <dd className="text-[#2C1810]">{company.categories.slice(0, 5).join("・")}等</dd>
+                        </div>
+                        <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]">
+                          <dt className="text-[#8B7D72]">対応エリア</dt>
+                          <dd className="text-[#2C1810]">{company.areas}</dd>
+                        </div>
+                        <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]">
+                          <dt className="text-[#8B7D72]">買取方法</dt>
+                          <dd className="text-[#2C1810]">{company.buyMethod.join("・")}</dd>
+                        </div>
+                        <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]">
+                          <dt className="text-[#8B7D72]">特徴</dt>
+                          <dd className="text-[#2C1810]">{company.features.join("／")}</dd>
+                        </div>
+                      </dl>
                     </div>
+                  </div>
 
-                    <div className="grid md:grid-cols-3 gap-4 mb-6">
-                      <div className="bg-[#FAF7F2] rounded-xl p-4">
-                        <p className="text-xs text-[#8B7D72] mb-1">対応品目</p>
-                        <p className="text-sm text-[#2C1810] font-medium">{company.categories.slice(0, 5).join("・")}等</p>
-                      </div>
-                      <div className="bg-[#FAF7F2] rounded-xl p-4">
-                        <p className="text-xs text-[#8B7D72] mb-1">対応エリア</p>
-                        <p className="text-sm text-[#2C1810] font-medium">{company.areas}</p>
-                      </div>
-                      <div className="bg-[#FAF7F2] rounded-xl p-4">
-                        <p className="text-xs text-[#8B7D72] mb-1">買取方法</p>
-                        <p className="text-sm text-[#2C1810] font-medium">{company.buyMethod.join("・")}</p>
-                      </div>
+                  <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-4 text-sm">
+                    <div>
+                      <h4 className="font-bold text-[#2C1810] mb-2 pb-1 border-b border-[#E0D5C8]">メリット</h4>
+                      <ul className="list-disc pl-5 space-y-1 text-[#3D2E24] marker:text-[#8B7D72]">
+                        {company.pros.map((p) => <li key={p}>{p}</li>)}
+                      </ul>
                     </div>
+                    <div>
+                      <h4 className="font-bold text-[#2C1810] mb-2 pb-1 border-b border-[#E0D5C8]">デメリット</h4>
+                      <ul className="list-disc pl-5 space-y-1 text-[#3D2E24] marker:text-[#8B7D72]">
+                        {company.cons.map((c) => <li key={c}>{c}</li>)}
+                      </ul>
+                    </div>
+                  </div>
 
-                    <div className="grid md:grid-cols-2 gap-4 mb-6">
-                      <div className="bg-green-50 rounded-xl p-5">
-                        <h4 className="font-bold text-green-800 mb-3 text-sm">メリット</h4>
-                        <ul className="space-y-2">
-                          {company.pros.map((p) => (
-                            <li key={p} className="flex items-start gap-2 text-sm text-[#2C1810]">
-                              <span className="text-green-600 mt-0.5 shrink-0">◎</span>{p}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className="bg-red-50 rounded-xl p-5">
-                        <h4 className="font-bold text-red-800 mb-3 text-sm">デメリット</h4>
-                        <ul className="space-y-2">
-                          {company.cons.map((c) => (
-                            <li key={c} className="flex items-start gap-2 text-sm text-[#2C1810]">
-                              <span className="text-red-500 mt-0.5 shrink-0">△</span>{c}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
+                  <p className="text-sm text-[#3D2E24] mb-5"><span className="font-bold">適している方：</span>{company.bestFor}</p>
 
-                    <div className="bg-[#F5ECD7] rounded-xl p-4 mb-6">
-                      <p className="text-sm text-[#8B4513]"><strong>適している方:</strong> {company.bestFor}</p>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <a
-                        href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl}
-                        target="_blank"
-                        rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
-                        className="flex-1 bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition">
-                        {company.name}の公式サイトへ
-                      </a>
-                      <Link href={`/review/${company.slug}`}
-                        className="bg-white border-2 border-[#8B4513] text-[#8B4513] text-center py-4 px-6 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
-                        口コミ・評判
-                      </Link>
-                    </div>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl}
+                      target="_blank"
+                      rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
+                      className="sm:flex-1 bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3.5 rounded-sm font-bold transition">
+                      {company.name}の公式サイトへ
+                    </a>
+                    <Link href={`/review/${company.slug}`}
+                      className="sm:w-56 border border-[#8B4513] text-[#8B4513] text-center py-3.5 rounded-sm font-bold hover:bg-[#FAF7F2] transition">
+                      口コミ・評判を読む
+                    </Link>
                   </div>
                 </article>
               ))}
@@ -525,17 +508,16 @@ export default function Home() {
         {/* How to Choose */}
         <section id="how-to-choose" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HOW TO CHOOSE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 骨董品買取業者の選び方
               </h2>
               <p className="text-[#5C4A3A]">確認すべき主なポイント</p>
             </div>
-            <div className="bg-[#FAF7F2] rounded-2xl p-6 md:p-10 border border-[#E0D5C8] space-y-8">
+            <div className="bg-[#FAF7F2] rounded p-6 md:p-10 border border-[#E0D5C8] space-y-8">
               {howToChoose.map((item, idx) => (
                 <div key={idx} className="flex gap-5">
-                  <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                  <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                     {idx + 1}
                   </div>
                   <div className="flex-1 pb-8 border-b border-[#E0D5C8] last:border-b-0 last:pb-0">
@@ -548,50 +530,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 業者比較表 */}
-        <section id="comparison" className="py-16 bg-white">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
-                骨董品買取業者14社の比較表
-              </h2>
-              <p className="text-[#5C4A3A]">対応エリア・買取方法・特徴を一覧で比較しています</p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
-                <thead className="bg-[#8B4513] text-white">
-                  <tr>
-                    <th className="px-3 py-3 text-left">#</th>
-                    <th className="px-3 py-3 text-left">業者名</th>
-                    <th className="px-3 py-3 text-left">タイプ</th>
-                    <th className="px-3 py-3 text-left">対応エリア</th>
-                    <th className="px-3 py-3 text-left">買取方法</th>
-                    <th className="px-3 py-3 text-left">特徴</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {companies.map((c) => (
-                    <tr key={c.id} className="border-b border-[#E0D5C8] hover:bg-[#FAF7F2]">
-                      <td className="px-3 py-3 font-bold text-[#8B4513]">{c.rank}</td>
-                      <td className="px-3 py-3"><Link href={`/review/${c.slug}/`} className="font-bold text-[#2C1810] hover:text-[#8B4513]">{c.name}</Link></td>
-                      <td className="px-3 py-3 text-[#5C4A3A]">{c.type}</td>
-                      <td className="px-3 py-3 text-[#5C4A3A]">{c.areas}</td>
-                      <td className="px-3 py-3 text-[#5C4A3A]">{c.buyMethod.join("・")}</td>
-                      <td className="px-3 py-3 text-[#5C4A3A]">{c.tagline}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
         {/* 品目別おすすめ業者 */}
         <section id="item-best" className="py-16 bg-[#FAF7F2]">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BY ITEM</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 品目別おすすめ買取業者
               </h2>
@@ -599,7 +541,7 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {itemBestCompany.map((row, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-5">
                   <p className="text-xs text-[#C9A96E] mb-1">おすすめの業者</p>
                   <h3 className="font-bold text-[#2C1810] text-lg mb-2">{row.item}</h3>
                   <p className="text-sm text-[#8B4513] font-bold mb-2">→ {row.recommend}</p>
@@ -613,8 +555,7 @@ export default function Home() {
         {/* 買取の流れ7ステップ */}
         <section id="flow" className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FLOW</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 骨董品買取の流れ（7つの手順）
               </h2>
@@ -623,8 +564,8 @@ export default function Home() {
             <div className="space-y-6">
               {sellingFlow.map((s, idx) => (
                 <div key={idx} className="flex gap-5 items-start">
-                  <div className="bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg shadow-md shrink-0">{s.step}</div>
-                  <div className="flex-1 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                  <div className="bg-[#3B2416] text-white w-14 h-14 rounded-sm flex items-center justify-center font-bold text-lg shrink-0">{s.step}</div>
+                  <div className="flex-1 bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                     <h3 className="font-bold text-[#2C1810] text-lg mb-2">{s.title}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{s.text}</p>
                   </div>
@@ -637,8 +578,7 @@ export default function Home() {
         {/* 高価買取のコツ8つ */}
         <section id="high-price" className="py-16 bg-[#FAF7F2]">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HIGH PRICE TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 骨董品を高く売るための8つのポイント
               </h2>
@@ -646,9 +586,9 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {highPriceTips.map((tip, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-5">
                   <div className="flex items-start gap-3 mb-2">
-                    <span className="bg-[#C9A96E] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">{idx + 1}</span>
+                    <span className="bg-[#C9A96E] text-white w-8 h-8 rounded-sm flex items-center justify-center font-bold shrink-0">{idx + 1}</span>
                     <h3 className="font-bold text-[#2C1810] flex-1 leading-snug">{tip.title}</h3>
                   </div>
                   <p className="text-xs text-[#5C4A3A] leading-relaxed">{tip.text}</p>
@@ -661,8 +601,7 @@ export default function Home() {
         {/* 買取方法比較 */}
         <section id="buy-method" className="py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BUY METHOD</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 買取方法の比較（出張・店頭・宅配）
               </h2>
@@ -696,8 +635,7 @@ export default function Home() {
         {/* FAQ */}
         <section id="faq" className="py-16 bg-[#FAF7F2]">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810] mb-3">
                 よくある質問
               </h2>
@@ -705,9 +643,9 @@ export default function Home() {
             </div>
             <div className="space-y-3">
               {topFaqs.map((f, idx) => (
-                <details key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5 group">
+                <details key={idx} className="bg-white rounded border border-[#E0D5C8] p-5 group">
                   <summary className="cursor-pointer font-bold text-[#2C1810] flex items-start gap-3">
-                    <span className="bg-[#8B4513] text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">Q</span>
+                    <span className="bg-[#8B4513] text-white w-7 h-7 rounded-sm flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">Q</span>
                     <span className="flex-1">{f.q}</span>
                   </summary>
                   <div className="mt-3 pl-10 text-sm text-[#5C4A3A] leading-relaxed">
@@ -720,7 +658,7 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               無料査定のご案内
@@ -728,7 +666,7 @@ export default function Home() {
             <p className="text-amber-200 mb-8">
               お手持ちの骨董品の価値を把握することが、適切な売却の第一歩です
             </p>
-            <a href="#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <a href="#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </a>
           </div>

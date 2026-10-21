@@ -90,9 +90,8 @@ export default function KifuPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">DONATION GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の寄付・寄贈ガイド<br className="hidden md:inline" />美術館や博物館への寄贈方法
             </h1>
@@ -107,29 +106,28 @@ export default function KifuPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">寄付・寄贈を検討する際に押さえておきたい点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品は、美術館・博物館・大学などの研究機関へ寄贈できます。ただし、各館には収蔵方針があり、すべての品が受け入れられるわけではないため、事前の連絡と審査が必要です。国や地方自治体が設置する美術館・博物館への寄贈では、相続税の非課税特例などの税制上の優遇を受けられる場合があります。一度寄贈すると原則として返還されないため、寄贈の前に無料査定で市場価値を確認してから判断することをおすすめします。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">DONATION TARGETS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">寄贈先の種類と特徴</h2>
             </div>
             <div className="space-y-8">
               {donationTargets.map((t, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">{t.name}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">{t.description}</p>
                   <div className="space-y-3">
-                    <div className="bg-[#F5ECD7] rounded-xl p-3">
+                    <div className="bg-[#F5ECD7] rounded p-3">
                       <p className="text-xs text-[#8B4513]"><strong>主な寄贈先の例:</strong> {t.examples}</p>
                     </div>
-                    <div className="bg-[#F5ECD7] rounded-xl p-3">
+                    <div className="bg-[#F5ECD7] rounded p-3">
                       <p className="text-xs text-[#8B4513]"><strong>メリット:</strong> {t.merit}</p>
                     </div>
-                    <div className="bg-[#F5ECD7] rounded-xl p-3">
+                    <div className="bg-[#F5ECD7] rounded p-3">
                       <p className="text-xs text-[#8B4513]"><strong>手続きの流れ:</strong> {t.process}</p>
                     </div>
                   </div>
@@ -142,13 +140,12 @@ export default function KifuPage() {
         {/* 税制優遇 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TAX BENEFITS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">寄贈に関する税制上の優遇</h2>
             </div>
             <div className="space-y-6">
               {taxBenefits.map((b, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">{b.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{b.text}</p>
                 </div>
@@ -163,13 +160,12 @@ export default function KifuPage() {
         {/* 注意点 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CAUTION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">寄贈時の注意点</h2>
             </div>
             <div className="space-y-6">
               {warnings.map((w, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">{w.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{w.text}</p>
                 </div>
@@ -181,7 +177,7 @@ export default function KifuPage() {
         {/* 売却も検討 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">寄贈の前に、市場価値の確認をおすすめします</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">
                 寄贈を決める前に、お持ちの骨董品の市場価値を把握しておくことをおすすめします。想定以上に高額な品物もあり、売却して現金化したほうがよい場合もあります。無料査定で価値を確認したうえで、売却するか寄贈するかをご判断ください。
@@ -194,7 +190,7 @@ export default function KifuPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               骨董品の価値を無料査定でご確認ください
@@ -202,7 +198,7 @@ export default function KifuPage() {
             <p className="text-amber-200 mb-8">
               寄贈・売却を検討する前に、市場価値を把握しておくことをおすすめします。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

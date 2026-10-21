@@ -88,7 +88,7 @@ function FaqAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
   return (
     <div className="space-y-3">
       {faqs.map((faq, idx) => (
-        <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] overflow-hidden">
+        <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] overflow-hidden">
           <button
             onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
             className="w-full text-left p-5 flex items-start gap-3 hover:bg-[#F5ECD7] transition"
@@ -119,13 +119,12 @@ export default function IhinSeiriClient() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">GUIDE</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               遺品整理で見つかった骨董品の扱い
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
 遺品整理の進め方・形見分け・親族間の調整から相続手続きまでをご説明します
             </p>
           </div>
@@ -135,7 +134,7 @@ export default function IhinSeiriClient() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">遺品整理で骨董品が見つかった場合は、次の手順で対応することが大切です。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 まずは何も処分せずにすべて保管し、写真を撮影して箱・付属品・書類も保管したうえで、骨董品専門の買取業者に査定を依頼してください。1社だけの査定、ご自身でのクリーニング、不用品回収業者への一括での引き渡しは、価値を失う典型的な失敗例のため避けてください。骨董品は相続財産として扱われることがあり、相続税の基礎控除（3,000万円＋600万円×法定相続人数）を超える場合は申告が必要になるため、査定の前に相続人全員で相談して進めてください。
@@ -149,7 +148,7 @@ export default function IhinSeiriClient() {
                 です。生前整理・蔵の整理でまとめて見つかった場合の進め方も、同ページに掲載しています。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
                 遺品整理と骨董品の買取について
               </h2>
@@ -174,8 +173,7 @@ export default function IhinSeiriClient() {
         {/* Flow Chart */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FLOW</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 遺品整理の流れ（5つの手順）
               </h2>
@@ -186,7 +184,7 @@ export default function IhinSeiriClient() {
                 <div key={idx} className="relative">
                   <div className="flex gap-4 md:gap-6">
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-lg shadow-lg z-10">
+                      <div className="w-12 h-12 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-lg z-10">
                         {item.step}
                       </div>
                       {idx < flowSteps.length - 1 && (
@@ -207,17 +205,16 @@ export default function IhinSeiriClient() {
         {/* Should Do */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TO DO</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 行うべき5つのこと
               </h2>
             </div>
             <div className="space-y-4">
               {shouldDo.map((item, idx) => (
-                <div key={idx} className="bg-green-50 rounded-xl border border-green-200 p-5">
+                <div key={idx} className="bg-green-50 rounded border border-green-200 p-5">
                   <div className="flex gap-4 items-start">
-                    <div className="w-8 h-8 shrink-0 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 shrink-0 rounded-sm bg-green-600 text-white flex items-center justify-center font-bold text-sm">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
@@ -234,15 +231,14 @@ export default function IhinSeiriClient() {
         {/* Should Not Do */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CAUTION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 避けるべき5つのこと
               </h2>
             </div>
             <div className="space-y-4">
               {shouldNotDo.map((item, idx) => (
-                <div key={idx} className="bg-red-50 rounded-xl border border-red-200 p-5">
+                <div key={idx} className="bg-red-50 rounded border border-red-200 p-5">
                   <div className="flex gap-4 items-start">
                     <span className="text-red-500 mt-0.5 shrink-0 text-lg">&#9747;</span>
                     <div className="flex-1">
@@ -259,8 +255,7 @@ export default function IhinSeiriClient() {
         {/* Inheritance Tax & Legal */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TAX & LEGAL</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 相続税・法律面の解説
               </h2>
@@ -268,13 +263,13 @@ export default function IhinSeiriClient() {
             </div>
             <div className="space-y-6">
               {inheritanceTax.map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-6 shadow-sm">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-3">{item.title}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-6 bg-amber-50 border border-amber-300 rounded-xl p-5">
+            <div className="mt-6 bg-amber-50 border border-amber-300 rounded p-5">
               <p className="text-sm text-amber-800 leading-relaxed">
                 上記は一般的な情報のため、個別の相続案件については、必ず税理士や弁護士などの専門家にご相談ください。
                 相続税の申告期限は、相続の開始を知った日の翌日から10か月以内です。
@@ -286,8 +281,7 @@ export default function IhinSeiriClient() {
         {/* 形見分け */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">KATAMIWAKE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 形見分けの進め方と、骨董品を渡すときの注意点
               </h2>
@@ -295,7 +289,7 @@ export default function IhinSeiriClient() {
             </div>
             <div className="space-y-6">
               {katamiwake.map((item, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-6">
+                <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-3">{item.title}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{item.text}</p>
                 </div>
@@ -307,8 +301,7 @@ export default function IhinSeiriClient() {
         {/* 親族間の調整 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAMILY</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 相続人が複数いる場合の親族間の調整
               </h2>
@@ -316,9 +309,9 @@ export default function IhinSeiriClient() {
             </div>
             <div className="space-y-4">
               {familyCoordination.map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-6 shadow-sm">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex gap-4 items-start">
-                    <div className="w-8 h-8 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">
+                    <div className="w-8 h-8 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
@@ -329,7 +322,7 @@ export default function IhinSeiriClient() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-5">
+            <div className="mt-6 bg-[#F5ECD7] rounded border border-[#C9A96E] p-5">
               <p className="text-sm text-[#5C4A3A] leading-relaxed">
                 なお、話し合いの結果、売却せずに処分すると決まった品の扱い方
                 （買取・オークション・寄付や譲渡・自治体での廃棄・整理業者への依頼という
@@ -344,8 +337,7 @@ export default function IhinSeiriClient() {
         {/* Comparison: 遺品整理業者 vs 骨董品買取業者 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 遺品整理業者と骨董品買取業者の比較
               </h2>
@@ -355,7 +347,7 @@ export default function IhinSeiriClient() {
             {/* Mobile cards */}
             <div className="md:hidden space-y-4">
               {comparisonData.map((item, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+                <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-4">
                   <h3 className="font-bold text-[#2C1810] text-sm mb-2">{item.item}</h3>
                   <div className="grid grid-cols-2 gap-2">
                     <div>
@@ -372,7 +364,7 @@ export default function IhinSeiriClient() {
             </div>
 
             {/* Desktop table */}
-            <div className="hidden md:block bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+            <div className="hidden md:block bg-white rounded overflow-hidden border border-[#E0D5C8]">
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#8B4513] text-white">
@@ -392,7 +384,7 @@ export default function IhinSeiriClient() {
                 </tbody>
               </table>
             </div>
-            <div className="mt-6 bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-5">
+            <div className="mt-6 bg-[#F5ECD7] rounded border border-[#C9A96E] p-5">
               <h3 className="font-bold text-[#8B4513] mb-2 text-sm">おすすめの使い分け</h3>
               <p className="text-sm text-[#5C4A3A] leading-relaxed">
                 骨董品がある遺品整理では、骨董品買取業者と遺品整理業者を併用することをおすすめします。
@@ -406,8 +398,7 @@ export default function IhinSeiriClient() {
         {/* Failure Cases */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CASE STUDY</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 よくある失敗事例と教訓
               </h2>
@@ -415,7 +406,7 @@ export default function IhinSeiriClient() {
             </div>
             <div className="space-y-6">
               {failureCases.map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-6 shadow-sm">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-bold text-[#2C1810] mb-3">{item.title}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{item.description}</p>
                   <div className="bg-green-50 border border-green-200 rounded-lg p-4">
@@ -432,16 +423,15 @@ export default function IhinSeiriClient() {
         {/* Recommendation */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RECOMMENDATION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 遺品整理におすすめの買取業者
               </h2>
             </div>
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-[#F5ECD7] to-[#FAF7F2] rounded-2xl border-2 border-[#C9A96E] p-6 md:p-10">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#C9A96E] p-6 md:p-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-gradient-to-br from-amber-700 to-amber-800 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">1</div>
+                  <div className="bg-white border border-[#2C1810] text-[#2C1810] w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg">1</div>
                   <div>
                     <p className="text-xs text-[#C9A96E] font-medium">{uriel.type}</p>
                     <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{uriel.name}</h3>
@@ -474,13 +464,13 @@ export default function IhinSeiriClient() {
                   <Link href="/review/uriel/" className="text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判の詳細</Link>
                 </p>
                 <a href={(uriel as any).affiliateUrlShucchou ?? uriel.officialUrl} target="_blank" rel="sponsored nofollow noopener"
-                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                   ウリエルで出張買取を申し込む
                 </a>
               </div>
-              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-6 md:p-10 shadow-sm">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-gradient-to-br from-yellow-500 to-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">2</div>
+                  <div className="bg-white border border-[#2C1810] text-[#2C1810] w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg">2</div>
                   <div>
                     <p className="text-xs text-[#C9A96E] font-medium">{hikakaku.type}</p>
                     <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{hikakaku.name}</h3>
@@ -490,7 +480,7 @@ export default function IhinSeiriClient() {
                   複数の業者に一括で査定を依頼でき、査定額を比較して売却先を選べます。遺品整理で時間が限られている場合でも、一度の入力で複数の業者から見積もりが届くため効率的です。骨董品の相見積もりに適しています。
                 </p>
                 <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
-                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                   ヒカカク！で一括査定を依頼する
                 </a>
               </div>
@@ -501,8 +491,7 @@ export default function IhinSeiriClient() {
         {/* FAQ */}
         <section className="py-12 md:py-16">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 遺品整理と骨董品買取のよくある質問
               </h2>
@@ -512,7 +501,7 @@ export default function IhinSeiriClient() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               遺品整理で見つかった骨董品の無料査定
@@ -520,7 +509,7 @@ export default function IhinSeiriClient() {
             <p className="text-amber-200 mb-8">
               大切な故人の遺品を、適正な価格で次の持ち主へ引き継ぐために
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

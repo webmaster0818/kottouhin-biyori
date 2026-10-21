@@ -99,13 +99,12 @@ export default function DokoDeUruPage() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">SELLING GUIDE</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の売却先の比較
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               4つの売却方法を比較し、適した売却先を選ぶための情報を掲載しています。
             </p>
           </div>
@@ -115,21 +114,20 @@ export default function DokoDeUruPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の売却先を選ぶ際の主なポイントをご説明します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品の売却方法は、「買取業者・オークション・フリマアプリ・骨董市」の4つです。安全かつ確実に売りたい場合は、専門家の査定を受けられ、即日の現金化も可能な買取業者への売却を最もおすすめします（おすすめ度★5）。オークションは市場価格以上で売れる可能性がある一方、手数料（Yahoo!オークションは落札価格の10.0%〈税込〉、美術品専門オークションは税込11〜16.5%程度）と、出品・発送の手間がかかります（各社の料金は<Link href="/guide/gyosha-hikaku/" className="text-[#8B4513] underline">骨董品の売却先・買取業者の比較</Link>に出典付きで掲載）。判断に迷う場合は、まず買取業者の一括査定で相場を把握し、そのうえで他の方法を検討してください。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 4つの売却方法を比較
               </h2>
             </div>
 
             {/* Quick comparison */}
-            <div className="hidden md:block bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8] mb-12">
+            <div className="hidden md:block bg-white rounded overflow-hidden border border-[#E0D5C8] mb-12">
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#8B4513] text-white">
@@ -179,10 +177,10 @@ export default function DokoDeUruPage() {
         <section className="py-4 md:py-8">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
             {methods.map((method, idx) => (
-              <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+              <article key={idx} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                 <div className="p-6 md:p-8">
                   <div className="flex gap-4 items-start mb-4">
-                    <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                    <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
@@ -196,7 +194,7 @@ export default function DokoDeUruPage() {
                   <p className="text-[#5C4A3A] leading-relaxed mb-5">{method.description}</p>
 
                   <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <div className="bg-green-50 rounded-xl p-5 border border-green-200">
+                    <div className="bg-green-50 rounded p-5 border border-green-200">
                       <h3 className="font-bold text-green-800 mb-3 text-sm">メリット</h3>
                       <ul className="space-y-2">
                         {method.pros.map((p, i) => (
@@ -206,7 +204,7 @@ export default function DokoDeUruPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-red-50 rounded-xl p-5 border border-red-200">
+                    <div className="bg-red-50 rounded p-5 border border-red-200">
                       <h3 className="font-bold text-red-800 mb-3 text-sm">デメリット</h3>
                       <ul className="space-y-2">
                         {method.cons.map((c, i) => (
@@ -218,7 +216,7 @@ export default function DokoDeUruPage() {
                     </div>
                   </div>
 
-                  <div className="bg-[#F5ECD7] rounded-xl p-4">
+                  <div className="bg-[#F5ECD7] rounded p-4">
                     <p className="text-sm text-[#8B4513]">
                       <strong>適している方:</strong> {method.bestFor}
                     </p>
@@ -232,33 +230,32 @@ export default function DokoDeUruPage() {
         {/* Conclusion */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CONCLUSION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 まず一括査定の利用をおすすめします
               </h2>
             </div>
-            <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-10">
               <p className="text-[#5C4A3A] leading-relaxed mb-4">
                 売却方法を検討中の方には、まず買取業者への一括査定をおすすめします。理由は次の3点です。
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3 text-[#2C1810]">
-                  <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</div>
+                  <div className="w-7 h-7 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</div>
                   <div>
                     <p className="font-medium">相場を把握できる</p>
                     <p className="text-sm text-[#5C4A3A]">複数の業者の査定額を確認することで、お持ちの骨董品の市場価値を把握できます。そのうえで、オークションなど他の方法を検討できます。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-[#2C1810]">
-                  <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</div>
+                  <div className="w-7 h-7 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</div>
                   <div>
                     <p className="font-medium">手間がかからない</p>
                     <p className="text-sm text-[#5C4A3A]">一括査定では、一度の入力で複数の業者に同時に依頼できます。出張買取であれば、自宅で手続きが完結します。</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 text-[#2C1810]">
-                  <div className="w-7 h-7 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</div>
+                  <div className="w-7 h-7 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</div>
                   <div>
                     <p className="font-medium">リスクが低い</p>
                     <p className="text-sm text-[#5C4A3A]">査定は無料で、キャンセルも可能です。オークションやフリマアプリのような手数料や配送時の破損のおそれがありません。</p>
@@ -266,7 +263,7 @@ export default function DokoDeUruPage() {
                 </div>
               </div>
               <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
-                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                 ヒカカク！で無料の一括査定を依頼する
               </a>
             </div>
@@ -274,7 +271,7 @@ export default function DokoDeUruPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               骨董品の価値を把握することから始めてください
@@ -282,7 +279,7 @@ export default function DokoDeUruPage() {
             <p className="text-amber-200 mb-8">
               一括査定で査定額を比較し、適した売却方法をお選びください。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

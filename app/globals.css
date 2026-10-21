@@ -27,3 +27,9 @@ html {
 .font-serif-jp {
   font-family: var(--font-heading), "Georgia", serif;
 }
+
+/* 2026-10-21 デザイン刷新: スマートフォンで表の行が縦に伸びすぎないよう、セルの余白と文字を詰める */
+@media (max-width: 767px) {
+  main table { font-size: 13px; line-height: 1.5; }
+  main th, main td { padding: 6px 8px !important; }
+}

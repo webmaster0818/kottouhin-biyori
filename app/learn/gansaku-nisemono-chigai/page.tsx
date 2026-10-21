@@ -48,20 +48,19 @@ export default function GansakuChigaiPage() {
               </nav>
             </div>
           </div>
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">贋作・偽物・模造・写しの違い</h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">似た言葉を、だます意図の有無と、作者を偽っているかという観点で<br className="hidden md:inline" />整理しています。</p>
             </div>
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
-            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
+            <div className="bg-white border-2 border-[#D4A574] rounded p-6 mb-10">
               <p className="font-bold text-[#8B4513] mb-2">贋作と偽物・模造品は、だます意図の有無と、作者を偽っているかどうかで区別します。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">本物と偽って売る目的で作られたものが<strong>贋作</strong>です。だます意図なく手本として作られた「写し」や、鑑賞・記録用の「模造・レプリカ」は、贋作とは区別されます。ただし、模造品であっても<strong>本物と偽って流通すれば贋作</strong>となります。</p>
             </div>
             {/* 贋作の多い人気作家は専門査定へ（作家×査定クラスタへの内部リンク集中） */}
-            <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6 mb-10">
+            <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-6 mb-10">
               <h2 className="font-serif-jp text-xl font-bold text-[#5C4A3A] mb-3">贋作・模写が多い人気作家は、専門の査定・鑑定をおすすめします</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-4">
                 市場価値が高く人気のある作家ほど、贋作・模写・工房作が多く出回っています。特に次の作家は真贋の見極めが難しいため、作品ごとの相場を確認したうえで、買取業者の無料査定や第三者鑑定で専門家の判断を受けることをおすすめします。
@@ -73,7 +72,7 @@ export default function GansakuChigaiPage() {
                   ["higashiyama-kaii", "東山魁夷"], ["fujita-tsuguharu", "藤田嗣治"], ["kayama-matazo", "加山又造"],
                   ["sugiyama-yasushi", "杉山寧"], ["yusui-jukyu", "由水十久"],
                 ].map(([slug, name]) => (
-                  <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                  <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-sm border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
                     {name}の査定・相場
                   </Link>
                 ))}
@@ -83,23 +82,23 @@ export default function GansakuChigaiPage() {
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">用語ごとの意味</h2>
             <div className="space-y-4 mb-12">
               {terms.map((t, i) => (
-                <div key={i} className="bg-white border border-[#E0D5C8] rounded-xl p-6">
+                <div key={i} className="bg-white border border-[#E0D5C8] rounded p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-2">{t.h}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">{t.b}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-white border border-[#E0D5C8] rounded-2xl p-6 mb-12">
+            <div className="bg-white border border-[#E0D5C8] rounded p-6 mb-12">
               <h2 className="font-bold text-[#5C4A3A] mb-3">関連ページ</h2>
               <div className="grid md:grid-cols-2 gap-3 text-sm">
-                <Link href="/learn/honmono-mikiwake/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition"><p className="font-bold text-[#8B4513] mb-1">本物に共通する5つの特徴</p><p className="text-xs text-[#8B7D72]">本物と断定できる要素の有無についての解説</p></Link>
-                <Link href="/learn/how-to-identify-fakes/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition"><p className="font-bold text-[#8B4513] mb-1">贋作・偽物の見分け方</p><p className="text-xs text-[#8B7D72]">品目別の確認ポイント</p></Link>
+                <Link href="/learn/honmono-mikiwake/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition"><p className="font-bold text-[#8B4513] mb-1">本物に共通する5つの特徴</p><p className="text-xs text-[#8B7D72]">本物と断定できる要素の有無についての解説</p></Link>
+                <Link href="/learn/how-to-identify-fakes/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition"><p className="font-bold text-[#8B4513] mb-1">贋作・偽物の見分け方</p><p className="text-xs text-[#8B7D72]">品目別の確認ポイント</p></Link>
               </div>
             </div>
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white border border-[#E0D5C8] rounded-xl overflow-hidden">
+                <details key={i} className="bg-white border border-[#E0D5C8] rounded overflow-hidden">
                   <summary className="px-5 py-4 cursor-pointer font-bold text-[#5C4A3A] text-sm md:text-base">Q. {f.q}</summary>
                   <div className="px-5 pb-4 text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</div>
                 </details>

@@ -35,9 +35,9 @@ export default function ContentPolicyPage() {
 
               <div className="grid md:grid-cols-2 gap-5">
                 {/* 方針1 */}
-                <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+                <div className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                    <div className="w-10 h-10 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
                     <h3 className="font-bold text-[#2C1810]">利用者を最優先とします</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
@@ -46,9 +46,9 @@ export default function ContentPolicyPage() {
                 </div>
 
                 {/* 方針2 */}
-                <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+                <div className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                    <div className="w-10 h-10 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
                     <h3 className="font-bold text-[#2C1810]">正確な情報の提供に努めます</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
@@ -57,9 +57,9 @@ export default function ContentPolicyPage() {
                 </div>
 
                 {/* 方針3 */}
-                <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+                <div className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                    <div className="w-10 h-10 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
                     <h3 className="font-bold text-[#2C1810]">中立・公平な立場で情報を掲載します</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
@@ -68,9 +68,9 @@ export default function ContentPolicyPage() {
                 </div>
 
                 {/* 方針4 */}
-                <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+                <div className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">4</div>
+                    <div className="w-10 h-10 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm shrink-0">4</div>
                     <h3 className="font-bold text-[#2C1810]">わかりやすい説明に努めます</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed">
@@ -87,11 +87,11 @@ export default function ContentPolicyPage() {
                 当サイトでは、すべてのコンテンツを以下の4つのステップを経て制作・公開しています。
               </p>
 
-              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-6 md:p-8 space-y-8">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 space-y-8">
                 {/* Step 1 */}
                 <div className="flex gap-5">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A96E] to-[#8B4513] text-white flex items-center justify-center font-bold text-lg shrink-0">1</div>
+                    <div className="w-12 h-12 rounded-sm bg-white border border-[#2C1810] text-[#2C1810] flex items-center justify-center font-bold text-lg shrink-0">1</div>
                     <div className="w-0.5 flex-1 bg-[#E0D5C8] mt-2" />
                   </div>
                   <div className="flex-1 pb-8">
@@ -105,7 +105,7 @@ export default function ContentPolicyPage() {
                 {/* Step 2 */}
                 <div className="flex gap-5">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A96E] to-[#8B4513] text-white flex items-center justify-center font-bold text-lg shrink-0">2</div>
+                    <div className="w-12 h-12 rounded-sm bg-white border border-[#2C1810] text-[#2C1810] flex items-center justify-center font-bold text-lg shrink-0">2</div>
                     <div className="w-0.5 flex-1 bg-[#E0D5C8] mt-2" />
                   </div>
                   <div className="flex-1 pb-8">
@@ -119,7 +119,7 @@ export default function ContentPolicyPage() {
                 {/* Step 3 */}
                 <div className="flex gap-5">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A96E] to-[#8B4513] text-white flex items-center justify-center font-bold text-lg shrink-0">3</div>
+                    <div className="w-12 h-12 rounded-sm bg-white border border-[#2C1810] text-[#2C1810] flex items-center justify-center font-bold text-lg shrink-0">3</div>
                     <div className="w-0.5 flex-1 bg-[#E0D5C8] mt-2" />
                   </div>
                   <div className="flex-1 pb-8">
@@ -133,7 +133,7 @@ export default function ContentPolicyPage() {
                 {/* Step 4 */}
                 <div className="flex gap-5">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9A96E] to-[#8B4513] text-white flex items-center justify-center font-bold text-lg shrink-0">4</div>
+                    <div className="w-12 h-12 rounded-sm bg-white border border-[#2C1810] text-[#2C1810] flex items-center justify-center font-bold text-lg shrink-0">4</div>
                   </div>
                   <div className="flex-1">
                     <h3 className="font-bold text-[#2C1810] text-base mb-2">公開・定期更新</h3>
@@ -148,7 +148,7 @@ export default function ContentPolicyPage() {
             {/* アフィリエイトについて */}
             <section>
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">アフィリエイト広告について</h2>
-              <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6">
                 <p className="text-[#5C4A3A] leading-relaxed">
                   当サイトはアフィリエイトプログラムに参加しており、掲載する買取業者へのリンクを通じて利用者がサービスを利用された場合、当社が紹介報酬を受け取ることがあります。ただし、アフィリエイト報酬の有無や金額が、記事の内容、業者の評価、ランキングの順位に影響を与えることは一切ありません。すべてのコンテンツは、上記の基本方針にもとづき、利用者にとって有益かつ公正な情報の提供を目的として制作しています。
                 </p>
@@ -158,7 +158,7 @@ export default function ContentPolicyPage() {
             {/* 情報の訂正について */}
             <section>
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">情報の訂正・ご指摘について</h2>
-              <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6">
                 <p className="text-[#5C4A3A] leading-relaxed">
                   当サイトに掲載している情報に誤りや不正確な点がございましたら、お問い合わせフォームよりご連絡ください。いただいたご指摘は速やかに確認し、必要に応じて記事の修正・更新を行います。利用者の皆様からのご意見は、コンテンツの品質向上に欠かせないものと考えています。
                 </p>
@@ -168,7 +168,7 @@ export default function ContentPolicyPage() {
             {/* 運営者情報 */}
             <section>
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">運営者情報</h2>
-              <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6">
                 <table className="w-full text-sm">
                   <tbody>
                     <tr className="border-b border-[#E0D5C8]">
@@ -189,7 +189,7 @@ export default function ContentPolicyPage() {
             </section>
 
             {/* 制定日 */}
-            <div className="bg-white rounded-xl border border-[#E0D5C8] p-6 text-center">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 text-center">
               <p className="text-[#8B7D72]">制定日: 2026年4月16日</p>
             </div>
           </div>

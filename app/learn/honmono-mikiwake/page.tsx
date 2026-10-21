@@ -117,9 +117,8 @@ export default function HonmonoMikiwakePage() {
           </div>
 
           {/* Hero */}
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 「これがある骨董品は本物」という判断について<br className="hidden md:inline" />
                 本物に共通する5つの特徴
@@ -133,7 +132,7 @@ export default function HonmonoMikiwakePage() {
 
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
             {/* 要点 */}
-            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
+            <div className="bg-white border-2 border-[#D4A574] rounded p-6 mb-10">
               <p className="font-bold text-[#8B4513] mb-2">真贋の判断で最も重要なのは、複数の要素をあわせて確認することです。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">
                 真贋は、1つの要素だけでは判断できません。ただし、<strong>①作家直筆の箱書きがある共箱、②信頼できる第三者機関の鑑定書・登録証、③自然に摩耗した落款・印章、④展覧会歴・図録掲載などの来歴、⑤時代に合った自然な経年変化（古色）</strong>が多く揃っているほど、本物である可能性は高まります。いずれか1つだけを根拠に本物と判断することは避けてください。確信が持てない品や高額品は、<Link href="/#ranking" className="text-[#8B4513] underline">買取業者の無料査定</Link>や第三者鑑定機関で、専門家の判断を受けることをおすすめします。
@@ -141,7 +140,7 @@ export default function HonmonoMikiwakePage() {
             </div>
 
             {/* 贋作の多い人気作家は専門査定へ（作家×査定クラスタへの内部リンク集中） */}
-            <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-6 mb-10">
+            <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-6 mb-10">
               <h2 className="font-serif-jp text-xl font-bold text-[#5C4A3A] mb-3">贋作・模写が多い人気作家は、専門の査定・鑑定をおすすめします</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-4">
                 市場価値が高く人気のある作家ほど、贋作・模写・工房作が多く出回っています。特に次の作家は真贋の見極めが難しいため、作品ごとの相場を確認したうえで、買取業者の無料査定や第三者鑑定で専門家の判断を受けることをおすすめします。
@@ -151,7 +150,7 @@ export default function HonmonoMikiwakePage() {
                   ["katsushika-hokusai", "葛飾北斎"], ["utagawa-hiroshige", "歌川広重"], ["ito-jakuchu", "伊藤若冲"], ["maruyama-okyo", "円山応挙"],
                   ["uemura-shoen", "上村松園"], ["senju-hiroshi", "千住博"], ["go-shoseki", "呉昌碩"],
                 ].map(([slug, name]) => (
-                  <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                  <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-sm border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
                     {name}の査定・相場
                   </Link>
                 ))}
@@ -162,7 +161,7 @@ export default function HonmonoMikiwakePage() {
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">本物の骨董品に共通する5つの特徴</h2>
             <div className="space-y-5 mb-12">
               {marks.map((m, i) => (
-                <div key={i} className="bg-white border border-[#E0D5C8] rounded-xl p-6">
+                <div key={i} className="bg-white border border-[#E0D5C8] rounded p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-2">{m.h}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-3">{m.body}</p>
                   <p className="text-xs md:text-sm text-[#8B7D72] bg-[#FAF7F2] rounded-lg p-3">
@@ -174,7 +173,7 @@ export default function HonmonoMikiwakePage() {
 
             {/* 逆に危険なサイン */}
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">偽物の可能性を示す要素</h2>
-            <div className="bg-white border border-[#E0D5C8] rounded-xl p-6 mb-12">
+            <div className="bg-white border border-[#E0D5C8] rounded p-6 mb-12">
               <ul className="space-y-2.5">
                 {fakeSigns.map((s, i) => (
                   <li key={i} className="flex gap-3 text-sm md:text-base text-[#5C4A3A]">
@@ -198,22 +197,22 @@ export default function HonmonoMikiwakePage() {
                 "まず、買取業者の無料査定で専門家の見解を得る（費用をかけずに、真贋・価値の目安を確認できる）。",
                 "相続・財産分与や売却で正式な証明が必要な場合は、東京美術倶楽部（東美鑑定評価機構）や作家ごとの鑑定機関、刀剣であれば日本美術刀剣保存協会など、有料の第三者鑑定機関（数千円〜数万円）に鑑定書の発行を依頼する。",
               ].map((t, i) => (
-                <li key={i} className="flex gap-3 bg-[#F5ECD7] rounded-xl p-4">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-[#8B4513] text-white font-bold text-sm flex items-center justify-center">{i + 1}</span>
+                <li key={i} className="flex gap-3 bg-[#F5ECD7] rounded p-4">
+                  <span className="shrink-0 w-7 h-7 rounded-sm bg-[#8B4513] text-white font-bold text-sm flex items-center justify-center">{i + 1}</span>
                   <span className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">{t}</span>
                 </li>
               ))}
             </ol>
 
             {/* 関連リンク */}
-            <div className="bg-white border border-[#E0D5C8] rounded-2xl p-6 mb-12">
+            <div className="bg-white border border-[#E0D5C8] rounded p-6 mb-12">
               <h2 className="font-bold text-[#5C4A3A] mb-3">関連ページ</h2>
               <div className="grid md:grid-cols-2 gap-3 text-sm">
-                <Link href="/learn/how-to-identify-fakes/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <Link href="/learn/how-to-identify-fakes/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                   <p className="font-bold text-[#8B4513] mb-1">骨董品の贋作・偽物の見分け方</p>
                   <p className="text-xs text-[#8B7D72]">掛軸・陶磁器・刀剣など、品目別の確認ポイント</p>
                 </Link>
-                <Link href="/guide/gyosha-hikaku/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+                <Link href="/guide/gyosha-hikaku/" className="block bg-[#FAF7F2] border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                   <p className="font-bold text-[#8B4513] mb-1">骨董品買取業者の比較</p>
                   <p className="text-xs text-[#8B7D72]">無料査定で、専門家に真贋・価値を確認してもらう方法</p>
                 </Link>
@@ -224,7 +223,7 @@ export default function HonmonoMikiwakePage() {
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white border border-[#E0D5C8] rounded-xl overflow-hidden">
+                <details key={i} className="bg-white border border-[#E0D5C8] rounded overflow-hidden">
                   <summary className="px-5 py-4 cursor-pointer font-bold text-[#5C4A3A] text-sm md:text-base">Q. {f.q}</summary>
                   <div className="px-5 pb-4 text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</div>
                 </details>

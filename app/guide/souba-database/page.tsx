@@ -63,9 +63,8 @@ export default function SoubaDatabasePage() {
           </div>
 
           {/* Hero */}
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">AUCTION PRICE DATABASE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 骨董品 落札相場データベース<span className="text-[#D4A574]">2026</span>
               </h1>
@@ -79,7 +78,7 @@ export default function SoubaDatabasePage() {
                   ["収録実績", `${db.resultTotal}件`],
                   ["最終更新", db.generatedAt],
                 ].map(([k, v]) => (
-                  <div key={k} className="bg-white/10 rounded-xl px-6 py-3">
+                  <div key={k} className="bg-white/10 rounded px-6 py-3">
                     <p className="text-xs text-amber-200 mb-1">{k}</p>
                     <p className="text-xl font-bold">{v}</p>
                   </div>
@@ -91,7 +90,7 @@ export default function SoubaDatabasePage() {
           {/* 集計方法 */}
           <section className="py-10">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+              <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
                 <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">集計方法と信頼性について</h2>
                 <ul className="text-sm text-[#5C4A3A] space-y-2 leading-relaxed">
                   <li>・収録対象は、シンワオークション・古裂會の公式落札結果、Christie's・Bonhams等の公式ロット結果、および信頼できる報道で、<strong className="text-[#8B4513]">当編集部が出典に直接アクセスして作品名と金額の一致を確認できたもののみ</strong>です。</li>
@@ -179,7 +178,7 @@ export default function SoubaDatabasePage() {
               <p className="text-sm text-[#5C4A3A] mb-6">Christie's・Bonhams等の外貨建ての主な実績です（為替換算は行わず、公表通貨のまま掲載しています）。</p>
               <div className="grid md:grid-cols-2 gap-4">
                 {db.overseas.map((o, i) => (
-                  <div key={i} className="bg-white rounded-xl border border-[#E0D5C8] p-5 flex items-start justify-between gap-3">
+                  <div key={i} className="bg-white rounded border border-[#E0D5C8] p-5 flex items-start justify-between gap-3">
                     <div>
                       <Link href={`/artist/${o.slug}/`} className="font-bold text-[#2C1810] underline hover:text-[#8B4513]">{o.artist}</Link>
                       <p className="text-sm text-[#5C4A3A] mt-1">{o.title}</p>
@@ -199,14 +198,14 @@ export default function SoubaDatabasePage() {
               <p className="text-sm text-[#5C4A3A] mb-6">各作家ページに、出典を明記した落札実績表と相場の読み方を掲載しています。</p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                 {db.artists.map((a) => (
-                  <Link key={a.slug} href={`/artist/${a.slug}/`} className="bg-white rounded-lg border border-[#E0D5C8] px-3 py-2.5 text-sm hover:shadow-md hover:border-[#C9A96E] transition flex items-center justify-between gap-2">
+                  <Link key={a.slug} href={`/artist/${a.slug}/`} className="bg-white rounded-lg border border-[#E0D5C8] px-3 py-2.5 text-sm hover:border-[#C9A96E] transition flex items-center justify-between gap-2">
                     <span className="font-medium text-[#2C1810] truncate">{a.name}</span>
                     <span className="text-xs text-[#8B7D72] whitespace-nowrap">{a.count}件</span>
                   </Link>
                 ))}
               </div>
               <div className="mt-6 text-center">
-                <Link href="/guide/sakka-souba/" className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-3.5 rounded-xl font-bold transition">
+                <Link href="/guide/sakka-souba/" className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-3.5 rounded font-bold transition">
                   作家別の買取相場一覧へ →
                 </Link>
               </div>
@@ -214,7 +213,7 @@ export default function SoubaDatabasePage() {
           </section>
 
           {/* CTA */}
-          <section className="py-14 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+          <section className="py-14 bg-[#3B2416] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">お手元の品の相場を確認する方法</h2>
               <p className="text-amber-200 mb-8 leading-relaxed">
@@ -222,10 +221,10 @@ export default function SoubaDatabasePage() {
                 無料査定で、専門家の評価をご確認ください。
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link href="/guide/gyosha-hikaku/" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded-xl transition shadow-lg">
+                <Link href="/guide/gyosha-hikaku/" className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-4 rounded transition">
                   骨董品買取業者を比較する
                 </Link>
-                <Link href="/guide/kantei-muryou/" className="bg-white/10 border border-white/30 text-white font-bold px-8 py-4 rounded-xl transition hover:bg-white/20">
+                <Link href="/guide/kantei-muryou/" className="bg-white/10 border border-white/30 text-white font-bold px-8 py-4 rounded transition hover:bg-white/20">
                   無料鑑定・査定の使い方
                 </Link>
               </div>

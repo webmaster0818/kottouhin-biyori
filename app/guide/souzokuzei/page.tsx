@@ -81,9 +81,8 @@ export default function SouzokuzeiPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">INHERITANCE TAX</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品と相続税<br className="hidden md:inline" />美術品の評価方法と税負担への対策
             </h1>
@@ -98,14 +97,13 @@ export default function SouzokuzeiPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">相続した骨董品の相続税評価で重要な点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 国税庁の財産評価基本通達では、書画骨董品は「売買実例価額」「精通者意見価格」等を参考に評価します。1点で5万円を超える美術品・骨董品は個別の評価が必要で、一般的な家財として扱える場合は5万円以下のものをまとめて申告できます。価値の証明には鑑定書（費用は1点1万〜5万円程度）の取得が重要で、鑑定書がない場合は税務署独自の評価で課税されるおそれがあります。骨董品も相続財産のため申告が必要で、怠ると追徴課税を受けるおそれがあります。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">VALUATION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董品の相続税評価方法</h2>
             </div>
             <p className="text-[#5C4A3A] leading-relaxed mb-8">
@@ -113,9 +111,9 @@ export default function SouzokuzeiPage() {
             </p>
             <div className="space-y-6">
               {evaluationMethods.map((m, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-8 h-8 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                    <span className="w-8 h-8 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-0.5">{m.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{m.text}</p>
@@ -128,13 +126,12 @@ export default function SouzokuzeiPage() {
         {/* 節税対策 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TAX SAVING</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董品の相続税と税負担への対策</h2>
             </div>
             <div className="space-y-6">
               {taxTips.map((t, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">{t.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{t.text}</p>
                 </div>
@@ -146,13 +143,12 @@ export default function SouzokuzeiPage() {
         {/* よくある失敗 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMMON MISTAKES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">よくある失敗例</h2>
             </div>
             <div className="space-y-6">
               {mistakes.map((m, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">{m.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{m.text}</p>
                 </div>
@@ -162,7 +158,7 @@ export default function SouzokuzeiPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               相続した骨董品の価値を無料で確認できます
@@ -170,7 +166,7 @@ export default function SouzokuzeiPage() {
             <p className="text-amber-200 mb-8">
               専門業者の無料査定で、お持ちの骨董品の適正価格を把握することをおすすめします。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

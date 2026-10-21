@@ -79,18 +79,17 @@ export default function GuideArticle(p: GuideArticleProps) {
       <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
         <SiteHeader />
         <main className="flex-1">
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-            <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">{p.heroLabel}</p>
-              <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">{p.title}</h1>
-              <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">{p.subtitle}</p>
+          <section className="bg-[#3B2416] text-white">
+            <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+              <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">{p.title}</h1>
+              <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">{p.subtitle}</p>
             </div>
           </section>
 
           {p.conclusion && (
             <div className="max-w-4xl mx-auto px-4 pt-10 md:pt-14">
               {/* 結論即答 */}
-              <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+              <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
                 <p className="font-serif-jp font-bold text-[#2C1810] mb-2">{p.conclusion.q}</p>
                 <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                   {p.conclusion.a}
@@ -115,7 +114,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                     <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-[#8B4513] pl-3">{t.h}</h2>
                     {t.lead && <p className="text-[#5C4A3A] leading-relaxed mb-4">{t.lead}</p>}
                     {t.caption && <p className="text-sm font-bold text-[#8B4513] mb-2">{t.caption}</p>}
-                    <div className="overflow-x-auto bg-white rounded-2xl border border-[#E0D5C8] shadow-md">
+                    <div className="overflow-x-auto bg-white rounded border border-[#E0D5C8]">
                       <table className="w-full text-sm min-w-[640px]">
                         <thead>
                           <tr className="text-left text-[#8B7355] border-b border-[#E0D5C8]">
@@ -145,10 +144,10 @@ export default function GuideArticle(p: GuideArticleProps) {
           <section className={`py-12 md:py-16 ${p.intro || (p.tables && p.tables.length > 0) ? "pt-0 md:pt-0" : ""}`}>
             <div className="max-w-4xl mx-auto px-4 space-y-8">
               {p.tips.map((tip, idx) => (
-                <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+                <article key={idx} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                   <div className="p-6 md:p-8">
                     <div className="flex gap-5 mb-4">
-                      <div className="w-12 h-12 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xl">
+                      <div className="w-12 h-12 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xl">
                         {idx + 1}
                       </div>
                       <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] flex-1 pt-2">{tip.title}</h2>
@@ -156,7 +155,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                     <p className="text-[#5C4A3A] leading-relaxed mb-4">{tip.text}</p>
                     {tip.detail && <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{tip.detail}</p>}
                     {tip.point && (
-                      <div className="bg-[#F5ECD7] rounded-xl p-4">
+                      <div className="bg-[#F5ECD7] rounded p-4">
                         <p className="text-sm text-[#8B4513] font-medium">
                           {tip.point}
                         </p>
@@ -185,16 +184,15 @@ export default function GuideArticle(p: GuideArticleProps) {
 
           <section className={`py-12 md:py-16 ${p.deepDive && p.deepDive.length > 0 ? "" : "bg-white"}`}>
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUMMARY</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">まとめ</h2>
               </div>
-              <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-10">
                 <p className="text-[#5C4A3A] leading-relaxed mb-6">{p.summaryIntro}</p>
                 <div className="space-y-3 mb-6">
                   {p.summaryChecklist.map((c, i) => (
                     <div key={i} className="flex items-start gap-2 text-[#2C1810]">
-                      <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                      <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                       <span>{c}</span>
                     </div>
                   ))}
@@ -203,7 +201,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                   href={p.ctaUrl}
                   target={p.ctaUrl.startsWith("http") ? "_blank" : undefined}
                   rel={p.ctaUrl.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg"
+                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg"
                 >
                   {p.ctaText}
                 </a>
@@ -214,13 +212,12 @@ export default function GuideArticle(p: GuideArticleProps) {
           {p.faq && p.faq.length > 0 && (
             <section className="py-12 md:py-16">
               <div className="max-w-4xl mx-auto px-4">
-                <div className="text-center mb-10">
-                  <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+                <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                   <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">よくある質問</h2>
                 </div>
                 <div className="space-y-4">
                   {p.faq.map((f, i) => (
-                    <div key={i} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                    <div key={i} className="bg-white rounded border border-[#E0D5C8] p-5">
                       <p className="font-bold text-[#2C1810] mb-2">Q. {f.q}</p>
                       <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                     </div>
@@ -232,8 +229,7 @@ export default function GuideArticle(p: GuideArticleProps) {
 
           <section className="py-12 md:py-16">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RELATED</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">関連する買取ガイド</h2>
               </div>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -251,7 +247,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                     <Link
                       key={g.href}
                       href={g.href}
-                      className="bg-white hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]"
+                      className="bg-white hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]"
                     >
                       {g.label} →
                     </Link>
@@ -260,11 +256,11 @@ export default function GuideArticle(p: GuideArticleProps) {
             </div>
           </section>
 
-          <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+          <section className="py-16 bg-[#3B2416] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">複数の買取業者の査定額を比較できます</h2>
               <p className="text-amber-200 mb-8">複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。</p>
-              <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+              <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
                 おすすめ業者を見る
               </Link>
             </div>

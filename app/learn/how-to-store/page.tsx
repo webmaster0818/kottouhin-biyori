@@ -45,9 +45,8 @@ export default function HowToStorePage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">PRESERVATION GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の保管方法と<br />手入れの方法
             </h1>
@@ -98,7 +97,7 @@ export default function HowToStorePage() {
         {/* 季節別 保管カレンダー */}
         <section id="season-calendar" className="pb-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-2">季節別の保管カレンダー</h2>
               <p className="text-sm text-[#5C4A3A] mb-5">
                 日本の四季による環境の変化は、骨董品に大きな負担を与えます。季節ごとに行うべきことを把握しておくことで、劣化の大半を予防できます。
@@ -110,7 +109,7 @@ export default function HowToStorePage() {
                   { season: "秋（10〜11月）", risk: "保管場所の見直しに適した時期", todo: "空気が乾燥した晴天の日に、2回目の虫干しを行います。冬に向けて保管場所を点検し、たとう紙・薄葉紙に傷みがあれば交換してください。" },
                   { season: "冬（12〜2月）", risk: "過乾燥・暖房による急激な温度変化", todo: "湿度40%を下回る過乾燥にご注意ください（紙・木にひび割れが生じます）。暖房の風が直接当たる場所を避け、加湿しすぎにも注意してください。" },
                 ].map((item) => (
-                  <div key={item.season} className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div key={item.season} className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-1">{item.season}</h3>
                     <p className="text-xs text-red-700 mb-2">{item.risk}</p>
                     <p className="text-sm text-[#5C4A3A]">{item.todo}</p>
@@ -124,7 +123,7 @@ export default function HowToStorePage() {
         {/* Table of Contents */}
         <section className="pb-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#importance" className="hover:text-[#8B4513] transition">1. 適切な保管が重要な理由</a></li>
@@ -147,7 +146,7 @@ export default function HowToStorePage() {
         {/* Section 1: Importance */}
         <section id="importance" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 1. 適切な保管が重要な理由
               </h2>
@@ -166,7 +165,7 @@ export default function HowToStorePage() {
                     { label: "害虫", desc: "虫食い・食害の原因" },
                     { label: "衝撃", desc: "破損・欠けの原因" },
                   ].map((item) => (
-                    <div key={item.label} className="bg-[#FAF7F2] rounded-xl p-4 text-center border border-[#E0D5C8]">
+                    <div key={item.label} className="bg-[#FAF7F2] rounded p-4 text-center border border-[#E0D5C8]">
                       <p className="font-bold text-[#8B4513] mb-1">{item.label}</p>
                       <p className="text-xs">{item.desc}</p>
                     </div>
@@ -183,7 +182,7 @@ export default function HowToStorePage() {
         {/* Section 2: Kakejiku */}
         <section id="kakejiku" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 2. 掛軸の保管・手入れ
               </h2>
@@ -222,7 +221,7 @@ export default function HowToStorePage() {
         {/* Section 3: Toujiki */}
         <section id="toujiki" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 3. 陶磁器の保管・手入れ
               </h2>
@@ -256,7 +255,7 @@ export default function HowToStorePage() {
         {/* Section 4: Sadougu */}
         <section id="sadougu" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 4. 茶道具の保管・手入れ
               </h2>
@@ -288,7 +287,7 @@ export default function HowToStorePage() {
         {/* Section 5: Kaiga */}
         <section id="kaiga" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 5. 絵画の保管・手入れ
               </h2>
@@ -322,7 +321,7 @@ export default function HowToStorePage() {
         {/* Section 6: Touken */}
         <section id="touken" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 6. 刀剣の保管・手入れ
               </h2>
@@ -375,7 +374,7 @@ export default function HowToStorePage() {
         {/* Section 7: Kimono */}
         <section id="kimono" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 7. 着物の保管・手入れ
               </h2>
@@ -412,7 +411,7 @@ export default function HowToStorePage() {
         {/* Section 8: Kosen / Kitte */}
         <section id="kosen-kitte" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 8. 古銭・切手・紙ものの保管
               </h2>
@@ -440,7 +439,7 @@ export default function HowToStorePage() {
         {/* Section 9: Shikki / Butsuzou */}
         <section id="shikki" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 9. 漆器・仏像・木彫の保管
               </h2>
@@ -464,7 +463,7 @@ export default function HowToStorePage() {
         {/* Section 10: Common Rules */}
         <section id="common-rules" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 10. 共通の保管ルール
               </h2>
@@ -472,25 +471,25 @@ export default function HowToStorePage() {
                 <p>品目を問わず、すべての骨董品に共通する保管の基本ルールを以下に整理します。</p>
 
                 <div className="space-y-4">
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">温度：15〜25℃を維持</h3>
                     <p className="text-sm">
                       急激な温度変化は素材の膨張・収縮を引き起こし、ひび割れや剥離の原因になります。エアコンの風が直接当たる場所や、暖房器具のそばは避けてください。年間を通じて温度変化が少ない部屋（北向きの部屋や1階の奥の部屋など）が、保管に適しています。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">湿度：50〜60%を維持</h3>
                     <p className="text-sm">
                       日本は高温多湿な気候のため、特に梅雨〜夏季は除湿が必要です。除湿機や除湿剤を活用し、湿度計で定期的に確認してください。反対に冬季は乾燥しすぎる場合があるため、加湿器で適度な湿度を保つことも重要です。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">光：紫外線を遮断する</h3>
                     <p className="text-sm">
                       紫外線による退色・変色は、元に戻すことができない損傷です。直射日光はもちろん、蛍光灯の光にも長時間さらさないようにしてください。展示する場合は、UVカットガラスの使用やLED照明の採用が効果的です。保管時は、暗所に置くことが基本です。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">害虫：定期的な点検と防虫</h3>
                     <p className="text-sm">
                       シバンムシ、シミ（紙魚）、衣蛾（イガ）などの害虫は、紙・絹・木材・漆を食害します。定期的に保管場所を点検し、防虫剤を適切に使用してください。虫干しは、最も効果的な防虫対策のひとつです。
@@ -505,7 +504,7 @@ export default function HowToStorePage() {
         {/* Section 11: NG Actions */}
         <section id="ng-actions" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 11. 避けるべき行為
               </h2>
@@ -541,7 +540,7 @@ export default function HowToStorePage() {
                       reason: "押し入れの奥、水回りの近く、日当たりの良い窓際などは、骨董品の保管に最も適さない場所です。結露が起きやすい壁面も避けてください。",
                     },
                   ].map((item) => (
-                    <div key={item.ng} className="bg-red-50 rounded-xl p-5 border border-red-200">
+                    <div key={item.ng} className="bg-red-50 rounded p-5 border border-red-200">
                       <h3 className="font-bold text-red-800 mb-2 flex items-center gap-2">
                         <span className="text-red-500">NG</span> {item.ng}
                       </h3>
@@ -557,7 +556,7 @@ export default function HowToStorePage() {
         {/* Section 12: Recommended Goods */}
         <section id="recommended-goods" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 12. 保管に役立つ用品
               </h2>
@@ -565,37 +564,37 @@ export default function HowToStorePage() {
                 <p>骨董品の保管に役立つ用品をご紹介します。いずれも、ホームセンターや専門店、オンラインショップで入手できます。</p>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">桐箱（きりばこ）</h3>
                     <p className="text-sm">
                       桐は、日本の気候に最も適した保管用の木材です。調湿性に優れ、湿度が高い時は湿気を吸い、乾燥する時は湿気を放出します。防虫効果もあり、骨董品の保管に適しています。品物に合わせて、サイズを指定して注文することもできます。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">シリカゲル（乾燥剤）</h3>
                     <p className="text-sm">
                       桐箱や収納スペースの湿度の調整に使用します。色が変わるタイプ（青からピンク）を使用すれば、交換時期がひと目でわかります。再生可能なタイプを選べば、天日干しで繰り返し使用でき、経済的です。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">薄葉紙・和紙</h3>
                     <p className="text-sm">
                       骨董品を包んだり、箱の中の緩衝材として使用したりします。酸性紙は長期保管で品物を傷める場合があるため、中性紙やアーカイバルペーパーをお選びください。美術品の専門店で入手できます。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">防虫剤（無臭タイプ）</h3>
                     <p className="text-sm">
                       ピレスロイド系の防虫剤は無臭で、他の防虫剤と併用しても化学反応を起こしにくいため、おすすめです。衣類用と表記されていますが、紙や絹の防虫にも効果があります。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">温湿度計</h3>
                     <p className="text-sm">
                       保管場所の環境を数値で管理するために必要です。デジタル式で、最高値・最低値を記録できるタイプをおすすめします。スマートフォンに通知できるIoT対応の温湿度計であれば、外出中も環境を確認できます。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">木綿の手袋</h3>
                     <p className="text-sm">
                       骨董品を素手で触らないために必要な用品です。美術館の職員も使用する白い木綿の手袋は、100円ショップでも入手できます。複数枚用意し、定期的に洗濯してください。
@@ -610,7 +609,7 @@ export default function HowToStorePage() {
         {/* FAQ */}
         <section id="faq" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 骨董品の保管に関するよくある質問
               </h2>
@@ -655,32 +654,32 @@ export default function HowToStorePage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/what-is-kottouhin" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/what-is-kottouhin" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の定義・歴史・分類</h3>
                 <p className="text-sm text-[#5C4A3A]">骨董品の基礎知識をご説明します。初めての方は、こちらをご覧ください。</p>
               </Link>
-              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の贋作・偽物の見分け方</h3>
                 <p className="text-sm text-[#5C4A3A]">鑑定士が確認する真贋判定のポイントを、品目別にご説明します。</p>
               </Link>
-              <Link href="/guide/satei-kijun" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/guide/satei-kijun" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">GUIDE</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の査定基準</h3>
                 <p className="text-sm text-[#5C4A3A]">保存状態は、査定の最も重要な項目のひとつです。査定士が確認するポイントをご説明します。</p>
               </Link>
-              <Link href="/guide/takaku-uru" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/guide/takaku-uru" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">GUIDE</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品を高く売るためのポイント</h3>
                 <p className="text-sm text-[#5C4A3A]">共箱・付属品の揃え方から売却の時期まで、買取額を高めるためのポイントです。</p>
               </Link>
-              <Link href="/guide/sakka-souba" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/guide/sakka-souba" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">価格</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">作家別の買取相場・落札実績</h3>
                 <p className="text-sm text-[#5C4A3A]">著名作家の買取相場と公開オークションの落札実績を、出典を明記して掲載しています。</p>
               </Link>
-              <Link href="/guide/gyosha-hikaku" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/guide/gyosha-hikaku" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">比較</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品買取業者おすすめ比較</h3>
                 <p className="text-sm text-[#5C4A3A]">主要14社を目的別に比較しています。売却先の選定にご活用ください。</p>
@@ -690,7 +689,7 @@ export default function HowToStorePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               保管が難しい場合は、売却も選択肢となります
@@ -701,17 +700,17 @@ export default function HowToStorePage() {
             </p>
             <div className="grid sm:grid-cols-3 gap-4 mb-6">
               <a href="https://hikakaku.com" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">一括査定で比較</span>
                 ヒカカク！
               </a>
               <a href="https://www.tifana.net" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">まとめて売るなら</span>
                 ティファナ
               </a>
               <a href="https://www.uriel-cuore.co.jp" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">出張買取専門</span>
                 ウリエル
               </a>

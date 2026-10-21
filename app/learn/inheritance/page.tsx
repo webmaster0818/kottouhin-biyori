@@ -32,9 +32,8 @@ export default function InheritancePage() {
             </nav>
           </div>
         </div>
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品の相続・評価ガイド</h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">骨董品も相続財産に含まれます。評価額の調べ方と、円滑な分割・売却の進め方をご説明します。</p>
           </div>
@@ -42,14 +41,14 @@ export default function InheritancePage() {
 
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+            <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">骨董品の相続は「評価、分割方法の決定、必要に応じた売却」の順で進めます</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">骨董品は相続財産に含まれ、時価で評価されます。次の流れで進めると円滑です。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 品物を把握し評価する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">鑑定や買取査定で時価（評価額）を確認します</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 分割方法を決める</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">現物分割か、売却して分ける換価分割かを決めます</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ 売却する場合は査定を比較する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">複数の業者で査定し、明細を残します</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 税務は専門家に確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">評価・申告の詳細は税理士にご相談ください</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 品物を把握し評価する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">鑑定や買取査定で時価（評価額）を確認します</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 分割方法を決める</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">現物分割か、売却して分ける換価分割かを決めます</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ 売却する場合は査定を比較する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">複数の業者で査定し、明細を残します</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 税務は専門家に確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">評価・申告の詳細は税理士にご相談ください</p></li>
               </ul>
             </div>
           </div>
@@ -57,7 +56,7 @@ export default function InheritancePage() {
 
         <section className="py-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#s1" className="hover:text-[#8B4513] transition">1. 骨董品も相続財産に含まれます</a></li>
@@ -73,7 +72,7 @@ export default function InheritancePage() {
 
         <section id="s1" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">1. 骨董品も相続財産に含まれます</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>現金や不動産と同様に、骨董品・美術品も相続財産に含まれます。価値の高い品が含まれている場合は、相続税の計算や遺産分割の対象となるため、古い品物という理由で見過ごすと、後に評価や申告で問題となる場合があります。</p>
@@ -85,7 +84,7 @@ export default function InheritancePage() {
 
         <section id="s2" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">2. 相続における評価額の考え方</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>相続財産としての骨董品は、原則として、相続が発生した時点の時価（市場で取引される価格）で評価されます。現金のように金額が決まっているわけではないため、評価には専門的な判断が必要です。</p>
@@ -97,14 +96,14 @@ export default function InheritancePage() {
 
         <section id="s3" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">3. 評価額（時価）の調べ方</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>時価を把握する主な方法は、次のとおりです。目的に応じて使い分けてください。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>買取業者の無料査定：市場価格の目安を手軽に把握できる。複数の業者で比較すると、より正確になる</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>専門の鑑定機関による鑑定：鑑定書が発行され、相続・申告時の根拠資料になる（有料）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>オークションの落札実績の参照：同等品の取引価格から相場を把握する</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>買取業者の無料査定：市場価格の目安を手軽に把握できる。複数の業者で比較すると、より正確になる</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>専門の鑑定機関による鑑定：鑑定書が発行され、相続・申告時の根拠資料になる（有料）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>オークションの落札実績の参照：同等品の取引価格から相場を把握する</span></li>
                 </ul>
               </div>
             </div>
@@ -113,13 +112,13 @@ export default function InheritancePage() {
 
         <section id="s4" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">4. 遺産分割の方法</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品を相続人で分ける方法は、主に次の2つです。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>現物分割：品物そのものを特定の相続人が引き継ぐ。思い出の品を手元に残したい場合に適している</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>換価分割：品物を売却し、得た現金を相続人で分ける。公平に分けやすく、価値の高い品に適している</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>現物分割：品物そのものを特定の相続人が引き継ぐ。思い出の品を手元に残したい場合に適している</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>換価分割：品物を売却し、得た現金を相続人で分ける。公平に分けやすく、価値の高い品に適している</span></li>
                 </ul>
               </div>
             </div>
@@ -128,7 +127,7 @@ export default function InheritancePage() {
 
         <section id="s5" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">5. 売却して分割する場合の流れ</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>換価分割で骨董品を売却する場合は、まず複数の買取業者に査定を依頼し、評価額と買取価格を比較します。自宅で査定を受けられる出張買取であれば、大量の品や大型品も、運び出さずに査定を受けられます。</p>
@@ -140,7 +139,7 @@ export default function InheritancePage() {
 
         <section id="s6" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">6. 相続における注意点</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>価値の高い骨董品を申告に含めずにいると、後から指摘を受ける場合があります。評価が難しい品ほど、鑑定や査定によって根拠を残しておくことが大切です。</p>
@@ -152,7 +151,7 @@ export default function InheritancePage() {
 
         <section className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">よくある質問</h2>
               <div className="space-y-5">
                 <div className="border-b border-[#E0D5C8] last:border-b-0 pb-5 last:pb-0"><h3 className="font-bold text-[#8B4513] mb-2">Q. 骨董品も相続税の対象になりますか？</h3><p className="text-sm text-[#5C4A3A] leading-relaxed">A. はい。骨董品・美術品も相続財産に含まれ、原則として相続が発生した時点の時価で評価されます。具体的な評価方法や申告の要否は、品物・状況によって異なるため、相続に詳しい税理士にご確認ください。</p></div>
@@ -168,17 +167,17 @@ export default function InheritancePage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/ihin-kottou" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">遺品整理で出た骨董品の対処法</h3><p className="text-sm text-[#5C4A3A]">価値の見極め方と、売却・形見分けの進め方です。</p></Link>
-              <Link href="/learn/how-to-dispose" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の処分方法・捨て方</h3><p className="text-sm text-[#5C4A3A]">売る・譲る・捨てるの判断基準をご説明します。</p></Link>
+              <Link href="/learn/ihin-kottou" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">遺品整理で出た骨董品の対処法</h3><p className="text-sm text-[#5C4A3A]">価値の見極め方と、売却・形見分けの進め方です。</p></Link>
+              <Link href="/learn/how-to-dispose" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の処分方法・捨て方</h3><p className="text-sm text-[#5C4A3A]">売る・譲る・捨てるの判断基準をご説明します。</p></Link>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">無料査定で価値をご確認ください</h2>
             <p className="text-amber-200 mb-8 leading-relaxed">骨董品の価値は、専門家でなければ判断が困難です。<br />査定料・出張料が無料の業者であれば、費用をかけずに価値を確認できます。</p>
-            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">買取業者を比較する</Link>
+            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">買取業者を比較する</Link>
             <p className="text-xs text-amber-200/70 mt-4">いずれも査定無料・キャンセル料なし</p>
           </div>
         </section>

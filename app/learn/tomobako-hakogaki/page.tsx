@@ -47,28 +47,27 @@ export default function TomobakoPage() {
               </nav>
             </div>
           </div>
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">共箱・箱書きの見方</h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">価値を大きく左右する付属品について、見方と、<br className="hidden md:inline" />処分してはいけない理由をご説明します。</p>
             </div>
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
-            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
+            <div className="bg-white border-2 border-[#D4A574] rounded p-6 mb-10">
               <p className="font-bold text-[#8B4513] mb-2">共箱は真贋・価値の有力な手がかりですが、単独では決め手にならない点に注意が必要です。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">作者自身が書いた<strong>共箱</strong>は、作者と作品を結び付ける有力な証拠であり、価値を高めます。ただし、箱違いや偽の箱書きもあるため、箱だけで本物と判断せず、作品の作風・時代との一致や<Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline">他の要素</Link>とあわせて判断します。<strong>汚れていても、査定前に処分しないでください。</strong></p>
             </div>
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">共箱・箱書きのポイント</h2>
             <div className="space-y-4 mb-12">
               {points.map((p, i) => (
-                <div key={i} className="bg-white border border-[#E0D5C8] rounded-xl p-6">
+                <div key={i} className="bg-white border border-[#E0D5C8] rounded p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-2">{p.h}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">{p.b}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-white border border-[#E0D5C8] rounded-2xl p-6 mb-12">
+            <div className="bg-white border border-[#E0D5C8] rounded p-6 mb-12">
               <h2 className="font-bold text-[#5C4A3A] mb-3">共箱付きの品は、査定に出すことをおすすめします</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">共箱・箱書きが揃っていると、評価が上がりやすくなります。真贋や価値を確認したい品は、まず無料査定で専門家の見解をお求めください。</p>
               <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#8B4513] text-white text-sm font-bold rounded-lg px-5 py-2.5 hover:bg-[#6B3410] transition">骨董品買取業者を比較する</Link>
@@ -76,7 +75,7 @@ export default function TomobakoPage() {
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white border border-[#E0D5C8] rounded-xl overflow-hidden">
+                <details key={i} className="bg-white border border-[#E0D5C8] rounded overflow-hidden">
                   <summary className="px-5 py-4 cursor-pointer font-bold text-[#5C4A3A] text-sm md:text-base">Q. {f.q}</summary>
                   <div className="px-5 pb-4 text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</div>
                 </details>

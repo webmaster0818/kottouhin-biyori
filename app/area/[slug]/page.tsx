@@ -399,13 +399,12 @@ export default async function AreaPage({ params }: Props) {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">AREA</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               {area.fullName}の骨董品買取
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               {area.fullName}に対応する買取業者を比較しています。骨董品・美術品（絵画・掛軸・茶道具・陶磁器・刀剣など）の売却にご活用ください。
             </p>
           </div>
@@ -414,7 +413,7 @@ export default async function AreaPage({ params }: Props) {
         {/* 要点（AEO） */}
         <section className="pt-10 md:pt-14">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6">
+            <div className="bg-white border-2 border-[#D4A574] rounded p-6">
               <p className="font-bold text-[#8B4513] mb-2">{area.fullName}で骨董品を高く売るための基本の手順は、次のとおりです。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-3">
                 ①<strong>複数の業者の無料査定を比較</strong>し、最も高い金額を提示した業者に売却する（1社だけで決めない）、
@@ -447,15 +446,14 @@ export default async function AreaPage({ params }: Props) {
         {/* Area Features */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FEATURES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {area.fullName}の骨董品買取の特徴
               </h2>
             </div>
             <div className="space-y-4">
               {area.features.map((feature, idx) => (
-                <div key={idx} className="flex gap-4 items-start bg-white rounded-xl border border-[#E0D5C8] p-5 shadow-sm">
+                <div key={idx} className="flex gap-4 items-start bg-white rounded border border-[#E0D5C8] p-5">
                   <span className="text-[#C9A96E] mt-0.5 shrink-0 text-lg">&#9670;</span>
                   <p className="text-[#2C1810] leading-relaxed">{feature}</p>
                 </div>
@@ -467,8 +465,7 @@ export default async function AreaPage({ params }: Props) {
         {/* 3-Company Comparison */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {area.fullName}対応の買取業者3社
               </h2>
@@ -477,15 +474,15 @@ export default async function AreaPage({ params }: Props) {
               {companies.map((company) => {
                 const isBest = company.id === area.bestCompany;
                 return (
-                  <article key={company.id} className={`bg-white rounded-2xl shadow-md overflow-hidden border ${isBest ? "border-[#C9A96E] border-2" : "border-[#E0D5C8]"}`}>
+                  <article key={company.id} className={`bg-white rounded overflow-hidden border ${isBest ? "border-[#C9A96E] border-2" : "border-[#E0D5C8]"}`}>
                     <div className="p-6 md:p-8">
                       {isBest && (
-                        <div className="bg-[#F5ECD7] text-[#8B4513] text-xs font-bold px-3 py-1.5 rounded-full inline-block mb-3">
+                        <div className="bg-[#F5ECD7] text-[#8B4513] text-xs font-bold px-3 py-1.5 rounded-sm inline-block mb-3">
                           {area.fullName}でのおすすめ
                         </div>
                       )}
                       <div className="flex items-start gap-4 mb-4">
-                        <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg shrink-0`}>
+                        <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg shrink-0`}>
                           {company.rank}
                         </div>
                         <div className="flex-1">
@@ -496,17 +493,17 @@ export default async function AreaPage({ params }: Props) {
                       </div>
                       <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{company.description}</p>
                       <div className="grid md:grid-cols-2 gap-3 mb-4">
-                        <div className="bg-[#FAF7F2] rounded-xl p-3">
+                        <div className="bg-[#FAF7F2] rounded p-3">
                           <p className="text-xs text-[#8B7D72] mb-1">対応エリア</p>
                           <p className="text-sm text-[#2C1810] font-medium">{company.areas}</p>
                         </div>
-                        <div className="bg-[#FAF7F2] rounded-xl p-3">
+                        <div className="bg-[#FAF7F2] rounded p-3">
                           <p className="text-xs text-[#8B7D72] mb-1">買取方法</p>
                           <p className="text-sm text-[#2C1810] font-medium">{company.buyMethod.join("・")}</p>
                         </div>
                       </div>
                       <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
-                        className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded-xl font-bold transition">
+                        className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded font-bold transition">
                         {company.name}の公式サイトへ
                       </a>
                     </div>
@@ -520,16 +517,15 @@ export default async function AreaPage({ params }: Props) {
         {/* Selling Tips */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {area.fullName}で骨董品を高く売るためのポイント
               </h2>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8] space-y-8">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8] space-y-8">
               {tips.map((tip, idx) => (
                 <div key={idx} className="flex gap-5">
-                  <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                  <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                     {idx + 1}
                   </div>
                   <div className={`flex-1 ${idx < tips.length - 1 ? "pb-8 border-b border-[#E0D5C8]" : ""}`}>
@@ -546,8 +542,7 @@ export default async function AreaPage({ params }: Props) {
         {markets.length > 0 && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">LOCAL MARKETS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {area.fullName}の骨董市・催事カレンダー
                 </h2>
@@ -555,10 +550,10 @@ export default async function AreaPage({ params }: Props) {
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {markets.map((m, idx) => (
-                  <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                  <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                     <h3 className="font-bold text-[#8B4513] mb-2 text-lg">{m.name}</h3>
-                    <p className="text-xs text-[#8B7D72] mb-1">📍 {m.place}</p>
-                    <p className="text-xs text-[#8B7D72] mb-3">📅 {m.schedule}</p>
+                    <p className="text-xs text-[#8B7D72] mb-1">会場：{m.place}</p>
+                    <p className="text-xs text-[#8B7D72] mb-3">開催：{m.schedule}</p>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{m.note}</p>
                   </div>
                 ))}
@@ -574,8 +569,7 @@ export default async function AreaPage({ params }: Props) {
         {popularItems.length > 0 && (
           <section className="py-12 md:py-16 bg-[#FAF7F2]">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">POPULAR ITEMS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {area.fullName}で需要が高い骨董品
                 </h2>
@@ -583,8 +577,8 @@ export default async function AreaPage({ params }: Props) {
               </div>
               <div className="space-y-3">
                 {popularItems.map((p, idx) => (
-                  <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
-                    <span className="bg-[#8B4513] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">{idx + 1}</span>
+                  <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-5 flex gap-4 items-start">
+                    <span className="bg-[#8B4513] text-white w-8 h-8 rounded-sm flex items-center justify-center font-bold text-sm shrink-0">{idx + 1}</span>
                     <div className="flex-1">
                       <h3 className="font-bold text-[#2C1810] mb-1">{p.item}</h3>
                       <p className="text-xs text-[#5C4A3A] leading-relaxed">{p.reason}</p>
@@ -599,8 +593,7 @@ export default async function AreaPage({ params }: Props) {
         {/* 買取方法の比較 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-8">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">METHOD</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {area.name}での骨董品の売り方・買取方法
               </h2>
@@ -631,15 +624,14 @@ export default async function AreaPage({ params }: Props) {
         {/* FAQ */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-8">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {area.fullName}の骨董品買取に関するよくある質問
               </h2>
             </div>
             <div className="space-y-4">
               {areaFaqs.map((f, i) => (
-                <div key={i} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-5">
                   <p className="font-bold text-[#2C1810] mb-2">Q. {f.q}</p>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                 </div>
@@ -652,8 +644,7 @@ export default async function AreaPage({ params }: Props) {
         {region && nearbyAreas.length > 0 && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">NEARBY AREAS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">{region.name}の他のエリアの骨董品買取</h2>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
@@ -661,7 +652,7 @@ export default async function AreaPage({ params }: Props) {
                   <Link
                     key={a.slug}
                     href={`/area/${a.slug}/`}
-                    className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                    className="bg-[#FAF7F2] border border-[#E0D5C8] rounded py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
                   >
                     {a.name}の骨董品買取
                   </Link>
@@ -672,7 +663,7 @@ export default async function AreaPage({ params }: Props) {
         )}
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               {area.fullName}で骨董品の無料査定を依頼する
@@ -680,7 +671,7 @@ export default async function AreaPage({ params }: Props) {
             <p className="text-amber-200 mb-8">
               {area.fullName}に対応する買取業者に、無料で査定を依頼できます。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </Link>
           </div>
@@ -688,7 +679,7 @@ export default async function AreaPage({ params }: Props) {
         {slug === "tokyo" && (
           <section className="py-8 bg-[#FAF6F0]">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-5 text-sm">
+              <div className="bg-white rounded border border-[#E0D5C8] p-5 text-sm">
                 <p className="text-[#5C4A3A]">
                   掛軸の買取先をお探しの方は、品目別に業者を比較した
                   <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京のおすすめ業者比較</Link>

@@ -146,9 +146,8 @@ export default function GyoshaHikakuPage() {
             </div>
           </div>
 
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">COMPARE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品の売却先・買取業者の比較</h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">買取業者{COUNT}社の対応エリア・買取方法と、オークション会社・ネット売却の手数料を、公式の情報をもとに比較しています。</p>
             </div>
@@ -158,7 +157,7 @@ export default function GyoshaHikakuPage() {
             <p className="text-sm text-[#8B7D72] mb-8">最終更新日：{UPDATED} ／ 骨董品買取びより編集部</p>
 
             {/* 冒頭の結論 */}
-            <section className="bg-white rounded-2xl border-2 border-[#C9A96E] p-6 md:p-8 mb-14">
+            <section className="bg-white rounded border-2 border-[#C9A96E] p-6 md:p-8 mb-14">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4">骨董品の売却先は、受取額・入金までの期間・手間の3点で比べます</h2>
               <ul className="space-y-3 text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 <li><strong className="text-[#2C1810]">買取業者：</strong>提示された買取価格がそのまま受取額になり、作家や真贋が不明な品もまとめて査定を受けられます。業者によって評価が分かれるため、複数社の無料査定で比べるのが基本です。</li>
@@ -237,7 +236,7 @@ export default function GyoshaHikakuPage() {
               <p className="text-sm text-[#5C4A3A] mb-5">骨董品の買取業者は、「専門性」「大手の体制」「出張対応」「一括比較」のうち、どの点を重視するかで選ぶのが基本です。複数の業者の無料査定を比較し、納得できる業者に売却することをおすすめします。</p>
               <div className="grid md:grid-cols-2 gap-4">
                 {purposes.map((p) => (
-                  <div key={p.h} className="bg-white rounded-2xl border border-[#E0D5C8] p-5">
+                  <div key={p.h} className="bg-white rounded border border-[#E0D5C8] p-5">
                     <h3 className="font-bold text-[#8B4513] mb-1">{p.h}</h3>
                     <p className="text-xs text-[#8B7D72] mb-3">{p.b}</p>
                     <div className="flex flex-wrap gap-2">
@@ -282,7 +281,7 @@ export default function GyoshaHikakuPage() {
             </section>
 
             {/* 出張買取のルール */}
-            <section className="bg-white rounded-2xl border border-[#E0D5C8] p-6 md:p-8 mb-14">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 mb-14">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">出張買取（訪問購入）を利用する前に知っておきたい法律のルール</h2>
               <p className="text-sm text-[#5C4A3A] mb-4 leading-relaxed">業者が自宅を訪問して品物を買い取る取引は、特定商取引法の「訪問購入」にあたり、売り手を守る次のルールがあります（消費者庁 特定商取引法ガイド、{CHECKED}確認）。</p>
               <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed mb-5">
@@ -315,7 +314,7 @@ export default function GyoshaHikakuPage() {
             </section>
 
             {/* 税金 */}
-            <section className="bg-white rounded-2xl border border-[#E0D5C8] p-6 md:p-8 mb-14">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 mb-14">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">骨董品を売ったときの税金</h2>
               <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
                 <li>・家具・什器・衣服など生活に通常必要な動産の譲渡による所得は非課税ですが、<strong>貴金属や宝石、書画、骨とうなどで1個または1組の価額が30万円を超えるもの</strong>の譲渡による所得は除かれます（国税庁 No.3105）。</li>
@@ -324,7 +323,7 @@ export default function GyoshaHikakuPage() {
               <p className="text-xs text-[#8B7D72] mt-3">※ 個別の申告の要否は、税務署または税理士にご確認ください。相続した骨董品の評価は<Link href="/guide/souzokuzei/" className="text-[#8B4513] underline">骨董品と相続税</Link>でご説明しています。</p>
             </section>
 
-            <section className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8 mb-14">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 mb-14">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">業者選びの注意点</h2>
               <ul className="space-y-2 text-sm text-[#5C4A3A]">
                 <li>・<strong>複数の業者で相見積もりを取る</strong>：1社だけで決めず、2〜3社以上の査定を比較してください</li>
@@ -332,7 +331,7 @@ export default function GyoshaHikakuPage() {
                 <li>・<strong>手数料と買取方法を確認する</strong>：査定料・出張料・キャンセル料の有無と、出張・宅配・店頭の対応可否を事前にご確認ください</li>
                 <li>・<strong>古物商許可と運営会社を確認する</strong>：古物の買取を業として行うには都道府県公安委員会の許可が必要です（古物営業法第3条）。また、古物商は買取の際に相手方の本人確認を行う義務があります（同法第15条）</li>
               </ul>
-              <div className="mt-5"><Link href="/review/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded-xl transition">各業者の口コミ・評判を確認する</Link></div>
+              <div className="mt-5"><Link href="/review/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded transition">各業者の口コミ・評判を確認する</Link></div>
             </section>
 
             {/* FAQ */}
@@ -340,7 +339,7 @@ export default function GyoshaHikakuPage() {
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-l-4 border-amber-500 pl-4">骨董品の売却先の比較に関するよくある質問</h2>
               <div className="space-y-4">
                 {faqs.map((f) => (
-                  <div key={f.q} className="bg-white rounded-xl border border-[#E0D5C8] p-4">
+                  <div key={f.q} className="bg-white rounded border border-[#E0D5C8] p-4">
                     <p className="font-bold text-[#2C1810] mb-2 text-sm">Q. {f.q}</p>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                   </div>
@@ -349,7 +348,7 @@ export default function GyoshaHikakuPage() {
             </section>
 
             {/* 出典 */}
-            <section className="bg-white rounded-2xl border border-[#E0D5C8] p-6 md:p-8 mb-4">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 mb-4">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-2">参考資料（法令・公的機関）</h2>
               <p className="text-xs text-[#8B7D72] mb-3">{CHECKED}確認。オークション会社・ネットサービスの料金の出典は、上の表に記載しています。</p>
               <ul className="space-y-2 text-sm">

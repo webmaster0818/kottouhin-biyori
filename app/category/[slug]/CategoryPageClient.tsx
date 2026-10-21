@@ -62,7 +62,7 @@ function FaqAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
   return (
     <div className="space-y-3">
       {faqs.map((faq, idx) => (
-        <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] overflow-hidden">
+        <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] overflow-hidden">
           <button
             onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
             className="w-full text-left p-5 flex items-start gap-3 hover:bg-[#F5ECD7] transition"
@@ -310,17 +310,15 @@ export default function CategoryPageClient({
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <span className="text-5xl mb-4 block">{cat.icon}</span>
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">CATEGORY</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               {cat.name}買取おすすめ業者3選
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               {cat.name}の買取相場・査定のポイント・おすすめの業者をご説明します
             </p>
-            <div className="mt-8 inline-block bg-white/10 backdrop-blur rounded-xl px-8 py-4 border border-white/20">
+            <div className="mt-8 inline-block bg-white/10 backdrop-blur rounded px-8 py-4 border border-white/20">
               <p className="text-sm text-amber-200 mb-1">買取相場</p>
               <p className="text-2xl md:text-3xl font-bold font-serif-jp">{cat.priceRange}</p>
             </div>
@@ -330,12 +328,12 @@ export default function CategoryPageClient({
         {/* Description */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
                 {cat.name}の買取について
               </h2>
               <p className="text-[#5C4A3A] leading-relaxed mb-6">{cat.description}</p>
-              <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+              <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                 <p className="text-sm text-[#8B7D72] mb-1">買取相場</p>
                 <p className="text-2xl font-bold text-[#8B4513] font-serif-jp">{cat.priceRange}</p>
                 {cat.priceRangeNote && <p className="text-xs text-[#8B7D72] mt-2 leading-relaxed">{cat.priceRangeNote}</p>}
@@ -348,13 +346,12 @@ export default function CategoryPageClient({
         {cat.detailedHistory && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HISTORY</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の歴史と文化的価値
                 </h2>
               </div>
-              <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-10">
                 <p className="text-[#5C4A3A] leading-loose text-sm md:text-base">{cat.detailedHistory}</p>
               </div>
             </div>
@@ -365,8 +362,7 @@ export default function CategoryPageClient({
         {cat.types && cat.types.length > 0 && (
           <section className={`py-12 md:py-16 ${cat.detailedHistory ? "" : "bg-white"}`}>
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TYPES</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の種類
                 </h2>
@@ -374,7 +370,7 @@ export default function CategoryPageClient({
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {cat.types.map((type, idx) => (
-                  <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5 shadow-sm hover:shadow-md transition">
+                  <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-5 transition">
                     <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{type.name}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{type.description}</p>
                   </div>
@@ -388,8 +384,7 @@ export default function CategoryPageClient({
         {cat.buyExamples && cat.buyExamples.length > 0 && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PRICE EXAMPLES</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {hasExampleSources ? `${cat.name}の公開買取実績` : `${cat.name}の買取価格の目安`}
                 </h2>
@@ -399,7 +394,7 @@ export default function CategoryPageClient({
               {/* Mobile cards */}
               <div className="md:hidden space-y-4">
                 {cat.buyExamples.map((example, idx) => (
-                  <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                  <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                     <h3 className="font-bold text-[#2C1810] mb-2">{example.item}</h3>
                     <p className="text-lg font-bold text-[#8B4513] mb-2">{example.price}</p>
                     <p className="text-xs text-[#8B7D72]">{example.note}</p>
@@ -411,7 +406,7 @@ export default function CategoryPageClient({
               </div>
 
               {/* Desktop table */}
-              <div className="hidden md:block bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+              <div className="hidden md:block bg-white rounded overflow-hidden border border-[#E0D5C8]">
                 <table className="w-full">
                   <thead>
                     <tr className="bg-[#8B4513] text-white">
@@ -441,7 +436,7 @@ export default function CategoryPageClient({
                 {cat.buyExamplesFootnote ?? "※上記は市場相場にもとづく参考価格です。実際の査定額は、品物の状態・真贋・市場動向により異なります"}
               </p>
               {cat.references && cat.references.items.length > 0 && (
-                <div className="mt-6 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                <div className="mt-6 bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                   <p className="text-sm font-bold text-[#2C1810] mb-2">出典（{cat.references.verifiedAt}確認）</p>
                   <ul className="list-disc pl-5 space-y-1">
                     {cat.references.items.map((r, i) => (
@@ -458,8 +453,7 @@ export default function CategoryPageClient({
         {soubaStats && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET DATA</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の相場データ（公開オークション実績の集計）
                 </h2>
@@ -468,19 +462,19 @@ export default function CategoryPageClient({
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5 text-center">
                   <p className="text-xs text-[#8B7D72] mb-1">集計作家数</p>
                   <p className="text-2xl md:text-3xl font-bold text-[#8B4513] font-serif-jp">{soubaStats.artistCount}<span className="text-base font-normal">名</span></p>
                 </div>
-                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5 text-center">
                   <p className="text-xs text-[#8B7D72] mb-1">落札実績数</p>
                   <p className="text-2xl md:text-3xl font-bold text-[#8B4513] font-serif-jp">{soubaStats.resultCount}<span className="text-base font-normal">件</span></p>
                 </div>
-                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5 text-center">
                   <p className="text-xs text-[#8B7D72] mb-1">落札額の中央値</p>
                   <p className="text-xl md:text-2xl font-bold text-[#8B4513] font-serif-jp whitespace-nowrap">{soubaStats.median}</p>
                 </div>
-                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5 text-center">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5 text-center">
                   <p className="text-xs text-[#8B7D72] mb-1">最高落札額</p>
                   <p className="text-xl md:text-2xl font-bold text-[#8B4513] font-serif-jp whitespace-nowrap">{soubaStats.max}</p>
                 </div>
@@ -496,8 +490,7 @@ export default function CategoryPageClient({
         {artistRows.length > 0 && (
           <section className="py-12 md:py-16 bg-[#FAF7F2]">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUCTION RECORDS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の作家別の落札実績（公開オークションのデータ）
                 </h2>
@@ -533,7 +526,7 @@ export default function CategoryPageClient({
                 ※金額が手数料込みか公表値かの別、出典URL、帰属（伝・銘・代数）の注記は、各作家ページでご確認ください。
               </p>
               <div className="mt-6 text-center">
-                <a href="/guide/souba-database/" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] px-6 py-3 rounded-xl font-bold hover:bg-[#FAF7F2] transition">
+                <a href="/guide/souba-database/" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] px-6 py-3 rounded font-bold hover:bg-[#FAF7F2] transition">
                   落札相場データベース2026へ →
                 </a>
               </div>
@@ -544,16 +537,15 @@ export default function CategoryPageClient({
         {/* Check Points */}
         <section className={`py-12 md:py-16 ${cat.buyExamples ? "" : "bg-white"}`}>
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CHECK POINTS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {cat.name}の査定ポイント
               </h2>
             </div>
             <div className="space-y-4">
               {cat.checkPoints.map((point, idx) => (
-                <div key={idx} className="flex gap-4 items-start bg-white rounded-xl border border-[#E0D5C8] p-5 shadow-sm">
-                  <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">
+                <div key={idx} className="flex gap-4 items-start bg-white rounded border border-[#E0D5C8] p-5">
+                  <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">
                     {idx + 1}
                   </div>
                   <p className="text-[#2C1810] leading-relaxed text-sm md:text-base">{point}</p>
@@ -561,7 +553,7 @@ export default function CategoryPageClient({
               ))}
             </div>
             {cat.additionalCheckPoints && cat.additionalCheckPoints.length > 0 && (
-              <div className="mt-6 bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-5">
+              <div className="mt-6 bg-[#F5ECD7] rounded border border-[#C9A96E] p-5">
                 <h3 className="font-bold text-[#8B4513] mb-3 text-sm">その他の確認事項</h3>
                 <ul className="space-y-2">
                   {cat.additionalCheckPoints.map((point, idx) => (
@@ -580,8 +572,7 @@ export default function CategoryPageClient({
         {cat.popularArtists.length > 0 && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">POPULAR ARTISTS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   高額査定が期待できる作家・ブランド
                 </h2>
@@ -593,14 +584,14 @@ export default function CategoryPageClient({
                     <Link
                       key={a.name}
                       href={`/artist/${a.slug}/`}
-                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B4513] px-5 py-3 rounded-xl font-medium shadow-sm hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B4513] px-5 py-3 rounded font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
                     >
                       {a.name}
                     </Link>
                   ) : (
                     <span
                       key={a.name}
-                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B7D72] px-5 py-3 rounded-xl font-medium shadow-sm"
+                      className="bg-[#FAF7F2] border border-[#E0D5C8] text-[#8B7D72] px-5 py-3 rounded font-medium"
                     >
                       {a.name}
                     </span>
@@ -618,15 +609,14 @@ export default function CategoryPageClient({
         {bestCompany && (
           <section className="py-12 md:py-16">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BEST CHOICE</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}買取でおすすめの業者
                 </h2>
               </div>
-              <div className="bg-gradient-to-br from-[#F5ECD7] to-[#FAF7F2] rounded-2xl border-2 border-[#C9A96E] p-6 md:p-10">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#C9A96E] p-6 md:p-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-gradient-to-br from-yellow-500 to-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">1</div>
+                  <div className="bg-white border border-[#2C1810] text-[#2C1810] w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg">1</div>
                   <div>
                     <p className="text-xs text-[#C9A96E] font-medium">{bestCompany.type}</p>
                     <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{bestCompany.name}</h3>
@@ -635,7 +625,7 @@ export default function CategoryPageClient({
                 <p className="text-[#5C4A3A] leading-relaxed mb-4">{cat.bestReason}</p>
                 <p className="text-sm text-[#5C4A3A] leading-relaxed mb-6">{bestCompany.description}</p>
                 <a href={bestCompany.officialUrl} target="_blank" rel="noopener noreferrer"
-                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                  className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                   {bestCompany.name}で無料査定を依頼する
                 </a>
               </div>
@@ -646,18 +636,17 @@ export default function CategoryPageClient({
         {/* 3-Company Comparison */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {cat.name}買取業者3社の比較
               </h2>
             </div>
             <div className="space-y-6">
               {companies.map((company) => (
-                <article key={company.id} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+                <article key={company.id} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                   <div className="p-6 md:p-8">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg shrink-0`}>
+                      <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg shrink-0`}>
                         {company.rank}
                       </div>
                       <div className="flex-1">
@@ -667,21 +656,21 @@ export default function CategoryPageClient({
                     </div>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{company.description}</p>
                     <div className="grid md:grid-cols-3 gap-3 mb-4">
-                      <div className="bg-[#FAF7F2] rounded-xl p-3">
+                      <div className="bg-[#FAF7F2] rounded p-3">
                         <p className="text-xs text-[#8B7D72] mb-1">対応エリア</p>
                         <p className="text-sm text-[#2C1810] font-medium">{company.areas}</p>
                       </div>
-                      <div className="bg-[#FAF7F2] rounded-xl p-3">
+                      <div className="bg-[#FAF7F2] rounded p-3">
                         <p className="text-xs text-[#8B7D72] mb-1">買取方法</p>
                         <p className="text-sm text-[#2C1810] font-medium">{company.buyMethod.join("\u30FB")}</p>
                       </div>
-                      <div className="bg-[#FAF7F2] rounded-xl p-3">
+                      <div className="bg-[#FAF7F2] rounded p-3">
                         <p className="text-xs text-[#8B7D72] mb-1">おすすめポイント</p>
                         <p className="text-sm text-[#2C1810] font-medium">{company.bestFor}</p>
                       </div>
                     </div>
                     <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
-                      className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded-xl font-bold transition">
+                      className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded font-bold transition">
                       {company.name}の公式サイトへ
                     </a>
                   </div>
@@ -695,8 +684,7 @@ export default function CategoryPageClient({
         {preservation && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PRESERVATION</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の保管・お手入れ方法
                 </h2>
@@ -704,9 +692,9 @@ export default function CategoryPageClient({
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {preservation.map((tip, idx) => (
-                  <div key={idx} className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5">
+                  <div key={idx} className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5">
                     <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
-                      <span className="bg-[#8B4513] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
+                      <span className="bg-[#8B4513] text-white w-6 h-6 rounded-sm flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
                       <span className="flex-1">{tip.title}</span>
                     </h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{tip.text}</p>
@@ -721,8 +709,7 @@ export default function CategoryPageClient({
         {fakeId && (
           <section className="py-12 md:py-16 bg-[#FAF7F2]">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUTHENTICATION</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の偽物・贋作の見分け方
                 </h2>
@@ -730,9 +717,9 @@ export default function CategoryPageClient({
               </div>
               <div className="grid md:grid-cols-2 gap-4">
                 {fakeId.map((tip, idx) => (
-                  <div key={idx} className="bg-white border border-[#E0D5C8] rounded-xl p-5">
+                  <div key={idx} className="bg-white border border-[#E0D5C8] rounded p-5">
                     <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
-                      <span className="bg-[#C49A6C] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
+                      <span className="bg-[#C49A6C] text-white w-6 h-6 rounded-sm flex items-center justify-center text-xs shrink-0">{idx + 1}</span>
                       <span className="flex-1">{tip.title}</span>
                     </h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{tip.text}</p>
@@ -750,8 +737,7 @@ export default function CategoryPageClient({
         {cat.deepDive && cat.deepDive.length > 0 && cat.deepDive.map((section, sIdx) => (
           <section key={sIdx} className={`py-12 md:py-16 ${sIdx % 2 === 0 ? "bg-white" : ""}`}>
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">IN DEPTH</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {section.heading}
                 </h2>
@@ -759,7 +745,7 @@ export default function CategoryPageClient({
               </div>
               <div className="space-y-4">
                 {section.blocks.map((b, bIdx) => (
-                  <div key={bIdx} className={`rounded-xl border border-[#E0D5C8] p-5 md:p-6 ${sIdx % 2 === 0 ? "bg-[#FAF7F2]" : "bg-white"}`}>
+                  <div key={bIdx} className={`rounded border border-[#E0D5C8] p-5 md:p-6 ${sIdx % 2 === 0 ? "bg-[#FAF7F2]" : "bg-white"}`}>
                     <h3 className="font-bold text-[#8B4513] mb-2">{b.title}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{b.text}</p>
                   </div>
@@ -772,8 +758,7 @@ export default function CategoryPageClient({
         {/* FAQ */}
         <section className="py-12 md:py-16">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {cat.name}買取に関するよくある質問
               </h2>
@@ -786,8 +771,7 @@ export default function CategoryPageClient({
         {popularArtistLinks.some((a) => a.slug) && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-10">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RELATED</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   {cat.name}の作家ページ一覧
                 </h2>
@@ -800,7 +784,7 @@ export default function CategoryPageClient({
                     <Link
                       key={a.name}
                       href={`/artist/${a.slug}/`}
-                      className="text-center bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl py-3 px-2 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                      className="text-center bg-[#FAF7F2] border border-[#E0D5C8] rounded py-3 px-2 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
                     >
                       {a.name}の査定について
                     </Link>
@@ -814,8 +798,7 @@ export default function CategoryPageClient({
         {relatedCategoryLinks.length > 0 && (
           <section className="py-12 md:py-16">
             <div className="max-w-5xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RELATED ITEMS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">関連する品目の買取</h2>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
@@ -823,7 +806,7 @@ export default function CategoryPageClient({
                   <Link
                     key={r.slug}
                     href={`/category/${r.slug}/`}
-                    className="bg-white border border-[#E0D5C8] rounded-xl py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
+                    className="bg-white border border-[#E0D5C8] rounded py-3 px-5 text-sm text-[#8B4513] font-medium hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition"
                   >
                     {r.name} 買取
                   </Link>
@@ -834,7 +817,7 @@ export default function CategoryPageClient({
         )}
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               {cat.name}の無料査定を依頼する
@@ -842,7 +825,7 @@ export default function CategoryPageClient({
             <p className="text-amber-200 mb-8">
               お手持ちの{cat.name}の正確な価値を確認するために、無料査定をご利用ください
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </Link>
           </div>
@@ -850,7 +833,7 @@ export default function CategoryPageClient({
         {slug === "kakejiku" && (
           <section className="py-8 bg-[#FAF6F0]">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="bg-white rounded-2xl border border-[#E0D5C8] p-5 text-sm">
+              <div className="bg-white rounded border border-[#E0D5C8] p-5 text-sm">
                 <p className="text-[#5C4A3A]">
                   お住まいの地域で店頭に持ち込める専門業者を探す場合は、地域別のページをご利用ください。都内の店舗所在地・持ち込みの可否・出張対応は、
                   <Link href="/kakejiku-kaitori-tokyo/" className="text-[#8B4513] font-bold hover:underline">掛軸買取 東京の業者比較</Link>

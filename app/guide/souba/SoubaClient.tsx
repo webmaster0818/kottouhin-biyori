@@ -108,7 +108,7 @@ function FaqAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
   return (
     <div className="space-y-3">
       {faqs.map((faq, idx) => (
-        <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] overflow-hidden">
+        <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] overflow-hidden">
           <button
             onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
             className="w-full text-left p-5 flex items-start gap-3 hover:bg-[#F5ECD7] transition"
@@ -140,7 +140,7 @@ function ArtistPriceTable({ title, data }: { title: string; data: { artist: stri
       {/* Mobile cards */}
       <div className="md:hidden space-y-3">
         {data.map((item, idx) => (
-          <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+          <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-4">
             <p className="font-bold text-[#2C1810] mb-1">{item.artist}</p>
             <p className="text-sm text-[#8B4513] font-medium mb-1">{item.range}</p>
             <p className="text-xs text-[#8B7D72]">{item.note}</p>
@@ -148,7 +148,7 @@ function ArtistPriceTable({ title, data }: { title: string; data: { artist: stri
         ))}
       </div>
       {/* Desktop table */}
-      <div className="hidden md:block bg-white rounded-xl shadow-sm overflow-hidden border border-[#E0D5C8]">
+      <div className="hidden md:block bg-white rounded overflow-hidden border border-[#E0D5C8]">
         <table className="w-full">
           <thead>
             <tr className="bg-[#8B4513] text-white">
@@ -178,13 +178,12 @@ export default function SoubaClient() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">PRICE GUIDE</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品買取相場まとめ
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               品目別・作家別の買取価格帯と、相場を左右する要因をご説明します
             </p>
           </div>
@@ -194,13 +193,13 @@ export default function SoubaClient() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の買取相場について、品目ごとの一般的な目安をご紹介します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 一般的な相場の目安は、掛軸3万〜30万円、茶道具5万〜50万円、絵画・刀剣10万〜100万円、古銭5,000円〜5万円、着物3,000円〜5万円です。ただし、作家・保存状態・付属品（共箱・鑑定書）・希少性によって数倍〜数十倍の差が生じ、横山大観（50万〜500万円）や伊藤若冲（100万〜1,000万円以上）など著名作家の真筆は、特に高額になります。正確な価格は、複数の業者の無料査定で見積もりを比較してご確認ください。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
                 骨董品の買取相場について
               </h2>
@@ -220,8 +219,7 @@ export default function SoubaClient() {
         {/* Price Table */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PRICE RANGE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 品目別の買取相場一覧
               </h2>
@@ -231,7 +229,7 @@ export default function SoubaClient() {
             {/* Mobile cards */}
             <div className="md:hidden space-y-4">
               {priceTable.map((item, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-5">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-5">
                   <h3 className="font-bold text-[#2C1810] text-lg mb-3">{item.category}</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between">
@@ -251,7 +249,7 @@ export default function SoubaClient() {
             </div>
 
             {/* Desktop table */}
-            <div className="hidden md:block bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+            <div className="hidden md:block bg-white rounded overflow-hidden border border-[#E0D5C8]">
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#8B4513] text-white">
@@ -280,8 +278,7 @@ export default function SoubaClient() {
         {/* Artist Price Tables */}
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">ARTIST PRICES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 品目×作家別の買取相場
               </h2>
@@ -301,17 +298,16 @@ export default function SoubaClient() {
         {/* Factors */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FACTORS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 査定額に影響する6つの要因
               </h2>
             </div>
             <div className="space-y-6">
               {factors.map((factor, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-6">
+                <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <div className="flex gap-4 items-start">
-                    <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                    <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
@@ -328,8 +324,7 @@ export default function SoubaClient() {
         {/* Selling Tips */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 骨董品を高く売るための5つのポイント
               </h2>
@@ -337,9 +332,9 @@ export default function SoubaClient() {
             </div>
             <div className="space-y-5">
               {sellingTips.map((tip, idx) => (
-                <div key={idx} className="bg-white rounded-xl border border-[#E0D5C8] p-6 shadow-sm">
+                <div key={idx} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <div className="flex gap-4 items-start">
-                    <div className="w-10 h-10 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-lg">
+                    <div className="w-10 h-10 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-lg">
                       {idx + 1}
                     </div>
                     <div className="flex-1">
@@ -356,8 +351,7 @@ export default function SoubaClient() {
         {/* Market Trends */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET TRENDS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 骨董品市場の動向（2026年）
               </h2>
@@ -365,7 +359,7 @@ export default function SoubaClient() {
             </div>
             <div className="space-y-6">
               {marketTrends.map((trend, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-6">
+                <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-3">{trend.title}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{trend.text}</p>
                 </div>
@@ -377,7 +371,7 @@ export default function SoubaClient() {
         {/* Important Notice */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">
                 正確な査定額は、業者への査定依頼でご確認ください
               </h2>
@@ -390,7 +384,7 @@ export default function SoubaClient() {
                 ヒカカク！では最大20社に一括で査定を依頼でき、査定額を比較できます。
               </p>
               <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
-                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                 ヒカカク！で無料の一括査定を依頼する
               </a>
             </div>
@@ -400,8 +394,7 @@ export default function SoubaClient() {
         {/* FAQ */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 骨董品の相場に関するよくある質問
               </h2>
@@ -411,7 +404,7 @@ export default function SoubaClient() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               無料査定で正確な価値をご確認ください
@@ -419,7 +412,7 @@ export default function SoubaClient() {
             <p className="text-amber-200 mb-8">
               相場の把握は、骨董品を適正な価格で売却するための第一歩です
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

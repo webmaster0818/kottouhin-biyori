@@ -33,9 +33,8 @@ export default function WhatIsKottouhinPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">COMPLETE GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の基礎知識<br />定義・歴史・分類
             </h1>
@@ -50,13 +49,13 @@ export default function WhatIsKottouhinPage() {
         <section className="py-10">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の定義と、価値を決める要素は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品とは、一般的に製造から100年以上経過した美術品・工芸品・装飾品を指します。100年という基準は輸入関税の品目分類でも使われており、日本の実行関税率表では第97.06項の「こつとう」を「製作後100年を超えたものに限る」としています。日本には明確に定義する法律はなく、古物営業法の「古物」として扱われます。実務上は江戸〜明治以前の品が中心ですが、昭和期の品でも希少性の高いものは骨董品として流通しています。価値は「作家・時代・希少性・保存状態・来歴」の5つの要素で決まります。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#definition" className="hover:text-[#8B4513] transition">1. 骨董品の定義と法的な位置付け</a></li>
@@ -73,7 +72,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 1: Definition */}
         <section id="definition" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 1. 骨董品の定義と法的な位置付け
               </h2>
@@ -88,7 +87,7 @@ export default function WhatIsKottouhinPage() {
                   実務上、日本の骨董品市場では、100年という厳密な基準よりも、<strong className="text-[#8B4513]">江戸時代以前に作られたもの</strong>や<strong className="text-[#8B4513]">明治時代以前の工芸品</strong>が骨董品として扱われることが多くあります。一方で、昭和初期の品物でも、希少性や芸術性の高いものは骨董品として流通しています。
                 </p>
 
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-bold text-[#8B4513] mb-3">骨董品の定義の要点</h3>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
@@ -113,7 +112,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 2: Difference */}
         <section id="difference" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 2. 骨董品と美術品・アンティークの違い
               </h2>
@@ -123,7 +122,7 @@ export default function WhatIsKottouhinPage() {
                 </p>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm border border-[#E0D5C8] rounded-xl overflow-hidden">
+                  <table className="w-full text-sm border border-[#E0D5C8] rounded overflow-hidden">
                     <thead>
                       <tr className="bg-[#F5ECD7]">
                         <th className="text-left p-3 text-[#8B4513] font-bold">用語</th>
@@ -170,7 +169,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 3: History */}
         <section id="history" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 3. 日本の骨董品文化の歴史
               </h2>
@@ -212,7 +211,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 4: Classification */}
         <section id="classification" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 4. 骨董品の分類体系
               </h2>
@@ -222,7 +221,7 @@ export default function WhatIsKottouhinPage() {
                 </p>
 
                 {/* 書画 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">書画（しょが）</h3>
                   <p className="mb-3">
                     書画とは、書（書道作品）と画（絵画）の総称です。骨董品市場では最も取引量の多いカテゴリのひとつで、特に<Link href="/category/kakejiku" className="text-[#8B4513] underline hover:no-underline">掛軸</Link>は日本家屋の床の間に飾る美術品として長い歴史を持ちます。
@@ -235,7 +234,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 陶磁器 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">陶磁器（とうじき）</h3>
                   <p className="mb-3">
                     <Link href="/category/toujiki" className="text-[#8B4513] underline hover:no-underline">陶磁器</Link>は、土を焼いて作る器の総称です。日本各地には個性豊かな窯場があり、それぞれに独自の技法と美意識が受け継がれています。
@@ -250,7 +249,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 茶道具 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">茶道具（さどうぐ）</h3>
                   <p className="mb-3">
                     <Link href="/category/sadougu" className="text-[#8B4513] underline hover:no-underline">茶道具</Link>は、茶の湯（茶道）に用いる道具の総称です。千利休が大成した侘び茶の精神を体現する品々であり、実用と美術が融合した日本文化を代表する工芸品です。
@@ -264,7 +263,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 刀剣 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">刀剣（とうけん）</h3>
                   <p className="mb-3">
                     <Link href="/category/touken" className="text-[#8B4513] underline hover:no-underline">日本刀</Link>は、日本を代表する伝統工芸品です。武器としての機能性と、美術品としての美しさを兼ね備え、海外のコレクターからの需要も非常に高い品目です。
@@ -278,7 +277,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 金工 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">金工（きんこう）</h3>
                   <p className="mb-3">
                     金属を素材とした工芸品の総称です。鋳造・鍛造・彫金・象嵌といった高度な技術が用いられ、実用品でありながら美術品としての価値も高いものが多くあります。
@@ -291,7 +290,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 漆器 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">漆器（しっき）</h3>
                   <p className="mb-3">
                     漆を塗って仕上げる工芸品です。英語で「japan」とも呼ばれるほど、日本を代表する伝統工芸のひとつであり、装飾技法の精緻さは世界的に高く評価されています。
@@ -303,7 +302,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 木工 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">木工（もっこう）</h3>
                   <p className="mb-3">
                     木材を素材とした工芸品です。木の温もりを活かした素朴な美しさから、漆を施した華やかなものまで幅広い作品があります。
@@ -315,7 +314,7 @@ export default function WhatIsKottouhinPage() {
                 </div>
 
                 {/* 中国美術 */}
-                <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">中国美術（ちゅうごくびじゅつ）</h3>
                   <p className="mb-3">
                     <Link href="/category/chugoku-bijutsu" className="text-[#8B4513] underline hover:no-underline">中国美術</Link>は、近年の骨董品市場で最も価格が上昇しているカテゴリです。中国の富裕層のコレクターによる買い戻しの需要が多く、日本に伝来した中国美術品が高額で取引されています。
@@ -334,7 +333,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 5: Value */}
         <section id="value" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 5. 骨董品の価値を決める5つの要素
               </h2>
@@ -372,7 +371,7 @@ export default function WhatIsKottouhinPage() {
                     },
                   ].map((item) => (
                     <div key={item.num} className="flex gap-5">
-                      <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                         {item.num}
                       </div>
                       <div className="flex-1 pb-6 border-b border-[#E0D5C8] last:border-b-0 last:pb-0">
@@ -390,7 +389,7 @@ export default function WhatIsKottouhinPage() {
         {/* Section 6: Beginner */}
         <section id="beginner" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 6. 骨董品の基礎知識
               </h2>
@@ -433,12 +432,12 @@ export default function WhatIsKottouhinPage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の贋作・偽物の見分け方</h3>
                 <p className="text-sm text-[#5C4A3A]">鑑定士が確認する真贋判定のポイントを、品目別にご説明します。</p>
               </Link>
-              <Link href="/learn/how-to-store" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/how-to-store" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の保管・手入れの方法</h3>
                 <p className="text-sm text-[#5C4A3A]">品目別の適切な保管方法と、避けるべき行為をご説明します。</p>
@@ -448,7 +447,7 @@ export default function WhatIsKottouhinPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               お持ちの骨董品の価値を確認したい方へ
@@ -459,17 +458,17 @@ export default function WhatIsKottouhinPage() {
             </p>
             <div className="grid sm:grid-cols-3 gap-4 mb-6">
               <a href="https://hikakaku.com" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">一括査定で比較</span>
                 ヒカカク！
               </a>
               <a href="https://www.tifana.net" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">まとめて売るなら</span>
                 ティファナ
               </a>
               <a href="https://www.uriel-cuore.co.jp" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">出張買取専門</span>
                 ウリエル
               </a>
@@ -488,19 +487,19 @@ export default function WhatIsKottouhinPage() {
               本記事は以下の公的機関・専門資料を参照して作成しています。
             </p>
             <div className="grid md:grid-cols-2 gap-3 text-sm">
-              <a href="https://www.bunka.go.jp/seisaku/bunkazai/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.bunka.go.jp/seisaku/bunkazai/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">文化庁 文化財部</p>
                 <p className="text-xs text-[#8B7D72]">文化財保護法・指定文化財制度の公式情報</p>
               </a>
-              <a href="https://www.tnm.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.tnm.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">東京国立博物館</p>
                 <p className="text-xs text-[#8B7D72]">日本美術・東洋美術の総合的研究機関</p>
               </a>
-              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">東京美術倶楽部</p>
                 <p className="text-xs text-[#8B7D72]">美術業界の中核団体・鑑定評価機構</p>
               </a>
-              <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">日本美術刀剣保存協会</p>
                 <p className="text-xs text-[#8B7D72]">刀剣の鑑定書発行機関</p>
               </a>

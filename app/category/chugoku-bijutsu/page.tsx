@@ -78,9 +78,8 @@ export default function ChugokuBijutsuPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">CHINESE ANTIQUES</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               中国骨董品・中国美術品の買取<br className="hidden md:inline" />高額査定のポイントと相場
             </h1>
@@ -94,22 +93,21 @@ export default function ChugokuBijutsuPage() {
         {/* 品目別解説 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">中国骨董品の品目と相場</h2>
             </div>
             <div className="space-y-6">
               {categories.map((c, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{c.name}</h3>
-                    <span className="text-sm bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-full font-medium">{c.priceRange}</span>
+                    <span className="text-sm bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-sm font-medium">{c.priceRange}</span>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">{c.description}</p>
                   {c.artists.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {c.artists.map((a) => (
-                        <span key={a} className="text-xs bg-[#FAF7F2] text-[#8B4513] px-3 py-1 rounded-full border border-[#E0D5C8]">{a}</span>
+                        <span key={a} className="text-xs bg-[#FAF7F2] text-[#8B4513] px-3 py-1 rounded-sm border border-[#E0D5C8]">{a}</span>
                       ))}
                     </div>
                   )}
@@ -122,15 +120,14 @@ export default function ChugokuBijutsuPage() {
         {/* 市場動向 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET TREND</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">中国美術品市場の動向</h2>
             </div>
-            <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
               <ul className="space-y-4">
                 {marketTrends.map((t, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                    <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                     <p className="text-[#5C4A3A] leading-relaxed text-sm">{t}</p>
                   </li>
                 ))}
@@ -142,22 +139,21 @@ export default function ChugokuBijutsuPage() {
         {/* 高く売るポイント */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SELLING TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">中国骨董品を高く売るポイント</h2>
             </div>
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</span>
+                  <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</span>
                   <div><h4 className="font-bold text-[#2C1810] mb-1">中国美術の専門業者に依頼する</h4><p className="text-sm text-[#5C4A3A] leading-relaxed">一般のリサイクルショップでは、中国美術品の価値を正確に評価できない場合が多くあります。中国美術に精通した専門業者に依頼することで、適正価格で売却できます。ウリエルは、中国美術の買取実績が豊富です。</p></div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</span>
+                  <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</span>
                   <div><h4 className="font-bold text-[#2C1810] mb-1">複数の業者から見積もりを取る</h4><p className="text-sm text-[#5C4A3A] leading-relaxed">中国美術品は、業者によって査定額の差が大きいジャンルです。ヒカカク！で一括査定を依頼し、最も高い金額を提示した業者に売却することが基本です。</p></div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">3</span>
+                  <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">3</span>
                   <div><h4 className="font-bold text-[#2C1810] mb-1">付属品や来歴を整理する</h4><p className="text-sm text-[#5C4A3A] leading-relaxed">箱書き、鑑定書、購入時の領収書、展覧会図録など、品物の来歴を証明する資料があると、査定額が大きく上がります。日本の著名なコレクターの旧蔵品であれば、さらに価値が高まります。</p></div>
                 </div>
               </div>
@@ -166,7 +162,7 @@ export default function ChugokuBijutsuPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               中国骨董品の価値を無料査定でご確認ください
@@ -174,7 +170,7 @@ export default function ChugokuBijutsuPage() {
             <p className="text-amber-200 mb-8">
               専門業者の査定で、お持ちの中国美術品の適正価格を確認できます。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </Link>
           </div>

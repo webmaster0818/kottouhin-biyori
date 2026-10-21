@@ -24,7 +24,6 @@ export default function SiteHeader() {
       {open && (
         <div className="md:hidden bg-white border-t border-[#E0D5C8] max-h-[80vh] overflow-y-auto">
           <nav className="max-w-6xl mx-auto px-4 py-4 space-y-1">
-            <p className="text-xs text-[#8B7D72] font-medium tracking-wider mb-2">TOP</p>
             <Link href="/" onClick={() => setOpen(false)} className="block py-2.5 px-3 text-[#2C1810] hover:bg-[#FAF7F2] rounded-lg">トップページ</Link>
             <div className="border-t border-[#E0D5C8] my-3" />
             <p className="text-xs text-[#8B7D72] font-medium tracking-wider mb-2">品目別</p>
