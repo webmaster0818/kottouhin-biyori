@@ -31,9 +31,8 @@ export default function HowToDisposePage() {
             </nav>
           </div>
         </div>
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品の処分方法・捨て方</h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">売る・譲る・捨てるの5つの処分方法を比較しています。古いだけに見える品物に価値がある場合もあるため、判断の基準をご説明します。</p>
           </div>
@@ -41,15 +40,15 @@ export default function HowToDisposePage() {
 
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+            <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">骨董品は処分する前に無料査定を受けることが基本です</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3"><strong>骨董品の処分方法は、①買取業者に売る、②オークション・フリマで売る、③寄付・譲渡する、④自治体のごみに出す、⑤遺品整理業者・不用品回収業者に依頼する、の5つです。</strong>いずれを選ぶ場合も、価値がわからないまま処分すると高額な品を手放すおそれがあるため、先に無料査定で値が付くかを確認することが基本です。</p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">処分の優先順位は次のとおりです。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 無料査定で価値を確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">作家物・共箱付きの品などは、高値が付く場合があります。査定を無料とする業者が多くあります</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 売却できる品は買取・売却する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">現金化できるうえ、必要とする人の手に渡ります</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ 値が付かない品は寄付・譲渡する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">骨董市・知人・福祉団体などに譲る選択肢があります</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 残った品を廃棄する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">自治体のルールに沿って、粗大ごみ等で処分します</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 無料査定で価値を確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">作家物・共箱付きの品などは、高値が付く場合があります。査定を無料とする業者が多くあります</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 売却できる品は買取・売却する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">現金化できるうえ、必要とする人の手に渡ります</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ 値が付かない品は寄付・譲渡する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">骨董市・知人・福祉団体などに譲る選択肢があります</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 残った品を廃棄する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">自治体のルールに沿って、粗大ごみ等で処分します</p></li>
               </ul>
             </div>
           </div>
@@ -57,7 +56,7 @@ export default function HowToDisposePage() {
 
         <section className="py-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#s1" className="hover:text-[#8B4513] transition">1. 骨董品を処分する前の確認事項</a></li>
@@ -77,7 +76,7 @@ export default function HowToDisposePage() {
 
         <section id="s1" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">1. 骨董品を処分する前の確認事項</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>実家の片付けや遺品整理で見つかった骨董品を、古いだけの品物と判断して処分してしまう方は少なくありません。しかし、骨董品は外見が地味でも、作家・窯元・時代によって数万円〜数百万円の価値が付く場合があります。</p>
@@ -89,18 +88,18 @@ export default function HowToDisposePage() {
 
         <section id="s2" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">2. 骨董品の処分方法は主に5つ</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品の処分には、大きく分けて次の5つの方法があります。品物の価値・量・手間・緊急度によって、適した方法は異なります。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>買取業者に売る（最も手軽で、価値があれば現金化できる）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>オークション・フリマアプリに出品する（手間はかかるが高値の可能性）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>寄付・譲渡する（骨董市・知人・福祉団体などへ）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>自治体の粗大ごみ・不燃ごみとして廃棄する</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>遺品整理業者・不用品回収業者にまとめて依頼する</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>買取業者に売る（最も手軽で、価値があれば現金化できる）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>オークション・フリマアプリに出品する（手間はかかるが高値の可能性）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>寄付・譲渡する（骨董市・知人・福祉団体などへ）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>自治体の粗大ごみ・不燃ごみとして廃棄する</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>遺品整理業者・不用品回収業者にまとめて依頼する</span></li>
                 </ul>
-                <p className="text-sm bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-4">不用品回収業者に依頼する場合は、許可の有無にご注意ください。家庭から出るごみを回収・運搬するには、市区町村の一般廃棄物収集運搬業の許可（または市区町村からの委託）が必要です。環境省も、許可のない回収業者を利用しないよう注意を呼びかけています。依頼の前に、お住まいの市区町村の許可業者であるかどうかと、料金の内訳（回収費・運搬費・処分費）をご確認ください。</p>
+                <p className="text-sm bg-[#F5ECD7] rounded border border-[#C9A96E] p-4">不用品回収業者に依頼する場合は、許可の有無にご注意ください。家庭から出るごみを回収・運搬するには、市区町村の一般廃棄物収集運搬業の許可（または市区町村からの委託）が必要です。環境省も、許可のない回収業者を利用しないよう注意を呼びかけています。依頼の前に、お住まいの市区町村の許可業者であるかどうかと、料金の内訳（回収費・運搬費・処分費）をご確認ください。</p>
               </div>
             </div>
           </div>
@@ -108,7 +107,7 @@ export default function HowToDisposePage() {
 
         <section id="s3" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">3. 5つの処分方法を比較</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>買取業者は、査定が無料で、価値があればその場で現金化でき、骨董品の価値を適正に評価してもらえる点が強みです。手間をかけずに確実に処分したい方に適しています。</p>
@@ -174,7 +173,7 @@ export default function HowToDisposePage() {
 
         <section id="s4" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">4. 処分の前に査定を受けるべき理由</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品の価値は、専門知識がなければ判断が困難です。古い壺と考えていた品が有名な窯の作品だったという例は、珍しくありません。多くの買取業者は査定料・出張料を無料としているため、処分の前に一度査定を受けることで、損失を防げます。</p>
@@ -186,7 +185,7 @@ export default function HowToDisposePage() {
 
         <section id="s4b" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">5. 価値があるかわからない品の扱い方</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>処分にあたって最も判断が難しいのは、値が付くのか、単に古い品なのかがわからない品物です。骨董品は外見の豪華さと評価が一致せず、一見地味な品ほど専門家の評価が分かれます。ここでは、処分するか保管するかを決める前の手順を整理します。</p>
@@ -202,10 +201,10 @@ export default function HowToDisposePage() {
 
                 <h3 className="font-bold text-[#8B4513] pt-2">避けるべきこと</h3>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>洗う・磨く・修理する</strong>：汚れやくすみを落とそうとすると、評価の対象となる経年の風合いや表面を傷めます。現状のまま査定を受けてください（<Link href="/learn/how-to-store/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">骨董品の保管方法</Link>）。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>箱だけを先に処分する</strong>：かさばるという理由で箱を処分してしまう例が多くありますが、共箱・箱書きは評価を左右する情報源です（<Link href="/learn/tomobako-hakogaki/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">共箱・箱書きの解説</Link>）。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>ご自身で真贋を断定する</strong>：真作か偽物かは、写真や外見だけでは判断できません。断定せず、専門家の確認を受けてください（<Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">真贋の見分け方</Link>）。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>不用品回収業者にまとめて渡す</strong>：骨董品としての評価を受けないまま一括で引き取られると、後から確認する手段がなくなります。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>洗う・磨く・修理する</strong>：汚れやくすみを落とそうとすると、評価の対象となる経年の風合いや表面を傷めます。現状のまま査定を受けてください（<Link href="/learn/how-to-store/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">骨董品の保管方法</Link>）。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>箱だけを先に処分する</strong>：かさばるという理由で箱を処分してしまう例が多くありますが、共箱・箱書きは評価を左右する情報源です（<Link href="/learn/tomobako-hakogaki/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">共箱・箱書きの解説</Link>）。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>ご自身で真贋を断定する</strong>：真作か偽物かは、写真や外見だけでは判断できません。断定せず、専門家の確認を受けてください（<Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">真贋の見分け方</Link>）。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>不用品回収業者にまとめて渡す</strong>：骨董品としての評価を受けないまま一括で引き取られると、後から確認する手段がなくなります。</span></li>
                 </ul>
                 <p>なお、値が付くかどうかの判断には、作家・時代・状態・その時点の需要が複合的に関わります。同じ品でも、作家・状態・時期によって結果は異なるため、金額の目安は必ず実物の査定でご確認ください。</p>
               </div>
@@ -215,7 +214,7 @@ export default function HowToDisposePage() {
 
         <section id="s5" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">6. 自治体で廃棄する場合の出し方・分別と費用</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>査定で値が付かなかった品は、自治体のルールに従って処分します。陶磁器・ガラス類は「不燃ごみ」「燃えないごみ」とする自治体が多い一方、大阪市のように「普通ごみ」とする自治体や、京都市のようにガラス類を「燃やすごみ」とし陶磁器は拠点回収を勧める自治体もあります。大型の家具・屏風などは「粗大ごみ」として有料で回収されます。</p>
@@ -281,16 +280,16 @@ export default function HowToDisposePage() {
 
         <section id="s5b" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">7. そのままごみに出せない骨董品と、その手続き</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品の中には、家庭ごみとして出すことができない品目があります。知らずに廃棄すると法令上の問題となるものもあるため、以下に該当する品は、事前に手続きや相談先をご確認ください。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>日本刀・脇差・槍・薙刀などの刀剣</strong>：銃砲刀剣類として、法律の規制対象です。都道府県教育委員会が交付する登録証とともに所持するもので、ごみとして出すことはできません。登録証が見つからない刀剣は、まず最寄りの警察署に届け出てください。所有者が変わった場合は、教育委員会への届出も必要です。譲り受けたり相続で取得したりした場合は、登録証を発行した都道府県の教育委員会への届出が必要です（文化庁「<a href="https://www.bunka.go.jp/seisaku/bunka_gyosei/shokan_horei/juhotouken/index.html" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]" target="_blank" rel="noopener noreferrer">銃砲刀剣類の登録・届出</a>」、2026年10月21日確認）。売却を検討する場合も登録証の有無が前提となるため、<Link href="/category/touken/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">刀剣の買取</Link>もあわせてご確認ください。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>象牙・べっ甲などの規制対象の素材</strong>：象牙は種の保存法の対象で、全形を保持した牙は、登録を受けていなければ譲り渡すことができません。環境省の案内では、廃棄と相続については手続きは不要とされています。一方、売却などで譲り渡す場合は登録票が必要で、登録には2019年7月以降、放射性炭素年代測定の結果などの客観的な資料が必要です（環境省「<a href="https://www.env.go.jp/nature/kisho/kisei/species/trade/system-ivory/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]" target="_blank" rel="noopener noreferrer">象牙の取引規制</a>」、2026年10月21日確認）。取り扱える業者も限られるため、ご自身の判断で売却せず、特別国際種事業者として登録された業者や所管の窓口にご相談ください。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>仏壇・仏具・位牌・神棚</strong>：分別上は可燃ごみ・粗大ごみに該当することが多いものの、寺社でのお焚き上げや供養を経てから処分するのが一般的です。金仏壇の金具や唐木仏壇の材、仏具の金属素材に価値が認められる場合もあるため、処分の前に一度査定を受けることをおすすめします。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>火薬・薬品・水銀を含む古道具</strong>：古い体温計、鏡台の薬品類、雷管を含む古式銃などは、家庭ごみとして受け付けられません。自治体の有害ごみの窓口に、古式銃については警察署にご確認ください。</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>模造刀・美術刀装具</strong>：刃のない模造刀は金属ごみとして扱われる場合がありますが、自治体により判断が分かれます。鍔・目貫・小柄などの刀装具は単体でも評価の対象となるため、まとめて廃棄する前にご確認ください。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>日本刀・脇差・槍・薙刀などの刀剣</strong>：銃砲刀剣類として、法律の規制対象です。都道府県教育委員会が交付する登録証とともに所持するもので、ごみとして出すことはできません。登録証が見つからない刀剣は、まず最寄りの警察署に届け出てください。所有者が変わった場合は、教育委員会への届出も必要です。譲り受けたり相続で取得したりした場合は、登録証を発行した都道府県の教育委員会への届出が必要です（文化庁「<a href="https://www.bunka.go.jp/seisaku/bunka_gyosei/shokan_horei/juhotouken/index.html" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]" target="_blank" rel="noopener noreferrer">銃砲刀剣類の登録・届出</a>」、2026年10月21日確認）。売却を検討する場合も登録証の有無が前提となるため、<Link href="/category/touken/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">刀剣の買取</Link>もあわせてご確認ください。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>象牙・べっ甲などの規制対象の素材</strong>：象牙は種の保存法の対象で、全形を保持した牙は、登録を受けていなければ譲り渡すことができません。環境省の案内では、廃棄と相続については手続きは不要とされています。一方、売却などで譲り渡す場合は登録票が必要で、登録には2019年7月以降、放射性炭素年代測定の結果などの客観的な資料が必要です（環境省「<a href="https://www.env.go.jp/nature/kisho/kisei/species/trade/system-ivory/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]" target="_blank" rel="noopener noreferrer">象牙の取引規制</a>」、2026年10月21日確認）。取り扱える業者も限られるため、ご自身の判断で売却せず、特別国際種事業者として登録された業者や所管の窓口にご相談ください。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>仏壇・仏具・位牌・神棚</strong>：分別上は可燃ごみ・粗大ごみに該当することが多いものの、寺社でのお焚き上げや供養を経てから処分するのが一般的です。金仏壇の金具や唐木仏壇の材、仏具の金属素材に価値が認められる場合もあるため、処分の前に一度査定を受けることをおすすめします。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>火薬・薬品・水銀を含む古道具</strong>：古い体温計、鏡台の薬品類、雷管を含む古式銃などは、家庭ごみとして受け付けられません。自治体の有害ごみの窓口に、古式銃については警察署にご確認ください。</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span><strong>模造刀・美術刀装具</strong>：刃のない模造刀は金属ごみとして扱われる場合がありますが、自治体により判断が分かれます。鍔・目貫・小柄などの刀装具は単体でも評価の対象となるため、まとめて廃棄する前にご確認ください。</span></li>
                 </ul>
                 <p>いずれも、適切な窓口に相談すれば処理できる品目です。判断に迷う場合は、取り扱った経験のある買取業者に相談すると、売却と処分のどちらが適切かも含めて整理できます。</p>
               </div>
@@ -300,16 +299,16 @@ export default function HowToDisposePage() {
 
         <section id="s6" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">8. 価値が出やすい骨董品の特徴</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>以下のような特徴がある品物は、廃棄せずに、まず査定に出すことを強くおすすめします。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>共箱・極箱・鑑定書などの付属品が揃っている</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>有名作家・人間国宝・有名窯元の作品（落款・銘・窯印がある）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>茶道具・掛軸・中国美術・刀剣・象牙など、需要の高い品目</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>状態が良く、丁寧に保管されていた形跡がある</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>古さや風合いがあり、量産品ではない手仕事の品</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>共箱・極箱・鑑定書などの付属品が揃っている</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>有名作家・人間国宝・有名窯元の作品（落款・銘・窯印がある）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>茶道具・掛軸・中国美術・刀剣・象牙など、需要の高い品目</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>状態が良く、丁寧に保管されていた形跡がある</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>古さや風合いがあり、量産品ではない手仕事の品</span></li>
                 </ul>
               </div>
             </div>
@@ -318,11 +317,11 @@ export default function HowToDisposePage() {
 
         <section id="s7" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">9. 遺品整理・生前整理・蔵の整理で見つかった場合</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品の処分が単独で発生することは、多くありません。実際には、<strong>遺品整理・生前整理・実家の片付け・蔵の片付け</strong>の中で、用途のわからない古い品物として見つかる場合がほとんどです。この場合、片付けの期限（退去日・売却日・法要）が先に決まっていることが多く、判断を急ぎがちな点に注意が必要です。</p>
-                <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                   <h3 className="font-bold text-[#8B4513] mb-3">状況別の進め方</h3>
                   <ul className="space-y-3 text-sm">
                     <li><strong className="text-[#2C1810]">遺品整理で見つかった場合</strong>：相続人が複数いる場合は、独断で処分・売却せず、先に取り分を確認します。評価額によっては相続財産として扱う必要があるため、金額の見当を付けてから進めることをおすすめします。詳しくは、<Link href="/guide/ihin-seiri/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">遺品整理で見つかった骨董品の扱い</Link>と<Link href="/learn/inheritance/" className="text-[#8B4513] underline underline-offset-2 hover:text-[#6B3410]">骨董品と相続の基礎知識</Link>をご覧ください。</li>
@@ -341,7 +340,7 @@ export default function HowToDisposePage() {
 
         <section id="s8" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">10. 状況別の相談先</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8] min-w-[560px]">
@@ -387,7 +386,7 @@ export default function HowToDisposePage() {
 
         <section className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">よくある質問</h2>
               <div className="space-y-5">
                 <div className="border-b border-[#E0D5C8] last:border-b-0 pb-5 last:pb-0"><h3 className="font-bold text-[#8B4513] mb-2">Q. 古いだけの骨董品でも売れますか？</h3><p className="text-sm text-[#5C4A3A] leading-relaxed">A. 作家物や共箱付き、需要の高い品目（茶道具・掛軸・中国美術など）は、見た目が地味でも値が付くことがあります。価値は専門家でなければ判断が難しいため、処分する前に無料査定で確認することをおすすめします。</p></div>
@@ -409,20 +408,20 @@ export default function HowToDisposePage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/what-is-kottouhin" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の定義・歴史・分類</h3><p className="text-sm text-[#5C4A3A]">骨董品の基礎知識をご説明します。</p></Link>
-              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の本物・偽物の見分け方</h3><p className="text-sm text-[#5C4A3A]">処分の前に確認すべき、真贋の判断のポイントです。</p></Link>
-              <Link href="/guide/ihin-seiri/" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">遺品整理で見つかった骨董品の扱い</h3><p className="text-sm text-[#5C4A3A]">相続人が複数いる場合の進め方と、避けるべきことです。</p></Link>
-              <Link href="/guide/kura-seiri/" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">蔵の整理の進め方</h3><p className="text-sm text-[#5C4A3A]">蔵や納屋にまとめて保管されている場合の手順です。</p></Link>
-              <Link href="/guide/gyosha-hikaku/" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品買取業者の比較</h3><p className="text-sm text-[#5C4A3A]">対応品目・費用条件を揃えて比較するための一覧です。</p></Link>
+              <Link href="/learn/what-is-kottouhin" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の定義・歴史・分類</h3><p className="text-sm text-[#5C4A3A]">骨董品の基礎知識をご説明します。</p></Link>
+              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の本物・偽物の見分け方</h3><p className="text-sm text-[#5C4A3A]">処分の前に確認すべき、真贋の判断のポイントです。</p></Link>
+              <Link href="/guide/ihin-seiri/" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">遺品整理で見つかった骨董品の扱い</h3><p className="text-sm text-[#5C4A3A]">相続人が複数いる場合の進め方と、避けるべきことです。</p></Link>
+              <Link href="/guide/kura-seiri/" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">蔵の整理の進め方</h3><p className="text-sm text-[#5C4A3A]">蔵や納屋にまとめて保管されている場合の手順です。</p></Link>
+              <Link href="/guide/gyosha-hikaku/" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">GUIDE</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品買取業者の比較</h3><p className="text-sm text-[#5C4A3A]">対応品目・費用条件を揃えて比較するための一覧です。</p></Link>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">無料査定で価値をご確認ください</h2>
             <p className="text-amber-200 mb-8 leading-relaxed">骨董品の価値は、専門家でなければ判断が困難です。<br />査定料・出張料が無料の業者であれば、費用をかけずに価値を確認できます。</p>
-            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">買取業者を比較する</Link>
+            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">買取業者を比較する</Link>
             <p className="text-xs text-amber-200/70 mt-4">いずれも査定無料・キャンセル料なし</p>
           </div>
         </section>

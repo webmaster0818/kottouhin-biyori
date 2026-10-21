@@ -178,7 +178,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-12">
             <p className="text-[#D4A574] text-sm tracking-widest mb-2">{artist.category} / {artist.era}</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-4">
@@ -193,12 +193,12 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
         <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
           {/* 検索語への直接の答え(任意) */}
           {leadAnswer && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border-2 border-[#C9A96E]">
+            <section className="bg-white rounded p-6 md:p-8 border-2 border-[#C9A96E]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4">{leadAnswer.h}</h2>
               <ul className="space-y-3">
                 {leadAnswer.points.map((pt, idx) => (
                   <li key={idx} className="flex gap-3 text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                    <span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs mt-0.5">{idx + 1}</span>
+                    <span className="w-6 h-6 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs mt-0.5">{idx + 1}</span>
                     <span>{pt}</span>
                   </li>
                 ))}
@@ -207,7 +207,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* Intro */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <p className="text-[#5C4A3A] leading-relaxed">
               {artist.name}（{artist.era}）は、{artist.category}の分野で高く評価されている作家です。
               代表作に{worksText}などがあり、買取市場でも安定した需要があります。
@@ -218,20 +218,20 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           </section>
 
           {/* About */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}の経歴
             </h2>
             <div className="space-y-3 text-[#5C4A3A] leading-relaxed">
               <p>{artist.description}</p>
               {artist.bio && <p>{artist.bio}</p>}
               <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <div className="bg-[#FAF7F2] rounded-xl p-4">
+                <div className="bg-[#FAF7F2] rounded p-4">
                   <p className="text-xs text-[#8B7D72] mb-1">活動時期</p>
                   <p className="font-medium text-[#2C1810]">{artist.era}{artist.born && `（${artist.born}${artist.died ? `〜${artist.died}` : "〜"}）`}</p>
                 </div>
-                <div className="bg-[#FAF7F2] rounded-xl p-4">
+                <div className="bg-[#FAF7F2] rounded p-4">
                   <p className="text-xs text-[#8B7D72] mb-1">ジャンル</p>
                   <p className="font-medium text-[#2C1810]">{artist.category}</p>
                 </div>
@@ -240,23 +240,23 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           </section>
 
           {/* Works */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               代表作
             </h2>
             <div className="flex flex-wrap gap-3">
               {artist.works.map((w) => (
-                <span key={w} className="bg-[#F5ECD7] text-[#8B4513] px-4 py-2 rounded-full text-sm font-medium">{w}</span>
+                <span key={w} className="bg-[#F5ECD7] text-[#8B4513] px-4 py-2 rounded-sm text-sm font-medium">{w}</span>
               ))}
             </div>
           </section>
 
           {/* 作品種別と見分け方(任意) */}
           {workTypes && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}の作品種別と見分け方
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
@@ -266,7 +266,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </p>
               <div className="space-y-3">
                 {workTypes.map((w, idx) => (
-                  <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                  <div key={idx} className="bg-[#FAF7F2] rounded p-4">
                     <p className="font-bold text-[#8B4513] text-sm mb-1">{w.name}</p>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{w.d}</p>
                   </div>
@@ -283,12 +283,12 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* Price */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}の買取相場
             </h2>
-            <div className="bg-gradient-to-r from-[#F5ECD7] to-[#FAF7F2] rounded-xl p-6 text-center mb-4">
+            <div className="bg-[#FAF7F2] rounded p-6 text-center mb-4">
               <p className="text-sm text-[#8B7D72] mb-1">{(artist as any).priceLabel ?? "買取価格の目安"}</p>
               <p className="text-3xl font-bold text-[#8B4513]">{artist.priceRange}</p>
               {priceRangeNote && <p className="text-xs text-[#5C4A3A] mt-2 leading-relaxed text-left md:text-center">{priceRangeNote}</p>}
@@ -312,7 +312,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                 )}
                 <div className="space-y-3">
                   {soubaPoints.map((p, idx) => (
-                    <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                    <div key={idx} className="bg-[#FAF7F2] rounded p-4">
                       <p className="font-bold text-[#8B4513] text-sm mb-1">{p.k}</p>
                       <p className="text-sm text-[#5C4A3A] leading-relaxed">{p.v}</p>
                     </div>
@@ -323,7 +323,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <h3 className="font-bold text-[#2C1810] mb-3">買取価格を左右する5つの要素</h3>
             <div className="space-y-3">
               {priceFactors.map((f, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                <div key={idx} className="bg-[#FAF7F2] rounded p-4">
                   <p className="font-bold text-[#8B4513] text-sm mb-1">{f.k}</p>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{f.v}</p>
                 </div>
@@ -333,9 +333,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 作風と買取市場での評価 */}
           {artist.marketNote && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}の買取市場での評価・相場の背景
               </h2>
               <p className="text-[#5C4A3A] leading-relaxed">{artist.marketNote}</p>
@@ -344,9 +344,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 公開オークションでの落札実績（出典明記） */}
           {(artist as any).auctionResults && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}の公開オークション落札実績
               </h2>
               <p className="text-xs text-[#8B7D72] mb-4">
@@ -383,9 +383,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 買取業者の公開買取実績（出典明記・任意） */}
           {kaitoriResults && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}作品の公開買取実績（国内の買取業者）
               </h2>
               <p className="text-xs text-[#8B7D72] mb-4">{kaitoriResults.verifiedAt}確認 ／ 出典：各買取業者の公式サイトに掲載された買取実績ページ</p>
@@ -421,21 +421,21 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* 査定・鑑定の出し方（作家別の鑑定機関情報は appraisalNote 任意フィールド） */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}の作品の査定・鑑定の依頼方法
             </h2>
             {(artist as any).appraisalNote && (
-              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-4 mb-5">
+              <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-4 mb-5">
                 <p className="text-sm font-bold text-[#2C1810] mb-1">鑑定機関について</p>
                 <p className="text-sm text-[#5C4A3A] leading-relaxed">{(artist as any).appraisalNote}</p>
               </div>
             )}
             <ol className="space-y-3 mb-5">
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</span><span><strong className="text-[#2C1810]">写真査定（無料）で概算を確認する：</strong>スマートフォンで撮影した写真をLINEやフォームで送ると、概算の査定額を確認できます。この段階で複数の業者に送り、評価の高い業者を見極めます。</span></li>
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</span><span><strong className="text-[#2C1810]">現物査定（出張・持ち込み・宅配）：</strong>共箱・箱書・鑑定書・購入時の資料を、必ず一緒に提示してください。付属品の有無によって、評価が大きく変わります。</span></li>
-              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</span><span><strong className="text-[#2C1810]">正式な鑑定書が必要な場合：</strong>鑑定機関・専門家への依頼には費用と日数がかかるため、まず買取業者の無料査定で価値の目安を確認し、高額が見込める場合に依頼を検討する順序が適しています。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">1</span><span><strong className="text-[#2C1810]">写真査定（無料）で概算を確認する：</strong>スマートフォンで撮影した写真をLINEやフォームで送ると、概算の査定額を確認できます。この段階で複数の業者に送り、評価の高い業者を見極めます。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">2</span><span><strong className="text-[#2C1810]">現物査定（出張・持ち込み・宅配）：</strong>共箱・箱書・鑑定書・購入時の資料を、必ず一緒に提示してください。付属品の有無によって、評価が大きく変わります。</span></li>
+              <li className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed"><span className="w-6 h-6 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xs">3</span><span><strong className="text-[#2C1810]">正式な鑑定書が必要な場合：</strong>鑑定機関・専門家への依頼には費用と日数がかかるため、まず買取業者の無料査定で価値の目安を確認し、高額が見込める場合に依頼を検討する順序が適しています。</span></li>
             </ol>
             <p className="text-xs text-[#8B7D72] leading-relaxed">
               ※ 鑑定書・共箱の有無は、評価を左右する最も重要な要素のひとつです。{(artist as any).auctionResults ? "上記の落札実績においても、鑑定書・箱書の有無や帰属の確かさが、価格差の大きな要因となっています。" : ""}
@@ -443,15 +443,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           </section>
 
           {/* 高く売るコツ */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}の作品を高く売るための4つのポイント
             </h2>
             <div className="space-y-4">
               {sellTips.map((t, idx) => (
                 <div key={idx} className="flex gap-4">
-                  <div className="w-8 h-8 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">
+                  <div className="w-8 h-8 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">
                     {idx + 1}
                   </div>
                   <div className="pt-0.5">
@@ -464,9 +464,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           </section>
 
           {/* Check Points */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}作品の鑑定・真贋のポイント
             </h2>
             <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
@@ -476,7 +476,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <div className="space-y-4">
               {artist.checkPoints.map((cp, idx) => (
                 <div key={idx} className="flex gap-4">
-                  <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">
+                  <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">
                     {idx + 1}
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed pt-1">{cp}</p>
@@ -487,9 +487,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 査定で見られるポイント(任意) */}
           {sateiPoints && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}の査定で見られるポイント
               </h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-5">
@@ -520,15 +520,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 売却前の注意(任意) */}
           {preSaleNotes && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.name}の作品を売却する前の注意点
               </h2>
               <ul className="space-y-3">
                 {preSaleNotes.map((n, idx) => (
                   <li key={idx} className="flex gap-3 text-sm text-[#5C4A3A] leading-relaxed">
-                    <span className="w-6 h-6 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-xs">{idx + 1}</span>
+                    <span className="w-6 h-6 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-xs">{idx + 1}</span>
                     <span className="pt-0.5">{n}</span>
                   </li>
                 ))}
@@ -543,15 +543,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 関連する作家・ページへの本文リンク(任意) */}
           {relatedLinks && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {(artist as any).relatedLinksHeading ?? "関連する浮世絵のページ"}
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {relatedLinks.map((l) => (
                   <Link key={l.href} href={l.href}
-                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8]">
                     <p className="font-bold text-[#8B4513] text-sm mb-1">{l.t}</p>
                     <p className="text-xs text-[#5C4A3A] leading-relaxed">{l.d}</p>
                   </Link>
@@ -562,7 +562,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 参考資料(任意) */}
           {references && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-2">{(artist as any).referencesHeading ?? "参考資料（版・摺りの解説）"}</h2>
               <p className="text-xs text-[#8B7D72] mb-3">{references.verifiedAt}確認</p>
               <ul className="space-y-2 text-sm">
@@ -574,7 +574,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* CTA */}
-          <section className="bg-gradient-to-br from-[#8B4513] to-[#6B3410] rounded-2xl p-8 text-white text-center">
+          <section className="bg-[#3B2416] rounded p-8 text-white text-center">
             <h2 className="font-serif-jp text-xl font-bold mb-3">
               {artist.name}の作品の査定について
             </h2>
@@ -584,7 +584,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               {companies.slice(0, 3).map((c) => (
                 <a key={c.id} href={c.officialUrl} target="_blank" rel="noopener noreferrer"
-                  className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-3 rounded-xl transition text-sm">
+                  className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-3 rounded transition text-sm">
                   {c.name}で査定を依頼する
                 </a>
               ))}
@@ -593,15 +593,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* Related Artists */}
           {sameCategory.length > 0 && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 {artist.category}の他の作家
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {sameCategory.map((a) => (
                   <Link key={a.slug} href={`/artist/${a.slug}`}
-                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8]">
                     <p className="font-bold text-[#2C1810] text-sm">{a.name}</p>
                     <p className="text-xs text-[#8B7D72] mt-1">{a.era}</p>
                   </Link>
@@ -616,14 +616,14 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* FAQ */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               {artist.name}の買取に関するよくある質問
             </h2>
             <div className="space-y-4">
               {faqs.map((f, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl p-4">
+                <div key={idx} className="bg-[#FAF7F2] rounded p-4">
                   <p className="font-bold text-[#2C1810] mb-2 text-sm">Q. {f.q}</p>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                 </div>
@@ -633,9 +633,9 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
 
           {/* 真贋・鑑定と業者選びの関連ページ(任意) */}
           {workTypes && (
-            <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+            <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+                <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
                 真贋の判断と業者選びに役立つページ
               </h2>
               <h3 className="font-bold text-[#2C1810] text-sm mb-3">真贋・鑑定を詳しく知る</h3>
@@ -647,7 +647,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                   { href: "/learn/kagaku-kantei/", t: "科学的鑑定でわかること・わからないこと", d: "分析による真贋判定の仕組みと適用範囲" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}
-                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8]">
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8]">
                     <p className="font-bold text-[#8B4513] text-sm mb-1">{l.t}</p>
                     <p className="text-xs text-[#8B7D72]">{l.d}</p>
                   </Link>
@@ -663,7 +663,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                   { href: "/guide/sakka-souba/", t: "作家別の買取相場インデックス" },
                 ].map((l) => (
                   <Link key={l.href} href={l.href}
-                    className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                    className="inline-flex items-center rounded-sm border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
                     {l.t}
                   </Link>
                 ))}
@@ -673,7 +673,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               <div className="grid sm:grid-cols-3 gap-3">
                 {companies.slice(0, 3).map((c) => (
                   <Link key={c.id} href={`/review/${c.id}/`}
-                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]">
+                    className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]">
                     {c.name}の口コミ・評判 →
                   </Link>
                 ))}
@@ -682,15 +682,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
           )}
 
           {/* 関連ガイド */}
-          <section className="bg-white rounded-2xl p-6 md:p-8 border border-[#E0D5C8]">
+          <section className="bg-white rounded p-6 md:p-8 border border-[#E0D5C8]">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-4 flex items-center gap-2">
-              <span className="w-1 h-6 bg-[#8B4513] rounded-full inline-block" />
+              <span className="w-1 h-6 bg-[#8B4513] rounded-sm inline-block" />
               骨董品の売却に役立つガイド
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {relatedGuides.map((g) => (
                 <Link key={g.href} href={g.href}
-                  className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded-xl p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]">
+                  className="bg-[#FAF7F2] hover:bg-[#F5ECD7] rounded p-4 transition border border-[#E0D5C8] text-sm font-medium text-[#8B4513]">
                   {g.label} →
                 </Link>
               ))}

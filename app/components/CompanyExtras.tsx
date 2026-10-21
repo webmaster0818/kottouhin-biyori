@@ -28,7 +28,7 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
       {sections.map((sec) => (
         <section key={sec.id} id={sec.id} className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-b border-[#E0D5C8] pb-3">
                 {sec.title}
               </h2>
@@ -39,7 +39,7 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
                 <ul className="space-y-2.5 mb-5">
                   {sec.bullets.map((b, i) => (
                     <li key={i} className="text-sm text-[#2C1810] leading-relaxed flex gap-2">
-                      <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
+                      <span className="text-[#8B4513] shrink-0 font-bold"></span>
                       <span>{b}</span>
                     </li>
                   ))}
@@ -71,7 +71,7 @@ export function TopicSections({ sections }: { sections?: TopicSection[] }) {
                 </div>
               )}
               {sec.links && sec.links.length > 0 && (
-                <div className="mb-4 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
+                <div className="mb-4 bg-[#FAF7F2] rounded border border-[#E0D5C8] p-4">
                   <p className="text-sm font-bold text-[#8B4513] mb-2">関連ページ</p>
                   <ul className="space-y-1.5">
                     {sec.links.map((l, i) => (
@@ -99,13 +99,12 @@ export function ReviewTrendSection({ data, companyName }: { data?: { good: strin
   return (
     <section className="py-12 md:py-16 bg-[#FAF7F2]" id="review-trend">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <p className="text-sm text-[#C9A96E] tracking-widest mb-2">REPUTATION</p>
+        <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
           <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">{companyName}の公開口コミの傾向</h2>
           <p className="text-xs text-[#8B7D72] mt-3">出典：{data.source}。口コミの本文は転載せず、傾向の要約のみを掲載しています。</p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
-          <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
+          <div className="bg-white rounded border border-[#E8DFD3] p-5">
             <h3 className="font-bold text-[#2C7A4B] mb-3 text-sm">良い評判の傾向</h3>
             <ul className="space-y-2">
               {data.good.map((g, i) => (
@@ -113,7 +112,7 @@ export function ReviewTrendSection({ data, companyName }: { data?: { good: strin
               ))}
             </ul>
           </div>
-          <div className="bg-white rounded-xl border border-[#E8DFD3] p-5">
+          <div className="bg-white rounded border border-[#E8DFD3] p-5">
             <h3 className="font-bold text-[#B4553A] mb-3 text-sm">気になる評判の傾向</h3>
             <ul className="space-y-2">
               {data.bad.map((b, i) => (
@@ -133,8 +132,7 @@ export function GoogleReviewsSection({ data }: { data?: GoogleReviews }) {
   return (
     <section className="py-12 md:py-16 bg-white" id="google-reviews">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <p className="text-sm text-[#C9A96E] tracking-widest mb-2">GOOGLE REVIEWS</p>
+        <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
           <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
             {data.placeName}のGoogle口コミ
           </h2>
@@ -148,7 +146,7 @@ export function GoogleReviewsSection({ data }: { data?: GoogleReviews }) {
         </div>
         <div className="space-y-4">
           {data.reviews.map((r, i) => (
-            <div key={i} className="bg-[#FAF7F2] rounded-2xl p-5 border border-[#E0D5C8]">
+            <div key={i} className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
               <div className="flex items-center gap-2 mb-2 text-sm">
                 <span className="font-bold text-[#2C1810]">{r.author}さん</span>
                 <span className="text-[#C9A96E]">{"★".repeat(r.rating)}</span>

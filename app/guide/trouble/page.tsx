@@ -55,13 +55,12 @@ export default function TroublePage() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">TROUBLE GUIDE</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品買取のトラブル事例と対策
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               事前の確認で防げる、よくあるトラブル5つと具体的な対処法
             </p>
           </div>
@@ -71,17 +70,17 @@ export default function TroublePage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品買取のトラブルを防ぐために、押さえておきたい点は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 よくあるトラブルは、「押し買い」「不当な安値での買取」「キャンセルの拒否・違約金の請求」「配送中の破損」「誤った鑑定結果による減額」の5つです。防止のための原則は、3社以上からの見積もりの取得、費用とキャンセル規定の事前確認、信頼できる業者の選定の3つです。訪問購入には、契約書面の受領日から8日以内のクーリングオフが適用されます。ご自身から依頼していない業者の突然の訪問には応じないでください。
               </p>
             </div>
             {troubles.map((trouble, idx) => (
-              <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+              <article key={idx} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                 <div className="p-6 md:p-8">
                   <div className="flex gap-4 items-start mb-5">
-                    <div className="w-10 h-10 shrink-0 rounded-full bg-red-500 text-white flex items-center justify-center font-bold">
+                    <div className="w-10 h-10 shrink-0 rounded-sm bg-red-500 text-white flex items-center justify-center font-bold">
                       {idx + 1}
                     </div>
                     <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] flex-1 pt-1">
@@ -89,17 +88,17 @@ export default function TroublePage() {
                     </h2>
                   </div>
 
-                  <div className="bg-red-50 rounded-xl p-5 mb-4 border border-red-200">
+                  <div className="bg-red-50 rounded p-5 mb-4 border border-red-200">
                     <h3 className="font-bold text-red-800 mb-2 text-sm">トラブル事例</h3>
                     <p className="text-sm text-[#2C1810] leading-relaxed">{trouble.case}</p>
                   </div>
 
-                  <div className="bg-green-50 rounded-xl p-5 mb-4 border border-green-200">
+                  <div className="bg-green-50 rounded p-5 mb-4 border border-green-200">
                     <h3 className="font-bold text-green-800 mb-2 text-sm">対策・解決方法</h3>
                     <p className="text-sm text-[#2C1810] leading-relaxed">{trouble.solution}</p>
                   </div>
 
-                  <div className="bg-[#F5ECD7] rounded-xl p-4">
+                  <div className="bg-[#F5ECD7] rounded p-4">
                     <p className="text-sm text-[#8B4513] font-medium">
                       <strong>予防策:</strong> {trouble.prevention}
                     </p>
@@ -113,29 +112,28 @@ export default function TroublePage() {
         {/* Summary */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PREVENTION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 トラブルを防ぐための3つの原則
               </h2>
             </div>
             <div className="space-y-4">
-              <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</div>
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5 flex gap-4 items-start">
+                <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</div>
                 <div>
                   <h3 className="font-bold text-[#2C1810] mb-1">必ず複数の業者に査定を依頼する</h3>
                   <p className="text-sm text-[#5C4A3A]">1社だけの査定では、適正価格を把握できません。3社以上から見積もりを取って比較してください。</p>
                 </div>
               </div>
-              <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</div>
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5 flex gap-4 items-start">
+                <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</div>
                 <div>
                   <h3 className="font-bold text-[#2C1810] mb-1">費用とキャンセル規定を事前に確認する</h3>
                   <p className="text-sm text-[#5C4A3A]">査定費用・出張費用・キャンセル料が無料であることを事前に確認してから、依頼してください。</p>
                 </div>
               </div>
-              <div className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-4 items-start">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">3</div>
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5 flex gap-4 items-start">
+                <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">3</div>
                 <div>
                   <h3 className="font-bold text-[#2C1810] mb-1">信頼できる業者を選ぶ</h3>
                   <p className="text-sm text-[#5C4A3A]">口コミ・評判を確認し、買取実績を公開している業者を選んでください。当サイトでは3社を紹介しています。</p>
@@ -148,8 +146,7 @@ export default function TroublePage() {
         {/* Trusted Companies */}
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TRUSTED COMPANIES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 おすすめの買取業者3社
               </h2>
@@ -157,10 +154,10 @@ export default function TroublePage() {
             </div>
             <div className="space-y-6">
               {companies.map((company) => (
-                <article key={company.id} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+                <article key={company.id} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                   <div className="p-6 md:p-8">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg shrink-0`}>
+                      <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg shrink-0`}>
                         {company.rank}
                       </div>
                       <div className="flex-1">
@@ -171,7 +168,7 @@ export default function TroublePage() {
                     </div>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{company.bestFor}</p>
                     <a href={company.officialUrl} target="_blank" rel="noopener noreferrer"
-                      className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded-xl font-bold transition">
+                      className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-3 rounded font-bold transition">
                       {company.name}の公式サイトへ
                     </a>
                   </div>
@@ -182,7 +179,7 @@ export default function TroublePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               骨董品を安全に売却するために
@@ -190,7 +187,7 @@ export default function TroublePage() {
             <p className="text-amber-200 mb-8">
               信頼できる業者に、無料で査定を依頼することをおすすめします。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

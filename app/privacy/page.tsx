@@ -149,7 +149,7 @@ export default function PrivacyPage() {
             {/* お問い合わせ */}
             <section>
               <h2 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-3">お問い合わせ窓口</h2>
-              <div className="bg-white rounded-xl border border-[#E0D5C8] p-6">
+              <div className="bg-white rounded border border-[#E0D5C8] p-6">
                 <table className="w-full text-sm">
                   <tbody>
                     <tr className="border-b border-[#E0D5C8]">
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
             </section>
 
             {/* 制定日 */}
-            <div className="bg-white rounded-xl border border-[#E0D5C8] p-6 text-center">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 text-center">
               <p className="text-[#8B7D72]">制定日: 2026年4月16日</p>
             </div>
           </div>

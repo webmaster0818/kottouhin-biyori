@@ -205,9 +205,8 @@ export default function SeiyouAntiquePage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">WESTERN ANTIQUES</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               西洋アンティーク買取<br className="hidden md:inline" />家具・食器・時計の査定ポイント
             </h1>
@@ -221,16 +220,15 @@ export default function SeiyouAntiquePage() {
         {/* 品目別ガイド */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">西洋アンティークの品目と査定ポイント</h2>
             </div>
             <div className="space-y-8">
               {categories.map((c, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{c.name}</h3>
-                    <span className="text-sm bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-full font-medium">{c.priceRange}</span>
+                    <span className="text-sm bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-sm font-medium">{c.priceRange}</span>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">{c.description}</p>
                   <div className="mb-4">
@@ -238,7 +236,7 @@ export default function SeiyouAntiquePage() {
                     <ul className="space-y-1">
                       {c.checkPoints.map((cp, j) => (
                         <li key={j} className="flex items-start gap-2 text-sm text-[#5C4A3A]">
-                          <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                          <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                           <span>{cp}</span>
                         </li>
                       ))}
@@ -247,7 +245,7 @@ export default function SeiyouAntiquePage() {
                   {c.brands.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {c.brands.map((b) => (
-                        <span key={b} className="text-xs bg-[#FAF7F2] text-[#8B4513] px-3 py-1 rounded-full border border-[#E0D5C8]">{b}</span>
+                        <span key={b} className="text-xs bg-[#FAF7F2] text-[#8B4513] px-3 py-1 rounded-sm border border-[#E0D5C8]">{b}</span>
                       ))}
                     </div>
                   )}
@@ -260,11 +258,10 @@ export default function SeiyouAntiquePage() {
         {/* アンティークとヴィンテージの違い */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">DIFFERENCE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">アンティークとヴィンテージの違い</h2>
             </div>
-            <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -292,15 +289,14 @@ export default function SeiyouAntiquePage() {
         {/* 共通の査定ポイント */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CHECK POINTS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">西洋アンティークの査定で見られる点</h2>
               <p className="text-[#5C4A3A] mt-3 text-sm">品目が異なっても、査定士が最初に確認する箇所はおおむね共通しています</p>
             </div>
             <div className="space-y-4">
               {checkPoints.map((c, i) => (
-                <div key={i} className="flex gap-4 items-start bg-white rounded-xl border border-[#E0D5C8] p-5 shadow-sm">
-                  <div className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
+                <div key={i} className="flex gap-4 items-start bg-white rounded border border-[#E0D5C8] p-5">
+                  <div className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
                   <div>
                     <h3 className="font-bold text-[#2C1810] mb-1 text-sm md:text-base">{c.title}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">{c.text}</p>
@@ -314,16 +310,15 @@ export default function SeiyouAntiquePage() {
         {/* 真贋とリプロダクション */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUTHENTICATION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">真贋・復刻品・リプロダクションの考え方</h2>
               <p className="text-[#5C4A3A] mt-3 text-sm">西洋アンティークでは、様式が古いことと、実際に古いことは別の問題です</p>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {authenticity.map((c, i) => (
-                <div key={i} className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5">
+                <div key={i} className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5">
                   <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
-                    <span className="bg-[#C49A6C] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{i + 1}</span>
+                    <span className="bg-[#C49A6C] text-white w-6 h-6 rounded-sm flex items-center justify-center text-xs shrink-0">{i + 1}</span>
                     <span className="flex-1">{c.title}</span>
                   </h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{c.text}</p>
@@ -339,16 +334,15 @@ export default function SeiyouAntiquePage() {
         {/* 査定前にやってはいけないこと */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BEFORE SELLING</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">査定に出す前に避けるべきこと</h2>
               <p className="text-[#5C4A3A] mt-3 text-sm">良かれと思って手を加えた結果、価値を損なう例が少なくありません</p>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {beforeSelling.map((c, i) => (
-                <div key={i} className="bg-white border border-[#E0D5C8] rounded-xl p-5 shadow-sm">
+                <div key={i} className="bg-white border border-[#E0D5C8] rounded p-5">
                   <h3 className="font-bold text-[#8B4513] mb-2 flex items-start gap-2">
-                    <span className="bg-[#8B4513] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0">{i + 1}</span>
+                    <span className="bg-[#8B4513] text-white w-6 h-6 rounded-sm flex items-center justify-center text-xs shrink-0">{i + 1}</span>
                     <span className="flex-1">{c.title}</span>
                   </h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">{c.text}</p>
@@ -361,13 +355,12 @@ export default function SeiyouAntiquePage() {
         {/* FAQ */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">西洋アンティーク買取のよくある質問</h2>
             </div>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="group bg-[#FAF7F2] border border-[#E0D5C8] rounded-xl p-5">
+                <details key={i} className="group bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5">
                   <summary className="cursor-pointer font-bold text-[#2C1810] text-sm md:text-base list-none flex items-start gap-3">
                     <span className="text-[#C9A96E] shrink-0">Q.</span>
                     <span className="flex-1">{f.q}</span>
@@ -382,23 +375,23 @@ export default function SeiyouAntiquePage() {
         {/* 売却のコツ */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">西洋アンティークを高く売るためのポイント</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>西洋アンティークの専門業者に依頼する</strong>：一般のリサイクルショップでは、西洋アンティークの価値を正確に評価できない場合が多くあります。アンティークの専門店や、西洋美術に強い買取業者に依頼してください。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>来歴（プロヴェナンス）を整理する</strong>：購入時の領収書、オークションのカタログ、以前の所有者の情報など、品物の来歴を証明する資料があると、査定額が大きく上がります。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>複数の業者から見積もりを取る</strong>：西洋アンティークは業者によって得意分野が異なるため、査定額に大きな差が出ます。ヒカカク！での一括査定をおすすめします。</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>ご自身で修復・クリーニングを行わない</strong>：特に、家具の塗り直しや銀器の磨きすぎは、アンティークとしての価値（パティナ＝経年変化による風合い）を損なうため、避けてください。</p>
                 </div>
               </div>
@@ -407,7 +400,7 @@ export default function SeiyouAntiquePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               西洋アンティークの価値を無料査定でご確認ください
@@ -415,7 +408,7 @@ export default function SeiyouAntiquePage() {
             <p className="text-amber-200 mb-8">
               専門業者の査定で、お持ちのアンティークの適正価格を確認できます。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </Link>
           </div>

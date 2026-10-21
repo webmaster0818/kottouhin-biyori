@@ -96,9 +96,8 @@ export default function KanteiMuryouPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">FREE APPRAISAL</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の無料鑑定サービス比較<br className="hidden md:inline" />専門家に価値を確認してもらう方法
             </h1>
@@ -113,19 +112,18 @@ export default function KanteiMuryouPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品を無料で鑑定してもらう方法の要点は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 買取業者の無料鑑定（実質的には無料査定）を利用すると、出張・店頭・LINE・メールの4つの方法で、費用をかけずに価値を確認できます。概算を手軽に確認したい場合はLINE鑑定、大量の品や大型品の場合は出張鑑定が適しています。ただし、買取業者の無料鑑定では正式な鑑定書は発行されず、相続や保険が目的の場合は1点1万〜5万円程度の有料鑑定（鑑定機関）が必要です。売却が目的の場合は、複数の業者に無料査定を依頼して比較する方法が効率的です。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SERVICE TYPES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">無料鑑定サービスの種類</h2>
             </div>
             <div className="space-y-6">
               {serviceTypes.map((s, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">{s.name}</h3>
                   <div className="space-y-3">
                     <div>
@@ -136,7 +134,7 @@ export default function KanteiMuryouPage() {
                       <p className="text-sm font-bold text-[#2C1810] mb-1">デメリット</p>
                       <p className="text-[#5C4A3A] leading-relaxed text-sm">{s.demerit}</p>
                     </div>
-                    <div className="bg-[#F5ECD7] rounded-xl p-3">
+                    <div className="bg-[#F5ECD7] rounded p-3">
                       <p className="text-sm text-[#8B4513]"><strong>適している方:</strong> {s.bestFor}</p>
                     </div>
                   </div>
@@ -149,20 +147,19 @@ export default function KanteiMuryouPage() {
         {/* おすすめ3社 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">RECOMMENDED</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">無料鑑定おすすめ3社</h2>
             </div>
             <div className="space-y-6">
               {recommendedServices.map((s, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="w-10 h-10 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
+                    <span className="w-10 h-10 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
                     <h3 className="font-serif-jp text-xl font-bold text-[#2C1810]">{s.name}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed mb-4">{s.point}</p>
                   <a href={s.url} target="_blank" rel={s.url.includes("felmat.net") ? "sponsored nofollow noopener" : "noopener noreferrer"}
-                    className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-6 py-3 rounded-xl font-bold transition text-sm">
+                    className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-6 py-3 rounded font-bold transition text-sm">
                     {s.name}の公式サイトへ
                   </a>
                 </div>
@@ -174,11 +171,10 @@ export default function KanteiMuryouPage() {
         {/* 有料鑑定との違い */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FREE vs PAID</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">無料鑑定と有料鑑定の違い</h2>
             </div>
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -227,13 +223,12 @@ export default function KanteiMuryouPage() {
         {/* 注意点 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CAUTION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">無料鑑定の注意点</h2>
             </div>
             <div className="space-y-6">
               {warnings.map((w, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">{w.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{w.text}</p>
                 </div>
@@ -243,7 +238,7 @@ export default function KanteiMuryouPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               無料査定で骨董品の価値をご確認ください
@@ -251,7 +246,7 @@ export default function KanteiMuryouPage() {
             <p className="text-amber-200 mb-8">
               複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

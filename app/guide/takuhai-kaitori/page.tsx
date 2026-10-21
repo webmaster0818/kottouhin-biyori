@@ -108,9 +108,8 @@ export default function TakuhaiKaitoriPage() {
           </div>
         </div>
 
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">TAKUHAI KAITORI</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の宅配買取<br className="hidden md:inline" />流れ・梱包方法・適した品物
             </h1>
@@ -124,13 +123,13 @@ export default function TakuhaiKaitoriPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">宅配買取の仕組みと、向いている品物は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 宅配買取は、業者から無料で届く宅配キット（段ボール・緩衝材・伝票）に品物を梱包し、着払いで送って査定・買取を受ける方法です。「申し込み、梱包・発送、査定（2〜7営業日）、成約・銀行振込」の4つの手順で進み、申し込みから入金まで1〜2週間が目安です。切手・古銭・茶碗・着物など小型から中型の品に適しており、全国から利用でき、対面も不要です。壊れやすい高額品は配送中に破損するおそれがあるため、出張買取のほうが安全です。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">宅配買取とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed">
                 宅配買取とは、業者から無料で送られてくる宅配キット（段ボール・緩衝材・伝票）に品物を梱包し、宅配便で送って査定・買取を受ける方法です。切手・古銭・茶碗・着物など小型から中型の品物に適しており、全国から利用できます。対面が不要なため、押し買いのおそれもありません。<Link href="/guide/shucchou-kaitori" className="text-[#8B4513] underline hover:no-underline">出張買取</Link>と並ぶ、骨董品買取の主要な方法です。
@@ -141,15 +140,14 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">STEPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">宅配買取の流れ（4つの手順）</h2>
             </div>
             <div className="space-y-6">
               {steps.map((s, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
+                    <span className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-1.5">{s.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">{s.text}</p>
@@ -161,13 +159,12 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MERITS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">宅配買取のメリット</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {merits.map((m, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{m.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{m.text}</p>
                 </div>
@@ -178,13 +175,12 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">DEMERITS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">宅配買取のデメリット・注意点</h2>
             </div>
             <div className="space-y-4">
               {demerits.map((d, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{d.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{d.text}</p>
                 </div>
@@ -195,13 +191,12 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PACKING TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">品目別の梱包方法</h2>
             </div>
             <div className="space-y-4">
               {packingTips.map((p, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{p.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{p.text}</p>
                 </div>
@@ -215,12 +210,11 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUITABLE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">宅配買取に適した品物・適さない品物</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#FAF7F2] rounded-2xl border-2 border-[#8B4513] p-6">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#8B4513] p-6">
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-4">○ 宅配買取に適した品物</h3>
                 <ul className="space-y-2">
                   {goodItems.map((g, i) => (
@@ -231,7 +225,7 @@ export default function TakuhaiKaitoriPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#FAF7F2] rounded-2xl border-2 border-[#8B7D72] p-6">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#8B7D72] p-6">
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B7D72] mb-4">△ 出張買取が適した品物</h3>
                 <ul className="space-y-2">
                   {badItems.map((b, i) => (
@@ -251,13 +245,12 @@ export default function TakuhaiKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BEST CHOICE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">宅配買取でおすすめの業者</h2>
             </div>
-            <div className="bg-gradient-to-br from-[#F5ECD7] to-[#FAF7F2] rounded-2xl border-2 border-[#C9A96E] p-6 md:p-10">
+            <div className="bg-[#FAF7F2] rounded border-2 border-[#C9A96E] p-6 md:p-10">
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-gradient-to-br from-yellow-500 to-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">1</div>
+                <div className="bg-white border border-[#2C1810] text-[#2C1810] w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg">1</div>
                 <div>
                   <p className="text-xs text-[#C9A96E] font-medium">{hikakaku.type}</p>
                   <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{hikakaku.name}</h3>
@@ -266,14 +259,14 @@ export default function TakuhaiKaitoriPage() {
               <p className="text-[#5C4A3A] leading-relaxed mb-4">最大20社の宅配買取業者に一括で査定を依頼できます。複数の業者の見積もりを比較してから売却先を決められるため、宅配買取で重要な相見積もりを手軽に行えます。</p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-6">{hikakaku.description}</p>
               <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
-                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                 {hikakaku.name}で一括査定する
               </a>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               無料の宅配キットで査定を申し込めます
@@ -281,7 +274,7 @@ export default function TakuhaiKaitoriPage() {
             <p className="text-amber-200 mb-8">
               送料・査定料・宅配キットがすべて無料の業者をご案内します。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

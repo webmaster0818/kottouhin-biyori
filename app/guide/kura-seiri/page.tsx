@@ -95,9 +95,8 @@ export default function KuraSeiriPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">STOREHOUSE GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               蔵の整理で見つかった骨董品<br className="hidden md:inline" />価値の見極め方と売却方法
             </h1>
@@ -112,22 +111,21 @@ export default function KuraSeiriPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">蔵の整理で骨董品が見つかった場合に、最も大切な対応をお伝えします。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 蔵から見つかった品は、ご自身の判断で処分せず、まず写真で記録してから専門業者の査定を受けることが基本です。掛軸・陶磁器・茶道具・古銭などが見つかりやすく、作家物の掛軸は5万〜500万円になる例もあります。桐箱の箱書きや品物の銘は価値を示す重要な手がかりのため、箱も含めて保管してください。量が多い場合は、査定士が自宅（蔵）を訪問してその場で査定する出張買取が適しています。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMMON FINDS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">蔵の整理で見つかりやすい品目</h2>
             </div>
             <div className="space-y-6">
               {commonItems.map((item, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <h3 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-3">{item.name}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">{item.description}</p>
-                  <div className="bg-[#F5ECD7] rounded-xl p-3">
+                  <div className="bg-[#F5ECD7] rounded p-3">
                     <p className="text-sm text-[#8B4513]"><strong>参考相場:</strong> {item.priceExample}</p>
                   </div>
                 </article>
@@ -139,15 +137,14 @@ export default function KuraSeiriPage() {
         {/* 価値の見極め方 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HOW TO JUDGE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">価値の見極め方</h2>
             </div>
             <div className="space-y-6">
               {howToJudge.map((h, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-8 h-8 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                    <span className="w-8 h-8 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-0.5">{h.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{h.text}</p>
@@ -160,14 +157,13 @@ export default function KuraSeiriPage() {
         {/* 売却の流れ */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SELLING FLOW</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">売却の流れ</h2>
             </div>
             <div className="space-y-4">
               {sellingFlow.map((f, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 flex gap-5">
-                  <div className="w-12 h-12 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-lg">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6 flex gap-5">
+                  <div className="w-12 h-12 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-lg">
                     {i + 1}
                   </div>
                   <div>
@@ -181,7 +177,7 @@ export default function KuraSeiriPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               蔵の骨董品の出張査定
@@ -189,7 +185,7 @@ export default function KuraSeiriPage() {
             <p className="text-amber-200 mb-8">
               出張買取では、自宅の蔵まで査定士が訪問し、大量の品物もその場で査定します。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

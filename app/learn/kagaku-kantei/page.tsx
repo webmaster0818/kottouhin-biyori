@@ -47,29 +47,28 @@ export default function KagakuKanteiPage() {
               </nav>
             </div>
           </div>
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">骨董品の科学的鑑定<br className="hidden md:inline" />贋作を見分ける分析手法</h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">成分分析や年代測定でわかることとわからないこと、<br className="hidden md:inline" />目利きとの違いをご説明します。</p>
             </div>
           </section>
           <article className="max-w-4xl mx-auto px-4 py-10 md:py-14">
-            <div className="bg-white border-2 border-[#D4A574] rounded-2xl p-6 mb-10">
+            <div className="bg-white border-2 border-[#D4A574] rounded p-6 mb-10">
               <p className="font-bold text-[#8B4513] mb-2">科学的鑑定は客観的な手がかりを示しますが、それだけで真贋を断定できない点が重要です。</p>
               <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">科学的鑑定は、材料の成分や年代といった<strong>客観的なデータ</strong>を示します。ただし、時代に合わない材料が使われていないことが、そのまま本物であることを意味するわけではありません。実務では、科学分析の結果と、<Link href="/learn/how-to-identify-fakes/" className="text-[#8B4513] underline">専門家の目利き</Link>・<Link href="/learn/honmono-mikiwake/" className="text-[#8B4513] underline">来歴などの要素</Link>を組み合わせて、総合的に判断します。</p>
             </div>
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">代表的な科学的鑑定の手法</h2>
             <div className="space-y-5 mb-12">
               {methods.map((m, i) => (
-                <div key={i} className="bg-white border border-[#E0D5C8] rounded-xl p-6">
+                <div key={i} className="bg-white border border-[#E0D5C8] rounded p-6">
                   <h3 className="font-bold text-[#8B4513] text-lg mb-2">{m.h}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base mb-3">{m.b}</p>
                   <p className="text-xs md:text-sm text-[#8B7D72] bg-[#FAF7F2] rounded-lg p-3"><span className="font-bold text-[#B8860B]">わかることの範囲：</span>{m.limit}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-white border border-[#E0D5C8] rounded-2xl p-6 mb-12">
+            <div className="bg-white border border-[#E0D5C8] rounded p-6 mb-12">
               <h2 className="font-bold text-[#5C4A3A] mb-3">まずは無料査定をご利用ください</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">科学的鑑定は費用・時間がかかり、試料の採取を伴う手法もあります。多くの場合、まず買取業者の無料査定や鑑定機関で専門家の見解を得て、必要に応じて科学分析を検討する方法が現実的です。</p>
               <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#8B4513] text-white text-sm font-bold rounded-lg px-5 py-2.5 hover:bg-[#6B3410] transition">骨董品買取業者を比較する</Link>
@@ -77,7 +76,7 @@ export default function KagakuKanteiPage() {
             <h2 className="font-serif-jp text-2xl font-bold text-[#5C4A3A] mb-6 pb-2 border-b-2 border-[#D4A574]">よくある質問</h2>
             <div className="space-y-3">
               {faqs.map((f, i) => (
-                <details key={i} className="bg-white border border-[#E0D5C8] rounded-xl overflow-hidden">
+                <details key={i} className="bg-white border border-[#E0D5C8] rounded overflow-hidden">
                   <summary className="px-5 py-4 cursor-pointer font-bold text-[#5C4A3A] text-sm md:text-base">Q. {f.q}</summary>
                   <div className="px-5 pb-4 text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</div>
                 </details>

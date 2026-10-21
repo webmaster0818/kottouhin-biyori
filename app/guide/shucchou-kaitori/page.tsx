@@ -91,9 +91,8 @@ export default function ShucchouKaitoriPage() {
           </div>
         </div>
 
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">SHUCCHOU KAITORI</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の出張買取<br className="hidden md:inline" />流れ・メリット・業者選びのポイント
             </h1>
@@ -106,13 +105,13 @@ export default function ShucchouKaitoriPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品の出張買取の流れと、利用に適した場面は次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 出張買取は、「申し込み、査定士による自宅訪問、その場での査定額の提示、成約と現金での支払い」の4つの手順で、自宅で査定から現金化までが完結します。出張費・査定費はほとんどの業者で無料で、金額に納得できなければキャンセルも可能です。契約後は、特定商取引法に基づき8日以内であればクーリング・オフができます。掛軸・茶道具など運搬が難しい品や、蔵の整理・遺品整理で品数が多い場合に適した方法です。
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">出張買取とは</h2>
               <p className="text-[#5C4A3A] leading-relaxed">
                 出張買取とは、査定士が自宅を訪問して品物を査定・買取する方法です。掛軸・茶道具・仏像・大型の陶磁器など運搬が難しい品物や、蔵・倉庫から大量の骨董品が見つかった場合に最も適した方法で、骨董品買取の主流となっています。出張費・査定費は、ほとんどの業者で無料です。
@@ -123,15 +122,14 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">STEPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出張買取の流れ（4つの手順）</h2>
             </div>
             <div className="space-y-6">
               {steps.map((s, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
+                    <span className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-1.5">{s.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm md:text-base">{s.text}</p>
@@ -143,13 +141,12 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MERITS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出張買取のメリット</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {merits.map((m, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-white rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{m.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{m.text}</p>
                 </div>
@@ -160,13 +157,12 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">DEMERITS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出張買取のデメリット・注意点</h2>
             </div>
             <div className="space-y-4">
               {demerits.map((d, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-2">{d.title}</h3>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{d.text}</p>
                 </div>
@@ -177,15 +173,14 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CHECKLIST</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">悪質な業者を避けるための確認事項</h2>
             </div>
-            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+            <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
               <ul className="space-y-3">
                 {checklists.map((c, i) => (
                   <li key={i} className="flex items-start gap-3 text-[#2C1810]">
-                    <span className="text-[#8B4513] shrink-0 font-bold mt-0.5">✓</span>
+                    <span className="text-[#8B4513] shrink-0 font-bold mt-0.5"></span>
                     <span className="leading-relaxed text-sm md:text-base">{c}</span>
                   </li>
                 ))}
@@ -199,12 +194,11 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUITABLE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出張買取に適した品物・適さない品物</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#FAF7F2] rounded-2xl border-2 border-[#8B4513] p-6">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#8B4513] p-6">
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mb-4">○ 出張買取に適した品物</h3>
                 <ul className="space-y-2">
                   {goodItems.map((g, i) => (
@@ -215,7 +209,7 @@ export default function ShucchouKaitoriPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#FAF7F2] rounded-2xl border-2 border-[#8B7D72] p-6">
+              <div className="bg-[#FAF7F2] rounded border-2 border-[#8B7D72] p-6">
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B7D72] mb-4">△ 他の方法が適した品物</h3>
                 <ul className="space-y-2">
                   {badItems.map((b, i) => (
@@ -235,13 +229,12 @@ export default function ShucchouKaitoriPage() {
 
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BEST CHOICE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出張買取でおすすめの業者</h2>
             </div>
-            <div className="bg-gradient-to-br from-[#F5ECD7] to-[#FAF7F2] rounded-2xl border-2 border-[#C9A96E] p-6 md:p-10">
+            <div className="bg-[#FAF7F2] rounded border-2 border-[#C9A96E] p-6 md:p-10">
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-gradient-to-br from-yellow-500 to-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">1</div>
+                <div className="bg-white border border-[#2C1810] text-[#2C1810] w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg">1</div>
                 <div>
                   <p className="text-xs text-[#C9A96E] font-medium">{uriel.type}</p>
                   <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{uriel.name}</h3>
@@ -253,14 +246,14 @@ export default function ShucchouKaitoriPage() {
                 <Link href="/review/uriel/" className="text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判と出張エリアの詳細</Link>
               </p>
               <a href={uriel.officialUrl} target="_blank" rel="noopener noreferrer"
-                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                 {uriel.name}で無料査定する
               </a>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               無料の出張査定のご案内
@@ -268,7 +261,7 @@ export default function ShucchouKaitoriPage() {
             <p className="text-amber-200 mb-8">
               査定料・出張費・キャンセル料がすべて無料の業者をおすすめします。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

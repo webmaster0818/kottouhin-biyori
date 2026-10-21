@@ -1,0 +1,150 @@
+{
+ "nikkoudou": {
+  "src": "/images/screenshots/nikkoudou-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://nikkoudou-kottou.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "buysell": {
+  "src": "/images/screenshots/buysell-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://buysell-kaitori.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "fukuchan": {
+  "src": "/images/screenshots/fukuchan-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.fuku-chan.info/",
+  "capturedOn": "2026-10-21"
+ },
+ "ryokuwado": {
+  "src": "/images/screenshots/ryokuwado-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.ryokuwado.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "hakkoudo": {
+  "src": "/images/screenshots/hakkoudo-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.hakkoudo.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "nanboya": {
+  "src": "/images/screenshots/nanboya-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://nanboya.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "eizawa": {
+  "src": "/images/screenshots/eizawa-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.eizawa.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "ebisunokura": {
+  "src": "/images/screenshots/ebisunokura-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://ebisunokura-antique.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "kingram": {
+  "src": "/images/screenshots/kingram-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://kingram.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "gyokkodo": {
+  "src": "/images/screenshots/gyokkodo-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://kaitori.gyokkodo.co.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "bikando": {
+  "src": "/images/screenshots/bikando-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://bikanjp.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "hikakaku": {
+  "src": "/images/screenshots/hikakaku-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://hikakaku.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "tifana": {
+  "src": "/images/screenshots/tifana-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.tifana.net/",
+  "capturedOn": "2026-10-21"
+ },
+ "uriel": {
+  "src": "/images/screenshots/uriel-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.uriel-cuore.co.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "otakaraya": {
+  "src": "/images/screenshots/otakaraya-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.otakaraya.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "iwano": {
+  "src": "/images/screenshots/iwano-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://iwano.biz/",
+  "capturedOn": "2026-10-21"
+ },
+ "shukado": {
+  "src": "/images/screenshots/shukado-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.aojc.co.jp/",
+  "capturedOn": "2026-10-21"
+ },
+ "eishodo": {
+  "src": "/images/screenshots/eishodo-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://eishodo.net/",
+  "capturedOn": "2026-10-21"
+ },
+ "eijudo": {
+  "src": "/images/screenshots/eijudo-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.eijyudou.com/",
+  "capturedOn": "2026-10-21"
+ },
+ "sasaki": {
+  "src": "/images/screenshots/sasaki-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.kobijutsu.ne.jp/user_data/kaitori",
+  "capturedOn": "2026-10-21",
+  "label": "買取案内ページ"
+ },
+ "antique-tokyo": {
+  "src": "/images/screenshots/antique-tokyo-fv.webp",
+  "width": 1200,
+  "height": 675,
+  "pageUrl": "https://www.antique-tokyo.jp/",
+  "capturedOn": "2026-10-21"
+ }
+}

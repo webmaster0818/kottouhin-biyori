@@ -135,9 +135,8 @@ export default function KottouichiPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">ANTIQUE MARKET</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董市・骨董品市場ガイド<br className="hidden md:inline" />全国の主要な骨董市の一覧と利用方法
             </h1>
@@ -152,14 +151,13 @@ export default function KottouichiPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">主な骨董市の開催日と開催場所は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 多くの骨董市は、神社仏閣の縁日に合わせて毎月決まった日に開催されます。主なものとして、京都・東寺の弘法市が毎月21日、北野天満宮の天神市が毎月25日、大阪・四天王寺骨董市が毎月21日・22日、東京の大江戸骨董市が月2回（開催日は公式サイトで告知）開催されます。品揃えを重視する場合は早朝、値引きの交渉を重視する場合は閉場間際の来場が適しています。開催日は変更される場合があるため、お出かけ前に主催者の公式情報をご確認ください。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">MARKET LIST</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">全国の主要な骨董市</h2>
             </div>
             <div className="space-y-10">
@@ -168,7 +166,7 @@ export default function KottouichiPage() {
                   <h3 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4 border-l-4 border-[#C9A96E] pl-4">{region.region}</h3>
                   <div className="space-y-4">
                     {region.items.map((m, i) => (
-                      <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                      <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                         <h4 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">{m.name}</h4>
                         <div className="flex flex-wrap gap-4 mb-3">
                           <div className="bg-[#F5ECD7] rounded-lg px-3 py-1.5">
@@ -191,14 +189,13 @@ export default function KottouichiPage() {
         {/* 全国エリア別の骨董市 */}
         <section className="py-12 md:py-16 bg-[#FAF7F2]">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-8">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">BY AREA</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">全国エリア別の骨董市</h2>
               <p className="text-[#5C4A3A] mt-3 text-sm">お住まいの地域の骨董市・蚤の市・陶器市を検索できます。各エリアのページでは、開催情報と、その地域で需要の高い骨董品を掲載しています。</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {areas.map((a) => (
-                <Link key={a.slug} href={`/area/${a.slug}/`} className="bg-white rounded-xl border border-[#E0D5C8] px-4 py-3 text-center text-sm font-medium text-[#8B4513] hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition">
+                <Link key={a.slug} href={`/area/${a.slug}/`} className="bg-white rounded border border-[#E0D5C8] px-4 py-3 text-center text-sm font-medium text-[#8B4513] hover:bg-[#F5ECD7] hover:border-[#C9A96E] transition">
                   {a.name}の骨董市
                 </Link>
               ))}
@@ -210,15 +207,14 @@ export default function KottouichiPage() {
         {/* 楽しみ方・コツ */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董市を訪れる際の注意点</h2>
             </div>
             <div className="space-y-6">
               {tips.map((t, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-8 h-8 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                    <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-0.5">{t.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{t.text}</p>
@@ -231,7 +227,7 @@ export default function KottouichiPage() {
         {/* 骨董市で買ったものの売却 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#8B4513] mb-4">骨董市で買ったものを売りたい場合</h2>
               <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">
                 骨董市で購入したコレクションを整理して売却したい場合は、買取業者への査定依頼をおすすめします。購入時の価格より高く売れる場合も安くなる場合もありますが、複数の業者から見積もりを取ることで、査定額を比較したうえで売却できます。
@@ -246,13 +242,12 @@ export default function KottouichiPage() {
         {/* FAQ */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-8">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">骨董市についてよくある質問</h2>
             </div>
             <div className="space-y-4 max-w-3xl mx-auto">
               {guideFaqs.map((f, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6">
                   <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                 </div>
@@ -262,7 +257,7 @@ export default function KottouichiPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               お持ちの骨董品の無料査定
@@ -270,7 +265,7 @@ export default function KottouichiPage() {
             <p className="text-amber-200 mb-8">
               コレクションの整理や売却をご検討の方は、以下をご覧ください。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

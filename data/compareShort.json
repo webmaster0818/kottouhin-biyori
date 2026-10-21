@@ -1,0 +1,86 @@
+{
+ "nikkoudou": {
+  "type": "骨董専門",
+  "area": "全国（出張）"
+ },
+ "buysell": {
+  "type": "総合買取",
+  "area": "全国"
+ },
+ "fukuchan": {
+  "type": "総合買取",
+  "area": "全国"
+ },
+ "ryokuwado": {
+  "type": "骨董専門",
+  "area": "宅配は全国／出張は関西・中部・関東・九州中心"
+ },
+ "hakkoudo": {
+  "type": "骨董専門",
+  "area": "全国（出張）"
+ },
+ "nanboya": {
+  "type": "総合買取",
+  "area": "全国140店舗以上"
+ },
+ "eizawa": {
+  "type": "骨董専門",
+  "area": "全国"
+ },
+ "ebisunokura": {
+  "type": "古美術・西洋アンティーク",
+  "area": "近畿中心（出張）"
+ },
+ "kingram": {
+  "type": "骨董・茶道具・陶磁器",
+  "area": "全国95店舗＋出張・宅配"
+ },
+ "gyokkodo": {
+  "type": "買取専門店",
+  "area": "宅配は全国（沖縄・離島除く）／店頭6店舗"
+ },
+ "bikando": {
+  "type": "骨董専門",
+  "area": "全国（一部離島除く）"
+ },
+ "hikakaku": {
+  "type": "一括査定サイト",
+  "area": "全国"
+ },
+ "tifana": {
+  "type": "リサイクルショップ",
+  "area": "関東圏中心"
+ },
+ "uriel": {
+  "type": "買取専門店",
+  "area": "関東〜九州（沖縄除く）"
+ },
+ "otakaraya": {
+  "type": "総合買取",
+  "area": "全国"
+ },
+ "iwano": {
+  "type": "骨董専門",
+  "area": "全国"
+ },
+ "shukado": {
+  "type": "美術商（日本画・浮世絵・書画）",
+  "area": "全国（出張）"
+ },
+ "eishodo": {
+  "type": "骨董専門（京都）",
+  "area": "全国"
+ },
+ "eijudo": {
+  "type": "骨董専門（名古屋）",
+  "area": "東海中心・全国"
+ },
+ "sasaki": {
+  "type": "骨董専門（東京）",
+  "area": "全国"
+ },
+ "antique-tokyo": {
+  "type": "骨董専門",
+  "area": "宅配は全国／出張は1都3県"
+ }
+}

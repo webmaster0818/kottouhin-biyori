@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
+import OfficialShot from "@/app/components/OfficialShot";
 import companies from "@/data/companies.json";
 
 const company = companies.find((c) => c.id === "uriel")!;
@@ -99,13 +100,12 @@ export default function UrielReview() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">REVIEW</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               ウリエルの口コミ・評判
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               買取専門店ウリエルの評価・出張エリア・店舗を、公式サイトと口コミサイトで確認しました【{CHECKED}】
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function UrielReview() {
         {/* 要点 */}
         <section className="py-10 md:py-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 border-2 border-[#C9A96E]">
+            <div className="bg-white rounded p-6 md:p-8 border-2 border-[#C9A96E]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">ウリエルの評判と適している方</h2>
               <ul className="space-y-3 text-sm md:text-base text-[#2C1810] leading-relaxed">
                 <li className="flex gap-2"><span className="text-[#8B4513] font-bold shrink-0">1.</span><span>第三者の口コミは少数です。買取の口コミサイト「ヒカカク！」では総合2.67点・3件です（{CHECKED}時点）。件数が少なく評価も分かれているため、口コミだけでは判断しにくい業者です。</span></li>
@@ -141,21 +141,20 @@ export default function UrielReview() {
         {/* 口コミ・評判の出典 */}
         <section className="py-12 md:py-16 bg-white" id="reputation">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-8">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">REPUTATION</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">ウリエルの口コミ・評判の確認先（出典を明記）</h2>
               <p className="text-xs text-[#8B7D72] mt-3">{CHECKED}に各ページを確認しました。口コミの本文は転載せず、件数・点数と性質のみを要約しています。</p>
             </div>
             <div className="space-y-4">
               {reviewSources.map((r) => (
-                <div key={r.name} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5">
+                <div key={r.name} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5">
                   <h3 className="font-bold text-[#8B4513] mb-2">{r.name}</h3>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed mb-2">{r.summary}</p>
                   <p className="text-xs text-[#8B7D72] break-all">出典: {r.url.replace("https://", "")}（{CHECKED}確認）</p>
                 </div>
               ))}
             </div>
-            <div className="mt-6 bg-[#F5ECD7] rounded-xl border border-[#C9A96E] p-5 text-sm text-[#5C4A3A] leading-relaxed">
+            <div className="mt-6 bg-[#F5ECD7] rounded border border-[#C9A96E] p-5 text-sm text-[#5C4A3A] leading-relaxed">
               <p className="font-bold text-[#2C1810] mb-2">「ウリエル 口コミ」「ウリエル 評判」で検索する際の注意点</p>
               <p>Googleマップでは、{CHECKED}時点で、ウリエルの評価点・件数を当サイトでは確認できませんでした（川崎の店舗は2026年9月開店のため、口コミは今後増えると考えられます）。インターネット上の「やばい？」「怪しい？」といった記事の多くは出典が示されていないため、上記のように、誰が集めた口コミかを確認したうえで参考にしてください。訪問買取に不安がある場合は、運営会社・古物商許可番号の確認、査定額の書面での提示、クーリングオフの説明の有無を、当日確認することをおすすめします。</p>
             </div>
@@ -165,7 +164,7 @@ export default function UrielReview() {
         {/* 基本情報 */}
         <section className="py-12 md:py-16" id="basic-info">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4 border-b border-[#E0D5C8] pb-3">ウリエルの会社情報・出張エリア・店舗（公式サイトで確認）</h2>
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm border-collapse bg-white border border-[#E0D5C8]">
@@ -187,7 +186,7 @@ export default function UrielReview() {
         {/* 楽器買取 */}
         <section className="py-12 md:py-16 bg-white" id="instrument">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#FAF7F2] rounded-2xl p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-[#FAF7F2] rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-4">ウリエルの楽器買取の評判と対象エリア</h2>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-3">ウリエルは骨董品だけでなく楽器の出張買取も行っており、公式サイトに楽器買取専用のページ（/instrument/）があります。ただし、楽器買取に限った第三者の口コミ・評価は、{CHECKED}時点で当サイトでは確認できませんでした。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed mb-3">買取対象として、ギター・ベース・バイオリンなどの弦楽器、サックス・トランペット・フルートなどの管楽器のほか、<strong>三味線・尺八・琴・琵琶・二胡・和太鼓などの和楽器</strong>も挙げられています。古い和楽器は、骨董品と一緒に査定を依頼できます（{CHECKED2}確認）。</p>
@@ -199,7 +198,7 @@ export default function UrielReview() {
         {/* 買取実績 */}
         <section className="py-12 md:py-16" id="results">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8]">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3">ウリエルの買取実績（公式掲載の事例）</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">公式サイトに掲載されている買取事例のうち、骨董品・古銭・お酒・楽器に関するものを掲載しています。ウリエル自身が掲載している事例であり、同じ品が同じ金額で買い取られるとは限りません。</p>
               <div className="overflow-x-auto mb-3">
@@ -226,28 +225,22 @@ export default function UrielReview() {
         {/* Overview */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8]">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="bg-gradient-to-br from-amber-700 to-amber-800 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">{company.rank}</div>
-                <div>
-                  <p className="text-xs text-[#C9A96E] font-medium">{company.type}</p>
-                  <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{company.name}</h2>
-                </div>
+            <div className="border-t-2 border-[#2C1810] pt-5">
+              <div className="flex items-baseline gap-3 mb-1">
+                <span className="font-serif-jp text-2xl font-bold text-[#8B4513] tabular-nums">{company.rank}</span>
+                <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{company.name}</h2>
+                <span className="text-xs text-[#8B7D72]">{company.type}</span>
               </div>
-              <p className="text-sm text-[#8B4513] font-medium mb-4">{company.tagline}</p>
-              <p className="text-[#5C4A3A] leading-relaxed mb-6">{company.description}</p>
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-[#FAF7F2] rounded-xl p-4">
-                  <p className="text-xs text-[#8B7D72] mb-1">対応品目</p>
-                  <p className="text-sm text-[#2C1810] font-medium">{company.categories.join("・")}</p>
-                </div>
-                <div className="bg-[#FAF7F2] rounded-xl p-4">
-                  <p className="text-xs text-[#8B7D72] mb-1">対応エリア</p>
-                  <p className="text-sm text-[#2C1810] font-medium">{company.areas}</p>
-                </div>
-                <div className="bg-[#FAF7F2] rounded-xl p-4">
-                  <p className="text-xs text-[#8B7D72] mb-1">買取方法</p>
-                  <p className="text-sm text-[#2C1810] font-medium">{company.buyMethod.join("・")}</p>
+              <p className="text-sm text-[#8B4513] font-medium mb-5">{company.tagline}</p>
+              <div className="grid md:has-[figure]:grid-cols-[320px_1fr] gap-5 md:gap-7">
+                <OfficialShot slug={company.slug} name={company.name} />
+                <div>
+                  <p className="text-[15px] text-[#3D2E24] leading-relaxed mb-4">{company.description}</p>
+                  <dl className="text-sm border-t border-[#E0D5C8]">
+                    <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]"><dt className="text-[#8B7D72]">対応品目</dt><dd className="text-[#2C1810]">{company.categories.join("・")}</dd></div>
+                    <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]"><dt className="text-[#8B7D72]">対応エリア</dt><dd className="text-[#2C1810]">{company.areas}</dd></div>
+                    <div className="grid grid-cols-[6.5em_1fr] gap-2 py-2 border-b border-[#E0D5C8]"><dt className="text-[#8B7D72]">買取方法</dt><dd className="text-[#2C1810]">{company.buyMethod.join("・")}</dd></div>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -257,16 +250,15 @@ export default function UrielReview() {
         {/* Features */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FEATURES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {company.name}の特徴
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {company.features.map((f, idx) => (
-                <div key={idx} className="bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-5 flex gap-3 items-start">
-                  <span className="bg-[#8B4513] text-white w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0">{idx + 1}</span>
+                <div key={idx} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-5 flex gap-3 items-start">
+                  <span className="bg-[#8B4513] text-white w-7 h-7 rounded-sm flex items-center justify-center text-xs font-bold shrink-0">{idx + 1}</span>
                   <p className="text-[#2C1810] font-medium">{f}</p>
                 </div>
               ))}
@@ -277,14 +269,13 @@ export default function UrielReview() {
         {/* Pros & Cons */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">PROS &amp; CONS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 メリット・デメリット
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-green-50 rounded-2xl p-6 border border-green-200">
+              <div className="bg-green-50 rounded p-6 border border-green-200">
                 <h3 className="font-bold text-green-800 mb-4 text-lg">メリット</h3>
                 <ul className="space-y-3">
                   {company.pros.map((p, idx) => (
@@ -295,7 +286,7 @@ export default function UrielReview() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-red-50 rounded-2xl p-6 border border-red-200">
+              <div className="bg-red-50 rounded p-6 border border-red-200">
                 <h3 className="font-bold text-red-800 mb-4 text-lg">デメリット</h3>
                 <ul className="space-y-3">
                   {company.cons.map((c, idx) => (
@@ -313,15 +304,14 @@ export default function UrielReview() {
         {/* Categories */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">CATEGORIES</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 取り扱い品目
               </h2>
             </div>
             <div className="flex flex-wrap gap-3 justify-center">
               {company.categories.map((cat) => (
-                <span key={cat} className="bg-[#F5ECD7] text-[#8B4513] px-5 py-3 rounded-xl font-medium">
+                <span key={cat} className="bg-[#F5ECD7] text-[#8B4513] px-5 py-3 rounded font-medium">
                   {cat}
                 </span>
               ))}
@@ -332,16 +322,15 @@ export default function UrielReview() {
         {/* How to Use */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">HOW TO USE</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 {company.name}の利用方法
               </h2>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 border border-[#E0D5C8] space-y-8">
+            <div className="bg-white rounded p-6 md:p-10 border border-[#E0D5C8] space-y-8">
               {howToUse.map((item, idx) => (
                 <div key={idx} className="flex gap-5">
-                  <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                  <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                     {item.step}
                   </div>
                   <div className={`flex-1 ${idx < howToUse.length - 1 ? "pb-8 border-b border-[#E0D5C8]" : ""}`}>
@@ -357,14 +346,14 @@ export default function UrielReview() {
         {/* Best For */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#F5ECD7] rounded-2xl p-6 md:p-10 border border-[#C9A96E]">
+            <div className="bg-[#F5ECD7] rounded p-6 md:p-10 border border-[#C9A96E]">
               <h2 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810] mb-4">適している方</h2>
               <p className="text-[#5C4A3A] leading-relaxed mb-2">{company.bestFor}</p>
               <ul className="space-y-2 mt-4">
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>自宅で査定から売却までを完結させたい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>遺品整理で骨董品が見つかった方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>中国美術・掛軸を売りたい方</li>
-                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">&#10003;</span>蔵の整理や相続品の査定を依頼したい方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">・</span>自宅で査定から売却までを完結させたい方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">・</span>遺品整理で骨董品が見つかった方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">・</span>中国美術・掛軸を売りたい方</li>
+                <li className="flex items-start gap-2 text-[#2C1810]"><span className="text-[#C9A96E] shrink-0">・</span>蔵の整理や相続品の査定を依頼したい方</li>
               </ul>
             </div>
           </div>
@@ -374,8 +363,7 @@ export default function UrielReview() {
         {(company as any).verifiedData && (
           <section className="py-12 md:py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">VERIFIED FACTS</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                   公式サイトで確認した事実情報
                 </h2>
@@ -383,10 +371,10 @@ export default function UrielReview() {
                   {(company as any).verifiedData.verifiedAt}確認 ／ 出典: {(company as any).verifiedData.source}
                 </p>
               </div>
-              <ul className="space-y-3 bg-[#FAF7F2] rounded-2xl p-6 border border-[#E0D5C8]">
+              <ul className="space-y-3 bg-[#FAF7F2] rounded p-6 border border-[#E0D5C8]">
                 {(company as any).verifiedData.facts.map((f: string, i: number) => (
                   <li key={i} className="text-[#2C1810] text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#8B4513] shrink-0 font-bold">✓</span>
+                    <span className="text-[#8B4513] shrink-0 font-bold"></span>
                     <span>{f}</span>
                   </li>
                 ))}
@@ -399,13 +387,12 @@ export default function UrielReview() {
         {(company as any).faqs && (
           <section className="py-12 md:py-16">
             <div className="max-w-4xl mx-auto px-4">
-              <div className="text-center mb-8">
-                <p className="text-sm text-[#C9A96E] tracking-widest mb-2">FAQ</p>
+              <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">よくある質問</h2>
               </div>
               <div className="space-y-4">
                 {(company as any).faqs.map((f: { q: string; a: string }, i: number) => (
-                  <div key={i} className="bg-white rounded-2xl p-6 border border-[#E0D5C8]">
+                  <div key={i} className="bg-white rounded p-6 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
                     <p className="text-sm text-[#5C4A3A] leading-relaxed">A. {f.a}</p>
                   </div>
@@ -429,7 +416,7 @@ export default function UrielReview() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               {company.name}で無料の出張査定を申し込む
@@ -438,7 +425,7 @@ export default function UrielReview() {
               出張料・査定料・キャンセル料は無料です（{CHECKED} 公式確認）
             </p>
             <a href={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? (company as any).affiliateUrl : company.officialUrl} target="_blank" rel={(company as any).affiliateUrl && (company as any).affiliateUrl !== "#" ? "sponsored nofollow noopener" : "noopener noreferrer"}
-              className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+              className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               {company.name}の公式サイトへ
             </a>
           </div>

@@ -32,9 +32,8 @@ export default function IhinKottouPage() {
             </nav>
           </div>
         </div>
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">遺品整理で見つかった骨董品の対処法</h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">故人が遺した骨董品について、価値の見極め方と、家族間で円滑に進める方法をご説明します。</p>
           </div>
@@ -42,14 +41,14 @@ export default function IhinKottouPage() {
 
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+            <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">遺品の骨董品は、すぐに処分・売却しないことが原則です</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">急いで処分すると、価値のある品や思い出の品を失うおそれがあります。次の順序で進めてください。</p>
               <ul className="grid sm:grid-cols-2 gap-3 text-sm">
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 品物を一覧にする</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">品物を把握し、貴重品と一般品を分けます</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 形見分け・相続を確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">相続人で分け方を相談してから進めます</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ まとめて無料査定に出す</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">価値の有無を専門家に確認します</p></li>
-                <li className="bg-white rounded-xl border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 売却、または供養・処分する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">値が付く品は売却し、残りは適切に処分します</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">① 品物を一覧にする</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">品物を把握し、貴重品と一般品を分けます</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">② 形見分け・相続を確認する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">相続人で分け方を相談してから進めます</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">③ まとめて無料査定に出す</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">価値の有無を専門家に確認します</p></li>
+                <li className="bg-white rounded border border-[#E0D5C8] p-4"><p className="font-bold text-[#8B4513] mb-1">④ 売却、または供養・処分する</p><p className="text-[#5C4A3A] leading-relaxed text-[13px]">値が付く品は売却し、残りは適切に処分します</p></li>
               </ul>
             </div>
           </div>
@@ -57,7 +56,7 @@ export default function IhinKottouPage() {
 
         <section className="py-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#s1" className="hover:text-[#8B4513] transition">1. 遺品の骨董品は急いで処分しない</a></li>
@@ -73,7 +72,7 @@ export default function IhinKottouPage() {
 
         <section id="s1" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">1. 遺品の骨董品は急いで処分しない</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>遺品整理は心身ともに負担が大きく、まとめて処分したいと考えがちです。しかし、骨董品は価値の判断が難しく、急いで処分すると、高額な品や故人の大切な思い出の品を失うおそれがあります。</p>
@@ -85,14 +84,14 @@ export default function IhinKottouPage() {
 
         <section id="s2" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">2. 最初に行う3つの手順</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>遺品の骨董品は、次の3つの手順で進めることをおすすめします。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>① 一覧の作成：どのような品物が、どこに、いくつあるかを書き出し、共箱・鑑定書の有無も記録する</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>② 形見分け・相続の確認：誰が引き取るか、売却するかを相続人で相談してから進める</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>③ まとめての査定：残った品を、出張買取などでまとめて無料査定に出し、価値を確認する</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>① 一覧の作成：どのような品物が、どこに、いくつあるかを書き出し、共箱・鑑定書の有無も記録する</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>② 形見分け・相続の確認：誰が引き取るか、売却するかを相続人で相談してから進める</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>③ まとめての査定：残った品を、出張買取などでまとめて無料査定に出し、価値を確認する</span></li>
                 </ul>
               </div>
             </div>
@@ -101,16 +100,16 @@ export default function IhinKottouPage() {
 
         <section id="s3" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">3. 価値の有無を判断するための確認事項</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>専門家でなくても、次の点を確認することで、査定に出すべき品をある程度見分けられます。</p>
                 <ul className="space-y-3 mt-2">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>共箱・極箱・鑑定書などの付属品がある</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>箱や品物に作家名・落款・窯印が入っている</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>茶道具・掛軸・絵画・中国美術・刀剣・象牙など需要の高い品目</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>丁寧に保管されていた（桐箱や布で包まれていた）</span></li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>故人が大切にしていた、または趣味で収集していた形跡がある</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>共箱・極箱・鑑定書などの付属品がある</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>箱や品物に作家名・落款・窯印が入っている</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>茶道具・掛軸・絵画・中国美術・刀剣・象牙など需要の高い品目</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>丁寧に保管されていた（桐箱や布で包まれていた）</span></li>
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]"><span className="text-[#C9A96E] shrink-0 mt-0.5">●</span><span>故人が大切にしていた、または趣味で収集していた形跡がある</span></li>
                 </ul>
               </div>
             </div>
@@ -119,7 +118,7 @@ export default function IhinKottouPage() {
 
         <section id="s4" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">4. 売却の方法と業者選び</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>遺品の骨董品は量が多く、自宅から運び出すことも負担となるため、自宅で査定を受けられる出張買取が便利です。多くの業者は出張料・査定料を無料としており、その場で現金化できます。</p>
@@ -131,7 +130,7 @@ export default function IhinKottouPage() {
 
         <section id="s5" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">5. 相続・家族間のトラブルを避けるための注意点</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>骨董品は相続財産です。価値の高い品が含まれる場合は、相続人全員で分け方を決めてから処分・売却することが原則です。一人の判断で売却すると、争いの原因となる場合があります。</p>
@@ -143,7 +142,7 @@ export default function IhinKottouPage() {
 
         <section id="s6" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">6. 遺品整理業者と買取業者の使い分け</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
                 <p>遺品整理業者は、家財全体の片付け・清掃まで一括で対応できる点が強みです。一方で、骨董品の査定力は業者によって差があり、価値のある品が安く引き取られるおそれがあります。</p>
@@ -155,7 +154,7 @@ export default function IhinKottouPage() {
 
         <section className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">よくある質問</h2>
               <div className="space-y-5">
                 <div className="border-b border-[#E0D5C8] last:border-b-0 pb-5 last:pb-0"><h3 className="font-bold text-[#8B4513] mb-2">Q. 遺品の骨董品は勝手に売ってもいいですか？</h3><p className="text-sm text-[#5C4A3A] leading-relaxed">A. 骨董品は相続財産のため、相続人が複数いる場合は、全員の合意を得てから売却することが原則です。一人の判断で処分すると、トラブルの原因となります。まず品物を把握し、分け方を相談してから手続きを進めてください。</p></div>
@@ -171,17 +170,17 @@ export default function IhinKottouPage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/how-to-dispose" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の処分方法・捨て方</h3><p className="text-sm text-[#5C4A3A]">売る・譲る・捨てるの判断基準をご説明します。</p></Link>
-              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の本物・偽物の見分け方</h3><p className="text-sm text-[#5C4A3A]">遺品の真贋を見極めるための確認事項です。</p></Link>
+              <Link href="/learn/how-to-dispose" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の処分方法・捨て方</h3><p className="text-sm text-[#5C4A3A]">売る・譲る・捨てるの判断基準をご説明します。</p></Link>
+              <Link href="/learn/how-to-identify-fakes" className="bg-white rounded border border-[#E0D5C8] p-5 transition group"><p className="text-xs text-[#C9A96E] mb-1">LEARN</p><h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の本物・偽物の見分け方</h3><p className="text-sm text-[#5C4A3A]">遺品の真贋を見極めるための確認事項です。</p></Link>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">無料査定で価値をご確認ください</h2>
             <p className="text-amber-200 mb-8 leading-relaxed">骨董品の価値は、専門家でなければ判断が困難です。<br />査定料・出張料が無料の業者であれば、費用をかけずに価値を確認できます。</p>
-            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">買取業者を比較する</Link>
+            <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">買取業者を比較する</Link>
             <p className="text-xs text-amber-200/70 mt-4">いずれも査定無料・キャンセル料なし</p>
           </div>
         </section>

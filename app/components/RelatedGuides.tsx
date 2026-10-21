@@ -67,7 +67,7 @@ export default function RelatedGuides({ path }: { path: string }) {
             <li key={h}>
               <Link
                 href={h}
-                className="block h-full bg-white rounded-xl border border-[#E0D5C8] p-4 text-sm font-medium text-[#8B4513] hover:shadow-md hover:border-[#C9A96E] transition"
+                className="block h-full bg-white rounded border border-[#E0D5C8] p-4 text-sm font-medium text-[#8B4513] hover:border-[#C9A96E] transition"
               >
                 {LABELS[h]}
               </Link>

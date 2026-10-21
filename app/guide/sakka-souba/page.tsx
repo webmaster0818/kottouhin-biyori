@@ -65,9 +65,8 @@ export default function SakkaSoubaPage() {
             </div>
           </div>
 
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">PRICE INDEX</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 作家別の買取相場・公開オークション落札実績
               </h1>
@@ -79,7 +78,7 @@ export default function SakkaSoubaPage() {
 
           <div className="max-w-5xl mx-auto px-4 py-10">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">著名作家の作品の買取相場について、本ページの掲載内容と確認時の注意点をご説明します。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 本ページでは、横山大観・葛飾北斎・北大路魯山人など126作家の買取相場と、公開オークションでの落札実績（出典・確認日を明記）を一覧で掲載しています。落札価格は手数料の扱い・為替・状態によって変動し、海外での取引は外貨建てです。同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定でご確認ください。
@@ -133,7 +132,7 @@ export default function SakkaSoubaPage() {
 
             {/* 本データについて（引用・出典） */}
             <section className="mb-14">
-              <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+              <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                 <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">本データについて（調査方法・出典・引用）</h2>
                 <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
                   <li>・<strong>調査方法</strong>：公開オークションの公表落札データ（各オークションハウスの公式落札結果・プレスリリース）および各社公式情報をもとに、編集部が確認・要約しています。架空・推定の金額は掲載していません。</li>
@@ -175,12 +174,12 @@ export default function SakkaSoubaPage() {
               </div>
             </section>
 
-            <section className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8 mb-4">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8 mb-4">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">お手元の作品の価値を確認する方法</h2>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
                 同じ作家でも、真贋・状態・付属品（共箱・鑑定書）・作品の格によって評価は大きく変わります。正確な金額は、複数の買取業者の無料査定でご確認ください。
               </p>
-              <Link href="/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded-xl transition">買取業者を比較する</Link>
+              <Link href="/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded transition">買取業者を比較する</Link>
             </section>
           </div>
         </main>

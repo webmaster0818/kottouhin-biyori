@@ -58,13 +58,12 @@ export default function TakakuUruPage() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
-          <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">SELLING TIPS</p>
-            <h1 className="font-serif-jp text-3xl md:text-5xl font-bold mb-6 leading-tight">
+        <section className="bg-[#3B2416] text-white">
+          <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+            <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品を高く売る5つの方法
             </h1>
-            <p className="text-lg md:text-xl text-amber-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               骨董品を高く売却するために確認すべき5つのポイント
             </p>
           </div>
@@ -74,17 +73,17 @@ export default function TakakuUruPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4 space-y-8">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">骨董品を高く売るための基本は、次のとおりです。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 最も重要なのは、複数の業者から見積もりを取ることです。同じ品物でも業者によって査定額に数倍の差がつくため、3社以上に査定を依頼することが基本です。あわせて、共箱・鑑定書などの付属品をすべて揃える（査定額が2〜3倍変わる場合があります）、ご自身でクリーニング・修復を行わない、需要の高い時期（茶道具であれば秋から冬の茶会の時期など）に売却する、事前に品物の情報を調べる、の5点を押さえることで、高額で売却できる可能性が高まります。
               </p>
             </div>
             {tips.map((tip, idx) => (
-              <article key={idx} className="bg-white rounded-2xl shadow-md overflow-hidden border border-[#E0D5C8]">
+              <article key={idx} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                 <div className="p-6 md:p-8">
                   <div className="flex gap-5 mb-4">
-                    <div className="w-12 h-12 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold text-xl">
+                    <div className="w-12 h-12 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-xl">
                       {idx + 1}
                     </div>
                     <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] flex-1 pt-2">
@@ -93,7 +92,7 @@ export default function TakakuUruPage() {
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed mb-4">{tip.text}</p>
                   <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">{tip.detail}</p>
-                  <div className="bg-[#F5ECD7] rounded-xl p-4">
+                  <div className="bg-[#F5ECD7] rounded p-4">
                     <p className="text-sm text-[#8B4513] font-medium">
                       {tip.point}
                     </p>
@@ -107,13 +106,12 @@ export default function TakakuUruPage() {
         {/* Summary */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">SUMMARY</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
                 骨董品を高く売るための基本
               </h2>
             </div>
-            <div className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-10">
               <p className="text-[#5C4A3A] leading-relaxed mb-6">
                 骨董品を高く売るために最も重要なのは、複数の業者から見積もりを取ることです。
                 1社だけに査定を依頼すると、適正価格を把握できないまま安値で売却するおそれがあります。
@@ -121,28 +119,28 @@ export default function TakakuUruPage() {
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2 text-[#2C1810]">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <span>複数の業者から見積もりを取り、査定額を比較する</span>
                 </div>
                 <div className="flex items-start gap-2 text-[#2C1810]">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <span>付属品・箱・鑑定書を揃えて査定に出す</span>
                 </div>
                 <div className="flex items-start gap-2 text-[#2C1810]">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <span>ご自身でクリーニングせず、現状のまま査定に出す</span>
                 </div>
                 <div className="flex items-start gap-2 text-[#2C1810]">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <span>需要が高い時期に売却する</span>
                 </div>
                 <div className="flex items-start gap-2 text-[#2C1810]">
-                  <span className="text-[#C9A96E] shrink-0 mt-0.5">&#10003;</span>
+                  <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
                   <span>事前に最低限の情報を調べる</span>
                 </div>
               </div>
               <a href={hikakaku.officialUrl} target="_blank" rel="noopener noreferrer"
-                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded-xl font-bold transition text-lg">
+                className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                 ヒカカク！で複数の業者に無料査定を依頼する
               </a>
             </div>
@@ -150,7 +148,7 @@ export default function TakakuUruPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               複数の買取業者の査定額を比較できます
@@ -158,7 +156,7 @@ export default function TakakuUruPage() {
             <p className="text-amber-200 mb-8">
               複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

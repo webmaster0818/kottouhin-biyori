@@ -73,9 +73,8 @@ export default function ReviewIndexPage() {
             </div>
           </div>
 
-          <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+          <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
-              <p className="text-[#D4A574] text-sm tracking-widest mb-4">REVIEW</p>
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 骨董品買取業者の口コミ・評判レビュー一覧
               </h1>
@@ -114,9 +113,9 @@ export default function ReviewIndexPage() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {reviewed.map((c) => (
-                  <article key={c.slug} className="bg-white rounded-2xl border border-[#E0D5C8] p-5 shadow-sm">
+                  <article key={c.slug} className="bg-white rounded border border-[#E0D5C8] p-5">
                     <div className="flex items-start gap-3 mb-3">
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-[#F5ECD7] text-[#8B4513] flex items-center justify-center text-sm font-bold">
+                      <span className="shrink-0 w-8 h-8 rounded-sm bg-[#F5ECD7] text-[#8B4513] flex items-center justify-center text-sm font-bold">
                         {c.rank}
                       </span>
                       <div className="flex-1">
@@ -159,7 +158,7 @@ export default function ReviewIndexPage() {
               </p>
             </section>
 
-            <section className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">レビューページの読み方</h2>
               <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
                 <li>・<strong>業態を確認する</strong>：骨董・古美術の専門業者か、総合リユース業者か、一括査定サービスかによって、得意な品目と査定の進め方が異なります。</li>
@@ -169,10 +168,10 @@ export default function ReviewIndexPage() {
                 <li>・<strong>複数の業者を比較する</strong>：1社だけでは、提示額が適正かどうかを判断できません。無料査定を複数の業者に依頼し、説明の内容も含めて比較してください。</li>
               </ul>
               <div className="mt-5 flex flex-wrap gap-3">
-                <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded-xl transition">
+                <Link href="/guide/gyosha-hikaku/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-8 py-3 rounded transition">
                   業者を目的別に比較する
                 </Link>
-                <Link href="/#ranking" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] font-bold px-8 py-3 rounded-xl hover:bg-[#FAF7F2] transition">
+                <Link href="/#ranking" className="inline-block bg-white border-2 border-[#8B4513] text-[#8B4513] font-bold px-8 py-3 rounded hover:bg-[#FAF7F2] transition">
                   おすすめの業者を確認する
                 </Link>
               </div>

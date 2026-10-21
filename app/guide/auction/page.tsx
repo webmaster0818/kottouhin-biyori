@@ -81,9 +81,8 @@ export default function AuctionPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">AUCTION GUIDE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品をオークションで売る方法<br className="hidden md:inline" />出品の手順と注意点
             </h1>
@@ -98,30 +97,29 @@ export default function AuctionPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
-            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded-2xl p-5 md:p-6 mb-8">
+            <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">オークションでの売却が適しているのは、次のような方です。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
                 骨董品の知識が豊富で、出品・梱包・発送の手間をかけられる方には、オークションが適しています。主な選択肢は、ヤフオク！（手数料10%）・メルカリ（10%）・美術品専門オークション（税込11〜16.5%程度）の3つです。一方、手間をかけずに確実に売りたい方や、真贋に関するトラブルを避けたい方には、手数料が不要で即日〜3日で現金化できる業者買取をおすすめします。まず業者の無料査定で相場を把握し、そのうえでオークションへの出品を検討する方法が適しています。
               </p>
             </div>
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">COMPARISON</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">オークションサービスの比較</h2>
             </div>
             <div className="space-y-6">
               {platforms.map((p, i) => (
-                <article key={i} className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+                <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center gap-3 mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{p.name}</h3>
-                    <span className="text-xs bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-full">{p.type}</span>
+                    <span className="text-xs bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-sm">{p.type}</span>
                   </div>
                   <div className="space-y-3 mb-4">
                     <div><p className="text-sm font-bold text-[#2C1810] mb-1">メリット</p><p className="text-[#5C4A3A] leading-relaxed text-sm">{p.merit}</p></div>
                     <div><p className="text-sm font-bold text-[#2C1810] mb-1">デメリット</p><p className="text-[#5C4A3A] leading-relaxed text-sm">{p.demerit}</p></div>
                   </div>
                   <div className="flex flex-wrap gap-4">
-                    <div className="bg-[#F5ECD7] rounded-xl px-4 py-2"><p className="text-xs text-[#8B4513]"><strong>手数料:</strong> {p.fee}</p></div>
-                    <div className="bg-[#F5ECD7] rounded-xl px-4 py-2"><p className="text-xs text-[#8B4513]"><strong>適している方:</strong> {p.bestFor}</p></div>
+                    <div className="bg-[#F5ECD7] rounded px-4 py-2"><p className="text-xs text-[#8B4513]"><strong>手数料:</strong> {p.fee}</p></div>
+                    <div className="bg-[#F5ECD7] rounded px-4 py-2"><p className="text-xs text-[#8B4513]"><strong>適している方:</strong> {p.bestFor}</p></div>
                   </div>
                 </article>
               ))}
@@ -132,15 +130,14 @@ export default function AuctionPage() {
         {/* 出品の注意点 */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">TIPS</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">出品時の注意点</h2>
             </div>
             <div className="space-y-6">
               {tips.map((t, i) => (
-                <div key={i} className="bg-[#FAF7F2] rounded-2xl border border-[#E0D5C8] p-6 md:p-8">
+                <div key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex gap-4 mb-3">
-                    <span className="w-8 h-8 shrink-0 rounded-full bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                    <span className="w-8 h-8 shrink-0 rounded-sm bg-[#C9A96E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
                     <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] pt-0.5">{t.title}</h3>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm">{t.text}</p>
@@ -153,11 +150,10 @@ export default function AuctionPage() {
         {/* 業者買取との比較 */}
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <p className="text-sm text-[#C9A96E] tracking-widest mb-2">AUCTION vs DEALER</p>
+            <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">オークションと業者買取の比較</h2>
             </div>
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -184,7 +180,7 @@ export default function AuctionPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               業者の無料査定で相場をご確認ください
@@ -192,7 +188,7 @@ export default function AuctionPage() {
             <p className="text-amber-200 mb-8">
               オークションに出品する前に、専門家の査定で適正価格を把握しておくことをおすすめします。
             </p>
-            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded-xl transition shadow-lg text-lg">
+            <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめ業者を見る
             </Link>
           </div>

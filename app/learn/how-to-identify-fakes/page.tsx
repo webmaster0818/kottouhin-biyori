@@ -47,9 +47,8 @@ export default function HowToIdentifyFakesPage() {
         </div>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#8B4513] via-[#6B3410] to-[#4A2508] text-white">
+        <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
-            <p className="text-[#D4A574] text-sm tracking-widest mb-4">EXPERT KNOWLEDGE</p>
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
               骨董品の贋作・偽物の見分け方
             </h1>
@@ -63,7 +62,7 @@ export default function HowToIdentifyFakesPage() {
         {/* 要点：最初に確認すべき真贋のポイント */}
         <section className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-[#F5ECD7] rounded-2xl border border-[#C9A96E] p-6 md:p-8">
+            <div className="bg-[#F5ECD7] rounded border border-[#C9A96E] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">
                 本物と偽物を見分けるために最初に確認する事項
               </h2>
@@ -78,7 +77,7 @@ export default function HowToIdentifyFakesPage() {
                   ["④ 価格の妥当性", "相場より極端に安い品や、条件の良すぎる取引には理由がある"],
                   ["⑤ 来歴と入手経路", "信頼できる業者・経路か、来歴に不自然な点がないか"],
                 ].map(([h, b]) => (
-                  <li key={h} className="bg-white rounded-xl border border-[#E0D5C8] p-4">
+                  <li key={h} className="bg-white rounded border border-[#E0D5C8] p-4">
                     <p className="font-bold text-[#8B4513] mb-1">{h}</p>
                     <p className="text-[#5C4A3A] leading-relaxed text-[13px]">{b}</p>
                   </li>
@@ -94,7 +93,7 @@ export default function HowToIdentifyFakesPage() {
         {/* 「これがある骨董品は本物」への回答 */}
         <section id="real-signs" className="pt-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">
                 「これがある骨董品は本物」という考え方について：本物である可能性を示す5つの要素
               </h2>
@@ -109,8 +108,8 @@ export default function HowToIdentifyFakesPage() {
                   ["来歴（展覧会の出品歴・図録掲載・旧蔵歴）", "展覧会の出品票、図録への掲載、旧所蔵者の記録など、品物の経緯を示す資料は、真贋判定の有力な根拠となります。"],
                   ["矛盾のない自然な経年変化", "紙の焼け、釉薬の貫入、漆の艶の落ち着きなど、素材全体が同じ時間を経てきたことを示す均一な古色は、人工的に再現しにくい要素です。"],
                 ].map(([h, b], i) => (
-                  <div key={h} className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl border border-[#E0D5C8] p-4">
-                    <span className="shrink-0 w-7 h-7 rounded-full bg-[#8B4513] text-white text-sm font-bold flex items-center justify-center">{i + 1}</span>
+                  <div key={h} className="flex items-start gap-3 bg-[#FAF7F2] rounded border border-[#E0D5C8] p-4">
+                    <span className="shrink-0 w-7 h-7 rounded-sm bg-[#8B4513] text-white text-sm font-bold flex items-center justify-center">{i + 1}</span>
                     <div>
                       <p className="font-bold text-[#8B4513] mb-1 text-sm">{h}</p>
                       <p className="text-[13px] text-[#5C4A3A] leading-relaxed">{b}</p>
@@ -128,7 +127,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Table of Contents */}
         <section className="py-10">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-8">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
               <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-4">目次</h2>
               <ol className="space-y-2 text-sm text-[#5C4A3A]">
                 <li><a href="#why-fakes" className="hover:text-[#8B4513] transition">1. 骨董品に贋作が多い理由</a></li>
@@ -149,7 +148,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 1: Why Fakes */}
         <section id="why-fakes" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 1. 骨董品に贋作が多い理由
               </h2>
@@ -185,7 +184,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 2: Types */}
         <section id="types" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 2. 贋作の3つの種類
               </h2>
@@ -193,19 +192,19 @@ export default function HowToIdentifyFakesPage() {
                 <p>贋作といっても、その性質はさまざまです。大きく分けて、以下の3種類に分類されます。</p>
 
                 <div className="space-y-4">
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">完全な偽物</h3>
                     <p className="text-sm">
                       最初から贋作として作られたものです。著名な作家の落款や銘を偽造し、一から制作されます。近年は技術の進歩により、非常に精巧な贋作が作られるようになっており、専門知識がなければ判別が困難です。中国からの輸入品が、日本の古い陶磁器として販売される例も報告されています。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">後から手を加えたもの（改変品）</h3>
                     <p className="text-sm">
                       元は本物の品に、価値を高めるために後から手が加えられたものです。無銘の陶磁器に有名窯の銘を後から入れる、掛軸に偽の落款を押す、刀剣に偽銘を切るなどの手口があります。素材そのものは時代相応のものであるため、年代測定では見抜けない点に注意が必要です。
                     </p>
                   </div>
-                  <div className="bg-[#FAF7F2] rounded-xl p-5 border border-[#E0D5C8]">
+                  <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                     <h3 className="font-bold text-[#8B4513] mb-2">誤った鑑定（誤認品）</h3>
                     <p className="text-sm">
                       悪意なく誤った鑑定がなされたものです。鑑定者の知識不足や、後年の再鑑定によって真贋の判断が覆る場合もあります。特に、口伝えで特定の作家の作品と信じられてきたものが、調査の結果、別の作者のものだったという例は珍しくありません。
@@ -220,7 +219,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 3: Kakejiku */}
         <section id="kakejiku" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 3. 掛軸の真贋判定ポイント
               </h2>
@@ -257,7 +256,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 4: Toujiki */}
         <section id="toujiki" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 4. 陶磁器の真贋判定ポイント
               </h2>
@@ -297,7 +296,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 5: Sadougu */}
         <section id="sadougu" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 5. 茶道具の真贋判定ポイント
               </h2>
@@ -334,7 +333,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 6: Kaiga */}
         <section id="kaiga" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 6. 絵画の真贋判定ポイント
               </h2>
@@ -343,7 +342,7 @@ export default function HowToIdentifyFakesPage() {
                   <Link href="/category/kaiga" className="text-[#8B4513] underline hover:no-underline">絵画</Link>の贋作は特に巧妙なものが多く、世界的に著名な美術館でも贋作が発覚した事例があります。
                 </p>
 
-                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded-2xl p-5 not-prose">
+                <div className="bg-[#FAF7F2] border border-[#E0D5C8] rounded p-5 not-prose">
                   <p className="font-bold text-[#8B4513] mb-2 text-base">人気作家は「肉筆・版画・複製」の種別の確認から始めてください</p>
                   <p className="text-sm mb-4">
                     人気の高い作家ほど、肉筆・版画・オフセット印刷の複製画が、同じ図柄で流通しています。真贋の前に種別を確認するだけでも、判断の見通しが立ちます。作家ごとの種別の見分け方と査定の確認点は、下記のページでご説明しています。
@@ -353,7 +352,7 @@ export default function HowToIdentifyFakesPage() {
                       ["higashiyama-kaii", "東山魁夷"], ["fujita-tsuguharu", "藤田嗣治"],
                       ["kayama-matazo", "加山又造"], ["sugiyama-yasushi", "杉山寧"],
                     ].map(([slug, name]) => (
-                      <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-full border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
+                      <Link key={slug} href={`/artist/${slug}/`} className="inline-flex items-center rounded-sm border border-[#D4A574] bg-white px-4 py-2 text-sm font-bold text-[#8B4513] hover:bg-[#F5EEE4] transition">
                         {name}の買取・査定
                       </Link>
                     ))}
@@ -385,7 +384,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 7: Touken */}
         <section id="touken" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 7. 刀剣の真贋判定ポイント
               </h2>
@@ -422,7 +421,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 8: Pro Eyes */}
         <section id="pro-eyes" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 8. 鑑定士が確認するポイント
               </h2>
@@ -453,7 +452,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 9: Five Rules */}
         <section id="five-rules" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 9. 贋作を購入しないための5つの注意点
               </h2>
@@ -487,7 +486,7 @@ export default function HowToIdentifyFakesPage() {
                     },
                   ].map((item) => (
                     <div key={item.num} className="flex gap-5">
-                      <div className="w-10 h-10 shrink-0 rounded-full bg-[#8B4513] text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold">
                         {item.num}
                       </div>
                       <div className="flex-1 pb-6 border-b border-[#E0D5C8] last:border-b-0 last:pb-0">
@@ -505,7 +504,7 @@ export default function HowToIdentifyFakesPage() {
         {/* Section 10: When to Appraise */}
         <section id="when-to-appraise" className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 10. 鑑定を依頼すべきケース
               </h2>
@@ -513,23 +512,23 @@ export default function HowToIdentifyFakesPage() {
                 <p>以下のような場合は、ご自身で判断せず、専門の鑑定士に依頼することを強くおすすめします。</p>
 
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]">
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]">
                     <span className="text-[#C9A96E] shrink-0 mt-0.5">●</span>
                     <span><strong className="text-[#8B4513]">遺品整理や蔵の整理で見つかった品物:</strong> 価値がわからないまま処分すると、高額な品物を手放してしまう可能性があります。まとめて査定を依頼してください。</span>
                   </li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]">
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]">
                     <span className="text-[#C9A96E] shrink-0 mt-0.5">●</span>
                     <span><strong className="text-[#8B4513]">作家名や窯元がわからない品物:</strong> 無銘でも優れた品物は多く存在します。専門家による適正な評価を受けることが大切です。</span>
                   </li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]">
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]">
                     <span className="text-[#C9A96E] shrink-0 mt-0.5">●</span>
                     <span><strong className="text-[#8B4513]">真贋に不安がある品物:</strong> 本物かどうかわからないままでは、適切な判断ができません。専門家の鑑定で確認してください。</span>
                   </li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]">
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]">
                     <span className="text-[#C9A96E] shrink-0 mt-0.5">●</span>
                     <span><strong className="text-[#8B4513]">相続・財産分与が関わる場合:</strong> 相続財産としての正確な評価が必要な場合は、鑑定書を発行できる専門機関に依頼してください。</span>
                   </li>
-                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded-xl p-4 border border-[#E0D5C8]">
+                  <li className="flex items-start gap-3 bg-[#FAF7F2] rounded p-4 border border-[#E0D5C8]">
                     <span className="text-[#C9A96E] shrink-0 mt-0.5">●</span>
                     <span><strong className="text-[#8B4513]">売却を検討している場合:</strong> 買取業者の無料査定を利用すれば、費用をかけずに専門家の鑑定を受けられます。複数の業者に依頼することで、より正確な市場価値を把握できます。</span>
                   </li>
@@ -544,22 +543,22 @@ export default function HowToIdentifyFakesPage() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-6">関連記事</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/learn/honmono-mikiwake" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/honmono-mikiwake" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">本物の可能性を示す5つの判断材料</h3>
                 <p className="text-sm text-[#5C4A3A]">単独で本物と断定できる決め手の有無と、本物の可能性を高める要素を注意点とあわせてご説明します。</p>
               </Link>
-              <Link href="/learn/kagaku-kantei" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/kagaku-kantei" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">贋作の科学的鑑定でわかること・わからないこと</h3>
                 <p className="text-sm text-[#5C4A3A]">蛍光X線分析・放射性炭素年代測定など、科学的な真贋鑑定の仕組みと適用範囲をご説明します。</p>
               </Link>
-              <Link href="/learn/gansaku-nisemono-chigai" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/gansaku-nisemono-chigai" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">贋作・偽物・模造・写しの違い</h3>
                 <p className="text-sm text-[#5C4A3A]">紛らわしい真贋用語を、だます意図の有無で整理しています。査定前に確認すべき基礎知識です。</p>
               </Link>
-              <Link href="/learn/what-is-kottouhin" className="bg-white rounded-xl border border-[#E0D5C8] p-5 hover:shadow-md transition group">
+              <Link href="/learn/what-is-kottouhin" className="bg-white rounded border border-[#E0D5C8] p-5 transition group">
                 <p className="text-xs text-[#C9A96E] mb-1">LEARN</p>
                 <h3 className="font-bold text-[#2C1810] group-hover:text-[#8B4513] transition mb-2">骨董品の定義・歴史・分類</h3>
                 <p className="text-sm text-[#5C4A3A]">骨董品の基礎知識をご説明します。初めての方は、こちらをご覧ください。</p>
@@ -571,7 +570,7 @@ export default function HowToIdentifyFakesPage() {
         {/* FAQ */}
         <section className="pb-12">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white rounded-2xl shadow-md border border-[#E0D5C8] p-6 md:p-10">
+            <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">
                 よくある質問
               </h2>
@@ -597,7 +596,7 @@ export default function HowToIdentifyFakesPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-[#8B4513] to-[#6B3410] text-white">
+        <section className="py-16 bg-[#3B2416] text-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">
               専門家による鑑定のご案内
@@ -608,17 +607,17 @@ export default function HowToIdentifyFakesPage() {
             </p>
             <div className="grid sm:grid-cols-3 gap-4 mb-6">
               <a href="https://hikakaku.com" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">一括査定で比較</span>
                 ヒカカク！
               </a>
               <a href="https://www.tifana.net" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">まとめて売るなら</span>
                 ティファナ
               </a>
               <a href="https://www.uriel-cuore.co.jp" target="_blank" rel="noopener noreferrer"
-                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded-xl transition shadow-lg text-center">
+                className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
                 <span className="block text-xs mb-1">出張買取専門</span>
                 ウリエル
               </a>
@@ -637,19 +636,19 @@ export default function HowToIdentifyFakesPage() {
               本物の証明や、売却時の評価の裏付けに利用される主な鑑定機関です。
             </p>
             <div className="grid md:grid-cols-2 gap-3 text-sm">
-              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">東京美術倶楽部</p>
                 <p className="text-xs text-[#8B7D72]">日本画・洋画・書・工芸品の鑑定評価</p>
               </a>
-              <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">日本美術刀剣保存協会</p>
                 <p className="text-xs text-[#8B7D72]">刀剣の鑑定書(保存刀剣・特別保存刀剣等)発行</p>
               </a>
-              <a href="https://www.kottou-kaitori.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://www.kottou-kaitori.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">日本陶磁協会</p>
                 <p className="text-xs text-[#8B7D72]">陶磁器の鑑定・研究機関</p>
               </a>
-              <a href="https://syoukokai.jp/art/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded-xl p-4 hover:bg-[#F5ECD7] transition">
+              <a href="https://syoukokai.jp/art/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">公益財団法人 頌古会</p>
                 <p className="text-xs text-[#8B7D72]">内閣府認定。美術品・古美術・絵画の鑑定</p>
               </a>
