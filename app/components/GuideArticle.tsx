@@ -32,6 +32,7 @@ export interface GuideArticleProps {
   ctaUrl: string; // CTAリンク先(公式 or /#ranking)
   faq?: GuideFaq[];
   deepDive?: { h: string; body: string }[]; // 追加の詳しい解説セクション
+  updatedAt?: string; // 指定時はヒーローに「最終更新」を出し、Article の dateModified に使う（例: "2026-10-23"）
   tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典つき）
 }
 
@@ -51,7 +52,7 @@ export default function GuideArticle(p: GuideArticleProps) {
     headline: p.title,
     description: p.subtitle,
     datePublished: "2026-06-07T00:00:00+09:00",
-    dateModified: "2026-06-07T00:00:00+09:00",
+    dateModified: p.updatedAt ? `${p.updatedAt}T00:00:00+09:00` : "2026-06-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` },
     publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -83,6 +84,11 @@ export default function GuideArticle(p: GuideArticleProps) {
             <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
               <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">{p.title}</h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">{p.subtitle}</p>
+              {p.updatedAt && (
+                <p className="mt-4 text-sm text-amber-200/80">
+                  最終更新：{(() => { const [y, m, d] = p.updatedAt.split("-").map(Number); return `${y}年${m}月${d}日`; })()}
+                </p>
+              )}
             </div>
           </section>
 
