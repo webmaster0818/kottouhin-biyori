@@ -2323,7 +2323,7 @@
     "category": "茶道具",
     "categorySlug": "sadougu",
     "era": "安土桃山〜現代",
-    "born": "初代1516頃",
+    "born": "初代 長次郎は生年不詳（天正17年〈1589年〉没）",
     "died": "現在16代目",
     "description": "千利休の意を受けて茶碗を制作した、楽焼の家元です。千家十職の一つで、黒楽・赤楽茶碗は茶道を象徴する存在です。",
     "works": [
@@ -2331,7 +2331,7 @@
       "赤楽茶碗",
       "光悦写し茶碗"
     ],
-    "priceRange": "10万〜2,000万円",
+    "priceRange": "2万〜989万円",
     "checkPoints": [
       "何代目かで価値が大幅に異なる",
       "楽印の真贋確認が必須",
@@ -2340,7 +2340,7 @@
     "bio": "楽吉左衛門は、桃山期の初代・長次郎に始まる楽焼の名跡で、千利休の侘茶を体現する茶碗を代々作り続けています。手捏ねと低火度焼成による楽茶碗は、茶道具の最高峰の一つとされます。",
     "marketNote": "代によって評価が異なり、黒楽・赤楽の名碗は高額です。箱・極め・伝来の確認が不可欠です。",
     "auctionResults": {
-      "verifiedAt": "2026年7月3日",
+      "verifiedAt": "2026年10月25日",
       "sourceLabel": "シンワオークション公式落札結果PDF（何代の作かで相場が一桁変わるため代数を明記）",
       "rangeNote": "樂家は歴代襲名のため、何代の作かによって相場が一桁変わります。十五代（直入）の茶碗は、シンワオークションの実績（手数料込・2023〜2025年）で155万〜989万円です（焼貫・黒の大振りの優品が500万〜990万円、赤茶碗が155万円前後）。一方、歴代の旧世代の作は、一入（四代）の黒茶碗41.4万円など、40万円前後の例も確認しています。代数と箱書の確認が、査定の出発点となります。",
       "results": [
@@ -2373,7 +2373,185 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
         }
       ]
-    }
+    },
+    "priceLabel": "公開買取実績・落札価格（樂家歴代）",
+    "priceRangeNote": "緑和堂が公開している樂家歴代の買取実績17件（2万〜200万円・2023〜2026年）と、シンワオークションの落札価格（手数料込、41.4万〜989万円・2023〜2025年）の最小〜最大です（2026年10月25日確認）。最も低い2万円は十代 旦入の蓋置、最も高い989万円は十五代 直入の黒茶碗「雪雷晦冥」です。何代の作か、器種、家元の書付の有無で金額が大きく変わります。",
+    "kaitoriResults": {
+      "verifiedAt": "2026年10月25日",
+      "note": "緑和堂が公式サイトの「楽焼の買取実績」で価格と日付つきで公開している、樂家歴代（三代 道入〜十五代 直入）の作品の買取実績です。",
+      "editionHeader": "書付・備考（掲載内容）",
+      "footNote": "※ 緑和堂が公開している過去の買取事例です。緑和堂は「買取価格は当日の価格であり、その価格を保証するものではありません」と記載しています。同じ代でも、器種・書付の有無・状態によって金額は大きく変わります。",
+      "results": [
+        {
+          "title": "三代 樂道入（ノンコウ）黒茶碗『クロ鶴』",
+          "edition": "楽焼・樂家三代",
+          "price": "2,000,000円",
+          "shop": "緑和堂",
+          "date": "2026年9月10日",
+          "method": "出張買取（東京都目黒区）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "三代 樂道入（ノンコウ）『黒茶碗』",
+          "edition": "又玄斎・鵬雲斎の箱書あり",
+          "price": "1,500,000円",
+          "shop": "緑和堂",
+          "date": "2025年3月31日",
+          "method": "店頭買取（福岡市中央区）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十五代 樂吉左衛門（直入）赤茶碗 銘『朝陽』",
+          "edition": "鵬雲斎書付",
+          "price": "1,000,000円",
+          "shop": "緑和堂",
+          "date": "2026年5月30日",
+          "method": "出張買取（徳島県徳島市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十四代 樂吉左衛門（覚入）『黒茶碗』",
+          "edition": "鵬雲斎書付",
+          "price": "800,000円",
+          "shop": "緑和堂",
+          "date": "2024年12月29日",
+          "method": "出張買取（宮崎県宮崎市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十三代 樂吉左衛門（惺入）『大福茶碗』",
+          "edition": "—",
+          "price": "550,000円",
+          "shop": "緑和堂",
+          "date": "2023年2月17日",
+          "method": "出張買取（大阪府豊中市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十一代 樂慶入『黒樂茶碗』",
+          "edition": "—",
+          "price": "400,000円",
+          "shop": "緑和堂",
+          "date": "2026年6月27日",
+          "method": "店頭買取（東京都目黒区）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "六代 樂左入『黒筒茶碗 明烏写』",
+          "edition": "旦入極",
+          "price": "200,000円",
+          "shop": "緑和堂",
+          "date": "2026年9月10日",
+          "method": "出張買取（千葉県千葉市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十代 樂旦入『赤茶碗 象太郎写』",
+          "edition": "—",
+          "price": "200,000円",
+          "shop": "緑和堂",
+          "date": "2026年9月10日",
+          "method": "出張買取（神奈川県横須賀市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十一代 樂慶入 黒筒茶碗『冬木立』",
+          "edition": "淡々斎書付",
+          "price": "200,000円",
+          "shop": "緑和堂",
+          "date": "2024年10月7日",
+          "method": "出張買取（福岡県飯塚市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十代 樂吉左衛門（旦入）『赤筒茶碗』",
+          "edition": "—",
+          "price": "150,000円",
+          "shop": "緑和堂",
+          "date": "2026年1月23日",
+          "method": "出張買取（福岡市南区）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "九代 樂了入『赤茶碗』",
+          "edition": "—",
+          "price": "150,000円",
+          "shop": "緑和堂",
+          "date": "2026年3月31日",
+          "method": "出張買取（福岡県大野城市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十三代 樂吉左衛門（惺入）『赤楽茶碗』",
+          "edition": "—",
+          "price": "100,000円",
+          "shop": "緑和堂",
+          "date": "2024年6月18日",
+          "method": "出張買取（長崎県長崎市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十二代 樂吉左衛門『黒焼茶碗』",
+          "edition": "—",
+          "price": "100,000円",
+          "shop": "緑和堂",
+          "date": "2023年8月19日",
+          "method": "出張買取（神奈川県海老名市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十三代 樂吉左衛門（惺入）『初午茶碗』",
+          "edition": "即中斎書付",
+          "price": "55,000円",
+          "shop": "緑和堂",
+          "date": "2024年3月30日",
+          "method": "店頭買取（大阪府堺市堺区）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "四代 樂一入『カラン香合』",
+          "edition": "旦入識箱",
+          "price": "30,000円",
+          "shop": "緑和堂",
+          "date": "2026年10月19日",
+          "method": "出張買取（福岡県福津市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十四代 樂吉左衛門『赤平茶碗 青海波』",
+          "edition": "即中斎書付。同じ代でも作品により金額が大きく異なります",
+          "price": "27,000円",
+          "shop": "緑和堂",
+          "date": "2026年1月6日",
+          "method": "出張買取（徳島県阿南市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        },
+        {
+          "title": "十代 樂吉左衛門（旦入）『赤楽 翁草画 蓋置』",
+          "edition": "—",
+          "price": "20,000円",
+          "shop": "緑和堂",
+          "date": "2024年7月1日",
+          "method": "出張買取（福岡県筑紫野市）",
+          "sourceUrl": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        }
+      ]
+    },
+    "references": {
+      "verifiedAt": "2026年10月25日",
+      "items": [
+        {
+          "label": "樂美術館「樂家歴代」（初代 長次郎〈生年不詳〜天正17年〉〜十六代 吉左衞門）",
+          "url": "https://raku-yaki.or.jp/history/successive.html"
+        },
+        {
+          "label": "緑和堂「楽焼の買取実績」",
+          "url": "https://www.ryokuwado.com/genre/ceramics/raku/"
+        }
+      ]
+    },
+    "referencesHeading": "参考資料（樂美術館・買取業者の公開実績）",
+    "dateModified": "2026-10-25"
   },
   {
     "name": "中村宗哲",
