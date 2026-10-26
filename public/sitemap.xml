@@ -330,7 +330,7 @@
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
     <lastmod>2026-10-26</lastmod>
     <loc>https://kottokaitori-biyori.com/review/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1242,7 +1242,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/review/tifana/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1266,7 +1266,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/gyosha-hikaku/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
