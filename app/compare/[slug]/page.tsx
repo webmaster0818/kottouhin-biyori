@@ -237,8 +237,10 @@ export default async function ComparePage({ params }: Props) {
           <section className="py-16 bg-[#3B2416] text-white">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold mb-4">複数の買取業者の査定額を比較できます</h2>
-              <p className="text-amber-200 mb-8">複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。</p>
-              <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
+              {!c.hideMultiQuoteNote && (
+                <p className="text-amber-200 mb-8">複数の業者に査定を依頼すると、品物ごとの適正な価格を把握しやすくなります。</p>
+              )}
+              <Link href="/#ranking" className={`inline-block ${c.hideMultiQuoteNote ? "mt-4 " : ""}bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg`}>
                 おすすめの業者を確認する
               </Link>
             </div>

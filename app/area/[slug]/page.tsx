@@ -17,10 +17,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!area) return {};
   return {
     title: `${area.fullName}の骨董品・美術品買取おすすめ業者｜骨董品買取びより`,
-    description: `${area.fullName}で骨董品・美術品を売却する際の業者選びについて、絵画・掛軸・茶道具・陶磁器・刀剣などに対応する${area.fullName}対応の買取業者3社を比較しています。出張買取・宅配買取の対応状況もご説明します。`,
+    description: `${area.fullName}で骨董品・美術品を売却する際の業者選びについて、絵画・掛軸・茶道具・陶磁器・刀剣などを扱う買取業者${companies.length}社の対応エリア・買取方法を掲載しています。出張買取・宅配買取の対応状況もご説明します。`,
     alternates: { canonical: `/area/${slug}` },
   };
 }
+
+// おすすめ業者の公式の対応エリアに、そのエリアが含まれていない場合の注記（2026-10-26 公式確認）
+const URIEL_AREA = "ウリエル公式の出張買取ページ（uriel-cuore.co.jp/visit/）の買取対応エリアは、関東・中部・近畿・中国・四国・九州の各府県（沖縄県は対象外）";
+const bestOutOfAreaNote: Record<string, string> = {
+  sendai: `${URIEL_AREA}で、宮城県は含まれていません。宅配買取の案内も、公式サイトでは確認できません（2026年10月26日確認）。宮城県での出張買取は、ほかの業者の対応エリアをご確認ください。`,
+  niigata: `${URIEL_AREA}で、新潟県は含まれていません。宅配買取の案内も、公式サイトでは確認できません（2026年10月26日確認）。新潟県での出張買取は、ほかの業者の対応エリアをご確認ください。`,
+};
 
 const sellingTips: Record<string, { title: string; text: string }[]> = {
   osaka: [
@@ -261,6 +268,7 @@ export default async function AreaPage({ params }: Props) {
   if (!area) return <div>エリアが見つかりません</div>;
 
   const bestCompany = companies.find((c) => c.id === area.bestCompany);
+  const bestOutNote = bestOutOfAreaNote[slug];
   const tips = sellingTips[slug] || [];
   const markets = localMarkets[slug] || [];
   const popularItems = localPopularItems[slug] || [];
@@ -292,7 +300,7 @@ export default async function AreaPage({ params }: Props) {
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
   };
-  const localBusinessSchema = bestCompany ? {
+  const localBusinessSchema = bestCompany && !bestOutNote ? {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": `${area.fullName}の骨董品買取サービス（${bestCompany.name}）`,
@@ -309,7 +317,7 @@ export default async function AreaPage({ params }: Props) {
   ];
   // エリアFAQ(地域名から生成)
   const areaFaqs = [
-    { q: `${area.fullName}で骨董品を売るならどこがおすすめ？`, a: `${area.fullName}に対応する買取業者の複数に査定を依頼し、最も高い金額を提示した業者に売却するのが基本です。${bestCompany ? `当サイトでは、${bestCompany.name}を含む実績のある業者を比較しています。` : ""}出張・宅配・店頭から、ご都合に合う方法をお選びください。` },
+    { q: `${area.fullName}で骨董品を売るならどこがおすすめ？`, a: `${area.fullName}に対応する買取業者の複数に査定を依頼し、最も高い金額を提示した業者に売却するのが基本です。${bestCompany && !bestOutNote ? `当サイトでは、${bestCompany.name}を含む実績のある業者を比較しています。` : ""}出張・宅配・店頭から、ご都合に合う方法をお選びください。` },
     { q: `${area.fullName}は出張買取に対応していますか？`, a: `多くの買取業者が、${area.fullName}を出張買取の対応エリアとしています。出張費は無料の業者が大半ですが、申し込みの際にご確認ください。` },
     { q: `${area.fullName}で査定だけ受けることはできますか？`, a: `可能です。査定は無料の業者がほとんどで、金額に納得できなければ売却しなくても問題ありません。複数の業者を比較することをおすすめします。` },
   ];
@@ -349,7 +357,7 @@ export default async function AreaPage({ params }: Props) {
                 ②<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家</Link>・品目を特定して
                 <Link href="/guide/souba-database/" className="text-[#8B4513] underline">実際の落札相場</Link>を把握する、
                 ③出張・宅配・店頭から都合に合う方法を選ぶ、の3つの手順が基本です。
-                {area.fullName}では、{bestCompany ? `${bestCompany.name}などの` : ""}出張・宅配に対応した業者を利用すれば、来店せずに査定を受けられます。
+                {area.fullName}では、{bestCompany && !bestOutNote ? `${bestCompany.name}などの` : ""}出張・宅配に対応した業者を利用すれば、来店せずに査定を受けられます。
               </p>
               <div className="flex flex-wrap gap-2">
                 <Link href="/guide/souba-database/" className="text-xs font-bold bg-[#8B4513] text-white rounded-lg px-3 py-2 hover:bg-[#6B3410] transition">落札相場データベース</Link>
@@ -396,8 +404,9 @@ export default async function AreaPage({ params }: Props) {
           <div className="max-w-5xl mx-auto px-4">
             <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                {area.fullName}対応の買取業者3社
+                買取業者の対応エリアと買取方法（{companies.length}社）
               </h2>
+              <p className="text-[#5C4A3A] mt-3 text-sm">{area.fullName}が対象かどうかは、各社の「対応エリア」欄と公式サイトでご確認ください。</p>
             </div>
             <div className="space-y-6">
               {companies.map((company) => {
@@ -409,6 +418,11 @@ export default async function AreaPage({ params }: Props) {
                         <div className="bg-[#F5ECD7] text-[#8B4513] text-xs font-bold px-3 py-1.5 rounded-sm inline-block mb-3">
                           {area.fullName}でのおすすめ
                         </div>
+                      )}
+                      {isBest && bestOutNote && (
+                        <p className="text-sm text-[#8B4513] bg-[#FAF7F2] border border-[#E0D5C8] rounded p-3 mb-3 leading-relaxed">
+                          {bestOutNote}
+                        </p>
                       )}
                       <div className="flex items-start gap-4 mb-4">
                         <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg shrink-0`}>
