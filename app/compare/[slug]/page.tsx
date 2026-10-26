@@ -23,6 +23,8 @@ type Compare = {
   summary: string;
   faq: { q: string; a: string }[];
   analysis?: string[];
+  // 同じグループの2社を比べるページでは「複数の業者に一括査定」の案内を出さない
+  hideMultiQuoteNote?: boolean;
 };
 
 const SITE = "https://kottokaitori-biyori.com";
@@ -182,9 +184,11 @@ export default async function ComparePage({ params }: Props) {
               </div>
               <div className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-10">
                 <p className="text-[#5C4A3A] leading-relaxed mb-6">{c.summary}</p>
-                <p className="text-sm text-[#8B4513] mb-4">
-                  判断に迷う場合は、複数の業者に一括査定を依頼し、実際の査定額で比較することをおすすめします。
-                </p>
+                {!c.hideMultiQuoteNote && (
+                  <p className="text-sm text-[#8B4513] mb-4">
+                    判断に迷う場合は、複数の業者に一括査定を依頼し、実際の査定額で比較することをおすすめします。
+                  </p>
+                )}
                 <Link href="/#ranking" className="block bg-[#8B4513] hover:bg-[#6B3410] text-white text-center py-4 rounded font-bold transition text-lg">
                   おすすめの業者を確認する
                 </Link>
