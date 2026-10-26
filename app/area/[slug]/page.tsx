@@ -85,7 +85,6 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
   ],
   osaka: [
     { name: "四天王寺骨董市", place: "四天王寺", schedule: "毎月21・22日", note: "毎月21日(お大師さん)・22日(お太子さん)の縁日。21日の大師会には境内に露店が並ぶ" },
-    { name: "天神さんの蚤の市", place: "大阪天満宮", schedule: "毎月25日", note: "学問の神様の月次縁日と合わせて開催" },
     { name: "大阪美術倶楽部", place: "大阪美術倶楽部", schedule: "入札会・交換会(業者向け)", note: "大阪美術商協同組合(組合員408名・2025年3月現在)が美術品の入札会・交換会を開く会場" },
   ],
   nagoya: [
@@ -95,28 +94,9 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
   kyoto: [
     { name: "弘法市", place: "東寺(教王護国寺)", schedule: "毎月21日", note: "東寺公式によると、毎月21日に境内が1000店近くの露店で賑わう" },
     { name: "天神市", place: "北野天満宮", schedule: "毎月25日", note: "北野天満宮公式によると、毎月25日に境内一円で開催。1月の初天神・12月の終い天神には約千軒の露店が並ぶ" },
-    { name: "祇園骨董街", place: "祇園・新門前通", schedule: "常設店舗", note: "京都の老舗骨董店が集まる地域。茶道具・古美術を扱う店舗が多い" },
   ],
   yokohama: [
     { name: "横浜骨董ワールド", place: "横浜産貿ホール マリネリア(山下公園前)", schedule: "年2回(6月・10月)", note: "和洋の骨董・アンティークを扱う屋内イベント。次回は2027年6月19・20日(主催者公式)" },
-    { name: "本牧骨董市", place: "本牧公園", schedule: "随時", note: "西洋骨董が多い" },
-  ],
-  fukuoka: [
-    { name: "太宰府骨董市", place: "太宰府天満宮", schedule: "毎月25日", note: "九州陶磁器・有田焼が中心" },
-    { name: "博多大丸催事", place: "博多大丸", schedule: "年複数回", note: "百貨店催事として骨董市が開催される" },
-  ],
-  kobe: [
-    { name: "湊川神社骨董市", place: "湊川神社", schedule: "毎月第3日曜", note: "湊川神社の境内で開かれる骨董市" },
-    { name: "明石公園アンティークマーケット", place: "明石公園", schedule: "年複数回", note: "西洋アンティーク中心" },
-  ],
-  sapporo: [
-    { name: "創成川公園アンティークマーケット", place: "創成川公園", schedule: "5〜10月の月1回", note: "アイヌ工芸品や開拓期の古道具も並ぶ" },
-  ],
-  sendai: [
-    { name: "仙台朝市", place: "仙台朝市商店街", schedule: "日曜・祝日休み", note: "鮮魚・青果・精肉・惣菜などを扱う市場。骨董品の出店は公式サイトで確認できません" },
-  ],
-  hiroshima: [
-    { name: "縮景園骨董市", place: "縮景園", schedule: "年2回", note: "広島藩主の庭園で開催される骨董市" },
   ],
   utsunomiya: [
     { name: "益子陶器市", place: "栃木県益子町 城内坂周辺", schedule: "春(GW)・秋(11月3日前後)", note: "1966年に始まった陶器市。販売店約50店舗のほか約800以上のテントが並び、春秋あわせて約60万人の人出(益子町観光協会)" },
@@ -150,7 +130,6 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
     { name: "浜松骨董まつり", place: "グランドホテル浜松(静岡県浜松市)", schedule: "1月1〜3日(2024年の開催実績)", note: "ホテルの正月催事として開かれる骨董の展示即売会。2025年以降の開催は公式情報で確認できていません" },
   ],
   kanazawa: [
-    { name: "かなざわ骨董フェア", place: "石川県産業展示館(金沢市袋畠町)", schedule: "春・秋の年2回(3日間)", note: "全国の骨董店約70店が出店し約3万点を展示即売する骨董市" },
     { name: "石川護國神社 蚤の市", place: "石川護國神社 境内(金沢市石引)", schedule: "毎月第2日曜(8時〜14時)", note: "神社境内で開かれる蚤の市。美術品・工芸品・家庭用品などが出品される(石川護國神社公式)" },
   ],
   niigata: [
@@ -180,9 +159,6 @@ const localMarkets: Record<string, { name: string; place: string; schedule: stri
   kumamoto: [
     { name: "おしろ蚤の市", place: "熊本県護国神社 境内(熊本城二の丸広場隣接)", schedule: "不定期(次回vol.8は中止と告知)", note: "骨董・古道具・古着・雑貨など県内外の店約80店が出店する蚤の市(主催者公式SNS)" },
     { name: "古町蚤の市", place: "カリーノMSビル(熊本市中央区)", schedule: "定期開催(屋内)", note: "古道具・アンティーク・古着・雑貨などが並ぶ古町地区の屋内蚤の市(公式サイト)" },
-  ],
-  kagoshima: [
-    { name: "九州骨董祭り", place: "上床公園 溝辺体育館(霧島市溝辺町)", schedule: "年複数回(7・9・11月など)", note: "全国から約40店の骨董商が集まり陶磁器・漆器・古布などを扱う骨董市" },
   ],
 };
 
