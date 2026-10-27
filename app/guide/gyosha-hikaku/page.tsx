@@ -23,7 +23,7 @@ const byRank = [...(companies as C[])].sort((a, b) => (a.rank ?? 99) - (b.rank ?
 const purposes = [
   { h: "骨董・古美術の専門性で選ぶ場合", b: "専門的な鑑定による適正な査定額を重視する方には、骨董・古美術の専門業者が適しています。", ids: ["nikkoudou", "ryokuwado", "hakkoudo", "eizawa"] },
   { h: "大手の体制と実績で選ぶ場合", b: "上場企業・大手業者の体制と実績を重視する方に適しています。", ids: ["buysell", "nanboya", "fukuchan"] },
-  { h: "自宅への出張買取を利用する場合", b: "自宅での査定を希望する方に適しています。永澤・美観堂は全国、ウリエルは関東〜九州（沖縄を除く）が対象です（各社公式サイトの記載）。", ids: ["uriel", "eizawa", "bikando"] },
+  { h: "自宅への出張買取を利用する場合", b: "自宅での査定を希望する方に適しています。永澤・美観堂は全国、ウリエルは関東・岐阜・静岡・愛知・近畿・中国・四国・九州（沖縄県は対象外）が対象です（各社公式サイトの記載）。", ids: ["uriel", "eizawa", "bikando"] },
   { h: "複数の業者をまとめて比較する場合", b: "相見積もりで査定額を比較したい方には、一括査定が適しています。", ids: ["hikakaku"] },
 ];
 const name = (id: string) => (companies as C[]).find((c) => c.id === id)?.name ?? id;

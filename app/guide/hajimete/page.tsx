@@ -158,7 +158,7 @@ export default function HajimetePage() {
                   <span className="w-8 h-8 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</span>
                   <h3 className="font-serif-jp text-lg font-bold text-[#2C1810]">ウリエル</h3>
                 </div>
-                <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">出張買取に対応しており、自宅で査定が完結します。大型品や大量の骨董品がある方、遺品整理とあわせて依頼したい方に適しています。査定士が査定内容を説明するため、初めての方も利用しやすいサービスです。</p>
+                <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">出張買取に対応しており、自宅で査定が完結します。大型品や大量の骨董品がある方、遺品整理とあわせて依頼したい方に適しています。公式サイトには、査定額の根拠を説明すると記載されています。出張買取の対応エリアは関東・岐阜・静岡・愛知・近畿・中国・四国・九州です（沖縄県は対象外・2026年10月27日確認）。</p>
                 <a href={uriel.officialUrl} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8B4513] hover:bg-[#6B3410] text-white px-6 py-2 rounded font-bold transition text-sm">公式サイトへ</a>
                 <Link href="/review/uriel/" className="inline-block ml-3 text-sm text-[#8B4513] font-bold underline underline-offset-2 hover:text-[#6B3410]">ウリエルの口コミ・評判</Link>
               </div>

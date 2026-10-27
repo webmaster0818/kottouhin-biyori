@@ -469,7 +469,7 @@ export default function WhatIsKottouhinPage() {
               </a>
               <a href="https://www.uriel-cuore.co.jp" target="_blank" rel="noopener noreferrer"
                 className="bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-6 py-4 rounded transition text-center">
-                <span className="block text-xs mb-1">出張買取専門</span>
+                <span className="block text-xs mb-1">出張買取が中心</span>
                 ウリエル
               </a>
             </div>
