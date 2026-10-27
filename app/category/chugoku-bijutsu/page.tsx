@@ -146,7 +146,7 @@ export default function ChugokuBijutsuPage() {
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">1</span>
-                  <div><h4 className="font-bold text-[#2C1810] mb-1">中国美術の専門業者に依頼する</h4><p className="text-sm text-[#5C4A3A] leading-relaxed">一般のリサイクルショップでは、中国美術品の価値を正確に評価できない場合が多くあります。中国美術に精通した専門業者に依頼することで、適正価格で売却できます。ウリエルは、公式サイトに中国美術の買取ページ（焼きもの・絵画・文房具など）を設けています（2026年10月27日確認）。</p></div>
+                  <div><h4 className="font-bold text-[#2C1810] mb-1">中国美術の専門業者に依頼する</h4><p className="text-sm text-[#5C4A3A] leading-relaxed">ウリエルは、公式サイトに中国美術の買取ページ（焼きもの・絵画・文房具など）を設けています（2026年10月27日確認）。</p></div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="w-8 h-8 shrink-0 rounded-sm bg-[#8B4513] text-white flex items-center justify-center font-bold text-sm">2</span>

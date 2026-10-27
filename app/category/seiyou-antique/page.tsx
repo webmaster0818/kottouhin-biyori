@@ -380,7 +380,7 @@ export default function SeiyouAntiquePage() {
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>
-                  <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>西洋アンティークの専門業者に依頼する</strong>：一般のリサイクルショップでは、西洋アンティークの価値を正確に評価できない場合が多くあります。アンティークの専門店や、西洋美術に強い買取業者に依頼してください。</p>
+                  <p className="text-sm text-[#5C4A3A] leading-relaxed"><strong>西洋アンティークの専門業者に依頼する</strong>：アンティークの専門店や、西洋美術に強い買取業者に依頼してください。</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-[#C9A96E] shrink-0 mt-0.5">・</span>

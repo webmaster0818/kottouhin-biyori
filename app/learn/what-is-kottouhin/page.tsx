@@ -410,7 +410,7 @@ export default function WhatIsKottouhinPage() {
 
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">信頼できる専門家を見つける</h3>
                 <p>
-                  骨董品の売買においては、信頼できる目利きや専門店との関係構築が重要です。骨董品専門の買取業者は、品物の価値を正確に評価できる鑑定眼を持っています。お手持ちの品物の価値を確認したい場合は、専門の買取業者に査定を依頼する方法が最も確実です。
+                  骨董品の売買においては、信頼できる目利きや専門店との関係構築が重要です。お手持ちの品物の価値を確認したい場合は、専門の買取業者に査定を依頼する方法が最も確実です。
                 </p>
 
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">贋作に注意する</h3>
