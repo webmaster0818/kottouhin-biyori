@@ -110,7 +110,6 @@ export default function HowToDisposePage() {
             <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-10">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-6 border-b border-[#E0D5C8] pb-4">3. 5つの処分方法を比較</h2>
               <div className="text-[#5C4A3A] leading-relaxed space-y-4">
-                <p>買取業者は、査定が無料で、価値があればその場で現金化でき、骨董品の価値を適正に評価してもらえる点が強みです。手間をかけずに確実に処分したい方に適しています。</p>
                 <p>オークション・フリマは高値で売れる可能性がある一方、出品・梱包・発送の手間やトラブルのおそれがあります。寄付・譲渡は現金にはなりませんが、品物を必要とする人に活用してもらえます。</p>
                 <p>自治体での廃棄は費用が安い反面、価値のある品もごみとして処分されてしまいます。遺品整理業者はまとめて片付けられる利便性がありますが、骨董品の査定力は業者によって差があるため、買取に強い業者を選ぶか、別途査定を受けることをおすすめします。</p>
               </div>
