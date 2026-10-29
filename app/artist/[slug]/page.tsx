@@ -88,7 +88,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const preSaleNotes = (artist as any).preSaleNotes as string[] | undefined;
   const soubaPoints = (artist as any).soubaPoints as { k: string; v: string }[] | undefined;
   const extraFaqs = ((artist as any).extraFaqs ?? []) as { q: string; a: string }[];
-  const leadAnswer = (artist as any).leadAnswer as { h: string; points: string[] } | undefined;
+  const leadAnswer = (artist as any).leadAnswer as { h: string; points: string[]; links?: { href: string; label: string }[] } | undefined;
   const priceRangeNote = (artist as any).priceRangeNote as string | undefined;
   const kaitoriResults = (artist as any).kaitoriResults as
     | { verifiedAt: string; note: string; editionHeader?: string; footNote?: string; results: { title: string; price: string; shop: string; date: string; method: string; edition: string; sourceUrl: string }[] }
@@ -202,6 +202,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
                   </li>
                 ))}
               </ul>
+              {leadAnswer.links && leadAnswer.links.length > 0 && (
+                <ul className="mt-5 pt-4 border-t border-[#E0D5C8] flex flex-wrap gap-x-5 gap-y-2">
+                  {leadAnswer.links.map((l) => (
+                    <li key={l.href} className="text-sm">
+                      <Link href={l.href} className="text-[#8B4513] underline underline-offset-2 hover:text-[#5C2E0B]">{l.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </section>
           )}
 
