@@ -10,7 +10,7 @@ const company = companies.find((c) => c.id === "hikakaku")!;
 
 export const metadata: Metadata = {
   title: (company as any).seoTitle ?? `${company.name}の口コミ・評判｜骨董品買取の特徴と利用方法｜骨董品買取びより`,
-  description: `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。骨董品買取における${company.name}の特徴、メリット・デメリット、利用方法をご説明します。`,
+  description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。骨董品買取における${company.name}の特徴、メリット・デメリット、利用方法をご説明します。`,
   alternates: { canonical: "/review/hikakaku" },
 };
 
@@ -46,8 +46,14 @@ export default function HikakakuReview() {
             <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               骨董品買取の特徴と利用方法
             </p>
+            {(company as any).updatedAt && (
+              <p className="text-sm text-amber-200/80 mt-4">更新日: {(company as any).updatedAt}（口コミ件数・口コミ規約・運営会社を公式サイトで確認）</p>
+            )}
           </div>
         </section>
+
+        {/* 検索語「ヒカカク 口コミ」への直接の答え */}
+        <TopicSections sections={(company as any).leadSections} />
 
         {/* Overview */}
         <section className="py-12 md:py-16">
