@@ -15,18 +15,79 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const area = areas.find((a) => a.slug === slug);
   if (!area) return {};
+  const cov = areaCoverage[slug];
+  const listedCount = cov ? companies.filter((c) => c.id in cov.listed).length : companies.length;
   return {
     title: `${area.fullName}の骨董品・美術品買取おすすめ業者｜骨董品買取びより`,
-    description: `${area.fullName}で骨董品・美術品を売却する際の業者選びについて、絵画・掛軸・茶道具・陶磁器・刀剣などを扱う買取業者${companies.length}社の対応エリア・買取方法を掲載しています。出張買取・宅配買取の対応状況もご説明します。`,
+    description: `${area.fullName}で骨董品・美術品を売却する際の業者選びについて、絵画・掛軸・茶道具・陶磁器・刀剣などを扱う買取業者${listedCount}社の対応エリア・買取方法を掲載しています。出張買取・宅配買取の対応状況もご説明します。`,
     alternates: { canonical: `/area/${slug}` },
   };
 }
 
-// おすすめ業者の公式の対応エリアに、そのエリアが含まれていない場合の注記（2026-10-26 公式確認）
-const URIEL_AREA = "ウリエル公式の出張買取ページ（uriel-cuore.co.jp/visit/）の買取対応エリアは、関東・中部・近畿・中国・四国・九州の各府県（沖縄県は対象外）";
-const bestOutOfAreaNote: Record<string, string> = {
-  sendai: `${URIEL_AREA}で、宮城県は含まれていません。宅配買取の案内も、公式サイトでは確認できません（2026年10月26日確認）。宮城県での出張買取は、ほかの業者の対応エリアをご確認ください。`,
-  niigata: `${URIEL_AREA}で、新潟県は含まれていません。宅配買取の案内も、公式サイトでは確認できません（2026年10月26日確認）。新潟県での出張買取は、ほかの業者の対応エリアをご確認ください。`,
+// 当該県への対応を各社の公式サイトで確認できた業者だけを掲載するエリア（2026-10-31 公式確認）
+// recommended：おすすめ業者／listed：業者一覧に掲載する業者と、その確認内容
+type AreaCoverage = { pref: string; checkedOn: string; recommended: string[]; listed: Record<string, string> };
+const NIKKOUDOU_ALL = "「日本全国どこでも出張費はいただきません」";
+const NATIONWIDE: Record<string, string> = {
+  nanboya: "出張買取のページに「全国どこでも出張が可能です」と記載",
+  gyokkodo: "宅配買取のページに、沖縄県・離島を除く全国からの宅配買取に対応と記載（食器・陶器・ガラス製品などの割れ物は宅配買取の対象外）",
+  bikando: "出張買取のページに「全国を出張費無料での買取も行っております」と記載（一部離島は対応できない場合あり）",
+  tifana: "トップページに宅配買取「全国どこでも」「送料無料」と記載（出張買取は東京都・埼玉県・神奈川県・千葉県の一部地域）",
+  otakaraya: "出張買取のページに「全国あらゆる場所に専門の査定士がお伺いいたします」と記載",
+  eijudo: "買取対応エリアのページに「愛知・名古屋を中心に全国へ骨董品を出張買取します」「その他の地域も出張買取いたします」と記載",
+  "antique-tokyo": "トップページに「北海道から沖縄まで、日本全国宅配買取にご対応致します」と記載（出張買取は東京・埼玉・神奈川・千葉）",
+};
+const areaCoverage: Record<string, AreaCoverage> = {
+  sendai: {
+    pref: "宮城県",
+    checkedOn: "2026年10月31日",
+    recommended: ["nikkoudou", "ryokuwado", "hakkoudo"],
+    listed: {
+      nikkoudou: `宮城県のページに仙台市などでの出張買取の実績と${NIKKOUDOU_ALL}を掲載`,
+      buysell: "対応エリアのページに「バイセルの出張買取は、日本全国のお申し込みに対応しています」と記載し、宮城県を掲載",
+      fukuchan: "即日出張買取の対象地域に宮城県仙台市を掲載",
+      ryokuwado: "宮城県のページに「宮城県全域で出張買取・宅配買取に対応いたします」と記載",
+      hakkoudo: "宮城県のページに「仙台市を中心に県内全域、無料出張査定に伺います」と記載",
+      nanboya: NATIONWIDE.nanboya,
+      eizawa: "宮城県のページに出張買取の対象地域（仙台市・石巻市・大崎市など）を掲載",
+      kingram: "宮城県の店舗一覧に仙台西多賀店（仙台市太白区）を掲載",
+      gyokkodo: NATIONWIDE.gyokkodo,
+      bikando: NATIONWIDE.bikando,
+      hikakaku: "宮城県の地域ページに買取業者を掲載（ヒカカク！は買取業者の比較サイトです）",
+      tifana: NATIONWIDE.tifana,
+      otakaraya: NATIONWIDE.otakaraya,
+      iwano: "鑑定地域のページに「全国どこでもお伺いし、鑑定・買取いたします」と記載し、買取実績地域に宮城県を掲載",
+      shukado: "宮城県のページに「日本全国無料出張」と記載",
+      eishodo: "宮城県のページに「宮城県内のご指定場所に無料で『出張買取』致します」と記載",
+      eijudo: NATIONWIDE.eijudo,
+      sasaki: "出張買取のページに「東京23区を中心に、日本全国どこへでも出張いたします」と記載し、宮城県を掲載（予約状況により伺えない場合あり）",
+      "antique-tokyo": NATIONWIDE["antique-tokyo"],
+    },
+  },
+  niigata: {
+    pref: "新潟県",
+    checkedOn: "2026年10月31日",
+    recommended: ["nikkoudou"],
+    listed: {
+      nikkoudou: `新潟県のページに「新潟市、長岡市を中心に市区町村全域が買取対象エリア」と${NIKKOUDOU_ALL}を掲載`,
+      buysell: "対応エリアのページに「バイセルの出張買取は、日本全国のお申し込みに対応しています」と記載し、新潟県を掲載",
+      ryokuwado: "新潟県のページに「新潟県全域にて出張買取・宅配買取承ります」と記載",
+      hakkoudo: "新潟県のページに「新潟市、長岡市、上越市など県内全域で無料の出張買取を承ります」と記載",
+      nanboya: NATIONWIDE.nanboya,
+      eizawa: "新潟県のページに「新潟県内に出張買取にお伺いいたします」と記載",
+      gyokkodo: NATIONWIDE.gyokkodo,
+      bikando: NATIONWIDE.bikando,
+      hikakaku: "新潟県の地域ページに買取業者を掲載（ヒカカク！は買取業者の比較サイトです）",
+      tifana: NATIONWIDE.tifana,
+      otakaraya: NATIONWIDE.otakaraya,
+      iwano: "鑑定地域のページに「全国どこでもお伺いし、鑑定・買取いたします」と記載し、買取実績地域に新潟県を掲載",
+      shukado: "新潟県のページに「日本全国無料出張」と記載",
+      eishodo: "新潟県のページに「骨董品の出張買取にお伺い致します」と記載",
+      eijudo: NATIONWIDE.eijudo,
+      sasaki: "出張買取のページに「東京23区を中心に、日本全国どこへでも出張いたします」と記載し、新潟県を掲載（予約状況により伺えない場合あり）",
+      "antique-tokyo": NATIONWIDE["antique-tokyo"],
+    },
+  },
 };
 
 const sellingTips: Record<string, { title: string; text: string }[]> = {
@@ -267,8 +328,13 @@ export default async function AreaPage({ params }: Props) {
   const area = areas.find((a) => a.slug === slug);
   if (!area) return <div>エリアが見つかりません</div>;
 
-  const bestCompany = companies.find((c) => c.id === area.bestCompany);
-  const bestOutNote = bestOutOfAreaNote[slug];
+  const coverage = areaCoverage[slug];
+  const bestIds = coverage ? coverage.recommended : [area.bestCompany];
+  const bestCompanies = bestIds
+    .map((id) => companies.find((c) => c.id === id))
+    .filter((c): c is (typeof companies)[number] => Boolean(c));
+  const bestNames = bestCompanies.map((c) => c.name).join("・");
+  const listedCompanies = coverage ? companies.filter((c) => c.id in coverage.listed) : companies;
   const tips = sellingTips[slug] || [];
   const markets = localMarkets[slug] || [];
   const popularItems = localPopularItems[slug] || [];
@@ -300,11 +366,13 @@ export default async function AreaPage({ params }: Props) {
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },
   };
-  const localBusinessSchema = bestCompany && !bestOutNote ? {
+  const localBusinessSchema = bestCompanies.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": `${area.fullName}の骨董品買取サービス（${bestCompany.name}）`,
-    "provider": { "@type": "Organization", "name": bestCompany.name },
+    "name": `${area.fullName}の骨董品買取サービス（${bestNames}）`,
+    "provider": bestCompanies.length === 1
+      ? { "@type": "Organization", "name": bestCompanies[0].name }
+      : bestCompanies.map((c) => ({ "@type": "Organization", "name": c.name })),
     "areaServed": { "@type": "AdministrativeArea", "name": area.fullName },
     "serviceType": "骨董品買取",
   } : null;
@@ -317,7 +385,7 @@ export default async function AreaPage({ params }: Props) {
   ];
   // エリアFAQ(地域名から生成)
   const areaFaqs = [
-    { q: `${area.fullName}で骨董品を売るならどこがおすすめ？`, a: `${area.fullName}に対応する買取業者の複数に査定を依頼し、最も高い金額を提示した業者に売却するのが基本です。${bestCompany && !bestOutNote ? `当サイトでは、${bestCompany.name}を含む業者の対応エリア・買取方法を掲載しています。` : ""}出張・宅配・店頭から、ご都合に合う方法をお選びください。` },
+    { q: `${area.fullName}で骨董品を売るならどこがおすすめ？`, a: `${area.fullName}に対応する買取業者の複数に査定を依頼し、最も高い金額を提示した業者に売却するのが基本です。${bestCompanies.length > 0 ? `当サイトでは、${bestNames}を含む業者の対応エリア・買取方法を掲載しています。` : ""}出張・宅配・店頭から、ご都合に合う方法をお選びください。` },
     { q: `${area.fullName}は出張買取に対応していますか？`, a: `出張買取の対応エリアは業者ごとに異なります。このページの業者一覧の「対応エリア」欄と各社の公式サイトで、${area.fullName}が対象かどうかと出張費の有無をご確認ください。` },
     { q: `${area.fullName}で査定だけ受けることはできますか？`, a: `査定だけの依頼を受け付けるかどうか、査定料やキャンセル料がかかるかどうかは、業者ごとに異なります。申し込みの前に、各社の公式サイトでご確認ください。` },
   ];
@@ -357,7 +425,7 @@ export default async function AreaPage({ params }: Props) {
                 ②<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家</Link>・品目を特定して
                 <Link href="/guide/souba-database/" className="text-[#8B4513] underline">実際の落札相場</Link>を把握する、
                 ③出張・宅配・店頭から都合に合う方法を選ぶ、の3つの手順が基本です。
-                {area.fullName}では、{bestCompany && !bestOutNote ? `${bestCompany.name}などの` : ""}出張・宅配に対応した業者を利用すれば、来店せずに査定を受けられます。
+                {area.fullName}では、{bestCompanies.length > 0 ? `${bestNames}などの` : ""}出張・宅配に対応した業者を利用すれば、来店せずに査定を受けられます。
               </p>
               <div className="flex flex-wrap gap-2">
                 <Link href="/guide/souba-database/" className="text-xs font-bold bg-[#8B4513] text-white rounded-lg px-3 py-2 hover:bg-[#6B3410] transition">落札相場データベース</Link>
@@ -404,13 +472,18 @@ export default async function AreaPage({ params }: Props) {
           <div className="max-w-5xl mx-auto px-4">
             <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
               <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                買取業者の対応エリアと買取方法（{companies.length}社）
+                買取業者の対応エリアと買取方法（{listedCompanies.length}社）
               </h2>
-              <p className="text-[#5C4A3A] mt-3 text-sm">{area.fullName}が対象かどうかは、各社の「対応エリア」欄と公式サイトでご確認ください。</p>
+              {coverage ? (
+                <p className="text-[#5C4A3A] mt-3 text-sm">{coverage.pref}での買取への対応を、各社の公式サイトで確認できた業者を掲載しています（{coverage.checkedOn}確認）。地域や品物によって対応できない場合があるため、申し込みの前に各社の公式サイトでご確認ください。</p>
+              ) : (
+                <p className="text-[#5C4A3A] mt-3 text-sm">{area.fullName}が対象かどうかは、各社の「対応エリア」欄と公式サイトでご確認ください。</p>
+              )}
             </div>
             <div className="space-y-6">
-              {companies.map((company) => {
-                const isBest = company.id === area.bestCompany;
+              {listedCompanies.map((company) => {
+                const isBest = bestIds.includes(company.id);
+                const coverageNote = coverage?.listed[company.id];
                 return (
                   <article key={company.id} className={`bg-white rounded overflow-hidden border ${isBest ? "border-[#C9A96E] border-2" : "border-[#E0D5C8]"}`}>
                     <div className="p-6 md:p-8">
@@ -419,11 +492,7 @@ export default async function AreaPage({ params }: Props) {
                           {area.fullName}でのおすすめ
                         </div>
                       )}
-                      {isBest && bestOutNote && (
-                        <p className="text-sm text-[#8B4513] bg-[#FAF7F2] border border-[#E0D5C8] rounded p-3 mb-3 leading-relaxed">
-                          {bestOutNote}
-                        </p>
-                      )}
+
                       <div className="flex items-start gap-4 mb-4">
                         <div className={`bg-gradient-to-br ${company.rank === 1 ? "from-yellow-500 to-amber-600" : company.rank === 2 ? "from-gray-400 to-gray-500" : "from-amber-700 to-amber-800"} text-white w-12 h-12 rounded-sm flex items-center justify-center font-bold text-lg shrink-0`}>
                           {company.rank}
@@ -439,6 +508,9 @@ export default async function AreaPage({ params }: Props) {
                         <div className="bg-[#FAF7F2] rounded p-3">
                           <p className="text-xs text-[#8B7D72] mb-1">対応エリア</p>
                           <p className="text-sm text-[#2C1810] font-medium">{company.areas}</p>
+                          {coverageNote && (
+                            <p className="text-xs text-[#5C4A3A] mt-2 leading-relaxed">{coverage?.pref}への対応：公式サイトの{coverageNote}（{coverage?.checkedOn}確認）</p>
+                          )}
                         </div>
                         <div className="bg-[#FAF7F2] rounded p-3">
                           <p className="text-xs text-[#8B7D72] mb-1">買取方法</p>
