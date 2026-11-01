@@ -265,7 +265,7 @@ const localPopularItems: Record<string, { item: string; reason: string }[]> = {
   ],
   niigata: [
     { item: "村上木彫堆朱", reason: "国の伝統的工芸品(1976年指定)・新潟県無形文化財" },
-    { item: "燕鎚起銅器", reason: "燕三条の金工として評価が高い" },
+    { item: "燕鎚起銅器", reason: "燕市の金工品・国の伝統的工芸品(1981年指定)" },
   ],
   nagano: [
     { item: "木曽漆器", reason: "奈良井宿で知られる漆器の産地" },
