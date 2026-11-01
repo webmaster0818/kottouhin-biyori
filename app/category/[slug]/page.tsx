@@ -101,10 +101,10 @@ export default async function CategoryPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${cat?.name ?? slug}買取おすすめ業者3選｜相場・査定のポイント`,
+    "headline": (cat as { h1?: string } | undefined)?.h1 ?? `${cat?.name ?? slug}買取おすすめ業者3選｜相場・査定のポイント`,
     "description": `${cat?.name ?? slug}の買取相場は${cat?.priceRange ?? ""}です。${cat?.name ?? slug}を高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
     "datePublished": `${BUILD_DATE}T00:00:00+09:00`,
-    "dateModified": `${BUILD_DATE}T00:00:00+09:00`,
+    "dateModified": `${(cat as { dateModified?: string } | undefined)?.dateModified ?? BUILD_DATE}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },
     "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl },

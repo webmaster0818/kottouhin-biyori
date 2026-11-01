@@ -27,6 +27,8 @@ type CategoryData = {
   deepDive?: { heading: string; lead?: string; blocks: { title: string; text: string }[] }[];
   bestCompany: string;
   bestReason: string;
+  h1?: string;
+  heroLead?: string;
 };
 
 const fallbackFaqData: Record<string, { q: string; a: string }[]> = {
@@ -313,10 +315,10 @@ export default function CategoryPageClient({
         <section className="bg-[#3B2416] text-white">
           <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
             <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
-              {cat.name}買取おすすめ業者3選
+              {cat.h1 ?? `${cat.name}買取おすすめ業者3選`}
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
-              {cat.name}の買取相場・査定のポイント・おすすめの業者をご説明します
+              {cat.heroLead ?? `${cat.name}の買取相場・査定のポイント・おすすめの業者をご説明します`}
             </p>
             <div className="mt-8 inline-block bg-white/10 backdrop-blur rounded px-8 py-4 border border-white/20">
               <p className="text-sm text-amber-200 mb-1">買取相場</p>

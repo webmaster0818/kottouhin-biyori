@@ -4,18 +4,18 @@ import SiteFooter from "@/app/components/SiteFooter";
 
 export const metadata = {
   alternates: { canonical: "/learn/how-to-identify-fakes/" },
-  title: "骨董品の本物・偽物の見分け方【2026年】品目別の確認ポイント",
+  title: "骨董品の見分け方｜価値がある品か・本物か偽物かを確かめる確認ポイント（品目別）",
   description:
-    "骨董品の本物と偽物（贋作）の見分け方を、鑑定の着眼点とともに品目別にご説明します。掛軸・陶磁器・茶道具・絵画・刀剣の真贋判定の方法、共箱・落款・鑑定書の確認、贋作を購入しないための注意点を掲載しています。冒頭に、最初に確認すべきポイントをまとめています。",
+    "骨董品の見分け方を、価値がある品かどうかの確認（作家名・銘、制作年代、付属品、状態）と、本物か偽物（贋作）かの確認に分けてご説明します。掛軸・陶磁器・茶道具・絵画・刀剣の品目別の着眼点、東美鑑定評価機構・日本美術刀剣保存協会の鑑定料（公式サイト・2026年11月1日確認）も掲載しています。",
 };
 
 export default function HowToIdentifyFakesPage() {
   return (
     <>
       {/* JSONLD_INJECTED_v1 #0 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品の贋作・偽物の見分け方\",\"item\":\"https://kottokaitori-biyori.com/learn/how-to-identify-fakes/\"}]}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://kottokaitori-biyori.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"骨董品の見分け方\",\"item\":\"https://kottokaitori-biyori.com/learn/how-to-identify-fakes/\"}]}" }} />
       {/* JSONLD_INJECTED_v1 #1 */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の贋作・偽物の見分け方\",\"description\":\"骨董品の贋作・偽物の見分け方 を専門家視点で解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-07-02T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-identify-fakes/\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"骨董品の見分け方（価値がある品か・本物か偽物か）\",\"description\":\"価値がある骨董品かどうかの確認と、本物・偽物（贋作）の見分け方を品目別に解説\",\"datePublished\":\"2026-05-23T00:00:00+09:00\",\"dateModified\":\"2026-11-01T00:00:00+09:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com/about/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"骨董品買取びより\",\"url\":\"https://kottokaitori-biyori.com\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kottokaitori-biyori.com/learn/how-to-identify-fakes/\"}}" }} />
       {/* FAQPage structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -23,12 +23,15 @@ export default function HowToIdentifyFakesPage() {
         mainEntity: [
           { q: "骨董品の本物と偽物は素人でも見分けられますか？", a: "完全な真贋判定には専門知識と経験が必要ですが、共箱・極箱などの付属品の有無、落款・銘・印章の状態、価格の妥当性といった基本的な確認によって、ある程度の絞り込みは可能です。高額品や確信が持てない品物は、買取業者の無料査定で専門家の確認を受けることをおすすめします。" },
           { q: "真贋を見分けるうえで最も重要なポイントは何ですか？", a: "品目によって着眼点は異なりますが、共通して重要なのは「来歴・付属品（共箱や鑑定書）」「作家の落款・銘・筆致の特徴」「時代に合った材料・技法であるか」の3点です。これらに不自然な点がある場合は、注意が必要です。" },
-          { q: "鑑定書があれば本物と確定できますか？", a: "東京美術倶楽部や日本美術刀剣保存協会など、信頼できる第三者機関の鑑定書は有力な証拠となります。ただし、鑑定書自体が偽造される場合もあるため、発行機関の信頼性もあわせて確認することが大切です。" },
+          { q: "鑑定書があれば本物と確定できますか？", a: "東美鑑定評価機構や日本美術刀剣保存協会など、信頼できる第三者機関の鑑定書は有力な証拠となります。ただし、鑑定書自体が偽造される場合もあるため、発行機関の信頼性もあわせて確認することが大切です。" },
           { q: "偽物（贋作）を買わないために一番大事なことは？", a: "「安すぎる品物を疑う」「信頼できる業者・経路から購入する」「急いで即決しない」の3つが基本です。共箱・鑑定書などの付属品や来歴の確認も、贋作を避けるうえで有効です。" },
-          { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは、買取業者の無料査定で専門家の確認を受ける方法が手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関（数千円〜数万円）に鑑定書の発行を依頼してください。" },
+          { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは、買取業者の無料査定で専門家の確認を受ける方法が手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関に鑑定書の発行を依頼してください。費用の例は、東美鑑定評価機構の日本画が鑑定料3万円＋鑑定証書発行料等3万円、日本美術刀剣保存協会の保存刀剣審査（刀剣・合格・非会員）が40,700円です（各公式サイト・2026年11月1日確認）。" },
           { q: "「これがある骨董品は本物」と言える要素はありますか？", a: "単独で本物と断定できる要素はありませんが、①作家直筆の箱書きがある共箱、②信頼できる第三者機関の鑑定書・登録証、③摩耗した落款・印章、④展覧会の出品歴や図録掲載などの来歴、⑤自然な経年変化（古色）が揃っているほど、本物である可能性は高まります。いずれか1つだけを根拠に本物と判断することは避けてください。" },
           { q: "骨董品が偽物かどうかの判定はどうすればいいですか？", a: "ご自身で確認できるのは、共箱・鑑定書などの付属品、落款・銘・印章の状態、価格の妥当性、時代に合った材料・技法であるかの4点です。ただし、最終的な真贋の判定には専門知識が必要なため、確信が持てない場合は買取業者の無料査定で専門家の確認を受けることをおすすめします。費用はかかりません。相続などで正式な証明が必要な場合は、第三者鑑定機関による鑑定書の発行をご検討ください。" },
           { q: "骨董品の見分け方は何から始めればいいですか？", a: "最初に確認すべきは「付属品（共箱・箱書き・鑑定書）」です。作家の直筆や第三者機関の証明があるかどうかで、信頼性が大きく変わります。次に、落款・銘・印章の彫りや摩耗が自然か、全体の古色（経年変化）に不自然な点がないかを確認します。品目（掛軸・陶磁器・茶道具・絵画・刀剣）ごとの着眼点は、本文の品目別の確認ポイントでご説明しています。" },
+          { q: "価値のある骨董品かどうかは、どこを見れば見分けられますか？", a: "ご自身で確認できるのは、①作家名・銘・落款・窯印が読み取れるか、②制作年代、③共箱・箱書き・鑑定書・登録証などの付属品、④欠け・直し・シミ・錆などの状態、⑤同じ作家・品目の公開買取実績や落札結果、の5点です。作家名や銘が読めない品も、価値がないとは限らないため、処分する前に買取業者の無料査定で確認してください。" },
+          { q: "骨董品は何年以上前のものを指しますか？", a: "税関の関税率表（第97.06項）では、「こつとう」を「製作後100年を超えたものに限る」と定めています（2026年8月版・2026年11月1日確認）。ただしこれは関税上の分類で、買取の場面では、明治以降の近代・現代の作家物も「骨董品」として扱われ、評価の対象になります。" },
+          { q: "鑑定書を取るにはいくらかかりますか？", a: "機関と品目によって異なります。東美鑑定評価機構では、日本画・洋画の鑑定料が3万円（作家により1万円または5万円）、登録管理料・鑑定証書発行料が3万円、工芸は鑑定料2万円（作家により4万円）と発行料等1万円です（消費税込）。日本美術刀剣保存協会の保存刀剣審査は、刀剣・刀装が合格の場合で会員35,200円、非会員40,700円です（令和8年11月審査受付分から）。いずれも各公式サイトで2026年11月1日に確認しました。" },
         ].map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
       }) }} />
     <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -41,7 +44,7 @@ export default function HowToIdentifyFakesPage() {
             <nav className="text-xs text-[#8B7D72]">
               <Link href="/" className="hover:text-[#8B4513] transition">ホーム</Link>
               <span className="mx-2">/</span>
-              <span className="text-[#5C4A3A]">贋作・偽物の見分け方</span>
+              <span className="text-[#5C4A3A]">骨董品の見分け方</span>
             </nav>
           </div>
         </div>
@@ -50,12 +53,49 @@ export default function HowToIdentifyFakesPage() {
         <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              骨董品の贋作・偽物の見分け方
+              骨董品の見分け方（価値がある品か・本物か偽物か）
             </h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              鑑定士が確認する真贋判定のポイントを、<br className="hidden md:inline" />
+              売る前に確認する「価値の手がかり」と、鑑定士が確認する真贋判定のポイントを、<br className="hidden md:inline" />
               品目別にご説明します。
             </p>
+          </div>
+        </section>
+
+        {/* 価値がある骨董品かどうかの見分け方（冒頭の即答） */}
+        <section id="value-check" className="pt-10">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="bg-white rounded border border-[#C9A96E] p-6 md:p-8">
+              <h2 className="font-serif-jp text-lg md:text-xl font-bold text-[#2C1810] mb-4">
+                価値がある骨董品かどうかの見分け方：売る前に確認する5つの点
+              </h2>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mb-4">
+                「骨董品の見分け方」には、<strong className="text-[#8B4513]">価値がある品かどうか</strong>と、<strong className="text-[#8B4513]">本物か偽物か</strong>の2つの意味があります。価値の手がかりは、次の5点をご自身で確認できます。本物か偽物かの確認は、このあとの項目でご説明します。
+              </p>
+              <ol className="space-y-3 text-sm">
+                {[
+                  ["作家名・銘・落款・窯印", "器の底（高台）、掛軸や絵画の落款・印章、刀剣の茎（なかご）の銘、鉄瓶の底や蓋裏の銘を確認します。作家名や工房名が読み取れるかどうかが、評価の出発点になります。"],
+                  ["制作年代", "税関の関税率表（第97.06項）は「こつとう」を「製作後100年を超えたものに限る」と定めています（2026年8月版・2026年11月1日確認）。これは関税上の分類で、買取では100年未満の近代・現代の作家物も評価の対象になります。"],
+                  ["付属品（共箱・箱書き・鑑定書・登録証）", "作家が署名・押印した共箱、鑑定機関の鑑定証書、購入時の資料は、作者を裏づける材料になります。刀剣は、都道府県の教育委員会が交付する銃砲刀剣類登録証が必要です。"],
+                  ["状態", "欠け・ひび・直し（修復）の跡、シミ・ヤケ・虫食い、錆の程度を確認します。汚れを落としたり磨いたりすると評価が下がることがあるため、現状のまま査定に出してください。"],
+                  ["同じ作家・品目の公開価格", "買取業者が公式サイトで公開している買取実績や、オークション会社の落札結果で、同じ作家・品目の例を確認できます。当サイトの作家別・品目別ページでは、出典を明記した公開価格を掲載しています。"],
+                ].map(([h, b], i) => (
+                  <li key={h} className="flex items-start gap-3 bg-[#FAF7F2] rounded border border-[#E0D5C8] p-4">
+                    <span className="shrink-0 w-7 h-7 rounded-sm bg-[#8B4513] text-white text-sm font-bold flex items-center justify-center">{i + 1}</span>
+                    <div>
+                      <p className="font-bold text-[#8B4513] mb-1">{h}</p>
+                      <p className="text-[13px] text-[#5C4A3A] leading-relaxed">{b}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <p className="text-sm text-[#5C4A3A] leading-relaxed mt-4">
+                作家名や銘が読めない品、価値の見当がつかない品は、ご自身で判断して処分せず、買取業者の無料査定で確認してください。品目別の公開価格は<Link href="/category/kaiga/" className="text-[#8B4513] underline hover:no-underline">絵画</Link>・<Link href="/category/toujiki/" className="text-[#8B4513] underline hover:no-underline">陶磁器</Link>・<Link href="/category/tetsubin/" className="text-[#8B4513] underline hover:no-underline">鉄瓶・南部鉄器</Link>などの品目ページでご確認いただけます。
+              </p>
+              <p className="text-xs text-[#8B7D72] mt-3">
+                出典：<a href="https://www.customs.go.jp/tariff/2026_08_08/data/j_97.htm" target="_blank" rel="noopener noreferrer" className="underline">税関 実行関税率表 第97類（2026年8月8日版）</a>
+              </p>
+            </div>
           </div>
         </section>
 
@@ -103,7 +143,7 @@ export default function HowToIdentifyFakesPage() {
               <div className="space-y-3">
                 {[
                   ["作家直筆の箱書きがある共箱", "作家自身が署名・押印した共箱（ともばこ）は、最も重視される付属品です。箱と中身の時代・寸法が一致しているかもあわせて確認します。"],
-                  ["信頼できる機関の鑑定書・登録証", "東京美術倶楽部の鑑定証、日本美術刀剣保存協会の登録証・鑑定書など、実績のある第三者機関の書類は有力な裏付けとなります（書類自体の真偽の確認も必要です）。"],
+                  ["信頼できる機関の鑑定書・登録証", "東美鑑定評価機構（2018年10月に東京美術倶楽部から鑑定業務を移管）の鑑定証書、日本美術刀剣保存協会の鑑定書など、実績のある第三者機関の書類は有力な裏付けとなります（書類自体の真偽の確認も必要です）。刀剣の銃砲刀剣類登録証は、都道府県の教育委員会が交付します。"],
                   ["自然に摩耗した落款・印章", "長年の使用で角が丸くなった印影や、筆致に迷いのない落款は、本物である可能性を示します。反対に、線が鋭すぎる印や、インクが新しい印には注意が必要です。"],
                   ["来歴（展覧会の出品歴・図録掲載・旧蔵歴）", "展覧会の出品票、図録への掲載、旧所蔵者の記録など、品物の経緯を示す資料は、真贋判定の有力な根拠となります。"],
                   ["矛盾のない自然な経年変化", "紙の焼け、釉薬の貫入、漆の艶の落ち着きなど、素材全体が同じ時間を経てきたことを示す均一な古色は、人工的に再現しにくい要素です。"],
@@ -159,7 +199,7 @@ export default function HowToIdentifyFakesPage() {
 
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">高額な取引が贋作を生む</h3>
                 <p>
-                  骨董品は、1点で数十万円から数千万円、場合によっては億を超える金額で取引されます。このような高額な取引が存在する限り、贋作によって利益を得ようとする者は絶えません。特に、著名な作家の作品や、市場で人気の高い品目は、贋作の対象になりやすい傾向があります。
+                  骨董品の中には、公開オークションで数千万円で落札される作品もあります（例：東山魁夷の日本画「緑の山湖」がシンワオークションで5,980万円・2024年）。このような高額な取引が存在する限り、贋作によって利益を得ようとする者は絶えません。特に、著名な作家の作品や、市場で人気の高い品目は、贋作の対象になりやすい傾向があります。
                 </p>
 
                 <h3 className="font-serif-jp text-lg font-bold text-[#8B4513] mt-6 mb-3">鑑定の難しさ</h3>
@@ -482,7 +522,7 @@ export default function HowToIdentifyFakesPage() {
                     {
                       num: "5",
                       title: "専門家の意見を求める",
-                      text: "高額な品物の購入や売却を検討する際は、専門の鑑定士に相談することをおすすめします。鑑定料は数千円〜数万円程度ですが、贋作を購入するおそれを考えると、検討に値する費用です。",
+                      text: "高額な品物の購入や売却を検討する際は、専門の鑑定士に相談することをおすすめします。第三者機関の鑑定は有料で、たとえば東美鑑定評価機構の日本画は鑑定料3万円と鑑定証書発行料等3万円です（同機構公式サイト・2026年11月1日確認）。贋作を購入するおそれを考えると、高額品では検討に値する費用です。",
                     },
                   ].map((item) => (
                     <div key={item.num} className="flex gap-5">
@@ -578,12 +618,15 @@ export default function HowToIdentifyFakesPage() {
                 {[
                   { q: "骨董品の本物と偽物は素人でも見分けられますか？", a: "完全な真贋判定には専門知識と経験が必要ですが、共箱・極箱などの付属品の有無、落款・銘・印章の状態、価格の妥当性といった基本的な確認によって、ある程度の絞り込みは可能です。高額品や確信が持てない品物は、買取業者の無料査定で専門家の確認を受けることをおすすめします。" },
                   { q: "真贋を見分けるうえで最も重要なポイントは何ですか？", a: "品目によって着眼点は異なりますが、共通して重要なのは「来歴・付属品（共箱や鑑定書）」「作家の落款・銘・筆致の特徴」「時代に合った材料・技法であるか」の3点です。これらに不自然な点がある場合は、注意が必要です。" },
-                  { q: "鑑定書があれば本物と確定できますか？", a: "東京美術倶楽部や日本美術刀剣保存協会など、信頼できる第三者機関の鑑定書は有力な証拠となります。ただし、鑑定書自体が偽造される場合もあるため、発行機関の信頼性もあわせて確認することが大切です。" },
+                  { q: "鑑定書があれば本物と確定できますか？", a: "東美鑑定評価機構や日本美術刀剣保存協会など、信頼できる第三者機関の鑑定書は有力な証拠となります。ただし、鑑定書自体が偽造される場合もあるため、発行機関の信頼性もあわせて確認することが大切です。" },
                   { q: "偽物（贋作）を買わないために一番大事なことは？", a: "「安すぎる品物を疑う」「信頼できる業者・経路から購入する」「急いで即決しない」の3つが基本です。共箱・鑑定書などの付属品や来歴の確認も、贋作を避けるうえで有効です。" },
-                  { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは、買取業者の無料査定で専門家の確認を受ける方法が手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関（数千円〜数万円）に鑑定書の発行を依頼してください。" },
+                  { q: "真贋に不安がある骨董品はどこに相談すればいいですか？", a: "まずは、買取業者の無料査定で専門家の確認を受ける方法が手軽です。相続・財産分与や高額品で正式な証明が必要な場合は、有料の第三者鑑定機関に鑑定書の発行を依頼してください。費用の例は、東美鑑定評価機構の日本画が鑑定料3万円＋鑑定証書発行料等3万円、日本美術刀剣保存協会の保存刀剣審査（刀剣・合格・非会員）が40,700円です（各公式サイト・2026年11月1日確認）。" },
                   { q: "「これがある骨董品は本物」と言える要素はありますか？", a: "単独で本物と断定できる要素はありませんが、①作家直筆の箱書きがある共箱、②信頼できる第三者機関の鑑定書・登録証、③摩耗した落款・印章、④展覧会の出品歴や図録掲載などの来歴、⑤自然な経年変化（古色）が揃っているほど、本物である可能性は高まります。いずれか1つだけを根拠に本物と判断することは避けてください。" },
                   { q: "骨董品が偽物かどうかの判定はどうすればいいですか？", a: "ご自身で確認できるのは、共箱・鑑定書などの付属品、落款・銘・印章の状態、価格の妥当性、時代に合った材料・技法であるかの4点です。ただし、最終的な真贋の判定には専門知識が必要なため、確信が持てない場合は買取業者の無料査定で専門家の確認を受けることをおすすめします。費用はかかりません。相続などで正式な証明が必要な場合は、第三者鑑定機関による鑑定書の発行をご検討ください。" },
                   { q: "骨董品の見分け方は何から始めればいいですか？", a: "最初に確認すべきは「付属品（共箱・箱書き・鑑定書）」です。作家の直筆や第三者機関の証明があるかどうかで、信頼性が大きく変わります。次に、落款・銘・印章の彫りや摩耗が自然か、全体の古色（経年変化）に不自然な点がないかを確認します。品目（掛軸・陶磁器・茶道具・絵画・刀剣）ごとの着眼点は、本文の品目別の確認ポイントでご説明しています。" },
+          { q: "価値のある骨董品かどうかは、どこを見れば見分けられますか？", a: "ご自身で確認できるのは、①作家名・銘・落款・窯印が読み取れるか、②制作年代、③共箱・箱書き・鑑定書・登録証などの付属品、④欠け・直し・シミ・錆などの状態、⑤同じ作家・品目の公開買取実績や落札結果、の5点です。作家名や銘が読めない品も、価値がないとは限らないため、処分する前に買取業者の無料査定で確認してください。" },
+          { q: "骨董品は何年以上前のものを指しますか？", a: "税関の関税率表（第97.06項）では、「こつとう」を「製作後100年を超えたものに限る」と定めています（2026年8月版・2026年11月1日確認）。ただしこれは関税上の分類で、買取の場面では、明治以降の近代・現代の作家物も「骨董品」として扱われ、評価の対象になります。" },
+          { q: "鑑定書を取るにはいくらかかりますか？", a: "機関と品目によって異なります。東美鑑定評価機構では、日本画・洋画の鑑定料が3万円（作家により1万円または5万円）、登録管理料・鑑定証書発行料が3万円、工芸は鑑定料2万円（作家により4万円）と発行料等1万円です（消費税込）。日本美術刀剣保存協会の保存刀剣審査は、刀剣・刀装が合格の場合で会員35,200円、非会員40,700円です（令和8年11月審査受付分から）。いずれも各公式サイトで2026年11月1日に確認しました。" },
                 ].map((f) => (
                   <div key={f.q} className="border-b border-[#E0D5C8] last:border-b-0 pb-5 last:pb-0">
                     <h3 className="font-bold text-[#8B4513] mb-2">Q. {f.q}</h3>
@@ -636,17 +679,17 @@ export default function HowToIdentifyFakesPage() {
               本物の証明や、売却時の評価の裏付けに利用される主な鑑定機関です。
             </p>
             <div className="grid md:grid-cols-2 gap-3 text-sm">
-              <a href="https://www.toobi.co.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
-                <p className="font-bold text-[#8B4513] text-sm mb-1">東京美術倶楽部</p>
-                <p className="text-xs text-[#8B7D72]">日本画・洋画・書・工芸品の鑑定評価</p>
+              <a href="https://toobi-tocfa.or.jp/judge/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">一般財団法人 東美鑑定評価機構</p>
+                <p className="text-xs text-[#8B7D72]">鑑定対象作家（日本画・洋画・工芸）の鑑定証書発行。日本画・洋画は鑑定料3万円＋発行料等3万円（作家により異なる）</p>
+              </a>
+              <a href="https://toobi.co.jp/service/judge/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
+                <p className="font-bold text-[#8B4513] text-sm mb-1">東京美術倶楽部（評価）</p>
+                <p className="text-xs text-[#8B7D72]">相続・資産登録向けの評価証の発行（1点目5万円・2点目以降1万円、外税）。鑑定業務は2018年10月に東美鑑定評価機構へ移管</p>
               </a>
               <a href="https://www.touken.or.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">日本美術刀剣保存協会</p>
-                <p className="text-xs text-[#8B7D72]">刀剣の鑑定書(保存刀剣・特別保存刀剣等)発行</p>
-              </a>
-              <a href="https://www.kottou-kaitori.jp/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
-                <p className="font-bold text-[#8B4513] text-sm mb-1">日本陶磁協会</p>
-                <p className="text-xs text-[#8B7D72]">陶磁器の鑑定・研究機関</p>
+                <p className="text-xs text-[#8B7D72]">刀剣の鑑定書(保存刀剣・特別保存刀剣等)発行。保存審査は刀剣・合格で非会員40,700円</p>
               </a>
               <a href="https://syoukokai.jp/art/" target="_blank" rel="noopener noreferrer" className="block bg-white border border-[#E0D5C8] rounded p-4 hover:bg-[#F5ECD7] transition">
                 <p className="font-bold text-[#8B4513] text-sm mb-1">公益財団法人 頌古会</p>
@@ -654,7 +697,7 @@ export default function HowToIdentifyFakesPage() {
               </a>
             </div>
             <p className="text-xs text-[#8B7D72] mt-6 text-center">
-              ※ 各機関の鑑定は有料（数千円〜数万円）です。高額品の場合は、利用を検討する価値があります。詳細は、各機関の公式情報をご確認ください。
+              ※ 料金は各機関の公式サイトで2026年11月1日に確認したもので、作家・品目・審査結果によって異なります。高額品の場合は、利用を検討する価値があります。最新の料金は各機関の公式情報をご確認ください。
             </p>
           </div>
         </section>
