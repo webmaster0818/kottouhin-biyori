@@ -22,9 +22,11 @@ type TopicSection = {
 };
 
 
+// 口コミ情報の有無：出典つきの公開口コミの傾向・Google口コミのデータがあるか、
+// 個別に書いた seoTitle が口コミ・評判を扱う（本文に出典つきの口コミ件数・評価を載せている）ページ
 function hasReviewData(company: unknown): boolean {
-  const c = company as { reviewTrend?: unknown; googleReviews?: unknown };
-  return Boolean(c.reviewTrend || c.googleReviews);
+  const c = company as { reviewTrend?: unknown; googleReviews?: unknown; seoTitle?: string };
+  return Boolean(c.reviewTrend || c.googleReviews || /口コミ|評判/.test(c.seoTitle ?? ""));
 }
 
 export async function generateStaticParams() {
@@ -37,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
-  // 口コミ情報（出典つきの公開口コミの傾向・Google口コミ）がある業者だけ、既定の title に「口コミ・評判」を入れる
+  // 口コミ情報がある業者だけ、既定の title に「口コミ・評判」を入れる
   const hasReviewInfo = hasReviewData(company);
   return {
     title: (company as any).seoTitle ?? (hasReviewInfo
