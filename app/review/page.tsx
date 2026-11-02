@@ -30,7 +30,7 @@ const reviewed: C[] = (companies as C[])
 const verifiedAt = (c: C) => (c as { verifiedData?: { verifiedAt?: string } }).verifiedData?.verifiedAt ?? "—";
 
 export const metadata: Metadata = {
-  title: `骨董品買取業者の口コミ・評判レビュー一覧｜掲載${reviewed.length}社｜骨董品買取びより`,
+  title: `骨董品買取業者のレビュー一覧｜掲載${reviewed.length}社の業態・対応エリア・買取方法｜骨董品買取びより`,
   description: `骨董品買取びよりに掲載している買取業者${reviewed.length}社のレビューページの一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日を掲載し、業者ごとの詳細なレビューページへのリンクを設けています。`,
   alternates: { canonical: PATH },
 };
@@ -41,7 +41,7 @@ export default function ReviewIndexPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-      { "@type": "ListItem", position: 2, name: "口コミ・評判", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "業者レビュー一覧", item: `${SITE}${PATH}` },
     ],
   };
   const itemList = {
@@ -68,7 +68,7 @@ export default function ReviewIndexPage() {
               <nav className="text-xs text-[#8B7D72]">
                 <Link href="/" className="hover:text-[#8B4513]">ホーム</Link>
                 <span className="mx-2">/</span>
-                <span className="text-[#5C4A3A]">口コミ・評判</span>
+                <span className="text-[#5C4A3A]">業者レビュー一覧</span>
               </nav>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function ReviewIndexPage() {
           <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                骨董品買取業者の口コミ・評判レビュー一覧
+                骨董品買取業者のレビュー一覧
               </h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
                 当サイトが個別ページを設けている買取業者{reviewed.length}社の一覧です。各社の業態・対応エリア・買取方法をご確認のうえ、詳細なレビューページをご覧ください。

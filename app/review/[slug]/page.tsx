@@ -22,6 +22,11 @@ type TopicSection = {
 };
 
 
+function hasReviewData(company: unknown): boolean {
+  const c = company as { reviewTrend?: unknown; googleReviews?: unknown };
+  return Boolean(c.reviewTrend || c.googleReviews);
+}
+
 export async function generateStaticParams() {
   return companies
     .filter((c) => !EXISTING_STATIC.has(c.slug))
@@ -32,9 +37,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const company = companies.find((c) => c.slug === slug);
   if (!company) return {};
+  // 口コミ情報（出典つきの公開口コミの傾向・Google口コミ）がある業者だけ、既定の title に「口コミ・評判」を入れる
+  const hasReviewInfo = hasReviewData(company);
   return {
-    title: (company as any).seoTitle ?? `${company.name}の口コミ・評判｜骨董品買取の特徴と利用方法｜骨董品買取びより`,
-    description: (company as any).seoDescription ?? `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法をご説明します。`,
+    title: (company as any).seoTitle ?? (hasReviewInfo
+      ? `${company.name}の口コミ・評判｜骨董品買取の特徴と利用方法｜骨董品買取びより`
+      : `${company.name}の骨董品買取｜特徴・買取方法・運営会社を公式サイトで確認｜骨董品買取びより`),
+    description: (company as any).seoDescription ?? (hasReviewInfo
+      ? `${company.name}の口コミ・評判を、公式サイトの情報にもとづいて掲載しています。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法をご説明します。`
+      : `${company.name}の骨董品買取について、公式サイトで確認した情報を掲載しています。${company.tagline}。${company.name}の特徴・メリット・デメリット・利用方法をご説明します。`),
     alternates: { canonical: `/review/${slug}` },
   };
 }
@@ -47,20 +58,21 @@ export default async function DynamicReviewPage({ params }: Props) {
   const pageUrl = `${SITE_URL}/review/${slug}/`;
   const asOfLabel: string | undefined = (company as any).asOfLabel;
   const asOfSuffix = asOfLabel ? `【${asOfLabel}】` : "";
+  const pageLabel = hasReviewData(company) ? `${company.name}の口コミ・評判` : `${company.name}の骨董品買取`;
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "ホーム", "item": SITE_URL },
-      { "@type": "ListItem", "position": 2, "name": "口コミ・評判", "item": `${SITE_URL}/review/` },
+      { "@type": "ListItem", "position": 2, "name": "業者レビュー一覧", "item": `${SITE_URL}/review/` },
       { "@type": "ListItem", "position": 3, "name": company.name, "item": pageUrl },
     ],
   };
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": `${company.name}の口コミ・評判${asOfSuffix}`,
-    "description": `${company.name}の口コミ・評判と特徴を掲載しています。${company.tagline}。`,
+    "headline": `${pageLabel}${asOfSuffix}`,
+    "description": `${pageLabel}と特徴を掲載しています。${company.tagline}。`,
     "datePublished": "2026-05-25T00:00:00+09:00",
     "dateModified": `${(company as any).updatedAt ?? "2026-05-25"}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
@@ -181,7 +193,7 @@ export default async function DynamicReviewPage({ params }: Props) {
           <section className="bg-[#3B2416] text-white">
             <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
               <h1 className="font-serif-jp text-2xl md:text-4xl font-bold mb-6 leading-tight">
-                {(company as any).h1 ?? `${company.name}の口コミ・評判`}
+                {(company as any).h1 ?? pageLabel}
               </h1>
               <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
                 {(company as any).heroLead ?? `骨董品買取の特徴と利用方法${asOfSuffix}`}
@@ -195,7 +207,7 @@ export default async function DynamicReviewPage({ params }: Props) {
               <nav className="text-xs text-[#8B7D72]">
                 <Link href="/" className="hover:text-[#8B4513] transition">ホーム</Link>
                 <span className="mx-2">/</span>
-                <span className="text-[#5C4A3A]">{company.name}の口コミ・評判</span>
+                <span className="text-[#5C4A3A]">{pageLabel}</span>
               </nav>
             </div>
           </div>
