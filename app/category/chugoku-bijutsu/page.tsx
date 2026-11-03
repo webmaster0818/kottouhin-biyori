@@ -5,8 +5,8 @@ import SiteFooter from "@/app/components/SiteFooter";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "中国骨董品・中国美術品の買取｜高額査定のポイントと相場【2026年】｜骨董品買取びより",
-  description: "中国骨董品・中国美術品の買取相場と、高額査定のポイントをご説明します。中国絵画・陶磁器・翡翠・書道具など品目別の相場、人気作家、査定時の注意点を掲載しています。",
+  title: "中国骨董品・中国美術品の買取｜品目別の特徴と高額査定のポイント【2026年】｜骨董品買取びより",
+  description: "中国骨董品・中国美術品の買取について、高額査定のポイントをご説明します。中国絵画・陶磁器・翡翠・書道具など品目別の特徴、人気作家、査定時の注意点を掲載しています。",
   alternates: { canonical: "/category/chugoku-bijutsu" },
 };
 
@@ -16,38 +16,32 @@ const uriel = companies.find((c) => c.id === "uriel")!;
 const categories = [
   {
     name: "中国絵画・書画",
-    description: "中国絵画には、水墨画、花鳥画、山水画、人物画など多様な種類があります。近代の斉白石、張大千、呉昌碩、徐悲鴻らの作品は国際オークションで数億円の落札実績があり、日本国内で見つかった作品が高額で査定されることもあります。清朝期の宮廷画家の作品も、非常に高い評価を受けています。",
-    priceRange: "5万〜1,000万円以上",
+    description: "中国絵画には、水墨画、花鳥画、山水画、人物画など多様な種類があります。近代の斉白石、張大千、呉昌碩、徐悲鴻らの作品は国際オークションで高い評価を受けており、日本国内で見つかった作品が高額で査定されることもあります。清朝期の宮廷画家の作品も、非常に高い評価を受けています。",
     artists: ["斉白石", "張大千", "呉昌碩", "徐悲鴻", "傅抱石", "李可染"],
   },
   {
     name: "中国陶磁器",
-    description: "宋代の青磁・白磁、元代の青花（染付）、明代の五彩、清代の粉彩など、中国陶磁器は世界の美術品市場で最も高額なジャンルのひとつです。景徳鎮窯の製品は特に評価が高く、官窯（宮廷向け）の作品には数千万円の値が付く場合もあります。日本に伝来した古渡の中国陶磁器も、高く評価されています。",
-    priceRange: "1万〜数千万円",
+    description: "宋代の青磁・白磁、元代の青花（染付）、明代の五彩、清代の粉彩など、中国陶磁器は世界の美術品市場で最も高額なジャンルのひとつです。景徳鎮窯の製品は特に評価が高く、官窯（宮廷向け）の作品は特に高く評価されます。日本に伝来した古渡の中国陶磁器も、高く評価されています。",
     artists: [],
   },
   {
     name: "翡翠・玉器",
     description: "中国では、翡翠（ひすい）は「玉」として古くから珍重されてきました。特に、ミャンマー産の緑色が濃く透明度の高い翡翠は「琅玕（ろうかん）」と呼ばれ、最高級品とされています。清朝期の翡翠製品や、古代の玉器（璧・琮など）は美術的・歴史的価値が高く、高額査定が期待できます。",
-    priceRange: "1万〜500万円",
     artists: [],
   },
   {
     name: "中国書道具",
-    description: "硯（端渓硯・歙州硯）、墨（古墨）、筆、紙の文房四宝に加え、水滴・筆架・印材（鶏血石・田黄石）などの文房具は、中国のコレクターに非常に人気があります。特に、清朝期の端渓硯や乾隆帝の御墨には、数百万円の値が付く場合もあります。",
-    priceRange: "5,000円〜300万円",
+    description: "硯（端渓硯・歙州硯）、墨（古墨）、筆、紙の文房四宝に加え、水滴・筆架・印材（鶏血石・田黄石）などの文房具は、中国のコレクターに非常に人気があります。特に、清朝期の端渓硯や乾隆帝の御墨は高く評価されます。",
     artists: [],
   },
   {
     name: "紫砂壺（しさこ）",
     description: "中国茶を淹れるための紫砂（しさ）の急須は、宜興（ぎこう）で作られるものが最も有名です。明代の時大彬、清代の陳鳴遠、近代の顧景舟らの作品は、高額で取引されています。作家物の紫砂壺は日本でも人気があり、買取市場での需要も高い品目です。",
-    priceRange: "1万〜200万円",
     artists: ["顧景舟", "時大彬", "陳鳴遠", "蒋蓉"],
   },
   {
     name: "仏像・仏教美術",
     description: "中国の古い仏像は、唐代・宋代のものが特に高い評価を受けています。金銅仏、木彫仏、石仏のほか、チベット仏教の仏像も人気があります。日本の寺院に伝わった中国製の仏像が再発見され、高額で査定される例もあります。",
-    priceRange: "5万〜1,000万円以上",
     artists: [],
   },
 ];
@@ -81,10 +75,10 @@ export default function ChugokuBijutsuPage() {
         <section className="bg-[#3B2416] text-white">
           <div className="max-w-4xl mx-auto px-4 py-14 md:py-20 text-center">
             <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              中国骨董品・中国美術品の買取<br className="hidden md:inline" />高額査定のポイントと相場
+              中国骨董品・中国美術品の買取<br className="hidden md:inline" />品目別の特徴と高額査定のポイント
             </h1>
             <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-              中国美術品の需要は増加しています。品目別の相場と、<br className="hidden md:inline" />
+              中国美術品の需要は増加しています。品目別の特徴と、<br className="hidden md:inline" />
               高く売るためのポイントをご説明します。
             </p>
           </div>
@@ -94,14 +88,13 @@ export default function ChugokuBijutsuPage() {
         <section className="py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-4">
             <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">中国骨董品の品目と相場</h2>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">中国骨董品の品目と特徴</h2>
             </div>
             <div className="space-y-6">
               {categories.map((c, i) => (
                 <article key={i} className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{c.name}</h3>
-                    <span className="text-sm bg-[#F5ECD7] text-[#8B4513] px-3 py-1 rounded-sm font-medium">{c.priceRange}</span>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-3">{c.description}</p>
                   {c.artists.length > 0 && (

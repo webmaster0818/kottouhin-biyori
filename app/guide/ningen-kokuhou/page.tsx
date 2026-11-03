@@ -6,8 +6,8 @@ import RelatedGuides from "@/app/components/RelatedGuides";
 import companies from "@/data/companies.json";
 
 export const metadata: Metadata = {
-  title: "人間国宝の作品買取｜査定のポイントと相場｜骨董品買取びより",
-  description: "人間国宝（重要無形文化財保持者）の作品の買取についてご説明します。陶芸・漆芸・染織・金工など分野別の相場、高額査定のポイント、主な作家の一覧を掲載しています。",
+  title: "人間国宝の作品買取｜査定のポイントと分野別の主な作家｜骨董品買取びより",
+  description: "人間国宝（重要無形文化財保持者）の作品の買取についてご説明します。陶芸・漆芸・染織・金工など分野別の特徴と主な作家、高額査定のポイントを掲載しています。",
   alternates: { canonical: "/guide/ningen-kokuhou" },
 };
 
@@ -18,45 +18,41 @@ const fields = [
     name: "陶芸",
     description: "人間国宝の作品の中で、最も買取の需要が高いジャンルです。茶碗・花器・皿などの陶磁器作品は、コレクターや茶道の愛好者からの需要が安定しています。特に、志野・備前・萩・唐津・有田などの伝統的な窯の人間国宝の作品は、高額査定が期待できます。",
     artists: [
-      { name: "荒川豊蔵", note: "志野焼。桃山時代の志野を再興。100万〜500万円", specialty: "志野" },
-      { name: "金重陶陽", note: "備前焼。備前焼中興の祖と称される。50万〜300万円", specialty: "備前" },
-      { name: "三輪壽雪（十一代三輪休雪）", note: "萩焼。白萩の独自世界。50万〜300万円", specialty: "萩" },
-      { name: "濱田庄司", note: "民藝運動の中心人物。益子焼を代表する陶芸家。20万〜200万円", specialty: "益子" },
-      { name: "富本憲吉", note: "人間国宝第一号の陶芸家。色絵磁器。30万〜200万円", specialty: "色絵" },
-      { name: "清水卯一", note: "鉄釉の独自技法。30万〜200万円", specialty: "鉄釉" },
-      { name: "島岡達三", note: "縄文象嵌の技法。20万〜150万円", specialty: "象嵌" },
-      { name: "加藤土師萌", note: "色絵磁器の名手。20万〜150万円", specialty: "色絵磁器" },
+      { name: "荒川豊蔵", note: "志野焼。桃山時代の志野を再興", specialty: "志野" },
+      { name: "金重陶陽", note: "備前焼。備前焼中興の祖と称される", specialty: "備前" },
+      { name: "三輪壽雪（十一代三輪休雪）", note: "萩焼。白萩の独自世界", specialty: "萩" },
+      { name: "濱田庄司", note: "民藝運動の中心人物。益子焼を代表する陶芸家", specialty: "益子" },
+      { name: "富本憲吉", note: "人間国宝第一号の陶芸家。色絵磁器", specialty: "色絵" },
+      { name: "清水卯一", note: "鉄釉の独自技法", specialty: "鉄釉" },
+      { name: "島岡達三", note: "縄文象嵌の技法", specialty: "象嵌" },
+      { name: "加藤土師萌", note: "色絵磁器の名手", specialty: "色絵磁器" },
     ],
-    priceRange: "20万〜500万円",
   },
   {
     name: "漆芸",
     description: "蒔絵・沈金・螺鈿などの漆芸技法は日本独自の伝統工芸であり、人間国宝の作品は国内外で高い評価を受けています。香合・棗・硯箱・文箱など、用途に応じた多彩な作品があります。",
     artists: [
-      { name: "松田権六", note: "蒔絵の第一人者。100万〜500万円以上", specialty: "蒔絵" },
-      { name: "大場松魚", note: "蒔絵。金銀の繊細な表現。50万〜200万円", specialty: "蒔絵" },
-      { name: "前大峰", note: "沈金。能登の伝統技法。30万〜150万円", specialty: "沈金" },
+      { name: "松田権六", note: "蒔絵の第一人者", specialty: "蒔絵" },
+      { name: "大場松魚", note: "蒔絵。金銀の繊細な表現", specialty: "蒔絵" },
+      { name: "前大峰", note: "沈金。能登の伝統技法", specialty: "沈金" },
     ],
-    priceRange: "30万〜500万円以上",
   },
   {
     name: "染織",
     description: "着物や帯の制作技法で認定された人間国宝の作品は、着物のコレクターから高い需要があります。証紙や共箱の有無が、査定額を大きく左右します。",
     artists: [
-      { name: "志村ふくみ", note: "紬織。草木染の第一人者。30万〜200万円", specialty: "紬織" },
-      { name: "羽田登喜男", note: "友禅。京友禅と加賀友禅の融合。30万〜150万円", specialty: "友禅" },
-      { name: "久保田一竹", note: "辻が花染。独自の「一竹辻が花」技法。50万〜300万円", specialty: "辻が花" },
+      { name: "志村ふくみ", note: "紬織。草木染の第一人者", specialty: "紬織" },
+      { name: "羽田登喜男", note: "友禅。京友禅と加賀友禅の融合", specialty: "友禅" },
+      { name: "久保田一竹", note: "辻が花染。独自の「一竹辻が花」技法", specialty: "辻が花" },
     ],
-    priceRange: "20万〜300万円",
   },
   {
     name: "金工・彫金",
     description: "鍛金・鋳金・彫金など金属加工の技法で認定された人間国宝の作品も、美術品として高い評価を受けています。花器・香炉・茶釜などが代表的な作品です。",
     artists: [
-      { name: "高橋敬典", note: "茶の湯釜。山形鋳物の伝統。30万〜150万円", specialty: "茶釜" },
-      { name: "大角幸枝", note: "鍛金。銀器の繊細な造形。20万〜100万円", specialty: "鍛金" },
+      { name: "高橋敬典", note: "茶の湯釜。山形鋳物の伝統", specialty: "茶釜" },
+      { name: "大角幸枝", note: "鍛金。銀器の繊細な造形", specialty: "鍛金" },
     ],
-    priceRange: "20万〜150万円",
   },
 ];
 
@@ -118,9 +114,9 @@ export default function NingenKokuhouPage() {
           <div className="max-w-4xl mx-auto px-4">
             {/* 要点 */}
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
-              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">人間国宝の作品の買取相場は、分野ごとに次のような目安があります。</p>
+              <p className="font-serif-jp font-bold text-[#2C1810] mb-2">人間国宝の作品は、作家・作品の格・共箱や証紙の有無で評価が大きく変わります。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                買取相場の目安は分野により異なり、陶芸20万〜500万円、漆芸30万〜500万円以上、染織20万〜300万円、金工・彫金20万〜150万円です。共箱・証紙の有無によって、査定額が2〜3倍変わることも珍しくありません。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
+                分野（陶芸・漆芸・染織・金工）ごとに作品の種類と評価のされ方が異なり、一律の買取相場は示せません。共箱・証紙は作者を裏づける資料として重視されます。作家別の公開オークションの落札実績は、<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家別の落札実績インデックス</Link>（出典・確認日つき）でご確認いただけます。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
               </p>
             </div>
             <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
@@ -139,14 +135,13 @@ export default function NingenKokuhouPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
-              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">分野別・人間国宝の作品と相場</h2>
+              <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">分野別・人間国宝の作品と主な作家</h2>
             </div>
             <div className="space-y-8">
               {fields.map((f, i) => (
                 <article key={i} className="bg-[#FAF7F2] rounded border border-[#E0D5C8] p-6 md:p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-serif-jp text-xl font-bold text-[#8B4513]">{f.name}</h3>
-                    <span className="text-sm bg-white text-[#8B4513] px-3 py-1 rounded-sm border border-[#E0D5C8] font-medium">{f.priceRange}</span>
                   </div>
                   <p className="text-[#5C4A3A] leading-relaxed text-sm mb-4">{f.description}</p>
                   <div className="space-y-3">

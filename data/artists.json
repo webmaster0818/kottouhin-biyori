@@ -13,14 +13,14 @@
       "霊峰飛鶴",
       "夜桜"
     ],
-    "priceRange": "50万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "落款と印章の確認が重要",
       "朦朧体の技法が本物かどうか",
       "共箱・鑑定書の有無で大きく変動"
     ],
     "bio": "横山大観は茨城県水戸に生まれ、東京美術学校の第一期生として岡倉天心・橋本雅邦に学びました。盟友・菱田春草とともに輪郭線を抑えた『朦朧体』を生み出し、当初は批判も浴びましたが、やがて近代日本画を代表する存在へと成長します。岡倉天心の日本美術院再興を支え、富士山を生涯のモチーフとして描き続けました。第1回文化勲章受章者であり、その活動は近代日本画そのものの歩みと重なります。",
-    "marketNote": "富士山を描いた作品は特に人気が高く、共箱・鑑定書付きの真作は数百万〜数千万円で取引されます。作品点数が多い一方で精巧な模写も流通するため、真贋の見極めが価格を大きく左右します。",
+    "marketNote": "富士山を描いた作品は特に人気が高く、共箱・鑑定書付きの真作は特に高く評価されます。作品点数が多い一方で精巧な模写も流通するため、真贋の見極めが価格を大きく左右します。",
     "auctionResults": {
       "verifiedAt": "2026年6月19日",
       "sourceLabel": "SBIアートオークション公式落札結果、MutualArt（作家別オークション集計）",
@@ -41,7 +41,8 @@
           "sourceUrl": "https://www.mutualart.com/Artist/Taikan-Yokoyama/5B96C0DFD59CC130"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "東山魁夷",
@@ -415,7 +416,7 @@
       "華厳譜",
       "女人観世音板画巻"
     ],
-    "priceRange": "20万〜2,000万円",
+    "priceRange": "",
     "checkPoints": [
       "板画（木版画）と肉筆画がある",
       "刷り数（エディション）の確認",
@@ -457,7 +458,8 @@
           "sourceUrl": "https://www.bonhams.com/auctions/29505/lot/678/munakata-shiko-1903-1975-showa-era-1926-1989-1958/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "平山郁夫",
@@ -473,7 +475,7 @@
       "ナイルの夕",
       "アンコールワットの月"
     ],
-    "priceRange": "20万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "シルクロード題材の真贋に注意",
       "リトグラフと肉筆画の区別",
@@ -494,7 +496,8 @@
           "sourceUrl": "https://www.mutualart.com/Artist/Ikuo-Hirayama/95E95BBB53D23DCB"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "藤田嗣治",
@@ -1315,7 +1318,7 @@
       "花がたみ",
       "焰"
     ],
-    "priceRange": "50万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "美人画の表情や着物の描写が緻密か",
       "女性画家の作品として希少価値が高い",
@@ -1358,7 +1361,8 @@
         }
       ]
     },
-    "appraisalNote": "上村松園は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧（日本画）に掲載されています（2026年7月・同機構公式サイトで確認）。人気作家ゆえ模写・複製も多く、鑑定証書の有無が評価を大きく左右します。"
+    "appraisalNote": "上村松園は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧（日本画）に掲載されています（2026年7月・同機構公式サイトで確認）。人気作家ゆえ模写・複製も多く、鑑定証書の有無が評価を大きく左右します。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "伊藤若冲",
@@ -2345,7 +2349,7 @@
       "呉須絵徳利",
       "鉄釉花瓶"
     ],
-    "priceRange": "5万〜300万円",
+    "priceRange": "",
     "checkPoints": [
       "作品に銘を入れないことが多い（無銘）",
       "民藝運動関連の来歴が価値を高める",
@@ -2366,7 +2370,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/28441/lot/953/kawai-kanjiro-1890-1966-a-tri-color-and-cobalt-glazed-bowl-showa-era-1926-1989/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "濱田庄司",
@@ -2382,7 +2387,7 @@
       "鉄釉角鉢",
       "白釉黒流掛大壺"
     ],
-    "priceRange": "5万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "無銘作品が多い（箱書きで判断）",
       "益子焼の土味・釉薬が特徴",
@@ -2424,7 +2429,8 @@
           "sourceUrl": "https://www.bonhams.com/live_auctions/24237/lot/87/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "酒井田柿右衛門",
@@ -2440,7 +2446,7 @@
       "色絵花鳥文大皿",
       "濁手三方枝垂桜文鉢"
     ],
-    "priceRange": "3万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "何代目の作品かで価値が大きく異なる",
       "濁手の乳白色の質感を確認",
@@ -2482,7 +2488,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/31131/lot/184/sakaida-kakiemon-xiv-1934-2013-signed-in-underglaze-blue-kakiemon-japan-mid-to-late-20th-century/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "今泉今右衛門",
@@ -3003,7 +3010,7 @@
       "朱塗香合",
       "溜塗中棗"
     ],
-    "priceRange": "5万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "代数と花押の確認",
       "漆の状態（剥がれ・ひび割れ）",
@@ -3045,7 +3052,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/01/20231209t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "永楽善五郎",
@@ -3061,7 +3069,7 @@
       "交趾釉水指",
       "仁清写し茶碗"
     ],
-    "priceRange": "5万〜800万円",
+    "priceRange": "",
     "checkPoints": [
       "永楽の款銘を確認",
       "金襴手の金彩の状態",
@@ -3096,7 +3104,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "大西清右衛門",
@@ -3112,7 +3121,7 @@
       "平丸釜",
       "筒釜"
     ],
-    "priceRange": "10万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "釜肌の鋳肌紋様の確認",
       "底の状態と鳴り金の有無",
@@ -3133,7 +3142,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "黒田辰秋",
@@ -3149,7 +3159,7 @@
       "朱漆大棗",
       "栗材拭漆盆"
     ],
-    "priceRange": "10万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "銘と共箱の確認",
       "漆の状態（経年変化は自然なもの）",
@@ -3191,7 +3201,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "円山応挙",
@@ -3207,7 +3218,7 @@
       "龍門鯉魚図",
       "藤花図屏風"
     ],
-    "priceRange": "50万〜3,000万円",
+    "priceRange": "",
     "checkPoints": [
       "写実的な描写が応挙の特徴",
       "落款・印章の時期による変化",
@@ -3257,7 +3268,8 @@
         }
       ]
     },
-    "appraisalNote": "円山応挙は、かつて東京美術倶楽部の鑑定対象と紹介されてきましたが、現行の東美鑑定評価機構の鑑定対象作家一覧（2026年7月確認）では掲載を確認できませんでした。江戸期絵画のため、箱書・伝来と専門商の鑑識が実務の中心です。"
+    "appraisalNote": "円山応挙は、かつて東京美術倶楽部の鑑定対象と紹介されてきましたが、現行の東美鑑定評価機構の鑑定対象作家一覧（2026年7月確認）では掲載を確認できませんでした。江戸期絵画のため、箱書・伝来と専門商の鑑識が実務の中心です。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "狩野探幽",
@@ -3273,7 +3285,7 @@
       "鵜飼図屏風",
       "四季花鳥図"
     ],
-    "priceRange": "50万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "狩野派の系譜と落款の確認",
       "江戸時代の絹本・紙本の経年変化",
@@ -3308,7 +3320,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "雪舟",
@@ -3575,7 +3588,7 @@
       "大般若長光",
       "遠江長光"
     ],
-    "priceRange": "100万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "銘の切り方（二字銘が多い）",
       "丁子乱れの刃文が特徴",
@@ -3596,7 +3609,8 @@
           "sourceUrl": "https://www.nihonto-museum.com/collection/exhibit/bizen-osafune-nagamitsu-ko-dachi"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "虎徹",
@@ -3611,7 +3625,7 @@
       "葵紋太刀",
       "蜂須賀虎徹"
     ],
-    "priceRange": "200万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "贋作が極めて多い（虎徹を見たら偽物と思え）",
       "銘の切り方の特徴を確認",
@@ -3632,7 +3646,8 @@
           "sourceUrl": "https://www.christies.com.cn/en/lot/lot-6389183"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "兼定",
@@ -3647,7 +3662,7 @@
       "歌仙兼定",
       "和泉守兼定"
     ],
-    "priceRange": "50万〜3,000万円",
+    "priceRange": "",
     "checkPoints": [
       "何代目の兼定かで価値が異なる",
       "之定（二代）は特に高額",
@@ -3668,7 +3683,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/26909/lot/106/fujiwara-kanesada-iii-a-mino-katana-in-mountsmuromachi-period-1333-1573-16th-century/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "村正",
@@ -3683,7 +3699,7 @@
       "村正短刀",
       "妙法村正"
     ],
-    "priceRange": "100万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "妖刀伝説で人気が高く贋作多数",
       "反りが浅く実戦的な造りが特徴",
@@ -3711,7 +3727,8 @@
           "sourceUrl": "https://www.bonhams.com/auctions/23430/lot/242/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "志村ふくみ",
@@ -3937,7 +3954,7 @@
       "辻が花染め着物「光響」",
       "一竹辻が花「宇宙」"
     ],
-    "priceRange": "30万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "一竹辻が花の独特の絞り染め技法",
       "落款と証紙の確認",
@@ -3965,7 +3982,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/05/1391128.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "羽田登喜男",
@@ -3980,14 +3998,15 @@
       "友禅訪問着「瑞鳥瑞花文」",
       "友禅着物「四季花鳥」"
     ],
-    "priceRange": "30万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "友禅の技法の精緻さを確認",
       "落款と証紙の有無",
       "ダイアナ妃献上のエピソードで知名度高い"
     ],
     "bio": "羽田登喜男は加賀友禅と京友禅を融合させた友禅の作家です。鴛鴦(おしどり)などの優美な意匠で知られ、友禅の人間国宝に認定されました。",
-    "marketNote": "友禅の着物・帯は高評価です。落款・証紙・保存状態が査定の手がかりとなります。"
+    "marketNote": "友禅の着物・帯は高評価です。落款・証紙・保存状態が査定の手がかりとなります。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "由水十久",
@@ -4002,7 +4021,7 @@
       "加賀友禅訪問着「童子遊び」",
       "加賀友禅着物「祭童子」"
     ],
-    "priceRange": "20万〜300万円",
+    "priceRange": "",
     "checkPoints": [
       "童子（子ども）のモチーフが最大の特徴（「童子の由水」と呼ばれた作風）",
       "加賀友禅の証紙（加賀染振興協会の伝統工芸品証紙など）の有無を確認",
@@ -4089,7 +4108,8 @@
         "q": "由水十久の買取査定はどこに依頼すればよいですか？",
         "a": "着物・染織の専門知識がある査定士が在籍する業者を選び、3社程度に査定を依頼して比較するのが基本です。加賀友禅は公開オークションでの落札実例が少なく相場が見えにくいため、複数社の見積もりを取ることが評価の妥当性を確認する手段になります。"
       }
-    ]
+    ],
+    "dateModified": "2026-11-03"
   },
   {
     "name": "齊白石",
@@ -4105,7 +4125,7 @@
       "牡丹図",
       "山水十二条屏"
     ],
-    "priceRange": "50万〜数億円",
+    "priceRange": "",
     "checkPoints": [
       "蝦の描写が最も有名",
       "印章（篆刻）も自ら制作",
@@ -4126,7 +4146,8 @@
           "sourceUrl": "https://www.theartnewspaper.com/2017/12/20/qi-baishi-paintings-set-new-dollar141m-record-for-chinese-artist"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "呉昌碩",
@@ -4392,7 +4413,7 @@
       "潑墨山水",
       "仕女図"
     ],
-    "priceRange": "50万〜数億円",
+    "priceRange": "",
     "checkPoints": [
       "模写の名手だったため真贋判定が難しい",
       "潑墨潑彩の技法は晩年の作品",
@@ -4427,7 +4448,8 @@
           "sourceUrl": "https://www.sothebys.com/en/articles/sothebys-exceptional-record-breaking-auction-results-for-zhang-daqian"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "文徴明",
@@ -4443,7 +4465,7 @@
       "真賞斎図",
       "行書千字文"
     ],
-    "priceRange": "100万〜5,000万円",
+    "priceRange": "",
     "checkPoints": [
       "明代の紙・絹の経年変化",
       "小楷の精緻な書風",
@@ -4464,7 +4486,8 @@
           "sourceUrl": "http://art.people.com.cn/BIG5/n/2015/1208/c206244-27899825.html"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "八大山人",
@@ -4480,7 +4503,7 @@
       "荷鴨図",
       "魚鳥図"
     ],
-    "priceRange": "100万〜数億円",
+    "priceRange": "",
     "checkPoints": [
       "白眼を向く生き物の描写が特徴",
       "署名が「哭之」「笑之」に見える独特の書体",
@@ -4508,7 +4531,8 @@
           "sourceUrl": "https://www.antiquesandthearts.com/new-york-auction-houses-report-asia-week-totals/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "野々村仁清",
@@ -4524,7 +4548,7 @@
       "色絵雉香炉",
       "色絵雲錦手鉢"
     ],
-    "priceRange": "50万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "「仁清」の銘の真贋確認",
       "色絵の華麗さと精緻さ",
@@ -4560,7 +4584,8 @@
         }
       ]
     },
-    "seoTitle": "野々村仁清の買取相場はいくら？御室焼・仁清写の見分けと査定の出し方【50万〜数千万円】"
+    "seoTitle": "野々村仁清の買取｜落札実績と御室焼・仁清写の見分け、査定の出し方",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "尾形乾山",
@@ -4696,7 +4721,7 @@
       "黄瀬戸鉢",
       "瀬戸黒茶碗"
     ],
-    "priceRange": "10万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "永仁の壺事件の経緯を理解しておく",
       "志野の鼠志野・白志野の区別",
@@ -4738,7 +4763,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230311t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "荒川豊蔵",
@@ -4754,7 +4780,7 @@
       "瀬戸黒茶碗",
       "黄瀬戸鉢"
     ],
-    "priceRange": "20万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "志野の白い素地と赤い火色が特徴",
       "人間国宝認定後の作品は高額",
@@ -4796,7 +4822,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/20660/lot/97/a-shino-style-chawan-by-toyozo-arakawa-1894-1985/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "金重陶陽",
@@ -4812,7 +4839,7 @@
       "備前水指",
       "備前徳利"
     ],
-    "priceRange": "10万〜800万円",
+    "priceRange": "",
     "checkPoints": [
       "備前焼特有の窯変（火襷・胡麻）の美しさ",
       "陶陽の印銘の確認",
@@ -4854,7 +4881,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "藤原啓",
@@ -4870,7 +4898,7 @@
       "備前花入",
       "備前茶碗"
     ],
-    "priceRange": "5万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "温かみのある土味が特徴",
       "啓の印銘確認",
@@ -4912,7 +4940,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "十三代今泉今右衛門",
@@ -4927,7 +4956,7 @@
       "色鍋島吹墨草花文皿",
       "色鍋島薄墨草花文鉢"
     ],
-    "priceRange": "10万〜800万円",
+    "priceRange": "",
     "checkPoints": [
       "吹墨技法が13代の特徴",
       "色鍋島の精緻な文様",
@@ -4969,7 +4998,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "三輪休雪",
@@ -4985,7 +5015,7 @@
       "鬼萩茶碗",
       "萩割高台茶碗"
     ],
-    "priceRange": "5万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "何代目かで価値が異なる",
       "萩焼特有の貫入と七化けの味わい",
@@ -5034,7 +5064,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "藤原雄",
@@ -5050,7 +5081,7 @@
       "備前窯変花入",
       "備前緋襷大皿"
     ],
-    "priceRange": "5万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "窯変の美しさが評価ポイント",
       "父・啓との作風の違い",
@@ -5092,7 +5123,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "小林古径",
@@ -5108,7 +5140,7 @@
       "清姫",
       "果物"
     ],
-    "priceRange": "20万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "線描の繊細さが特徴",
       "大和絵的な構図と色彩",
@@ -5150,7 +5182,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "前田青邨",
@@ -5166,7 +5199,7 @@
       "羅馬使節",
       "竹取物語絵巻"
     ],
-    "priceRange": "20万〜2,000万円",
+    "priceRange": "",
     "checkPoints": [
       "歴史画の構図力と筆致",
       "法隆寺壁画模写関連の来歴",
@@ -5201,7 +5234,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/24763/lot/42/fish-served-on-a-leaf-maeda-seison-1885-1977-2/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "富本憲吉",
@@ -5255,7 +5289,7 @@
       "灰釉壺",
       "彩陶壺"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5297,7 +5331,8 @@
           "sourceUrl": "https://www.bonhams.com/auctions/11509/lot/126/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "八木一夫",
@@ -5312,7 +5347,7 @@
       "ザムザ氏の散歩",
       "黒陶オブジェ"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5347,7 +5382,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/12/20251206t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "川喜田半泥子",
@@ -5363,7 +5399,7 @@
       "志野茶碗",
       "粉引茶碗"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5405,7 +5441,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/05/140thHP-1.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "楠部彌弌",
@@ -5420,7 +5457,7 @@
       "彩埏花瓶",
       "青磁鳳耳花瓶"
     ],
-    "priceRange": "20万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5462,7 +5499,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "清水卯一",
@@ -5477,7 +5515,7 @@
       "鉄釉壺",
       "蓬莱燿彩鉢"
     ],
-    "priceRange": "15万〜800万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5519,7 +5557,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/12/20241207t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "田村耕一",
@@ -5534,7 +5573,7 @@
       "鉄絵陶器壺",
       "銅彩梅文壺"
     ],
-    "priceRange": "15万〜800万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5576,7 +5615,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/12/20241207t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "石黒宗麿",
@@ -5591,7 +5631,7 @@
       "木の葉天目茶碗",
       "柿釉茶碗"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5626,7 +5666,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "加藤土師萌",
@@ -5641,7 +5682,7 @@
       "萌葱金襴手菱馬文壺",
       "色絵磁器"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5683,7 +5724,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/09/20240921m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "近藤悠三",
@@ -5698,7 +5740,7 @@
       "染付富士図大皿",
       "染付梅文壺"
     ],
-    "priceRange": "20万〜1,200万円",
+    "priceRange": "",
     "checkPoints": [
       "共箱(作家の箱書き)・鑑定書の有無で査定額が大きく変動",
       "作家の銘・陶印を確認",
@@ -5740,7 +5782,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/03/20250308t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "川合玉堂",
@@ -5756,7 +5799,7 @@
       "彩雨",
       "紅葉"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -5798,7 +5841,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/07/20250719m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "片岡球子",
@@ -5851,7 +5895,7 @@
       "黄瀬川陣",
       "飛鳥の春の額田王"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -5893,7 +5937,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/11/20241123m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "奥村土牛",
@@ -5953,7 +5998,7 @@
       "龍虎図",
       "白雲紅樹"
     ],
-    "priceRange": "20万〜1,000万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -5995,7 +6040,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2021/06/121thresult-HP.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "菱田春草",
@@ -6011,7 +6057,7 @@
       "落葉",
       "王昭君"
     ],
-    "priceRange": "50万〜3,000万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -6039,7 +6085,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2024/11/142th528.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "下村観山",
@@ -6054,7 +6101,7 @@
       "弱法師",
       "白狐"
     ],
-    "priceRange": "30万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -6075,7 +6122,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/07/20240720m_s2.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "富岡鉄斎",
@@ -6090,7 +6138,7 @@
       "富士山図",
       "阿倍仲麻呂明州望月図"
     ],
-    "priceRange": "20万〜1,500万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -6132,7 +6180,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/03/143th722.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "速水御舟",
@@ -6147,7 +6196,7 @@
       "炎舞",
       "名樹散椿"
     ],
-    "priceRange": "50万〜3,000万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "共箱・鑑定書・シールの有無で評価が変動",
@@ -6190,7 +6239,8 @@
         }
       ]
     },
-    "appraisalNote": "速水御舟は、かつて東京美術倶楽部鑑定委員会の鑑定対象と紹介されてきましたが、現行の東美鑑定評価機構の鑑定対象作家一覧（2026年7月確認）では掲載を確認できませんでした。実務では美術商・オークションハウスの鑑識と、来歴・展覧会歴の資料が重視されます。"
+    "appraisalNote": "速水御舟は、かつて東京美術倶楽部鑑定委員会の鑑定対象と紹介されてきましたが、現行の東美鑑定評価機構の鑑定対象作家一覧（2026年7月確認）では掲載を確認できませんでした。実務では美術商・オークションハウスの鑑識と、来歴・展覧会歴の資料が重視されます。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "鏑木清方",
@@ -6381,7 +6431,7 @@
       "草書 和歌",
       "漢詩書幅"
     ],
-    "priceRange": "30万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章・花押を確認",
       "表装の状態(シミ・破れ)を確認",
@@ -6423,7 +6473,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/08/147th317.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "一休宗純",
@@ -6438,7 +6489,7 @@
       "墨蹟",
       "一行書"
     ],
-    "priceRange": "50万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章・花押を確認",
       "表装の状態(シミ・破れ)を確認",
@@ -6480,7 +6531,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2021/11/123result.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "副島種臣",
@@ -6495,14 +6547,15 @@
       "行草書",
       "漢詩書幅"
     ],
-    "priceRange": "10万〜500万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章・花押を確認",
       "表装の状態(シミ・破れ)を確認",
       "箱書き・鑑定書の有無で査定額が変動"
     ],
     "bio": "副島種臣は佐賀藩出身の政治家にして、近代を代表する書家です。外務卿などを務める一方、雄渾で気宇壮大な行草書を能くし、明治の三筆の一人にも数えられます。",
-    "marketNote": "行草書の書幅は高評価です。落款・印章・状態が査定の手がかりとなります。"
+    "marketNote": "行草書の書幅は高評価です。落款・印章・状態が査定の手がかりとなります。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "仙厓義梵",
@@ -6518,7 +6571,7 @@
       "布袋図",
       "達磨図"
     ],
-    "priceRange": "30万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章・花押を確認",
       "表装の状態(シミ・破れ)を確認",
@@ -6560,7 +6613,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/en/wp-content/uploads/sites/2/2023/06/131thHP.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "白隠慧鶴",
@@ -6576,7 +6630,7 @@
       "半身達磨",
       "布袋図"
     ],
-    "priceRange": "30万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章・花押を確認",
       "表装の状態(シミ・破れ)を確認",
@@ -6597,7 +6651,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/20190/lot/253/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "宮入行平",
@@ -6612,14 +6667,15 @@
       "太刀",
       "刀"
     ],
-    "priceRange": "100万〜1,000万円超",
+    "priceRange": "",
     "checkPoints": [
       "銘と登録証(銃砲刀剣類登録証)の有無を確認",
       "刃文・地鉄の状態を確認",
       "鞘・拵え・白鞘など付属の有無を確認"
     ],
     "bio": "宮入行平は長野に生まれた刀工です。相州伝を基礎に格調高い作風を確立し、作刀の人間国宝に認定されました。多くの後進を育て、現代刀の発展に大きく貢献しました。",
-    "marketNote": "在銘の優品は高額です。登録証の有無と刃文・地鉄の状態、白鞘・拵えの有無が査定の要です。"
+    "marketNote": "在銘の優品は高額です。登録証の有無と刃文・地鉄の状態、白鞘・拵えの有無が査定の要です。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "月山貞一(初代)",
@@ -6634,7 +6690,7 @@
       "綾杉肌の刀",
       "彫物入太刀"
     ],
-    "priceRange": "100万〜1,000万円超",
+    "priceRange": "",
     "checkPoints": [
       "銘と登録証(銃砲刀剣類登録証)の有無を確認",
       "刃文・地鉄の状態を確認",
@@ -6676,7 +6732,8 @@
           "sourceUrl": "https://www.kogire-kai.co.jp/wp-content/uploads/2025/08/8bb200d9528e36532fa8aa56b7420919-1.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "徐悲鴻",
@@ -6691,7 +6748,7 @@
       "奔馬図",
       "群馬図"
     ],
-    "priceRange": "100万〜数億円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "中国人バイヤー需要が高く専門業者だと高評価",
@@ -6719,7 +6776,8 @@
           "sourceUrl": "https://heni.com/news/article/xu-beihong-leads-christie-s-online-1-13m-summer-reverie-chinese-paintings-online-auction-2024-08-27t09-36-00-00"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "歌川広重",
@@ -6980,7 +7038,7 @@
       "婦女人相十品",
       "歌撰恋之部"
     ],
-    "priceRange": "数万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "版元印・改印など版の確認",
       "摺りの状態・退色・虫食いの程度",
@@ -7001,7 +7059,8 @@
           "sourceUrl": "https://en.thevalue.com/articles/sothebys-hong-kong-masterpieces-of-asian-art-from-okada-museum-2025-japanese-art"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "東洲斎写楽",
@@ -7016,7 +7075,7 @@
       "三代目大谷鬼次の奴江戸兵衛",
       "市川鰕蔵"
     ],
-    "priceRange": "数十万〜高額",
+    "priceRange": "",
     "checkPoints": [
       "版元印・改印など版の確認",
       "摺りの状態・退色・虫食いの程度",
@@ -7044,7 +7103,8 @@
           "sourceUrl": "https://www.bonhams.com/auctions/20023/lot/462/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "歌川国芳",
@@ -7060,7 +7120,7 @@
       "通俗水滸伝豪傑百八人之一個",
       "宮本武蔵と巨鯨"
     ],
-    "priceRange": "数万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "版元印・改印など版の確認",
       "摺りの状態・退色・虫食いの程度",
@@ -7081,7 +7141,8 @@
           "sourceUrl": "https://www.mutualart.com/Artist/Utagawa-Kuniyoshi/2E115CAF5FA4DEF4"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "川瀬巴水",
@@ -7255,7 +7316,7 @@
       "日本アルプス十二題",
       "帆船"
     ],
-    "priceRange": "数万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "版元印・改印など版の確認",
       "摺りの状態・退色・虫食いの程度",
@@ -7297,7 +7358,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/28625/lot/290/yoshida-hiroshi-1876-1950-farm-house/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "黒田清輝",
@@ -7313,7 +7375,7 @@
       "読書",
       "智・感・情"
     ],
-    "priceRange": "数十万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7341,7 +7403,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "岸田劉生",
@@ -7357,7 +7420,7 @@
       "道路と土手と塀",
       "村娘之図"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7392,7 +7455,8 @@
           "sourceUrl": "https://www.mutualart.com/Artist/Kishida-Ryusei/0F0B32F78EE1DD5F"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "梅原龍三郎",
@@ -7408,7 +7472,7 @@
       "桜島",
       "裸婦"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7436,7 +7500,8 @@
           "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000111.000082831.html"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "安井曾太郎",
@@ -7452,7 +7517,7 @@
       "婦人像",
       "孔雀と女"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7494,7 +7559,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2026/01/20260131m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "佐伯祐三",
@@ -7510,7 +7576,7 @@
       "パリの街",
       "レストラン"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7531,7 +7597,8 @@
           "sourceUrl": "https://etoki.art/review/6583"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "小磯良平",
@@ -7547,7 +7614,7 @@
       "働く人びと",
       "二人の少女"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7589,7 +7656,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/11/20251122m_s-1.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "青木繁",
@@ -7605,14 +7673,15 @@
       "わだつみのいろこの宮",
       "大穴牟知命"
     ],
-    "priceRange": "高額(希少)",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
       "共箱・鑑定書の有無で価格が大きく変動"
     ],
     "bio": "青木繁は東京美術学校で学び、日本神話や古代伝説に題材を求めたロマン主義的な作品で注目されました。「海の幸」は近代洋画の名作として名高く、重要文化財に指定されています。才能を高く評価されながら28歳で夭折し、その短い生涯と作品は伝説的に語り継がれています。",
-    "marketNote": "現存作品が少なく代表作は重要文化財として美術館所蔵が中心です。市場に出る真作は希少で高額となります。"
+    "marketNote": "現存作品が少なく代表作は重要文化財として美術館所蔵が中心です。市場に出る真作は希少で高額となります。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "伊東深水",
@@ -7628,7 +7697,7 @@
       "新美人十二姿",
       "吹雪"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7670,7 +7739,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2026/05/20260523m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "加山又造",
@@ -7686,7 +7756,7 @@
       "春秋波濤",
       "月光波濤"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認が重要",
       "状態(シミ・退色・破れ)の良し悪し",
@@ -7829,7 +7899,8 @@
         "q": "加山又造の買取査定はどこに依頼すればよいですか？",
         "a": "日本画・近代美術の取り扱い実績がある業者を選び、3社程度に査定を依頼して比較するのが基本です。屏風や大作は搬出方法の相談が必要になるため、出張査定に対応しているかもあわせて確認しておくとよいでしょう。"
       }
-    ]
+    ],
+    "dateModified": "2026-11-03"
   },
   {
     "name": "徳田八十吉",
@@ -7844,7 +7915,7 @@
       "燿彩鉢",
       "彩釉壺"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -7893,7 +7964,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "藤本能道",
@@ -7908,7 +7980,7 @@
       "色絵磁器壺",
       "釉描加彩鳥文皿"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -7950,7 +8022,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2026/03/20260328m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "井上萬二",
@@ -7965,7 +8038,7 @@
       "白磁壺",
       "白磁牡丹彫文壺"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -8007,7 +8080,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/12/20241207t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "鈴木藏",
@@ -8022,7 +8096,7 @@
       "志野茶碗",
       "志野水指"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -8064,7 +8138,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/06/20250614t_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "川端龍子",
@@ -8080,7 +8155,7 @@
       "愛染",
       "草炎"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8122,7 +8197,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/09/20250920m_s3.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "福田平八郎",
@@ -8138,7 +8214,7 @@
       "雨",
       "筍"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8180,7 +8256,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "堂本印象",
@@ -8196,7 +8273,7 @@
       "木華開耶媛",
       "抽象作品"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8238,7 +8315,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/11/20241123m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "橋本関雪",
@@ -8254,7 +8332,7 @@
       "玄猿",
       "唐犬図"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8296,7 +8374,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "上村松篁",
@@ -8312,7 +8391,7 @@
       "白孔雀",
       "樹下幼鹿"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8355,7 +8434,8 @@
         }
       ]
     },
-    "appraisalNote": "上村松篁は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧（日本画）に掲載されています（2026年7月・同機構公式サイトで確認）。母・上村松園、子・淳之と三代で鑑定対象に含まれています。"
+    "appraisalNote": "上村松篁は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧（日本画）に掲載されています（2026年7月・同機構公式サイトで確認）。母・上村松園、子・淳之と三代で鑑定対象に含まれています。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "杉山寧",
@@ -8551,7 +8631,7 @@
       "聖家族",
       "室内"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8593,7 +8673,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/05/20240525m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "藤島武二",
@@ -8609,7 +8690,7 @@
       "黒扇",
       "東洋振り"
     ],
-    "priceRange": "数百万〜数千万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8637,7 +8718,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/03/20240323m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "東郷青児",
@@ -8653,7 +8735,7 @@
       "超現実派の散歩",
       "望郷"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8674,7 +8756,8 @@
           "sourceUrl": "https://www.sbiartauction.co.jp/results/detail/58/160"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "熊谷守一",
@@ -8690,7 +8773,7 @@
       "ヤキバノカエリ",
       "朝の日輪"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -8718,7 +8801,8 @@
           "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000180.000082831.html"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "傅抱石",
@@ -8733,7 +8817,7 @@
       "麗人行",
       "山水図"
     ],
-    "priceRange": "数百万〜高額",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章(鈐印)の確認",
       "紙質・墨色・装裱の状態",
@@ -8761,7 +8845,8 @@
           "sourceUrl": "https://m.thepaper.cn/newsDetail_forward_10222086"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "李可染",
@@ -8776,7 +8861,7 @@
       "万山紅遍",
       "牧牛図"
     ],
-    "priceRange": "数百万〜高額",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章(鈐印)の確認",
       "紙質・墨色・装裱の状態",
@@ -8804,7 +8889,8 @@
           "sourceUrl": "https://en.thevalue.com/articles/sothebys-2017-autumn-sales-chinese-paintings-calligraphy-li-keran-results"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "三輪休和",
@@ -8819,7 +8905,7 @@
       "萩茶碗",
       "白萩水指"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -8861,7 +8947,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/01/20231209t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "加藤卓男",
@@ -8876,7 +8963,7 @@
       "三彩鉢",
       "ラスター彩壺"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -8918,7 +9005,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2023/12/20230610t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "山本陶秀",
@@ -8933,7 +9021,7 @@
       "備前緋襷壺",
       "備前茶入"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -8975,7 +9063,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2026/03/20260328m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "三浦小平二",
@@ -8990,7 +9079,7 @@
       "青磁鉢",
       "青磁人物文壺"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -9032,7 +9121,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2024/01/20231209t_c.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "塚本快示",
@@ -9047,7 +9137,7 @@
       "白磁鉢",
       "青白磁牡丹彫文壺"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "作者の銘・陶印の確認",
       "共箱・極箱・栞など付属の有無",
@@ -9089,7 +9179,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2026/03/20260328m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "山口蓬春",
@@ -9105,7 +9196,7 @@
       "新緑",
       "静物"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9133,7 +9224,8 @@
           "sourceUrl": "https://www.sbiartauction.co.jp/results/detail/140/29"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "小倉遊亀",
@@ -9149,7 +9241,7 @@
       "コーラス",
       "径"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9191,7 +9283,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/05/20250524m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "奥田元宋",
@@ -9207,7 +9300,7 @@
       "山雨",
       "秋嶽紅樹"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9228,7 +9321,8 @@
           "sourceUrl": "https://www.sbiartauction.co.jp/results/detail/140/36"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "中川一政",
@@ -9244,7 +9338,7 @@
       "薔薇",
       "向日葵"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9287,7 +9381,8 @@
         }
       ]
     },
-    "appraisalNote": "中川一政は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧に掲載されています（2026年7月・同機構公式サイトで確認）。"
+    "appraisalNote": "中川一政は、一般財団法人 東美鑑定評価機構の鑑定対象作家一覧に掲載されています（2026年7月・同機構公式サイトで確認）。",
+    "dateModified": "2026-11-03"
   },
   {
     "name": "荻須高徳",
@@ -9303,7 +9398,7 @@
       "壁",
       "運河"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9331,7 +9426,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/28957/lot/63/takanori-oguiss-1901-1986-peniches-sous-la-neige-canal-saint-denis/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "香月泰男",
@@ -9633,7 +9729,7 @@
       "薔薇",
       "富士山"
     ],
-    "priceRange": "数十万〜数百万円",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章の確認",
       "シミ・退色・折れなど状態の良し悪し",
@@ -9675,7 +9771,8 @@
           "sourceUrl": "https://www.shinwa-auction.com/wp-content/uploads/2025/05/20250524m_s.pdf"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "三岸節子",
@@ -9835,7 +9932,7 @@
       "東大寺",
       "裸婦"
     ],
-    "priceRange": "数万〜数十万円",
+    "priceRange": "",
     "checkPoints": [
       "版元印・落款・サインの確認",
       "摺りの状態・退色・虫食い",
@@ -9863,7 +9960,8 @@
           "sourceUrl": "https://www.bonhams.com/auction/26088/lot/827/hiratsuka-unichi-1895-1997-showa-era-1926-1989-1925-1950/"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "黄賓虹",
@@ -9878,7 +9976,7 @@
       "山水図",
       "湖山図"
     ],
-    "priceRange": "数百万〜高額",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章(鈐印)の確認",
       "紙質・墨色・装裱の状態",
@@ -9899,7 +9997,8 @@
           "sourceUrl": "https://www.chinadaily.com.cn/culture/art/2017-06/20/content_29810989.htm"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   },
   {
     "name": "潘天寿",
@@ -9914,7 +10013,7 @@
       "鷲鷹図",
       "荷花図"
     ],
-    "priceRange": "数百万〜高額",
+    "priceRange": "",
     "checkPoints": [
       "落款・印章(鈐印)の確認",
       "紙質・墨色・装裱の状態",
@@ -9942,6 +10041,7 @@
           "sourceUrl": "http://art.people.com.cn/n/2015/0518/c206244-27015210.html"
         }
       ]
-    }
+    },
+    "dateModified": "2026-11-03"
   }
 ]
