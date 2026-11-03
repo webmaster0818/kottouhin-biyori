@@ -299,7 +299,7 @@ export default function CategoryPageClient({
 
   const bestCompany = companies.find((c) => c.id === cat.bestCompany);
   const faqs = cat.faq || fallbackFaqData[slug] || [
-    { q: `${cat.name}の買取相場は？`, a: `${cat.name}の買取相場は${cat.priceRange}です。作家・時代・保存状態によって大きく変動します。正確な査定額を確認したい場合は、複数の業者への査定依頼をおすすめします。` },
+    { q: `${cat.name}の買取相場は？`, a: cat.priceRange ? `${cat.name}の買取相場は${cat.priceRange}です。作家・時代・保存状態によって大きく変動します。正確な査定額を確認したい場合は、複数の業者への査定依頼をおすすめします。` : `${cat.name}は作家・時代・保存状態によって評価が大きく変わるため、一律の金額はお示ししていません。正確な査定額を確認したい場合は、複数の業者への査定依頼をおすすめします。` },
     { q: `${cat.name}を高く売るコツは？`, a: "付属品（箱・鑑定書・証紙など）を揃え、複数の業者に査定を依頼することが、高額売却のポイントです。ご自身でクリーニングせず、現状のまま査定に出してください。" },
     { q: `${cat.name}の査定は無料ですか？`, a: "当サイトで紹介している3社は、いずれも査定が無料です。出張買取の場合も、出張費・査定費はかかりません。査定後のキャンセルも無料です。" },
   ];
@@ -320,10 +320,12 @@ export default function CategoryPageClient({
             <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
               {cat.heroLead ?? `${cat.name}の買取相場・査定のポイント・おすすめの業者をご説明します`}
             </p>
+            {cat.priceRange && (
             <div className="mt-8 inline-block bg-white/10 backdrop-blur rounded px-8 py-4 border border-white/20">
               <p className="text-sm text-amber-200 mb-1">買取相場</p>
               <p className="text-2xl md:text-3xl font-bold font-serif-jp">{cat.priceRange}</p>
             </div>
+            )}
           </div>
         </section>
 
@@ -335,11 +337,13 @@ export default function CategoryPageClient({
                 {cat.name}の買取について
               </h2>
               <p className="text-[#5C4A3A] leading-relaxed mb-6">{cat.description}</p>
+              {cat.priceRange && (
               <div className="bg-[#FAF7F2] rounded p-5 border border-[#E0D5C8]">
                 <p className="text-sm text-[#8B7D72] mb-1">買取相場</p>
                 <p className="text-2xl font-bold text-[#8B4513] font-serif-jp">{cat.priceRange}</p>
                 {cat.priceRangeNote && <p className="text-xs text-[#8B7D72] mt-2 leading-relaxed">{cat.priceRangeNote}</p>}
               </div>
+              )}
             </div>
           </div>
         </section>
@@ -482,7 +486,7 @@ export default function CategoryPageClient({
                 </div>
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 text-center leading-relaxed">
-                ※中央値・最高額は、当編集部が集計した公開オークションの落札実績（{soubaStats.resultCount}件）にもとづく参考値であり、実際の買取査定額とは異なります。国内外のオークション結果を含み、手数料込みか公表値かの別と帰属（伝・銘・代数）は、各作家ページに明記しています。買取相場（{cat.priceRange}）とあわせてご覧ください。
+                ※中央値・最高額は、当編集部が集計した公開オークションの落札実績（{soubaStats.resultCount}件）にもとづく参考値であり、実際の買取査定額とは異なります。国内外のオークション結果を含み、手数料込みか公表値かの別と帰属（伝・銘・代数）は、各作家ページに明記しています。{cat.priceRange ? `買取相場（${cat.priceRange}）とあわせてご覧ください。` : ""}
               </p>
             </div>
           </section>

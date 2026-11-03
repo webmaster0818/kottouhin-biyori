@@ -33,7 +33,7 @@ export default function SakkaSoubaPage() {
     "@context": "https://schema.org", "@type": "ItemList",
     name: "作家別 公開オークション落札実績インデックス",
     itemListElement: withAuction.map((a, i) => ({
-      "@type": "ListItem", position: i + 1, name: `${a.name}の買取相場・落札実績`,
+      "@type": "ListItem", position: i + 1, name: a.priceRange ? `${a.name}の買取相場・落札実績` : `${a.name}の落札実績`,
       url: `${SITE}/artist/${a.slug}/`,
     })),
   };
@@ -114,7 +114,7 @@ export default function SakkaSoubaPage() {
                             <Link href={`/artist/${a.slug}/`} className="text-[#8B4513] font-bold underline">{a.name}</Link>
                           </td>
                           <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A] whitespace-nowrap">{a.category}</td>
-                          <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A] whitespace-nowrap">{a.priceRange}</td>
+                          <td className="p-3 border border-[#E0D5C8] text-[#5C4A3A] whitespace-nowrap">{a.priceRange || "―（落札実績を参照）"}</td>
                           <td className="p-3 border border-[#E0D5C8] text-[#2C1810]">
                             {top.title}：<span className="font-bold text-[#8B4513]">{top.hammer}</span>
                             <span className="text-xs text-[#8B7D72]">（{top.house}{top.year ? `・${top.year}` : ""}）</span>
@@ -164,7 +164,7 @@ export default function SakkaSoubaPage() {
                           <Link key={a.slug} href={`/artist/${a.slug}/`} className="bg-white rounded-lg border border-[#E0D5C8] px-4 py-3 hover:border-[#C9A96E] hover:bg-[#F5ECD7] transition">
                             <span className="font-medium text-[#2C1810]">{a.name}</span>
                             {(a as any).auctionResults && <span className="ml-2 text-[10px] text-white bg-[#8B4513] rounded px-1.5 py-0.5 align-middle">落札実績</span>}
-                            <span className="block text-xs text-[#8B7D72] mt-0.5">{a.priceRange}</span>
+                            {a.priceRange && <span className="block text-xs text-[#8B7D72] mt-0.5">{a.priceRange}</span>}
                           </Link>
                         ))}
                       </div>
