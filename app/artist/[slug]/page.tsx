@@ -105,7 +105,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const relatedLinks = (artist as any).relatedLinks as { href: string; t: string; d: string }[] | undefined;
   const references = (artist as any).references as { verifiedAt: string; items: { label: string; url: string }[] } | undefined;
   // 人物の実在・生没年・肩書きの出典（公的・一次の出典。trust-audit C2 対応 2026-11-04）
-  const personSources = (artist as any).personSources as { verifiedAt: string; items: { label: string; url: string }[] } | undefined;
+  const personSources = (artist as any).personSources as { verifiedAt: string; scope?: string; items: { label: string; url: string }[] } | undefined;
 
   // FAQ(作家データから生成 + 作家個別の追加FAQ)
   const faqs = [
@@ -262,7 +262,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               </div>
               {personSources && (
                 <p className="text-xs text-[#8B7D72] mt-3 leading-relaxed">
-                  出典（生没年・経歴）：{personSources.items.map((r, i) => (
+                  出典（{personSources.scope ?? "生没年・経歴"}）：{personSources.items.map((r, i) => (
                     <span key={r.url}>{i > 0 && "／"}<a href={r.url} target="_blank" rel="noopener noreferrer" className="text-[#8B4513] underline hover:no-underline">{r.label}</a></span>
                   ))}（{personSources.verifiedAt}確認）
                 </p>
