@@ -116,7 +116,7 @@ export default function NingenKokuhouPage() {
             <div className="bg-[#FAF7F2] border-2 border-[#C9A96E]/50 rounded p-5 md:p-6 mb-8">
               <p className="font-serif-jp font-bold text-[#2C1810] mb-2">人間国宝の作品は、作家・作品の格・共箱や証紙の有無で評価が大きく変わります。</p>
               <p className="text-sm md:text-base text-[#5C4A3A] leading-relaxed">
-                分野（陶芸・漆芸・染織・金工）ごとに作品の種類と評価のされ方が異なり、一律の買取相場は示せません。共箱・証紙は作者を裏づける資料として重視されます。作家別の公開オークションの落札実績は、<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家別の落札実績インデックス</Link>（出典・確認日つき）でご確認いただけます。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
+                分野（陶芸・漆芸・染織・金工）ごとに作品の種類と評価のされ方が異なり、一律の買取相場は示せません。共箱・証紙は作者を裏づける資料として重視されます。作家別の公開オークションの落札実績は、<Link href="/guide/sakka-souba/" className="text-[#8B4513] underline">作家別の落札実績インデックス</Link>（出典・確認日を記載）でご確認いただけます。故人となった人間国宝の作品は、新たな作品が制作されないことによる希少性から、市場価値が上昇する傾向にあります。高額での売却のためには、専門性の高い業者3社以上から見積もりを取ることが基本です。
               </p>
             </div>
             <div className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">

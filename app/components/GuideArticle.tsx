@@ -33,7 +33,7 @@ export interface GuideArticleProps {
   faq?: GuideFaq[];
   deepDive?: { h: string; body: string }[]; // 追加の詳しい解説セクション
   updatedAt?: string; // 指定時はヒーローに「最終更新」を出し、Article の dateModified に使う（例: "2026-10-23"）
-  tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典つき）
+  tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典を記載）
 }
 
 export default function GuideArticle(p: GuideArticleProps) {

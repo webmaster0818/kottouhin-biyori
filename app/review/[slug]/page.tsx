@@ -22,8 +22,8 @@ type TopicSection = {
 };
 
 
-// 口コミ情報の有無：出典つきの公開口コミの傾向・Google口コミのデータがあるか、
-// 個別に書いた seoTitle が口コミ・評判を扱う（本文に出典つきの口コミ件数・評価を載せている）ページ
+// 口コミ情報の有無：出典のある公開口コミの傾向・Google口コミのデータがあるか、
+// 個別に書いた seoTitle が口コミ・評判を扱う（本文に出典のある口コミ件数・評価を載せている）ページ
 function hasReviewData(company: unknown): boolean {
   const c = company as { reviewTrend?: unknown; googleReviews?: unknown; seoTitle?: string };
   return Boolean(c.reviewTrend || c.googleReviews || /口コミ|評判/.test(c.seoTitle ?? ""));

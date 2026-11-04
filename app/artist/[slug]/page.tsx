@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 function metaDesc(artist: any) {
   return artist.priceRange
     ? `${artist.name}（${artist.era}）の${artist.category}の買取相場は${artist.priceRange}です。査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`
-    : `${artist.name}（${artist.era}）の${artist.category}の買取について、${artist.auctionResults ? "公開オークションの落札実績（出典つき）、" : ""}査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`;
+    : `${artist.name}（${artist.era}）の${artist.category}の買取について、${artist.auctionResults ? "公開オークションの落札実績（出典を記載）、" : ""}査定・鑑定の依頼方法、代表作、鑑定のポイント、高く売るためのポイントをご説明します。`;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -111,7 +111,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   const faqs = [
     { q: `${artist.name}の作品はいくらで売れますか？`, a: (artist as any).priceFaqAnswer ?? (artist.priceRange
       ? `${artist.name}の${artist.category}の買取相場は、${artist.priceRange}が目安です。真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定でご確認ください。`
-      : `${artist.name}の作品について、買取相場として示せる公開の買取価格は、まだ確認できていません。${(artist as any).auctionResults ? "公開オークションの落札実績は、本ページの表（出典・確認日つき）をご覧ください。落札額は買取額とは異なります。" : ""}真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定でご確認ください。`) },
+      : `${artist.name}の作品について、買取相場として示せる公開の買取価格は、まだ確認できていません。${(artist as any).auctionResults ? "公開オークションの落札実績は、本ページの表（出典・確認日を記載）をご覧ください。落札額は買取額とは異なります。" : ""}真贋・状態・付属品・作品の格によって大きく変動するため、正確な金額は無料査定でご確認ください。`) },
     { q: `傷んだ${artist.name}の作品でも売れますか？`, a: `売却できます。${artist.name}のように評価の高い作家の作品は、傷みや欠けがあっても、修復・再販を前提に買い取られる場合が多くあります。ご自身で手入れせず、現状のまま査定に出してください。` },
     { q: `本物かどうかわかりませんが査定できますか？`, a: (artist as any).authFaqAnswer ?? `問題ありません。専門の査定士が、落款・印章・作風・付属品などから真贋を判断します。${artist.name}の作品には精巧な写しも存在するため、専門業者での査定をおすすめします。` },
     { q: `${artist.name}の作品を高く売るには？`, a: `複数の業者から見積もりを取ることが、最も効果的です。共箱・鑑定書などの付属品を揃え、骨董・古美術に強い業者を選ぶことで、より高い査定が期待できます。` },
@@ -235,7 +235,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
             <p className="text-[#5C4A3A] leading-relaxed">
               {artist.name}（{artist.era}）は、{artist.category}の分野で高く評価されている作家です。
               代表作に{worksText}などがあり、買取市場でも安定した需要があります。
-              本ページでは、{artist.name}の{artist.category}の{artist.priceRange ? <strong>{((artist as any).priceLabel ?? "買取相場") + "（"}{artist.priceRange}）</strong> : ((artist as any).auctionResults ? "公開オークションの落札実績（出典つき）" : "買取の流れ")}、
+              本ページでは、{artist.name}の{artist.category}の{artist.priceRange ? <strong>{((artist as any).priceLabel ?? "買取相場") + "（"}{artist.priceRange}）</strong> : ((artist as any).auctionResults ? "公開オークションの落札実績（出典を記載）" : "買取の流れ")}、
               真贋・査定で確認されるポイント、高く売るためのポイント、おすすめの買取業者をご説明します。
               {artist.name}の作品の売却をご検討の際の参考としてご活用ください。
             </p>
@@ -323,7 +323,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
               <p className="text-sm text-[#8B7D72] mb-1">{(artist as any).priceLabel ?? "買取価格の目安"}</p>
               {artist.priceRange
                 ? <p className="text-3xl font-bold text-[#8B4513]">{artist.priceRange}</p>
-                : <p className="text-base text-[#5C4A3A] leading-relaxed">買取価格の目安として示せる公開の買取実績は、まだ確認できていません。{(artist as any).auctionResults ? "下記の落札実績（出典・確認日つき）をご参照ください。" : ""}</p>}
+                : <p className="text-base text-[#5C4A3A] leading-relaxed">買取価格の目安として示せる公開の買取実績は、まだ確認できていません。{(artist as any).auctionResults ? "下記の落札実績（出典・確認日を記載）をご参照ください。" : ""}</p>}
               {priceRangeNote && <p className="text-xs text-[#5C4A3A] mt-2 leading-relaxed text-left md:text-center">{priceRangeNote}</p>}
             </div>
             <p className="text-sm text-[#8B7D72] mb-6">
