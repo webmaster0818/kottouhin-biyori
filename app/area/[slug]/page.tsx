@@ -4,6 +4,7 @@ import SiteHeader from "@/app/components/SiteHeader";
 import SiteFooter from "@/app/components/SiteFooter";
 import areas from "@/data/areas.json";
 import companies from "@/data/companies.json";
+import areaCoverage1105 from "@/data/area-coverage.json";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -37,7 +38,9 @@ const NATIONWIDE: Record<string, string> = {
   eijudo: "買取対応エリアのページに「愛知・名古屋を中心に全国へ骨董品を出張買取します」「その他の地域も出張買取いたします」と記載",
   "antique-tokyo": "トップページに「北海道から沖縄まで、日本全国宅配買取にご対応致します」と記載（出張買取は東京・埼玉・神奈川・千葉）",
 };
+// 仙台・新潟以外の28エリア（2026-11-05 公式確認・data/area-coverage.json）
 const areaCoverage: Record<string, AreaCoverage> = {
+  ...(areaCoverage1105 as Record<string, AreaCoverage>),
   sendai: {
     pref: "宮城県",
     checkedOn: "2026年10月31日",
