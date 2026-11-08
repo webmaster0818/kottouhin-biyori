@@ -6,7 +6,7 @@ import companies from "@/data/companies.json";
 
 const SITE = "https://kottokaitori-biyori.com";
 const PATH = "/review/";
-const UPDATED = "2026年9月17日";
+const UPDATED = "2026年11月9日";
 
 // app/review/ 配下に実在する静的ページ（app/review/[slug]/page.tsx の EXISTING_STATIC と同じ）
 const STATIC_REVIEW_SLUGS = new Set(["hikakaku", "tifana", "uriel"]);
@@ -29,10 +29,22 @@ const reviewed: C[] = (companies as C[])
 
 const verifiedAt = (c: C) => (c as { verifiedData?: { verifiedAt?: string } }).verifiedData?.verifiedAt ?? "—";
 
+const PAGE_TITLE = `骨董品買取業者の一覧｜掲載${reviewed.length}社の業態・対応エリア・買取方法｜骨董品買取びより`;
+const PAGE_DESCRIPTION = `骨董品買取びよりに掲載している買取業者${reviewed.length}社の一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日を掲載し、業者ごとの個別ページへのリンクを設けています。`;
+
 export const metadata: Metadata = {
-  title: `骨董品買取業者のレビュー一覧｜掲載${reviewed.length}社の業態・対応エリア・買取方法｜骨董品買取びより`,
-  description: `骨董品買取びよりに掲載している買取業者${reviewed.length}社のレビューページの一覧です。日晃堂・バイセル・福ちゃん・緑和堂・古美術八光堂・なんぼや・ヒカカク！など、各社の業態・対応エリア・買取方法・公式サイトでの確認日を掲載し、業者ごとの詳細なレビューページへのリンクを設けています。`,
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   alternates: { canonical: PATH },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PATH,
+    type: "website",
+    locale: "ja_JP",
+    siteName: "骨董品買取びより",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "骨董品買取びより", type: "image/png" }],
+  },
 };
 
 export default function ReviewIndexPage() {
@@ -41,13 +53,13 @@ export default function ReviewIndexPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "ホーム", item: SITE },
-      { "@type": "ListItem", position: 2, name: "業者レビュー一覧", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "業者一覧", item: `${SITE}${PATH}` },
     ],
   };
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "骨董品買取業者のレビュー一覧",
+    name: "骨董品買取業者の一覧",
     itemListElement: reviewed.map((c, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -68,7 +80,7 @@ export default function ReviewIndexPage() {
               <nav className="text-xs text-[#8B7D72]">
                 <Link href="/" className="hover:text-[#8B4513]">ホーム</Link>
                 <span className="mx-2">/</span>
-                <span className="text-[#5C4A3A]">業者レビュー一覧</span>
+                <span className="text-[#5C4A3A]">業者一覧</span>
               </nav>
             </div>
           </div>
@@ -76,10 +88,10 @@ export default function ReviewIndexPage() {
           <section className="bg-[#3B2416] text-white">
             <div className="max-w-5xl mx-auto px-4 py-14 md:py-20 text-center">
               <h1 className="font-serif-jp text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                骨董品買取業者のレビュー一覧
+                骨董品買取業者の一覧
               </h1>
               <p className="text-lg text-amber-100 max-w-2xl mx-auto leading-relaxed">
-                当サイトが個別ページを設けている買取業者{reviewed.length}社の一覧です。各社の業態・対応エリア・買取方法をご確認のうえ、詳細なレビューページをご覧ください。
+                当サイトが個別ページを設けている買取業者{reviewed.length}社の一覧です。各社の業態・対応エリア・買取方法をご確認のうえ、業者ごとの個別ページをご覧ください。
               </p>
             </div>
           </section>
@@ -95,7 +107,7 @@ export default function ReviewIndexPage() {
                 骨董品の買取業者は、骨董・古美術を専門に扱う業者、ブランド品や貴金属を主力とする総合リユース業者、複数の業者にまとめて査定を依頼できる一括査定サービスなど、業態が明確に分かれています。同じ品物であっても、どの業態の業者に依頼するかによって評価の観点が異なるため、各社の業態を把握しておくことが、業者選びの基本となります。
               </p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed mb-3">
-                以下の一覧では、業者名・概要・業態・対応エリア・買取方法を掲載しています。掲載内容は各社の公式サイトで確認した事実情報にもとづくもので、確認日も併記しています。料金や対応条件は変更される場合があるため、ご利用前に、公式サイトおよび無料査定にて最新情報をご確認ください。各業者名のリンク先には、その業者の特徴・メリットとデメリット・利用の流れ・よくある質問を掲載した個別のレビューページがあります。
+                以下の一覧では、業者名・概要・業態・対応エリア・買取方法を掲載しています。掲載内容は各社の公式サイトで確認した事実情報にもとづくもので、確認日も併記しています。料金や対応条件は変更される場合があるため、ご利用前に、公式サイトおよび無料査定にて最新情報をご確認ください。各業者名のリンク先には、その業者の特徴・メリットとデメリット・利用の流れ・よくある質問を掲載した個別ページがあります。
               </p>
               <p className="text-sm text-[#5C4A3A] leading-relaxed">
                 なお、買取査定の結果は品物の内容によって異なるため、特定の業者の査定額が常に最も高いとは言えません。骨董品の売却では、2〜3社以上の無料査定を比較したうえで判断することをおすすめします。品目ごとの適性を含めた比較は、
@@ -106,10 +118,10 @@ export default function ReviewIndexPage() {
 
             <section className="mb-12">
               <h2 className="font-serif-jp text-2xl font-bold text-[#2C1810] mb-3 border-l-4 border-amber-500 pl-4">
-                掲載業者{reviewed.length}社のレビュー一覧
+                掲載業者{reviewed.length}社の一覧
               </h2>
               <p className="text-sm text-[#5C4A3A] mb-5">
-                業者名をクリックすると、各社の詳細レビューページへ移動します。
+                業者名をクリックすると、各社の個別ページへ移動します。
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {reviewed.map((c) => (
@@ -148,18 +160,18 @@ export default function ReviewIndexPage() {
                       href={`/review/${c.slug}/`}
                       className="inline-block text-sm bg-[#F5ECD7] text-[#8B4513] rounded-lg px-4 py-2 font-bold hover:bg-[#ecdcc0] transition"
                     >
-                      {c.name}のレビュー
+                      {c.name}の詳細を見る
                     </Link>
                   </article>
                 ))}
               </div>
               <p className="text-xs text-[#8B7D72] mt-4 leading-relaxed">
-                ※ 一覧の並び順は当サイト編集部が設定した掲載順であり、査定額の高さを示す順位ではありません。記載している事実情報は、各レビューページに記載した確認日時点のものです。
+                ※ 一覧の並び順は当サイト編集部が設定した掲載順であり、査定額の高さを示す順位ではありません。記載している事実情報は、各個別ページに記載した確認日時点のものです。
               </p>
             </section>
 
             <section className="bg-white rounded border border-[#E0D5C8] p-6 md:p-8">
-              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">レビューページの読み方</h2>
+              <h2 className="font-serif-jp text-xl font-bold text-[#2C1810] mb-3">個別ページの読み方</h2>
               <ul className="space-y-2 text-sm text-[#5C4A3A] leading-relaxed">
                 <li>・<strong>業態を確認する</strong>：骨董・古美術の専門業者か、総合リユース業者か、一括査定サービスかによって、得意な品目と査定の進め方が異なります。</li>
                 <li>・<strong>買取方法を確認する</strong>：出張・宅配・店頭のいずれに対応しているかは、業者ごとに異なります。割れやすい陶磁器や大型の品は、自宅で査定を受けられる出張買取が適しています。</li>
