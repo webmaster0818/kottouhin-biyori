@@ -55,9 +55,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // 関連品目（素材・用途・売られ方が近いもの）。双方向にしておく
 const RELATED_CATEGORIES: Record<string, string[]> = {
-  kakejiku: ["byoubu", "kosho"],
+  kakejiku: ["byoubu", "kosho", "nihonga"],
   sadougu: ["tetsubin", "shikki", "kofu"],
-  kaiga: ["byoubu", "ukiyoe"],
+  kaiga: ["byoubu", "ukiyoe", "nihonga"],
   touken: ["bugu"],
   toujiki: ["seiyou-touki", "shikki"],
   kosen: ["gunsou", "kitte"],
@@ -69,9 +69,9 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   ukiyoe: ["kosho", "kaiga"],
   kosho: ["kakejiku", "ukiyoe"],
   kodougu: ["tetsubin", "antique-kagu", "butsuzou"],
-  kofu: ["kimono", "sadougu"],
-  shikki: ["sadougu", "toujiki"],
-  "antique-kagu": ["seiyou-antique", "kodokei", "camera", "kodougu"],
+  kofu: ["kimono", "sadougu", "hina-ningyo"],
+  shikki: ["sadougu", "toujiki", "hina-ningyo"],
+  "antique-kagu": ["seiyou-antique", "kodokei", "camera", "kodougu", "persian-carpet"],
   kodokei: ["antique-kagu", "camera"],
   camera: ["kodokei", "antique-kagu"],
   ginki: ["seiyou-antique", "antique-glass", "seiyou-touki"],
@@ -79,6 +79,9 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   bugu: ["touken", "gunsou"],
   byoubu: ["kakejiku", "kaiga"],
   gunsou: ["bugu", "kosen"],
+  "hina-ningyo": ["kofu", "shikki"],
+  nihonga: ["kaiga", "kakejiku", "byoubu", "ukiyoe"],
+  "persian-carpet": ["antique-kagu", "seiyou-antique"],
 };
 const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク" };
 
@@ -102,8 +105,12 @@ export default async function CategoryPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": (cat as { h1?: string } | undefined)?.h1 ?? `${cat?.name ?? slug}買取おすすめ業者3選｜相場・査定のポイント`,
-    "description": `${cat?.priceRange ? `${cat.name}の買取相場は${cat.priceRange}です。` : ""}${cat?.name ?? slug}を高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
-    "datePublished": `${BUILD_DATE}T00:00:00+09:00`,
+    // 推奨業者を設定していないカテゴリ（業者比較を載せないページ）は、メタ説明文をそのまま使う
+    "description": !cat?.bestCompany && (cat as { metaDescription?: string } | undefined)?.metaDescription
+      ? (cat as { metaDescription?: string }).metaDescription
+      : `${cat?.priceRange ? `${cat.name}の買取相場は${cat.priceRange}です。` : ""}${cat?.name ?? slug}を高く売るための査定のポイントと、おすすめの買取業者を比較しています。`,
+    // 推奨業者を設定していないカテゴリは 2026-11-08 以降の追加ページのため、公開日に dateModified を使う
+    "datePublished": `${!cat?.bestCompany && (cat as { dateModified?: string } | undefined)?.dateModified ? (cat as { dateModified: string }).dateModified : BUILD_DATE}T00:00:00+09:00`,
     "dateModified": `${(cat as { dateModified?: string } | undefined)?.dateModified ?? BUILD_DATE}T00:00:00+09:00`,
     "author": { "@type": "Organization", "name": "骨董品買取びより", "url": `${SITE_URL}/about/` },
     "publisher": { "@type": "Organization", "name": "骨董品買取びより", "url": SITE_URL },

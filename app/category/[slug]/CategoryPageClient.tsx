@@ -277,6 +277,10 @@ const fakeIdentificationTips: Record<string, { title: string; text: string }[]> 
   ],
 };
 
+// 品目別ページの業者比較に出さない業者（2026-11-08 追加分）。
+// 思文閣はオークション出品が中心、本郷美術骨董館は品目別の買取条件を未確認のため、品目ごとの比較には載せず、業者レビューと一覧にのみ掲載する
+const CATEGORY_COMPARE_EXCLUDE = new Set(["shibunkaku", "hongou"]);
+
 type ArtistRow = { slug: string; name: string; count: number; topTitle: string; topHammer: string; verifiedAt: string };
 
 export default function CategoryPageClient({
@@ -639,7 +643,8 @@ export default function CategoryPageClient({
           </section>
         )}
 
-        {/* 3-Company Comparison */}
+        {/* 3-Company Comparison（推奨業者を設定していないカテゴリでは出さない） */}
+        {cat.bestCompany && (
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
@@ -648,7 +653,7 @@ export default function CategoryPageClient({
               </h2>
             </div>
             <div className="space-y-6">
-              {companies.map((company) => (
+              {companies.filter((company) => !CATEGORY_COMPARE_EXCLUDE.has(company.id)).map((company) => (
                 <article key={company.id} className="bg-white rounded overflow-hidden border border-[#E0D5C8]">
                   <div className="p-6 md:p-8">
                     <div className="flex items-start gap-4 mb-4">
@@ -685,6 +690,7 @@ export default function CategoryPageClient({
             </div>
           </div>
         </section>
+        )}
 
         {/* 保管法 (該当カテゴリのみ) */}
         {preservation && (
@@ -831,9 +837,15 @@ export default function CategoryPageClient({
             <p className="text-amber-200 mb-8">
               お手持ちの{cat.name}の正確な価値を確認するために、無料査定をご利用ください
             </p>
+            {cat.bestCompany ? (
             <Link href="/#ranking" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
               おすすめの業者を確認する
             </Link>
+            ) : (
+            <Link href="/review/" className="inline-block bg-[#C9A96E] hover:bg-[#B8975C] text-[#2C1810] font-bold px-10 py-4 rounded transition text-lg">
+              買取業者の一覧を確認する
+            </Link>
+            )}
           </div>
         </section>
         {slug === "kakejiku" && (
