@@ -55,18 +55,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // 関連品目（素材・用途・売られ方が近いもの）。双方向にしておく
 const RELATED_CATEGORIES: Record<string, string[]> = {
-  kakejiku: ["byoubu", "kosho", "nihonga"],
+  kakejiku: ["byoubu", "kosho", "nihonga", "inzai"],
   sadougu: ["tetsubin", "shikki", "kofu"],
-  kaiga: ["byoubu", "ukiyoe", "nihonga"],
+  kaiga: ["byoubu", "ukiyoe", "nihonga", "hanga", "contemporary-art"],
   touken: ["bugu"],
   toujiki: ["seiyou-touki", "shikki"],
-  kosen: ["gunsou", "kitte"],
+  kosen: ["gunsou", "kitte", "kinen-medal"],
   kitte: ["kosen"],
   kimono: ["kofu"],
   tetsubin: ["sadougu", "kodougu"],
-  butsuzou: ["kodougu"],
+  butsuzou: ["kodougu", "chokoku"],
   "seiyou-touki": ["toujiki", "antique-glass", "ginki", "seiyou-antique"],
-  ukiyoe: ["kosho", "kaiga"],
+  ukiyoe: ["kosho", "kaiga", "hanga"],
   kosho: ["kakejiku", "ukiyoe"],
   kodougu: ["tetsubin", "antique-kagu", "butsuzou"],
   kofu: ["kimono", "sadougu", "hina-ningyo"],
@@ -78,12 +78,17 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   "antique-glass": ["seiyou-antique", "ginki", "seiyou-touki"],
   bugu: ["touken", "gunsou"],
   byoubu: ["kakejiku", "kaiga"],
-  gunsou: ["bugu", "kosen"],
+  gunsou: ["bugu", "kosen", "kinen-medal"],
   "hina-ningyo": ["kofu", "shikki"],
-  nihonga: ["kaiga", "kakejiku", "byoubu", "ukiyoe"],
+  nihonga: ["kaiga", "kakejiku", "byoubu", "ukiyoe", "hanga", "inzai"],
   "persian-carpet": ["antique-kagu", "seiyou-antique"],
+  "kinen-medal": ["kosen", "gunsou"],
+  hanga: ["ukiyoe", "nihonga", "kaiga", "contemporary-art"],
+  inzai: ["chugoku-bijutsu", "kakejiku", "nihonga"],
+  "contemporary-art": ["kaiga", "hanga", "chokoku"],
+  chokoku: ["butsuzou", "contemporary-art"],
 };
-const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク" };
+const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク", "chugoku-bijutsu": "中国美術" };
 
 export default async function CategoryPage({ params }: Props) {
   const { slug } = await params;

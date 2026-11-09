@@ -17,6 +17,10 @@ type CategoryData = {
   types?: { name: string; description: string }[];
   buyExamples?: { item: string; price: string; note: string; shop?: string; date?: string; sourceUrl?: string }[];
   buyExamplesLead?: string;
+  // 表の見出し・列名の上書き（個別の事例ではなく素材別の相場などを載せるカテゴリ用。未指定なら従来どおり）
+  buyExamplesHeading?: string;
+  buyExamplesItemLabel?: string;
+  buyExamplesPriceLabel?: string;
   buyExamplesFootnote?: string;
   priceRangeNote?: string;
   references?: { verifiedAt: string; items: { label: string; url: string }[] };
@@ -396,7 +400,7 @@ export default function CategoryPageClient({
             <div className="max-w-5xl mx-auto px-4">
               <div className="mb-8 pb-3 border-b border-[#2C1810]/70">
                 <h2 className="font-serif-jp text-2xl md:text-3xl font-bold text-[#2C1810]">
-                  {hasExampleSources ? `${cat.name}の公開買取実績` : `${cat.name}の買取価格の目安`}
+                  {cat.buyExamplesHeading ?? (hasExampleSources ? `${cat.name}の公開買取実績` : `${cat.name}の買取価格の目安`)}
                 </h2>
                 <p className="text-[#5C4A3A] mt-2">{cat.buyExamplesLead ?? "市場相場にもとづく参考価格です"}</p>
               </div>
@@ -420,8 +424,8 @@ export default function CategoryPageClient({
                 <table className="w-full">
                   <thead>
                     <tr className="bg-[#8B4513] text-white">
-                      <th className="px-6 py-4 text-left text-sm font-bold">作品例</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold">{hasExampleSources ? "買取価格" : "参考価格"}</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold">{cat.buyExamplesItemLabel ?? "作品例"}</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold">{cat.buyExamplesPriceLabel ?? (hasExampleSources ? "買取価格" : "参考価格")}</th>
                       <th className="px-6 py-4 text-left text-sm font-bold">備考</th>
                       {hasExampleSources && <th className="px-6 py-4 text-left text-sm font-bold">出典</th>}
                     </tr>
