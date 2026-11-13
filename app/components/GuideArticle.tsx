@@ -34,6 +34,8 @@ export interface GuideArticleProps {
   deepDive?: { h: string; body: string }[]; // 追加の詳しい解説セクション
   updatedAt?: string; // 指定時はヒーローに「最終更新」を出し、Article の dateModified に使う（例: "2026-10-23"）
   tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典を記載）
+  sources?: { label: string; url: string }[]; // 出典の一覧（deepDive の後に表示）
+  sourcesCheckedAt?: string; // 出典の確認日（例: "2026年11月13日"）
 }
 
 export default function GuideArticle(p: GuideArticleProps) {
@@ -184,6 +186,21 @@ export default function GuideArticle(p: GuideArticleProps) {
                     <p className="text-[#5C4A3A] leading-relaxed">{s.body}</p>
                   </div>
                 ))}
+              </div>
+            </section>
+          )}
+
+          {p.sources && p.sources.length > 0 && (
+            <section className="pb-12 md:pb-16 bg-white">
+              <div className="max-w-4xl mx-auto px-4">
+                <h2 className="font-serif-jp text-lg font-bold text-[#2C1810] mb-3">出典{p.sourcesCheckedAt ? `（${p.sourcesCheckedAt}確認）` : ""}</h2>
+                <ul className="space-y-1 text-sm text-[#5C4A3A]">
+                  {p.sources.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-[#8B4513] break-all">{s.label}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </section>
           )}

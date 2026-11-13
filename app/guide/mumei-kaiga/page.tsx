@@ -144,6 +144,16 @@ const data: GuideArticleProps = {
       body: "作者が特定できない絵画は、業者によって評価が分かれやすい品物です。1社の査定で金額が付かなかった場合でも、絵画を専門に扱う業者と総合リユースの業者では見方が異なることがあります。2社以上の査定額と、その理由（作者の推定・状態・需要）を比べてから判断してください。複数の品物をまとめて査定に出すと、単独では値の付きにくい作品も一緒に引き取ってもらいやすくなります。",
     },
   ],
+  sourcesCheckedAt: "2026年11月13日",
+  sources: [
+    { label: "日晃堂 絵画買取", url: "https://nikkoudou-kottou.com/painting/" },
+    { label: "バイセル 絵画買取", url: "https://buysell-kaitori.com/antique/painting/" },
+    { label: "古美術永澤 絵画買取に関するよくある質問", url: "https://art.eizawa.com/faq/" },
+    { label: "獏 よくある質問", url: "https://www.baku-art.co.jp/faq/" },
+    { label: "緑和堂 絵画 買取強化エリア", url: "https://ryokuwado.com/kaiga/" },
+    { label: "東京美術倶楽部 美術品評価/売却・鑑定業務", url: "https://www.toobi.co.jp/service/judge/" },
+    { label: "東京文化財研究所 物故者記事（東文研アーカイブデータベース）", url: "https://www.tobunken.go.jp/materials/bukko" },
+  ],
 };
 
 export default function Page() {

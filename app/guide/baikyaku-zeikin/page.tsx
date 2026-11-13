@@ -118,6 +118,14 @@ const data: GuideArticleProps = {
       body: "相続した美術品は、相続の時点で相続税の課税対象となり、売った時点で譲渡所得の対象となることがあります。2つは別の税金です。相続税の申告で評価した金額と、実際の買取額が大きく異なることもあります。相続税の評価方法は「骨董品と相続税」、遺品整理から売却までの進め方は「遺品整理で出てきた骨董品の扱い」のページでご説明しています。",
     },
   ],
+  sourcesCheckedAt: "2026年11月13日",
+  sources: [
+    { label: "国税庁 No.3105 譲渡所得の対象となる資産と課税方法", url: "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3105.htm" },
+    { label: "国税庁 No.3152 譲渡所得の計算のしかた（総合課税）", url: "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3152.htm" },
+    { label: "国税庁 No.3267 相続財産を譲渡した場合の取得費の特例", url: "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3267.htm" },
+    { label: "国税庁 No.1900 給与所得者で確定申告が必要な人", url: "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1900.htm" },
+    { label: "国税庁 所得税基本通達 法第38条（譲渡所得の金額の計算上控除する取得費）関係", url: "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/18.htm" },
+  ],
 };
 
 export default function Page() {
