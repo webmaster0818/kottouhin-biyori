@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/antique-kagu/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -278,7 +278,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/nihonga/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -296,7 +296,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/hanga/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -308,7 +308,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/contemporary-art/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -319,8 +319,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/category/orgel/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/abura-e/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/category/kaiga/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -344,7 +356,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/kodokei/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1193,6 +1205,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/review/artkaitori/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/takakuureru/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/review/bikando/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1326,7 +1350,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/gyosha-hikaku/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1476,7 +1500,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/trouble/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

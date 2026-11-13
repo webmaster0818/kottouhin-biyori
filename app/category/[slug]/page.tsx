@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const RELATED_CATEGORIES: Record<string, string[]> = {
   kakejiku: ["byoubu", "kosho", "nihonga", "inzai"],
   sadougu: ["tetsubin", "shikki", "kofu"],
-  kaiga: ["byoubu", "ukiyoe", "nihonga", "hanga", "contemporary-art"],
+  kaiga: ["byoubu", "ukiyoe", "nihonga", "hanga", "contemporary-art", "abura-e"],
   touken: ["bugu"],
   toujiki: ["seiyou-touki", "shikki"],
   kosen: ["gunsou", "kitte", "kinen-medal"],
@@ -71,8 +71,8 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   kodougu: ["tetsubin", "antique-kagu", "butsuzou"],
   kofu: ["kimono", "sadougu", "hina-ningyo"],
   shikki: ["sadougu", "toujiki", "hina-ningyo"],
-  "antique-kagu": ["seiyou-antique", "kodokei", "camera", "kodougu", "persian-carpet"],
-  kodokei: ["antique-kagu", "camera"],
+  "antique-kagu": ["seiyou-antique", "kodokei", "camera", "kodougu", "persian-carpet", "orgel"],
+  kodokei: ["antique-kagu", "camera", "orgel"],
   camera: ["kodokei", "antique-kagu"],
   ginki: ["seiyou-antique", "antique-glass", "seiyou-touki"],
   "antique-glass": ["seiyou-antique", "ginki", "seiyou-touki"],
@@ -80,13 +80,15 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   byoubu: ["kakejiku", "kaiga"],
   gunsou: ["bugu", "kosen", "kinen-medal"],
   "hina-ningyo": ["kofu", "shikki"],
-  nihonga: ["kaiga", "kakejiku", "byoubu", "ukiyoe", "hanga", "inzai"],
+  nihonga: ["kaiga", "kakejiku", "byoubu", "ukiyoe", "hanga", "inzai", "abura-e"],
   "persian-carpet": ["antique-kagu", "seiyou-antique"],
   "kinen-medal": ["kosen", "gunsou"],
-  hanga: ["ukiyoe", "nihonga", "kaiga", "contemporary-art"],
+  hanga: ["ukiyoe", "nihonga", "kaiga", "contemporary-art", "abura-e"],
   inzai: ["chugoku-bijutsu", "kakejiku", "nihonga"],
-  "contemporary-art": ["kaiga", "hanga", "chokoku"],
+  "contemporary-art": ["kaiga", "hanga", "chokoku", "abura-e"],
   chokoku: ["butsuzou", "contemporary-art"],
+  "abura-e": ["kaiga", "nihonga", "hanga", "contemporary-art"],
+  orgel: ["kodokei", "antique-kagu", "seiyou-antique"],
 };
 const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク", "chugoku-bijutsu": "中国美術" };
 
