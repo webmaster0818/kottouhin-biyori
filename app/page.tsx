@@ -119,7 +119,7 @@ const websiteSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "骨董品買取おすすめ業者ランキング 14選",
+  "name": "骨董品買取の掲載業者一覧",
   "itemListElement": companies.map((c, i) => ({
     "@type": "ListItem",
     "position": i + 1,
@@ -438,7 +438,6 @@ export default function Home() {
               {companies.map((company) => (
                 <article key={company.id} id={company.slug} className="border-t-2 border-[#2C1810] pt-5 scroll-mt-24">
                   <div className="flex items-baseline gap-3 mb-1">
-                    <span className="font-serif-jp text-2xl font-bold text-[#8B4513] tabular-nums">{company.rank}</span>
                     <h3 className="font-serif-jp text-xl md:text-2xl font-bold text-[#2C1810]">{company.name}</h3>
                     <span className="text-xs text-[#8B7D72]">{company.type}</span>
                   </div>

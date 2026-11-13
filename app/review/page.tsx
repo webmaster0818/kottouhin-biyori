@@ -127,9 +127,6 @@ export default function ReviewIndexPage() {
                 {reviewed.map((c) => (
                   <article key={c.slug} className="bg-white rounded border border-[#E0D5C8] p-5">
                     <div className="flex items-start gap-3 mb-3">
-                      <span className="shrink-0 w-8 h-8 rounded-sm bg-[#F5ECD7] text-[#8B4513] flex items-center justify-center text-sm font-bold">
-                        {c.rank}
-                      </span>
                       <div className="flex-1">
                         <h3 className="font-serif-jp text-lg font-bold text-[#2C1810] leading-tight">
                           <Link href={`/review/${c.slug}/`} className="text-[#8B4513] hover:underline">{c.name}</Link>

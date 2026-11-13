@@ -43,7 +43,6 @@ export default function CompareTable({ list }: { list?: C[] }) {
               return (
                 <tr key={c.slug} className="border-b border-[#E6DDD1] last:border-b-0">
                   <td className="sticky left-0 z-10 bg-white px-3 py-2 border-r border-[#E6DDD1] whitespace-nowrap">
-                    <span className="text-[#8B7D72] mr-1.5 tabular-nums">{c.rank}</span>
                     <Link href={`/review/${c.slug}/`} className="font-bold text-[#2C1810] underline decoration-[#CFC3B4] underline-offset-2 hover:text-[#8B4513]">{c.name}</Link>
                   </td>
                   <td className="px-2 py-2 text-center text-[#2C1810]">{x.visit}</td>
