@@ -867,6 +867,23 @@ export default function CategoryPageClient({
             </div>
           </section>
         )}
+        {(slug === "sadougu" || slug === "kaiga") && (
+          <section className="py-8 bg-[#FAF6F0]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="bg-white rounded border border-[#E0D5C8] p-5 text-sm">
+                <p className="text-[#5C4A3A]">
+                  地域の店舗所在地・出張対応・公開買取実績は、
+                  {slug === "sadougu" ? (
+                    <Link href="/sadougu-kaitori-osaka/" className="text-[#8B4513] font-bold hover:underline">茶道具買取 大阪の業者比較</Link>
+                  ) : (
+                    <Link href="/kaiga-kaitori-kanagawa/" className="text-[#8B4513] font-bold hover:underline">絵画買取 神奈川の業者比較</Link>
+                  )}
+                  に掲載しています。
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </div>

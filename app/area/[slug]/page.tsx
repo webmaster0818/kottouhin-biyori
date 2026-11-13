@@ -709,6 +709,23 @@ export default async function AreaPage({ params }: Props) {
             </div>
           </section>
         )}
+        {(slug === "osaka" || slug === "yokohama") && (
+          <section className="py-8 bg-[#FAF6F0]">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="bg-white rounded border border-[#E0D5C8] p-5 text-sm">
+                <p className="text-[#5C4A3A]">
+                  {slug === "osaka" ? "茶道具" : "絵画"}の買取先をお探しの方は、品目別に業者を比較した
+                  {slug === "osaka" ? (
+                    <Link href="/sadougu-kaitori-osaka/" className="text-[#8B4513] font-bold hover:underline">茶道具買取 大阪の業者比較</Link>
+                  ) : (
+                    <Link href="/kaiga-kaitori-kanagawa/" className="text-[#8B4513] font-bold hover:underline">絵画買取 神奈川の業者比較</Link>
+                  )}
+                  もご覧ください。
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </div>

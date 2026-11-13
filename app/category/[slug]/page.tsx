@@ -56,10 +56,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // 関連品目（素材・用途・売られ方が近いもの）。双方向にしておく
 const RELATED_CATEGORIES: Record<string, string[]> = {
   kakejiku: ["byoubu", "kosho", "nihonga", "inzai"],
-  sadougu: ["tetsubin", "shikki", "kofu"],
+  sadougu: ["tetsubin", "shikki", "kofu", "seiji"],
   kaiga: ["byoubu", "ukiyoe", "nihonga", "hanga", "contemporary-art", "abura-e"],
   touken: ["bugu"],
-  toujiki: ["seiyou-touki", "shikki"],
+  toujiki: ["seiyou-touki", "shikki", "seiji"],
   kosen: ["gunsou", "kitte", "kinen-medal"],
   kitte: ["kosen"],
   kimono: ["kofu"],
@@ -89,6 +89,7 @@ const RELATED_CATEGORIES: Record<string, string[]> = {
   chokoku: ["butsuzou", "contemporary-art"],
   "abura-e": ["kaiga", "nihonga", "hanga", "contemporary-art"],
   orgel: ["kodokei", "antique-kagu", "seiyou-antique"],
+  seiji: ["toujiki", "sadougu", "chugoku-bijutsu"],
 };
 const EXTRA_CATEGORY_NAMES: Record<string, string> = { "seiyou-antique": "西洋アンティーク", "chugoku-bijutsu": "中国美術" };
 

@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/area/osaka/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/area/yokohama/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -386,9 +386,9 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <loc>https://kottokaitori-biyori.com/review/</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1374,7 +1374,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/kachi-no-kimarikata/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1482,7 +1482,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/souzokuzei/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1542,7 +1542,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/inheritance/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1634,6 +1634,48 @@
     <loc>https://kottokaitori-biyori.com/compare/shucchou-vs-tentou/</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/kaiga-kaitori-kanagawa/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/sadougu-kaitori-osaka/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/seiji/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/kyoto-yakata/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/review/fk-vintage/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/mumei-kaiga/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/guide/baikyaku-zeikin/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
