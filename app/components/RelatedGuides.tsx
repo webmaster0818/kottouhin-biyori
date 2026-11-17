@@ -28,6 +28,10 @@ const LABELS: Record<string, string> = {
   "/learn/what-is-kottouhin/": "骨董品の定義・歴史・分類",
   "/learn/ihin-kottou/": "遺品整理で出た骨董品の対処法",
   "/learn/inheritance/": "骨董品の相続・評価ガイド",
+  "/learn/dessin/": "デッサン（素描）とは",
+  "/learn/suisaiga/": "水彩画とは",
+  "/learn/kirie/": "切り絵とは",
+  "/learn/chasen/": "茶筅（茶筌）とは",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -38,7 +42,7 @@ const RELATED: Record<string, string[]> = {
   "/guide/kifu/": ["/guide/kura-seiri/", "/guide/souzokuzei/"],
   "/guide/kobijutsu-tono-chigai/": ["/guide/kachi-no-kimarikata/", "/learn/what-is-kottouhin/"],
   "/guide/kottouichi/": ["/guide/doko-de-uru/", "/guide/auction/"],
-  "/guide/kura-seiri/": ["/guide/kifu/", "/guide/souzokuzei/", "/learn/ihin-kottou/"],
+  "/guide/kura-seiri/": ["/guide/kifu/", "/guide/souzokuzei/", "/learn/ihin-kottou/", "/learn/chasen/"],
   "/guide/line-satei/": ["/guide/shashin-satei/", "/guide/sokujitsu-satei/", "/guide/takuhai-kaitori/"],
   "/guide/mochikomi-satei/": ["/guide/sokujitsu-satei/", "/guide/shucchou-kaitori/"],
   "/guide/sakka-souba/": ["/guide/ningen-kokuhou/", "/guide/shijou-kachi/"],
@@ -49,14 +53,18 @@ const RELATED: Record<string, string[]> = {
   "/guide/shucchou-kaitori/": ["/guide/sokujitsu-satei/", "/guide/trouble/", "/guide/takuhai-kaitori/"],
   "/guide/sokujitsu-satei/": ["/guide/line-satei/", "/guide/mochikomi-satei/"],
   "/guide/souzokuzei/": ["/guide/kifu/", "/guide/kura-seiri/", "/learn/inheritance/", "/guide/baikyaku-zeikin/"],
-  "/guide/mumei-kaiga/": ["/guide/kachi-no-kimarikata/", "/guide/shashin-satei/", "/guide/satei-kijun/"],
+  "/guide/mumei-kaiga/": ["/guide/kachi-no-kimarikata/", "/guide/shashin-satei/", "/guide/satei-kijun/", "/learn/dessin/", "/learn/suisaiga/"],
   "/guide/baikyaku-zeikin/": ["/guide/souzokuzei/", "/learn/inheritance/", "/learn/ihin-kottou/"],
   "/guide/takuhai-kaitori/": ["/guide/line-satei/", "/guide/shashin-satei/"],
   "/guide/trouble/": ["/guide/hajimete/", "/guide/satei-hiyou/"],
   "/guide/ningen-kokuhou/": ["/guide/sakka-souba/", "/guide/kachi-no-kimarikata/"],
   "/learn/what-is-kottouhin/": ["/guide/kobijutsu-tono-chigai/"],
   "/learn/inheritance/": ["/guide/souzokuzei/", "/guide/kura-seiri/", "/guide/baikyaku-zeikin/"],
-  "/learn/ihin-kottou/": ["/guide/kura-seiri/", "/guide/kifu/"],
+  "/learn/ihin-kottou/": ["/guide/kura-seiri/", "/guide/kifu/", "/learn/chasen/"],
+  "/learn/dessin/": ["/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/kirie/"],
+  "/learn/suisaiga/": ["/learn/dessin/", "/guide/mumei-kaiga/", "/learn/kirie/"],
+  "/learn/kirie/": ["/learn/suisaiga/", "/learn/dessin/", "/guide/mumei-kaiga/"],
+  "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/"],
 };
 
 export default function RelatedGuides({ path }: { path: string }) {

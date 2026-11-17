@@ -36,10 +36,13 @@ export interface GuideArticleProps {
   tables?: { h: string; lead?: string; caption?: string; headers: string[]; rows: string[][]; note?: string }[]; // 冒頭の比較表（出典を記載）
   sources?: { label: string; url: string }[]; // 出典の一覧（deepDive の後に表示）
   sourcesCheckedAt?: string; // 出典の確認日（例: "2026年11月13日"）
+  basePath?: "guide" | "learn"; // URL の階層（既定は /guide/）。/learn/ の用語解説記事でも同じ型を使う
+  datePublished?: string; // 例: "2026-11-17"（未指定は 2026-06-07）
 }
 
 export default function GuideArticle(p: GuideArticleProps) {
-  const url = `${SITE}/guide/${p.slug}/`;
+  const base = p.basePath ?? "guide";
+  const url = `${SITE}/${base}/${p.slug}/`;
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -53,7 +56,7 @@ export default function GuideArticle(p: GuideArticleProps) {
     "@type": "Article",
     headline: p.title,
     description: p.subtitle,
-    datePublished: "2026-06-07T00:00:00+09:00",
+    datePublished: p.datePublished ? `${p.datePublished}T00:00:00+09:00` : "2026-06-07T00:00:00+09:00",
     dateModified: p.updatedAt ? `${p.updatedAt}T00:00:00+09:00` : "2026-06-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "骨董品買取びより", url: `${SITE}/about/` },
     publisher: { "@type": "Organization", name: "骨董品買取びより", url: SITE },
@@ -264,7 +267,7 @@ export default function GuideArticle(p: GuideArticleProps) {
                   { href: "/guide/shucchou-kaitori", label: "出張買取の流れ" },
                   { href: "/guide/satei-hiyou", label: "査定費用の有無" },
                 ]
-                  .filter((g) => g.href !== `/guide/${p.slug}`)
+                  .filter((g) => g.href !== `/${base}/${p.slug}`)
                   .slice(0, 4)
                   .map((g) => (
                     <Link
@@ -289,7 +292,7 @@ export default function GuideArticle(p: GuideArticleProps) {
             </div>
           </section>
         </main>
-        <RelatedGuides path={`/guide/${p.slug}/`} />
+        <RelatedGuides path={`/${base}/${p.slug}/`} />
         <SiteFooter />
       </div>
     </>

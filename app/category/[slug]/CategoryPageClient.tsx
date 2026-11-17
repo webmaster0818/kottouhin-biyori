@@ -880,6 +880,20 @@ export default function CategoryPageClient({
                   )}
                   に掲載しています。
                 </p>
+                <p className="text-[#5C4A3A] mt-2">
+                  用語の解説：
+                  {slug === "sadougu" ? (
+                    <Link href="/learn/chasen/" className="text-[#8B4513] font-bold hover:underline">茶筅（茶筌）とは</Link>
+                  ) : (
+                    <>
+                      <Link href="/learn/dessin/" className="text-[#8B4513] font-bold hover:underline">デッサンとは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/suisaiga/" className="text-[#8B4513] font-bold hover:underline">水彩画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/kirie/" className="text-[#8B4513] font-bold hover:underline">切り絵とは</Link>
+                    </>
+                  )}
+                </p>
               </div>
             </div>
           </section>
