@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/kaiga/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -386,7 +386,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
     <lastmod>2026-11-16</lastmod>
     <loc>https://kottokaitori-biyori.com/review/</loc>
@@ -1428,7 +1428,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/sakka-souba/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1680,13 +1680,13 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/dessin/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/suisaiga/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1698,13 +1698,43 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/chasen/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/takehisa-yumeji/</loc>
     <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/lithograph/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/decalcomania/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/chagama/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/fresco/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/ogata-korin/</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

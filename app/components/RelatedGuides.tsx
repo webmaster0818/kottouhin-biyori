@@ -32,6 +32,10 @@ const LABELS: Record<string, string> = {
   "/learn/suisaiga/": "水彩画とは",
   "/learn/kirie/": "切り絵とは",
   "/learn/chasen/": "茶筅（茶筌）とは",
+  "/learn/lithograph/": "リトグラフとは",
+  "/learn/decalcomania/": "デカルコマニーとは",
+  "/learn/chagama/": "茶釜（茶の湯釜）とは",
+  "/learn/fresco/": "フレスコ画とは",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -61,10 +65,14 @@ const RELATED: Record<string, string[]> = {
   "/learn/what-is-kottouhin/": ["/guide/kobijutsu-tono-chigai/"],
   "/learn/inheritance/": ["/guide/souzokuzei/", "/guide/kura-seiri/", "/guide/baikyaku-zeikin/"],
   "/learn/ihin-kottou/": ["/guide/kura-seiri/", "/guide/kifu/", "/learn/chasen/"],
-  "/learn/dessin/": ["/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/kirie/"],
-  "/learn/suisaiga/": ["/learn/dessin/", "/guide/mumei-kaiga/", "/learn/kirie/"],
+  "/learn/dessin/": ["/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/kirie/", "/learn/lithograph/"],
+  "/learn/suisaiga/": ["/learn/dessin/", "/guide/mumei-kaiga/", "/learn/kirie/", "/learn/decalcomania/"],
   "/learn/kirie/": ["/learn/suisaiga/", "/learn/dessin/", "/guide/mumei-kaiga/"],
-  "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/"],
+  "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/", "/learn/chagama/"],
+  "/learn/lithograph/": ["/learn/dessin/", "/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/fresco/"],
+  "/learn/decalcomania/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/kirie/", "/learn/fresco/"],
+  "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/"],
+  "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/"],
 };
 
 export default function RelatedGuides({ path }: { path: string }) {
