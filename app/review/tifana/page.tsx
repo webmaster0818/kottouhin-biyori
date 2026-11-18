@@ -46,7 +46,7 @@ export default function TifanaReview() {
               {company.name}の口コミ・評判
             </h1>
             <p className="text-lg md:text-xl text-amber-100 max-w-3xl leading-relaxed">
-              骨董品買取の特徴を公式の一次情報で確認【2026年9月2日確認】
+              骨董品買取の特徴を公式の一次情報で確認【2026年11月18日確認】
             </p>
           </div>
         </section>
