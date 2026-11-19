@@ -887,6 +887,12 @@ export default function CategoryPageClient({
                       <Link href="/learn/chasen/" className="text-[#8B4513] font-bold hover:underline">茶筅（茶筌）とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/chagama/" className="text-[#8B4513] font-bold hover:underline">茶釜（茶の湯釜）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/kougou/" className="text-[#8B4513] font-bold hover:underline">香合（こうごう）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/chatsubo/" className="text-[#8B4513] font-bold hover:underline">茶壺（茶壷）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/fukusa/" className="text-[#8B4513] font-bold hover:underline">帛紗（ふくさ）とは</Link>
                     </>
                   ) : (
                     <>
@@ -901,6 +907,10 @@ export default function CategoryPageClient({
                       <Link href="/learn/decalcomania/" className="text-[#8B4513] font-bold hover:underline">デカルコマニーとは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/fresco/" className="text-[#8B4513] font-bold hover:underline">フレスコ画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/tempera/" className="text-[#8B4513] font-bold hover:underline">テンペラ画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/penga/" className="text-[#8B4513] font-bold hover:underline">ペン画とは</Link>
                     </>
                   )}
                 </p>

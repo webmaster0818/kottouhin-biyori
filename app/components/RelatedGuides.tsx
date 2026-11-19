@@ -36,6 +36,11 @@ const LABELS: Record<string, string> = {
   "/learn/decalcomania/": "デカルコマニーとは",
   "/learn/chagama/": "茶釜（茶の湯釜）とは",
   "/learn/fresco/": "フレスコ画とは",
+  "/learn/penga/": "ペン画とは",
+  "/learn/fukusa/": "帛紗（ふくさ）とは",
+  "/learn/kougou/": "香合（こうごう）とは",
+  "/learn/chatsubo/": "茶壺（茶壷）とは",
+  "/learn/tempera/": "テンペラ画とは",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -65,14 +70,19 @@ const RELATED: Record<string, string[]> = {
   "/learn/what-is-kottouhin/": ["/guide/kobijutsu-tono-chigai/"],
   "/learn/inheritance/": ["/guide/souzokuzei/", "/guide/kura-seiri/", "/guide/baikyaku-zeikin/"],
   "/learn/ihin-kottou/": ["/guide/kura-seiri/", "/guide/kifu/", "/learn/chasen/"],
-  "/learn/dessin/": ["/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/kirie/", "/learn/lithograph/"],
+  "/learn/dessin/": ["/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/kirie/", "/learn/lithograph/", "/learn/penga/"],
   "/learn/suisaiga/": ["/learn/dessin/", "/guide/mumei-kaiga/", "/learn/kirie/", "/learn/decalcomania/"],
   "/learn/kirie/": ["/learn/suisaiga/", "/learn/dessin/", "/guide/mumei-kaiga/"],
-  "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/", "/learn/chagama/"],
+  "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/", "/learn/chagama/", "/learn/fukusa/"],
   "/learn/lithograph/": ["/learn/dessin/", "/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/fresco/"],
   "/learn/decalcomania/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/kirie/", "/learn/fresco/"],
-  "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/"],
-  "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/"],
+  "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/", "/learn/kougou/", "/learn/chatsubo/"],
+  "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/", "/learn/tempera/"],
+  "/learn/penga/": ["/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/suisaiga/"],
+  "/learn/fukusa/": ["/learn/chasen/", "/learn/kougou/", "/guide/kura-seiri/"],
+  "/learn/kougou/": ["/learn/chagama/", "/learn/chatsubo/", "/learn/fukusa/", "/guide/kura-seiri/"],
+  "/learn/chatsubo/": ["/learn/chagama/", "/learn/kougou/", "/learn/chasen/", "/guide/kura-seiri/"],
+  "/learn/tempera/": ["/learn/fresco/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/"],
 };
 
 export default function RelatedGuides({ path }: { path: string }) {
