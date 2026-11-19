@@ -893,6 +893,8 @@ export default function CategoryPageClient({
                       <Link href="/learn/chatsubo/" className="text-[#8B4513] font-bold hover:underline">茶壺（茶壷）とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/fukusa/" className="text-[#8B4513] font-bold hover:underline">帛紗（ふくさ）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/kensui/" className="text-[#8B4513] font-bold hover:underline">建水（けんすい）とは</Link>
                     </>
                   ) : (
                     <>
@@ -911,6 +913,12 @@ export default function CategoryPageClient({
                       <Link href="/learn/tempera/" className="text-[#8B4513] font-bold hover:underline">テンペラ画とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/penga/" className="text-[#8B4513] font-bold hover:underline">ペン画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/pastel/" className="text-[#8B4513] font-bold hover:underline">パステル画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/frottage/" className="text-[#8B4513] font-bold hover:underline">フロッタージュとは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/seiyouga/" className="text-[#8B4513] font-bold hover:underline">西洋画とは</Link>
                     </>
                   )}
                 </p>

@@ -41,6 +41,10 @@ const LABELS: Record<string, string> = {
   "/learn/kougou/": "香合（こうごう）とは",
   "/learn/chatsubo/": "茶壺（茶壷）とは",
   "/learn/tempera/": "テンペラ画とは",
+  "/learn/pastel/": "パステル画とは",
+  "/learn/frottage/": "フロッタージュとは",
+  "/learn/kensui/": "建水（けんすい）とは",
+  "/learn/seiyouga/": "西洋画とは",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -75,14 +79,18 @@ const RELATED: Record<string, string[]> = {
   "/learn/kirie/": ["/learn/suisaiga/", "/learn/dessin/", "/guide/mumei-kaiga/"],
   "/learn/chasen/": ["/guide/kura-seiri/", "/learn/ihin-kottou/", "/guide/shashin-satei/", "/learn/chagama/", "/learn/fukusa/"],
   "/learn/lithograph/": ["/learn/dessin/", "/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/fresco/"],
-  "/learn/decalcomania/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/kirie/", "/learn/fresco/"],
-  "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/", "/learn/kougou/", "/learn/chatsubo/"],
+  "/learn/decalcomania/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/kirie/", "/learn/fresco/", "/learn/frottage/"],
+  "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/", "/learn/kougou/", "/learn/chatsubo/", "/learn/kensui/"],
   "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/", "/learn/tempera/"],
   "/learn/penga/": ["/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/suisaiga/"],
   "/learn/fukusa/": ["/learn/chasen/", "/learn/kougou/", "/guide/kura-seiri/"],
   "/learn/kougou/": ["/learn/chagama/", "/learn/chatsubo/", "/learn/fukusa/", "/guide/kura-seiri/"],
   "/learn/chatsubo/": ["/learn/chagama/", "/learn/kougou/", "/learn/chasen/", "/guide/kura-seiri/"],
-  "/learn/tempera/": ["/learn/fresco/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/"],
+  "/learn/tempera/": ["/learn/fresco/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/pastel/"],
+  "/learn/pastel/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/tempera/", "/learn/seiyouga/", "/guide/mumei-kaiga/"],
+  "/learn/frottage/": ["/learn/decalcomania/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/"],
+  "/learn/kensui/": ["/learn/chagama/", "/learn/kougou/", "/learn/chasen/", "/guide/kura-seiri/"],
+  "/learn/seiyouga/": ["/learn/pastel/", "/learn/suisaiga/", "/learn/tempera/", "/learn/fresco/", "/guide/mumei-kaiga/"],
 };
 
 export default function RelatedGuides({ path }: { path: string }) {
