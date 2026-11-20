@@ -388,7 +388,7 @@
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
     <lastmod>2026-11-21</lastmod>
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <loc>https://kottokaitori-biyori.com/review/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,7 +408,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/shikki/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -546,7 +546,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/kuroda-tatsuaki/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1824,7 +1824,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/hisui/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1842,19 +1842,19 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/kinjo-jiro/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/artist/nakajima-hiroshi/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/natsume/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1884,6 +1884,36 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/futaoki/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/sango/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/matsui-kosei/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/matsuda-gonroku/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/kato-kozo/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/yoshita-minori/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
