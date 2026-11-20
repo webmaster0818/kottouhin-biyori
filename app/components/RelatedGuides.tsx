@@ -48,6 +48,8 @@ const LABELS: Record<string, string> = {
   "/learn/furo/": "風炉（ふろ）とは",
   "/learn/dripping/": "ドリッピングとは",
   "/learn/chugokuga/": "中国画とは",
+  "/learn/natsume/": "棗（なつめ）とは",
+  "/learn/mosaic/": "モザイク画とは",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -84,7 +86,7 @@ const RELATED: Record<string, string[]> = {
   "/learn/lithograph/": ["/learn/dessin/", "/learn/suisaiga/", "/guide/mumei-kaiga/", "/learn/fresco/"],
   "/learn/decalcomania/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/kirie/", "/learn/fresco/", "/learn/frottage/"],
   "/learn/chagama/": ["/learn/chasen/", "/guide/kura-seiri/", "/learn/ihin-kottou/", "/learn/kougou/", "/learn/chatsubo/", "/learn/kensui/", "/learn/furo/"],
-  "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/", "/learn/tempera/"],
+  "/learn/fresco/": ["/learn/lithograph/", "/learn/dessin/", "/guide/mumei-kaiga/", "/learn/tempera/", "/learn/mosaic/"],
   "/learn/penga/": ["/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/suisaiga/"],
   "/learn/fukusa/": ["/learn/chasen/", "/learn/kougou/", "/guide/kura-seiri/"],
   "/learn/kougou/": ["/learn/chagama/", "/learn/chatsubo/", "/learn/fukusa/", "/guide/kura-seiri/"],
@@ -92,9 +94,11 @@ const RELATED: Record<string, string[]> = {
   "/learn/tempera/": ["/learn/fresco/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/pastel/"],
   "/learn/pastel/": ["/learn/dessin/", "/learn/suisaiga/", "/learn/tempera/", "/learn/seiyouga/", "/guide/mumei-kaiga/"],
   "/learn/frottage/": ["/learn/decalcomania/", "/learn/dessin/", "/learn/lithograph/", "/guide/mumei-kaiga/", "/learn/dripping/"],
-  "/learn/kensui/": ["/learn/chagama/", "/learn/kougou/", "/learn/chasen/", "/guide/kura-seiri/", "/learn/furo/"],
+  "/learn/kensui/": ["/learn/chagama/", "/learn/kougou/", "/learn/chasen/", "/guide/kura-seiri/", "/learn/furo/", "/learn/natsume/"],
   "/learn/seiyouga/": ["/learn/pastel/", "/learn/suisaiga/", "/learn/tempera/", "/learn/fresco/", "/guide/mumei-kaiga/", "/learn/chugokuga/"],
   "/learn/furo/": ["/learn/chagama/", "/learn/kensui/", "/learn/kougou/", "/guide/kura-seiri/"],
+  "/learn/natsume/": ["/learn/chasen/", "/learn/kensui/", "/learn/kougou/", "/learn/fukusa/", "/guide/kura-seiri/"],
+  "/learn/mosaic/": ["/learn/fresco/", "/learn/tempera/", "/learn/seiyouga/", "/guide/mumei-kaiga/"],
   "/learn/dripping/": ["/learn/frottage/", "/learn/decalcomania/", "/learn/seiyouga/", "/guide/mumei-kaiga/"],
   "/learn/chugokuga/": ["/learn/seiyouga/", "/guide/mumei-kaiga/", "/learn/ihin-kottou/"],
 };

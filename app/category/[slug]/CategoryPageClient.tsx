@@ -897,6 +897,8 @@ export default function CategoryPageClient({
                       <Link href="/learn/kensui/" className="text-[#8B4513] font-bold hover:underline">建水（けんすい）とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/furo/" className="text-[#8B4513] font-bold hover:underline">風炉（ふろ）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/natsume/" className="text-[#8B4513] font-bold hover:underline">棗（なつめ）とは</Link>
                     </>
                   ) : (
                     <>
@@ -925,6 +927,8 @@ export default function CategoryPageClient({
                       <Link href="/learn/dripping/" className="text-[#8B4513] font-bold hover:underline">ドリッピングとは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/chugokuga/" className="text-[#8B4513] font-bold hover:underline">中国画とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/mosaic/" className="text-[#8B4513] font-bold hover:underline">モザイク画とは</Link>
                     </>
                   )}
                 </p>
