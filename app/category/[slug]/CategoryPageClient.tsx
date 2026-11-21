@@ -905,6 +905,8 @@ export default function CategoryPageClient({
                       <Link href="/learn/furosaki-byobu/" className="text-[#8B4513] font-bold hover:underline">風炉先屏風とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/hanaire/" className="text-[#8B4513] font-bold hover:underline">花入（はないれ）とは</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/hishaku/" className="text-[#8B4513] font-bold hover:underline">柄杓（ひしゃく）とは</Link>
                     </>
                   ) : (
                     <>

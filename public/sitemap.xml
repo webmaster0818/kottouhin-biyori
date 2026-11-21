@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/hina-ningyo/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/chokoku/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/kodougu/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -386,9 +386,17 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
     <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/review/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1788,7 +1796,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/kensui/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1884,7 +1892,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/futaoki/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1977,5 +1985,35 @@
     <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/hishaku/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/bisque-doll/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/mahjong-pai/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/netsuke/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/emile-galle/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
