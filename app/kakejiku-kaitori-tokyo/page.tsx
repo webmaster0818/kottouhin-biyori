@@ -681,7 +681,7 @@ export default function KakejikuTokyoPage() {
               <p className="font-bold text-[#2C1810] mb-2">関連ページ</p>
               <ul className="space-y-1.5 text-[#5C4A3A]">
                 <li><Link href="/category/kakejiku/" className="text-[#8B4513] hover:underline">掛軸買取（地域を問わない全国の公開買取実績・査定で見られる点・作家別の落札実績）</Link></li>
-                <li><Link href="/review/antique-tokyo/" className="text-[#8B4513] hover:underline">アンティーク東京の口コミ・評判（西洋骨董に強い東京の買取）</Link></li>
+                <li><Link href="/review/antique-tokyo/" className="text-[#8B4513] hover:underline">アンティーク東京の口コミ・評判（宅配は全国・出張は東京23区と神奈川・埼玉・千葉）</Link></li>
                 <li><Link href="/area/tokyo/" className="text-[#8B4513] hover:underline">東京の骨董品買取（品目を問わない総合ガイド）</Link></li>
                 <li><Link href="/guide/gyosha-hikaku/" className="text-[#8B4513] hover:underline">骨董品買取業者の比較（品目を問わない全体比較）</Link></li>
                 <li><Link href="/learn/how-to-dispose/" className="text-[#8B4513] hover:underline">骨董品の処分方法・捨て方（掛軸以外もまとめて整理したい方へ）</Link></li>
