@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/antique-glass/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -388,7 +388,7 @@
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
     <lastmod>2026-11-21</lastmod>
     <loc>https://kottokaitori-biyori.com/category/toujiki/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <loc>https://kottokaitori-biyori.com/review/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -402,7 +402,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/seiyou-touki/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1428,7 +1428,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/guide/sakka-souba/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1716,7 +1716,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/decalcomania/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1752,7 +1752,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/kougou/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1782,7 +1782,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/frottage/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1806,7 +1806,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/dripping/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1920,7 +1920,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/shamisen/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1945,6 +1945,36 @@
   <url>
     <loc>https://kottokaitori-biyori.com/category/goban/</loc>
     <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/artist/otomaru-kodo/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/baccarat/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/collage/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/kutaniyaki/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/wagakki/</loc>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
