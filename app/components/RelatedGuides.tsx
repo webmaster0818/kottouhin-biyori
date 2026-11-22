@@ -57,6 +57,8 @@ const LABELS: Record<string, string> = {
   "/learn/hishaku/": "柄杓（ひしゃく）とは",
   "/artist/matsuda-gonroku/": "松田権六の買取（蒔絵の人間国宝）",
   "/artist/otomaru-kodo/": "音丸耕堂の買取（彫漆の人間国宝）",
+  "/artist/mae-fumio/": "前史雄の買取（沈金の人間国宝）",
+  "/artist/ito-sekisui/": "五代伊藤赤水の買取（無名異焼の人間国宝）",
 };
 
 const RELATED: Record<string, string[]> = {
@@ -108,8 +110,8 @@ const RELATED: Record<string, string[]> = {
   "/learn/furosaki-byobu/": ["/learn/furo/", "/learn/chagama/", "/learn/futaoki/", "/guide/kura-seiri/"],
   "/learn/futaoki/": ["/learn/kensui/", "/learn/chagama/", "/learn/natsume/", "/learn/furo/", "/guide/kura-seiri/", "/learn/hanaire/", "/learn/hishaku/"],
   "/learn/hishaku/": ["/learn/futaoki/", "/learn/kensui/", "/learn/chagama/", "/learn/natsume/", "/guide/kura-seiri/"],
-  "/learn/hanaire/": ["/learn/futaoki/", "/learn/kougou/", "/learn/furosaki-byobu/", "/learn/natsume/", "/guide/kura-seiri/"],
-  "/learn/natsume/": ["/learn/chasen/", "/learn/kensui/", "/learn/kougou/", "/learn/fukusa/", "/guide/kura-seiri/", "/artist/matsuda-gonroku/"],
+  "/learn/hanaire/": ["/learn/futaoki/", "/learn/kougou/", "/learn/furosaki-byobu/", "/learn/natsume/", "/guide/kura-seiri/", "/artist/ito-sekisui/"],
+  "/learn/natsume/": ["/learn/chasen/", "/learn/kensui/", "/learn/kougou/", "/learn/fukusa/", "/guide/kura-seiri/", "/artist/matsuda-gonroku/", "/artist/mae-fumio/"],
   "/learn/mosaic/": ["/learn/fresco/", "/learn/tempera/", "/learn/seiyouga/", "/guide/mumei-kaiga/"],
   "/learn/dripping/": ["/learn/frottage/", "/learn/decalcomania/", "/learn/seiyouga/", "/guide/mumei-kaiga/", "/learn/collage/"],
   "/learn/chugokuga/": ["/learn/seiyouga/", "/guide/mumei-kaiga/", "/learn/ihin-kottou/"],
