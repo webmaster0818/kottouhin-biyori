@@ -386,7 +386,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/sadougu/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1772,7 +1772,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/chatsubo/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1802,7 +1802,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/kensui/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1868,7 +1868,7 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/learn/natsume/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2117,5 +2117,29 @@
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/chaire/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/chawan/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/sadougu-shurui/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/learn/gokashihin/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

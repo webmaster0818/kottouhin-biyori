@@ -884,6 +884,12 @@ export default function CategoryPageClient({
                   用語の解説：
                   {slug === "sadougu" ? (
                     <>
+                      <Link href="/learn/sadougu-shurui/" className="text-[#8B4513] font-bold hover:underline">茶道具の種類</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/chawan/" className="text-[#8B4513] font-bold hover:underline">茶碗の種類</Link>
+                      <span className="mx-1">／</span>
+                      <Link href="/learn/chaire/" className="text-[#8B4513] font-bold hover:underline">茶入の種類</Link>
+                      <span className="mx-1">／</span>
                       <Link href="/learn/chasen/" className="text-[#8B4513] font-bold hover:underline">茶筅（茶筌）とは</Link>
                       <span className="mx-1">／</span>
                       <Link href="/learn/chagama/" className="text-[#8B4513] font-bold hover:underline">茶釜（茶の湯釜）とは</Link>
