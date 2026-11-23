@@ -1675,6 +1675,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kottokaitori-biyori.com/review/arimado/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kottokaitori-biyori.com/guide/mumei-kaiga/</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -2084,6 +2090,12 @@
   </url>
   <url>
     <loc>https://kottokaitori-biyori.com/category/karatsuyaki/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kottokaitori-biyori.com/category/mashikoyaki/</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
