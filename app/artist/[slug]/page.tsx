@@ -155,7 +155,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
     "name": artist.name,
     "description": `${artist.era}の${artist.category}作家`,
     "hasOccupation": { "@type": "Occupation", "name": artist.category + "作家" },
-    ...(personSources ? { "sameAs": personSources.items.map((r) => r.url) } : {}),
+    // sameAs は人物を同定する公的・一次の出典だけ（買取業者のページは "sameAs": false で除外・出典表示には残す）
+    ...(personSources ? { "sameAs": personSources.items.filter((r) => (r as any).sameAs !== false).map((r) => r.url) } : {}),
   };
   const faqSchema = {
     "@context": "https://schema.org",

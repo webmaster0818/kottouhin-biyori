@@ -12687,7 +12687,7 @@
         },
         {
           "label": "緑和堂「伊勢崎 淳の作品買取・査定」（作家情報・略歴）",
-          "url": "https://www.ryokuwado.com/artist/1894/"
+          "url": "https://www.ryokuwado.com/artist/1894/", "sameAs": false
         }
       ]
     },
@@ -13695,7 +13695,7 @@
         },
         {
           "label": "緑和堂「吉田 美統の作品買取・査定」（作家情報・略歴）",
-          "url": "https://www.ryokuwado.com/artist/9436/"
+          "url": "https://www.ryokuwado.com/artist/9436/", "sameAs": false
         }
       ]
     },
@@ -15223,7 +15223,7 @@
       "items": [
         {
           "label": "緑和堂「ドームナンシー（ドーム兄弟）」作家紹介（略歴）",
-          "url": "https://www.ryokuwado.com/artist/27237/"
+          "url": "https://www.ryokuwado.com/artist/27237/", "sameAs": false
         },
         {
           "label": "文化庁 アートプラットフォームジャパン「ドーム兄弟（Daum Fréres）」作品記録",
